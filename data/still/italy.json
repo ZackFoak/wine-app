@@ -1,0 +1,399 @@
+{
+  "name": "Italy",
+  "summary": "Italy ranges from cool northern regions to warm Mediterranean south, with major regional diversity and many important indigenous grapes.",
+  "regions": {
+    "alto-adige-trentino-friuli": {
+      "name": "Alto Adige / Trentino / Friuli-Venezia Giulia",
+      "climate": "Continental to Alpine-influenced",
+      "styleSummary": "Fresh aromatic whites and some light to medium-bodied reds, often with good acidity.",
+      "mitigating": ["altitude", "mountain influence", "diurnal range", "slope aspect"],
+      "grapes": {
+        "Pinot Grigio": {
+          "style": "Light to medium-bodied white with pear, citrus and subtle stone fruit notes.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Low to Medium",
+            "body": "Light to Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Widely planted in north-east Italy", "Best examples from cooler sites"],
+          "winemaking": ["Usually fresh styles", "Little or no oak"]
+        },
+        "Sauvignon Blanc": {
+          "style": "Fresh aromatic whites with citrus, herb and green fruit notes.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Low to Medium",
+            "body": "Light",
+            "tannin": "-"
+          },
+          "viticulture": ["Performs well in cooler sites"],
+          "winemaking": ["Usually stainless steel to preserve aromatics"]
+        },
+        "Chardonnay": {
+          "style": "Fresh citrus to stone-fruit styles, sometimes with subtle oak.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Adaptable variety"],
+          "winemaking": ["Fresh styles common", "Oak possible in richer styles"]
+        }
+      }
+    },
+    "veneto": {
+      "name": "Veneto",
+      "climate": "Continental to Mediterranean-influenced",
+      "styleSummary": "Wide range including reds, Soave whites and Pinot Grigio.",
+      "mitigating": ["Lake Garda influence", "Alpine protection", "site variation"],
+      "grapes": {
+        "Corvina": {
+          "style": "Red cherry, medium body and fresh acidity in Valpolicella styles.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "Low to Medium"
+          },
+          "viticulture": ["Performs well in Veneto", "Useful in appassimento styles"],
+          "winemaking": ["Fresh styles or appassimento-based richer styles"]
+        },
+        "Garganega": {
+          "style": "Medium-bodied white with citrus, pear and almond notes.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Main grape of Soave"],
+          "winemaking": ["Usually dry still white", "Can be simple or more textured"]
+        },
+        "Pinot Grigio": {
+          "style": "Light to medium-bodied white with pear and citrus notes.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Low to Medium",
+            "body": "Light to Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Widely planted"],
+          "winemaking": ["Usually fresh simple style"]
+        }
+      }
+    },
+    "piemonte": {
+      "name": "Piemonte",
+      "climate": "Continental",
+      "styleSummary": "Structured reds and fresh whites with hill-site variation.",
+      "mitigating": ["hill slopes", "aspect", "fog", "mesoclimate variation"],
+      "grapes": {
+        "Nebbiolo": {
+          "style": "High tannin, high acidity, pale colour, rose and tar notes.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium to High",
+            "body": "Medium to Full",
+            "tannin": "High"
+          },
+          "viticulture": ["Early budding and late ripening", "Needs best sites to ripen"],
+          "winemaking": ["Long maceration possible", "Oak often used"]
+        },
+        "Barbera": {
+          "style": "Deep colour, high acidity, lower tannin and juicy red to black fruit.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium to High",
+            "body": "Medium",
+            "tannin": "Low to Medium"
+          },
+          "viticulture": ["Reliable cropper"],
+          "winemaking": ["Can be fresh or oaked"]
+        },
+        "Dolcetto": {
+          "style": "Soft, fruity red with lower acidity than Barbera.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "Medium"
+          },
+          "viticulture": ["Earlier ripening than Nebbiolo"],
+          "winemaking": ["Usually made for early drinking"]
+        },
+        "Cortese": {
+          "style": "Fresh white with citrus and apple notes.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Low to Medium",
+            "body": "Light",
+            "tannin": "-"
+          },
+          "viticulture": ["Used for Gavi"],
+          "winemaking": ["Usually fresh unoaked style"]
+        }
+      }
+    },
+    "tuscany": {
+      "name": "Tuscany",
+      "climate": "Mediterranean",
+      "styleSummary": "Sangiovese-led reds with freshness and savoury character.",
+      "mitigating": ["altitude", "aspect", "diurnal range", "inland hills"],
+      "grapes": {
+        "Sangiovese": {
+          "style": "Sour cherry, herbs, savoury notes with fresh acidity.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium to High",
+            "body": "Medium",
+            "tannin": "Medium"
+          },
+          "viticulture": ["Site-sensitive", "Needs sufficient warmth but not excessive heat"],
+          "winemaking": ["Oak optional", "Can be varietal or blended"]
+        },
+        "Cabernet Sauvignon": {
+          "style": "Black fruit, cassis and firmer structure in international styles.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "High",
+            "body": "Full",
+            "tannin": "High"
+          },
+          "viticulture": ["Needs warmth"],
+          "winemaking": ["Oak common"]
+        },
+        "Merlot": {
+          "style": "Plum, black fruit and rounder texture.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium to High",
+            "body": "Medium to Full",
+            "tannin": "Medium"
+          },
+          "viticulture": ["Earlier ripening than Cabernet Sauvignon"],
+          "winemaking": ["Oak common"]
+        }
+      }
+    },
+    "marche": {
+      "name": "Marche",
+      "climate": "Mediterranean",
+      "styleSummary": "Fresh whites, especially Verdicchio, with some elegant reds.",
+      "mitigating": ["Adriatic influence", "hill sites", "altitude variation"],
+      "grapes": {
+        "Verdicchio": {
+          "style": "Fresh citrus, green apple and sometimes almond notes, with good acidity.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Light to Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Performs well in Marche hillside sites"],
+          "winemaking": ["Usually dry still wines", "Can age surprisingly well"]
+        }
+      }
+    },
+    "umbria": {
+      "name": "Umbria",
+      "climate": "Continental to Mediterranean-influenced",
+      "styleSummary": "Whites based around local and traditional grapes, plus some quality reds.",
+      "mitigating": ["inland hills", "altitude", "diurnal range"],
+      "grapes": {
+        "Grechetto": {
+          "style": "Medium-bodied white with citrus, orchard fruit and some texture.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Traditional Umbrian white grape"],
+          "winemaking": ["Usually blended or varietal dry whites"]
+        },
+        "Trebbiano": {
+          "style": "Neutral to lightly citrus white, often used in blends.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Low to Medium",
+            "body": "Light",
+            "tannin": "-"
+          },
+          "viticulture": ["Productive and widely planted"],
+          "winemaking": ["Often used in simple dry styles"]
+        }
+      }
+    },
+    "lazio": {
+      "name": "Lazio",
+      "climate": "Mediterranean",
+      "styleSummary": "Mainly white wines from traditional local blends.",
+      "mitigating": ["coastal influence", "volcanic soils in places", "elevated sites"],
+      "grapes": {
+        "Malvasia": {
+          "style": "Aromatic to neutral white, often medium-bodied with soft fruit notes.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Traditional Lazio white grape"],
+          "winemaking": ["Usually blended in dry whites"]
+        },
+        "Trebbiano": {
+          "style": "Light, neutral to citrus white used widely in blends.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Low to Medium",
+            "body": "Light",
+            "tannin": "-"
+          },
+          "viticulture": ["Widely planted"],
+          "winemaking": ["Usually simple dry styles"]
+        }
+      }
+    },
+    "abruzzo": {
+      "name": "Abruzzo",
+      "climate": "Mediterranean",
+      "styleSummary": "Important for Montepulciano-based reds with ripe fruit and good body.",
+      "mitigating": ["Adriatic influence", "Apennine proximity", "altitude differences"],
+      "grapes": {
+        "Montepulciano": {
+          "style": "Deep colour, ripe black fruit and medium to high tannin.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium to High",
+            "body": "Medium to Full",
+            "tannin": "Medium to High"
+          },
+          "viticulture": ["Performs well in warm central Italy"],
+          "winemaking": ["Usually fruit-driven but can be more structured"]
+        }
+      }
+    },
+    "campania": {
+      "name": "Campania",
+      "climate": "Mediterranean",
+      "styleSummary": "Structured reds and important aromatic whites from volcanic and inland sites.",
+      "mitigating": ["volcanic soils in places", "altitude", "coastal and inland variation"],
+      "grapes": {
+        "Aglianico": {
+          "style": "Dark fruit, high tannin, high acidity and ageworthy structure.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium to High",
+            "body": "Full",
+            "tannin": "High"
+          },
+          "viticulture": ["Late ripening", "Needs warmth and long season"],
+          "winemaking": ["Often structured and oak-aged"]
+        },
+        "Greco": {
+          "style": "Fresh white with citrus and stone fruit, often with texture.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Performs well in Campania"],
+          "winemaking": ["Usually dry still whites"]
+        },
+        "Fiano": {
+          "style": "Aromatic white with citrus, floral and nutty notes.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Quality-focused southern white grape"],
+          "winemaking": ["Usually dry still wines"]
+        }
+      }
+    },
+    "puglia": {
+      "name": "Puglia",
+      "climate": "Mediterranean",
+      "styleSummary": "Warm-climate ripe reds, often full-bodied and generous.",
+      "mitigating": ["heat", "coastal breezes", "flat sunny sites"],
+      "grapes": {
+        "Negroamaro": {
+          "style": "Dark fruit, spice and medium to high tannin.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium to High",
+            "body": "Full",
+            "tannin": "Medium to High"
+          },
+          "viticulture": ["Handles heat well"],
+          "winemaking": ["Often used in full-bodied reds"]
+        },
+        "Primitivo": {
+          "style": "Ripe black fruit, spice and high alcohol.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "High",
+            "body": "Full",
+            "tannin": "Medium"
+          },
+          "viticulture": ["Early ripening", "Thrives in warm conditions"],
+          "winemaking": ["Usually ripe fruit-forward styles"]
+        }
+      }
+    },
+    "basilicata": {
+      "name": "Basilicata",
+      "climate": "Mediterranean with altitude influence",
+      "styleSummary": "Structured reds from Aglianico with freshness from elevation.",
+      "mitigating": ["altitude", "volcanic soils", "cooler nights"],
+      "grapes": {
+        "Aglianico": {
+          "style": "Dark fruit, high tannin and high acidity with ageworthy potential.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium to High",
+            "body": "Full",
+            "tannin": "High"
+          },
+          "viticulture": ["Late ripening", "Best on elevated sites"],
+          "winemaking": ["Often structured and ageworthy"]
+        }
+      }
+    },
+    "sicily": {
+      "name": "Sicily",
+      "climate": "Mediterranean",
+      "styleSummary": "Warm-climate reds and increasingly important fresh whites, especially where altitude moderates heat.",
+      "mitigating": ["altitude near Etna", "sea influence", "sunshine", "wind"],
+      "grapes": {
+        "Nero d'Avola": {
+          "style": "Ripe black fruit, spice and medium to full body.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium to High",
+            "body": "Medium to Full",
+            "tannin": "Medium"
+          },
+          "viticulture": ["Performs well in warm dry conditions"],
+          "winemaking": ["Can be juicy or more structured"]
+        },
+        "Grillo": {
+          "style": "Fresh to medium-bodied white with citrus and orchard fruit.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Well suited to Sicilian climate"],
+          "winemaking": ["Usually dry fresh styles"]
+        }
+      }
+    }
+  }
+}

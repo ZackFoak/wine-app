@@ -1,0 +1,145 @@
+{
+  "name": "Portugal",
+  "summary": "Portugal produces a wide range of wines from fresh Atlantic whites to powerful inland reds, using many indigenous grape varieties.",
+  "regions": {
+    "vinho-verde": {
+      "name": "Vinho Verde",
+      "climate": "Maritime",
+      "styleSummary": "Light, fresh, high-acid whites with low alcohol.",
+      "mitigating": ["Atlantic Ocean", "high rainfall", "cool temperatures"],
+      "grapes": {
+        "Alvarinho": {
+          "style": "Citrus, peach, high acidity, more concentration than other Vinho Verde wines.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Low to Medium",
+            "body": "Light to Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Cool climate grape"],
+          "winemaking": ["Fresh styles"]
+        },
+        "Loureiro": {
+          "style": "Floral, citrus, aromatic white.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Low",
+            "body": "Light",
+            "tannin": "-"
+          },
+          "viticulture": ["Cool climate"],
+          "winemaking": ["Fresh, aromatic"]
+        }
+      }
+    },
+    "douro": {
+      "name": "Douro",
+      "climate": "Hot continental",
+      "styleSummary": "Powerful reds with high concentration and tannin.",
+      "mitigating": ["altitude variation", "river Douro", "terraced vineyards"],
+      "grapes": {
+        "Touriga Nacional": {
+          "style": "Black fruit, floral, high tannin, full body.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "High",
+            "body": "Full",
+            "tannin": "High"
+          },
+          "viticulture": ["Low yields"],
+          "winemaking": ["Blended wines"]
+        },
+        "Touriga Franca": {
+          "style": "Perfumed, softer, adds elegance.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "High",
+            "body": "Medium to Full",
+            "tannin": "Medium"
+          },
+          "viticulture": ["Reliable ripening"],
+          "winemaking": ["Blending grape"]
+        },
+        "Tinta Roriz": {
+          "style": "Red fruit, structure, similar to Tempranillo.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "High",
+            "body": "Medium to Full",
+            "tannin": "Medium to High"
+          },
+          "viticulture": ["Heat tolerant"],
+          "winemaking": ["Blended"]
+        }
+      }
+    },
+    "dao": {
+      "name": "Dao",
+      "climate": "Continental",
+      "styleSummary": "More elegant wines with freshness due to altitude.",
+      "mitigating": ["mountain protection", "altitude", "cooler conditions"],
+      "grapes": {
+        "Touriga Nacional": {
+          "style": "Black fruit, floral, structured but more elegant than Douro.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "Medium to High"
+          },
+          "viticulture": ["Cooler sites"],
+          "winemaking": ["Balanced styles"]
+        }
+      }
+    },
+    "alentejo": {
+      "name": "Alentejo",
+      "climate": "Hot Mediterranean",
+      "styleSummary": "Ripe, full-bodied wines with soft tannins.",
+      "mitigating": ["irrigation", "modern techniques"],
+      "grapes": {
+        "Aragonez": {
+          "style": "Ripe red fruit, medium tannin.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "High",
+            "body": "Full",
+            "tannin": "Medium"
+          },
+          "viticulture": ["Heat tolerant"],
+          "winemaking": ["Fruit-driven"]
+        },
+        "Trincadeira": {
+          "style": "Spicy, herbal, adds complexity.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium to High",
+            "body": "Medium",
+            "tannin": "Medium"
+          },
+          "viticulture": ["Sensitive to disease"],
+          "winemaking": ["Blended"]
+        }
+      }
+    },
+    "bairrada": {
+      "name": "Bairrada",
+      "climate": "Maritime",
+      "styleSummary": "High-acid reds with strong tannin.",
+      "mitigating": ["Atlantic influence", "high rainfall"],
+      "grapes": {
+        "Baga": {
+          "style": "High tannin, high acidity, red fruit, austere.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "High"
+          },
+          "viticulture": ["Difficult to ripen"],
+          "winemaking": ["Needs ageing"]
+        }
+      }
+    }
+  }
+}

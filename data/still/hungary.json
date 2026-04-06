@@ -1,0 +1,55 @@
+{
+  "name": "Hungary",
+  "summary": "Hungary is best known for Tokaj, producing both dry and botrytised sweet wines with high acidity.",
+  "regions": {
+    "tokaj": {
+      "name": "Tokaj",
+      "climate": "Continental",
+      "styleSummary": "High-acid wines ranging from dry to intensely sweet botrytised styles.",
+      "mitigating": ["river Bodrog and Tisza", "morning mist", "warm autumn", "volcanic soils"],
+      "grapes": {
+        "Furmint": {
+          "style": "High acidity, citrus, green apple, mineral, can be dry or sweet.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Susceptible to botrytis", "Late ripening"],
+          "winemaking": ["Dry styles increasingly important", "Also used in Tokaji Aszú"]
+        },
+        "Harslevelu": {
+          "style": "Aromatic, floral, softer and broader than Furmint.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Blending grape"],
+          "winemaking": ["Adds aroma and texture"]
+        }
+      }
+    },
+    "tokaji-aszu": {
+      "name": "Tokaji Aszú (Sweet)",
+      "climate": "Continental",
+      "styleSummary": "Intensely sweet wines balanced by very high acidity.",
+      "mitigating": ["botrytis", "morning mist", "warm autumn"],
+      "grapes": {
+        "Furmint": {
+          "style": "Honey, apricot, citrus peel, very high acidity, intense sweetness.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Low to Medium",
+            "body": "Full",
+            "tannin": "-"
+          },
+          "viticulture": ["Botrytis essential"],
+          "winemaking": ["Aszú paste added to base wine", "High sugar levels"]
+        }
+      }
+    }
+  }
+}

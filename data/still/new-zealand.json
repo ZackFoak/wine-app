@@ -1,0 +1,156 @@
+{
+  "name": "New Zealand",
+  "summary": "New Zealand produces highly aromatic wines due to its cool maritime climate, especially Sauvignon Blanc.",
+  "regions": {
+    "marlborough": {
+      "name": "Marlborough",
+      "climate": "Cool maritime",
+      "styleSummary": "Highly aromatic wines with high acidity and intense fruit.",
+      "mitigating": ["high sunshine", "cool nights", "maritime influence"],
+      "grapes": {
+        "Sauvignon Blanc": {
+          "style": "Passion fruit, gooseberry, lime, very high acidity.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Light to Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Large diurnal range enhances aromatics"],
+          "winemaking": ["Cool fermentation", "Stainless steel"]
+        },
+        "Pinot Noir": {
+          "style": "Red cherry, raspberry, light body, fresh acidity.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Light to Medium",
+            "tannin": "Low to Medium"
+          },
+          "viticulture": ["Cool climate"],
+          "winemaking": ["Light extraction"]
+        },
+        "Chardonnay": {
+          "style": "Citrus, green apple, sometimes lightly oaked.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Cool climate"],
+          "winemaking": ["Fresh or lightly oaked"]
+        }
+      }
+    },
+    "central-otago": {
+      "name": "Central Otago",
+      "climate": "Cool continental",
+      "styleSummary": "New Zealand’s warmest but still cool region, known for Pinot Noir.",
+      "mitigating": ["high altitude", "large diurnal range", "sunshine"],
+      "grapes": {
+        "Pinot Noir": {
+          "style": "Riper red fruit than Marlborough, fuller body, still fresh acidity.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium to High",
+            "body": "Medium",
+            "tannin": "Medium"
+          },
+          "viticulture": ["Cool but sunny"],
+          "winemaking": ["More structure than Marlborough"]
+        }
+      }
+    },
+    "hawkes-bay": {
+      "name": "Hawke’s Bay",
+      "climate": "Warm maritime",
+      "styleSummary": "Fuller-bodied reds and some rich whites.",
+      "mitigating": ["sunshine", "coastal influence"],
+      "grapes": {
+        "Cabernet Sauvignon": {
+          "style": "Blackcurrant, structured, medium to full body.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium to High",
+            "body": "Full",
+            "tannin": "High"
+          },
+          "viticulture": ["Warm sites"],
+          "winemaking": ["Often blended"]
+        },
+        "Merlot": {
+          "style": "Plum, softer tannin, medium to full body.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium to High",
+            "body": "Medium to Full",
+            "tannin": "Medium"
+          },
+          "viticulture": ["Warmer conditions"],
+          "winemaking": ["Blended styles common"]
+        },
+        "Chardonnay": {
+          "style": "Riper style, stone fruit, sometimes oak.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium to High",
+            "body": "Medium to Full",
+            "tannin": "-"
+          },
+          "viticulture": ["Warm climate"],
+          "winemaking": ["MLF + oak possible"]
+        }
+      }
+    },
+    "wairarapa": {
+      "name": "Wairarapa / Martinborough",
+      "climate": "Cool maritime",
+      "styleSummary": "Premium Pinot Noir with elegance and structure.",
+      "mitigating": ["cool climate", "wind", "low rainfall"],
+      "grapes": {
+        "Pinot Noir": {
+          "style": "Red fruit, savoury notes, fresh acidity, elegant structure.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Light to Medium",
+            "tannin": "Medium"
+          },
+          "viticulture": ["Small region but high quality"],
+          "winemaking": ["Refined styles"]
+        }
+      }
+    },
+    "nelson": {
+      "name": "Nelson",
+      "climate": "Maritime",
+      "styleSummary": "Aromatic whites and some Pinot Noir.",
+      "mitigating": ["coastal influence", "sunshine"],
+      "grapes": {
+        "Sauvignon Blanc": {
+          "style": "Fresh citrus and tropical fruit.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Light",
+            "tannin": "-"
+          },
+          "viticulture": ["Good sunshine"],
+          "winemaking": ["Fresh styles"]
+        },
+        "Pinot Noir": {
+          "style": "Red fruit, light to medium body.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Light to Medium",
+            "tannin": "Low to Medium"
+          },
+          "viticulture": ["Cool climate"],
+          "winemaking": ["Light extraction"]
+        }
+      }
+    }
+  }
+}

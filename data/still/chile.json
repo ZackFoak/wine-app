@@ -1,0 +1,145 @@
+{
+  "name": "USA",
+  "summary": "USA produces a wide range of wine styles, especially in California, influenced by ocean currents, fog and topography.",
+  "regions": {
+    "napa-valley": {
+      "name": "Napa Valley",
+      "climate": "Warm Mediterranean",
+      "styleSummary": "Full-bodied, ripe wines with high alcohol and concentration.",
+      "mitigating": ["morning fog", "diurnal range", "valley vs hillside differences"],
+      "grapes": {
+        "Cabernet Sauvignon": {
+          "style": "Blackcurrant, cassis, oak, full body, high tannin.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "High",
+            "body": "Full",
+            "tannin": "High"
+          },
+          "viticulture": ["Warm climate ensures ripening"],
+          "winemaking": ["Oak ageing common"]
+        },
+        "Chardonnay": {
+          "style": "Ripe citrus, tropical fruit, often buttery and oaky.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium to High",
+            "body": "Medium to Full",
+            "tannin": "-"
+          },
+          "viticulture": ["Warm sites"],
+          "winemaking": ["MLF + oak common"]
+        }
+      }
+    },
+    "sonoma": {
+      "name": "Sonoma",
+      "climate": "Mediterranean (cooler than Napa)",
+      "styleSummary": "More balanced wines due to stronger cooling influence.",
+      "mitigating": ["Pacific fog", "cool air corridors"],
+      "grapes": {
+        "Pinot Noir": {
+          "style": "Red fruit, fresh acidity, elegant structure.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Light to Medium",
+            "tannin": "Low to Medium"
+          },
+          "viticulture": ["Cooler sites"],
+          "winemaking": ["Gentle extraction"]
+        },
+        "Chardonnay": {
+          "style": "From fresh citrus to richer oaked styles.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Coastal cooling"],
+          "winemaking": ["Variable styles"]
+        }
+      }
+    },
+    "central-coast": {
+      "name": "Central Coast",
+      "climate": "Mediterranean",
+      "styleSummary": "Wide range of styles depending on proximity to ocean.",
+      "mitigating": ["ocean influence", "fog", "altitude"],
+      "grapes": {
+        "Chardonnay": {
+          "style": "Fresh to ripe styles depending on site.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Coastal variation"],
+          "winemaking": ["Fresh or oaked"]
+        },
+        "Pinot Noir": {
+          "style": "Red fruit, light to medium body.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Light to Medium",
+            "tannin": "Low to Medium"
+          },
+          "viticulture": ["Cooler sites near coast"],
+          "winemaking": ["Light extraction"]
+        }
+      }
+    },
+    "oregon": {
+      "name": "Oregon",
+      "climate": "Cool maritime",
+      "styleSummary": "Elegant, high-acid wines, especially Pinot Noir.",
+      "mitigating": ["cool climate", "long growing season"],
+      "grapes": {
+        "Pinot Noir": {
+          "style": "Red cherry, raspberry, high acidity, elegant.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Light to Medium",
+            "tannin": "Low to Medium"
+          },
+          "viticulture": ["Cool climate"],
+          "winemaking": ["Refined styles"]
+        }
+      }
+    },
+    "washington-state": {
+      "name": "Washington State",
+      "climate": "Continental",
+      "styleSummary": "Ripe fruit with good acidity due to diurnal range.",
+      "mitigating": ["rain shadow", "irrigation", "cool nights"],
+      "grapes": {
+        "Cabernet Sauvignon": {
+          "style": "Black fruit, structured, balanced acidity.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium to High",
+            "body": "Full",
+            "tannin": "High"
+          },
+          "viticulture": ["Warm days, cool nights"],
+          "winemaking": ["Often oak aged"]
+        },
+        "Merlot": {
+          "style": "Plum, soft tannin, medium to full body.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium to High",
+            "body": "Medium to Full",
+            "tannin": "Medium"
+          },
+          "viticulture": ["Reliable ripening"],
+          "winemaking": ["Often blended"]
+        }
+      }
+    }
+  }
+}

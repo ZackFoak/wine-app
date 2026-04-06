@@ -1,0 +1,295 @@
+{
+  "name": "Spain",
+  "summary": "Spain combines Atlantic, continental and Mediterranean influences depending on region, altitude and distance from the sea.",
+  "regions": {
+    "rias-baixas": {
+      "name": "Rias Baixas",
+      "climate": "Maritime",
+      "styleSummary": "Fresh high-acid whites with citrus, stone fruit and saline notes.",
+      "mitigating": ["Atlantic influence", "high rainfall", "canopy management", "coastal breezes"],
+      "grapes": {
+        "Albarino": {
+          "style": "High-acid aromatic white with citrus, peach and saline notes.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Light to Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Suitable for cool wet climate", "Needs good canopy management in humid conditions"],
+          "winemaking": ["Usually fresh dry style", "Generally unoaked"]
+        }
+      }
+    },
+    "rueda": {
+      "name": "Rueda",
+      "climate": "Continental",
+      "styleSummary": "Fresh aromatic whites, especially from Verdejo.",
+      "mitigating": ["altitude", "cool nights", "continental conditions"],
+      "grapes": {
+        "Verdejo": {
+          "style": "Citrus, herb and stone-fruit white with good freshness.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Light to Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Performs well with warm days and cool nights"],
+          "winemaking": ["Usually fresh styles", "Occasionally lees or oak influence"]
+        },
+        "Sauvignon Blanc": {
+          "style": "Fresh citrus and herbaceous white with pronounced aromatics.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Low to Medium",
+            "body": "Light",
+            "tannin": "-"
+          },
+          "viticulture": ["Can retain freshness in cooler elevated sites"],
+          "winemaking": ["Usually cool fermented", "Fresh aromatic style"]
+        }
+      }
+    },
+    "rioja": {
+      "name": "Rioja",
+      "climate": "Mixed / Transitional",
+      "styleSummary": "Can range from fresher elegant styles to riper fuller expressions depending on subregion and oak ageing.",
+      "mitigating": ["altitude", "mountain shelter", "subregional variation", "Atlantic influence in cooler areas"],
+      "grapes": {
+        "Tempranillo": {
+          "style": "Red and black fruit, medium to high body, spice and leather with age.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium to High",
+            "body": "Medium to Full",
+            "tannin": "Medium"
+          },
+          "viticulture": ["Ripens relatively early", "Can retain freshness in suitable sites"],
+          "winemaking": ["American or French oak common", "Ageing classifications important"]
+        },
+        "Garnacha": {
+          "style": "Riper red fruit and spice, fuller body.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "High",
+            "body": "Full",
+            "tannin": "Medium"
+          },
+          "viticulture": ["Heat tolerant"],
+          "winemaking": ["Often blended"]
+        },
+        "Graciano": {
+          "style": "Perfumed dark fruit and freshness, often used to add acidity and structure.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "Medium to High"
+          },
+          "viticulture": ["Lower yielding and harder to ripen"],
+          "winemaking": ["Usually a blending component"]
+        },
+        "Mazuelo": {
+          "style": "Adds colour, tannin and acidity to blends.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "High"
+          },
+          "viticulture": ["Late ripening"],
+          "winemaking": ["Mostly blended"]
+        },
+        "Viura": {
+          "style": "Citrus, floral notes and can be fresh or oak-aged.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Performs well in Rioja"],
+          "winemaking": ["Fresh or oak-aged white styles"]
+        }
+      }
+    },
+    "ribera-del-duero": {
+      "name": "Ribera del Duero",
+      "climate": "Continental",
+      "styleSummary": "Structured reds with ripe fruit, firm tannin and freshness from altitude.",
+      "mitigating": ["high altitude", "large diurnal range", "river influence"],
+      "grapes": {
+        "Tempranillo": {
+          "style": "Ripe black fruit, firm tannin, fuller body and fresh acidity.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium to High",
+            "body": "Full",
+            "tannin": "High"
+          },
+          "viticulture": ["Warm days and cool nights help ripening balance"],
+          "winemaking": ["Oak common", "Often more concentrated than Rioja"]
+        }
+      }
+    },
+    "priorat": {
+      "name": "Priorat",
+      "climate": "Mediterranean",
+      "styleSummary": "Powerful concentrated reds from warm dry conditions and poor slate soils.",
+      "mitigating": ["altitude", "poor slate soils", "diurnal range", "low yields"],
+      "grapes": {
+        "Garnacha": {
+          "style": "Ripe black and red fruit, spice, high alcohol and concentration.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "High",
+            "body": "Full",
+            "tannin": "Medium"
+          },
+          "viticulture": ["Old vines often important", "Very low yields in poor soils"],
+          "winemaking": ["Concentrated styles", "Oak often used"]
+        },
+        "Carinena": {
+          "style": "Dark fruit, high acidity, structure and mineral edge.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium to High",
+            "body": "Full",
+            "tannin": "High"
+          },
+          "viticulture": ["Thrives in warm dry sites with low yields"],
+          "winemaking": ["Often blended with Garnacha"]
+        }
+      }
+    },
+    "navarra": {
+      "name": "Navarra",
+      "climate": "Mixed / Transitional",
+      "styleSummary": "A diverse region producing fresh rosé, reds and some whites.",
+      "mitigating": ["Atlantic influence in north", "Mediterranean warmth in south", "altitude variation"],
+      "grapes": {
+        "Garnacha": {
+          "style": "Ripe red fruit and spice, widely used for rosé and reds.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "High",
+            "body": "Medium to Full",
+            "tannin": "Medium"
+          },
+          "viticulture": ["Heat tolerant", "Useful across varied sites"],
+          "winemaking": ["Rosé and red styles common"]
+        },
+        "Tempranillo": {
+          "style": "Fresh red and black fruit with medium body.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "Medium"
+          },
+          "viticulture": ["Adaptable in mixed climate zones"],
+          "winemaking": ["Often blended"]
+        }
+      }
+    },
+    "catalunya": {
+      "name": "Catalunya",
+      "climate": "Mediterranean",
+      "styleSummary": "Wide range of still wines from an extensive and varied region.",
+      "mitigating": ["coastal influence", "altitude in inland sites", "Mediterranean warmth"],
+      "grapes": {
+        "Garnacha": {
+          "style": "Ripe red fruit, spice and medium to full body.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "High",
+            "body": "Full",
+            "tannin": "Medium"
+          },
+          "viticulture": ["Performs well in warm conditions"],
+          "winemaking": ["Blended and varietal styles possible"]
+        },
+        "Macabeo": {
+          "style": "Neutral to lightly floral white with citrus and orchard fruit.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Low to Medium",
+            "body": "Light to Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Widely planted", "Useful in both still and sparkling wine"],
+          "winemaking": ["Fresh dry styles common"]
+        }
+      }
+    },
+    "la-mancha": {
+      "name": "La Mancha",
+      "climate": "Continental",
+      "styleSummary": "Large hot dry inland region producing volume and increasingly better quality wines.",
+      "mitigating": ["altitude", "dry conditions", "wide diurnal range"],
+      "grapes": {
+        "Tempranillo": {
+          "style": "Ripe dark fruit with moderate acidity.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium to High",
+            "body": "Medium to Full",
+            "tannin": "Medium"
+          },
+          "viticulture": ["Warm dry conditions aid ripening"],
+          "winemaking": ["Fruit-driven styles common"]
+        },
+        "Airen": {
+          "style": "Neutral white, generally simple and light.",
+          "profile": {
+            "acidity": "Low to Medium",
+            "alcohol": "Low to Medium",
+            "body": "Light",
+            "tannin": "-"
+          },
+          "viticulture": ["Very drought tolerant", "High yielding"],
+          "winemaking": ["Usually simple fresh white styles"]
+        }
+      }
+    },
+    "jumilla": {
+      "name": "Jumilla",
+      "climate": "Mediterranean to Continental-influenced",
+      "styleSummary": "Hot dry region known for ripe, powerful Monastrell.",
+      "mitigating": ["altitude", "very low rainfall", "dry sunny conditions"],
+      "grapes": {
+        "Monastrell": {
+          "style": "Dark fruit, spice, high alcohol and firm tannin.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "High",
+            "body": "Full",
+            "tannin": "High"
+          },
+          "viticulture": ["Very drought tolerant", "Performs well in hot dry climates"],
+          "winemaking": ["Can be powerful and concentrated"]
+        }
+      }
+    },
+    "valencia": {
+      "name": "Valencia",
+      "climate": "Mediterranean",
+      "styleSummary": "Warm-climate region producing both reds and whites in a range of styles.",
+      "mitigating": ["coastal influence", "warm sunshine", "altitude inland"],
+      "grapes": {
+        "Monastrell": {
+          "style": "Ripe dark fruit and spice with full body.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "High",
+            "body": "Full",
+            "tannin": "High"
+          },
+          "viticulture": ["Heat and drought tolerant"],
+          "winemaking": ["Often rich styles"]
+        }
+      }
+    }
+  }
+}

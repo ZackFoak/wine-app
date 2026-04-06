@@ -1,0 +1,38 @@
+{
+  "name": "USA",
+  "summary": "USA shows a wide range of climates, with California being the key region for premium wine production.",
+  "regions": {
+    "california": {
+      "name": "California",
+      "climate": "Mediterranean",
+      "styleSummary": "Ripe fruit-driven wines with freshness maintained by Pacific influence.",
+      "mitigating": ["Pacific Ocean", "cool currents", "fog", "altitude"],
+      "grapes": {
+        "Cabernet Sauvignon": {
+          "style": "Blackcurrant, oak spice, full body, high tannin.",
+          "profile": { "acidity": "Medium", "alcohol": "High", "body": "Full", "tannin": "High" },
+          "viticulture": ["Needs warmth to ripen"],
+          "winemaking": ["Oak ageing common"]
+        },
+        "Zinfandel": {
+          "style": "Jammy red fruit, spice, high alcohol.",
+          "profile": { "acidity": "Medium", "alcohol": "High", "body": "Full", "tannin": "Medium" },
+          "viticulture": ["Uneven ripening common"],
+          "winemaking": ["Often rich styles"]
+        },
+        "Chardonnay": {
+          "style": "Ranges from fresh citrus to full buttery oak styles.",
+          "profile": { "acidity": "Medium to High", "alcohol": "Medium to High", "body": "Medium to Full", "tannin": "-" },
+          "viticulture": ["Widely adaptable"],
+          "winemaking": ["MLF + oak common"]
+        },
+        "Pinot Noir": {
+          "style": "Red fruit, soft tannin, elegant in cooler areas.",
+          "profile": { "acidity": "Medium to High", "alcohol": "Medium", "body": "Light to Medium", "tannin": "Low to Medium" },
+          "viticulture": ["Prefers cool climates"],
+          "winemaking": ["Gentle extraction"]
+        }
+      }
+    }
+  }
+}

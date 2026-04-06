@@ -1,0 +1,145 @@
+{
+  "name": "Austria",
+  "summary": "Austria produces high-acid whites and structured reds in a continental climate, with important regions along the Danube and around Lake Neusiedl.",
+  "regions": {
+    "wachau": {
+      "name": "Wachau",
+      "climate": "Continental",
+      "styleSummary": "Premium whites with high acidity, concentration and ageing potential.",
+      "mitigating": ["Danube river", "steep slopes", "diurnal range"],
+      "grapes": {
+        "Gruner Veltliner": {
+          "style": "Citrus, green apple, white pepper, high acidity.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium to High",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Best on steep terraces"],
+          "winemaking": ["Dry styles, sometimes lees ageing"]
+        },
+        "Riesling": {
+          "style": "High-acid citrus and stone fruit with mineral character.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Light to Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Needs warm sites"],
+          "winemaking": ["Usually dry"]
+        }
+      }
+    },
+    "kremstal": {
+      "name": "Kremstal",
+      "climate": "Continental",
+      "styleSummary": "Similar to Wachau but slightly lighter styles.",
+      "mitigating": ["Danube influence", "altitude variation"],
+      "grapes": {
+        "Gruner Veltliner": {
+          "style": "Fresh citrus, pepper, medium body.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Wide range of sites"],
+          "winemaking": ["Mostly dry"]
+        },
+        "Riesling": {
+          "style": "Citrus, floral, fresh acidity.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Light to Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Cool climate"],
+          "winemaking": ["Dry styles"]
+        }
+      }
+    },
+    "kamptal": {
+      "name": "Kamptal",
+      "climate": "Continental",
+      "styleSummary": "Structured whites with both ripeness and freshness.",
+      "mitigating": ["river Kamp", "diurnal range"],
+      "grapes": {
+        "Gruner Veltliner": {
+          "style": "Spicy, citrus, structured.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Good sun exposure"],
+          "winemaking": ["Dry styles"]
+        },
+        "Riesling": {
+          "style": "Ripe citrus and stone fruit with high acidity.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Warm sites"],
+          "winemaking": ["Dry"]
+        }
+      }
+    },
+    "burgenland": {
+      "name": "Burgenland",
+      "climate": "Warm continental",
+      "styleSummary": "Important for both red wines and sweet wines.",
+      "mitigating": ["Lake Neusiedl", "warm conditions", "humidity for botrytis"],
+      "grapes": {
+        "Blaufrankisch": {
+          "style": "Dark fruit, high acidity, structured tannins.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium to High",
+            "body": "Medium to Full",
+            "tannin": "High"
+          },
+          "viticulture": ["Late ripening"],
+          "winemaking": ["Can be oak aged"]
+        },
+        "Zweigelt": {
+          "style": "Juicy red fruit, softer tannin.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "Medium"
+          },
+          "viticulture": ["Reliable"],
+          "winemaking": ["Fruit-driven styles"]
+        }
+      }
+    },
+    "neusiedlersee": {
+      "name": "Neusiedlersee",
+      "climate": "Warm continental",
+      "styleSummary": "Famous for botrytised sweet wines.",
+      "mitigating": ["Lake Neusiedl humidity", "warm autumn"],
+      "grapes": {
+        "Welschriesling": {
+          "style": "High acid, citrus, used for sweet wines.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Low",
+            "body": "Light to Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Susceptible to botrytis"],
+          "winemaking": ["Sweet wines"]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Asti",
+  "summary": "Sweet, aromatic sparkling wines made by tank method.",
+  "regions": {
+    "piemonte": {
+      "name": "Piemonte",
+      "climate": "Continental",
+      "styleSummary": "Sweet, low alcohol, highly aromatic wines.",
+      "mitigating": ["cool climate"],
+      "grapes": {
+        "Moscato": {
+          "style": "Grapey, floral, sweet, low alcohol.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Low",
+            "body": "Light",
+            "tannin": "-"
+          },
+          "viticulture": ["Aromatic"],
+          "winemaking": ["Single fermentation tank method"]
+        }
+      }
+    }
+  }
+}

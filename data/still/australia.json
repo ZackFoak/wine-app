@@ -1,0 +1,216 @@
+{
+  "name": "Australia",
+  "summary": "Australia ranges from hot inland regions to cool coastal areas, producing a wide range of wine styles.",
+  "regions": {
+    "barossa-valley": {
+      "name": "Barossa Valley",
+      "climate": "Warm Mediterranean",
+      "styleSummary": "Full-bodied, powerful wines with ripe fruit and high alcohol.",
+      "mitigating": ["old vines", "dry conditions"],
+      "grapes": {
+        "Shiraz": {
+          "style": "Black fruit, jammy, spice, high alcohol, full body.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "High",
+            "body": "Full",
+            "tannin": "Medium to High"
+          },
+          "viticulture": ["Old vines common", "Drought tolerant"],
+          "winemaking": ["Often oak aged", "Rich styles"]
+        },
+        "Grenache": {
+          "style": "Ripe red fruit, spice, high alcohol.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "High",
+            "body": "Full",
+            "tannin": "Medium"
+          },
+          "viticulture": ["Heat tolerant"],
+          "winemaking": ["Often blended"]
+        }
+      }
+    },
+    "eden-valley": {
+      "name": "Eden Valley",
+      "climate": "Cooler (higher altitude)",
+      "styleSummary": "More elegant wines with higher acidity than Barossa.",
+      "mitigating": ["altitude", "cool nights"],
+      "grapes": {
+        "Riesling": {
+          "style": "High acid, lime, floral, very fresh.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Low to Medium",
+            "body": "Light",
+            "tannin": "-"
+          },
+          "viticulture": ["Retains acidity well"],
+          "winemaking": ["Usually dry, unoaked"]
+        },
+        "Shiraz": {
+          "style": "More peppery, less jammy than Barossa.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "Medium"
+          },
+          "viticulture": ["Cooler sites"],
+          "winemaking": ["More elegant styles"]
+        }
+      }
+    },
+    "mclaren-vale": {
+      "name": "McLaren Vale",
+      "climate": "Warm Mediterranean",
+      "styleSummary": "Ripe, full-bodied reds with some coastal freshness.",
+      "mitigating": ["sea breezes"],
+      "grapes": {
+        "Shiraz": {
+          "style": "Ripe black fruit, spice, full body.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "High",
+            "body": "Full",
+            "tannin": "Medium to High"
+          },
+          "viticulture": ["Warm climate"],
+          "winemaking": ["Often rich styles"]
+        },
+        "Grenache": {
+          "style": "Ripe red fruit, softer tannins.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "High",
+            "body": "Medium to Full",
+            "tannin": "Medium"
+          },
+          "viticulture": ["Heat tolerant"],
+          "winemaking": ["Often blended"]
+        }
+      }
+    },
+    "hunter-valley": {
+      "name": "Hunter Valley",
+      "climate": "Warm maritime",
+      "styleSummary": "Unique style wines with lower alcohol and early picking.",
+      "mitigating": ["cloud cover", "early harvest"],
+      "grapes": {
+        "Semillon": {
+          "style": "Low alcohol, high acid, develops toast and honey with age.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Low",
+            "body": "Light",
+            "tannin": "-"
+          },
+          "viticulture": ["Early harvested"],
+          "winemaking": ["Usually unoaked"]
+        },
+        "Shiraz": {
+          "style": "Medium-bodied, earthy, savoury.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "Medium"
+          },
+          "viticulture": ["Earlier picked"],
+          "winemaking": ["More restrained style"]
+        }
+      }
+    },
+    "margaret-river": {
+      "name": "Margaret River",
+      "climate": "Maritime",
+      "styleSummary": "Balanced wines with both ripeness and freshness.",
+      "mitigating": ["strong ocean influence"],
+      "grapes": {
+        "Cabernet Sauvignon": {
+          "style": "Blackcurrant, structured, fresh acidity.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Full",
+            "tannin": "High"
+          },
+          "viticulture": ["Moderate climate"],
+          "winemaking": ["Often oak aged"]
+        },
+        "Chardonnay": {
+          "style": "Citrus, stone fruit, sometimes oak and MLF.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Medium to Full",
+            "tannin": "-"
+          },
+          "viticulture": ["Balanced ripening"],
+          "winemaking": ["MLF + oak common"]
+        }
+      }
+    },
+    "yarra-valley": {
+      "name": "Yarra Valley",
+      "climate": "Cool maritime",
+      "styleSummary": "Elegant wines with high acidity and lower alcohol.",
+      "mitigating": ["cool climate", "altitude"],
+      "grapes": {
+        "Pinot Noir": {
+          "style": "Red fruit, light body, fresh acidity.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Light to Medium",
+            "tannin": "Low to Medium"
+          },
+          "viticulture": ["Cool climate grape"],
+          "winemaking": ["Light extraction"]
+        },
+        "Chardonnay": {
+          "style": "Citrus, green apple, fresh style.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Cool climate"],
+          "winemaking": ["Fresh or lightly oaked"]
+        }
+      }
+    },
+    "tasmania": {
+      "name": "Tasmania",
+      "climate": "Cool maritime",
+      "styleSummary": "Very cool climate producing high-acid wines, important for sparkling.",
+      "mitigating": ["southern latitude", "cool ocean influence"],
+      "grapes": {
+        "Pinot Noir": {
+          "style": "Light, fresh, red fruit with high acidity.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Low to Medium",
+            "body": "Light",
+            "tannin": "Low to Medium"
+          },
+          "viticulture": ["Very cool climate"],
+          "winemaking": ["Delicate styles"]
+        },
+        "Chardonnay": {
+          "style": "High acid, citrus, ideal for sparkling wine.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Low to Medium",
+            "body": "Light to Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Cool climate ideal"],
+          "winemaking": ["Used for sparkling"]
+        }
+      }
+    }
+  }
+}

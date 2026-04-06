@@ -1,0 +1,47 @@
+{
+  "name": "Champagne",
+  "summary": "Champagne is the most important traditional method sparkling wine, known for high acidity and complex flavours.",
+  "regions": {
+    "champagne": {
+      "name": "Champagne",
+      "climate": "Cool continental",
+      "styleSummary": "High-acid sparkling wines with autolytic complexity.",
+      "mitigating": ["chalk soils", "cool climate", "blending"],
+      "grapes": {
+        "Chardonnay": {
+          "style": "Citrus, green apple, high acidity, elegant.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Low to Medium",
+            "body": "Light to Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Early ripening"],
+          "winemaking": ["Blanc de Blancs"]
+        },
+        "Pinot Noir": {
+          "style": "Red fruit, body, structure.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "Low"
+          },
+          "viticulture": ["Adds body"],
+          "winemaking": ["Blanc de Noirs"]
+        },
+        "Pinot Meunier": {
+          "style": "Fruitier, softer, earlier drinking.",
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "Low"
+          },
+          "viticulture": ["Frost resistant"],
+          "winemaking": ["Blending grape"]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "name": "Greece",
+  "summary": "Greece combines Mediterranean warmth with altitude, wind and volcanic soils, producing wines with high acidity and distinctive character.",
+  "regions": {
+    "santorini": {
+      "name": "Santorini",
+      "climate": "Hot Mediterranean",
+      "styleSummary": "Very high-acid whites despite hot climate, with mineral and saline character.",
+      "mitigating": ["strong winds", "basket training (kouloura)", "volcanic soils", "low rainfall"],
+      "grapes": {
+        "Assyrtiko": {
+          "style": "Citrus, mineral, saline, very high acidity.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "viticulture": ["Drought resistant", "Trained low to ground to protect from wind"],
+          "winemaking": ["Dry styles", "Also sweet wines (Vinsanto)"]
+        }
+      }
+    },
+    "naoussa": {
+      "name": "Naoussa",
+      "climate": "Mediterranean with continental influence",
+      "styleSummary": "Structured, ageworthy reds with high tannin and acidity.",
+      "mitigating": ["altitude", "cooler inland conditions"],
+      "grapes": {
+        "Xinomavro": {
+          "style": "Red fruit, tomato leaf, high acidity, high tannin.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "High"
+          },
+          "viticulture": ["Late ripening"],
+          "winemaking": ["Often aged, complex styles"]
+        }
+      }
+    },
+    "nemea": {
+      "name": "Nemea",
+      "climate": "Mediterranean",
+      "styleSummary": "Ripe, fruit-driven reds with varying structure depending on altitude.",
+      "mitigating": ["altitude variation", "inland influence"],
+      "grapes": {
+        "Agiorgitiko": {
+          "style": "Ripe red fruit, medium tannin, softer style than Xinomavro.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium to High",
+            "body": "Medium to Full",
+            "tannin": "Medium"
+          },
+          "viticulture": ["Adaptable to different altitudes"],
+          "winemaking": ["Fresh to oaked styles"]
+        }
+      }
+    },
+    "mantinia": {
+      "name": "Mantinia",
+      "climate": "Cooler Mediterranean (high altitude)",
+      "styleSummary": "Aromatic whites with high acidity and fresh style.",
+      "mitigating": ["high altitude", "cool nights"],
+      "grapes": {
+        "Moschofilero": {
+          "style": "Floral, citrus, aromatic with high acidity.",
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Low to Medium",
+            "body": "Light",
+            "tannin": "-"
+          },
+          "viticulture": ["Thrives in cooler sites"],
+          "winemaking": ["Fresh aromatic styles"]
+        }
+      }
+    },
+    "samos": {
+      "name": "Samos",
+      "climate": "Hot Mediterranean",
+      "styleSummary": "Sweet wines from Muscat with intense aromatics.",
+      "mitigating": ["altitude", "steep slopes"],
+      "grapes": {
+        "Muscat": {
+          "style": "Floral, grapey, sweet with high aroma intensity.",
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Low to Medium",
+            "body": "Medium to Full",
+            "tannin": "-"
+          },
+          "viticulture": ["Steep terraces"],
+          "winemaking": ["Sweet wines"]
+        }
+      }
+    }
+  }
+}

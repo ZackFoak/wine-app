@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Wine Atlas PRO</title>
+  <style>
+    :root {
+      --bg: #f6f1eb;
+      --panel: rgba(255, 252, 248, 0.88);
+      --panel-border: rgba(120, 72, 48, 0.15);
+      --text: #2f241f;
+      --muted: #7b6a61;
+      --accent: #7b1e3a;
+      --accent-2: #b8893c;
+      --accent-soft: #f3e6d8;
+      --shadow: 0 12px 30px rgba(54, 30, 18, 0.12);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      height: 100%;
+      font-family: Inter, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, #fff7ef 0%, #f3e7da 35%, #eadccf 100%);
+    }
+
+    body {
+      display: flex;
+      overflow: hidden;
+    }
+
+    #map {
+      height: 100vh;
+      width: 68%;
+      filter: saturate(1.02) contrast(1.01);
+    }
+
+    #panel {
+      width: 32%;
+      height: 100vh;
+      padding: 24px;
+      overflow: auto;
+      background: var(--panel);
+      backdrop-filter: blur(16px);
+      border-left: 1px solid var(--panel-border);
+      box-shadow: -10px 0 30px rgba(0,0,0,0.05);
+    }
+
+    #title {
+      margin: 0 0 8px;
+      font-size: 28px;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+
+    #breadcrumb {
+      margin-bottom: 16px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .breadcrumb-link {
+      cursor: pointer;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .breadcrumb-sep {
+      color: #b3a39a;
+      padding: 0 6px;
+    }
+
+    .toolbar {
+      position: absolute;
+      left: 24px;
+      top: 20px;
+      z-index: 1000;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      width: min(760px, calc(100vw - 80px));
+      padding: 14px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.76);
+      backdrop-filter: blur(16px);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255,255,255,0.5);
+    }
+
+    .toolbar-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      width: 100%;
+      align-items: center;
+    }
+
+    #searchInput {
+      flex: 1;
+      min-width: 240px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      border: 1px solid #e1d3c8;
+      background: rgba(255,255,255,0.92);
+      font-size: 14px;
+      outline: none;
+    }
+
+    #searchInput:focus {
+      border-color: var(--accent-2);
+      box-shadow: 0 0 0 4px rgba(184, 137, 60, 0.12);
+    }
+
+    .btn {
+      padding: 10px 14px;
+      border: none;
+      border-radius: 12px;
+      background: white;
+      color: var(--text);
+      cursor: pointer;
+      transition: transform .16s ease, box-shadow .16s ease, background .16s ease, color .16s ease;
+      box-shadow: 0 4px 12px rgba(50, 28, 16, 0.06);
+      font-weight: 600;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 18px rgba(50, 28, 16, 0.12);
+    }
+
+    .btn.active {
+      background: linear-gradient(135deg, var(--accent), #9a274b);
+      color: white;
+    }
+
+    .btn.secondary {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+
+    .section-card {
+      background: rgba(255,255,255,0.72);
+      border: 1px solid rgba(120,72,48,0.12);
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 14px;
+      box-shadow: 0 4px 16px rgba(54, 30, 18, 0.05);
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin: 14px 0 18px;
+    }
+
+    .meta-item {
+      padding: 12px;
+      border-radius: 14px;
+      background: #fffaf5;
+      border: 1px solid #efe2d5;
+    }
+
+    .meta-label {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .meta-value {
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 7px 10px;
+      margin: 4px 6px 4px 0;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid #ecdccf;
+      cursor: pointer;
+      transition: all .15s ease;
+    }
+
+    .pill:hover {
+      background: #fff8f1;
+      border-color: #d9b58e;
+    }
+
+    .list-card {
+      padding: 14px;
+      border-radius: 16px;
+      border: 1px solid #eadccf;
+      background: rgba(255,255,255,0.8);
+      margin-bottom: 10px;
+    }
+
+    .quiz-result-good {
+      color: #1f7a44;
+      font-weight: 700;
+    }
+
+    .quiz-result-bad {
+      color: #b42318;
+      font-weight: 700;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    @media (max-width: 1024px) {
+      body {
+        flex-direction: column;
+      }
+
+      #map, #panel {
+        width: 100%;
+      }
+
+      #map {
+        height: 48vh;
+      }
+
+      #panel {
+        height: 52vh;
+      }
+
+      .toolbar {
+        width: calc(100vw - 24px);
+        left: 12px;
+        top: 12px;
+      }
+    }
+</style>
+
+  <!-- Leaflet (真實地圖) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="toolbar-row">
+    <input id="searchInput" placeholder="Search country, region, or grape..." />
+  </div>
+
+  <div class="toolbar-row">
+    <button class="btn filter-btn active" data-filter="all">All</button>
+    <button class="btn filter-btn" data-filter="still">Still</button>
+    <button class="btn filter-btn" data-filter="sparkling">Sparkling</button>
+    <button class="btn filter-btn" data-filter="fortified">Fortified</button>
+
+    <button class="btn secondary" id="quizBtn">Quiz</button>
+    <button class="btn secondary" id="favoritesBtn">Favorites</button>
+    <button class="btn secondary" id="progressBtn">Progress</button>
+    <button class="btn secondary" id="recentBtn">Recent</button>
+  </div>
+</div>
+
+<div id="map"></div>
+<div id="panel">
+  <h2 id="title">Click a country</h2>
+  <div id="breadcrumb" style="margin-bottom:10px; color:#666;"></div>
+  <div id="content">...</div>
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script type="module" src="js/app.js"></script>
+
+</body>
+</html>
