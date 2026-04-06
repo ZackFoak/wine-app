@@ -61,6 +61,17 @@ async function init() {
     <p>Use Search, Quiz, Favorites, and Progress to build your knowledge.</p>
   </div>
 `;
+  const toolbar = byId("topToolbar");
+  const toolbarToggle = byId("toolbarToggle");
+
+  if (toolbar && toolbarToggle) {
+    toolbarToggle.addEventListener("click", () => {
+      toolbar.classList.toggle("expanded");
+      toolbarToggle.textContent = toolbar.classList.contains("expanded")
+        ? "Filters ▴"
+        : "Filters ▾";
+    });
+  }
 }
 
 init();
@@ -68,7 +79,7 @@ init();
 // ================= COUNTRY =================
 async function showCountry(countryKey) {
   showLoading("Loading country...");
-  openSheet();
+  openSheetMid();
   try {
     const countryMeta = state.countriesData[countryKey];
     if (!countryMeta) return;
@@ -145,7 +156,7 @@ async function showCountry(countryKey) {
 // ================= REGION =================
 async function showRegion(countryKey, regionKey) {
   showLoading("Loading region...");
-  openSheet();
+  openSheetMid();
   try {
     const countryMeta = state.countriesData[countryKey];
     const country = await loadJson(`./data/${countryMeta.file}`);
@@ -221,7 +232,7 @@ async function showRegion(countryKey, regionKey) {
 // ================= GRAPE =================
 async function showGrape(countryKey, regionKey, grapeKey) {
   showLoading("Loading grape profile...");
-  openSheet();
+  openSheetFull();
   const countryMeta = state.countriesData[countryKey];
   const country = await loadJson(`./data/${countryMeta.file}`);
   const grape = country.regions[regionKey]?.grapes?.[grapeKey];
@@ -406,7 +417,7 @@ async function searchAll(term) {
 // ================= STYLE =================
 async function showStyle(countryKey, styleKey) {
   showLoading("Loading grape profile...");
-  openSheet();
+  openSheetFull();
   const countryMeta = state.countriesData[countryKey];
   const country = await loadJson(`./data/${countryMeta.file}`);
   const style = country.styles?.[styleKey];
@@ -472,21 +483,74 @@ function showProgress() {
 const sheet = document.getElementById("bottomSheet");
 const handle = document.querySelector(".sheet-handle");
 
-let startY = 0;
-let currentY = 0;
-let isDragging = false;
-let startTranslate = 42; // half-open
-let currentTranslate = 42;
+const SHEET_STATES = {
+  collapsed: 62,
+  mid: 32,
+  open: 8
+};
 
-function setSheetTranslate(percent) {
-  currentTranslate = Math.max(0, Math.min(42, percent));
-  sheet.style.transform = `translateY(${currentTranslate}%)`;
+let currentSheetState = "mid";
+let dragStartY = 0;
+let dragCurrentY = 0;
+let draggingSheet = false;
+
+function applySheetState(stateName) {
+  currentSheetState = stateName;
+  sheet.classList.remove("state-collapsed", "state-mid", "state-open");
+
+  if (stateName === "collapsed") {
+    sheet.classList.add("state-collapsed");
+  } else if (stateName === "open") {
+    sheet.classList.add("state-open");
+  } else {
+    sheet.classList.add("state-mid");
+  }
 }
 
-function onDragStart(clientY) {
-  startY = clientY;
-  isDragging = true;
+function getCurrentTranslatePercent() {
+  return SHEET_STATES[currentSheetState];
+}
+
+function startSheetDrag(clientY) {
+  dragStartY = clientY;
+  dragCurrentY = clientY;
+  draggingSheet = true;
   sheet.style.transition = "none";
+}
+
+function moveSheetDrag(clientY) {
+  if (!draggingSheet) return;
+
+  dragCurrentY = clientY;
+  const deltaY = dragCurrentY - dragStartY;
+  const base = getCurrentTranslatePercent();
+  const next = Math.max(8, Math.min(62, base + deltaY / 6));
+
+  sheet.style.transform = `translateY(${next}%)`;
+}
+
+function endSheetDrag() {
+  if (!draggingSheet) return;
+  draggingSheet = false;
+  sheet.style.transition = "transform 0.26s ease";
+
+  const deltaY = dragCurrentY - dragStartY;
+
+  if (deltaY < -60) {
+    if (currentSheetState === "collapsed") {
+      applySheetState("mid");
+    } else {
+      applySheetState("open");
+    }
+  } else if (deltaY > 60) {
+    if (currentSheetState === "open") {
+      applySheetState("mid");
+    } else {
+      applySheetState("collapsed");
+    }
+  } else {
+    applySheetState(currentSheetState);
+  }
 }
 
 function onDragMove(clientY) {
@@ -559,4 +623,40 @@ function openSheet() {
   const sheet = document.getElementById("bottomSheet");
   sheet.classList.add("open");
   sheet.style.transform = "translateY(0%)";
+}
+if (handle && sheet) {
+  applySheetState("mid");
+
+  handle.addEventListener("touchstart", (e) => {
+    startSheetDrag(e.touches[0].clientY);
+  }, { passive: true });
+
+  window.addEventListener("touchmove", (e) => {
+    if (!draggingSheet) return;
+    moveSheetDrag(e.touches[0].clientY);
+  }, { passive: true });
+
+  window.addEventListener("touchend", () => {
+    endSheetDrag();
+  });
+
+  handle.addEventListener("mousedown", (e) => {
+    startSheetDrag(e.clientY);
+  });
+
+  window.addEventListener("mousemove", (e) => {
+    if (!draggingSheet) return;
+    moveSheetDrag(e.clientY);
+  });
+
+  window.addEventListener("mouseup", () => {
+    endSheetDrag();
+  });
+}
+function openSheetMid() {
+  applySheetState("mid");
+}
+
+function openSheetFull() {
+  applySheetState("open");
 }
