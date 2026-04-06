@@ -35,7 +35,7 @@ async function init() {
     searchAll(e.target.value);
   }, 250));
 
-  byId("quizBtn").addEventListener("click", () => startQuiz(true));
+  byId("quizBtn").addEventListener("click", () => showQuizModes());
   byId("favoritesBtn").addEventListener("click", () => showFavorites());
   byId("progressBtn").addEventListener("click", () => showProgress());
   byId("recentBtn").addEventListener("click", () => showRecent());
@@ -417,6 +417,32 @@ function showFavorites() {
     });
   });
 }
+function showQuizModes() {
+  openSheetFull();
+
+  setPanelTitle("Select Quiz Mode");
+  setBreadcrumb([{ label: "Quiz" }]);
+
+  byId("content").innerHTML = `
+    <div class="section-card">
+      <p class="section-title">Choose Mode</p>
+
+      <button class="btn quiz-mode" data-mode="all">🌍 All</button>
+      <button class="btn quiz-mode" data-mode="grapes">🍇 Grapes</button>
+      <button class="btn quiz-mode" data-mode="regions">🗺 Regions</button>
+      <button class="btn quiz-mode" data-mode="profiles">📊 Profiles</button>
+      <button class="btn quiz-mode" data-mode="styles">🍷 Styles</button>
+      <button class="btn quiz-mode" data-mode="weak">🔥 Weak Areas</button>
+    </div>
+  `;
+
+  document.querySelectorAll(".quiz-mode").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const mode = btn.dataset.mode;
+      startQuiz(true, mode);
+    });
+  });
+}
 
 // ================= SEARCH =================
 async function searchAll(query) {
@@ -603,28 +629,162 @@ function applyFilter(filter) {
     }
   });
 }
+// ================= HELPER =================
+function getAccuracy() {
+  const totalAnswered = state.progress.correctAnswers + state.progress.wrongAnswers;
+  if (!totalAnswered) return 0;
+  return Math.round((state.progress.correctAnswers / totalAnswered) * 100);
+}
 
-// ================= PROGRESS =================
-function showProgress() {
-  setPanelTitle("Progress");
-  setBreadcrumb([{ label: "Progress" }]);
+function getMostMissedCategory() {
+  const entries = Object.entries(state.progress.weakAreas || {});
+  if (!entries.length) return null;
 
-  const weakHtml = Object.keys(state.progress.weakAreas).length
-    ? Object.entries(state.progress.weakAreas)
-        .map(([k, v]) => `<li>${k}: ${v} wrong</li>`)
-        .join("")
-    : "<li>No weak areas recorded</li>";
+  entries.sort((a, b) => b[1] - a[1]);
+  return {
+    category: entries[0][0],
+    count: entries[0][1]
+  };
+}
+function getMasteryLevel(count) {
+  if (count >= 6) {
+    return { label: "Needs Work", className: "bad" };
+  }
 
-  byId("content").innerHTML = `
-    <div class="section-card">
-      <p><b>Quizzes Played:</b> ${state.progress.quizzesPlayed}</p>
-      <p><b>Correct Answers:</b> ${state.progress.correctAnswers}</p>
-      <p><b>Wrong Answers:</b> ${state.progress.wrongAnswers}</p>
-      <p><b>Weak Areas:</b></p>
-      <ul>${weakHtml}</ul>
+  if (count >= 3) {
+    return { label: "Improving", className: "mid" };
+  }
+
+  return { label: "Stable", className: "good" };
+}
+
+function buildMasteryHtml() {
+  const weakEntries = Object.entries(state.progress.weakAreas || {})
+    .sort((a, b) => b[1] - a[1]);
+
+  if (!weakEntries.length) {
+    return `<p class="empty-state">No category data yet.</p>`;
+  }
+
+  return `
+    <div class="mastery-list">
+      ${weakEntries.map(([category, count]) => {
+        const mastery = getMasteryLevel(count);
+
+        return `
+          <div class="mastery-item">
+            <div class="mastery-left">
+              <div class="mastery-name">${category}</div>
+              <div class="mastery-meta">${count} recorded wrong answers</div>
+            </div>
+            <div class="mastery-badge ${mastery.className}">${mastery.label}</div>
+          </div>
+        `;
+      }).join("")}
     </div>
   `;
 }
+// ================= PROGRESS =================
+function showProgress() {
+  setPanelTitle("Progress Dashboard");
+  setBreadcrumb([{ label: "Progress" }]);
+
+  const totalAnswered = state.progress.correctAnswers + state.progress.wrongAnswers;
+  const accuracy = getAccuracy();
+  const mostMissed = getMostMissedCategory();
+
+  const weakEntries = Object.entries(state.progress.weakAreas || {})
+    .sort((a, b) => b[1] - a[1]);
+
+  const maxWeak = weakEntries.length ? weakEntries[0][1] : 1;
+
+  const weakHtml = weakEntries.length
+    ? `
+      <div class="bar-list">
+        ${weakEntries.map(([category, count]) => {
+          const width = Math.max(8, Math.round((count / maxWeak) * 100));
+          return `
+            <div class="bar-row">
+              <div class="bar-label">${category}</div>
+              <div class="bar-track">
+                <div class="bar-fill" style="width:${width}%"></div>
+              </div>
+              <div class="bar-value">${count}</div>
+            </div>
+          `;
+        }).join("")}
+      </div>
+    `
+    : `<p class="empty-state">No weak areas recorded yet.</p>`;
+
+  const masteryHtml = buildMasteryHtml();
+
+  byId("content").innerHTML = `
+    <div class="dashboard-grid">
+      <div class="stat-card">
+        <div class="stat-label">Quizzes Played</div>
+        <div class="stat-value">${state.progress.quizzesPlayed}</div>
+        <div class="stat-sub">Completed quiz sessions</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-label">Accuracy</div>
+        <div class="stat-value">${accuracy}%</div>
+        <div class="stat-sub">${state.progress.correctAnswers} correct / ${totalAnswered} answered</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-label">Correct Answers</div>
+        <div class="stat-value">${state.progress.correctAnswers}</div>
+        <div class="stat-sub">Lifetime correct answers</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-label">Most Missed</div>
+        <div class="stat-value">${mostMissed ? mostMissed.category : "-"}</div>
+        <div class="stat-sub">${mostMissed ? `${mostMissed.count} wrong answers` : "No data yet"}</div>
+      </div>
+    </div>
+
+    <div class="section-card">
+      <p class="section-title">Weak Areas</p>
+      ${weakHtml}
+    </div>
+
+    <div class="section-card">
+      <p class="section-title">Category Mastery</p>
+      ${masteryHtml}
+    </div>
+
+    <div class="section-card">
+      <p class="section-title">Actions</p>
+      <div class="dashboard-actions">
+        <button class="btn secondary" id="resetProgressBtn">Reset Progress</button>
+      </div>
+    </div>
+  `;
+
+  const resetBtn = byId("resetProgressBtn");
+  if (resetBtn) {
+    resetBtn.addEventListener("click", resetProgressData);
+  }
+}
+
+function resetProgressData() {
+  const confirmed = window.confirm("Reset all quiz progress and weak area data?");
+  if (!confirmed) return;
+
+  state.progress = {
+    quizzesPlayed: 0,
+    correctAnswers: 0,
+    wrongAnswers: 0,
+    weakAreas: {}
+  };
+
+  localStorage.setItem("wineProgress", JSON.stringify(state.progress));
+  showProgress();
+}
+
 const sheet = document.getElementById("bottomSheet");
 const handle = document.querySelector(".sheet-handle");
 const handleWrap = document.querySelector(".sheet-handle-wrap");
