@@ -46,3 +46,11 @@ export async function loadJson(path) {
     return {};
   }
 }
+
+export function saveStudiedPages() {
+  localStorage.setItem("wineStudiedPages", JSON.stringify(state.studiedPages));
+}
+
+export function isStudiedPage(key) {
+  return state.studiedPages.includes(key);
+}

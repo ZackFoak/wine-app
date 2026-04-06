@@ -2,6 +2,26 @@ import { state } from "./state.js";
 import { byId, loadJson, saveProgress } from "./utils.js";
 import { setBreadcrumb, setPanelTitle } from "./ui.js";
 
+export function startCustomQuiz(questions = [], title = "Custom Quiz") {
+  state.quizScore = 0;
+  state.quizCount = 0;
+  state.weakAreas = {};
+  state.quizPool = [...questions];
+  state.quizMode = title;
+
+  if (!state.quizPool.length) {
+    setPanelTitle(title);
+    byId("content").innerHTML = `
+      <div class="section-card">
+        <p>No quiz questions available for this selection yet.</p>
+      </div>
+    `;
+    return;
+  }
+
+  startQuiz(false);
+}
+
 export function startQuiz(reset = false) {
   if (reset) {
     state.quizScore = 0;

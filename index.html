@@ -652,7 +652,79 @@
     .leaflet-container {
       background: #dcecf2;
     }
-</style>
+    .meter-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .meter-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .meter-label {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .meter-dots {
+      display: flex;
+      gap: 4px;
+    }
+
+    .meter-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #e6dcd2;
+    }
+
+    .meter-dot.filled {
+      background: var(--accent);
+    }
+
+    /* Aroma chips */
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 6px;
+    }
+
+    .chip {
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.8);
+      border: 1px solid #eadccf;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .pairing-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.86);
+      border: 1px solid #eadccf;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .pairing-icon {
+      font-size: 14px;
+      line-height: 1;
+    }
+
+    .search-snippet {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+    </style>
 
   <!-- Leaflet (真實地圖) -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
@@ -696,6 +768,7 @@
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script type="module" src="js/app.js"></script>
+<script type="module" src="js/app.js?v=3"></script>
 
 </body>
 </html>

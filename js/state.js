@@ -12,6 +12,7 @@ export const state = {
   quizMode: "all",
   lastCategory: null,
   weakAreas: {},
+  studiedPages: JSON.parse(localStorage.getItem("wineStudiedPages") || "[]"),
   favorites: JSON.parse(localStorage.getItem("wineFavorites") || "[]"),
   progress: JSON.parse(localStorage.getItem("wineProgress") || JSON.stringify({
     quizzesPlayed: 0,
