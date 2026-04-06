@@ -20,3 +20,12 @@ export function setBreadcrumb(items) {
 export function setPanelTitle(text) {
   byId("title").innerText = text;
 }
+
+export function showLoading(message = "Loading...") {
+  byId("content").innerHTML = `
+    <div class="loading-wrap">
+      <div class="spinner"></div>
+      <div class="loading-text">${message}</div>
+    </div>
+  `;
+}

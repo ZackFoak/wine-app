@@ -1,6 +1,6 @@
 import { state } from "./state.js";
 import { byId, debounce, loadJson, saveFavorites, parseFavorite } from "./utils.js";
-import { setBreadcrumb, setPanelTitle } from "./ui.js";
+import { setBreadcrumb, setPanelTitle, showLoading } from "./ui.js";
 import { startQuiz, buildGeneratedQuestions } from "./quiz.js";
 
 let recent = JSON.parse(localStorage.getItem("wineRecent") || "[]");
@@ -18,6 +18,7 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 
 // ================= INIT =================
 async function init() {
+  showLoading("Loading Wine Atlas...");
   state.countriesData = await loadJson("./data/countries.json");
   state.quizQuestions = [];
 
@@ -52,12 +53,21 @@ async function init() {
   buildGeneratedQuestions().catch(err => {
     console.error("Question generation failed:", err);
   });
+  
+  byId("content").innerHTML = `
+  <div class="section-card">
+    <p class="section-title">Welcome</p>
+    <p>Explore wine countries, regions, grapes, and styles from the map.</p>
+    <p>Use Search, Quiz, Favorites, and Progress to build your knowledge.</p>
+  </div>
+`;
 }
 
 init();
 
 // ================= COUNTRY =================
 async function showCountry(countryKey) {
+  showLoading("Loading country...");
   try {
     const countryMeta = state.countriesData[countryKey];
     if (!countryMeta) return;
@@ -75,7 +85,7 @@ async function showCountry(countryKey) {
     let html = `
       <div class="section-card">
         <p><b>Country:</b> ${country.name || "-"}</p>
-        <p><b>Regions:</b></p>
+        <p class="section-title">Regions</p>
     `;
 
     const regionKeys = Object.keys(country.regions || {});
@@ -98,7 +108,7 @@ async function showCountry(countryKey) {
     if (country.styles && Object.keys(country.styles).length) {
       html += `
         <div class="section-card">
-          <p><b>Styles:</b></p>
+          <p class="section-title">Styles</p>
           ${Object.keys(country.styles).map(styleKey => {
             const style = country.styles?.[styleKey];
             const label = style?.name || styleKey;
@@ -133,6 +143,7 @@ async function showCountry(countryKey) {
 
 // ================= REGION =================
 async function showRegion(countryKey, regionKey) {
+  showLoading("Loading region...");
   try {
     const countryMeta = state.countriesData[countryKey];
     const country = await loadJson(`./data/${countryMeta.file}`);
@@ -207,6 +218,7 @@ async function showRegion(countryKey, regionKey) {
 
 // ================= GRAPE =================
 async function showGrape(countryKey, regionKey, grapeKey) {
+  showLoading("Loading grape profile...");
   const countryMeta = state.countriesData[countryKey];
   const country = await loadJson(`./data/${countryMeta.file}`);
   const grape = country.regions[regionKey]?.grapes?.[grapeKey];
@@ -283,6 +295,7 @@ async function showGrape(countryKey, regionKey, grapeKey) {
 
 // ================= FAVORITES =================
 function showFavorites() {
+  showLoading("Loading favorites...");
   setPanelTitle("Favorites");
   setBreadcrumb([{ label: "Favorites" }]);
 
@@ -389,6 +402,7 @@ async function searchAll(term) {
 
 // ================= STYLE =================
 async function showStyle(countryKey, styleKey) {
+  showLoading("Loading grape profile...");
   const countryMeta = state.countriesData[countryKey];
   const country = await loadJson(`./data/${countryMeta.file}`);
   const style = country.styles?.[styleKey];
