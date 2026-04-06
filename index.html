@@ -392,18 +392,17 @@
       bottom: 0;
       width: 100%;
       height: 68vh;
+      display: flex;
+      flex-direction: column;
       background: rgba(255,255,255,0.95);
       backdrop-filter: blur(12px);
       border-radius: 20px 20px 0 0;
       box-shadow: 0 -10px 30px rgba(0,0,0,0.15);
-      padding: 16px;
-      overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
-      overscroll-behavior: contain;
       transform: translateY(32%);
       transition: transform 0.26s ease;
       z-index: 1000;
-      touch-action: pan-y;
+      overflow: hidden;
+      will-change: transform;
     }
         #bottomSheet.state-collapsed {
       transform: translateY(82%);
@@ -421,6 +420,37 @@
       transform: translateY(0%);
     }
 
+    .sheet-handle-wrap {
+      flex: 0 0 auto;
+      padding: 12px 16px 8px;
+      border-bottom: 1px solid rgba(120,72,48,0.08);
+      background: rgba(255,255,255,0.92);
+      touch-action: none;
+    }
+
+    .sheet-body {
+      flex: 1 1 auto;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      overscroll-behavior-y: contain;
+      padding: 8px 16px calc(120px + env(safe-area-inset-bottom));
+      min-height: 0;
+    }
+
+    .sheet-handle {
+      width: 48px;
+      height: 6px;
+      background: #ccc;
+      border-radius: 999px;
+      margin: 0 auto 12px;
+      cursor: grab;
+      touch-action: none;
+    }
+
+    .sheet-handle:active {
+      cursor: grabbing;
+    }
+
     .sheet-handle {
       width: 48px;
       height: 6px;
@@ -433,14 +463,10 @@
     
     #bottomSheet.state-collapsed #title,
     #bottomSheet.state-collapsed #breadcrumb,
-    #bottomSheet.state-collapsed #content,
-    #bottomSheet.state-collapsed .panel-badge {
+    #bottomSheet.state-collapsed .panel-badge,
+    #bottomSheet.state-collapsed .sheet-body {
       opacity: 0;
       pointer-events: none;
-    }
-
-    #bottomSheet.state-collapsed {
-      overflow: hidden;
     }
     /* fully open */
     #bottomSheet.open {
@@ -497,12 +523,17 @@
 </div>
 
 <div id="map"></div>
-<div id="bottomSheet">
-  <div class="sheet-handle"></div>
-  <div class="panel-badge">Wine Atlas PRO</div>
-  <h2 id="title">Click a country</h2>
-  <div id="breadcrumb" style="margin-bottom:10px; color:#666;"></div>
-  <div id="content">...</div>
+<div id="bottomSheet" class="state-collapsed">
+  <div class="sheet-handle-wrap">
+    <div class="sheet-handle"></div>
+    <div class="panel-badge">Wine Atlas PRO</div>
+    <h2 id="title">Click a country</h2>
+    <div id="breadcrumb" style="margin-bottom:10px; color:#666;"></div>
+  </div>
+
+  <div class="sheet-body" id="sheetBody">
+    <div id="content">...</div>
+  </div>
 </div>
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>

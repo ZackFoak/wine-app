@@ -79,7 +79,11 @@ init();
 // ================= COUNTRY =================
 async function showCountry(countryKey) {
   showLoading("Loading country...");
-  openSheetMid();
+  if (window.innerWidth <= 1024) {
+    openSheetFull();
+  } else {
+    openSheetMid();
+  }
   try {
     const countryMeta = state.countriesData[countryKey];
     if (!countryMeta) return;
@@ -360,6 +364,7 @@ async function showGrape(countryKey, regionKey, grapeKey) {
 // ================= FAVORITES =================
 function showFavorites() {
   showLoading("Loading favorites...");
+  openSheetFull();
   setPanelTitle("Favorites");
   setBreadcrumb([{ label: "Favorites" }]);
 
@@ -622,6 +627,8 @@ function showProgress() {
 }
 const sheet = document.getElementById("bottomSheet");
 const handle = document.querySelector(".sheet-handle");
+const handleWrap = document.querySelector(".sheet-handle-wrap");
+const sheetBody = document.getElementById("sheetBody");
 
 const SHEET_STATES = {
   collapsed: 82,
@@ -632,29 +639,38 @@ const SHEET_STATES = {
 let currentSheetState = "mid";
 let dragStartY = 0;
 let dragCurrentY = 0;
+let dragStartTranslate = SHEET_STATES.mid;
 let draggingSheet = false;
+let dragSource = null; // "handle" | "content"
 
 function applySheetState(stateName) {
   currentSheetState = stateName;
   sheet.classList.remove("state-collapsed", "state-mid", "state-open");
+  sheet.classList.add(`state-${stateName}`);
+  sheet.style.transform = "";
 
-  if (stateName === "collapsed") {
-    sheet.classList.add("state-collapsed");
-  } else if (stateName === "open") {
-    sheet.classList.add("state-open");
-  } else {
-    sheet.classList.add("state-mid");
+  if (stateName !== "open" && sheetBody) {
+    sheetBody.scrollTop = 0;
   }
+
+  refreshMapLayout();
 }
 
 function getCurrentTranslatePercent() {
   return SHEET_STATES[currentSheetState];
 }
 
-function startSheetDrag(clientY) {
+function setSheetTranslate(percent) {
+  const clamped = Math.max(SHEET_STATES.open, Math.min(SHEET_STATES.collapsed, percent));
+  sheet.style.transform = `translateY(${clamped}%)`;
+}
+
+function startSheetDrag(clientY, source = "handle") {
   dragStartY = clientY;
   dragCurrentY = clientY;
+  dragStartTranslate = getCurrentTranslatePercent();
   draggingSheet = true;
+  dragSource = source;
   sheet.style.transition = "none";
 }
 
@@ -663,73 +679,122 @@ function moveSheetDrag(clientY) {
 
   dragCurrentY = clientY;
   const deltaY = dragCurrentY - dragStartY;
-  const base = getCurrentTranslatePercent();
-  const next = Math.max(8, Math.min(62, base + deltaY / 6));
 
-  sheet.style.transform = `translateY(${next}%)`;
+  const vh = window.innerHeight || 1;
+  const deltaPercent = (deltaY / vh) * 100;
+  const next = dragStartTranslate + deltaPercent;
+
+  setSheetTranslate(next);
 }
 
 function endSheetDrag() {
   if (!draggingSheet) return;
+
   draggingSheet = false;
   sheet.style.transition = "transform 0.26s ease";
 
   const deltaY = dragCurrentY - dragStartY;
+  const threshold = 60;
 
-  if (deltaY < -50) {
+  if (deltaY <= -threshold) {
     if (currentSheetState === "collapsed") {
       applySheetState("mid");
-    } else if (currentSheetState === "mid") {
-      applySheetState("open");
     } else {
       applySheetState("open");
     }
-  } else if (deltaY > 50) {
+  } else if (deltaY >= threshold) {
     if (currentSheetState === "open") {
       applySheetState("mid");
-    } else if (currentSheetState === "mid") {
-      applySheetState("collapsed");
     } else {
       applySheetState("collapsed");
     }
   } else {
     applySheetState(currentSheetState);
   }
+
+  dragSource = null;
 }
 
-if (handle && sheet) {
-  applySheetState("mid");
+function onPointerMove(clientY) {
+  moveSheetDrag(clientY);
+}
 
-  handle.addEventListener("touchstart", (e) => {
-    startSheetDrag(e.touches[0].clientY);
+function onPointerUp() {
+  endSheetDrag();
+}
+
+if (sheet && handle && handleWrap && sheetBody) {
+  applySheetState("collapsed");
+
+  // 1) Handle 區永遠只負責 drag
+  handleWrap.addEventListener("touchstart", (e) => {
+    startSheetDrag(e.touches[0].clientY, "handle");
   }, { passive: true });
 
-  window.addEventListener("touchmove", (e) => {
-    if (!draggingSheet) return;
-    moveSheetDrag(e.touches[0].clientY);
-  }, { passive: true });
-
-  window.addEventListener("touchend", () => {
-    endSheetDrag();
+  handleWrap.addEventListener("mousedown", (e) => {
+    startSheetDrag(e.clientY, "handle");
   });
 
-  handle.addEventListener("mousedown", (e) => {
-    startSheetDrag(e.clientY);
+  // 2) Content 區：只有 scrollTop === 0 並且向下拉，先接管成 sheet drag
+  sheetBody.addEventListener("touchstart", (e) => {
+    dragStartY = e.touches[0].clientY;
+    dragCurrentY = dragStartY;
+  }, { passive: true });
+
+  sheetBody.addEventListener("touchmove", (e) => {
+    const currentY = e.touches[0].clientY;
+    const deltaY = currentY - dragStartY;
+    const atTop = sheetBody.scrollTop <= 0;
+
+    if (!draggingSheet && atTop && deltaY > 8 && currentSheetState !== "collapsed") {
+      startSheetDrag(dragStartY, "content");
+    }
+
+    if (draggingSheet) {
+      e.preventDefault();
+      onPointerMove(currentY);
+    }
+  }, { passive: false });
+
+  window.addEventListener("touchmove", (e) => {
+    if (!draggingSheet || dragSource !== "handle") return;
+    e.preventDefault();
+    onPointerMove(e.touches[0].clientY);
+  }, { passive: false });
+
+  window.addEventListener("touchend", () => {
+    onPointerUp();
   });
 
   window.addEventListener("mousemove", (e) => {
     if (!draggingSheet) return;
-    moveSheetDrag(e.clientY);
+    onPointerMove(e.clientY);
   });
 
   window.addEventListener("mouseup", () => {
-    endSheetDrag();
+    onPointerUp();
   });
 }
+
+function refreshMapLayout() {
+  setTimeout(() => {
+    map.invalidateSize();
+  }, 280);
+}
+
+function resetSheetScroll() {
+  if (sheetBody) {
+    sheetBody.scrollTop = 0;
+  }
+}
+
 function openSheetMid() {
   applySheetState("mid");
+  refreshMapLayout();
 }
 
 function openSheetFull() {
   applySheetState("open");
+  resetSheetScroll();
+  refreshMapLayout();
 }
