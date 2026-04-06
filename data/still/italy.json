@@ -4,394 +4,728 @@
   "regions": {
     "alto-adige-trentino-friuli": {
       "name": "Alto Adige / Trentino / Friuli-Venezia Giulia",
+      "summary": "Cooler north-eastern Italian zone influenced by altitude and mountains, producing fresh aromatic whites and elegant reds.",
       "climate": "Continental to Alpine-influenced",
       "styleSummary": "Fresh aromatic whites and some light to medium-bodied reds, often with good acidity.",
       "mitigating": ["altitude", "mountain influence", "diurnal range", "slope aspect"],
+      "keyGrapes": ["Pinot Grigio", "Sauvignon Blanc", "Chardonnay"],
+      "examTips": [
+        "Think cooler north-eastern Italy with freshness and acidity.",
+        "Altitude and Alpine influence are key themes.",
+        "Pinot Grigio is especially important here."
+      ],
+      "tags": ["Italy", "north-east", "cooler-climate", "white", "Alpine"],
+      "difficulty": 1,
       "grapes": {
         "Pinot Grigio": {
+          "summary": "Fresh light to medium-bodied white grape producing pear and citrus styles in cooler sites.",
           "style": "Light to medium-bodied white with pear, citrus and subtle stone fruit notes.",
+          "aliases": ["Pinot Gris"],
           "profile": {
             "acidity": "Medium to High",
             "alcohol": "Low to Medium",
             "body": "Light to Medium",
             "tannin": "-"
           },
+          "aromas": ["pear", "citrus", "apple", "stone fruit"],
           "viticulture": ["Widely planted in north-east Italy", "Best examples from cooler sites"],
-          "winemaking": ["Usually fresh styles", "Little or no oak"]
+          "winemaking": ["Usually fresh styles", "Little or no oak"],
+          "pairing": ["salads", "light fish dishes", "simple pasta"],
+          "examTips": [
+            "Usually fresher and more precise here than in hotter regions."
+          ],
+          "tags": ["white", "fresh", "light", "Italy", "north-east"],
+          "difficulty": 1
         },
         "Sauvignon Blanc": {
+          "summary": "Aromatic white grape producing citrus, herb and green fruit notes with good freshness.",
           "style": "Fresh aromatic whites with citrus, herb and green fruit notes.",
+          "aliases": [],
           "profile": {
             "acidity": "High",
             "alcohol": "Low to Medium",
             "body": "Light",
             "tannin": "-"
           },
+          "aromas": ["citrus", "herb", "green fruit"],
           "viticulture": ["Performs well in cooler sites"],
-          "winemaking": ["Usually stainless steel to preserve aromatics"]
+          "winemaking": ["Usually stainless steel to preserve aromatics"],
+          "pairing": ["goat cheese", "seafood", "salads"],
+          "examTips": [
+            "Think freshness and aromatic purity."
+          ],
+          "tags": ["white", "aromatic", "high-acid", "Italy", "north-east"],
+          "difficulty": 1
         },
         "Chardonnay": {
+          "summary": "Versatile white grape showing fresh citrus and stone fruit, sometimes with subtle oak.",
           "style": "Fresh citrus to stone-fruit styles, sometimes with subtle oak.",
+          "aliases": [],
           "profile": {
             "acidity": "Medium to High",
             "alcohol": "Medium",
             "body": "Medium",
             "tannin": "-"
           },
+          "aromas": ["citrus", "stone fruit", "apple"],
           "viticulture": ["Adaptable variety"],
-          "winemaking": ["Fresh styles common", "Oak possible in richer styles"]
+          "winemaking": ["Fresh styles common", "Oak possible in richer styles"],
+          "pairing": ["roast chicken", "seafood pasta", "cream sauces"],
+          "examTips": [
+            "Usually fresher and lighter than richer warm-climate Chardonnay."
+          ],
+          "tags": ["white", "fresh", "versatile", "Italy", "north-east"],
+          "difficulty": 1
         }
       }
     },
     "veneto": {
       "name": "Veneto",
+      "summary": "Large north-eastern Italian region producing a wide range of styles including reds, Soave whites and Pinot Grigio.",
       "climate": "Continental to Mediterranean-influenced",
       "styleSummary": "Wide range including reds, Soave whites and Pinot Grigio.",
       "mitigating": ["Lake Garda influence", "Alpine protection", "site variation"],
+      "keyGrapes": ["Corvina", "Garganega", "Pinot Grigio"],
+      "examTips": [
+        "Veneto is diverse, so think style by grape and subregion.",
+        "Corvina is key for Valpolicella styles.",
+        "Garganega is the main grape of Soave."
+      ],
+      "tags": ["Italy", "Veneto", "diverse", "white", "red", "north-east"],
+      "difficulty": 1,
       "grapes": {
         "Corvina": {
+          "summary": "Key red grape of Veneto, giving red cherry fruit, freshness and medium body, especially in Valpolicella styles.",
           "style": "Red cherry, medium body and fresh acidity in Valpolicella styles.",
+          "aliases": [],
           "profile": {
             "acidity": "Medium to High",
             "alcohol": "Medium",
             "body": "Medium",
             "tannin": "Low to Medium"
           },
+          "aromas": ["red cherry", "red fruit", "dried herbs"],
           "viticulture": ["Performs well in Veneto", "Useful in appassimento styles"],
-          "winemaking": ["Fresh styles or appassimento-based richer styles"]
+          "winemaking": ["Fresh styles or appassimento-based richer styles"],
+          "pairing": ["pizza", "roast pork", "pasta"],
+          "examTips": [
+            "Think red cherry and freshness in basic styles.",
+            "Also important in appassimento-based richer wines."
+          ],
+          "tags": ["red", "fresh", "appassimento", "Italy", "Veneto"],
+          "difficulty": 1
         },
         "Garganega": {
+          "summary": "Main white grape of Soave, producing medium-bodied citrus and almond-accented wines.",
           "style": "Medium-bodied white with citrus, pear and almond notes.",
+          "aliases": [],
           "profile": {
             "acidity": "Medium",
             "alcohol": "Medium",
             "body": "Medium",
             "tannin": "-"
           },
+          "aromas": ["citrus", "pear", "almond", "orchard fruit"],
           "viticulture": ["Main grape of Soave"],
-          "winemaking": ["Usually dry still white", "Can be simple or more textured"]
+          "winemaking": ["Usually dry still white", "Can be simple or more textured"],
+          "pairing": ["seafood pasta", "grilled fish", "light poultry"],
+          "examTips": [
+            "Remember Soave = Garganega."
+          ],
+          "tags": ["white", "Soave", "Italy", "Veneto", "medium-body"],
+          "difficulty": 1
         },
         "Pinot Grigio": {
+          "summary": "Widely planted white grape usually made in a light fresh pear-and-citrus style.",
           "style": "Light to medium-bodied white with pear and citrus notes.",
+          "aliases": ["Pinot Gris"],
           "profile": {
             "acidity": "Medium",
             "alcohol": "Low to Medium",
             "body": "Light to Medium",
             "tannin": "-"
           },
+          "aromas": ["pear", "citrus", "apple"],
           "viticulture": ["Widely planted"],
-          "winemaking": ["Usually fresh simple style"]
+          "winemaking": ["Usually fresh simple style"],
+          "pairing": ["salads", "light fish dishes", "simple pasta"],
+          "examTips": [
+            "Usually light, fresh and straightforward rather than highly aromatic."
+          ],
+          "tags": ["white", "fresh", "light", "Italy", "Veneto"],
+          "difficulty": 1
         }
       }
     },
-    "piemonte": {
-      "name": "Piemonte",
-      "climate": "Continental",
-      "styleSummary": "Structured reds and fresh whites with hill-site variation.",
-      "mitigating": ["hill slopes", "aspect", "fog", "mesoclimate variation"],
+    "provence": {
+      "name": "Provence",
+      "summary": "Warm Mediterranean region strongly associated with pale dry rosé, plus some reds.",
+      "climate": "Mediterranean",
+      "styleSummary": "Warm-climate rosé and red wines with ripe fruit profile.",
+      "mitigating": ["Sea influence", "sunshine", "wind"],
+      "keyGrapes": ["Grenache", "Mourvedre"],
+      "examTips": [
+        "Provence is primarily a rosé region in exam context.",
+        "Think pale colour, dry style and ripe but fresh fruit."
+      ],
+      "tags": ["France", "Provence", "Mediterranean", "rosé", "warm-climate"],
+      "difficulty": 1,
       "grapes": {
-        "Nebbiolo": {
-          "style": "High tannin, high acidity, pale colour, rose and tar notes.",
-          "profile": {
-            "acidity": "High",
-            "alcohol": "Medium to High",
-            "body": "Medium to Full",
-            "tannin": "High"
-          },
-          "viticulture": ["Early budding and late ripening", "Needs best sites to ripen"],
-          "winemaking": ["Long maceration possible", "Oak often used"]
-        },
-        "Barbera": {
-          "style": "Deep colour, high acidity, lower tannin and juicy red to black fruit.",
-          "profile": {
-            "acidity": "High",
-            "alcohol": "Medium to High",
-            "body": "Medium",
-            "tannin": "Low to Medium"
-          },
-          "viticulture": ["Reliable cropper"],
-          "winemaking": ["Can be fresh or oaked"]
-        },
-        "Dolcetto": {
-          "style": "Soft, fruity red with lower acidity than Barbera.",
+        "Grenache": {
+          "summary": "Warm-climate grape contributing ripe red fruit, body and alcohol, especially useful in rosé blends.",
+          "style": "Ripe red fruit and body, often important in rosé blends.",
+          "aliases": ["Garnacha"],
           "profile": {
             "acidity": "Medium",
-            "alcohol": "Medium",
-            "body": "Medium",
+            "alcohol": "High",
+            "body": "Medium to Full",
             "tannin": "Medium"
           },
-          "viticulture": ["Earlier ripening than Nebbiolo"],
-          "winemaking": ["Usually made for early drinking"]
+          "aromas": ["ripe red fruit", "strawberry", "spice"],
+          "viticulture": ["Drought resistant"],
+          "winemaking": ["Often used in rosé and red blends"],
+          "pairing": ["Mediterranean dishes", "salads", "grilled seafood"],
+          "examTips": [
+            "Important in Provence rosé blends."
+          ],
+          "tags": ["red", "rosé", "warm-climate", "France", "Grenache"],
+          "difficulty": 1
         },
-        "Cortese": {
-          "style": "Fresh white with citrus and apple notes.",
+        "Mourvedre": {
+          "summary": "Late-ripening grape adding dark fruit, spice and structure in warm coastal blends.",
+          "style": "Dark fruit, spice and structure.",
+          "aliases": ["Monastrell", "Mataro"],
           "profile": {
-            "acidity": "Medium to High",
-            "alcohol": "Low to Medium",
-            "body": "Light",
-            "tannin": "-"
+            "acidity": "Medium",
+            "alcohol": "Medium to High",
+            "body": "Full",
+            "tannin": "High"
           },
-          "viticulture": ["Used for Gavi"],
-          "winemaking": ["Usually fresh unoaked style"]
+          "aromas": ["dark fruit", "spice", "meaty"],
+          "viticulture": ["Needs warm sites"],
+          "winemaking": ["Often blended"],
+          "pairing": ["lamb", "grilled meats", "stews"],
+          "examTips": [
+            "Usually gives more structure than Grenache."
+          ],
+          "tags": ["red", "structured", "blend", "France", "Mediterranean"],
+          "difficulty": 2
         }
       }
     },
     "tuscany": {
       "name": "Tuscany",
+      "summary": "Classic central Italian region centred on Sangiovese, producing savoury reds with freshness and regional variation.",
       "climate": "Mediterranean",
       "styleSummary": "Sangiovese-led reds with freshness and savoury character.",
       "mitigating": ["altitude", "aspect", "diurnal range", "inland hills"],
+      "keyGrapes": ["Sangiovese", "Cabernet Sauvignon", "Merlot"],
+      "examTips": [
+        "Sangiovese is the core grape of Tuscany.",
+        "Think sour cherry, herbs and savoury structure.",
+        "Altitude and hillside sites help preserve freshness."
+      ],
+      "tags": ["Italy", "Tuscany", "Sangiovese", "Mediterranean", "classic"],
+      "difficulty": 1,
       "grapes": {
         "Sangiovese": {
+          "summary": "Italy's key central red grape, known for sour cherry fruit, savoury notes and fresh acidity.",
           "style": "Sour cherry, herbs, savoury notes with fresh acidity.",
+          "aliases": [],
           "profile": {
             "acidity": "Medium to High",
             "alcohol": "Medium to High",
             "body": "Medium",
             "tannin": "Medium"
           },
+          "aromas": ["sour cherry", "dried herbs", "earthy", "red fruit"],
           "viticulture": ["Site-sensitive", "Needs sufficient warmth but not excessive heat"],
-          "winemaking": ["Oak optional", "Can be varietal or blended"]
+          "winemaking": ["Oak optional", "Can be varietal or blended"],
+          "pairing": ["tomato dishes", "roast lamb", "hard cheese"],
+          "examTips": [
+            "High acidity plus sour cherry is a key clue.",
+            "Usually more savoury than plush."
+          ],
+          "tags": ["red", "high-acid", "savoury", "Italy", "Tuscany", "Sangiovese"],
+          "difficulty": 1
         },
         "Cabernet Sauvignon": {
+          "summary": "International variety used in richer structured Tuscan styles and blends.",
           "style": "Black fruit, cassis and firmer structure in international styles.",
+          "aliases": [],
           "profile": {
             "acidity": "Medium",
             "alcohol": "High",
             "body": "Full",
             "tannin": "High"
           },
+          "aromas": ["blackcurrant", "cassis", "oak", "cedar"],
           "viticulture": ["Needs warmth"],
-          "winemaking": ["Oak common"]
+          "winemaking": ["Oak common"],
+          "pairing": ["steak", "lamb", "aged cheese"],
+          "examTips": [
+            "Used in more international-style Tuscan wines."
+          ],
+          "tags": ["red", "international-variety", "structured", "Italy", "Tuscany"],
+          "difficulty": 1
         },
         "Merlot": {
+          "summary": "Plum-fruited softer-textured international grape used in Tuscan blends and varietal wines.",
           "style": "Plum, black fruit and rounder texture.",
+          "aliases": [],
           "profile": {
             "acidity": "Medium",
             "alcohol": "Medium to High",
             "body": "Medium to Full",
             "tannin": "Medium"
           },
+          "aromas": ["plum", "black fruit", "soft spice"],
           "viticulture": ["Earlier ripening than Cabernet Sauvignon"],
-          "winemaking": ["Oak common"]
+          "winemaking": ["Oak common"],
+          "pairing": ["duck", "roast meats", "pasta with ragù"],
+          "examTips": [
+            "Usually softer and rounder than Cabernet Sauvignon."
+          ],
+          "tags": ["red", "plum", "softer-style", "Italy", "Tuscany"],
+          "difficulty": 1
         }
       }
     },
     "marche": {
       "name": "Marche",
+      "summary": "Adriatic-facing central Italian region best known for fresh, characterful Verdicchio.",
       "climate": "Mediterranean",
       "styleSummary": "Fresh whites, especially Verdicchio, with some elegant reds.",
       "mitigating": ["Adriatic influence", "hill sites", "altitude variation"],
+      "keyGrapes": ["Verdicchio"],
+      "examTips": [
+        "Verdicchio is the key grape here.",
+        "Think freshness, citrus and almond note."
+      ],
+      "tags": ["Italy", "Marche", "Verdicchio", "white", "Adriatic"],
+      "difficulty": 1,
       "grapes": {
         "Verdicchio": {
+          "summary": "Fresh central Italian white grape producing citrus, green apple and almond-accented wines with good acidity.",
           "style": "Fresh citrus, green apple and sometimes almond notes, with good acidity.",
+          "aliases": [],
           "profile": {
             "acidity": "Medium to High",
             "alcohol": "Medium",
             "body": "Light to Medium",
             "tannin": "-"
           },
+          "aromas": ["citrus", "green apple", "almond", "floral"],
           "viticulture": ["Performs well in Marche hillside sites"],
-          "winemaking": ["Usually dry still wines", "Can age surprisingly well"]
+          "winemaking": ["Usually dry still wines", "Can age surprisingly well"],
+          "pairing": ["seafood", "grilled fish", "light pasta"],
+          "examTips": [
+            "Almond note is a useful clue.",
+            "Usually fresher and more characterful than neutral Italian whites."
+          ],
+          "tags": ["white", "fresh", "almond", "Italy", "Marche"],
+          "difficulty": 1
         }
       }
     },
     "umbria": {
       "name": "Umbria",
+      "summary": "Inland central Italian region producing traditional whites and some structured reds from hilly sites.",
       "climate": "Continental to Mediterranean-influenced",
       "styleSummary": "Whites based around local and traditional grapes, plus some quality reds.",
       "mitigating": ["inland hills", "altitude", "diurnal range"],
+      "keyGrapes": ["Grechetto", "Trebbiano"],
+      "examTips": [
+        "Think inland central Italy with traditional white blends.",
+        "Grechetto is the most useful grape to remember."
+      ],
+      "tags": ["Italy", "Umbria", "central", "traditional", "white"],
+      "difficulty": 1,
       "grapes": {
         "Grechetto": {
+          "summary": "Medium-bodied Umbrian white grape with citrus, orchard fruit and some texture.",
           "style": "Medium-bodied white with citrus, orchard fruit and some texture.",
+          "aliases": [],
           "profile": {
             "acidity": "Medium",
             "alcohol": "Medium",
             "body": "Medium",
             "tannin": "-"
           },
+          "aromas": ["citrus", "orchard fruit", "apple"],
           "viticulture": ["Traditional Umbrian white grape"],
-          "winemaking": ["Usually blended or varietal dry whites"]
+          "winemaking": ["Usually blended or varietal dry whites"],
+          "pairing": ["roast chicken", "pasta", "grilled vegetables"],
+          "examTips": [
+            "More textural and characterful than very neutral whites."
+          ],
+          "tags": ["white", "textural", "Italy", "Umbria"],
+          "difficulty": 1
         },
         "Trebbiano": {
+          "summary": "Neutral productive white grape often used in blends for light dry wines.",
           "style": "Neutral to lightly citrus white, often used in blends.",
+          "aliases": [],
           "profile": {
             "acidity": "Medium",
             "alcohol": "Low to Medium",
             "body": "Light",
             "tannin": "-"
           },
+          "aromas": ["light citrus", "neutral fruit"],
           "viticulture": ["Productive and widely planted"],
-          "winemaking": ["Often used in simple dry styles"]
+          "winemaking": ["Often used in simple dry styles"],
+          "pairing": ["light salads", "simple fish dishes"],
+          "examTips": [
+            "Usually more neutral than Grechetto."
+          ],
+          "tags": ["white", "neutral", "blend", "Italy", "Umbria"],
+          "difficulty": 1
         }
       }
     },
     "lazio": {
       "name": "Lazio",
+      "summary": "Central Italian region near Rome known mainly for traditional white blends.",
       "climate": "Mediterranean",
       "styleSummary": "Mainly white wines from traditional local blends.",
       "mitigating": ["coastal influence", "volcanic soils in places", "elevated sites"],
+      "keyGrapes": ["Malvasia", "Trebbiano"],
+      "examTips": [
+        "Think simple to moderate white wines from traditional blends.",
+        "Volcanic soils can be relevant in some zones."
+      ],
+      "tags": ["Italy", "Lazio", "white", "traditional-blends", "central"],
+      "difficulty": 1,
       "grapes": {
         "Malvasia": {
+          "summary": "Traditional aromatic to semi-aromatic white grape often used in Lazio blends.",
           "style": "Aromatic to neutral white, often medium-bodied with soft fruit notes.",
+          "aliases": [],
           "profile": {
             "acidity": "Medium",
             "alcohol": "Medium",
             "body": "Medium",
             "tannin": "-"
           },
+          "aromas": ["floral", "soft stone fruit", "pear"],
           "viticulture": ["Traditional Lazio white grape"],
-          "winemaking": ["Usually blended in dry whites"]
+          "winemaking": ["Usually blended in dry whites"],
+          "pairing": ["light pasta", "grilled vegetables", "salads"],
+          "examTips": [
+            "Usually softer and broader than crisp high-acid whites."
+          ],
+          "tags": ["white", "traditional", "blend", "Italy", "Lazio"],
+          "difficulty": 1
         },
         "Trebbiano": {
+          "summary": "Widely planted neutral white grape used for light dry blends.",
           "style": "Light, neutral to citrus white used widely in blends.",
+          "aliases": [],
           "profile": {
             "acidity": "Medium",
             "alcohol": "Low to Medium",
             "body": "Light",
             "tannin": "-"
           },
+          "aromas": ["light citrus", "neutral fruit"],
           "viticulture": ["Widely planted"],
-          "winemaking": ["Usually simple dry styles"]
+          "winemaking": ["Usually simple dry styles"],
+          "pairing": ["salads", "simple seafood dishes"],
+          "examTips": [
+            "Think neutral supporting grape rather than aromatic star."
+          ],
+          "tags": ["white", "neutral", "blend", "Italy", "Lazio"],
+          "difficulty": 1
         }
       }
     },
     "abruzzo": {
       "name": "Abruzzo",
+      "summary": "Central Adriatic region known for Montepulciano-based reds with ripe fruit and generous body.",
       "climate": "Mediterranean",
       "styleSummary": "Important for Montepulciano-based reds with ripe fruit and good body.",
       "mitigating": ["Adriatic influence", "Apennine proximity", "altitude differences"],
+      "keyGrapes": ["Montepulciano"],
+      "examTips": [
+        "Montepulciano is the key grape here.",
+        "Do not confuse the grape Montepulciano with Vino Nobile di Montepulciano in Tuscany."
+      ],
+      "tags": ["Italy", "Abruzzo", "Montepulciano", "red", "Adriatic"],
+      "difficulty": 1,
       "grapes": {
         "Montepulciano": {
+          "summary": "Deep-coloured Italian red grape producing ripe black fruit, body and moderate to firm tannin.",
           "style": "Deep colour, ripe black fruit and medium to high tannin.",
+          "aliases": [],
           "profile": {
             "acidity": "Medium",
             "alcohol": "Medium to High",
             "body": "Medium to Full",
             "tannin": "Medium to High"
           },
+          "aromas": ["black fruit", "plum", "spice"],
           "viticulture": ["Performs well in warm central Italy"],
-          "winemaking": ["Usually fruit-driven but can be more structured"]
+          "winemaking": ["Usually fruit-driven but can be more structured"],
+          "pairing": ["pizza", "pasta with meat sauce", "grilled meats"],
+          "examTips": [
+            "Dark fruit and deeper colour are useful clues.",
+            "Name confusion is a common exam trap."
+          ],
+          "tags": ["red", "dark-fruit", "Italy", "Abruzzo", "Montepulciano"],
+          "difficulty": 1
         }
       }
     },
     "campania": {
       "name": "Campania",
+      "summary": "Southern Italian region influenced by volcanic soils, producing structured whites and powerful reds.",
       "climate": "Mediterranean",
-      "styleSummary": "Structured reds and important aromatic whites from volcanic and inland sites.",
-      "mitigating": ["volcanic soils in places", "altitude", "coastal and inland variation"],
+      "styleSummary": "Structured whites and full-bodied reds influenced by volcanic soils.",
+      "mitigating": ["altitude", "volcanic soils", "coastal influence"],
+      "keyGrapes": ["Aglianico", "Fiano", "Greco"],
+      "examTips": [
+        "Volcanic soils are a key theme in Campania.",
+        "Aglianico is one of Italy’s most structured red grapes.",
+        "Southern whites can still show high acidity due to altitude."
+      ],
+      "tags": ["Italy", "Campania", "volcanic", "southern", "structured"],
+      "difficulty": 1,
       "grapes": {
         "Aglianico": {
-          "style": "Dark fruit, high tannin, high acidity and ageworthy structure.",
+          "summary": "Powerful late-ripening red grape producing high tannin, high acidity wines with ageing potential.",
+          "style": "Dark fruit, high tannin, high acidity, structured and ageworthy.",
+          "aliases": [],
           "profile": {
             "acidity": "High",
             "alcohol": "Medium to High",
             "body": "Full",
             "tannin": "High"
           },
-          "viticulture": ["Late ripening", "Needs warmth and long season"],
-          "winemaking": ["Often structured and oak-aged"]
-        },
-        "Greco": {
-          "style": "Fresh white with citrus and stone fruit, often with texture.",
-          "profile": {
-            "acidity": "Medium to High",
-            "alcohol": "Medium",
-            "body": "Medium",
-            "tannin": "-"
-          },
-          "viticulture": ["Performs well in Campania"],
-          "winemaking": ["Usually dry still whites"]
+          "aromas": ["black cherry", "plum", "smoke", "spice"],
+          "viticulture": ["Late ripening", "Needs warm conditions"],
+          "winemaking": ["Often oak-aged", "Long ageing potential"],
+          "pairing": ["braised beef", "lamb", "game"],
+          "examTips": [
+            "High tannin + high acidity is key.",
+            "Often compared to Nebbiolo in structure."
+          ],
+          "tags": ["red", "high-tannin", "high-acid", "Italy", "Campania"],
+          "difficulty": 1
         },
         "Fiano": {
-          "style": "Aromatic white with citrus, floral and nutty notes.",
+          "summary": "Textural white grape producing complex wines with floral, nutty and honeyed notes.",
+          "style": "Medium to full-bodied white with floral, honey and nutty notes.",
+          "aliases": [],
           "profile": {
             "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Medium to Full",
+            "tannin": "-"
+          },
+          "aromas": ["floral", "honey", "almond", "citrus"],
+          "viticulture": ["Performs well in warm climates"],
+          "winemaking": ["Can age well"],
+          "pairing": ["seafood pasta", "roast chicken", "cream dishes"],
+          "examTips": [
+            "More texture and weight than many Italian whites."
+          ],
+          "tags": ["white", "textural", "complex", "Italy", "Campania"],
+          "difficulty": 1
+        },
+        "Greco": {
+          "summary": "Fresh high-acid white grape producing citrus-driven wines with mineral edge.",
+          "style": "Fresh citrus white with high acidity and mineral character.",
+          "aliases": ["Greco di Tufo"],
+          "profile": {
+            "acidity": "High",
             "alcohol": "Medium",
             "body": "Medium",
             "tannin": "-"
           },
-          "viticulture": ["Quality-focused southern white grape"],
-          "winemaking": ["Usually dry still wines"]
+          "aromas": ["citrus", "apple", "mineral"],
+          "viticulture": ["Maintains acidity in warm climates"],
+          "winemaking": ["Usually fresh style"],
+          "pairing": ["seafood", "grilled fish", "salads"],
+          "examTips": [
+            "Higher acidity than many southern Italian whites."
+          ],
+          "tags": ["white", "high-acid", "mineral", "Italy", "Campania"],
+          "difficulty": 1
         }
       }
     },
     "puglia": {
       "name": "Puglia",
+      "summary": "Hot southern Italian region producing ripe, full-bodied reds, often from high-yielding vineyards.",
       "climate": "Mediterranean",
-      "styleSummary": "Warm-climate ripe reds, often full-bodied and generous.",
-      "mitigating": ["heat", "coastal breezes", "flat sunny sites"],
+      "styleSummary": "Ripe, full-bodied reds with soft acidity.",
+      "mitigating": ["sea influence", "flat terrain", "high sunlight"],
+      "keyGrapes": ["Primitivo", "Negroamaro"],
+      "examTips": [
+        "Think hot climate and ripe fruit.",
+        "Often softer acidity and higher alcohol.",
+        "Primitivo is genetically related to Zinfandel."
+      ],
+      "tags": ["Italy", "Puglia", "hot", "ripe", "southern"],
+      "difficulty": 1,
       "grapes": {
-        "Negroamaro": {
-          "style": "Dark fruit, spice and medium to high tannin.",
-          "profile": {
-            "acidity": "Medium",
-            "alcohol": "Medium to High",
-            "body": "Full",
-            "tannin": "Medium to High"
-          },
-          "viticulture": ["Handles heat well"],
-          "winemaking": ["Often used in full-bodied reds"]
-        },
         "Primitivo": {
-          "style": "Ripe black fruit, spice and high alcohol.",
+          "summary": "Early-ripening grape producing high-alcohol, ripe fruit-driven wines.",
+          "style": "Ripe black fruit, jammy character and high alcohol.",
+          "aliases": ["Zinfandel"],
           "profile": {
             "acidity": "Medium",
             "alcohol": "High",
             "body": "Full",
             "tannin": "Medium"
           },
-          "viticulture": ["Early ripening", "Thrives in warm conditions"],
-          "winemaking": ["Usually ripe fruit-forward styles"]
-        }
-      }
-    },
-    "basilicata": {
-      "name": "Basilicata",
-      "climate": "Mediterranean with altitude influence",
-      "styleSummary": "Structured reds from Aglianico with freshness from elevation.",
-      "mitigating": ["altitude", "volcanic soils", "cooler nights"],
-      "grapes": {
-        "Aglianico": {
-          "style": "Dark fruit, high tannin and high acidity with ageworthy potential.",
-          "profile": {
-            "acidity": "High",
-            "alcohol": "Medium to High",
-            "body": "Full",
-            "tannin": "High"
-          },
-          "viticulture": ["Late ripening", "Best on elevated sites"],
-          "winemaking": ["Often structured and ageworthy"]
-        }
-      }
-    },
-    "sicily": {
-      "name": "Sicily",
-      "climate": "Mediterranean",
-      "styleSummary": "Warm-climate reds and increasingly important fresh whites, especially where altitude moderates heat.",
-      "mitigating": ["altitude near Etna", "sea influence", "sunshine", "wind"],
-      "grapes": {
-        "Nero d'Avola": {
-          "style": "Ripe black fruit, spice and medium to full body.",
+          "aromas": ["blackberry", "jam", "spice"],
+          "viticulture": ["Early ripening"],
+          "winemaking": ["Often fruit-forward"],
+          "pairing": ["BBQ", "pizza", "grilled meats"],
+          "examTips": [
+            "Think jammy fruit and high alcohol.",
+            "Compare with Zinfandel."
+          ],
+          "tags": ["red", "high-alcohol", "ripe", "Italy", "Puglia"],
+          "difficulty": 1
+        },
+        "Negroamaro": {
+          "summary": "Dark-fruited grape producing medium to full-bodied wines with moderate tannin.",
+          "style": "Dark fruit, moderate tannin and slightly bitter finish.",
+          "aliases": [],
           "profile": {
             "acidity": "Medium",
             "alcohol": "Medium to High",
             "body": "Medium to Full",
             "tannin": "Medium"
           },
-          "viticulture": ["Performs well in warm dry conditions"],
-          "winemaking": ["Can be juicy or more structured"]
+          "aromas": ["black fruit", "herbal", "spice"],
+          "viticulture": ["Heat tolerant"],
+          "winemaking": ["Often blended"],
+          "pairing": ["roast meats", "pasta", "BBQ"],
+          "examTips": [
+            "Often slightly bitter finish is a clue."
+          ],
+          "tags": ["red", "dark-fruit", "Italy", "Puglia"],
+          "difficulty": 1
+        }
+      }
+    },
+    "basilicata": {
+      "name": "Basilicata",
+      "summary": "Small southern region known for structured Aglianico from elevated volcanic sites.",
+      "climate": "Mediterranean with altitude influence",
+      "styleSummary": "Structured reds from Aglianico with freshness from elevation.",
+      "mitigating": ["altitude", "volcanic soils", "cooler nights"],
+      "keyGrapes": ["Aglianico"],
+      "examTips": [
+        "Aglianico from altitude is the key idea.",
+        "Think structure, tannin and ageing potential."
+      ],
+      "tags": ["Italy", "Basilicata", "Aglianico", "volcanic", "structured"],
+      "difficulty": 1,
+      "grapes": {
+        "Aglianico": {
+          "summary": "Powerful structured red grape producing dark-fruited, high-acid, high-tannin wines with ageing potential.",
+          "style": "Dark fruit, high tannin and high acidity with ageworthy potential.",
+          "aliases": [],
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium to High",
+            "body": "Full",
+            "tannin": "High"
+          },
+          "aromas": ["black fruit", "plum", "smoke", "spice"],
+          "viticulture": ["Late ripening", "Best on elevated sites"],
+          "winemaking": ["Often structured and ageworthy"],
+          "pairing": ["braised meats", "lamb", "game"],
+          "examTips": [
+            "Think southern Italy but with freshness from altitude.",
+            "Very ageworthy style."
+          ],
+          "tags": ["red", "high-tannin", "high-acid", "Italy", "Basilicata"],
+          "difficulty": 1
+        }
+      }
+    },
+    "sicily": {
+      "name": "Sicily",
+      "summary": "Large Mediterranean island producing ripe wines, with cooler volcanic sites on Mount Etna.",
+      "climate": "Mediterranean",
+      "styleSummary": "Ripe wines with regional variation, especially cooler styles on Etna.",
+      "mitigating": ["altitude on Etna", "sea breezes", "volcanic soils"],
+      "keyGrapes": ["Nero d’Avola", "Nerello Mascalese", "Grillo"],
+      "examTips": [
+        "Sicily combines hot climate with cooler volcanic zones.",
+        "Etna is key for fresher, more elegant styles.",
+        "Nero d’Avola is the main grape to remember."
+      ],
+      "tags": ["Italy", "Sicily", "Mediterranean", "volcanic", "Etna"],
+      "difficulty": 1,
+      "grapes": {
+        "Nero d’Avola": {
+          "summary": "Main Sicilian red grape producing ripe dark fruit, spice and full-bodied wines.",
+          "style": "Ripe dark fruit, spice and medium to full body.",
+          "aliases": [],
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "High",
+            "body": "Medium to Full",
+            "tannin": "Medium"
+          },
+          "aromas": ["black cherry", "plum", "spice"],
+          "viticulture": ["Heat tolerant"],
+          "winemaking": ["Often fruit-driven"],
+          "pairing": ["BBQ", "pasta with meat sauce", "grilled meats"],
+          "examTips": [
+            "Think ripe fruit and warm climate.",
+            "Usually softer than northern Italian reds."
+          ],
+          "tags": ["red", "warm-climate", "ripe-fruit", "Italy", "Sicily"],
+          "difficulty": 1
+        },
+        "Nerello Mascalese": {
+          "summary": "Volcanic-site red grape producing elegant wines with higher acidity and lighter colour.",
+          "style": "Lighter colour, higher acidity, red fruit and mineral notes.",
+          "aliases": [],
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "Medium"
+          },
+          "aromas": ["red cherry", "floral", "mineral"],
+          "viticulture": ["Grown on volcanic slopes"],
+          "winemaking": ["Often compared to Pinot Noir or Nebbiolo styles"],
+          "pairing": ["roast lamb", "grilled vegetables"],
+          "examTips": [
+            "Think Etna and higher elevation.",
+            "More elegant than Nero d’Avola."
+          ],
+          "tags": ["red", "volcanic", "elegant", "Italy", "Etna"],
+          "difficulty": 1
         },
         "Grillo": {
-          "style": "Fresh to medium-bodied white with citrus and orchard fruit.",
+          "summary": "Fresh to aromatic white grape used for both dry wines and historically Marsala.",
+          "style": "Fresh citrus and tropical fruit white.",
+          "aliases": [],
           "profile": {
             "acidity": "Medium",
             "alcohol": "Medium",
             "body": "Medium",
             "tannin": "-"
           },
-          "viticulture": ["Well suited to Sicilian climate"],
-          "winemaking": ["Usually dry fresh styles"]
+          "aromas": ["citrus", "tropical fruit", "herbal"],
+          "viticulture": ["Heat tolerant"],
+          "winemaking": ["Dry styles now common"],
+          "pairing": ["seafood", "salads", "light dishes"],
+          "examTips": [
+            "Often fresher than expected for a hot region."
+          ],
+          "tags": ["white", "fresh", "Mediterranean", "Italy", "Sicily"],
+          "difficulty": 1
         }
       }
     }

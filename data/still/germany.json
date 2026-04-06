@@ -1,295 +1,183 @@
 {
-  "name": "Spain",
-  "summary": "Spain combines Atlantic, continental and Mediterranean influences depending on region, altitude and distance from the sea.",
+  "name": "Germany",
+  "summary": "Germany is a cool-climate wine country best known for high-acid Riesling in styles ranging from dry to sweet.",
+  "examTips": [
+    "Germany is defined by cool climate and high acidity.",
+    "Riesling is the most important grape.",
+    "Sweetness levels (dry → sweet) are key exam themes."
+  ],
+  "tags": ["Germany", "Riesling", "cool-climate", "high-acid", "sweetness"],
+  "difficulty": 1,
   "regions": {
-    "rias-baixas": {
-      "name": "Rias Baixas",
-      "climate": "Maritime",
-      "styleSummary": "Fresh high-acid whites with citrus, stone fruit and saline notes.",
-      "mitigating": ["Atlantic influence", "high rainfall", "canopy management", "coastal breezes"],
+
+    "mosel": {
+      "name": "Mosel",
+      "summary": "Cool river valley producing light-bodied, high-acid Riesling with lower alcohol and pronounced aromatics.",
+      "climate": "Cool continental",
+      "styleSummary": "Light-bodied, high-acid Riesling with low alcohol.",
+      "mitigating": ["river reflection", "steep slopes", "slate soils"],
+      "keyGrapes": ["Riesling"],
+      "examTips": [
+        "Think very light body and low alcohol.",
+        "High acidity + sweetness balance is key."
+      ],
+      "tags": ["Germany", "Mosel", "Riesling", "cool"],
+      "difficulty": 1,
       "grapes": {
-        "Albarino": {
-          "style": "High-acid aromatic white with citrus, peach and saline notes.",
+        "Riesling": {
+          "summary": "High-acid aromatic grape producing light, delicate wines in Mosel.",
+          "style": "Lime, green apple, low alcohol, sometimes off-dry.",
+          "aliases": [],
           "profile": {
             "acidity": "High",
-            "alcohol": "Medium",
-            "body": "Light to Medium",
+            "alcohol": "Low",
+            "body": "Light",
             "tannin": "-"
           },
-          "viticulture": ["Suitable for cool wet climate", "Needs good canopy management in humid conditions"],
-          "winemaking": ["Usually fresh dry style", "Generally unoaked"]
+          "aromas": ["lime", "green apple", "mineral"],
+          "viticulture": ["Steep slopes maximize sunlight"],
+          "winemaking": ["Often off-dry styles"],
+          "pairing": ["spicy food", "light seafood"],
+          "examTips": [
+            "Low alcohol is a key Mosel clue."
+          ],
+          "tags": ["white", "high-acid", "low-alcohol"],
+          "difficulty": 1
         }
       }
     },
-    "rueda": {
-      "name": "Rueda",
-      "climate": "Continental",
-      "styleSummary": "Fresh aromatic whites, especially from Verdejo.",
-      "mitigating": ["altitude", "cool nights", "continental conditions"],
+
+    "rheingau": {
+      "name": "Rheingau",
+      "summary": "Warmer region producing fuller-bodied Riesling and important Pinot Noir.",
+      "climate": "Moderate continental",
+      "styleSummary": "More structured and fuller wines.",
+      "mitigating": ["river reflection", "south-facing slopes"],
+      "keyGrapes": ["Riesling", "Spätburgunder"],
+      "examTips": [
+        "Richer and more structured than Mosel.",
+        "Important Pinot Noir region."
+      ],
+      "tags": ["Germany", "Rheingau"],
+      "difficulty": 1,
       "grapes": {
-        "Verdejo": {
-          "style": "Citrus, herb and stone-fruit white with good freshness.",
+        "Riesling": {
+          "summary": "More structured Riesling with greater body and ripeness.",
+          "style": "Citrus, stone fruit, fuller body.",
+          "aliases": [],
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "aromas": ["citrus", "peach"],
+          "viticulture": ["Warmer conditions than Mosel"],
+          "winemaking": ["Dry styles common"],
+          "pairing": ["pork", "chicken"],
+          "examTips": [
+            "More body than Mosel."
+          ],
+          "tags": ["white"],
+          "difficulty": 1
+        },
+
+        "Spatburgunder": {
+          "summary": "German Pinot Noir producing light to medium-bodied reds.",
+          "style": "Red fruit, light body, fresh acidity.",
+          "aliases": ["Pinot Noir"],
           "profile": {
             "acidity": "Medium to High",
             "alcohol": "Medium",
             "body": "Light to Medium",
-            "tannin": "-"
+            "tannin": "Low to Medium"
           },
-          "viticulture": ["Performs well with warm days and cool nights"],
-          "winemaking": ["Usually fresh styles", "Occasionally lees or oak influence"]
-        },
-        "Sauvignon Blanc": {
-          "style": "Fresh citrus and herbaceous white with pronounced aromatics.",
-          "profile": {
-            "acidity": "High",
-            "alcohol": "Low to Medium",
-            "body": "Light",
-            "tannin": "-"
-          },
-          "viticulture": ["Can retain freshness in cooler elevated sites"],
-          "winemaking": ["Usually cool fermented", "Fresh aromatic style"]
+          "aromas": ["red cherry", "raspberry"],
+          "viticulture": ["Cool climate"],
+          "winemaking": ["Light extraction"],
+          "pairing": ["duck", "mushroom"],
+          "examTips": [
+            "German Pinot Noir is lighter than many New World styles."
+          ],
+          "tags": ["red"],
+          "difficulty": 1
         }
       }
     },
-    "rioja": {
-      "name": "Rioja",
-      "climate": "Mixed / Transitional",
-      "styleSummary": "Can range from fresher elegant styles to riper fuller expressions depending on subregion and oak ageing.",
-      "mitigating": ["altitude", "mountain shelter", "subregional variation", "Atlantic influence in cooler areas"],
+
+    "pfalz": {
+      "name": "Pfalz",
+      "summary": "Warmer region producing riper, fuller wines including dry Riesling.",
+      "climate": "Warm continental",
+      "styleSummary": "Riper, fuller wines.",
+      "mitigating": ["sheltered by mountains"],
+      "keyGrapes": ["Riesling"],
+      "examTips": [
+        "Warmer than Mosel.",
+        "Often dry styles."
+      ],
+      "tags": ["Germany", "warm"],
+      "difficulty": 1,
       "grapes": {
-        "Tempranillo": {
-          "style": "Red and black fruit, medium to high body, spice and leather with age.",
-          "profile": {
-            "acidity": "Medium",
-            "alcohol": "Medium to High",
-            "body": "Medium to Full",
-            "tannin": "Medium"
-          },
-          "viticulture": ["Ripens relatively early", "Can retain freshness in suitable sites"],
-          "winemaking": ["American or French oak common", "Ageing classifications important"]
-        },
-        "Garnacha": {
-          "style": "Riper red fruit and spice, fuller body.",
-          "profile": {
-            "acidity": "Medium",
-            "alcohol": "High",
-            "body": "Full",
-            "tannin": "Medium"
-          },
-          "viticulture": ["Heat tolerant"],
-          "winemaking": ["Often blended"]
-        },
-        "Graciano": {
-          "style": "Perfumed dark fruit and freshness, often used to add acidity and structure.",
-          "profile": {
-            "acidity": "High",
-            "alcohol": "Medium",
-            "body": "Medium",
-            "tannin": "Medium to High"
-          },
-          "viticulture": ["Lower yielding and harder to ripen"],
-          "winemaking": ["Usually a blending component"]
-        },
-        "Mazuelo": {
-          "style": "Adds colour, tannin and acidity to blends.",
-          "profile": {
-            "acidity": "High",
-            "alcohol": "Medium",
-            "body": "Medium",
-            "tannin": "High"
-          },
-          "viticulture": ["Late ripening"],
-          "winemaking": ["Mostly blended"]
-        },
-        "Viura": {
-          "style": "Citrus, floral notes and can be fresh or oak-aged.",
-          "profile": {
-            "acidity": "Medium",
-            "alcohol": "Medium",
-            "body": "Medium",
-            "tannin": "-"
-          },
-          "viticulture": ["Performs well in Rioja"],
-          "winemaking": ["Fresh or oak-aged white styles"]
-        }
-      }
-    },
-    "ribera-del-duero": {
-      "name": "Ribera del Duero",
-      "climate": "Continental",
-      "styleSummary": "Structured reds with ripe fruit, firm tannin and freshness from altitude.",
-      "mitigating": ["high altitude", "large diurnal range", "river influence"],
-      "grapes": {
-        "Tempranillo": {
-          "style": "Ripe black fruit, firm tannin, fuller body and fresh acidity.",
+        "Riesling": {
+          "summary": "Riper Riesling with more body and less delicate style.",
+          "style": "Ripe citrus, stone fruit.",
+          "aliases": [],
           "profile": {
             "acidity": "Medium to High",
             "alcohol": "Medium to High",
-            "body": "Full",
-            "tannin": "High"
+            "body": "Medium",
+            "tannin": "-"
           },
-          "viticulture": ["Warm days and cool nights help ripening balance"],
-          "winemaking": ["Oak common", "Often more concentrated than Rioja"]
+          "aromas": ["peach", "citrus"],
+          "viticulture": ["Warmer climate"],
+          "winemaking": ["Dry styles common"],
+          "pairing": ["roast meats"],
+          "examTips": [
+            "More alcohol and ripeness than Mosel."
+          ],
+          "tags": ["white"],
+          "difficulty": 1
         }
       }
     },
-    "priorat": {
-      "name": "Priorat",
-      "climate": "Mediterranean",
-      "styleSummary": "Powerful concentrated reds from warm dry conditions and poor slate soils.",
-      "mitigating": ["altitude", "poor slate soils", "diurnal range", "low yields"],
+
+    "baden": {
+      "name": "Baden",
+      "summary": "Warmest German region producing fuller-bodied wines.",
+      "climate": "Warm continental",
+      "styleSummary": "Fuller-bodied wines.",
+      "mitigating": ["southern location"],
+      "keyGrapes": ["Spätburgunder"],
+      "examTips": [
+        "Warmest region.",
+        "Important for red wines."
+      ],
+      "tags": ["Germany", "warm"],
+      "difficulty": 1,
       "grapes": {
-        "Garnacha": {
-          "style": "Ripe black and red fruit, spice, high alcohol and concentration.",
+        "Spatburgunder": {
+          "summary": "Fuller German Pinot Noir.",
+          "style": "Richer red fruit.",
+          "aliases": ["Pinot Noir"],
           "profile": {
             "acidity": "Medium",
-            "alcohol": "High",
-            "body": "Full",
-            "tannin": "Medium"
-          },
-          "viticulture": ["Old vines often important", "Very low yields in poor soils"],
-          "winemaking": ["Concentrated styles", "Oak often used"]
-        },
-        "Carinena": {
-          "style": "Dark fruit, high acidity, structure and mineral edge.",
-          "profile": {
-            "acidity": "High",
             "alcohol": "Medium to High",
-            "body": "Full",
-            "tannin": "High"
-          },
-          "viticulture": ["Thrives in warm dry sites with low yields"],
-          "winemaking": ["Often blended with Garnacha"]
-        }
-      }
-    },
-    "navarra": {
-      "name": "Navarra",
-      "climate": "Mixed / Transitional",
-      "styleSummary": "A diverse region producing fresh rosé, reds and some whites.",
-      "mitigating": ["Atlantic influence in north", "Mediterranean warmth in south", "altitude variation"],
-      "grapes": {
-        "Garnacha": {
-          "style": "Ripe red fruit and spice, widely used for rosé and reds.",
-          "profile": {
-            "acidity": "Medium",
-            "alcohol": "High",
-            "body": "Medium to Full",
-            "tannin": "Medium"
-          },
-          "viticulture": ["Heat tolerant", "Useful across varied sites"],
-          "winemaking": ["Rosé and red styles common"]
-        },
-        "Tempranillo": {
-          "style": "Fresh red and black fruit with medium body.",
-          "profile": {
-            "acidity": "Medium",
-            "alcohol": "Medium",
             "body": "Medium",
             "tannin": "Medium"
           },
-          "viticulture": ["Adaptable in mixed climate zones"],
-          "winemaking": ["Often blended"]
-        }
-      }
-    },
-    "catalunya": {
-      "name": "Catalunya",
-      "climate": "Mediterranean",
-      "styleSummary": "Wide range of still wines from an extensive and varied region.",
-      "mitigating": ["coastal influence", "altitude in inland sites", "Mediterranean warmth"],
-      "grapes": {
-        "Garnacha": {
-          "style": "Ripe red fruit, spice and medium to full body.",
-          "profile": {
-            "acidity": "Medium",
-            "alcohol": "High",
-            "body": "Full",
-            "tannin": "Medium"
-          },
-          "viticulture": ["Performs well in warm conditions"],
-          "winemaking": ["Blended and varietal styles possible"]
-        },
-        "Macabeo": {
-          "style": "Neutral to lightly floral white with citrus and orchard fruit.",
-          "profile": {
-            "acidity": "Medium",
-            "alcohol": "Low to Medium",
-            "body": "Light to Medium",
-            "tannin": "-"
-          },
-          "viticulture": ["Widely planted", "Useful in both still and sparkling wine"],
-          "winemaking": ["Fresh dry styles common"]
-        }
-      }
-    },
-    "la-mancha": {
-      "name": "La Mancha",
-      "climate": "Continental",
-      "styleSummary": "Large hot dry inland region producing volume and increasingly better quality wines.",
-      "mitigating": ["altitude", "dry conditions", "wide diurnal range"],
-      "grapes": {
-        "Tempranillo": {
-          "style": "Ripe dark fruit with moderate acidity.",
-          "profile": {
-            "acidity": "Medium",
-            "alcohol": "Medium to High",
-            "body": "Medium to Full",
-            "tannin": "Medium"
-          },
-          "viticulture": ["Warm dry conditions aid ripening"],
-          "winemaking": ["Fruit-driven styles common"]
-        },
-        "Airen": {
-          "style": "Neutral white, generally simple and light.",
-          "profile": {
-            "acidity": "Low to Medium",
-            "alcohol": "Low to Medium",
-            "body": "Light",
-            "tannin": "-"
-          },
-          "viticulture": ["Very drought tolerant", "High yielding"],
-          "winemaking": ["Usually simple fresh white styles"]
-        }
-      }
-    },
-    "jumilla": {
-      "name": "Jumilla",
-      "climate": "Mediterranean to Continental-influenced",
-      "styleSummary": "Hot dry region known for ripe, powerful Monastrell.",
-      "mitigating": ["altitude", "very low rainfall", "dry sunny conditions"],
-      "grapes": {
-        "Monastrell": {
-          "style": "Dark fruit, spice, high alcohol and firm tannin.",
-          "profile": {
-            "acidity": "Medium",
-            "alcohol": "High",
-            "body": "Full",
-            "tannin": "High"
-          },
-          "viticulture": ["Very drought tolerant", "Performs well in hot dry climates"],
-          "winemaking": ["Can be powerful and concentrated"]
-        }
-      }
-    },
-    "valencia": {
-      "name": "Valencia",
-      "climate": "Mediterranean",
-      "styleSummary": "Warm-climate region producing both reds and whites in a range of styles.",
-      "mitigating": ["coastal influence", "warm sunshine", "altitude inland"],
-      "grapes": {
-        "Monastrell": {
-          "style": "Ripe dark fruit and spice with full body.",
-          "profile": {
-            "acidity": "Medium",
-            "alcohol": "High",
-            "body": "Full",
-            "tannin": "High"
-          },
-          "viticulture": ["Heat and drought tolerant"],
-          "winemaking": ["Often rich styles"]
+          "aromas": ["red fruit"],
+          "viticulture": ["Warm region"],
+          "winemaking": ["More body"],
+          "pairing": ["roast meat"],
+          "examTips": [
+            "Fuller than other German reds."
+          ],
+          "tags": ["red"],
+          "difficulty": 1
         }
       }
     }
+
   }
 }

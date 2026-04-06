@@ -1,55 +1,172 @@
 {
   "name": "Hungary",
-  "summary": "Hungary is best known for Tokaj, producing both dry and botrytised sweet wines with high acidity.",
+  "summary": "Hungary is best known for Tokaj, producing high-acid sweet wines from botrytised grapes, along with dry whites and some reds.",
+  "examTips": [
+    "Tokaj is the most important Hungarian region.",
+    "Furmint is the key grape.",
+    "High acidity balances sweetness in Tokaji wines."
+  ],
+  "tags": ["Hungary", "Tokaj", "sweet-wine", "Furmint", "high-acid"],
+  "difficulty": 1,
   "regions": {
+
     "tokaj": {
       "name": "Tokaj",
+      "summary": "Historic region producing world-class sweet wines from botrytised grapes, as well as dry whites.",
       "climate": "Continental",
-      "styleSummary": "High-acid wines ranging from dry to intensely sweet botrytised styles.",
-      "mitigating": ["river Bodrog and Tisza", "morning mist", "warm autumn", "volcanic soils"],
+      "styleSummary": "Sweet wines balanced by high acidity, plus dry whites.",
+      "mitigating": ["rivers creating mist", "botrytis development", "long autumn"],
+      "keyGrapes": ["Furmint", "Harslevelu"],
+      "examTips": [
+        "Botrytis is key for sweet wines.",
+        "High acidity balances sweetness.",
+        "Think honey, apricot and citrus."
+      ],
+      "tags": ["Hungary", "Tokaj", "botrytis", "sweet"],
+      "difficulty": 1,
       "grapes": {
+
         "Furmint": {
-          "style": "High acidity, citrus, green apple, mineral, can be dry or sweet.",
+          "summary": "Hungary’s most important grape, producing high-acid wines suitable for both dry and sweet styles.",
+          "style": "High acidity, citrus, apple, honey in sweet styles.",
+          "aliases": [],
           "profile": {
             "acidity": "High",
             "alcohol": "Medium",
             "body": "Medium",
             "tannin": "-"
           },
-          "viticulture": ["Susceptible to botrytis", "Late ripening"],
-          "winemaking": ["Dry styles increasingly important", "Also used in Tokaji Aszú"]
+          "aromas": ["apple", "citrus", "honey", "apricot"],
+          "viticulture": ["Susceptible to botrytis"],
+          "winemaking": ["Dry and sweet styles"],
+          "pairing": ["foie gras", "blue cheese", "desserts"],
+          "examTips": [
+            "High acidity is the key clue.",
+            "Essential for sweet wine balance."
+          ],
+          "tags": ["white", "high-acid", "sweet-wine", "Hungary"],
+          "difficulty": 1
         },
+
         "Harslevelu": {
-          "style": "Aromatic, floral, softer and broader than Furmint.",
+          "summary": "Aromatic grape often blended with Furmint to add floral character.",
+          "style": "Floral, honey, softer acidity.",
+          "aliases": [],
           "profile": {
-            "acidity": "Medium to High",
+            "acidity": "Medium",
             "alcohol": "Medium",
             "body": "Medium",
             "tannin": "-"
           },
-          "viticulture": ["Blending grape"],
-          "winemaking": ["Adds aroma and texture"]
+          "aromas": ["floral", "honey", "spice"],
+          "viticulture": ["Often blended"],
+          "winemaking": ["Used in sweet wines"],
+          "pairing": ["desserts", "cheese"],
+          "examTips": [
+            "Adds aromatics to Furmint."
+          ],
+          "tags": ["white", "aromatic", "Hungary"],
+          "difficulty": 1
         }
       }
     },
-    "tokaji-aszu": {
-      "name": "Tokaji Aszú (Sweet)",
+
+    "eger": {
+      "name": "Eger",
+      "summary": "Cooler northern region producing both red blends and white wines.",
       "climate": "Continental",
-      "styleSummary": "Intensely sweet wines balanced by very high acidity.",
-      "mitigating": ["botrytis", "morning mist", "warm autumn"],
+      "styleSummary": "Fresh reds and whites with moderate structure.",
+      "mitigating": ["altitude", "cooler climate"],
+      "keyGrapes": ["Kekfrankos"],
+      "examTips": [
+        "Known for red blends.",
+        "Cooler climate gives freshness."
+      ],
+      "tags": ["Hungary", "Eger"],
+      "difficulty": 1,
       "grapes": {
-        "Furmint": {
-          "style": "Honey, apricot, citrus peel, very high acidity, intense sweetness.",
+
+        "Kekfrankos": {
+          "summary": "High-acid red grape producing fresh, spicy wines.",
+          "style": "Red fruit, spice, high acidity.",
+          "aliases": ["Blaufrankisch"],
           "profile": {
             "acidity": "High",
-            "alcohol": "Low to Medium",
-            "body": "Full",
-            "tannin": "-"
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "Medium"
           },
-          "viticulture": ["Botrytis essential"],
-          "winemaking": ["Aszú paste added to base wine", "High sugar levels"]
+          "aromas": ["red cherry", "spice"],
+          "viticulture": ["Cool climate suitable"],
+          "winemaking": ["Often blended"],
+          "pairing": ["pork", "stews"],
+          "examTips": [
+            "High acidity is key clue."
+          ],
+          "tags": ["red", "high-acid", "Hungary"],
+          "difficulty": 1
+        }
+      }
+    },
+
+    "villany": {
+      "name": "Villány",
+      "summary": "Warm southern region producing full-bodied red wines.",
+      "climate": "Warm continental",
+      "styleSummary": "Full-bodied, ripe red wines.",
+      "mitigating": ["southern exposure"],
+      "keyGrapes": ["Cabernet Sauvignon", "Merlot"],
+      "examTips": [
+        "Warmest Hungarian region.",
+        "Think full-bodied reds."
+      ],
+      "tags": ["Hungary", "warm", "red"],
+      "difficulty": 1,
+      "grapes": {
+
+        "Cabernet Sauvignon": {
+          "summary": "Full-bodied structured red with black fruit.",
+          "style": "Blackcurrant, full body.",
+          "aliases": [],
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "High",
+            "body": "Full",
+            "tannin": "High"
+          },
+          "aromas": ["blackcurrant"],
+          "viticulture": ["Warm climate"],
+          "winemaking": ["Oak used"],
+          "pairing": ["steak"],
+          "examTips": [
+            "Riper than cooler regions."
+          ],
+          "tags": ["red"],
+          "difficulty": 1
+        },
+
+        "Merlot": {
+          "summary": "Soft fruity red with plum character.",
+          "style": "Plum, soft tannin.",
+          "aliases": [],
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium to High",
+            "body": "Medium",
+            "tannin": "Medium"
+          },
+          "aromas": ["plum"],
+          "viticulture": ["Warm region"],
+          "winemaking": ["Fruit-driven"],
+          "pairing": ["pasta"],
+          "examTips": [
+            "Softer than Cabernet."
+          ],
+          "tags": ["red"],
+          "difficulty": 1
         }
       }
     }
+
   }
 }

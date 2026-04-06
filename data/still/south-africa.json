@@ -1,165 +1,246 @@
 {
   "name": "South Africa",
-  "summary": "South Africa has a Mediterranean climate with cooling ocean influence, producing both ripe and fresh styles.",
+  "summary": "South Africa is a warm Mediterranean climate wine country with strong ocean influence, producing balanced wines with both ripeness and freshness.",
+  "examTips": [
+    "Ocean cooling is a key factor in South Africa.",
+    "Chenin Blanc is the most important white grape.",
+    "Pinotage is a signature local variety."
+  ],
+  "tags": ["South Africa", "Chenin Blanc", "Pinotage", "Mediterranean", "ocean-influence"],
+  "difficulty": 1,
   "regions": {
+
     "stellenbosch": {
       "name": "Stellenbosch",
+      "summary": "South Africa’s most important quality region, producing premium red and white wines.",
       "climate": "Mediterranean",
-      "styleSummary": "Structured reds and some high-quality whites.",
-      "mitigating": ["ocean influence", "mountain slopes", "altitude"],
+      "styleSummary": "Structured reds and balanced whites.",
+      "mitigating": ["ocean breezes", "altitude"],
+      "keyGrapes": ["Cabernet Sauvignon", "Chenin Blanc"],
+      "examTips": [
+        "This is the most important South African region.",
+        "Known for Bordeaux-style reds."
+      ],
+      "tags": ["South Africa", "Stellenbosch", "premium"],
+      "difficulty": 1,
       "grapes": {
+
         "Cabernet Sauvignon": {
-          "style": "Blackcurrant, structured, firm tannin.",
+          "summary": "Structured red grape producing blackcurrant and firm tannin wines.",
+          "style": "Blackcurrant, cassis, structured.",
+          "aliases": [],
           "profile": {
-            "acidity": "Medium to High",
+            "acidity": "Medium",
             "alcohol": "Medium to High",
             "body": "Full",
             "tannin": "High"
           },
-          "viticulture": ["Warm but moderated climate"],
-          "winemaking": ["Often oak aged"]
+          "aromas": ["blackcurrant", "cassis"],
+          "viticulture": ["Warm climate"],
+          "winemaking": ["Often oak aged"],
+          "pairing": ["steak", "lamb"],
+          "examTips": [
+            "Often compared to Bordeaux."
+          ],
+          "tags": ["red", "structured"],
+          "difficulty": 1
         },
-        "Merlot": {
-          "style": "Plum, softer tannins, rounder style.",
-          "profile": {
-            "acidity": "Medium",
-            "alcohol": "Medium to High",
-            "body": "Medium to Full",
-            "tannin": "Medium"
-          },
-          "viticulture": ["Sensitive to heat"],
-          "winemaking": ["Often blended"]
-        },
+
         "Chenin Blanc": {
-          "style": "From fresh to rich styles, apple, honey notes.",
+          "summary": "South Africa’s key white grape producing a wide range of styles.",
+          "style": "Apple, citrus, honey (if aged).",
+          "aliases": ["Steen"],
           "profile": {
             "acidity": "Medium to High",
             "alcohol": "Medium",
             "body": "Medium",
             "tannin": "-"
           },
+          "aromas": ["apple", "citrus", "honey"],
           "viticulture": ["Widely planted"],
-          "winemaking": ["Wide range of styles"]
+          "winemaking": ["Dry, sweet or oaked"],
+          "pairing": ["chicken", "fish"],
+          "examTips": [
+            "Very versatile grape."
+          ],
+          "tags": ["white"],
+          "difficulty": 1
         }
       }
     },
+
     "paarl": {
       "name": "Paarl",
-      "climate": "Mediterranean",
-      "styleSummary": "Warmer region producing riper, fuller-bodied wines.",
-      "mitigating": ["less coastal influence"],
+      "summary": "Warm inland region producing fuller-bodied wines, including ripe Shiraz, Chenin Blanc and Pinotage.",
+      "climate": "Warm Mediterranean",
+      "styleSummary": "Riper, fuller wines.",
+      "mitigating": ["limited ocean influence"],
+      "keyGrapes": ["Shiraz", "Chenin Blanc", "Pinotage"],
+      "examTips": [
+        "Warmer than Stellenbosch.",
+        "Riper styles.",
+        "Pinotage is an important South African signature grape."
+      ],
+      "tags": ["South Africa", "warm"],
+      "difficulty": 1,
       "grapes": {
         "Shiraz": {
-          "style": "Ripe black fruit, spice, fuller body.",
+          "summary": "Full-bodied red grape producing ripe fruit and spice.",
+          "style": "Black fruit, spice.",
+          "aliases": ["Syrah"],
           "profile": {
             "acidity": "Medium",
             "alcohol": "High",
             "body": "Full",
             "tannin": "Medium to High"
           },
-          "viticulture": ["Warm conditions"],
-          "winemaking": ["Often rich styles"]
+          "aromas": ["blackberry", "pepper"],
+          "viticulture": ["Warm climate"],
+          "winemaking": ["Fruit-driven"],
+          "pairing": ["BBQ"],
+          "examTips": [
+            "Riper than cool climate Syrah."
+          ],
+          "tags": ["red"],
+          "difficulty": 1
         },
         "Chenin Blanc": {
+          "summary": "Versatile white grape producing ripe fruit and fuller body in warmer climates.",
           "style": "Riper fruit, fuller body than cooler regions.",
+          "aliases": ["Steen"],
           "profile": {
             "acidity": "Medium",
             "alcohol": "Medium to High",
             "body": "Medium to Full",
             "tannin": "-"
           },
+          "aromas": ["apple", "stone fruit", "honey"],
           "viticulture": ["Warm climate"],
-          "winemaking": ["Fresh to rich styles"]
+          "winemaking": ["Fresh to rich styles"],
+          "pairing": ["roast chicken", "pork"],
+          "examTips": [
+            "Usually riper and broader than cooler South African Chenin."
+          ],
+          "tags": ["white"],
+          "difficulty": 1
+        },
+        "Pinotage": {
+          "summary": "Signature South African grape producing bold fruity wines, sometimes with smoky notes.",
+          "style": "Black fruit, smoke.",
+          "aliases": [],
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium to High",
+            "body": "Full",
+            "tannin": "Medium"
+          },
+          "aromas": ["blackberry", "smoke", "plum"],
+          "viticulture": ["Heat tolerant"],
+          "winemaking": ["Fruit-driven"],
+          "pairing": ["BBQ", "grilled meats"],
+          "examTips": [
+            "Unique South African grape.",
+            "Smoky note can be a clue in some styles."
+          ],
+          "tags": ["red", "signature-grape", "South Africa"],
+          "difficulty": 1
         }
       }
     },
+
     "walker-bay": {
       "name": "Walker Bay",
+      "summary": "Cool coastal region producing elegant Pinot Noir and Chardonnay.",
       "climate": "Cool maritime",
-      "styleSummary": "Cool-climate wines with high acidity and elegance.",
-      "mitigating": ["cold ocean currents", "sea breezes"],
+      "styleSummary": "Elegant, fresh wines.",
+      "mitigating": ["strong ocean influence"],
+      "keyGrapes": ["Pinot Noir", "Chardonnay"],
+      "examTips": [
+        "Cool climate.",
+        "More elegant than inland regions."
+      ],
+      "tags": ["South Africa", "cool-climate"],
+      "difficulty": 1,
       "grapes": {
+
         "Pinot Noir": {
-          "style": "Red fruit, light body, fresh acidity.",
+          "summary": "Elegant red grape producing red fruit wines with freshness.",
+          "style": "Red cherry, light body.",
+          "aliases": [],
           "profile": {
-            "acidity": "Medium to High",
+            "acidity": "High",
             "alcohol": "Medium",
             "body": "Light to Medium",
-            "tannin": "Low to Medium"
+            "tannin": "Low"
           },
-          "viticulture": ["Cool climate"],
-          "winemaking": ["Elegant styles"]
+          "aromas": ["red cherry", "raspberry"],
+          "viticulture": ["Cool coastal"],
+          "winemaking": ["Gentle extraction"],
+          "pairing": ["duck"],
+          "examTips": [
+            "Cool climate style."
+          ],
+          "tags": ["red"],
+          "difficulty": 1
         },
+
         "Chardonnay": {
-          "style": "Citrus, mineral, fresh style.",
+          "summary": "Fresh Chardonnay with citrus and mineral notes.",
+          "style": "Citrus, apple.",
+          "aliases": [],
           "profile": {
             "acidity": "High",
             "alcohol": "Medium",
             "body": "Medium",
             "tannin": "-"
           },
+          "aromas": ["citrus", "apple"],
           "viticulture": ["Cool climate"],
-          "winemaking": ["Fresh or lightly oaked"]
+          "winemaking": ["Fresh or oaked"],
+          "pairing": ["seafood"],
+          "examTips": [
+            "Higher acidity than warm regions."
+          ],
+          "tags": ["white"],
+          "difficulty": 1
         }
       }
     },
+
     "swartland": {
       "name": "Swartland",
-      "climate": "Warm Mediterranean",
-      "styleSummary": "Innovative styles with old vines and minimal intervention.",
-      "mitigating": ["old vines", "dry farming"],
+      "summary": "Hot dry region known for old vines and innovative winemaking.",
+      "climate": "Hot Mediterranean",
+      "styleSummary": "Ripe, concentrated wines with minimal intervention styles.",
+      "mitigating": ["dry farming"],
+      "keyGrapes": ["Chenin Blanc", "Syrah"],
+      "examTips": [
+        "Known for old vines.",
+        "More experimental styles."
+      ],
+      "tags": ["South Africa", "Swartland"],
+      "difficulty": 1,
       "grapes": {
+
         "Chenin Blanc": {
-          "style": "Concentrated, textured, sometimes oxidative.",
-          "profile": {
-            "acidity": "Medium to High",
-            "alcohol": "Medium",
-            "body": "Medium to Full",
-            "tannin": "-"
-          },
-          "viticulture": ["Old vines", "dry farming"],
-          "winemaking": ["Minimal intervention"]
-        },
-        "Syrah": {
-          "style": "Black fruit, spice, sometimes savoury.",
+          "summary": "Old vine Chenin producing concentrated wines.",
+          "style": "Ripe fruit, texture.",
+          "aliases": ["Steen"],
           "profile": {
             "acidity": "Medium",
             "alcohol": "Medium to High",
             "body": "Medium to Full",
-            "tannin": "Medium to High"
-          },
-          "viticulture": ["Warm dry climate"],
-          "winemaking": ["Often less oak"]
-        }
-      }
-    },
-    "constantia": {
-      "name": "Constantia",
-      "climate": "Cool maritime",
-      "styleSummary": "Fresh whites and historic sweet wines.",
-      "mitigating": ["strong ocean influence"],
-      "grapes": {
-        "Sauvignon Blanc": {
-          "style": "Citrus, herbaceous, fresh acidity.",
-          "profile": {
-            "acidity": "High",
-            "alcohol": "Low to Medium",
-            "body": "Light",
             "tannin": "-"
           },
-          "viticulture": ["Cool climate"],
-          "winemaking": ["Fresh styles"]
-        },
-        "Muscat": {
-          "style": "Sweet, floral, grapey, rich.",
-          "profile": {
-            "acidity": "Medium",
-            "alcohol": "Low",
-            "body": "Full",
-            "tannin": "-"
-          },
-          "viticulture": ["Used for sweet wines"],
-          "winemaking": ["Fortified / sweet styles"]
+          "aromas": ["apple", "honey"],
+          "viticulture": ["Old vines"],
+          "winemaking": ["Minimal intervention"],
+          "pairing": ["roast chicken"],
+          "examTips": [
+            "More concentrated style."
+          ],
+          "tags": ["white"],
+          "difficulty": 1
         }
       }
     }

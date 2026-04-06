@@ -1,293 +1,564 @@
 {
   "name": "Spain",
   "summary": "Spain combines Atlantic, continental and Mediterranean influences depending on region, altitude and distance from the sea.",
+  "examTips": [
+    "Study Spain by comparing Atlantic, inland continental and Mediterranean regions.",
+    "Altitude is a major theme in Spain because it helps preserve acidity and freshness.",
+    "Oak ageing is especially important in classic regions such as Rioja."
+  ],
+  "tags": ["Europe", "still", "classic", "climate-diversity", "exam-core"],
+  "difficulty": 1,
   "regions": {
     "rias-baixas": {
       "name": "Rias Baixas",
+      "summary": "Cool Atlantic region known for fresh, high-acid aromatic whites with saline freshness.",
       "climate": "Maritime",
       "styleSummary": "Fresh high-acid whites with citrus, stone fruit and saline notes.",
       "mitigating": ["Atlantic influence", "high rainfall", "canopy management", "coastal breezes"],
+      "keyGrapes": ["Albarino"],
+      "examTips": [
+        "Think Atlantic, high rainfall and fresh whites.",
+        "High acidity and saline notes are useful tasting clues."
+      ],
+      "tags": ["Spain", "Atlantic", "maritime", "white", "high-acid", "aromatic"],
+      "difficulty": 1,
       "grapes": {
         "Albarino": {
+          "summary": "Aromatic high-acid white grape with citrus, peach and saline character, strongly linked to cool maritime conditions.",
           "style": "High-acid aromatic white with citrus, peach and saline notes.",
+          "aliases": ["Albariño"],
           "profile": {
             "acidity": "High",
             "alcohol": "Medium",
             "body": "Light to Medium",
             "tannin": "-"
           },
+          "aromas": ["citrus", "peach", "saline", "stone fruit", "floral"],
           "viticulture": ["Suitable for cool wet climate", "Needs good canopy management in humid conditions"],
-          "winemaking": ["Usually fresh dry style", "Generally unoaked"]
+          "winemaking": ["Usually fresh dry style", "Generally unoaked"],
+          "pairing": ["shellfish", "grilled fish", "light seafood dishes"],
+          "examTips": [
+            "High acidity plus maritime freshness is a strong clue.",
+            "Usually associated with fresh unoaked styles."
+          ],
+          "tags": ["white", "aromatic", "high-acid", "maritime", "seafood-friendly", "Spain"],
+          "difficulty": 1
         }
       }
     },
     "rueda": {
       "name": "Rueda",
+      "summary": "Inland elevated region known for fresh aromatic whites, especially Verdejo.",
       "climate": "Continental",
       "styleSummary": "Fresh aromatic whites, especially from Verdejo.",
       "mitigating": ["altitude", "cool nights", "continental conditions"],
+      "keyGrapes": ["Verdejo", "Sauvignon Blanc"],
+      "examTips": [
+        "Altitude and cool nights help preserve freshness despite warm days.",
+        "Verdejo is the key grape to remember."
+      ],
+      "tags": ["Spain", "continental", "white", "aromatic", "fresh"],
+      "difficulty": 1,
       "grapes": {
         "Verdejo": {
+          "summary": "Fresh aromatic white grape giving citrus, herb and stone-fruit character with good acidity.",
           "style": "Citrus, herb and stone-fruit white with good freshness.",
+          "aliases": [],
           "profile": {
             "acidity": "Medium to High",
             "alcohol": "Medium",
             "body": "Light to Medium",
             "tannin": "-"
           },
+          "aromas": ["citrus", "herb", "stone fruit", "apple"],
           "viticulture": ["Performs well with warm days and cool nights"],
-          "winemaking": ["Usually fresh styles", "Occasionally lees or oak influence"]
+          "winemaking": ["Usually fresh styles", "Occasionally lees or oak influence"],
+          "pairing": ["salads", "white fish", "light tapas"],
+          "examTips": [
+            "Fresh aromatic whites from inland Spain often point to Verdejo.",
+            "Cool nights are important for retaining acidity."
+          ],
+          "tags": ["white", "aromatic", "fresh", "Spain", "continental"],
+          "difficulty": 1
         },
         "Sauvignon Blanc": {
+          "summary": "Aromatic white grape producing fresh citrus and herbaceous styles in cooler elevated sites.",
           "style": "Fresh citrus and herbaceous white with pronounced aromatics.",
+          "aliases": [],
           "profile": {
             "acidity": "High",
             "alcohol": "Low to Medium",
             "body": "Light",
             "tannin": "-"
           },
+          "aromas": ["citrus", "herbaceous", "green fruit", "gooseberry"],
           "viticulture": ["Can retain freshness in cooler elevated sites"],
-          "winemaking": ["Usually cool fermented", "Fresh aromatic style"]
+          "winemaking": ["Usually cool fermented", "Fresh aromatic style"],
+          "pairing": ["goat cheese", "salads", "seafood"],
+          "examTips": [
+            "Expect higher acidity and more obvious herbaceous notes.",
+            "Usually made in a fresh cool-fermented style."
+          ],
+          "tags": ["white", "aromatic", "high-acid", "herbaceous", "Spain"],
+          "difficulty": 1
         }
       }
     },
     "rioja": {
       "name": "Rioja",
+      "summary": "Classic Spanish region known for oak-aged reds, subregional variation and ageing classifications.",
       "climate": "Mixed / Transitional",
       "styleSummary": "Can range from fresher elegant styles to riper fuller expressions depending on subregion and oak ageing.",
       "mitigating": ["altitude", "mountain shelter", "subregional variation", "Atlantic influence in cooler areas"],
+      "keyGrapes": ["Tempranillo", "Garnacha", "Graciano", "Mazuelo", "Viura"],
+      "examTips": [
+        "Ageing classifications and oak use are key Rioja themes.",
+        "Tempranillo is the core red grape to remember."
+      ],
+      "tags": ["Spain", "classic", "oak", "red", "ageing", "transitional"],
+      "difficulty": 1,
       "grapes": {
         "Tempranillo": {
+          "summary": "Spain's flagship red grape, giving red and black fruit with spice and savoury development in oak-aged wines.",
           "style": "Red and black fruit, medium to high body, spice and leather with age.",
+          "aliases": [],
           "profile": {
             "acidity": "Medium",
             "alcohol": "Medium to High",
             "body": "Medium to Full",
             "tannin": "Medium"
           },
+          "aromas": ["red fruit", "black fruit", "spice", "leather", "vanilla"],
           "viticulture": ["Ripens relatively early", "Can retain freshness in suitable sites"],
-          "winemaking": ["American or French oak common", "Ageing classifications important"]
+          "winemaking": ["American or French oak common", "Ageing classifications important"],
+          "pairing": ["lamb", "grilled meats", "hard cheese"],
+          "examTips": [
+            "Oak-aged Tempranillo is central to classic Rioja.",
+            "Leather and spice often appear with bottle age."
+          ],
+          "tags": ["red", "oak", "classic", "Spain", "Tempranillo"],
+          "difficulty": 1
         },
         "Garnacha": {
+          "summary": "Warm-climate red grape bringing ripe fruit, spice and body to Rioja blends.",
           "style": "Riper red fruit and spice, fuller body.",
+          "aliases": ["Grenache"],
           "profile": {
             "acidity": "Medium",
             "alcohol": "High",
             "body": "Full",
             "tannin": "Medium"
           },
+          "aromas": ["ripe red fruit", "spice", "strawberry", "raspberry"],
           "viticulture": ["Heat tolerant"],
-          "winemaking": ["Often blended"]
+          "winemaking": ["Often blended"],
+          "pairing": ["roast meats", "BBQ", "stews"],
+          "examTips": [
+            "Adds ripeness and body in blends.",
+            "Usually softer and riper than Tempranillo."
+          ],
+          "tags": ["red", "ripe-fruit", "blend", "Spain", "warm-climate"],
+          "difficulty": 1
         },
         "Graciano": {
+          "summary": "Perfumed dark-fruited grape used to add freshness, acidity and structure to blends.",
           "style": "Perfumed dark fruit and freshness, often used to add acidity and structure.",
+          "aliases": [],
           "profile": {
             "acidity": "High",
             "alcohol": "Medium",
             "body": "Medium",
             "tannin": "Medium to High"
           },
+          "aromas": ["dark fruit", "floral", "spice"],
           "viticulture": ["Lower yielding and harder to ripen"],
-          "winemaking": ["Usually a blending component"]
+          "winemaking": ["Usually a blending component"],
+          "pairing": ["charcuterie", "roast meats"],
+          "examTips": [
+            "High acidity makes it useful in blends.",
+            "Usually not the dominant grape."
+          ],
+          "tags": ["red", "blend", "high-acid", "Spain"],
+          "difficulty": 2
         },
         "Mazuelo": {
+          "summary": "Late-ripening grape used mainly for colour, tannin and acidity in blends.",
           "style": "Adds colour, tannin and acidity to blends.",
+          "aliases": ["Carignan", "Cariñena"],
           "profile": {
             "acidity": "High",
             "alcohol": "Medium",
             "body": "Medium",
             "tannin": "High"
           },
+          "aromas": ["dark fruit", "spice"],
           "viticulture": ["Late ripening"],
-          "winemaking": ["Mostly blended"]
+          "winemaking": ["Mostly blended"],
+          "pairing": ["grilled meats", "stews"],
+          "examTips": [
+            "Think structure rather than dominant flavour role.",
+            "Usually appears as a supporting blending grape."
+          ],
+          "tags": ["red", "blend", "high-tannin", "Spain"],
+          "difficulty": 2
         },
         "Viura": {
+          "summary": "Traditional white grape of Rioja, able to make fresh or oak-aged styles.",
           "style": "Citrus, floral notes and can be fresh or oak-aged.",
+          "aliases": ["Macabeo"],
           "profile": {
             "acidity": "Medium",
             "alcohol": "Medium",
             "body": "Medium",
             "tannin": "-"
           },
+          "aromas": ["citrus", "floral", "orchard fruit"],
           "viticulture": ["Performs well in Rioja"],
-          "winemaking": ["Fresh or oak-aged white styles"]
+          "winemaking": ["Fresh or oak-aged white styles"],
+          "pairing": ["grilled fish", "white meats"],
+          "examTips": [
+            "Can appear in more traditional oak-influenced white Rioja.",
+            "More neutral than very aromatic white grapes."
+          ],
+          "tags": ["white", "traditional", "oak-possible", "Spain"],
+          "difficulty": 2
         }
       }
     },
     "ribera-del-duero": {
       "name": "Ribera del Duero",
+      "summary": "High-altitude inland red wine region known for concentrated yet fresh Tempranillo.",
       "climate": "Continental",
       "styleSummary": "Structured reds with ripe fruit, firm tannin and freshness from altitude.",
       "mitigating": ["high altitude", "large diurnal range", "river influence"],
+      "keyGrapes": ["Tempranillo"],
+      "examTips": [
+        "Usually more powerful and concentrated than Rioja.",
+        "Altitude and diurnal range are key balancing factors."
+      ],
+      "tags": ["Spain", "red", "continental", "high-altitude", "structured"],
+      "difficulty": 1,
       "grapes": {
         "Tempranillo": {
+          "summary": "Concentrated, structured Tempranillo showing ripe black fruit, firm tannin and freshness.",
           "style": "Ripe black fruit, firm tannin, fuller body and fresh acidity.",
+          "aliases": ["Tinto Fino", "Tinta del País"],
           "profile": {
             "acidity": "Medium to High",
             "alcohol": "Medium to High",
             "body": "Full",
             "tannin": "High"
           },
+          "aromas": ["black fruit", "plum", "oak", "spice"],
           "viticulture": ["Warm days and cool nights help ripening balance"],
-          "winemaking": ["Oak common", "Often more concentrated than Rioja"]
+          "winemaking": ["Oak common", "Often more concentrated than Rioja"],
+          "pairing": ["steak", "roast lamb", "BBQ"],
+          "examTips": [
+            "Think fuller body and firmer tannin than classic Rioja.",
+            "Altitude helps preserve acidity."
+          ],
+          "tags": ["red", "full-body", "high-tannin", "Spain", "Tempranillo"],
+          "difficulty": 1
         }
       }
     },
     "priorat": {
       "name": "Priorat",
+      "summary": "Warm dry Mediterranean region making concentrated reds from old vines on poor slate soils.",
       "climate": "Mediterranean",
       "styleSummary": "Powerful concentrated reds from warm dry conditions and poor slate soils.",
       "mitigating": ["altitude", "poor slate soils", "diurnal range", "low yields"],
+      "keyGrapes": ["Garnacha", "Carinena"],
+      "examTips": [
+        "Slate soils and low yields are key clues.",
+        "Expect concentration, body and high alcohol."
+      ],
+      "tags": ["Spain", "red", "Mediterranean", "powerful", "concentrated"],
+      "difficulty": 1,
       "grapes": {
         "Garnacha": {
+          "summary": "Old-vine Garnacha gives ripe fruit, spice, concentration and high alcohol in Priorat.",
           "style": "Ripe black and red fruit, spice, high alcohol and concentration.",
+          "aliases": ["Grenache"],
           "profile": {
             "acidity": "Medium",
             "alcohol": "High",
             "body": "Full",
             "tannin": "Medium"
           },
+          "aromas": ["ripe black fruit", "ripe red fruit", "spice"],
           "viticulture": ["Old vines often important", "Very low yields in poor soils"],
-          "winemaking": ["Concentrated styles", "Oak often used"]
+          "winemaking": ["Concentrated styles", "Oak often used"],
+          "pairing": ["braised meats", "lamb", "rich stews"],
+          "examTips": [
+            "Warmth plus poor soils drive concentration.",
+            "Old vines are commonly associated with quality."
+          ],
+          "tags": ["red", "concentrated", "old-vine", "Spain", "Mediterranean"],
+          "difficulty": 1
         },
         "Carinena": {
+          "summary": "Structured blending grape contributing dark fruit, acidity and mineral edge.",
           "style": "Dark fruit, high acidity, structure and mineral edge.",
+          "aliases": ["Cariñena", "Carignan"],
           "profile": {
             "acidity": "High",
             "alcohol": "Medium to High",
             "body": "Full",
             "tannin": "High"
           },
+          "aromas": ["dark fruit", "mineral", "spice"],
           "viticulture": ["Thrives in warm dry sites with low yields"],
-          "winemaking": ["Often blended with Garnacha"]
+          "winemaking": ["Often blended with Garnacha"],
+          "pairing": ["grilled meats", "game"],
+          "examTips": [
+            "Higher acidity and structure than Garnacha.",
+            "Often supports blends rather than standing alone."
+          ],
+          "tags": ["red", "high-acid", "high-tannin", "blend", "Spain"],
+          "difficulty": 2
         }
       }
     },
     "navarra": {
       "name": "Navarra",
+      "summary": "Diverse region producing rosé, reds and some whites across mixed climate zones.",
       "climate": "Mixed / Transitional",
       "styleSummary": "A diverse region producing fresh rosé, reds and some whites.",
       "mitigating": ["Atlantic influence in north", "Mediterranean warmth in south", "altitude variation"],
+      "keyGrapes": ["Garnacha", "Tempranillo"],
+      "examTips": [
+        "Climate varies from cooler north to warmer south.",
+        "Garnacha is especially important for rosé and reds."
+      ],
+      "tags": ["Spain", "mixed-climate", "rosé", "red", "transitional"],
+      "difficulty": 1,
       "grapes": {
         "Garnacha": {
+          "summary": "Important warm-climate grape used for ripe-fruited reds and fresh rosé.",
           "style": "Ripe red fruit and spice, widely used for rosé and reds.",
+          "aliases": ["Grenache"],
           "profile": {
             "acidity": "Medium",
             "alcohol": "High",
             "body": "Medium to Full",
             "tannin": "Medium"
           },
+          "aromas": ["red fruit", "spice", "strawberry"],
           "viticulture": ["Heat tolerant", "Useful across varied sites"],
-          "winemaking": ["Rosé and red styles common"]
+          "winemaking": ["Rosé and red styles common"],
+          "pairing": ["charcuterie", "grilled meats", "Mediterranean dishes"],
+          "examTips": [
+            "Remember its importance in Navarra rosé.",
+            "Usually riper and fuller than cooler-climate red varieties."
+          ],
+          "tags": ["red", "rosé", "warm-climate", "Spain"],
+          "difficulty": 1
         },
         "Tempranillo": {
+          "summary": "Versatile Spanish red grape giving fresh red and black fruit in medium-bodied styles.",
           "style": "Fresh red and black fruit with medium body.",
+          "aliases": [],
           "profile": {
             "acidity": "Medium",
             "alcohol": "Medium",
             "body": "Medium",
             "tannin": "Medium"
           },
+          "aromas": ["red fruit", "black fruit", "spice"],
           "viticulture": ["Adaptable in mixed climate zones"],
-          "winemaking": ["Often blended"]
+          "winemaking": ["Often blended"],
+          "pairing": ["roast chicken", "grilled pork"],
+          "examTips": [
+            "Usually less oak-focused than classic Rioja examples.",
+            "Balanced medium-bodied style is common."
+          ],
+          "tags": ["red", "balanced", "Spain", "Tempranillo"],
+          "difficulty": 1
         }
       }
     },
     "catalunya": {
       "name": "Catalunya",
+      "summary": "Large varied Mediterranean region producing a wide range of still wines.",
       "climate": "Mediterranean",
       "styleSummary": "Wide range of still wines from an extensive and varied region.",
       "mitigating": ["coastal influence", "altitude in inland sites", "Mediterranean warmth"],
+      "keyGrapes": ["Garnacha", "Macabeo"],
+      "examTips": [
+        "Think diversity rather than one single signature still wine.",
+        "Macabeo is useful to remember because it appears in both still and sparkling wines."
+      ],
+      "tags": ["Spain", "Mediterranean", "diverse", "red", "white"],
+      "difficulty": 1,
       "grapes": {
         "Garnacha": {
+          "summary": "Warm-climate grape giving ripe fruit, spice and body.",
           "style": "Ripe red fruit, spice and medium to full body.",
+          "aliases": ["Grenache"],
           "profile": {
             "acidity": "Medium",
             "alcohol": "High",
             "body": "Full",
             "tannin": "Medium"
           },
+          "aromas": ["ripe red fruit", "spice"],
           "viticulture": ["Performs well in warm conditions"],
-          "winemaking": ["Blended and varietal styles possible"]
+          "winemaking": ["Blended and varietal styles possible"],
+          "pairing": ["grilled meats", "stews"],
+          "examTips": [
+            "Warm Mediterranean conditions favour ripe styles."
+          ],
+          "tags": ["red", "warm-climate", "Spain", "Mediterranean"],
+          "difficulty": 1
         },
         "Macabeo": {
+          "summary": "Neutral to lightly floral white grape used in fresh still wines and also in sparkling production.",
           "style": "Neutral to lightly floral white with citrus and orchard fruit.",
+          "aliases": ["Viura"],
           "profile": {
             "acidity": "Medium",
             "alcohol": "Low to Medium",
             "body": "Light to Medium",
             "tannin": "-"
           },
+          "aromas": ["citrus", "orchard fruit", "light floral"],
           "viticulture": ["Widely planted", "Useful in both still and sparkling wine"],
-          "winemaking": ["Fresh dry styles common"]
+          "winemaking": ["Fresh dry styles common"],
+          "pairing": ["salads", "light fish dishes"],
+          "examTips": [
+            "More neutral than highly aromatic varieties.",
+            "Useful to remember in both still and sparkling contexts."
+          ],
+          "tags": ["white", "neutral", "fresh", "Spain"],
+          "difficulty": 1
         }
       }
     },
     "la-mancha": {
       "name": "La Mancha",
+      "summary": "Large hot dry inland region known for volume production and improving quality.",
       "climate": "Continental",
       "styleSummary": "Large hot dry inland region producing volume and increasingly better quality wines.",
       "mitigating": ["altitude", "dry conditions", "wide diurnal range"],
+      "keyGrapes": ["Tempranillo", "Airen"],
+      "examTips": [
+        "Large-scale production is an important theme.",
+        "Altitude helps moderate the otherwise hot inland climate."
+      ],
+      "tags": ["Spain", "continental", "hot", "inland", "volume"],
+      "difficulty": 1,
       "grapes": {
         "Tempranillo": {
+          "summary": "Ripe-fruited inland Tempranillo with moderate acidity and fruit-driven style.",
           "style": "Ripe dark fruit with moderate acidity.",
+          "aliases": [],
           "profile": {
             "acidity": "Medium",
             "alcohol": "Medium to High",
             "body": "Medium to Full",
             "tannin": "Medium"
           },
+          "aromas": ["dark fruit", "plum"],
           "viticulture": ["Warm dry conditions aid ripening"],
-          "winemaking": ["Fruit-driven styles common"]
+          "winemaking": ["Fruit-driven styles common"],
+          "pairing": ["grilled meats", "pasta with meat sauce"],
+          "examTips": [
+            "Hot inland climate usually means riper fruit profile."
+          ],
+          "tags": ["red", "fruit-driven", "Spain", "continental"],
+          "difficulty": 1
         },
         "Airen": {
+          "summary": "Very drought-tolerant white grape often used for simple, light wines.",
           "style": "Neutral white, generally simple and light.",
+          "aliases": [],
           "profile": {
             "acidity": "Low to Medium",
             "alcohol": "Low to Medium",
             "body": "Light",
             "tannin": "-"
           },
+          "aromas": ["neutral", "light citrus"],
           "viticulture": ["Very drought tolerant", "High yielding"],
-          "winemaking": ["Usually simple fresh white styles"]
+          "winemaking": ["Usually simple fresh white styles"],
+          "pairing": ["simple salads", "light tapas"],
+          "examTips": [
+            "Important for understanding Spain's volume wine production."
+          ],
+          "tags": ["white", "neutral", "volume", "Spain"],
+          "difficulty": 2
         }
       }
     },
     "jumilla": {
       "name": "Jumilla",
+      "summary": "Hot dry region famous for powerful Monastrell-based reds.",
       "climate": "Mediterranean to Continental-influenced",
       "styleSummary": "Hot dry region known for ripe, powerful Monastrell.",
       "mitigating": ["altitude", "very low rainfall", "dry sunny conditions"],
+      "keyGrapes": ["Monastrell"],
+      "examTips": [
+        "Think hot, dry and powerful.",
+        "Monastrell is the key grape here."
+      ],
+      "tags": ["Spain", "hot", "dry", "red", "powerful"],
+      "difficulty": 1,
       "grapes": {
         "Monastrell": {
+          "summary": "Hot-climate red grape giving dark fruit, spice, high alcohol and firm tannin.",
           "style": "Dark fruit, spice, high alcohol and firm tannin.",
+          "aliases": ["Mourvèdre", "Mataro"],
           "profile": {
             "acidity": "Medium",
             "alcohol": "High",
             "body": "Full",
             "tannin": "High"
           },
+          "aromas": ["dark fruit", "spice", "blackberry"],
           "viticulture": ["Very drought tolerant", "Performs well in hot dry climates"],
-          "winemaking": ["Can be powerful and concentrated"]
+          "winemaking": ["Can be powerful and concentrated"],
+          "pairing": ["BBQ", "lamb", "stews"],
+          "examTips": [
+            "Heat and drought tolerance are key clues for Monastrell."
+          ],
+          "tags": ["red", "high-alcohol", "high-tannin", "Spain", "hot-climate"],
+          "difficulty": 1
         }
       }
     },
     "valencia": {
       "name": "Valencia",
+      "summary": "Warm Mediterranean region producing ripe reds and a range of wine styles.",
       "climate": "Mediterranean",
       "styleSummary": "Warm-climate region producing both reds and whites in a range of styles.",
       "mitigating": ["coastal influence", "warm sunshine", "altitude inland"],
+      "keyGrapes": ["Monastrell"],
+      "examTips": [
+        "Think warm Mediterranean ripeness with some coastal moderation."
+      ],
+      "tags": ["Spain", "Mediterranean", "warm", "red"],
+      "difficulty": 1,
       "grapes": {
         "Monastrell": {
+          "summary": "Ripe dark-fruited warm-climate red grape with full body and spice.",
           "style": "Ripe dark fruit and spice with full body.",
+          "aliases": ["Mourvèdre", "Mataro"],
           "profile": {
             "acidity": "Medium",
             "alcohol": "High",
             "body": "Full",
             "tannin": "High"
           },
+          "aromas": ["dark fruit", "spice", "black fruit"],
           "viticulture": ["Heat and drought tolerant"],
-          "winemaking": ["Often rich styles"]
+          "winemaking": ["Often rich styles"],
+          "pairing": ["grilled meats", "rich stews"],
+          "examTips": [
+            "Often associated with warm Mediterranean climates."
+          ],
+          "tags": ["red", "warm-climate", "full-body", "Spain"],
+          "difficulty": 1
         }
       }
     }

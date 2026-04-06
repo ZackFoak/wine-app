@@ -1,145 +1,174 @@
 {
   "name": "Austria",
-  "summary": "Austria produces high-acid whites and structured reds in a continental climate, with important regions along the Danube and around Lake Neusiedl.",
+  "summary": "Austria is known for high-acid whites, especially Gruner Veltliner and Riesling, along with some reds and sweet wines.",
+  "examTips": [
+    "Austria is strongly associated with high-acid white wines.",
+    "Gruner Veltliner is the most important grape.",
+    "Think continental climate with river influence."
+  ],
+  "tags": ["Austria", "Gruner Veltliner", "high-acid", "continental", "exam-core"],
+  "difficulty": 1,
   "regions": {
-    "wachau": {
-      "name": "Wachau",
+
+    "niederosterreich": {
+      "name": "Niederösterreich (Lower Austria)",
+      "summary": "Austria’s largest and most important quality region, known for structured dry whites from river valleys.",
       "climate": "Continental",
-      "styleSummary": "Premium whites with high acidity, concentration and ageing potential.",
-      "mitigating": ["Danube river", "steep slopes", "diurnal range"],
+      "styleSummary": "Dry whites with high acidity and strong structure.",
+      "mitigating": ["Danube river", "slope aspect", "diurnal range"],
+      "keyGrapes": ["Gruner Veltliner", "Riesling"],
+      "examTips": [
+        "This is the key Austrian region for exam.",
+        "Think dry, structured whites with high acidity.",
+        "River valleys like the Danube are important."
+      ],
+      "tags": ["Austria", "Danube", "white", "high-acid"],
+      "difficulty": 1,
       "grapes": {
+
         "Gruner Veltliner": {
+          "summary": "Austria’s flagship white grape producing high-acid wines with citrus, green fruit and distinctive white pepper notes.",
           "style": "Citrus, green apple, white pepper, high acidity.",
+          "aliases": [],
           "profile": {
             "acidity": "High",
-            "alcohol": "Medium to High",
+            "alcohol": "Medium",
             "body": "Medium",
             "tannin": "-"
           },
-          "viticulture": ["Best on steep terraces"],
-          "winemaking": ["Dry styles, sometimes lees ageing"]
+          "aromas": ["citrus", "green apple", "white pepper"],
+          "viticulture": ["Widely planted in Austria", "Performs well in continental climates"],
+          "winemaking": ["Usually dry", "Can be light or more structured"],
+          "pairing": ["salads", "vegetables", "white meat"],
+          "examTips": [
+            "White pepper note is the key identifier.",
+            "Usually high acidity and dry style."
+          ],
+          "tags": ["white", "high-acid", "pepper", "Austria"],
+          "difficulty": 1
         },
+
         "Riesling": {
-          "style": "High-acid citrus and stone fruit with mineral character.",
+          "summary": "High-acid aromatic grape producing precise citrus and mineral-driven wines.",
+          "style": "Lime, citrus, mineral, high acidity.",
+          "aliases": [],
           "profile": {
             "acidity": "High",
             "alcohol": "Medium",
             "body": "Light to Medium",
             "tannin": "-"
           },
-          "viticulture": ["Needs warm sites"],
-          "winemaking": ["Usually dry"]
+          "aromas": ["lime", "citrus", "mineral"],
+          "viticulture": ["Prefers slopes and good drainage"],
+          "winemaking": ["Usually dry"],
+          "pairing": ["seafood", "spicy dishes"],
+          "examTips": [
+            "Usually dry in Austria.",
+            "More structured than many German styles."
+          ],
+          "tags": ["white", "high-acid", "mineral", "Austria"],
+          "difficulty": 1
         }
       }
     },
-    "kremstal": {
-      "name": "Kremstal",
-      "climate": "Continental",
-      "styleSummary": "Similar to Wachau but slightly lighter styles.",
-      "mitigating": ["Danube influence", "altitude variation"],
-      "grapes": {
-        "Gruner Veltliner": {
-          "style": "Fresh citrus, pepper, medium body.",
-          "profile": {
-            "acidity": "High",
-            "alcohol": "Medium",
-            "body": "Medium",
-            "tannin": "-"
-          },
-          "viticulture": ["Wide range of sites"],
-          "winemaking": ["Mostly dry"]
-        },
-        "Riesling": {
-          "style": "Citrus, floral, fresh acidity.",
-          "profile": {
-            "acidity": "High",
-            "alcohol": "Medium",
-            "body": "Light to Medium",
-            "tannin": "-"
-          },
-          "viticulture": ["Cool climate"],
-          "winemaking": ["Dry styles"]
-        }
-      }
-    },
-    "kamptal": {
-      "name": "Kamptal",
-      "climate": "Continental",
-      "styleSummary": "Structured whites with both ripeness and freshness.",
-      "mitigating": ["river Kamp", "diurnal range"],
-      "grapes": {
-        "Gruner Veltliner": {
-          "style": "Spicy, citrus, structured.",
-          "profile": {
-            "acidity": "High",
-            "alcohol": "Medium",
-            "body": "Medium",
-            "tannin": "-"
-          },
-          "viticulture": ["Good sun exposure"],
-          "winemaking": ["Dry styles"]
-        },
-        "Riesling": {
-          "style": "Ripe citrus and stone fruit with high acidity.",
-          "profile": {
-            "acidity": "High",
-            "alcohol": "Medium",
-            "body": "Medium",
-            "tannin": "-"
-          },
-          "viticulture": ["Warm sites"],
-          "winemaking": ["Dry"]
-        }
-      }
-    },
+
     "burgenland": {
       "name": "Burgenland",
-      "climate": "Warm continental",
-      "styleSummary": "Important for both red wines and sweet wines.",
-      "mitigating": ["Lake Neusiedl", "warm conditions", "humidity for botrytis"],
+      "summary": "Warmer eastern region known for red wines and important sweet wines around Lake Neusiedl.",
+      "climate": "Continental to Pannonian",
+      "styleSummary": "Reds and sweet wines with higher ripeness.",
+      "mitigating": ["Lake Neusiedl", "warm conditions"],
+      "keyGrapes": ["Zweigelt", "Blaufrankisch"],
+      "examTips": [
+        "This is Austria’s main red wine region.",
+        "Lake Neusiedl is key for botrytis and sweet wines."
+      ],
+      "tags": ["Austria", "Burgenland", "red-wine", "sweet-wine"],
+      "difficulty": 1,
       "grapes": {
-        "Blaufrankisch": {
-          "style": "Dark fruit, high acidity, structured tannins.",
-          "profile": {
-            "acidity": "High",
-            "alcohol": "Medium to High",
-            "body": "Medium to Full",
-            "tannin": "High"
-          },
-          "viticulture": ["Late ripening"],
-          "winemaking": ["Can be oak aged"]
-        },
+
         "Zweigelt": {
-          "style": "Juicy red fruit, softer tannin.",
+          "summary": "Austria’s most planted red grape, producing soft, fruity wines.",
+          "style": "Red cherry, soft tannin, medium body.",
+          "aliases": [],
           "profile": {
             "acidity": "Medium",
             "alcohol": "Medium",
             "body": "Medium",
-            "tannin": "Medium"
+            "tannin": "Low to Medium"
           },
-          "viticulture": ["Reliable"],
-          "winemaking": ["Fruit-driven styles"]
+          "aromas": ["red cherry", "berry"],
+          "viticulture": ["High yielding"],
+          "winemaking": ["Usually fruit-driven"],
+          "pairing": ["grilled meats", "sausages"],
+          "examTips": [
+            "Think easy-drinking and fruity."
+          ],
+          "tags": ["red", "fruit-forward", "Austria"],
+          "difficulty": 1
+        },
+
+        "Blaufrankisch": {
+          "summary": "More structured Austrian red grape producing high-acid, spicy wines.",
+          "style": "Black fruit, spice, higher acidity and structure.",
+          "aliases": [],
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Medium to Full",
+            "tannin": "Medium to High"
+          },
+          "aromas": ["black cherry", "spice", "pepper"],
+          "viticulture": ["Late ripening"],
+          "winemaking": ["Can be oak aged"],
+          "pairing": ["beef", "game"],
+          "examTips": [
+            "Higher acidity than Zweigelt.",
+            "More structured and serious."
+          ],
+          "tags": ["red", "structured", "Austria"],
+          "difficulty": 1
         }
       }
     },
-    "neusiedlersee": {
-      "name": "Neusiedlersee",
-      "climate": "Warm continental",
-      "styleSummary": "Famous for botrytised sweet wines.",
-      "mitigating": ["Lake Neusiedl humidity", "warm autumn"],
+
+    "steiermark": {
+      "name": "Steiermark (Styria)",
+      "summary": "Cooler southern region producing fresh, aromatic white wines.",
+      "climate": "Cool continental",
+      "styleSummary": "Fresh aromatic whites with high acidity.",
+      "mitigating": ["altitude", "cool temperatures"],
+      "keyGrapes": ["Sauvignon Blanc"],
+      "examTips": [
+        "Cooler region → high acidity.",
+        "Sauvignon Blanc is key here."
+      ],
+      "tags": ["Austria", "Styria", "cool-climate", "white"],
+      "difficulty": 1,
       "grapes": {
-        "Welschriesling": {
-          "style": "High acid, citrus, used for sweet wines.",
+
+        "Sauvignon Blanc": {
+          "summary": "Fresh aromatic white grape producing citrus and herbal wines with high acidity.",
+          "style": "Citrus, herb, green fruit, high acidity.",
+          "aliases": [],
           "profile": {
             "acidity": "High",
-            "alcohol": "Low",
-            "body": "Light to Medium",
+            "alcohol": "Low to Medium",
+            "body": "Light",
             "tannin": "-"
           },
-          "viticulture": ["Susceptible to botrytis"],
-          "winemaking": ["Sweet wines"]
+          "aromas": ["citrus", "herb", "green fruit"],
+          "viticulture": ["Cool sites enhance aromatics"],
+          "winemaking": ["Usually stainless steel"],
+          "pairing": ["goat cheese", "salads"],
+          "examTips": [
+            "Think freshness and aromatic clarity."
+          ],
+          "tags": ["white", "aromatic", "Austria"],
+          "difficulty": 1
         }
       }
     }
+
   }
 }

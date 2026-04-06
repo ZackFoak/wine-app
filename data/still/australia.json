@@ -1,216 +1,273 @@
 {
   "name": "Australia",
-  "summary": "Australia ranges from hot inland regions to cool coastal areas, producing a wide range of wine styles.",
+  "summary": "Australia is a diverse wine country ranging from hot inland regions to cool maritime climates, producing a wide range of wine styles.",
+  "examTips": [
+    "Australia is all about climate diversity.",
+    "Shiraz is the key flagship red grape.",
+    "Compare warm inland vs cool coastal regions."
+  ],
+  "tags": ["Australia", "Shiraz", "climate-diversity", "New World", "exam-core"],
+  "difficulty": 1,
   "regions": {
-    "barossa-valley": {
+
+    "barossa": {
       "name": "Barossa Valley",
+      "summary": "Warm inland region producing powerful, full-bodied Shiraz.",
       "climate": "Warm Mediterranean",
-      "styleSummary": "Full-bodied, powerful wines with ripe fruit and high alcohol.",
-      "mitigating": ["old vines", "dry conditions"],
+      "styleSummary": "Full-bodied, ripe, high-alcohol Shiraz.",
+      "mitigating": ["old vines", "dry climate"],
+      "keyGrapes": ["Shiraz"],
+      "examTips": [
+        "Think powerful, ripe Shiraz.",
+        "Often higher alcohol and fuller body."
+      ],
+      "tags": ["Australia", "Barossa", "Shiraz", "warm-climate"],
+      "difficulty": 1,
       "grapes": {
         "Shiraz": {
-          "style": "Black fruit, jammy, spice, high alcohol, full body.",
+          "summary": "Flagship Australian red producing powerful, ripe and full-bodied wines.",
+          "style": "Black fruit, jam, spice, chocolate, full body.",
+          "aliases": ["Syrah"],
           "profile": {
             "acidity": "Medium",
             "alcohol": "High",
             "body": "Full",
             "tannin": "Medium to High"
           },
-          "viticulture": ["Old vines common", "Drought tolerant"],
-          "winemaking": ["Often oak aged", "Rich styles"]
-        },
-        "Grenache": {
-          "style": "Ripe red fruit, spice, high alcohol.",
+          "aromas": ["blackberry", "jam", "chocolate", "spice"],
+          "viticulture": ["Old vines common"],
+          "winemaking": ["Oak often used"],
+          "pairing": ["BBQ", "steak", "grilled meats"],
+          "examTips": [
+            "Riper and more powerful than Northern Rhone Syrah."
+          ],
+          "tags": ["red", "full-body", "ripe", "Australia", "Shiraz"],
+          "difficulty": 1
+        }
+      }
+    },
+
+    "mclaren-vale": {
+      "name": "McLaren Vale",
+      "summary": "Warm coastal region producing rich but slightly fresher Shiraz due to maritime influence.",
+      "climate": "Mediterranean",
+      "styleSummary": "Ripe reds with some freshness from ocean influence.",
+      "mitigating": ["sea breezes"],
+      "keyGrapes": ["Shiraz"],
+      "examTips": [
+        "Think warm but slightly fresher than Barossa.",
+        "Maritime influence is key."
+      ],
+      "tags": ["Australia", "McLaren Vale", "Shiraz"],
+      "difficulty": 1,
+      "grapes": {
+        "Shiraz": {
+          "summary": "Ripe Shiraz with slightly more freshness than Barossa.",
+          "style": "Ripe fruit with spice and moderate freshness.",
+          "aliases": ["Syrah"],
           "profile": {
             "acidity": "Medium",
             "alcohol": "High",
             "body": "Full",
             "tannin": "Medium"
           },
-          "viticulture": ["Heat tolerant"],
-          "winemaking": ["Often blended"]
+          "aromas": ["black fruit", "spice", "plum"],
+          "viticulture": ["Warm coastal"],
+          "winemaking": ["Fruit-driven styles"],
+          "pairing": ["BBQ", "lamb"],
+          "examTips": [
+            "Compare with Barossa for exam questions."
+          ],
+          "tags": ["red", "warm", "Australia", "Shiraz"],
+          "difficulty": 1
         }
       }
     },
-    "eden-valley": {
-      "name": "Eden Valley",
-      "climate": "Cooler (higher altitude)",
-      "styleSummary": "More elegant wines with higher acidity than Barossa.",
-      "mitigating": ["altitude", "cool nights"],
+
+    "adelaide-hills": {
+      "name": "Adelaide Hills",
+      "summary": "Cooler elevated region producing fresher aromatic whites.",
+      "climate": "Cool continental",
+      "styleSummary": "Fresh aromatic whites with high acidity.",
+      "mitigating": ["altitude"],
+      "keyGrapes": ["Sauvignon Blanc", "Chardonnay"],
+      "examTips": [
+        "Altitude = freshness.",
+        "Important contrast to Barossa."
+      ],
+      "tags": ["Australia", "cool-climate", "white"],
+      "difficulty": 1,
       "grapes": {
-        "Riesling": {
-          "style": "High acid, lime, floral, very fresh.",
+        "Sauvignon Blanc": {
+          "summary": "Fresh aromatic white with citrus and herb notes.",
+          "style": "Citrus, herb, high acidity.",
+          "aliases": [],
           "profile": {
             "acidity": "High",
             "alcohol": "Low to Medium",
             "body": "Light",
             "tannin": "-"
           },
-          "viticulture": ["Retains acidity well"],
-          "winemaking": ["Usually dry, unoaked"]
-        },
-        "Shiraz": {
-          "style": "More peppery, less jammy than Barossa.",
-          "profile": {
-            "acidity": "Medium to High",
-            "alcohol": "Medium",
-            "body": "Medium",
-            "tannin": "Medium"
-          },
-          "viticulture": ["Cooler sites"],
-          "winemaking": ["More elegant styles"]
+          "aromas": ["citrus", "herb"],
+          "viticulture": ["Cool sites"],
+          "winemaking": ["Fresh styles"],
+          "pairing": ["goat cheese", "seafood"],
+          "examTips": [
+            "High acidity is key."
+          ],
+          "tags": ["white", "fresh", "Australia"],
+          "difficulty": 1
         }
       }
     },
-    "mclaren-vale": {
-      "name": "McLaren Vale",
-      "climate": "Warm Mediterranean",
-      "styleSummary": "Ripe, full-bodied reds with some coastal freshness.",
-      "mitigating": ["sea breezes"],
+
+    "yarra-valley": {
+      "name": "Yarra Valley",
+      "summary": "Cool-climate region known for elegant Pinot Noir and Chardonnay.",
+      "climate": "Cool maritime",
+      "styleSummary": "Elegant, fresh wines.",
+      "mitigating": ["ocean influence"],
+      "keyGrapes": ["Pinot Noir", "Chardonnay"],
+      "examTips": [
+        "Cool-climate style is key.",
+        "Think elegance not power."
+      ],
+      "tags": ["Australia", "cool-climate"],
+      "difficulty": 1,
       "grapes": {
-        "Shiraz": {
-          "style": "Ripe black fruit, spice, full body.",
+        "Pinot Noir": {
+          "summary": "Elegant red with red fruit and freshness.",
+          "style": "Red cherry, light body.",
+          "aliases": [],
           "profile": {
-            "acidity": "Medium",
-            "alcohol": "High",
-            "body": "Full",
-            "tannin": "Medium to High"
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Light to Medium",
+            "tannin": "Low"
           },
-          "viticulture": ["Warm climate"],
-          "winemaking": ["Often rich styles"]
-        },
-        "Grenache": {
-          "style": "Ripe red fruit, softer tannins.",
-          "profile": {
-            "acidity": "Medium",
-            "alcohol": "High",
-            "body": "Medium to Full",
-            "tannin": "Medium"
-          },
-          "viticulture": ["Heat tolerant"],
-          "winemaking": ["Often blended"]
+          "aromas": ["red cherry", "raspberry"],
+          "viticulture": ["Cool climate"],
+          "winemaking": ["Light extraction"],
+          "pairing": ["duck", "mushroom"],
+          "examTips": [
+            "Compare with Burgundy."
+          ],
+          "tags": ["red", "cool-climate"],
+          "difficulty": 1
         }
       }
     },
+
     "hunter-valley": {
       "name": "Hunter Valley",
+      "summary": "Warm region known for distinctive Semillon with ageing potential.",
       "climate": "Warm maritime",
-      "styleSummary": "Unique style wines with lower alcohol and early picking.",
-      "mitigating": ["cloud cover", "early harvest"],
+      "styleSummary": "Unique low-alcohol high-acid Semillon.",
+      "mitigating": ["cloud cover"],
+      "keyGrapes": ["Semillon"],
+      "examTips": [
+        "Low alcohol + high acid Semillon is key.",
+        "Develops toast with age."
+      ],
+      "tags": ["Australia", "Semillon"],
+      "difficulty": 1,
       "grapes": {
         "Semillon": {
-          "style": "Low alcohol, high acid, develops toast and honey with age.",
+          "summary": "Light-bodied white that ages into toasty complex wine.",
+          "style": "Citrus when young, toast when aged.",
+          "aliases": [],
           "profile": {
             "acidity": "High",
             "alcohol": "Low",
             "body": "Light",
             "tannin": "-"
           },
+          "aromas": ["lemon", "toast"],
           "viticulture": ["Early harvested"],
-          "winemaking": ["Usually unoaked"]
-        },
-        "Shiraz": {
-          "style": "Medium-bodied, earthy, savoury.",
-          "profile": {
-            "acidity": "Medium",
-            "alcohol": "Medium",
-            "body": "Medium",
-            "tannin": "Medium"
-          },
-          "viticulture": ["Earlier picked"],
-          "winemaking": ["More restrained style"]
+          "winemaking": ["Unoaked"],
+          "pairing": ["seafood"],
+          "examTips": [
+            "Low alcohol is key clue."
+          ],
+          "tags": ["white", "unique-style"],
+          "difficulty": 1
         }
       }
     },
+
     "margaret-river": {
       "name": "Margaret River",
+      "summary": "Premium maritime region producing Bordeaux-style blends and elegant Chardonnay.",
       "climate": "Maritime",
-      "styleSummary": "Balanced wines with both ripeness and freshness.",
-      "mitigating": ["strong ocean influence"],
+      "styleSummary": "Balanced premium wines.",
+      "mitigating": ["ocean influence"],
+      "keyGrapes": ["Cabernet Sauvignon", "Chardonnay"],
+      "examTips": [
+        "Think Bordeaux-style blends.",
+        "Balanced not extreme."
+      ],
+      "tags": ["Australia", "premium"],
+      "difficulty": 1,
       "grapes": {
         "Cabernet Sauvignon": {
-          "style": "Blackcurrant, structured, fresh acidity.",
+          "summary": "Structured balanced Cabernet.",
+          "style": "Blackcurrant, balanced.",
+          "aliases": [],
           "profile": {
-            "acidity": "Medium to High",
+            "acidity": "Medium",
             "alcohol": "Medium",
             "body": "Full",
             "tannin": "High"
           },
-          "viticulture": ["Moderate climate"],
-          "winemaking": ["Often oak aged"]
-        },
-        "Chardonnay": {
-          "style": "Citrus, stone fruit, sometimes oak and MLF.",
-          "profile": {
-            "acidity": "Medium to High",
-            "alcohol": "Medium",
-            "body": "Medium to Full",
-            "tannin": "-"
-          },
-          "viticulture": ["Balanced ripening"],
-          "winemaking": ["MLF + oak common"]
+          "aromas": ["blackcurrant"],
+          "viticulture": ["Maritime climate"],
+          "winemaking": ["Oak used"],
+          "pairing": ["steak"],
+          "examTips": [
+            "More balanced than warm regions."
+          ],
+          "tags": ["red"],
+          "difficulty": 1
         }
       }
     },
-    "yarra-valley": {
-      "name": "Yarra Valley",
-      "climate": "Cool maritime",
-      "styleSummary": "Elegant wines with high acidity and lower alcohol.",
-      "mitigating": ["cool climate", "altitude"],
-      "grapes": {
-        "Pinot Noir": {
-          "style": "Red fruit, light body, fresh acidity.",
-          "profile": {
-            "acidity": "Medium to High",
-            "alcohol": "Medium",
-            "body": "Light to Medium",
-            "tannin": "Low to Medium"
-          },
-          "viticulture": ["Cool climate grape"],
-          "winemaking": ["Light extraction"]
-        },
-        "Chardonnay": {
-          "style": "Citrus, green apple, fresh style.",
-          "profile": {
-            "acidity": "High",
-            "alcohol": "Medium",
-            "body": "Medium",
-            "tannin": "-"
-          },
-          "viticulture": ["Cool climate"],
-          "winemaking": ["Fresh or lightly oaked"]
-        }
-      }
-    },
+
     "tasmania": {
       "name": "Tasmania",
+      "summary": "Coolest Australian region producing high-acid wines and sparkling.",
       "climate": "Cool maritime",
-      "styleSummary": "Very cool climate producing high-acid wines, important for sparkling.",
-      "mitigating": ["southern latitude", "cool ocean influence"],
+      "styleSummary": "Fresh, high-acid wines.",
+      "mitigating": ["cool ocean"],
+      "keyGrapes": ["Pinot Noir", "Chardonnay"],
+      "examTips": [
+        "Coolest region.",
+        "Important for sparkling."
+      ],
+      "tags": ["Australia", "cool", "sparkling"],
+      "difficulty": 1,
       "grapes": {
-        "Pinot Noir": {
-          "style": "Light, fresh, red fruit with high acidity.",
-          "profile": {
-            "acidity": "High",
-            "alcohol": "Low to Medium",
-            "body": "Light",
-            "tannin": "Low to Medium"
-          },
-          "viticulture": ["Very cool climate"],
-          "winemaking": ["Delicate styles"]
-        },
         "Chardonnay": {
-          "style": "High acid, citrus, ideal for sparkling wine.",
+          "summary": "Fresh high-acid Chardonnay.",
+          "style": "Citrus, mineral.",
+          "aliases": [],
           "profile": {
             "acidity": "High",
             "alcohol": "Low to Medium",
             "body": "Light to Medium",
             "tannin": "-"
           },
-          "viticulture": ["Cool climate ideal"],
-          "winemaking": ["Used for sparkling"]
+          "aromas": ["citrus"],
+          "viticulture": ["Cool climate"],
+          "winemaking": ["Sparkling base"],
+          "pairing": ["oysters"],
+          "examTips": [
+            "High acidity is key."
+          ],
+          "tags": ["white"],
+          "difficulty": 1
         }
       }
     }
+
   }
 }

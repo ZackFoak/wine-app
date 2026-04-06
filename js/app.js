@@ -96,8 +96,10 @@ async function showCountry(countryKey) {
 
     let html = `
       <div class="section-card">
-        <p><b>Country:</b> ${country.name || "-"}</p>
-        <p class="section-title">Regions</p>
+        <p><b>Country:</b> ${country.name}</p>
+        ${country.summary ? `<p><b>Summary:</b> ${country.summary}</p>` : ""}
+        ${country.examTips?.length ? `<p><b>Exam Tips:</b> ${country.examTips.join(" / ")}</p>` : ""}
+        <p><b>Regions:</b></p>
     `;
 
     const regionKeys = Object.keys(country.regions || {});
@@ -156,7 +158,7 @@ async function showCountry(countryKey) {
 // ================= REGION =================
 async function showRegion(countryKey, regionKey) {
   showLoading("Loading region...");
-  openSheetMid();
+  openSheetFull();
   try {
     const countryMeta = state.countriesData[countryKey];
     const country = await loadJson(`./data/${countryMeta.file}`);
@@ -173,10 +175,12 @@ async function showRegion(countryKey, regionKey) {
       <div class="section-card">
         <button class="btn secondary" id="backToCountry">← Back</button>
         <p><b>Region:</b> ${region.name || regionKey}</p>
+        ${region.summary ? `<p><b>Summary:</b> ${region.summary}</p>` : ""}
         <p><b>Climate:</b> ${region.climate || "-"}</p>
         <p><b>Style:</b> ${region.styleSummary || "-"}</p>
+        ${region.keyGrapes?.length ? `<p><b>Key Grapes:</b> ${region.keyGrapes.join(", ")}</p>` : ""}
         <p><b>Grapes:</b></p>
-    `;
+`;
 
     const grapeKeys = Object.keys(region.grapes || {});
     if (grapeKeys.length) {
@@ -206,6 +210,23 @@ async function showRegion(countryKey, regionKey) {
           }).join("")}
         </div>
       `;
+    if (region.examTips?.length) {
+      html += `
+        <div class="section-card">
+          <p class="section-title">Exam Tips</p>
+          <ul>${region.examTips.map(x => `<li>${x}</li>`).join("")}</ul>
+        </div>
+      `;
+    }
+
+    if (region.tags?.length) {
+      html += `
+        <div class="section-card">
+          <p class="section-title">Tags</p>
+          <div>${region.tags.map(x => `<span class="pill">${x}</span>`).join("")}</div>
+        </div>
+      `;
+    }
     }
 
     byId("content").innerHTML = html;
@@ -254,6 +275,8 @@ async function showGrape(countryKey, regionKey, grapeKey) {
     <div class="section-card">
       <p><b>Grape:</b> ${grapeKey}</p>
       <p><b>Style:</b> ${grape.style || "-"}</p>
+      ${grape.summary ? `<p><b>Summary:</b> ${grape.summary}</p>` : ""}
+      ${grape.aliases?.length ? `<p><b>Aliases:</b> ${grape.aliases.join(", ")}</p>` : ""}
 
       <div class="meta-grid">
         <div class="meta-item">
@@ -275,17 +298,44 @@ async function showGrape(countryKey, regionKey, grapeKey) {
       </div>
     </div>
 
+    ${grape.aromas?.length ? `
+      <div class="section-card">
+        <p class="section-title">Aromas</p>
+        <div>${grape.aromas.map(x => `<span class="pill">${x}</span>`).join("")}</div>
+      </div>
+    ` : ""}
+
     <div class="section-card">
-      <p><b>Viticulture</b></p>
+      <p class="section-title">Viticulture</p>
       <ul>${(grape.viticulture || []).map(x => `<li>${x}</li>`).join("")}</ul>
     </div>
 
     <div class="section-card">
-      <p><b>Winemaking</b></p>
+      <p class="section-title">Winemaking</p>
       <ul>${(grape.winemaking || []).map(x => `<li>${x}</li>`).join("")}</ul>
     </div>
-  `;
 
+    ${grape.pairing?.length ? `
+      <div class="section-card">
+        <p class="section-title">Food Pairing</p>
+        <div>${grape.pairing.map(x => `<span class="pill">${x}</span>`).join("")}</div>
+      </div>
+    ` : ""}
+
+    ${grape.examTips?.length ? `
+      <div class="section-card">
+        <p class="section-title">Exam Tips</p>
+        <ul>${grape.examTips.map(x => `<li>${x}</li>`).join("")}</ul>
+      </div>
+    ` : ""}
+
+    ${grape.tags?.length ? `
+      <div class="section-card">
+        <p class="section-title">Tags</p>
+        <div>${grape.tags.map(x => `<span class="pill">${x}</span>`).join("")}</div>
+      </div>
+    ` : ""}
+  `;
   byId("backToRegion").onclick = () => showRegion(countryKey, regionKey);
 
   byId("favBtn").onclick = () => {
@@ -364,8 +414,8 @@ function showFavorites() {
 }
 
 // ================= SEARCH =================
-async function searchAll(term) {
-  const q = String(term || "").trim().toLowerCase();
+async function searchAll(query) {
+  const q = String(query || "").trim().toLowerCase();
 
   if (!q) {
     setPanelTitle("Click a country");
@@ -378,40 +428,130 @@ async function searchAll(term) {
     return;
   }
 
+  function match(text) {
+    return String(text || "").toLowerCase().includes(q);
+  }
+
+  function matchArray(arr) {
+    return Array.isArray(arr) && arr.some(item => String(item).toLowerCase().includes(q));
+  }
+
+  const results = [];
+
   for (const countryKey in state.countriesData) {
     const countryMeta = state.countriesData[countryKey];
 
-    if ((countryMeta.name || "").toLowerCase().includes(q)) {
-      await showCountry(countryKey);
-      return;
+    // countries.json level
+    if (
+      match(countryMeta.name) ||
+      match(countryMeta.category) ||
+      matchArray(countryMeta.tags)
+    ) {
+      results.push({
+        type: "country",
+        label: countryMeta.name,
+        action: () => showCountry(countryKey)
+      });
     }
 
+    // full country file
     const country = await loadJson(`./data/${countryMeta.file}`);
+
+    if (
+      match(country.name) ||
+      match(country.summary) ||
+      matchArray(country.tags) ||
+      matchArray(country.examTips)
+    ) {
+      results.push({
+        type: "country",
+        label: `${country.name}`,
+        action: () => showCountry(countryKey)
+      });
+    }
 
     for (const regionKey in (country.regions || {})) {
       const region = country.regions[regionKey];
 
-      if ((region.name || "").toLowerCase().includes(q)) {
-        await showRegion(countryKey, regionKey);
-        return;
+      if (
+        match(region.name) ||
+        match(region.summary) ||
+        match(region.climate) ||
+        match(region.styleSummary) ||
+        matchArray(region.keyGrapes) ||
+        matchArray(region.tags) ||
+        matchArray(region.examTips) ||
+        matchArray(region.mitigating)
+      ) {
+        results.push({
+          type: "region",
+          label: `${region.name} (${country.name})`,
+          action: () => showRegion(countryKey, regionKey)
+        });
       }
 
       for (const grapeKey in (region.grapes || {})) {
-        if (grapeKey.toLowerCase().includes(q)) {
-          await showGrape(countryKey, regionKey, grapeKey);
-          return;
+        const grape = region.grapes[grapeKey];
+
+        if (
+          match(grapeKey) ||
+          match(grape.summary) ||
+          match(grape.style) ||
+          match(grape.profile?.acidity) ||
+          match(grape.profile?.alcohol) ||
+          match(grape.profile?.body) ||
+          match(grape.profile?.tannin) ||
+          matchArray(grape.aliases) ||
+          matchArray(grape.aromas) ||
+          matchArray(grape.viticulture) ||
+          matchArray(grape.winemaking) ||
+          matchArray(grape.pairing) ||
+          matchArray(grape.tags) ||
+          matchArray(grape.examTips)
+        ) {
+          results.push({
+            type: "grape",
+            label: `${grapeKey} (${region.name}, ${country.name})`,
+            action: () => showGrape(countryKey, regionKey, grapeKey)
+          });
         }
       }
     }
   }
 
-  setPanelTitle("No result");
-  setBreadcrumb([{ label: "Search" }, { label: q }]);
+  if (!results.length) {
+    setPanelTitle("No result");
+    setBreadcrumb([{ label: "Search" }, { label: q }]);
+    byId("content").innerHTML = `
+      <div class="section-card">
+        <p>No country, region, or grape found for "<b>${q}</b>".</p>
+      </div>
+    `;
+    return;
+  }
+
+  setPanelTitle(`Search: ${query}`);
+  setBreadcrumb([{ label: "Search" }, { label: query }]);
+
   byId("content").innerHTML = `
     <div class="section-card">
-      <p>No country, region, or grape found for "<b>${q}</b>".</p>
+      <p class="section-title">Search Results</p>
+      ${results.slice(0, 30).map((r, i) => `
+        <div class="list-card">
+          <div style="cursor:pointer;" data-search-result="${i}">
+            <b>${r.type.toUpperCase()}</b> — ${r.label}
+          </div>
+        </div>
+      `).join("")}
     </div>
   `;
+
+  document.querySelectorAll("[data-search-result]").forEach(el => {
+    el.addEventListener("click", () => {
+      const index = Number(el.dataset.searchResult);
+      results[index].action();
+    });
+  });
 }
 
 // ================= STYLE =================
@@ -484,7 +624,7 @@ const sheet = document.getElementById("bottomSheet");
 const handle = document.querySelector(".sheet-handle");
 
 const SHEET_STATES = {
-  collapsed: 62,
+  collapsed: 82,
   mid: 32,
   open: 8
 };
@@ -536,15 +676,19 @@ function endSheetDrag() {
 
   const deltaY = dragCurrentY - dragStartY;
 
-  if (deltaY < -60) {
+  if (deltaY < -50) {
     if (currentSheetState === "collapsed") {
       applySheetState("mid");
+    } else if (currentSheetState === "mid") {
+      applySheetState("open");
     } else {
       applySheetState("open");
     }
-  } else if (deltaY > 60) {
+  } else if (deltaY > 50) {
     if (currentSheetState === "open") {
       applySheetState("mid");
+    } else if (currentSheetState === "mid") {
+      applySheetState("collapsed");
     } else {
       applySheetState("collapsed");
     }
@@ -553,77 +697,6 @@ function endSheetDrag() {
   }
 }
 
-function onDragMove(clientY) {
-  if (!isDragging) return;
-
-  currentY = clientY;
-  const deltaY = currentY - startY;
-
-  // 將手指移動轉成百分比，向下拉 = translateY 增加
-  const next = startTranslate + deltaY / 8;
-  setSheetTranslate(next);
-}
-
-function onDragEnd() {
-  if (!isDragging) return;
-  isDragging = false;
-  sheet.style.transition = "transform 0.28s ease";
-
-  // 接近頂部就全開，否則半開
-  if (currentTranslate < 20) {
-    sheet.classList.add("open");
-    startTranslate = 0;
-    setSheetTranslate(0);
-  } else {
-    sheet.classList.remove("open");
-    startTranslate = 42;
-    setSheetTranslate(42);
-  }
-}
-
-// touch
-handle.addEventListener("touchstart", (e) => {
-  onDragStart(e.touches[0].clientY);
-}, { passive: true });
-
-window.addEventListener("touchmove", (e) => {
-  if (!isDragging) return;
-  onDragMove(e.touches[0].clientY);
-}, { passive: true });
-
-window.addEventListener("touchend", () => {
-  onDragEnd();
-});
-
-// mouse（方便 desktop 測）
-handle.addEventListener("mousedown", (e) => {
-  onDragStart(e.clientY);
-});
-
-window.addEventListener("mousemove", (e) => {
-  if (!isDragging) return;
-  onDragMove(e.clientY);
-});
-
-window.addEventListener("mouseup", () => {
-  onDragEnd();
-});
-
-sheet.addEventListener("touchend", () => {
-  isDragging = false;
-
-  if (currentY - startY < -50) {
-    sheet.classList.add("open");
-  } else {
-    sheet.classList.remove("open");
-    sheet.style.transform = "";
-  }
-});
-function openSheet() {
-  const sheet = document.getElementById("bottomSheet");
-  sheet.classList.add("open");
-  sheet.style.transform = "translateY(0%)";
-}
 if (handle && sheet) {
   applySheetState("mid");
 

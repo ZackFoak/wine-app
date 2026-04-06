@@ -1,36 +1,380 @@
 {
   "name": "USA",
-  "summary": "USA shows a wide range of climates, with California being the key region for premium wine production.",
+  "summary": "The USA is a diverse wine-producing country, led by California, with styles shaped by Pacific influence, fog, altitude and continental conditions inland.",
+  "examTips": [
+    "California is the most important premium wine state.",
+    "Pacific influence, fog and topography are key themes in the USA.",
+    "Compare warm Napa with cooler Sonoma and coastal regions.",
+    "Also compare cool Oregon with more continental Washington State."
+  ],
+  "tags": ["USA", "California", "Pacific", "fog", "regional-differences", "New World"],
+  "difficulty": 1,
   "regions": {
     "california": {
       "name": "California",
+      "summary": "The key US wine state, producing a wide range of wines from ripe inland styles to fresher coastal expressions.",
       "climate": "Mediterranean",
       "styleSummary": "Ripe fruit-driven wines with freshness maintained by Pacific influence.",
       "mitigating": ["Pacific Ocean", "cool currents", "fog", "altitude"],
+      "keyGrapes": ["Cabernet Sauvignon", "Zinfandel", "Chardonnay", "Pinot Noir"],
+      "examTips": [
+        "California is the core state to remember.",
+        "Coastal influence is critical for preserving freshness.",
+        "Fog and mountain gaps are major moderating factors."
+      ],
+      "tags": ["USA", "California", "Mediterranean", "coastal-influence", "premium"],
+      "difficulty": 1,
       "grapes": {
         "Cabernet Sauvignon": {
+          "summary": "A key premium red grape in California, producing full-bodied wines with black fruit, oak and structure.",
           "style": "Blackcurrant, oak spice, full body, high tannin.",
-          "profile": { "acidity": "Medium", "alcohol": "High", "body": "Full", "tannin": "High" },
+          "aliases": [],
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "High",
+            "body": "Full",
+            "tannin": "High"
+          },
+          "aromas": ["blackcurrant", "cassis", "oak", "cedar"],
           "viticulture": ["Needs warmth to ripen"],
-          "winemaking": ["Oak ageing common"]
+          "winemaking": ["Oak ageing common"],
+          "pairing": ["steak", "lamb", "hard cheese"],
+          "examTips": [
+            "Usually fuller and riper than Bordeaux.",
+            "Oak influence is often pronounced."
+          ],
+          "tags": ["red", "full-body", "high-tannin", "USA", "California"],
+          "difficulty": 1
         },
         "Zinfandel": {
+          "summary": "A signature Californian red grape producing ripe, high-alcohol wines with jammy fruit and spice.",
           "style": "Jammy red fruit, spice, high alcohol.",
-          "profile": { "acidity": "Medium", "alcohol": "High", "body": "Full", "tannin": "Medium" },
+          "aliases": ["Primitivo"],
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "High",
+            "body": "Full",
+            "tannin": "Medium"
+          },
+          "aromas": ["jammy red fruit", "blackberry", "spice", "pepper"],
           "viticulture": ["Uneven ripening common"],
-          "winemaking": ["Often rich styles"]
+          "winemaking": ["Often rich styles"],
+          "pairing": ["BBQ", "pizza", "grilled meats"],
+          "examTips": [
+            "High alcohol and jammy fruit are key clues.",
+            "Can resemble Primitivo genetically."
+          ],
+          "tags": ["red", "jammy", "high-alcohol", "USA", "California"],
+          "difficulty": 1
         },
         "Chardonnay": {
+          "summary": "A major Californian white grape capable of styles from fresh citrus to rich buttery oak-aged wines.",
           "style": "Ranges from fresh citrus to full buttery oak styles.",
-          "profile": { "acidity": "Medium to High", "alcohol": "Medium to High", "body": "Medium to Full", "tannin": "-" },
+          "aliases": [],
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium to High",
+            "body": "Medium to Full",
+            "tannin": "-"
+          },
+          "aromas": ["citrus", "peach", "apple", "butter", "oak"],
           "viticulture": ["Widely adaptable"],
-          "winemaking": ["MLF + oak common"]
+          "winemaking": ["MLF + oak common"],
+          "pairing": ["lobster", "roast chicken", "cream sauces"],
+          "examTips": [
+            "MLF and oak can create rich buttery styles.",
+            "Cooler sites give fresher expressions."
+          ],
+          "tags": ["white", "versatile", "oak-possible", "USA", "California"],
+          "difficulty": 1
         },
         "Pinot Noir": {
+          "summary": "A cool-site red grape producing elegant red-fruited wines in suitable Californian regions.",
           "style": "Red fruit, soft tannin, elegant in cooler areas.",
-          "profile": { "acidity": "Medium to High", "alcohol": "Medium", "body": "Light to Medium", "tannin": "Low to Medium" },
+          "aliases": [],
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Light to Medium",
+            "tannin": "Low to Medium"
+          },
+          "aromas": ["red cherry", "raspberry", "floral", "earthy"],
           "viticulture": ["Prefers cool climates"],
-          "winemaking": ["Gentle extraction"]
+          "winemaking": ["Gentle extraction"],
+          "pairing": ["duck", "mushrooms", "roast chicken"],
+          "examTips": [
+            "Usually from cooler coastal or elevated sites.",
+            "Lighter and fresher than warm-climate reds."
+          ],
+          "tags": ["red", "cool-climate", "elegant", "USA", "California"],
+          "difficulty": 1
+        }
+      }
+    },
+
+    "napa-valley": {
+      "name": "Napa Valley",
+      "summary": "California's flagship premium region, known for full-bodied, ripe and concentrated Cabernet Sauvignon.",
+      "climate": "Warm Mediterranean",
+      "styleSummary": "Full-bodied, ripe wines with high alcohol and concentration.",
+      "mitigating": ["morning fog", "diurnal range", "valley vs hillside differences"],
+      "keyGrapes": ["Cabernet Sauvignon", "Chardonnay"],
+      "examTips": [
+        "Napa is the key premium Cabernet region in the USA.",
+        "Think ripe fruit, concentration and oak.",
+        "Fog and diurnal range help preserve balance."
+      ],
+      "tags": ["USA", "Napa", "premium", "Cabernet Sauvignon", "warm-climate"],
+      "difficulty": 1,
+      "grapes": {
+        "Cabernet Sauvignon": {
+          "summary": "Premium Napa red producing concentrated black-fruited wines with high tannin and oak.",
+          "style": "Blackcurrant, cassis, oak, full body, high tannin.",
+          "aliases": [],
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "High",
+            "body": "Full",
+            "tannin": "High"
+          },
+          "aromas": ["blackcurrant", "cassis", "oak", "cedar", "black fruit"],
+          "viticulture": ["Warm climate ensures ripening"],
+          "winemaking": ["Oak ageing common"],
+          "pairing": ["steak", "lamb", "hard cheese"],
+          "examTips": [
+            "Think concentrated premium New World Cabernet.",
+            "Usually riper and fuller than Bordeaux."
+          ],
+          "tags": ["red", "premium", "full-body", "USA", "Napa"],
+          "difficulty": 1
+        },
+        "Chardonnay": {
+          "summary": "Riper Californian Chardonnay often showing tropical fruit, MLF and oak.",
+          "style": "Ripe citrus, tropical fruit, often buttery and oaky.",
+          "aliases": [],
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium to High",
+            "body": "Medium to Full",
+            "tannin": "-"
+          },
+          "aromas": ["ripe citrus", "tropical fruit", "butter", "oak"],
+          "viticulture": ["Warm sites"],
+          "winemaking": ["MLF + oak common"],
+          "pairing": ["lobster", "cream sauces", "roast chicken"],
+          "examTips": [
+            "Rich buttery style is a key clue in warmer Californian Chardonnay."
+          ],
+          "tags": ["white", "rich", "oak", "USA", "Napa"],
+          "difficulty": 1
+        }
+      }
+    },
+
+    "sonoma": {
+      "name": "Sonoma",
+      "summary": "A diverse Californian region often cooler and more balanced than Napa due to stronger Pacific influence.",
+      "climate": "Mediterranean (cooler than Napa)",
+      "styleSummary": "More balanced wines due to stronger cooling influence.",
+      "mitigating": ["Pacific fog", "cool air corridors"],
+      "keyGrapes": ["Pinot Noir", "Chardonnay"],
+      "examTips": [
+        "Compare Sonoma with Napa for cooling influence.",
+        "Pinot Noir and Chardonnay are especially important."
+      ],
+      "tags": ["USA", "Sonoma", "cooler", "balanced", "coastal"],
+      "difficulty": 1,
+      "grapes": {
+        "Pinot Noir": {
+          "summary": "Cooler-site Californian Pinot Noir with red fruit, freshness and elegance.",
+          "style": "Red fruit, fresh acidity, elegant structure.",
+          "aliases": [],
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Light to Medium",
+            "tannin": "Low to Medium"
+          },
+          "aromas": ["red fruit", "cherry", "raspberry", "earthy"],
+          "viticulture": ["Cooler sites"],
+          "winemaking": ["Gentle extraction"],
+          "pairing": ["duck", "mushrooms", "roast chicken"],
+          "examTips": [
+            "Usually fresher and more elegant than warm inland reds."
+          ],
+          "tags": ["red", "cool-climate", "fresh", "USA", "Sonoma"],
+          "difficulty": 1
+        },
+        "Chardonnay": {
+          "summary": "Versatile white grape in Sonoma ranging from fresh citrus styles to richer oak-aged wines.",
+          "style": "From fresh citrus to richer oaked styles.",
+          "aliases": [],
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "aromas": ["citrus", "apple", "stone fruit", "oak"],
+          "viticulture": ["Coastal cooling"],
+          "winemaking": ["Variable styles"],
+          "pairing": ["seafood", "roast chicken", "cream sauces"],
+          "examTips": [
+            "Cooling influence usually gives more freshness than Napa examples."
+          ],
+          "tags": ["white", "versatile", "coastal", "USA", "Sonoma"],
+          "difficulty": 1
+        }
+      }
+    },
+
+    "central-coast": {
+      "name": "Central Coast",
+      "summary": "A broad Californian region where ocean influence creates a wide range of styles from fresh to ripe.",
+      "climate": "Mediterranean",
+      "styleSummary": "Wide range of styles depending on proximity to ocean.",
+      "mitigating": ["ocean influence", "fog", "altitude"],
+      "keyGrapes": ["Chardonnay", "Pinot Noir"],
+      "examTips": [
+        "The main theme is site variation.",
+        "Closer to the coast means fresher style."
+      ],
+      "tags": ["USA", "Central Coast", "site-variation", "coastal"],
+      "difficulty": 1,
+      "grapes": {
+        "Chardonnay": {
+          "summary": "A flexible variety here, ranging from fresh coastal styles to riper inland wines.",
+          "style": "Fresh to ripe styles depending on site.",
+          "aliases": [],
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "aromas": ["citrus", "apple", "peach"],
+          "viticulture": ["Coastal variation"],
+          "winemaking": ["Fresh or oaked"],
+          "pairing": ["seafood", "pasta", "chicken"],
+          "examTips": [
+            "Site is more important than one fixed regional style."
+          ],
+          "tags": ["white", "site-driven", "USA", "Central Coast"],
+          "difficulty": 1
+        },
+        "Pinot Noir": {
+          "summary": "Cooler-site red grape producing red-fruited lighter to medium-bodied wines.",
+          "style": "Red fruit, light to medium body.",
+          "aliases": [],
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Light to Medium",
+            "tannin": "Low to Medium"
+          },
+          "aromas": ["red cherry", "raspberry", "red fruit"],
+          "viticulture": ["Cooler sites near coast"],
+          "winemaking": ["Light extraction"],
+          "pairing": ["duck", "mushrooms"],
+          "examTips": [
+            "Think freshness and red fruit in cooler coastal examples."
+          ],
+          "tags": ["red", "cooler-site", "USA", "Central Coast"],
+          "difficulty": 1
+        }
+      }
+    },
+
+    "oregon": {
+      "name": "Oregon",
+      "summary": "Cool-climate US region best known for elegant Pinot Noir and high-acid wines.",
+      "climate": "Cool maritime",
+      "styleSummary": "Elegant, high-acid wines, especially Pinot Noir.",
+      "mitigating": ["cool climate", "long growing season"],
+      "keyGrapes": ["Pinot Noir"],
+      "examTips": [
+        "Oregon is most strongly linked with Pinot Noir.",
+        "Think elegance, freshness and restraint compared with warmer regions."
+      ],
+      "tags": ["USA", "Oregon", "cool-climate", "Pinot Noir", "elegant"],
+      "difficulty": 1,
+      "grapes": {
+        "Pinot Noir": {
+          "summary": "Cool-climate Pinot Noir showing red fruit, freshness and elegance.",
+          "style": "Red cherry, raspberry, high acidity, elegant.",
+          "aliases": [],
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Light to Medium",
+            "tannin": "Low to Medium"
+          },
+          "aromas": ["red cherry", "raspberry", "floral", "earthy"],
+          "viticulture": ["Cool climate"],
+          "winemaking": ["Refined styles"],
+          "pairing": ["duck", "mushrooms", "roast poultry"],
+          "examTips": [
+            "Usually fresher and more restrained than many Californian examples."
+          ],
+          "tags": ["red", "high-acid", "cool-climate", "USA", "Oregon"],
+          "difficulty": 1
+        }
+      }
+    },
+
+    "washington-state": {
+      "name": "Washington State",
+      "summary": "A more continental US region producing ripe wines with good acidity due to warm days and cool nights.",
+      "climate": "Continental",
+      "styleSummary": "Ripe fruit with good acidity due to diurnal range.",
+      "mitigating": ["rain shadow", "irrigation", "cool nights"],
+      "keyGrapes": ["Cabernet Sauvignon", "Merlot"],
+      "examTips": [
+        "Warm days and cool nights are the key theme.",
+        "Think ripe fruit with retained freshness."
+      ],
+      "tags": ["USA", "Washington State", "continental", "diurnal-range", "structured-red"],
+      "difficulty": 1,
+      "grapes": {
+        "Cabernet Sauvignon": {
+          "summary": "Structured red grape showing ripe black fruit with good acidity and full body.",
+          "style": "Black fruit, structured, balanced acidity.",
+          "aliases": [],
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium to High",
+            "body": "Full",
+            "tannin": "High"
+          },
+          "aromas": ["black fruit", "blackcurrant", "cassis", "spice"],
+          "viticulture": ["Warm days, cool nights"],
+          "winemaking": ["Often oak aged"],
+          "pairing": ["steak", "lamb", "grilled meats"],
+          "examTips": [
+            "Usually balances ripe fruit with better freshness than very hot regions."
+          ],
+          "tags": ["red", "structured", "continental", "USA", "Washington"],
+          "difficulty": 1
+        },
+        "Merlot": {
+          "summary": "A major Washington red grape producing plum-fruited, medium to full-bodied wines.",
+          "style": "Plum, soft tannin, medium to full body.",
+          "aliases": [],
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium to High",
+            "body": "Medium to Full",
+            "tannin": "Medium"
+          },
+          "aromas": ["plum", "black fruit", "soft spice"],
+          "viticulture": ["Reliable ripening"],
+          "winemaking": ["Often blended"],
+          "pairing": ["roast meats", "pasta with meat sauce"],
+          "examTips": [
+            "Usually softer and rounder than Cabernet Sauvignon."
+          ],
+          "tags": ["red", "plum", "balanced", "USA", "Washington"],
+          "difficulty": 1
         }
       }
     }
