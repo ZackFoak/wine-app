@@ -53,7 +53,7 @@ async function init() {
   buildGeneratedQuestions().catch(err => {
     console.error("Question generation failed:", err);
   });
-  
+
   byId("content").innerHTML = `
   <div class="section-card">
     <p class="section-title">Welcome</p>
@@ -68,6 +68,7 @@ init();
 // ================= COUNTRY =================
 async function showCountry(countryKey) {
   showLoading("Loading country...");
+  openSheet();
   try {
     const countryMeta = state.countriesData[countryKey];
     if (!countryMeta) return;
@@ -144,6 +145,7 @@ async function showCountry(countryKey) {
 // ================= REGION =================
 async function showRegion(countryKey, regionKey) {
   showLoading("Loading region...");
+  openSheet();
   try {
     const countryMeta = state.countriesData[countryKey];
     const country = await loadJson(`./data/${countryMeta.file}`);
@@ -219,6 +221,7 @@ async function showRegion(countryKey, regionKey) {
 // ================= GRAPE =================
 async function showGrape(countryKey, regionKey, grapeKey) {
   showLoading("Loading grape profile...");
+  openSheet();
   const countryMeta = state.countriesData[countryKey];
   const country = await loadJson(`./data/${countryMeta.file}`);
   const grape = country.regions[regionKey]?.grapes?.[grapeKey];
@@ -403,6 +406,7 @@ async function searchAll(term) {
 // ================= STYLE =================
 async function showStyle(countryKey, styleKey) {
   showLoading("Loading grape profile...");
+  openSheet();
   const countryMeta = state.countriesData[countryKey];
   const country = await loadJson(`./data/${countryMeta.file}`);
   const style = country.styles?.[styleKey];
@@ -464,4 +468,95 @@ function showProgress() {
       <ul>${weakHtml}</ul>
     </div>
   `;
+}
+const sheet = document.getElementById("bottomSheet");
+const handle = document.querySelector(".sheet-handle");
+
+let startY = 0;
+let currentY = 0;
+let isDragging = false;
+let startTranslate = 42; // half-open
+let currentTranslate = 42;
+
+function setSheetTranslate(percent) {
+  currentTranslate = Math.max(0, Math.min(42, percent));
+  sheet.style.transform = `translateY(${currentTranslate}%)`;
+}
+
+function onDragStart(clientY) {
+  startY = clientY;
+  isDragging = true;
+  sheet.style.transition = "none";
+}
+
+function onDragMove(clientY) {
+  if (!isDragging) return;
+
+  currentY = clientY;
+  const deltaY = currentY - startY;
+
+  // 將手指移動轉成百分比，向下拉 = translateY 增加
+  const next = startTranslate + deltaY / 8;
+  setSheetTranslate(next);
+}
+
+function onDragEnd() {
+  if (!isDragging) return;
+  isDragging = false;
+  sheet.style.transition = "transform 0.28s ease";
+
+  // 接近頂部就全開，否則半開
+  if (currentTranslate < 20) {
+    sheet.classList.add("open");
+    startTranslate = 0;
+    setSheetTranslate(0);
+  } else {
+    sheet.classList.remove("open");
+    startTranslate = 42;
+    setSheetTranslate(42);
+  }
+}
+
+// touch
+handle.addEventListener("touchstart", (e) => {
+  onDragStart(e.touches[0].clientY);
+}, { passive: true });
+
+window.addEventListener("touchmove", (e) => {
+  if (!isDragging) return;
+  onDragMove(e.touches[0].clientY);
+}, { passive: true });
+
+window.addEventListener("touchend", () => {
+  onDragEnd();
+});
+
+// mouse（方便 desktop 測）
+handle.addEventListener("mousedown", (e) => {
+  onDragStart(e.clientY);
+});
+
+window.addEventListener("mousemove", (e) => {
+  if (!isDragging) return;
+  onDragMove(e.clientY);
+});
+
+window.addEventListener("mouseup", () => {
+  onDragEnd();
+});
+
+sheet.addEventListener("touchend", () => {
+  isDragging = false;
+
+  if (currentY - startY < -50) {
+    sheet.classList.add("open");
+  } else {
+    sheet.classList.remove("open");
+    sheet.style.transform = "";
+  }
+});
+function openSheet() {
+  const sheet = document.getElementById("bottomSheet");
+  sheet.classList.add("open");
+  sheet.style.transform = "translateY(0%)";
 }
