@@ -980,25 +980,21 @@ function updateSheetMetrics() {
   const toolbarRect = toolbar.getBoundingClientRect();
   const viewportHeight = window.innerHeight || 1;
 
-  // 你想 bottom sheet fully open 去到 search bar 底
-  const desiredTop = Math.round(toolbarRect.bottom + 4);
+  // 用 filter bar 離頂距離，作為 search bar 同 sheet 之間嘅 gap
+  const topGap = Math.round(toolbarRect.top);
 
-  // sheet 本身高度 = 視窗高度 - desiredTop
+  // sheet 頂部位置 = search bar 底部 + 同樣 gap
+  const desiredTop = Math.round(toolbarRect.bottom + topGap);
+
   const sheetHeight = Math.max(320, viewportHeight - desiredTop);
 
   root.style.setProperty("--sheet-height", `${sheetHeight}px`);
 
-  // collapsed / mid 保持大致原本 feel
-  // open 改成真正貼近 toolbar 底
-  const openPercent = 0;
-  const midPercent = 38;
-  const collapsedPercent = 84;
-
   if (window.innerWidth <= 640) {
     SHEET_STATES = {
-      collapsed: collapsedPercent,
-      mid: midPercent,
-      open: openPercent
+      collapsed: 84,
+      mid: 38,
+      open: 0
     };
   } else {
     SHEET_STATES = {
