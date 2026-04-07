@@ -6,96 +6,172 @@
     "Shiraz is the key flagship red grape.",
     "Compare warm inland vs cool coastal regions."
   ],
-  "tags": ["Australia", "Shiraz", "climate-diversity", "New World", "exam-core"],
+  "tags": [
+    "Australia",
+    "Shiraz",
+    "climate-diversity",
+    "New World",
+    "exam-core",
+    "fortified",
+    "Rutherglen"
+  ],
   "difficulty": 1,
   "regions": {
-
     "barossa": {
       "name": "Barossa Valley",
       "summary": "Warm inland region producing powerful, full-bodied Shiraz.",
       "climate": "Warm Mediterranean",
       "styleSummary": "Full-bodied, ripe, high-alcohol Shiraz.",
-      "mitigating": ["old vines", "dry climate"],
-      "keyGrapes": ["Shiraz"],
+      "mitigating": [
+        "old vines",
+        "dry climate"
+      ],
+      "keyGrapes": [
+        "Shiraz"
+      ],
       "examTips": [
         "Think powerful, ripe Shiraz.",
         "Often higher alcohol and fuller body."
       ],
-      "tags": ["Australia", "Barossa", "Shiraz", "warm-climate"],
+      "tags": [
+        "Australia",
+        "Barossa",
+        "Shiraz",
+        "warm-climate"
+      ],
       "difficulty": 1,
       "grapes": {
         "Shiraz": {
           "summary": "Flagship Australian red producing powerful, ripe and full-bodied wines.",
           "style": "Black fruit, jam, spice, chocolate, full body.",
-          "aliases": ["Syrah"],
+          "aliases": [
+            "Syrah"
+          ],
           "profile": {
             "acidity": "Medium",
             "alcohol": "High",
             "body": "Full",
             "tannin": "Medium to High"
           },
-          "aromas": ["blackberry", "jam", "chocolate", "spice"],
-          "viticulture": ["Old vines common"],
-          "winemaking": ["Oak often used"],
-          "pairing": ["BBQ", "steak", "grilled meats"],
+          "aromas": [
+            "blackberry",
+            "jam",
+            "chocolate",
+            "spice"
+          ],
+          "viticulture": [
+            "Old vines common"
+          ],
+          "winemaking": [
+            "Oak often used"
+          ],
+          "pairing": [
+            "BBQ",
+            "steak",
+            "grilled meats"
+          ],
           "examTips": [
             "Riper and more powerful than Northern Rhone Syrah."
           ],
-          "tags": ["red", "full-body", "ripe", "Australia", "Shiraz"],
+          "tags": [
+            "red",
+            "full-body",
+            "ripe",
+            "Australia",
+            "Shiraz"
+          ],
           "difficulty": 1
         }
-      }
+      },
+      "classification": "Barossa is one of Australia’s benchmark warm-climate Shiraz regions.",
+      "lawNotes": [
+        "Old vines and generous ripe Shiraz are central exam themes."
+      ]
     },
-
     "mclaren-vale": {
       "name": "McLaren Vale",
       "summary": "Warm coastal region producing rich but slightly fresher Shiraz due to maritime influence.",
       "climate": "Mediterranean",
       "styleSummary": "Ripe reds with some freshness from ocean influence.",
-      "mitigating": ["sea breezes"],
-      "keyGrapes": ["Shiraz"],
+      "mitigating": [
+        "sea breezes"
+      ],
+      "keyGrapes": [
+        "Shiraz"
+      ],
       "examTips": [
         "Think warm but slightly fresher than Barossa.",
         "Maritime influence is key."
       ],
-      "tags": ["Australia", "McLaren Vale", "Shiraz"],
+      "tags": [
+        "Australia",
+        "McLaren Vale",
+        "Shiraz"
+      ],
       "difficulty": 1,
       "grapes": {
         "Shiraz": {
           "summary": "Ripe Shiraz with slightly more freshness than Barossa.",
           "style": "Ripe fruit with spice and moderate freshness.",
-          "aliases": ["Syrah"],
+          "aliases": [
+            "Syrah"
+          ],
           "profile": {
             "acidity": "Medium",
             "alcohol": "High",
             "body": "Full",
             "tannin": "Medium"
           },
-          "aromas": ["black fruit", "spice", "plum"],
-          "viticulture": ["Warm coastal"],
-          "winemaking": ["Fruit-driven styles"],
-          "pairing": ["BBQ", "lamb"],
+          "aromas": [
+            "black fruit",
+            "spice",
+            "plum"
+          ],
+          "viticulture": [
+            "Warm coastal"
+          ],
+          "winemaking": [
+            "Fruit-driven styles"
+          ],
+          "pairing": [
+            "BBQ",
+            "lamb"
+          ],
           "examTips": [
             "Compare with Barossa for exam questions."
           ],
-          "tags": ["red", "warm", "Australia", "Shiraz"],
+          "tags": [
+            "red",
+            "warm",
+            "Australia",
+            "Shiraz"
+          ],
           "difficulty": 1
         }
-      }
+      },
+      "classification": "McLaren Vale is a warm South Australian region associated with ripe generous Shiraz and Grenache styles."
     },
-
     "adelaide-hills": {
       "name": "Adelaide Hills",
       "summary": "Cooler elevated region producing fresher aromatic whites.",
       "climate": "Cool continental",
       "styleSummary": "Fresh aromatic whites with high acidity.",
-      "mitigating": ["altitude"],
-      "keyGrapes": ["Sauvignon Blanc", "Chardonnay"],
+      "mitigating": [
+        "altitude"
+      ],
+      "keyGrapes": [
+        "Sauvignon Blanc",
+        "Chardonnay"
+      ],
       "examTips": [
         "Altitude = freshness.",
         "Important contrast to Barossa."
       ],
-      "tags": ["Australia", "cool-climate", "white"],
+      "tags": [
+        "Australia",
+        "cool-climate",
+        "white"
+      ],
       "difficulty": 1,
       "grapes": {
         "Sauvignon Blanc": {
@@ -108,31 +184,64 @@
             "body": "Light",
             "tannin": "-"
           },
-          "aromas": ["citrus", "herb"],
-          "viticulture": ["Cool sites"],
-          "winemaking": ["Fresh styles"],
-          "pairing": ["goat cheese", "seafood"],
+          "aromas": [
+            "citrus",
+            "herb"
+          ],
+          "viticulture": [
+            "Cool sites"
+          ],
+          "winemaking": [
+            "Fresh styles"
+          ],
+          "pairing": [
+            "goat cheese",
+            "seafood"
+          ],
           "examTips": [
             "High acidity is key."
           ],
-          "tags": ["white", "fresh", "Australia"],
+          "tags": [
+            "white",
+            "fresh",
+            "Australia"
+          ],
           "difficulty": 1
         }
-      }
+      },
+      "styles": {
+        "premium-sparkling": {
+          "name": "Premium Sparkling Wine",
+          "style": "Fresh traditional method sparkling style with high acidity and fine fruit.",
+          "aging": "Bottle fermentation with lees ageing",
+          "keyPoint": "Altitude helps preserve acidity for premium sparkling production."
+        }
+      },
+      "classification": "Adelaide Hills is a cooler elevated South Australian region for Sauvignon Blanc, Chardonnay and premium sparkling wine.",
+      "lawNotes": [
+        "Altitude gives a cooler-climate contrast to Barossa and McLaren Vale."
+      ]
     },
-
     "yarra-valley": {
       "name": "Yarra Valley",
       "summary": "Cool-climate region known for elegant Pinot Noir and Chardonnay.",
       "climate": "Cool maritime",
       "styleSummary": "Elegant, fresh wines.",
-      "mitigating": ["ocean influence"],
-      "keyGrapes": ["Pinot Noir", "Chardonnay"],
+      "mitigating": [
+        "ocean influence"
+      ],
+      "keyGrapes": [
+        "Pinot Noir",
+        "Chardonnay"
+      ],
       "examTips": [
         "Cool-climate style is key.",
         "Think elegance not power."
       ],
-      "tags": ["Australia", "cool-climate"],
+      "tags": [
+        "Australia",
+        "cool-climate"
+      ],
       "difficulty": 1,
       "grapes": {
         "Pinot Noir": {
@@ -145,31 +254,59 @@
             "body": "Light to Medium",
             "tannin": "Low"
           },
-          "aromas": ["red cherry", "raspberry"],
-          "viticulture": ["Cool climate"],
-          "winemaking": ["Light extraction"],
-          "pairing": ["duck", "mushroom"],
+          "aromas": [
+            "red cherry",
+            "raspberry"
+          ],
+          "viticulture": [
+            "Cool climate"
+          ],
+          "winemaking": [
+            "Light extraction"
+          ],
+          "pairing": [
+            "duck",
+            "mushroom"
+          ],
           "examTips": [
             "Compare with Burgundy."
           ],
-          "tags": ["red", "cool-climate"],
+          "tags": [
+            "red",
+            "cool-climate"
+          ],
           "difficulty": 1
         }
-      }
+      },
+      "styles": {
+        "premium-sparkling": {
+          "name": "Premium Sparkling Wine",
+          "style": "Elegant traditional method sparkling wine with freshness and fine red- and citrus-fruit detail.",
+          "aging": "Bottle fermentation with lees ageing",
+          "keyPoint": "Yarra Valley is important for premium cool-climate sparkling wine."
+        }
+      },
+      "classification": "Yarra Valley is a cool-climate Victorian region important for Pinot Noir, Chardonnay and premium sparkling wine."
     },
-
     "hunter-valley": {
       "name": "Hunter Valley",
       "summary": "Warm region known for distinctive Semillon with ageing potential.",
       "climate": "Warm maritime",
       "styleSummary": "Unique low-alcohol high-acid Semillon.",
-      "mitigating": ["cloud cover"],
-      "keyGrapes": ["Semillon"],
+      "mitigating": [
+        "cloud cover"
+      ],
+      "keyGrapes": [
+        "Semillon"
+      ],
       "examTips": [
         "Low alcohol + high acid Semillon is key.",
         "Develops toast with age."
       ],
-      "tags": ["Australia", "Semillon"],
+      "tags": [
+        "Australia",
+        "Semillon"
+      ],
       "difficulty": 1,
       "grapes": {
         "Semillon": {
@@ -182,31 +319,54 @@
             "body": "Light",
             "tannin": "-"
           },
-          "aromas": ["lemon", "toast"],
-          "viticulture": ["Early harvested"],
-          "winemaking": ["Unoaked"],
-          "pairing": ["seafood"],
+          "aromas": [
+            "lemon",
+            "toast"
+          ],
+          "viticulture": [
+            "Early harvested"
+          ],
+          "winemaking": [
+            "Unoaked"
+          ],
+          "pairing": [
+            "seafood"
+          ],
           "examTips": [
             "Low alcohol is key clue."
           ],
-          "tags": ["white", "unique-style"],
+          "tags": [
+            "white",
+            "unique-style"
+          ],
           "difficulty": 1
         }
-      }
+      },
+      "classification": "Hunter Valley is a classic Australian region especially associated with distinctive Semillon styles.",
+      "lawNotes": [
+        "Semillon is often light-bodied and high-acid in youth, developing toasty notes with bottle age."
+      ]
     },
-
     "margaret-river": {
       "name": "Margaret River",
       "summary": "Premium maritime region producing Bordeaux-style blends and elegant Chardonnay.",
       "climate": "Maritime",
       "styleSummary": "Balanced premium wines.",
-      "mitigating": ["ocean influence"],
-      "keyGrapes": ["Cabernet Sauvignon", "Chardonnay"],
+      "mitigating": [
+        "ocean influence"
+      ],
+      "keyGrapes": [
+        "Cabernet Sauvignon",
+        "Chardonnay"
+      ],
       "examTips": [
         "Think Bordeaux-style blends.",
         "Balanced not extreme."
       ],
-      "tags": ["Australia", "premium"],
+      "tags": [
+        "Australia",
+        "premium"
+      ],
       "difficulty": 1,
       "grapes": {
         "Cabernet Sauvignon": {
@@ -219,31 +379,50 @@
             "body": "Full",
             "tannin": "High"
           },
-          "aromas": ["blackcurrant"],
-          "viticulture": ["Maritime climate"],
-          "winemaking": ["Oak used"],
-          "pairing": ["steak"],
+          "aromas": [
+            "blackcurrant"
+          ],
+          "viticulture": [
+            "Maritime climate"
+          ],
+          "winemaking": [
+            "Oak used"
+          ],
+          "pairing": [
+            "steak"
+          ],
           "examTips": [
             "More balanced than warm regions."
           ],
-          "tags": ["red"],
+          "tags": [
+            "red"
+          ],
           "difficulty": 1
         }
-      }
+      },
+      "classification": "Margaret River is a major fine-wine region known for Cabernet Sauvignon and Chardonnay under strong maritime influence."
     },
-
     "tasmania": {
       "name": "Tasmania",
       "summary": "Coolest Australian region producing high-acid wines and sparkling.",
       "climate": "Cool maritime",
       "styleSummary": "Fresh, high-acid wines.",
-      "mitigating": ["cool ocean"],
-      "keyGrapes": ["Pinot Noir", "Chardonnay"],
+      "mitigating": [
+        "cool ocean"
+      ],
+      "keyGrapes": [
+        "Pinot Noir",
+        "Chardonnay"
+      ],
       "examTips": [
         "Coolest region.",
         "Important for sparkling."
       ],
-      "tags": ["Australia", "cool", "sparkling"],
+      "tags": [
+        "Australia",
+        "cool",
+        "sparkling"
+      ],
       "difficulty": 1,
       "grapes": {
         "Chardonnay": {
@@ -256,18 +435,123 @@
             "body": "Light to Medium",
             "tannin": "-"
           },
-          "aromas": ["citrus"],
-          "viticulture": ["Cool climate"],
-          "winemaking": ["Sparkling base"],
-          "pairing": ["oysters"],
+          "aromas": [
+            "citrus"
+          ],
+          "viticulture": [
+            "Cool climate"
+          ],
+          "winemaking": [
+            "Sparkling base"
+          ],
+          "pairing": [
+            "oysters"
+          ],
           "examTips": [
             "High acidity is key."
           ],
-          "tags": ["white"],
+          "tags": [
+            "white"
+          ],
           "difficulty": 1
         }
-      }
+      },
+      "styles": {
+        "premium-sparkling": {
+          "name": "Premium Sparkling Wine",
+          "style": "Traditional method sparkling wine with high acidity, citrus fruit and fine autolytic complexity.",
+          "aging": "Bottle fermentation with lees ageing",
+          "keyPoint": "Cool climate Tasmania is one of Australia’s key premium sparkling regions."
+        }
+      },
+      "classification": "Tasmania is Australia’s coolest major region and especially important for premium sparkling wine and Pinot Noir / Chardonnay."
+    },
+    "rutherglen": {
+      "name": "Rutherglen",
+      "summary": "Warm inland Australian region famous for rich fortified Muscat wines made from very ripe fruit and oxidative maturation.",
+      "climate": "Warm Continental",
+      "styleSummary": "Lusciously sweet fortified Muscat styles with raisin, toffee, marmalade and nutty complexity.",
+      "mitigating": [
+        "warm sunny conditions",
+        "long ripening season",
+        "fortification",
+        "oxidative ageing"
+      ],
+      "keyGrapes": [
+        "Muscat a Petits Grains Rouge"
+      ],
+      "examTips": [
+        "Rutherglen is the key fortified Muscat region to know in Australia.",
+        "Expect very sweet, intensely flavoured wines with oxidative ageing character.",
+        "Classification terms such as Classic and Grand relate to increasing concentration and complexity."
+      ],
+      "tags": [
+        "Australia",
+        "Rutherglen",
+        "fortified",
+        "Muscat",
+        "sweet"
+      ],
+      "difficulty": 1,
+      "grapes": {
+        "Muscat a Petits Grains Rouge": {
+          "summary": "The Muscat variety used for Rutherglen Muscat, producing intensely aromatic sweet fortified wines.",
+          "style": "Raisin, orange peel, toffee, floral and grapey richness.",
+          "aliases": [
+            "Brown Muscat",
+            "Muscat Rouge a Petits Grains"
+          ],
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "High",
+            "body": "Full",
+            "tannin": "-"
+          },
+          "aromas": [
+            "raisin",
+            "orange peel",
+            "toffee",
+            "grape",
+            "floral"
+          ],
+          "viticulture": [
+            "Warm climate helps full ripeness and sugar accumulation"
+          ],
+          "winemaking": [
+            "Fortification preserves sweetness",
+            "Oxidative maturation builds complexity"
+          ],
+          "pairing": [
+            "sticky toffee pudding",
+            "blue cheese",
+            "nut desserts"
+          ],
+          "examTips": [
+            "Expect much richer oxidative character than youthful aromatic Muscat styles.",
+            "Fortification and maturation are central to the style."
+          ],
+          "tags": [
+            "white",
+            "fortified",
+            "sweet",
+            "Australia",
+            "Rutherglen"
+          ],
+          "difficulty": 1
+        }
+      },
+      "styles": {
+        "rutherglen-muscat": {
+          "name": "Rutherglen Muscat",
+          "style": "Very sweet fortified Muscat with raisin, marmalade, coffee and toffee complexity.",
+          "aging": "Fortification followed by oxidative maturation, often using a solera-like blending approach",
+          "keyPoint": "Australia’s principal fortified Muscat in the Level 3 syllabus."
+        }
+      },
+      "classification": "Rutherglen is the classic fortified Muscat area of Australia with a recognized age-based quality ladder.",
+      "lawNotes": [
+        "Rutherglen Muscat categories such as Rutherglen, Classic, Grand and Rare are especially exam-useful."
+      ]
     }
-
   }
 }

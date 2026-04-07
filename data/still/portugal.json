@@ -110,7 +110,130 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "subregions": {
+        "moncao-e-melgaco": {
+          "name": "Moncao e Melgaco",
+          "summary": "Prestige inland Vinho Verde sub-region best known for higher-quality Alvarinho.",
+          "climate": "Cool maritime with inland shelter",
+          "styleSummary": "More concentrated aromatic dry whites with citrus, peach and high acidity.",
+          "keyGrapes": [
+            "Alvarinho"
+          ],
+          "examTips": [
+            "This is the key Alvarinho-focused Vinho Verde sub-region.",
+            "Often fuller and more concentrated than broader regional blends."
+          ],
+          "tags": [
+            "Portugal",
+            "Vinho Verde",
+            "Moncao e Melgaco",
+            "white"
+          ],
+          "grapes": {
+            "Alvarinho": {
+              "summary": "High-quality aromatic white grape producing citrus and stone fruit wines with good structure.",
+              "style": "Citrus, peach, high acidity.",
+              "aliases": [
+                "Albariño"
+              ],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "peach",
+                "floral"
+              ],
+              "viticulture": [
+                "Better sites give more body"
+              ],
+              "winemaking": [
+                "Fresh styles"
+              ],
+              "pairing": [
+                "seafood",
+                "shellfish"
+              ],
+              "examTips": [
+                "More structured than other Vinho Verde wines."
+              ],
+              "tags": [
+                "white",
+                "high-acid",
+                "Portugal",
+                "Vinho Verde",
+                "Moncao e Melgaco"
+              ],
+              "difficulty": 1
+            }
+          }
+        },
+        "lima": {
+          "name": "Lima",
+          "summary": "Vinho Verde sub-region associated strongly with Loureiro-based aromatic whites.",
+          "climate": "Cool maritime",
+          "styleSummary": "Light aromatic whites with floral citrus character and brisk acidity.",
+          "keyGrapes": [
+            "Loureiro"
+          ],
+          "examTips": [
+            "Loureiro is the grape to connect here.",
+            "Think freshness and aromatic lift."
+          ],
+          "tags": [
+            "Portugal",
+            "Vinho Verde",
+            "Lima",
+            "white"
+          ],
+          "grapes": {
+            "Loureiro": {
+              "summary": "Aromatic grape producing light, floral wines.",
+              "style": "Floral, citrus, light body.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Low",
+                "body": "Light",
+                "tannin": "-"
+              },
+              "aromas": [
+                "floral",
+                "citrus"
+              ],
+              "viticulture": [
+                "Cool climate"
+              ],
+              "winemaking": [
+                "Fresh"
+              ],
+              "pairing": [
+                "salads",
+                "light fish"
+              ],
+              "examTips": [
+                "Very light and aromatic."
+              ],
+              "tags": [
+                "white",
+                "light",
+                "Portugal",
+                "Vinho Verde",
+                "Lima"
+              ],
+              "difficulty": 1
+            }
+          }
+        }
+      },
+      "classification": "Vinho Verde is a broad DOC associated with fresh high-acid wines, with Moncao e Melgaco especially important for Alvarinho.",
+      "lawNotes": [
+        "Broader regional wines are often blends, while top Alvarinho examples may come from Moncao e Melgaco."
+      ]
     },
     "douro": {
       "name": "Douro",
@@ -303,7 +426,443 @@
           "aging": "Can be youthful or oxidatively aged depending on style",
           "keyPoint": "Made from white grapes, not just a pale version of ruby."
         }
-      }
+      },
+      "subregions": {
+        "baixo-corgo": {
+          "name": "Baixo Corgo",
+          "summary": "Cooler wetter western Douro sub-region producing lighter styles and some Port components.",
+          "climate": "Warm continental with Atlantic influence",
+          "styleSummary": "Generally lighter less concentrated wines than the central and eastern Douro.",
+          "keyGrapes": [
+            "Touriga Nacional",
+            "Touriga Franca",
+            "Tinta Roriz"
+          ],
+          "examTips": [
+            "This is the coolest and wettest Douro sub-region.",
+            "Quality and concentration generally increase eastward."
+          ],
+          "tags": [
+            "Portugal",
+            "Douro",
+            "Baixo Corgo",
+            "red",
+            "fortified"
+          ],
+          "grapes": {
+            "Touriga Nacional": {
+              "summary": "Portugal’s flagship red grape, producing concentrated colour, tannin and floral perfume in dry Douro wines and Port blends.",
+              "style": "Black fruit, floral, high tannin.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "High",
+                "body": "Full",
+                "tannin": "High"
+              },
+              "aromas": [
+                "black fruit",
+                "violet"
+              ],
+              "viticulture": [
+                "Low yields"
+              ],
+              "winemaking": [
+                "Key blending component in Port",
+                "Also used for premium dry reds"
+              ],
+              "pairing": [
+                "lamb",
+                "game"
+              ],
+              "examTips": [
+                "Highly structured and concentrated.",
+                "Central grape in many top Port blends."
+              ],
+              "tags": [
+                "red",
+                "structured",
+                "fortified",
+                "Portugal",
+                "Douro",
+                "Baixo Corgo"
+              ],
+              "difficulty": 1
+            },
+            "Touriga Franca": {
+              "summary": "Perfumed blending grape adding fruit and balance in Port and dry Douro wines.",
+              "style": "Black fruit, softer tannin.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium to High",
+                "body": "Medium",
+                "tannin": "Medium"
+              },
+              "aromas": [
+                "black fruit"
+              ],
+              "viticulture": [
+                "Reliable"
+              ],
+              "winemaking": [
+                "Useful in blends for Port and dry reds"
+              ],
+              "pairing": [
+                "meat dishes"
+              ],
+              "examTips": [
+                "Reliable and widely planted.",
+                "Often adds perfume and approachability around Touriga Nacional."
+              ],
+              "tags": [
+                "red",
+                "blend",
+                "fortified",
+                "Portugal",
+                "Douro",
+                "Baixo Corgo"
+              ],
+              "difficulty": 1
+            },
+            "Tinta Roriz": {
+              "summary": "Portuguese name for Tempranillo, used in Port blends and structured dry reds.",
+              "style": "Red and black fruit with spice and structure.",
+              "aliases": [
+                "Tempranillo",
+                "Aragonez"
+              ],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium to High",
+                "body": "Medium to Full",
+                "tannin": "Medium"
+              },
+              "aromas": [
+                "red fruit",
+                "black fruit",
+                "spice"
+              ],
+              "viticulture": [
+                "Adapts well to warm dry inland climates"
+              ],
+              "winemaking": [
+                "Important blending grape in Port",
+                "Also used in dry reds"
+              ],
+              "pairing": [
+                "lamb",
+                "grilled meats",
+                "hard cheese"
+              ],
+              "examTips": [
+                "Know that Tinta Roriz is Tempranillo.",
+                "Useful in both fortified and still wines."
+              ],
+              "tags": [
+                "red",
+                "fortified",
+                "Portugal",
+                "Douro",
+                "Baixo Corgo"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "The coolest and wettest of the main Douro sub-regions."
+        },
+        "cima-corgo": {
+          "name": "Cima Corgo",
+          "summary": "Central Douro sub-region widely regarded as the heartland of premium Port production.",
+          "climate": "Warm continental",
+          "styleSummary": "Concentrated powerful red and fortified wines from steep terraced vineyards.",
+          "keyGrapes": [
+            "Touriga Nacional",
+            "Touriga Franca",
+            "Tinta Roriz"
+          ],
+          "examTips": [
+            "This is the classic premium Port core.",
+            "Steep schist vineyards are a key context clue."
+          ],
+          "tags": [
+            "Portugal",
+            "Douro",
+            "Cima Corgo",
+            "red",
+            "fortified"
+          ],
+          "grapes": {
+            "Touriga Nacional": {
+              "summary": "Portugal’s flagship red grape, producing concentrated colour, tannin and floral perfume in dry Douro wines and Port blends.",
+              "style": "Black fruit, floral, high tannin.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "High",
+                "body": "Full",
+                "tannin": "High"
+              },
+              "aromas": [
+                "black fruit",
+                "violet"
+              ],
+              "viticulture": [
+                "Low yields"
+              ],
+              "winemaking": [
+                "Key blending component in Port",
+                "Also used for premium dry reds"
+              ],
+              "pairing": [
+                "lamb",
+                "game"
+              ],
+              "examTips": [
+                "Highly structured and concentrated.",
+                "Central grape in many top Port blends."
+              ],
+              "tags": [
+                "red",
+                "structured",
+                "fortified",
+                "Portugal",
+                "Douro",
+                "Cima Corgo"
+              ],
+              "difficulty": 1
+            },
+            "Touriga Franca": {
+              "summary": "Perfumed blending grape adding fruit and balance in Port and dry Douro wines.",
+              "style": "Black fruit, softer tannin.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium to High",
+                "body": "Medium",
+                "tannin": "Medium"
+              },
+              "aromas": [
+                "black fruit"
+              ],
+              "viticulture": [
+                "Reliable"
+              ],
+              "winemaking": [
+                "Useful in blends for Port and dry reds"
+              ],
+              "pairing": [
+                "meat dishes"
+              ],
+              "examTips": [
+                "Reliable and widely planted.",
+                "Often adds perfume and approachability around Touriga Nacional."
+              ],
+              "tags": [
+                "red",
+                "blend",
+                "fortified",
+                "Portugal",
+                "Douro",
+                "Cima Corgo"
+              ],
+              "difficulty": 1
+            },
+            "Tinta Roriz": {
+              "summary": "Portuguese name for Tempranillo, used in Port blends and structured dry reds.",
+              "style": "Red and black fruit with spice and structure.",
+              "aliases": [
+                "Tempranillo",
+                "Aragonez"
+              ],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium to High",
+                "body": "Medium to Full",
+                "tannin": "Medium"
+              },
+              "aromas": [
+                "red fruit",
+                "black fruit",
+                "spice"
+              ],
+              "viticulture": [
+                "Adapts well to warm dry inland climates"
+              ],
+              "winemaking": [
+                "Important blending grape in Port",
+                "Also used in dry reds"
+              ],
+              "pairing": [
+                "lamb",
+                "grilled meats",
+                "hard cheese"
+              ],
+              "examTips": [
+                "Know that Tinta Roriz is Tempranillo.",
+                "Useful in both fortified and still wines."
+              ],
+              "tags": [
+                "red",
+                "fortified",
+                "Portugal",
+                "Douro",
+                "Cima Corgo"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "The prestige central Douro sub-region and classic premium Port core."
+        },
+        "douro-superior": {
+          "name": "Douro Superior",
+          "summary": "Hot dry eastern Douro sub-region with increasing importance for both still wine and Port.",
+          "climate": "Hot continental",
+          "styleSummary": "Deeply ripe concentrated wines with fuller body and higher alcohol potential.",
+          "keyGrapes": [
+            "Touriga Nacional",
+            "Touriga Franca",
+            "Tinta Roriz"
+          ],
+          "examTips": [
+            "This is the hottest and driest Douro section.",
+            "Modern still table wine production is especially important here."
+          ],
+          "tags": [
+            "Portugal",
+            "Douro",
+            "Douro Superior",
+            "red",
+            "fortified"
+          ],
+          "grapes": {
+            "Touriga Nacional": {
+              "summary": "Portugal’s flagship red grape, producing concentrated colour, tannin and floral perfume in dry Douro wines and Port blends.",
+              "style": "Black fruit, floral, high tannin.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "High",
+                "body": "Full",
+                "tannin": "High"
+              },
+              "aromas": [
+                "black fruit",
+                "violet"
+              ],
+              "viticulture": [
+                "Low yields"
+              ],
+              "winemaking": [
+                "Key blending component in Port",
+                "Also used for premium dry reds"
+              ],
+              "pairing": [
+                "lamb",
+                "game"
+              ],
+              "examTips": [
+                "Highly structured and concentrated.",
+                "Central grape in many top Port blends."
+              ],
+              "tags": [
+                "red",
+                "structured",
+                "fortified",
+                "Portugal",
+                "Douro",
+                "Douro Superior"
+              ],
+              "difficulty": 1
+            },
+            "Touriga Franca": {
+              "summary": "Perfumed blending grape adding fruit and balance in Port and dry Douro wines.",
+              "style": "Black fruit, softer tannin.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium to High",
+                "body": "Medium",
+                "tannin": "Medium"
+              },
+              "aromas": [
+                "black fruit"
+              ],
+              "viticulture": [
+                "Reliable"
+              ],
+              "winemaking": [
+                "Useful in blends for Port and dry reds"
+              ],
+              "pairing": [
+                "meat dishes"
+              ],
+              "examTips": [
+                "Reliable and widely planted.",
+                "Often adds perfume and approachability around Touriga Nacional."
+              ],
+              "tags": [
+                "red",
+                "blend",
+                "fortified",
+                "Portugal",
+                "Douro",
+                "Douro Superior"
+              ],
+              "difficulty": 1
+            },
+            "Tinta Roriz": {
+              "summary": "Portuguese name for Tempranillo, used in Port blends and structured dry reds.",
+              "style": "Red and black fruit with spice and structure.",
+              "aliases": [
+                "Tempranillo",
+                "Aragonez"
+              ],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium to High",
+                "body": "Medium to Full",
+                "tannin": "Medium"
+              },
+              "aromas": [
+                "red fruit",
+                "black fruit",
+                "spice"
+              ],
+              "viticulture": [
+                "Adapts well to warm dry inland climates"
+              ],
+              "winemaking": [
+                "Important blending grape in Port",
+                "Also used in dry reds"
+              ],
+              "pairing": [
+                "lamb",
+                "grilled meats",
+                "hard cheese"
+              ],
+              "examTips": [
+                "Know that Tinta Roriz is Tempranillo.",
+                "Useful in both fortified and still wines."
+              ],
+              "tags": [
+                "red",
+                "fortified",
+                "Portugal",
+                "Douro",
+                "Douro Superior"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "The hottest driest Douro sub-region, increasingly important for still wine as well as Port."
+        }
+      },
+      "classification": "Douro covers both Port production and an important still table-wine region, with Baixo Corgo, Cima Corgo and Douro Superior as the major sub-zones.",
+      "lawNotes": [
+        "Port styles such as Ruby, LBV, Vintage and Tawny are essential exam categories.",
+        "Cima Corgo is the classic premium Port heartland."
+      ]
     },
     "dao": {
       "name": "Dão",
@@ -358,7 +917,65 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "subregions": {
+        "serra-da-estrela": {
+          "name": "Serra da Estrela",
+          "summary": "Mountain influence is central to Dao, and the Serra da Estrela helps protect vineyards while altitude preserves freshness.",
+          "climate": "Moderate continental with altitude influence",
+          "styleSummary": "Structured but fresh reds and elegant aromatic whites shaped by elevation.",
+          "keyGrapes": [
+            "Touriga Nacional"
+          ],
+          "examTips": [
+            "Altitude and mountain shelter are the key Dao concepts to remember.",
+            "Freshness is usually greater than in hotter inland areas."
+          ],
+          "tags": [
+            "Portugal",
+            "Dao",
+            "Serra da Estrela",
+            "red"
+          ],
+          "grapes": {
+            "Touriga Nacional": {
+              "summary": "Elegant style compared to Douro.",
+              "style": "Black fruit, floral, structured.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "Medium to High"
+              },
+              "aromas": [
+                "black fruit",
+                "violet"
+              ],
+              "viticulture": [
+                "Cooler climate"
+              ],
+              "winemaking": [
+                "Balanced styles"
+              ],
+              "pairing": [
+                "lamb"
+              ],
+              "examTips": [
+                "More elegant than Douro."
+              ],
+              "tags": [
+                "red",
+                "Portugal",
+                "Dão",
+                "Serra da Estrela"
+              ],
+              "difficulty": 1
+            }
+          }
+        }
+      },
+      "classification": "Dao is a DOC shaped by altitude and mountain shelter, giving fresher structure than hotter inland Portuguese regions."
     },
     "alentejo": {
       "name": "Alentejo",

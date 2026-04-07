@@ -3,6 +3,8 @@ export const state = {
   markers: {},
   regionCoords: {},
   regionMarkers: [],
+  subregionCoords: {},
+  subregionMarkers: [],
   activeCountryKey: null,
   countriesData: null,
   quizQuestions: [],

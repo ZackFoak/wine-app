@@ -16,6 +16,8 @@
       --accent-soft: #f3e6d8;
       --shadow: 0 12px 30px rgba(54, 30, 18, 0.12);
       --radius: 18px;
+      --map-control-top: 120px;
+      --map-control-bottom: 220px;
     }
 
     * {
@@ -39,7 +41,8 @@
 
     #map {
       height: 100vh;
-      width: 68%;
+      width: 100%;
+      flex: 1 1 auto;
       filter: saturate(1.02) contrast(1.01);
     }
 
@@ -69,6 +72,20 @@
       font-size: 28px;
       line-height: 1.15;
       letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .title-text {
+      display: inline-block;
+    }
+
+    .title-pronounce-btn {
+      width: 38px;
+      height: 38px;
+      flex: 0 0 auto;
     }
 
     #breadcrumb {
@@ -218,6 +235,30 @@
     .pill:hover {
       background: #fff8f1;
       border-color: #d9b58e;
+    }
+
+    .pronounce-btn {
+      width: 34px;
+      height: 34px;
+      border: 1px solid #ecdccf;
+      border-radius: 999px;
+      background: rgba(255, 252, 248, 0.96);
+      color: var(--accent);
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(50, 28, 16, 0.06);
+      transition: transform .16s ease, box-shadow .16s ease, background .16s ease;
+      vertical-align: middle;
+    }
+
+    .pronounce-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 18px rgba(50, 28, 16, 0.12);
+      background: #fff;
     }
 
     .list-card {
@@ -640,6 +681,20 @@
       border-radius: 12px !important;
     }
 
+    .leaflet-top.leaflet-left {
+      top: var(--map-control-top);
+      bottom: var(--map-control-bottom);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      pointer-events: none;
+    }
+
+    .leaflet-top.leaflet-left .leaflet-control {
+      margin-top: 0;
+      pointer-events: auto;
+    }
+
     .leaflet-popup-content-wrapper {
       border-radius: 14px;
     }
@@ -651,28 +706,54 @@
     .region-map-marker-wrap {
       background: transparent;
       border: none;
-      transform: translate(-50%, -50%);
+      transform: translate(
+        calc(-50% + var(--marker-shift-x, 0px)),
+        calc(-50% + var(--marker-shift-y, 0px))
+      );
+      transition: transform .2s ease;
     }
 
     .country-map-marker-wrap {
       background: transparent;
       border: none;
-      transform: translate(-50%, -50%);
+      transform: translate(
+        calc(-50% + var(--marker-shift-x, 0px)),
+        calc(-50% + var(--marker-shift-y, 0px))
+      );
+      transition: transform .2s ease;
     }
 
     .country-map-marker {
+      position: relative;
       border: 1px solid rgba(47, 36, 31, 0.12);
       background: rgba(255, 252, 248, 0.94);
       color: var(--text);
       border-radius: 999px;
-      padding: 8px 13px;
+      min-height: 50px;
+      padding: 12px 20px;
       font: inherit;
-      font-size: 12px;
+      font-size: 16px;
       font-weight: 800;
+      line-height: 1.1;
       white-space: nowrap;
       box-shadow: 0 10px 22px rgba(54, 30, 18, 0.14);
       cursor: pointer;
       transition: transform .16s ease, box-shadow .16s ease, background .16s ease;
+    }
+
+    .country-map-marker::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -9px;
+      width: 14px;
+      height: 14px;
+      background: inherit;
+      border-right: 1px solid rgba(47, 36, 31, 0.12);
+      border-bottom: 1px solid rgba(47, 36, 31, 0.12);
+      transform: translateX(-50%) rotate(45deg);
+      border-bottom-right-radius: 4px;
+      pointer-events: none;
     }
 
     .country-map-marker:hover {
@@ -682,18 +763,36 @@
     }
 
     .region-map-marker {
+      position: relative;
       border: 1px solid rgba(123, 30, 58, 0.18);
       background: rgba(255, 252, 248, 0.96);
       color: var(--accent);
       border-radius: 999px;
-      padding: 7px 12px;
+      min-height: 44px;
+      padding: 10px 16px;
       font: inherit;
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 800;
+      line-height: 1.1;
       white-space: nowrap;
       box-shadow: 0 10px 22px rgba(54, 30, 18, 0.18);
       cursor: pointer;
       transition: transform .16s ease, box-shadow .16s ease, background .16s ease;
+    }
+
+    .region-map-marker::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -8px;
+      width: 12px;
+      height: 12px;
+      background: inherit;
+      border-right: 1px solid rgba(123, 30, 58, 0.18);
+      border-bottom: 1px solid rgba(123, 30, 58, 0.18);
+      transform: translateX(-50%) rotate(45deg);
+      border-bottom-right-radius: 4px;
+      pointer-events: none;
     }
 
     .region-map-marker:hover {
@@ -702,15 +801,32 @@
       background: #fff;
     }
 
+    .country-map-marker:hover,
+    .country-map-marker:focus-visible,
+    .region-map-marker:hover,
+    .region-map-marker:focus-visible {
+      outline: none;
+      z-index: 20;
+    }
+
+    .country-map-marker-wrap:hover,
+    .country-map-marker-wrap:focus-within,
+    .region-map-marker-wrap:hover,
+    .region-map-marker-wrap:focus-within {
+      z-index: 900 !important;
+    }
+
     @media (max-width: 640px) {
       .country-map-marker {
-        padding: 7px 11px;
-        font-size: 11px;
+        min-height: 42px;
+        padding: 9px 14px;
+        font-size: 13px;
       }
 
       .region-map-marker {
-        padding: 6px 10px;
-        font-size: 11px;
+        min-height: 38px;
+        padding: 8px 12px;
+        font-size: 12px;
       }
     }
 
@@ -735,6 +851,19 @@
     .meter-dots {
       display: flex;
       gap: 4px;
+    }
+
+    @media (min-width: 1025px) {
+      .meter-group {
+        max-width: 420px;
+      }
+
+      .meter-row {
+        display: grid;
+        grid-template-columns: 90px auto;
+        justify-content: start;
+        column-gap: 14px;
+      }
     }
 
     .meter-dot {

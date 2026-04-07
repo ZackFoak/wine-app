@@ -6,22 +6,38 @@
     "Altitude and wind are key balancing factors.",
     "Assyrtiko, Xinomavro and Agiorgitiko are the key grapes."
   ],
-  "tags": ["Greece", "indigenous-grapes", "Mediterranean", "volcanic", "high-acid"],
+  "tags": [
+    "Greece",
+    "indigenous-grapes",
+    "Mediterranean",
+    "volcanic",
+    "high-acid"
+  ],
   "difficulty": 1,
   "regions": {
-
     "santorini": {
       "name": "Santorini",
       "summary": "Volcanic island producing high-acid Assyrtiko wines despite hot conditions.",
       "climate": "Hot Mediterranean",
       "styleSummary": "Dry, high-acid white wines with mineral character.",
-      "mitigating": ["strong winds", "volcanic soils", "basket-trained vines"],
-      "keyGrapes": ["Assyrtiko"],
+      "mitigating": [
+        "strong winds",
+        "volcanic soils",
+        "basket-trained vines"
+      ],
+      "keyGrapes": [
+        "Assyrtiko"
+      ],
       "examTips": [
         "High acidity in a hot climate is the key clue.",
         "Volcanic soils and wind are major factors."
       ],
-      "tags": ["Greece", "Santorini", "volcanic", "high-acid"],
+      "tags": [
+        "Greece",
+        "Santorini",
+        "volcanic",
+        "high-acid"
+      ],
       "difficulty": 1,
       "grapes": {
         "Assyrtiko": {
@@ -34,32 +50,63 @@
             "body": "Medium to Full",
             "tannin": "-"
           },
-          "aromas": ["lemon", "lime", "saline", "mineral"],
-          "viticulture": ["Basket training protects from wind"],
-          "winemaking": ["Usually dry, can be oaked"],
-          "pairing": ["seafood", "grilled fish", "oysters"],
+          "aromas": [
+            "lemon",
+            "lime",
+            "saline",
+            "mineral"
+          ],
+          "viticulture": [
+            "Basket training protects from wind"
+          ],
+          "winemaking": [
+            "Usually dry, can be oaked"
+          ],
+          "pairing": [
+            "seafood",
+            "grilled fish",
+            "oysters"
+          ],
           "examTips": [
             "High acidity despite heat is key exam clue.",
             "Saline/mineral note common."
           ],
-          "tags": ["white", "high-acid", "volcanic", "Greece"],
+          "tags": [
+            "white",
+            "high-acid",
+            "volcanic",
+            "Greece"
+          ],
           "difficulty": 1
         }
-      }
+      },
+      "classification": "Santorini is a PDO strongly associated with Assyrtiko and volcanic island viticulture.",
+      "lawNotes": [
+        "Basket-trained vines protect grapes from strong winds.",
+        "High acidity despite hot conditions is the key tasting and theory clue."
+      ]
     },
-
     "naoussa": {
       "name": "Naoussa",
       "summary": "Northern Greek region producing structured, high-acid red wines from Xinomavro.",
       "climate": "Continental",
       "styleSummary": "High-acid, structured reds with ageing potential.",
-      "mitigating": ["altitude", "cooler northern climate"],
-      "keyGrapes": ["Xinomavro"],
+      "mitigating": [
+        "altitude",
+        "cooler northern climate"
+      ],
+      "keyGrapes": [
+        "Xinomavro"
+      ],
       "examTips": [
         "Often compared to Nebbiolo.",
         "High tannin + high acidity."
       ],
-      "tags": ["Greece", "Naoussa", "Xinomavro"],
+      "tags": [
+        "Greece",
+        "Naoussa",
+        "Xinomavro"
+      ],
       "difficulty": 1,
       "grapes": {
         "Xinomavro": {
@@ -72,32 +119,60 @@
             "body": "Medium",
             "tannin": "High"
           },
-          "aromas": ["red cherry", "tomato", "olive", "earthy"],
-          "viticulture": ["Late ripening"],
-          "winemaking": ["Often aged"],
-          "pairing": ["lamb", "stews"],
+          "aromas": [
+            "red cherry",
+            "tomato",
+            "olive",
+            "earthy"
+          ],
+          "viticulture": [
+            "Late ripening"
+          ],
+          "winemaking": [
+            "Often aged"
+          ],
+          "pairing": [
+            "lamb",
+            "stews"
+          ],
           "examTips": [
             "Often compared to Nebbiolo.",
             "Tomato/olive note is key clue."
           ],
-          "tags": ["red", "high-acid", "high-tannin", "Greece"],
+          "tags": [
+            "red",
+            "high-acid",
+            "high-tannin",
+            "Greece"
+          ],
           "difficulty": 1
         }
-      }
+      },
+      "classification": "Naoussa PDO is one of the key quality homes of Xinomavro.",
+      "lawNotes": [
+        "Xinomavro is often compared with Nebbiolo because of high acidity and tannin.",
+        "Structured ageworthy reds are the classic style here."
+      ]
     },
-
     "nemea": {
       "name": "Nemea",
       "summary": "Warm Peloponnese region producing soft, fruity red wines.",
       "climate": "Mediterranean",
       "styleSummary": "Ripe, fruity reds with softer tannin.",
-      "mitigating": ["altitude variation"],
-      "keyGrapes": ["Agiorgitiko"],
+      "mitigating": [
+        "altitude variation"
+      ],
+      "keyGrapes": [
+        "Agiorgitiko"
+      ],
       "examTips": [
         "Softer and fruitier than Xinomavro.",
         "Warm climate influence."
       ],
-      "tags": ["Greece", "Nemea"],
+      "tags": [
+        "Greece",
+        "Nemea"
+      ],
       "difficulty": 1,
       "grapes": {
         "Agiorgitiko": {
@@ -110,31 +185,58 @@
             "body": "Medium",
             "tannin": "Medium"
           },
-          "aromas": ["red fruit", "plum", "spice"],
-          "viticulture": ["Warm conditions"],
-          "winemaking": ["Often fruit-driven"],
-          "pairing": ["BBQ", "roast meats"],
+          "aromas": [
+            "red fruit",
+            "plum",
+            "spice"
+          ],
+          "viticulture": [
+            "Warm conditions"
+          ],
+          "winemaking": [
+            "Often fruit-driven"
+          ],
+          "pairing": [
+            "BBQ",
+            "roast meats"
+          ],
           "examTips": [
             "Softer than Xinomavro."
           ],
-          "tags": ["red", "fruit-forward", "Greece"],
+          "tags": [
+            "red",
+            "fruit-forward",
+            "Greece"
+          ],
           "difficulty": 1
         }
-      }
+      },
+      "classification": "Nemea PDO is the classic quality appellation for Agiorgitiko.",
+      "lawNotes": [
+        "Agiorgitiko generally gives softer fruitier wines than Xinomavro.",
+        "Altitude differences within the region can affect style and freshness."
+      ]
     },
-
     "amyndeon": {
       "name": "Amyndeon",
       "summary": "Cooler high-altitude region producing fresher styles of Xinomavro.",
       "climate": "Cool continental",
       "styleSummary": "Lighter, fresher red styles.",
-      "mitigating": ["altitude", "cool climate"],
-      "keyGrapes": ["Xinomavro"],
+      "mitigating": [
+        "altitude",
+        "cool climate"
+      ],
+      "keyGrapes": [
+        "Xinomavro"
+      ],
       "examTips": [
         "Cooler than Naoussa.",
         "More elegant styles."
       ],
-      "tags": ["Greece", "cool-climate"],
+      "tags": [
+        "Greece",
+        "cool-climate"
+      ],
       "difficulty": 1,
       "grapes": {
         "Xinomavro": {
@@ -147,18 +249,35 @@
             "body": "Light to Medium",
             "tannin": "Medium"
           },
-          "aromas": ["red fruit", "floral"],
-          "viticulture": ["Cooler conditions"],
-          "winemaking": ["Often lighter styles"],
-          "pairing": ["chicken", "light meat"],
+          "aromas": [
+            "red fruit",
+            "floral"
+          ],
+          "viticulture": [
+            "Cooler conditions"
+          ],
+          "winemaking": [
+            "Often lighter styles"
+          ],
+          "pairing": [
+            "chicken",
+            "light meat"
+          ],
           "examTips": [
             "Compare with Naoussa."
           ],
-          "tags": ["red", "fresh"],
+          "tags": [
+            "red",
+            "fresh"
+          ],
           "difficulty": 1
         }
-      }
+      },
+      "classification": "Amyndeon PDO is a cooler higher-altitude Xinomavro region, known for fresher lighter expressions and also sparkling production context.",
+      "lawNotes": [
+        "Altitude and cooler conditions are the key style drivers.",
+        "Compared with Naoussa, Xinomavro is usually lighter and fresher here."
+      ]
     }
-
   }
 }

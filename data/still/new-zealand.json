@@ -6,26 +6,41 @@
     "Sauvignon Blanc is the key grape.",
     "Think high acidity and very pronounced aromatics."
   ],
-  "tags": ["New Zealand", "Sauvignon Blanc", "cool-maritime", "aromatic", "high-acid"],
+  "tags": [
+    "New Zealand",
+    "Sauvignon Blanc",
+    "cool-maritime",
+    "aromatic",
+    "high-acid"
+  ],
   "difficulty": 1,
   "regions": {
-
     "marlborough": {
       "name": "Marlborough",
       "summary": "New Zealand’s most important region, famous for intensely aromatic Sauvignon Blanc.",
       "climate": "Cool maritime",
       "styleSummary": "Very aromatic wines with high acidity.",
-      "mitigating": ["cool ocean influence", "long sunshine hours", "diurnal range"],
-      "keyGrapes": ["Sauvignon Blanc"],
+      "mitigating": [
+        "cool ocean influence",
+        "long sunshine hours",
+        "diurnal range"
+      ],
+      "keyGrapes": [
+        "Sauvignon Blanc"
+      ],
       "examTips": [
         "This is the most important New Zealand region.",
         "Extremely aromatic style is key.",
         "Think gooseberry, passion fruit, and herbaceous notes."
       ],
-      "tags": ["New Zealand", "Marlborough", "Sauvignon Blanc", "aromatic"],
+      "tags": [
+        "New Zealand",
+        "Marlborough",
+        "Sauvignon Blanc",
+        "aromatic"
+      ],
       "difficulty": 1,
       "grapes": {
-
         "Sauvignon Blanc": {
           "summary": "World-famous aromatic white producing intense citrus, tropical and herbaceous notes with high acidity.",
           "style": "Gooseberry, passion fruit, citrus, herbaceous, high acidity.",
@@ -36,35 +51,202 @@
             "body": "Light",
             "tannin": "-"
           },
-          "aromas": ["gooseberry", "passion fruit", "lime", "grass"],
-          "viticulture": ["Cool climate enhances aromatics"],
-          "winemaking": ["Stainless steel to preserve freshness"],
-          "pairing": ["goat cheese", "seafood", "salads"],
+          "aromas": [
+            "gooseberry",
+            "passion fruit",
+            "lime",
+            "grass"
+          ],
+          "viticulture": [
+            "Cool climate enhances aromatics"
+          ],
+          "winemaking": [
+            "Stainless steel to preserve freshness"
+          ],
+          "pairing": [
+            "goat cheese",
+            "seafood",
+            "salads"
+          ],
           "examTips": [
             "Very pronounced aromatics is the key clue.",
             "More intense than most Old World Sauvignon Blanc."
           ],
-          "tags": ["white", "very-aromatic", "high-acid", "New Zealand"],
+          "tags": [
+            "white",
+            "very-aromatic",
+            "high-acid",
+            "New Zealand"
+          ],
           "difficulty": 1
         }
-      }
+      },
+      "styles": {
+        "premium-sparkling": {
+          "name": "Premium Sparkling Wine",
+          "style": "Traditional method sparkling wine with high acidity, citrus fruit and fresh autolytic notes.",
+          "aging": "Bottle fermentation with lees ageing",
+          "keyPoint": "Marlborough is the key New Zealand sparkling region in the Level 3 syllabus."
+        }
+      },
+      "subregions": {
+        "wairau-valley": {
+          "name": "Wairau Valley",
+          "summary": "Broad warmer Marlborough valley producing the classic pungent passion-fruit style of Sauvignon Blanc.",
+          "climate": "Cool maritime",
+          "styleSummary": "Pronounced Sauvignon Blanc with passion fruit, gooseberry and high acidity.",
+          "keyGrapes": [
+            "Sauvignon Blanc"
+          ],
+          "examTips": [
+            "Wairau is the benchmark Marlborough expression many students picture first.",
+            "Expect intense tropical and herbaceous character."
+          ],
+          "tags": [
+            "New Zealand",
+            "Marlborough",
+            "Wairau Valley",
+            "white"
+          ],
+          "grapes": {
+            "Sauvignon Blanc": {
+              "summary": "World-famous aromatic white producing intense citrus, tropical and herbaceous notes with high acidity.",
+              "style": "Gooseberry, passion fruit, citrus, herbaceous, high acidity.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Low to Medium",
+                "body": "Light",
+                "tannin": "-"
+              },
+              "aromas": [
+                "gooseberry",
+                "passion fruit",
+                "lime",
+                "grass"
+              ],
+              "viticulture": [
+                "Cool climate enhances aromatics"
+              ],
+              "winemaking": [
+                "Stainless steel to preserve freshness"
+              ],
+              "pairing": [
+                "goat cheese",
+                "seafood",
+                "salads"
+              ],
+              "examTips": [
+                "Very pronounced aromatics is the key clue.",
+                "More intense than most Old World Sauvignon Blanc."
+              ],
+              "tags": [
+                "white",
+                "very-aromatic",
+                "high-acid",
+                "New Zealand",
+                "Marlborough",
+                "Wairau Valley"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Benchmark Marlborough valley for the classic passion-fruit style."
+        },
+        "awatere-valley": {
+          "name": "Awatere Valley",
+          "summary": "Cooler windier Marlborough valley producing more restrained and herbaceous Sauvignon Blanc.",
+          "climate": "Cool maritime",
+          "styleSummary": "More pungent herbal citrus style with very high acidity.",
+          "keyGrapes": [
+            "Sauvignon Blanc"
+          ],
+          "examTips": [
+            "Usually cooler and more herbal than Wairau.",
+            "High acidity and pungency are classic clues."
+          ],
+          "tags": [
+            "New Zealand",
+            "Marlborough",
+            "Awatere Valley",
+            "white"
+          ],
+          "grapes": {
+            "Sauvignon Blanc": {
+              "summary": "World-famous aromatic white producing intense citrus, tropical and herbaceous notes with high acidity.",
+              "style": "Gooseberry, passion fruit, citrus, herbaceous, high acidity.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Low to Medium",
+                "body": "Light",
+                "tannin": "-"
+              },
+              "aromas": [
+                "gooseberry",
+                "passion fruit",
+                "lime",
+                "grass"
+              ],
+              "viticulture": [
+                "Cool climate enhances aromatics"
+              ],
+              "winemaking": [
+                "Stainless steel to preserve freshness"
+              ],
+              "pairing": [
+                "goat cheese",
+                "seafood",
+                "salads"
+              ],
+              "examTips": [
+                "Very pronounced aromatics is the key clue.",
+                "More intense than most Old World Sauvignon Blanc."
+              ],
+              "tags": [
+                "white",
+                "very-aromatic",
+                "high-acid",
+                "New Zealand",
+                "Marlborough",
+                "Awatere Valley"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Cooler windier valley often giving more pungent herbal Sauvignon Blanc."
+        }
+      },
+      "classification": "Marlborough is the flagship New Zealand GI for Sauvignon Blanc, with valley differences important for style.",
+      "lawNotes": [
+        "Wairau is often broader and more tropical, while Awatere is usually cooler and more herbal.",
+        "High acidity and pungent aromatics are central exam clues."
+      ]
     },
-
     "hawkes-bay": {
       "name": "Hawke’s Bay",
       "summary": "Warmer North Island region producing fuller-bodied reds and richer whites.",
       "climate": "Warm maritime",
       "styleSummary": "Riper wines with more body and structure.",
-      "mitigating": ["ocean influence"],
-      "keyGrapes": ["Cabernet Sauvignon", "Merlot", "Chardonnay"],
+      "mitigating": [
+        "ocean influence"
+      ],
+      "keyGrapes": [
+        "Cabernet Sauvignon",
+        "Merlot",
+        "Chardonnay"
+      ],
       "examTips": [
         "Warmer than Marlborough.",
         "Important for Bordeaux-style blends."
       ],
-      "tags": ["New Zealand", "Hawke’s Bay", "warmer"],
+      "tags": [
+        "New Zealand",
+        "Hawke’s Bay",
+        "warmer"
+      ],
       "difficulty": 1,
       "grapes": {
-
         "Cabernet Sauvignon": {
           "summary": "Structured red grape producing blackcurrant and cassis flavours.",
           "style": "Blackcurrant, firm tannin.",
@@ -75,17 +257,28 @@
             "body": "Full",
             "tannin": "High"
           },
-          "aromas": ["blackcurrant", "cassis"],
-          "viticulture": ["Warmer sites needed"],
-          "winemaking": ["Often blended"],
-          "pairing": ["steak", "lamb"],
+          "aromas": [
+            "blackcurrant",
+            "cassis"
+          ],
+          "viticulture": [
+            "Warmer sites needed"
+          ],
+          "winemaking": [
+            "Often blended"
+          ],
+          "pairing": [
+            "steak",
+            "lamb"
+          ],
           "examTips": [
             "Usually blended with Merlot."
           ],
-          "tags": ["red"],
+          "tags": [
+            "red"
+          ],
           "difficulty": 1
         },
-
         "Merlot": {
           "summary": "Soft red grape producing plum and black fruit wines.",
           "style": "Plum, softer tannin.",
@@ -96,17 +289,27 @@
             "body": "Medium",
             "tannin": "Medium"
           },
-          "aromas": ["plum"],
-          "viticulture": ["Warmer climate"],
-          "winemaking": ["Blended"],
-          "pairing": ["pasta", "duck"],
+          "aromas": [
+            "plum"
+          ],
+          "viticulture": [
+            "Warmer climate"
+          ],
+          "winemaking": [
+            "Blended"
+          ],
+          "pairing": [
+            "pasta",
+            "duck"
+          ],
           "examTips": [
             "Softer than Cabernet."
           ],
-          "tags": ["red"],
+          "tags": [
+            "red"
+          ],
           "difficulty": 1
         },
-
         "Chardonnay": {
           "summary": "Fuller-bodied Chardonnay with stone fruit and possible oak influence.",
           "style": "Peach, citrus, sometimes oak.",
@@ -117,34 +320,188 @@
             "body": "Medium to Full",
             "tannin": "-"
           },
-          "aromas": ["peach", "citrus"],
-          "viticulture": ["Warmer region"],
-          "winemaking": ["Often oaked"],
-          "pairing": ["chicken", "cream dishes"],
+          "aromas": [
+            "peach",
+            "citrus"
+          ],
+          "viticulture": [
+            "Warmer region"
+          ],
+          "winemaking": [
+            "Often oaked"
+          ],
+          "pairing": [
+            "chicken",
+            "cream dishes"
+          ],
           "examTips": [
             "Richer than Marlborough styles."
           ],
-          "tags": ["white"],
+          "tags": [
+            "white"
+          ],
           "difficulty": 1
         }
-      }
+      },
+      "subregions": {
+        "gimblett-gravels": {
+          "name": "Gimblett Gravels",
+          "summary": "Warm stony Hawke's Bay sub-region especially associated with Bordeaux blends and Syrah.",
+          "climate": "Warm maritime",
+          "styleSummary": "Riper fuller-bodied reds with structured tannin and concentrated fruit.",
+          "keyGrapes": [
+            "Cabernet Sauvignon",
+            "Merlot",
+            "Chardonnay"
+          ],
+          "examTips": [
+            "Warm gravel soils are central here.",
+            "A key premium New Zealand red wine name."
+          ],
+          "tags": [
+            "New Zealand",
+            "Hawke’s Bay",
+            "Gimblett Gravels",
+            "red"
+          ],
+          "grapes": {
+            "Cabernet Sauvignon": {
+              "summary": "Structured red grape producing blackcurrant and cassis flavours.",
+              "style": "Blackcurrant, firm tannin.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium to High",
+                "body": "Full",
+                "tannin": "High"
+              },
+              "aromas": [
+                "blackcurrant",
+                "cassis"
+              ],
+              "viticulture": [
+                "Warmer sites needed"
+              ],
+              "winemaking": [
+                "Often blended"
+              ],
+              "pairing": [
+                "steak",
+                "lamb"
+              ],
+              "examTips": [
+                "Usually blended with Merlot."
+              ],
+              "tags": [
+                "red",
+                "New Zealand",
+                "Hawke’s Bay",
+                "Gimblett Gravels"
+              ],
+              "difficulty": 1
+            },
+            "Merlot": {
+              "summary": "Soft red grape producing plum and black fruit wines.",
+              "style": "Plum, softer tannin.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "Medium"
+              },
+              "aromas": [
+                "plum"
+              ],
+              "viticulture": [
+                "Warmer climate"
+              ],
+              "winemaking": [
+                "Blended"
+              ],
+              "pairing": [
+                "pasta",
+                "duck"
+              ],
+              "examTips": [
+                "Softer than Cabernet."
+              ],
+              "tags": [
+                "red",
+                "New Zealand",
+                "Hawke’s Bay",
+                "Gimblett Gravels"
+              ],
+              "difficulty": 1
+            },
+            "Chardonnay": {
+              "summary": "Fuller-bodied Chardonnay with stone fruit and possible oak influence.",
+              "style": "Peach, citrus, sometimes oak.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium",
+                "body": "Medium to Full",
+                "tannin": "-"
+              },
+              "aromas": [
+                "peach",
+                "citrus"
+              ],
+              "viticulture": [
+                "Warmer region"
+              ],
+              "winemaking": [
+                "Often oaked"
+              ],
+              "pairing": [
+                "chicken",
+                "cream dishes"
+              ],
+              "examTips": [
+                "Richer than Marlborough styles."
+              ],
+              "tags": [
+                "white",
+                "New Zealand",
+                "Hawke’s Bay",
+                "Gimblett Gravels"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Prestige stony warm sub-region associated with premium red wines."
+        }
+      },
+      "classification": "Hawke’s Bay is a warm New Zealand region especially important for Bordeaux blends, Syrah and some Chardonnay.",
+      "lawNotes": [
+        "Gimblett Gravels is a key premium sub-region name.",
+        "Warmer conditions contrast clearly with Marlborough and Central Otago."
+      ]
     },
-
     "central-otago": {
       "name": "Central Otago",
       "summary": "Cool southern region known for high-quality Pinot Noir.",
       "climate": "Cool continental",
       "styleSummary": "Elegant, fruit-driven Pinot Noir.",
-      "mitigating": ["southern latitude", "diurnal range"],
-      "keyGrapes": ["Pinot Noir"],
+      "mitigating": [
+        "southern latitude",
+        "diurnal range"
+      ],
+      "keyGrapes": [
+        "Pinot Noir"
+      ],
       "examTips": [
         "Cool climate Pinot Noir.",
         "Think purity of fruit."
       ],
-      "tags": ["New Zealand", "cool", "Pinot Noir"],
+      "tags": [
+        "New Zealand",
+        "cool",
+        "Pinot Noir"
+      ],
       "difficulty": 1,
       "grapes": {
-
         "Pinot Noir": {
           "summary": "Elegant red grape producing bright red fruit wines with fresh acidity.",
           "style": "Red cherry, raspberry, light to medium body.",
@@ -155,34 +512,176 @@
             "body": "Light to Medium",
             "tannin": "Low to Medium"
           },
-          "aromas": ["red cherry", "raspberry"],
-          "viticulture": ["Cool climate"],
-          "winemaking": ["Gentle extraction"],
-          "pairing": ["duck", "mushroom"],
+          "aromas": [
+            "red cherry",
+            "raspberry"
+          ],
+          "viticulture": [
+            "Cool climate"
+          ],
+          "winemaking": [
+            "Gentle extraction"
+          ],
+          "pairing": [
+            "duck",
+            "mushroom"
+          ],
           "examTips": [
             "More fruit-driven than Burgundy."
           ],
-          "tags": ["red", "cool-climate"],
+          "tags": [
+            "red",
+            "cool-climate"
+          ],
           "difficulty": 1
         }
-      }
+      },
+      "subregions": {
+        "bannockburn": {
+          "name": "Bannockburn",
+          "summary": "Prestige Central Otago sub-region known for concentrated Pinot Noir from a dry continental climate.",
+          "climate": "Cool continental",
+          "styleSummary": "Ripe yet fresh Pinot Noir with red and black cherry fruit and bright acidity.",
+          "keyGrapes": [
+            "Pinot Noir"
+          ],
+          "examTips": [
+            "Central Otago is New Zealand's most continental major region.",
+            "Pinot Noir is the key grape."
+          ],
+          "tags": [
+            "New Zealand",
+            "Central Otago",
+            "Bannockburn",
+            "red"
+          ],
+          "grapes": {
+            "Pinot Noir": {
+              "summary": "Elegant red grape producing bright red fruit wines with fresh acidity.",
+              "style": "Red cherry, raspberry, light to medium body.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Medium",
+                "body": "Light to Medium",
+                "tannin": "Low to Medium"
+              },
+              "aromas": [
+                "red cherry",
+                "raspberry"
+              ],
+              "viticulture": [
+                "Cool climate"
+              ],
+              "winemaking": [
+                "Gentle extraction"
+              ],
+              "pairing": [
+                "duck",
+                "mushroom"
+              ],
+              "examTips": [
+                "More fruit-driven than Burgundy."
+              ],
+              "tags": [
+                "red",
+                "cool-climate",
+                "New Zealand",
+                "Central Otago",
+                "Bannockburn"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Warm prestige Central Otago sub-region known for concentrated Pinot Noir."
+        },
+        "gibbston": {
+          "name": "Gibbston",
+          "summary": "Cooler elevated Central Otago sub-region producing lighter fresher Pinot Noir.",
+          "climate": "Cool continental",
+          "styleSummary": "More delicate Pinot Noir with bright acidity and floral lift.",
+          "keyGrapes": [
+            "Pinot Noir"
+          ],
+          "examTips": [
+            "Higher altitude and cooler conditions mean a lighter style than the warmest Central Otago sites.",
+            "Still unmistakably Pinot-focused."
+          ],
+          "tags": [
+            "New Zealand",
+            "Central Otago",
+            "Gibbston",
+            "red"
+          ],
+          "grapes": {
+            "Pinot Noir": {
+              "summary": "Elegant red grape producing bright red fruit wines with fresh acidity.",
+              "style": "Red cherry, raspberry, light to medium body.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Medium",
+                "body": "Light to Medium",
+                "tannin": "Low to Medium"
+              },
+              "aromas": [
+                "red cherry",
+                "raspberry"
+              ],
+              "viticulture": [
+                "Cool climate"
+              ],
+              "winemaking": [
+                "Gentle extraction"
+              ],
+              "pairing": [
+                "duck",
+                "mushroom"
+              ],
+              "examTips": [
+                "More fruit-driven than Burgundy."
+              ],
+              "tags": [
+                "red",
+                "cool-climate",
+                "New Zealand",
+                "Central Otago",
+                "Gibbston"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Cooler higher sub-region generally associated with a lighter fresher style."
+        }
+      },
+      "classification": "Central Otago is New Zealand’s most continental major region and the key premium Pinot Noir area.",
+      "lawNotes": [
+        "A continental climate and high UV at altitude are important context clues.",
+        "Pinot Noir is the defining grape."
+      ]
     },
-
     "wairarapa": {
       "name": "Wairarapa (Martinborough)",
       "summary": "Small region producing premium Pinot Noir with structure and complexity.",
       "climate": "Cool maritime",
       "styleSummary": "Structured Pinot Noir with more concentration.",
-      "mitigating": ["wind", "cool climate"],
-      "keyGrapes": ["Pinot Noir"],
+      "mitigating": [
+        "wind",
+        "cool climate"
+      ],
+      "keyGrapes": [
+        "Pinot Noir"
+      ],
       "examTips": [
         "More structured than Central Otago.",
         "Smaller but premium region."
       ],
-      "tags": ["New Zealand", "Pinot Noir"],
+      "tags": [
+        "New Zealand",
+        "Pinot Noir"
+      ],
       "difficulty": 1,
       "grapes": {
-
         "Pinot Noir": {
           "summary": "More structured Pinot Noir with deeper fruit concentration.",
           "style": "Red fruit with more structure.",
@@ -193,18 +692,89 @@
             "body": "Medium",
             "tannin": "Medium"
           },
-          "aromas": ["red fruit", "spice"],
-          "viticulture": ["Wind exposure"],
-          "winemaking": ["More structured style"],
-          "pairing": ["lamb", "duck"],
+          "aromas": [
+            "red fruit",
+            "spice"
+          ],
+          "viticulture": [
+            "Wind exposure"
+          ],
+          "winemaking": [
+            "More structured style"
+          ],
+          "pairing": [
+            "lamb",
+            "duck"
+          ],
           "examTips": [
             "Compare with Central Otago."
           ],
-          "tags": ["red"],
+          "tags": [
+            "red"
+          ],
           "difficulty": 1
         }
-      }
+      },
+      "subregions": {
+        "martinborough": {
+          "name": "Martinborough",
+          "summary": "Prestige Wairarapa area especially associated with premium Pinot Noir.",
+          "climate": "Cool maritime",
+          "styleSummary": "Elegant Pinot Noir with red fruit, spice and fresh acidity.",
+          "keyGrapes": [
+            "Pinot Noir"
+          ],
+          "examTips": [
+            "Martinborough is the key name inside Wairarapa to remember.",
+            "Pinot Noir is the defining grape."
+          ],
+          "tags": [
+            "New Zealand",
+            "Wairarapa",
+            "Martinborough",
+            "red"
+          ],
+          "grapes": {
+            "Pinot Noir": {
+              "summary": "More structured Pinot Noir with deeper fruit concentration.",
+              "style": "Red fruit with more structure.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "Medium"
+              },
+              "aromas": [
+                "red fruit",
+                "spice"
+              ],
+              "viticulture": [
+                "Wind exposure"
+              ],
+              "winemaking": [
+                "More structured style"
+              ],
+              "pairing": [
+                "lamb",
+                "duck"
+              ],
+              "examTips": [
+                "Compare with Central Otago."
+              ],
+              "tags": [
+                "red",
+                "New Zealand",
+                "Wairarapa (Martinborough)",
+                "Martinborough"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "The key named Wairarapa premium Pinot Noir area."
+        }
+      },
+      "classification": "Wairarapa is especially important because of Martinborough’s premium Pinot Noir reputation."
     }
-
   }
 }

@@ -6,22 +6,37 @@
     "Coastal vs inland vs Andes is the key structural concept.",
     "Cabernet Sauvignon is the most important red grape."
   ],
-  "tags": ["Chile", "Pacific", "cooling-influence", "Cabernet Sauvignon", "New World"],
+  "tags": [
+    "Chile",
+    "Pacific",
+    "cooling-influence",
+    "Cabernet Sauvignon",
+    "New World"
+  ],
   "difficulty": 1,
   "regions": {
-
     "aconcagua": {
       "name": "Aconcagua",
       "summary": "Warm to moderate region producing structured reds inland and fresher wines closer to the coast.",
       "climate": "Mediterranean",
       "styleSummary": "Structured reds inland, fresher styles near coast.",
-      "mitigating": ["Pacific influence", "coastal breezes"],
-      "keyGrapes": ["Cabernet Sauvignon", "Syrah"],
+      "mitigating": [
+        "Pacific influence",
+        "coastal breezes"
+      ],
+      "keyGrapes": [
+        "Cabernet Sauvignon",
+        "Syrah"
+      ],
       "examTips": [
         "Inland = warmer, coast = cooler.",
         "Think structured reds."
       ],
-      "tags": ["Chile", "Aconcagua", "red-wine"],
+      "tags": [
+        "Chile",
+        "Aconcagua",
+        "red-wine"
+      ],
       "difficulty": 1,
       "grapes": {
         "Cabernet Sauvignon": {
@@ -34,34 +49,184 @@
             "body": "Full",
             "tannin": "High"
           },
-          "aromas": ["blackcurrant", "cassis", "herb"],
-          "viticulture": ["Reliable ripening conditions"],
-          "winemaking": ["Often oak aged"],
-          "pairing": ["steak", "lamb"],
+          "aromas": [
+            "blackcurrant",
+            "cassis",
+            "herb"
+          ],
+          "viticulture": [
+            "Reliable ripening conditions"
+          ],
+          "winemaking": [
+            "Often oak aged"
+          ],
+          "pairing": [
+            "steak",
+            "lamb"
+          ],
           "examTips": [
             "Often shows slight green/herbal note."
           ],
-          "tags": ["red", "structured", "Chile"],
+          "tags": [
+            "red",
+            "structured",
+            "Chile"
+          ],
           "difficulty": 1
         }
-      }
+      },
+      "subregions": {
+        "aconcagua-valley": {
+          "name": "Aconcagua Valley",
+          "summary": "Warmer inland Aconcagua area known especially for ripe Cabernet Sauvignon.",
+          "climate": "Warm Mediterranean",
+          "styleSummary": "Ripe structured reds with black fruit and fuller body.",
+          "keyGrapes": [
+            "Cabernet Sauvignon"
+          ],
+          "examTips": [
+            "Inland warmth is the key clue.",
+            "Cabernet Sauvignon is the main grape to connect here."
+          ],
+          "tags": [
+            "Chile",
+            "Aconcagua",
+            "Aconcagua Valley",
+            "red"
+          ],
+          "grapes": {
+            "Cabernet Sauvignon": {
+              "summary": "Chile’s flagship red grape producing structured wines with black fruit and firm tannin.",
+              "style": "Blackcurrant, cassis, structured, medium to high tannin.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium to High",
+                "body": "Full",
+                "tannin": "High"
+              },
+              "aromas": [
+                "blackcurrant",
+                "cassis",
+                "herb"
+              ],
+              "viticulture": [
+                "Reliable ripening conditions"
+              ],
+              "winemaking": [
+                "Often oak aged"
+              ],
+              "pairing": [
+                "steak",
+                "lamb"
+              ],
+              "examTips": [
+                "Often shows slight green/herbal note."
+              ],
+              "tags": [
+                "red",
+                "structured",
+                "Chile",
+                "Aconcagua",
+                "Aconcagua Valley"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Warmer inland section more associated with ripe structured reds."
+        },
+        "aconcagua-costa": {
+          "name": "Aconcagua Costa",
+          "summary": "Cooler coastal Aconcagua section producing fresher styles under stronger Pacific influence.",
+          "climate": "Cool maritime",
+          "styleSummary": "Fresher wines with brighter acidity and more restrained fruit expression.",
+          "keyGrapes": [
+            "Cabernet Sauvignon"
+          ],
+          "examTips": [
+            "Costa means stronger cooling Pacific influence.",
+            "Contrast it with the warmer inland valley."
+          ],
+          "tags": [
+            "Chile",
+            "Aconcagua",
+            "Aconcagua Costa",
+            "red",
+            "white"
+          ],
+          "grapes": {
+            "Cabernet Sauvignon": {
+              "summary": "Chile’s flagship red grape producing structured wines with black fruit and firm tannin.",
+              "style": "Blackcurrant, cassis, structured, medium to high tannin.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium to High",
+                "body": "Full",
+                "tannin": "High"
+              },
+              "aromas": [
+                "blackcurrant",
+                "cassis",
+                "herb"
+              ],
+              "viticulture": [
+                "Reliable ripening conditions"
+              ],
+              "winemaking": [
+                "Often oak aged"
+              ],
+              "pairing": [
+                "steak",
+                "lamb"
+              ],
+              "examTips": [
+                "Often shows slight green/herbal note."
+              ],
+              "tags": [
+                "red",
+                "structured",
+                "Chile",
+                "Aconcagua",
+                "Aconcagua Costa"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Cooler coastal section with stronger Pacific influence."
+        }
+      },
+      "classification": "Aconcagua is especially useful for contrasting warmer inland red-wine conditions with cooler coastal influence.",
+      "lawNotes": [
+        "Costa versus inland valley is the key comparative concept.",
+        "Pacific cooling is crucial in coastal Chile."
+      ]
     },
-
     "central-valley": {
       "name": "Central Valley",
       "summary": "Chile’s main production area, producing a wide range of styles from everyday to premium wines.",
       "climate": "Mediterranean",
       "styleSummary": "Wide range of styles, generally ripe fruit with good balance.",
-      "mitigating": ["Andes cooling", "Pacific influence"],
-      "keyGrapes": ["Cabernet Sauvignon", "Merlot", "Carmenere"],
+      "mitigating": [
+        "Andes cooling",
+        "Pacific influence"
+      ],
+      "keyGrapes": [
+        "Cabernet Sauvignon",
+        "Merlot",
+        "Carmenere"
+      ],
       "examTips": [
         "Main production region.",
         "Carmenere is key grape to remember."
       ],
-      "tags": ["Chile", "Central Valley", "diverse"],
+      "tags": [
+        "Chile",
+        "Central Valley",
+        "diverse"
+      ],
       "difficulty": 1,
       "grapes": {
-
         "Carmenere": {
           "summary": "Signature Chilean grape producing soft tannin wines with dark fruit and herbal notes.",
           "style": "Black fruit, green pepper, soft tannin.",
@@ -72,17 +237,31 @@
             "body": "Medium",
             "tannin": "Low to Medium"
           },
-          "aromas": ["black fruit", "green pepper", "herb"],
-          "viticulture": ["Late ripening"],
-          "winemaking": ["Fruit-driven styles"],
-          "pairing": ["roast meats", "BBQ"],
+          "aromas": [
+            "black fruit",
+            "green pepper",
+            "herb"
+          ],
+          "viticulture": [
+            "Late ripening"
+          ],
+          "winemaking": [
+            "Fruit-driven styles"
+          ],
+          "pairing": [
+            "roast meats",
+            "BBQ"
+          ],
           "examTips": [
             "Green pepper note is key clue."
           ],
-          "tags": ["red", "herbal", "Chile"],
+          "tags": [
+            "red",
+            "herbal",
+            "Chile"
+          ],
           "difficulty": 1
         },
-
         "Merlot": {
           "summary": "Soft fruity red grape producing plum and black fruit styles.",
           "style": "Plum, soft tannin, round.",
@@ -93,34 +272,479 @@
             "body": "Medium",
             "tannin": "Medium"
           },
-          "aromas": ["plum", "black fruit"],
-          "viticulture": ["Widely planted"],
-          "winemaking": ["Fruit-driven"],
-          "pairing": ["duck", "pasta"],
+          "aromas": [
+            "plum",
+            "black fruit"
+          ],
+          "viticulture": [
+            "Widely planted"
+          ],
+          "winemaking": [
+            "Fruit-driven"
+          ],
+          "pairing": [
+            "duck",
+            "pasta"
+          ],
           "examTips": [
             "Softer than Cabernet Sauvignon."
           ],
-          "tags": ["red"],
+          "tags": [
+            "red"
+          ],
           "difficulty": 1
         }
-      }
+      },
+      "subregions": {
+        "maipo-valley": {
+          "name": "Maipo Valley",
+          "summary": "Classic Chilean Cabernet Sauvignon area close to Santiago.",
+          "climate": "Warm Mediterranean",
+          "styleSummary": "Structured Cabernet-based reds with black fruit and minty or herbal nuance.",
+          "keyGrapes": [
+            "Carmenere",
+            "Merlot",
+            "Cabernet Sauvignon"
+          ],
+          "examTips": [
+            "Maipo is a classic Chile Cabernet name.",
+            "Mountain cooling helps preserve freshness."
+          ],
+          "tags": [
+            "Chile",
+            "Central Valley",
+            "Maipo Valley",
+            "red"
+          ],
+          "grapes": {
+            "Carmenere": {
+              "summary": "Signature Chilean grape producing soft tannin wines with dark fruit and herbal notes.",
+              "style": "Black fruit, green pepper, soft tannin.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "Low to Medium"
+              },
+              "aromas": [
+                "black fruit",
+                "green pepper",
+                "herb"
+              ],
+              "viticulture": [
+                "Late ripening"
+              ],
+              "winemaking": [
+                "Fruit-driven styles"
+              ],
+              "pairing": [
+                "roast meats",
+                "BBQ"
+              ],
+              "examTips": [
+                "Green pepper note is key clue."
+              ],
+              "tags": [
+                "red",
+                "herbal",
+                "Chile",
+                "Central Valley",
+                "Maipo Valley"
+              ],
+              "difficulty": 1
+            },
+            "Merlot": {
+              "summary": "Soft fruity red grape producing plum and black fruit styles.",
+              "style": "Plum, soft tannin, round.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "Medium"
+              },
+              "aromas": [
+                "plum",
+                "black fruit"
+              ],
+              "viticulture": [
+                "Widely planted"
+              ],
+              "winemaking": [
+                "Fruit-driven"
+              ],
+              "pairing": [
+                "duck",
+                "pasta"
+              ],
+              "examTips": [
+                "Softer than Cabernet Sauvignon."
+              ],
+              "tags": [
+                "red",
+                "Chile",
+                "Central Valley",
+                "Maipo Valley"
+              ],
+              "difficulty": 1
+            },
+            "Cabernet Sauvignon": {
+              "summary": "Chile’s flagship red grape producing structured wines with black fruit and firm tannin.",
+              "style": "Blackcurrant, cassis, structured, medium to high tannin.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium to High",
+                "body": "Full",
+                "tannin": "High"
+              },
+              "aromas": [
+                "blackcurrant",
+                "cassis",
+                "herb"
+              ],
+              "viticulture": [
+                "Reliable ripening conditions"
+              ],
+              "winemaking": [
+                "Often oak aged"
+              ],
+              "pairing": [
+                "steak",
+                "lamb"
+              ],
+              "examTips": [
+                "Often shows slight green/herbal note."
+              ],
+              "tags": [
+                "red",
+                "structured",
+                "Chile",
+                "Central Valley",
+                "Maipo Valley"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Classic Chilean Cabernet Sauvignon valley near Santiago."
+        },
+        "rapel-valley": {
+          "name": "Rapel Valley",
+          "summary": "Large Central Valley zone including important red-wine areas with warm ripe conditions.",
+          "climate": "Warm Mediterranean",
+          "styleSummary": "Ripe fruit-driven reds with more body and softer texture.",
+          "keyGrapes": [
+            "Carmenere",
+            "Merlot"
+          ],
+          "examTips": [
+            "Rapel is a broad warm inland red-wine source.",
+            "Colchagua sits within the wider Rapel context in Chilean geography."
+          ],
+          "tags": [
+            "Chile",
+            "Central Valley",
+            "Rapel Valley",
+            "red"
+          ],
+          "grapes": {
+            "Carmenere": {
+              "summary": "Signature Chilean grape producing soft tannin wines with dark fruit and herbal notes.",
+              "style": "Black fruit, green pepper, soft tannin.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "Low to Medium"
+              },
+              "aromas": [
+                "black fruit",
+                "green pepper",
+                "herb"
+              ],
+              "viticulture": [
+                "Late ripening"
+              ],
+              "winemaking": [
+                "Fruit-driven styles"
+              ],
+              "pairing": [
+                "roast meats",
+                "BBQ"
+              ],
+              "examTips": [
+                "Green pepper note is key clue."
+              ],
+              "tags": [
+                "red",
+                "herbal",
+                "Chile",
+                "Central Valley",
+                "Rapel Valley"
+              ],
+              "difficulty": 1
+            },
+            "Merlot": {
+              "summary": "Soft fruity red grape producing plum and black fruit styles.",
+              "style": "Plum, soft tannin, round.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "Medium"
+              },
+              "aromas": [
+                "plum",
+                "black fruit"
+              ],
+              "viticulture": [
+                "Widely planted"
+              ],
+              "winemaking": [
+                "Fruit-driven"
+              ],
+              "pairing": [
+                "duck",
+                "pasta"
+              ],
+              "examTips": [
+                "Softer than Cabernet Sauvignon."
+              ],
+              "tags": [
+                "red",
+                "Chile",
+                "Central Valley",
+                "Rapel Valley"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Warm large red-wine valley that includes major premium areas in broader Chilean geography."
+        },
+        "curico-valley": {
+          "name": "Curico Valley",
+          "summary": "Central Valley area producing a wide range of fruit-forward styles.",
+          "climate": "Warm Mediterranean",
+          "styleSummary": "Accessible ripe wines with moderate to full body.",
+          "keyGrapes": [
+            "Merlot",
+            "Carmenere"
+          ],
+          "examTips": [
+            "Broad fruit-forward commercial and premium production are both important here.",
+            "Warm inland conditions shape style."
+          ],
+          "tags": [
+            "Chile",
+            "Central Valley",
+            "Curico Valley",
+            "red"
+          ],
+          "grapes": {
+            "Merlot": {
+              "summary": "Soft fruity red grape producing plum and black fruit styles.",
+              "style": "Plum, soft tannin, round.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "Medium"
+              },
+              "aromas": [
+                "plum",
+                "black fruit"
+              ],
+              "viticulture": [
+                "Widely planted"
+              ],
+              "winemaking": [
+                "Fruit-driven"
+              ],
+              "pairing": [
+                "duck",
+                "pasta"
+              ],
+              "examTips": [
+                "Softer than Cabernet Sauvignon."
+              ],
+              "tags": [
+                "red",
+                "Chile",
+                "Central Valley",
+                "Curico Valley"
+              ],
+              "difficulty": 1
+            },
+            "Carmenere": {
+              "summary": "Signature Chilean grape producing soft tannin wines with dark fruit and herbal notes.",
+              "style": "Black fruit, green pepper, soft tannin.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "Low to Medium"
+              },
+              "aromas": [
+                "black fruit",
+                "green pepper",
+                "herb"
+              ],
+              "viticulture": [
+                "Late ripening"
+              ],
+              "winemaking": [
+                "Fruit-driven styles"
+              ],
+              "pairing": [
+                "roast meats",
+                "BBQ"
+              ],
+              "examTips": [
+                "Green pepper note is key clue."
+              ],
+              "tags": [
+                "red",
+                "herbal",
+                "Chile",
+                "Central Valley",
+                "Curico Valley"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Warm valley known for broad fruit-forward production."
+        },
+        "maule-valley": {
+          "name": "Maule Valley",
+          "summary": "Large southern Central Valley area with substantial old-vine and varied production.",
+          "climate": "Warm Mediterranean",
+          "styleSummary": "Varied styles, often with generous fruit and approachable structure.",
+          "keyGrapes": [
+            "Merlot",
+            "Carmenere"
+          ],
+          "examTips": [
+            "Maule is broad and important in volume and old-vine context.",
+            "Expect a warmer-fruit style than the coolest Chilean zones."
+          ],
+          "tags": [
+            "Chile",
+            "Central Valley",
+            "Maule Valley",
+            "red"
+          ],
+          "grapes": {
+            "Merlot": {
+              "summary": "Soft fruity red grape producing plum and black fruit styles.",
+              "style": "Plum, soft tannin, round.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "Medium"
+              },
+              "aromas": [
+                "plum",
+                "black fruit"
+              ],
+              "viticulture": [
+                "Widely planted"
+              ],
+              "winemaking": [
+                "Fruit-driven"
+              ],
+              "pairing": [
+                "duck",
+                "pasta"
+              ],
+              "examTips": [
+                "Softer than Cabernet Sauvignon."
+              ],
+              "tags": [
+                "red",
+                "Chile",
+                "Central Valley",
+                "Maule Valley"
+              ],
+              "difficulty": 1
+            },
+            "Carmenere": {
+              "summary": "Signature Chilean grape producing soft tannin wines with dark fruit and herbal notes.",
+              "style": "Black fruit, green pepper, soft tannin.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "Low to Medium"
+              },
+              "aromas": [
+                "black fruit",
+                "green pepper",
+                "herb"
+              ],
+              "viticulture": [
+                "Late ripening"
+              ],
+              "winemaking": [
+                "Fruit-driven styles"
+              ],
+              "pairing": [
+                "roast meats",
+                "BBQ"
+              ],
+              "examTips": [
+                "Green pepper note is key clue."
+              ],
+              "tags": [
+                "red",
+                "herbal",
+                "Chile",
+                "Central Valley",
+                "Maule Valley"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Important southern valley known for volume and old-vine context."
+        }
+      },
+      "classification": "Central Valley is a broad Chilean GI containing several important named valleys such as Maipo, Rapel, Curico and Maule.",
+      "lawNotes": [
+        "Maipo is the classic Cabernet Sauvignon name.",
+        "Chile’s mountain and ocean influences are central to freshness across warm inland regions."
+      ]
     },
-
     "casablanca": {
       "name": "Casablanca Valley",
       "summary": "Cool coastal region known for fresh aromatic whites and cool-climate reds.",
       "climate": "Cool maritime",
       "styleSummary": "Fresh, aromatic wines with high acidity.",
-      "mitigating": ["Pacific fog", "coastal influence"],
-      "keyGrapes": ["Sauvignon Blanc", "Chardonnay"],
+      "mitigating": [
+        "Pacific fog",
+        "coastal influence"
+      ],
+      "keyGrapes": [
+        "Sauvignon Blanc",
+        "Chardonnay"
+      ],
       "examTips": [
         "Cool climate = high acidity.",
         "Think coastal freshness."
       ],
-      "tags": ["Chile", "cool-climate", "coastal"],
+      "tags": [
+        "Chile",
+        "cool-climate",
+        "coastal"
+      ],
       "difficulty": 1,
       "grapes": {
-
         "Sauvignon Blanc": {
           "summary": "Fresh aromatic white with high acidity and citrus-herbal profile.",
           "style": "Citrus, green fruit, herb.",
@@ -131,17 +755,30 @@
             "body": "Light",
             "tannin": "-"
           },
-          "aromas": ["citrus", "herb", "green apple"],
-          "viticulture": ["Cool coastal sites"],
-          "winemaking": ["Fresh styles"],
-          "pairing": ["goat cheese", "seafood"],
+          "aromas": [
+            "citrus",
+            "herb",
+            "green apple"
+          ],
+          "viticulture": [
+            "Cool coastal sites"
+          ],
+          "winemaking": [
+            "Fresh styles"
+          ],
+          "pairing": [
+            "goat cheese",
+            "seafood"
+          ],
           "examTips": [
             "High acidity and freshness."
           ],
-          "tags": ["white", "fresh"],
+          "tags": [
+            "white",
+            "fresh"
+          ],
           "difficulty": 1
         },
-
         "Chardonnay": {
           "summary": "Cool-climate Chardonnay with citrus and mineral notes.",
           "style": "Citrus, green apple, sometimes oak.",
@@ -152,31 +789,51 @@
             "body": "Medium",
             "tannin": "-"
           },
-          "aromas": ["citrus", "apple"],
-          "viticulture": ["Cool climate"],
-          "winemaking": ["Fresh or lightly oaked"],
-          "pairing": ["seafood", "chicken"],
+          "aromas": [
+            "citrus",
+            "apple"
+          ],
+          "viticulture": [
+            "Cool climate"
+          ],
+          "winemaking": [
+            "Fresh or lightly oaked"
+          ],
+          "pairing": [
+            "seafood",
+            "chicken"
+          ],
           "examTips": [
             "More freshness than warm regions."
           ],
-          "tags": ["white"],
+          "tags": [
+            "white"
+          ],
           "difficulty": 1
         }
       }
     },
-
     "colchagua": {
       "name": "Colchagua Valley",
       "summary": "Warm region producing ripe, powerful red wines.",
       "climate": "Warm Mediterranean",
       "styleSummary": "Full-bodied, ripe red wines.",
-      "mitigating": ["Andes cooling"],
-      "keyGrapes": ["Cabernet Sauvignon", "Carmenere"],
+      "mitigating": [
+        "Andes cooling"
+      ],
+      "keyGrapes": [
+        "Cabernet Sauvignon",
+        "Carmenere"
+      ],
       "examTips": [
         "Think warm, ripe and powerful.",
         "Often richer than Casablanca."
       ],
-      "tags": ["Chile", "warm", "red"],
+      "tags": [
+        "Chile",
+        "warm",
+        "red"
+      ],
       "difficulty": 1,
       "grapes": {
         "Cabernet Sauvignon": {
@@ -189,18 +846,28 @@
             "body": "Full",
             "tannin": "High"
           },
-          "aromas": ["black fruit", "cassis"],
-          "viticulture": ["Warm conditions"],
-          "winemaking": ["Oak common"],
-          "pairing": ["steak"],
+          "aromas": [
+            "black fruit",
+            "cassis"
+          ],
+          "viticulture": [
+            "Warm conditions"
+          ],
+          "winemaking": [
+            "Oak common"
+          ],
+          "pairing": [
+            "steak"
+          ],
           "examTips": [
             "Riper than cooler regions."
           ],
-          "tags": ["red"],
+          "tags": [
+            "red"
+          ],
           "difficulty": 1
         }
       }
     }
-
   }
 }

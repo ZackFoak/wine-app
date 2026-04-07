@@ -6,7 +6,13 @@
     "Malbec is the flagship grape to remember.",
     "Think ripe fruit balanced by freshness from elevation and diurnal range."
   ],
-  "tags": ["Argentina", "high-altitude", "Malbec", "continental", "exam-core"],
+  "tags": [
+    "Argentina",
+    "high-altitude",
+    "Malbec",
+    "continental",
+    "exam-core"
+  ],
   "difficulty": 1,
   "regions": {
     "mendoza": {
@@ -14,34 +20,70 @@
       "summary": "Argentina’s most important wine region, known for ripe wines balanced by altitude and diurnal range.",
       "climate": "Continental",
       "styleSummary": "Ripe fruit wines with freshness from altitude and diurnal range.",
-      "mitigating": ["high altitude", "diurnal temperature variation", "irrigation from Andes"],
-      "keyGrapes": ["Malbec", "Cabernet Sauvignon"],
+      "mitigating": [
+        "high altitude",
+        "diurnal temperature variation",
+        "irrigation from Andes"
+      ],
+      "keyGrapes": [
+        "Malbec",
+        "Cabernet Sauvignon"
+      ],
       "examTips": [
         "Mendoza is the core region for understanding Argentine wine.",
         "Altitude and Andes meltwater irrigation are key themes."
       ],
-      "tags": ["Argentina", "Mendoza", "high-altitude", "red-wine", "continental"],
+      "tags": [
+        "Argentina",
+        "Mendoza",
+        "high-altitude",
+        "red-wine",
+        "continental"
+      ],
       "difficulty": 1,
       "grapes": {
         "Malbec": {
           "summary": "Argentina’s flagship red grape, producing ripe black-fruited wines with floral notes and soft to medium tannin.",
           "style": "Black fruit, plum, violet, soft tannin with full body.",
-          "aliases": ["Cot"],
+          "aliases": [
+            "Cot"
+          ],
           "profile": {
             "acidity": "Medium",
             "alcohol": "High",
             "body": "Full",
             "tannin": "Medium"
           },
-          "aromas": ["black fruit", "plum", "violet", "black cherry"],
-          "viticulture": ["Thrives at altitude", "Sensitive to frost"],
-          "winemaking": ["Often oak aged", "Fruit-forward or structured styles"],
-          "pairing": ["steak", "grilled beef", "BBQ"],
+          "aromas": [
+            "black fruit",
+            "plum",
+            "violet",
+            "black cherry"
+          ],
+          "viticulture": [
+            "Thrives at altitude",
+            "Sensitive to frost"
+          ],
+          "winemaking": [
+            "Often oak aged",
+            "Fruit-forward or structured styles"
+          ],
+          "pairing": [
+            "steak",
+            "grilled beef",
+            "BBQ"
+          ],
           "examTips": [
             "Black fruit plus violet is a strong clue.",
             "Argentine Malbec is usually riper and fuller than Cahors Malbec."
           ],
-          "tags": ["red", "full-body", "black-fruit", "Argentina", "Malbec"],
+          "tags": [
+            "red",
+            "full-body",
+            "black-fruit",
+            "Argentina",
+            "Malbec"
+          ],
           "difficulty": 1
         },
         "Cabernet Sauvignon": {
@@ -54,50 +96,286 @@
             "body": "Full",
             "tannin": "High"
           },
-          "aromas": ["blackcurrant", "spice", "black fruit", "cedar"],
-          "viticulture": ["Needs warm sites"],
-          "winemaking": ["Often oak aged"],
-          "pairing": ["lamb", "steak", "hard cheese"],
+          "aromas": [
+            "blackcurrant",
+            "spice",
+            "black fruit",
+            "cedar"
+          ],
+          "viticulture": [
+            "Needs warm sites"
+          ],
+          "winemaking": [
+            "Often oak aged"
+          ],
+          "pairing": [
+            "lamb",
+            "steak",
+            "hard cheese"
+          ],
           "examTips": [
             "Usually more structured and firmer than Malbec."
           ],
-          "tags": ["red", "high-tannin", "structured", "Argentina", "Cabernet Sauvignon"],
+          "tags": [
+            "red",
+            "high-tannin",
+            "structured",
+            "Argentina",
+            "Cabernet Sauvignon"
+          ],
           "difficulty": 1
         }
-      }
+      },
+      "subregions": {
+        "maipu": {
+          "name": "Maipu",
+          "summary": "Historic warmer Mendoza sub-region known for ripe generous red wines.",
+          "climate": "Warm continental high-altitude",
+          "styleSummary": "Ripe fruit-driven Malbec and Cabernet styles with fuller body.",
+          "keyGrapes": [
+            "Malbec",
+            "Cabernet Sauvignon"
+          ],
+          "examTips": [
+            "Warmth gives a riper profile than the highest coolest Mendoza sites.",
+            "Altitude still helps preserve acidity."
+          ],
+          "tags": [
+            "Argentina",
+            "Mendoza",
+            "Maipu",
+            "red"
+          ],
+          "grapes": {
+            "Malbec": {
+              "summary": "Argentina’s flagship red grape, producing ripe black-fruited wines with floral notes and soft to medium tannin.",
+              "style": "Black fruit, plum, violet, soft tannin with full body.",
+              "aliases": [
+                "Cot"
+              ],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "High",
+                "body": "Full",
+                "tannin": "Medium"
+              },
+              "aromas": [
+                "black fruit",
+                "plum",
+                "violet",
+                "black cherry"
+              ],
+              "viticulture": [
+                "Thrives at altitude",
+                "Sensitive to frost"
+              ],
+              "winemaking": [
+                "Often oak aged",
+                "Fruit-forward or structured styles"
+              ],
+              "pairing": [
+                "steak",
+                "grilled beef",
+                "BBQ"
+              ],
+              "examTips": [
+                "Black fruit plus violet is a strong clue.",
+                "Argentine Malbec is usually riper and fuller than Cahors Malbec."
+              ],
+              "tags": [
+                "red",
+                "full-body",
+                "black-fruit",
+                "Argentina",
+                "Malbec",
+                "Mendoza (General)",
+                "Maipu"
+              ],
+              "difficulty": 1
+            },
+            "Cabernet Sauvignon": {
+              "summary": "Structured Bordeaux variety producing blackcurrant fruit, firm tannin and full body in warm continental sites.",
+              "style": "Blackcurrant, spice, structured with firm tannin.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "High",
+                "body": "Full",
+                "tannin": "High"
+              },
+              "aromas": [
+                "blackcurrant",
+                "spice",
+                "black fruit",
+                "cedar"
+              ],
+              "viticulture": [
+                "Needs warm sites"
+              ],
+              "winemaking": [
+                "Often oak aged"
+              ],
+              "pairing": [
+                "lamb",
+                "steak",
+                "hard cheese"
+              ],
+              "examTips": [
+                "Usually more structured and firmer than Malbec."
+              ],
+              "tags": [
+                "red",
+                "high-tannin",
+                "structured",
+                "Argentina",
+                "Cabernet Sauvignon",
+                "Mendoza (General)",
+                "Maipu"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Warmer historic sub-region producing riper fuller styles."
+        },
+        "east-mendoza": {
+          "name": "East Mendoza",
+          "summary": "Lower flatter Mendoza area associated more with larger-volume production and warmer conditions.",
+          "climate": "Warm continental high-altitude",
+          "styleSummary": "Riper softer styles with less concentration than the best high-altitude zones.",
+          "keyGrapes": [
+            "Malbec"
+          ],
+          "examTips": [
+            "Useful as a contrast to the best premium upland Mendoza areas.",
+            "Warm and productive are key ideas."
+          ],
+          "tags": [
+            "Argentina",
+            "Mendoza",
+            "East Mendoza",
+            "red"
+          ],
+          "grapes": {
+            "Malbec": {
+              "summary": "Argentina’s flagship red grape, producing ripe black-fruited wines with floral notes and soft to medium tannin.",
+              "style": "Black fruit, plum, violet, soft tannin with full body.",
+              "aliases": [
+                "Cot"
+              ],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "High",
+                "body": "Full",
+                "tannin": "Medium"
+              },
+              "aromas": [
+                "black fruit",
+                "plum",
+                "violet",
+                "black cherry"
+              ],
+              "viticulture": [
+                "Thrives at altitude",
+                "Sensitive to frost"
+              ],
+              "winemaking": [
+                "Often oak aged",
+                "Fruit-forward or structured styles"
+              ],
+              "pairing": [
+                "steak",
+                "grilled beef",
+                "BBQ"
+              ],
+              "examTips": [
+                "Black fruit plus violet is a strong clue.",
+                "Argentine Malbec is usually riper and fuller than Cahors Malbec."
+              ],
+              "tags": [
+                "red",
+                "full-body",
+                "black-fruit",
+                "Argentina",
+                "Malbec",
+                "Mendoza (General)",
+                "East Mendoza"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Lower warmer more productive section with less premium prestige than the top upland zones."
+        }
+      },
+      "classification": "Mendoza is Argentina’s flagship region, with altitude and irrigation as the essential study concepts.",
+      "lawNotes": [
+        "Altitude strongly affects freshness and concentration.",
+        "Irrigation from Andean meltwater is essential in this desert climate."
+      ]
     },
     "lujan-de-cuyo": {
       "name": "Luján de Cuyo",
       "summary": "Classic Mendoza subregion known for rich, ripe and structured Malbec.",
       "climate": "Continental",
       "styleSummary": "Classic Malbec region with rich, ripe and structured wines.",
-      "mitigating": ["moderate altitude", "warm conditions"],
-      "keyGrapes": ["Malbec"],
+      "mitigating": [
+        "moderate altitude",
+        "warm conditions"
+      ],
+      "keyGrapes": [
+        "Malbec"
+      ],
       "examTips": [
         "Think classic richer Mendoza Malbec.",
         "Usually broader and softer than cooler higher-altitude examples."
       ],
-      "tags": ["Argentina", "Luján de Cuyo", "Malbec", "ripe", "structured"],
+      "tags": [
+        "Argentina",
+        "Luján de Cuyo",
+        "Malbec",
+        "ripe",
+        "structured"
+      ],
       "difficulty": 1,
       "grapes": {
         "Malbec": {
           "summary": "Richer-style Argentine Malbec with ripe black fruit, fuller body and softer acidity.",
           "style": "Ripe black fruit, chocolate, fuller body, softer acidity.",
-          "aliases": ["Cot"],
+          "aliases": [
+            "Cot"
+          ],
           "profile": {
             "acidity": "Medium",
             "alcohol": "High",
             "body": "Full",
             "tannin": "Medium"
           },
-          "aromas": ["ripe black fruit", "chocolate", "plum", "violet"],
-          "viticulture": ["Lower altitude than Uco"],
-          "winemaking": ["Often oak aged"],
-          "pairing": ["grilled steaks", "braised beef", "BBQ"],
+          "aromas": [
+            "ripe black fruit",
+            "chocolate",
+            "plum",
+            "violet"
+          ],
+          "viticulture": [
+            "Lower altitude than Uco"
+          ],
+          "winemaking": [
+            "Often oak aged"
+          ],
+          "pairing": [
+            "grilled steaks",
+            "braised beef",
+            "BBQ"
+          ],
           "examTips": [
             "Richer and broader than higher-altitude Uco Valley examples."
           ],
-          "tags": ["red", "ripe", "full-body", "Argentina", "Malbec"],
+          "tags": [
+            "red",
+            "ripe",
+            "full-body",
+            "Argentina",
+            "Malbec"
+          ],
           "difficulty": 1
         }
       }
@@ -107,33 +385,68 @@
       "summary": "High-altitude Mendoza subregion producing fresher, more elegant and structured wines.",
       "climate": "Cool continental (high altitude)",
       "styleSummary": "More elegant, fresher wines with higher acidity and structure.",
-      "mitigating": ["very high altitude", "cool nights", "intense sunlight"],
-      "keyGrapes": ["Malbec", "Chardonnay"],
+      "mitigating": [
+        "very high altitude",
+        "cool nights",
+        "intense sunlight"
+      ],
+      "keyGrapes": [
+        "Malbec",
+        "Chardonnay"
+      ],
       "examTips": [
         "Altitude is the key clue here.",
         "Expect more freshness and structure than lower Mendoza zones."
       ],
-      "tags": ["Argentina", "Uco Valley", "high-altitude", "freshness", "structured"],
+      "tags": [
+        "Argentina",
+        "Uco Valley",
+        "high-altitude",
+        "freshness",
+        "structured"
+      ],
       "difficulty": 1,
       "grapes": {
         "Malbec": {
           "summary": "Higher-altitude Malbec with more freshness, floral lift and structure than warmer lowland styles.",
           "style": "Black fruit with floral notes, higher acidity, more structure.",
-          "aliases": ["Cot"],
+          "aliases": [
+            "Cot"
+          ],
           "profile": {
             "acidity": "Medium to High",
             "alcohol": "Medium to High",
             "body": "Medium to Full",
             "tannin": "Medium to High"
           },
-          "aromas": ["black fruit", "violet", "floral", "plum"],
-          "viticulture": ["High UV leads to thick skins"],
-          "winemaking": ["More refined styles", "Oak optional"],
-          "pairing": ["steak", "roast lamb", "grilled meats"],
+          "aromas": [
+            "black fruit",
+            "violet",
+            "floral",
+            "plum"
+          ],
+          "viticulture": [
+            "High UV leads to thick skins"
+          ],
+          "winemaking": [
+            "More refined styles",
+            "Oak optional"
+          ],
+          "pairing": [
+            "steak",
+            "roast lamb",
+            "grilled meats"
+          ],
           "examTips": [
             "Higher acidity and structure are key differences versus Luján de Cuyo."
           ],
-          "tags": ["red", "high-altitude", "structured", "Argentina", "Malbec"],
+          "tags": [
+            "red",
+            "high-altitude",
+            "structured",
+            "Argentina",
+            "Malbec"
+          ],
           "difficulty": 1
         },
         "Chardonnay": {
@@ -146,14 +459,33 @@
             "body": "Medium",
             "tannin": "-"
           },
-          "aromas": ["citrus", "green apple", "mineral", "stone fruit"],
-          "viticulture": ["Performs well at altitude"],
-          "winemaking": ["Fresh or lightly oaked"],
-          "pairing": ["seafood", "grilled fish", "cream sauces"],
+          "aromas": [
+            "citrus",
+            "green apple",
+            "mineral",
+            "stone fruit"
+          ],
+          "viticulture": [
+            "Performs well at altitude"
+          ],
+          "winemaking": [
+            "Fresh or lightly oaked"
+          ],
+          "pairing": [
+            "seafood",
+            "grilled fish",
+            "cream sauces"
+          ],
           "examTips": [
             "Altitude helps preserve acidity despite strong sunlight."
           ],
-          "tags": ["white", "high-acid", "mineral", "Argentina", "Chardonnay"],
+          "tags": [
+            "white",
+            "high-acid",
+            "mineral",
+            "Argentina",
+            "Chardonnay"
+          ],
           "difficulty": 1
         }
       }
@@ -163,13 +495,26 @@
       "summary": "Extreme high-altitude region known for highly aromatic whites and concentrated reds.",
       "climate": "High altitude continental",
       "styleSummary": "Very aromatic whites and concentrated reds due to extreme altitude.",
-      "mitigating": ["extreme altitude", "intense sunlight", "cool nights"],
-      "keyGrapes": ["Torrontes", "Malbec"],
+      "mitigating": [
+        "extreme altitude",
+        "intense sunlight",
+        "cool nights"
+      ],
+      "keyGrapes": [
+        "Torrontes",
+        "Malbec"
+      ],
       "examTips": [
         "Salta is strongly associated with extreme altitude.",
         "Torrontes is the key aromatic white grape here."
       ],
-      "tags": ["Argentina", "Salta", "extreme-altitude", "aromatic-white", "concentrated-red"],
+      "tags": [
+        "Argentina",
+        "Salta",
+        "extreme-altitude",
+        "aromatic-white",
+        "concentrated-red"
+      ],
       "difficulty": 1,
       "grapes": {
         "Torrontes": {
@@ -182,51 +527,220 @@
             "body": "Medium",
             "tannin": "-"
           },
-          "aromas": ["floral", "lychee", "grapey", "citrus"],
-          "viticulture": ["Thrives in high altitude"],
-          "winemaking": ["Usually fresh aromatic style"],
-          "pairing": ["spicy food", "salads", "light seafood"],
+          "aromas": [
+            "floral",
+            "lychee",
+            "grapey",
+            "citrus"
+          ],
+          "viticulture": [
+            "Thrives in high altitude"
+          ],
+          "winemaking": [
+            "Usually fresh aromatic style"
+          ],
+          "pairing": [
+            "spicy food",
+            "salads",
+            "light seafood"
+          ],
           "examTips": [
             "Highly aromatic profile is the key clue.",
             "Usually made in fresh styles rather than oak-driven styles."
           ],
-          "tags": ["white", "very-aromatic", "fresh", "Argentina", "Torrontes"],
+          "tags": [
+            "white",
+            "very-aromatic",
+            "fresh",
+            "Argentina",
+            "Torrontes"
+          ],
           "difficulty": 1
         },
         "Malbec": {
           "summary": "Extreme-altitude Malbec giving concentrated fruit and stronger structure.",
           "style": "Very concentrated black fruit with strong structure.",
-          "aliases": ["Cot"],
+          "aliases": [
+            "Cot"
+          ],
           "profile": {
             "acidity": "Medium",
             "alcohol": "High",
             "body": "Full",
             "tannin": "High"
           },
-          "aromas": ["black fruit", "plum", "violet", "spice"],
-          "viticulture": ["Extreme conditions increase concentration"],
-          "winemaking": ["Often powerful style"],
-          "pairing": ["BBQ", "game", "braised meats"],
+          "aromas": [
+            "black fruit",
+            "plum",
+            "violet",
+            "spice"
+          ],
+          "viticulture": [
+            "Extreme conditions increase concentration"
+          ],
+          "winemaking": [
+            "Often powerful style"
+          ],
+          "pairing": [
+            "BBQ",
+            "game",
+            "braised meats"
+          ],
           "examTips": [
             "More intense and concentrated than many Mendoza examples."
           ],
-          "tags": ["red", "concentrated", "high-altitude", "Argentina", "Malbec"],
+          "tags": [
+            "red",
+            "concentrated",
+            "high-altitude",
+            "Argentina",
+            "Malbec"
+          ],
           "difficulty": 1
         }
-      }
+      },
+      "subregions": {
+        "cafayate": {
+          "name": "Cafayate",
+          "summary": "High-altitude Salta sub-region famous for aromatic Torrontes and also Malbec.",
+          "climate": "Warm continental high-altitude",
+          "styleSummary": "Very aromatic whites and deeply colored fresh reds thanks to altitude.",
+          "keyGrapes": [
+            "Torrontes",
+            "Malbec"
+          ],
+          "examTips": [
+            "Altitude is the essential clue here.",
+            "Cafayate is the key named Salta place for Level 3."
+          ],
+          "tags": [
+            "Argentina",
+            "Salta",
+            "Cafayate",
+            "white",
+            "red"
+          ],
+          "grapes": {
+            "Torrontes": {
+              "summary": "Argentina’s signature aromatic white grape, producing floral, grapey and perfumed wines.",
+              "style": "Highly aromatic, floral, lychee, grapey notes.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "floral",
+                "lychee",
+                "grapey",
+                "citrus"
+              ],
+              "viticulture": [
+                "Thrives in high altitude"
+              ],
+              "winemaking": [
+                "Usually fresh aromatic style"
+              ],
+              "pairing": [
+                "spicy food",
+                "salads",
+                "light seafood"
+              ],
+              "examTips": [
+                "Highly aromatic profile is the key clue.",
+                "Usually made in fresh styles rather than oak-driven styles."
+              ],
+              "tags": [
+                "white",
+                "very-aromatic",
+                "fresh",
+                "Argentina",
+                "Torrontes",
+                "Salta",
+                "Cafayate"
+              ],
+              "difficulty": 1
+            },
+            "Malbec": {
+              "summary": "Extreme-altitude Malbec giving concentrated fruit and stronger structure.",
+              "style": "Very concentrated black fruit with strong structure.",
+              "aliases": [
+                "Cot"
+              ],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "High",
+                "body": "Full",
+                "tannin": "High"
+              },
+              "aromas": [
+                "black fruit",
+                "plum",
+                "violet",
+                "spice"
+              ],
+              "viticulture": [
+                "Extreme conditions increase concentration"
+              ],
+              "winemaking": [
+                "Often powerful style"
+              ],
+              "pairing": [
+                "BBQ",
+                "game",
+                "braised meats"
+              ],
+              "examTips": [
+                "More intense and concentrated than many Mendoza examples."
+              ],
+              "tags": [
+                "red",
+                "concentrated",
+                "high-altitude",
+                "Argentina",
+                "Malbec",
+                "Salta",
+                "Cafayate"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Benchmark very high-altitude Salta sub-region for Torrontes and Malbec."
+        }
+      },
+      "classification": "Salta is especially important for very high-altitude viticulture and Torrontes.",
+      "lawNotes": [
+        "Cafayate is the key named place to remember.",
+        "Altitude gives aromatic intensity and freshness despite strong sunshine."
+      ]
     },
     "patagonia": {
       "name": "Patagonia",
       "summary": "Cooler southern region producing elegant, fresh wines with good acidity.",
       "climate": "Cool continental",
       "styleSummary": "Cooler region producing more elegant and fresh wines.",
-      "mitigating": ["southern latitude", "cool winds", "long growing season"],
-      "keyGrapes": ["Pinot Noir", "Chardonnay"],
+      "mitigating": [
+        "southern latitude",
+        "cool winds",
+        "long growing season"
+      ],
+      "keyGrapes": [
+        "Pinot Noir",
+        "Chardonnay"
+      ],
       "examTips": [
         "Think cooler climate and more elegance.",
         "Patagonia is useful for comparing Argentina’s warmer and cooler styles."
       ],
-      "tags": ["Argentina", "Patagonia", "cooler-climate", "elegant", "fresh"],
+      "tags": [
+        "Argentina",
+        "Patagonia",
+        "cooler-climate",
+        "elegant",
+        "fresh"
+      ],
       "difficulty": 1,
       "grapes": {
         "Pinot Noir": {
@@ -239,14 +753,33 @@
             "body": "Light to Medium",
             "tannin": "Low to Medium"
           },
-          "aromas": ["red cherry", "raspberry", "red fruit", "floral"],
-          "viticulture": ["Prefers cooler climates"],
-          "winemaking": ["Light extraction"],
-          "pairing": ["duck", "mushroom dishes", "roast chicken"],
+          "aromas": [
+            "red cherry",
+            "raspberry",
+            "red fruit",
+            "floral"
+          ],
+          "viticulture": [
+            "Prefers cooler climates"
+          ],
+          "winemaking": [
+            "Light extraction"
+          ],
+          "pairing": [
+            "duck",
+            "mushroom dishes",
+            "roast chicken"
+          ],
           "examTips": [
             "Think lighter body and fresher profile than Malbec."
           ],
-          "tags": ["red", "cool-climate", "elegant", "Argentina", "Pinot Noir"],
+          "tags": [
+            "red",
+            "cool-climate",
+            "elegant",
+            "Argentina",
+            "Pinot Noir"
+          ],
           "difficulty": 1
         },
         "Chardonnay": {
@@ -259,17 +792,252 @@
             "body": "Medium",
             "tannin": "-"
           },
-          "aromas": ["citrus", "green apple", "mineral"],
-          "viticulture": ["Cool climate suitable"],
-          "winemaking": ["Fresh styles or light oak"],
-          "pairing": ["seafood", "light poultry", "cream sauces"],
+          "aromas": [
+            "citrus",
+            "green apple",
+            "mineral"
+          ],
+          "viticulture": [
+            "Cool climate suitable"
+          ],
+          "winemaking": [
+            "Fresh styles or light oak"
+          ],
+          "pairing": [
+            "seafood",
+            "light poultry",
+            "cream sauces"
+          ],
           "examTips": [
             "Cooler Argentine Chardonnay often shows fresher citrus character."
           ],
-          "tags": ["white", "high-acid", "fresh", "Argentina", "Chardonnay"],
+          "tags": [
+            "white",
+            "high-acid",
+            "fresh",
+            "Argentina",
+            "Chardonnay"
+          ],
           "difficulty": 1
         }
-      }
+      },
+      "subregions": {
+        "rio-negro": {
+          "name": "Rio Negro",
+          "summary": "Cool southern Argentine area known for fresh Pinot Noir and Chardonnay.",
+          "climate": "Cool continental",
+          "styleSummary": "Fresh lighter-bodied wines with bright acidity and restrained fruit.",
+          "keyGrapes": [
+            "Pinot Noir",
+            "Chardonnay"
+          ],
+          "examTips": [
+            "Patagonia is cooler than the classic northern Argentine regions.",
+            "Pinot Noir is a key clue."
+          ],
+          "tags": [
+            "Argentina",
+            "Patagonia",
+            "Rio Negro",
+            "red",
+            "white"
+          ],
+          "grapes": {
+            "Pinot Noir": {
+              "summary": "Cooler-climate red grape producing elegant red-fruited wines with fresher acidity.",
+              "style": "Red cherry, raspberry, light body, fresh acidity.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium",
+                "body": "Light to Medium",
+                "tannin": "Low to Medium"
+              },
+              "aromas": [
+                "red cherry",
+                "raspberry",
+                "red fruit",
+                "floral"
+              ],
+              "viticulture": [
+                "Prefers cooler climates"
+              ],
+              "winemaking": [
+                "Light extraction"
+              ],
+              "pairing": [
+                "duck",
+                "mushroom dishes",
+                "roast chicken"
+              ],
+              "examTips": [
+                "Think lighter body and fresher profile than Malbec."
+              ],
+              "tags": [
+                "red",
+                "cool-climate",
+                "elegant",
+                "Argentina",
+                "Pinot Noir",
+                "Patagonia",
+                "Rio Negro"
+              ],
+              "difficulty": 1
+            },
+            "Chardonnay": {
+              "summary": "Cooler-climate Chardonnay producing fresh citrus and green apple styles.",
+              "style": "Citrus, green apple, fresh and balanced.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "green apple",
+                "mineral"
+              ],
+              "viticulture": [
+                "Cool climate suitable"
+              ],
+              "winemaking": [
+                "Fresh styles or light oak"
+              ],
+              "pairing": [
+                "seafood",
+                "light poultry",
+                "cream sauces"
+              ],
+              "examTips": [
+                "Cooler Argentine Chardonnay often shows fresher citrus character."
+              ],
+              "tags": [
+                "white",
+                "high-acid",
+                "fresh",
+                "Argentina",
+                "Chardonnay",
+                "Patagonia",
+                "Rio Negro"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Classic cool Patagonian valley for fresh Pinot Noir and Chardonnay."
+        },
+        "neuquen": {
+          "name": "Neuquen",
+          "summary": "Patagonian area with cool dry conditions supporting fresh modern styles.",
+          "climate": "Cool continental",
+          "styleSummary": "Bright fresh wines with moderate body and clean fruit.",
+          "keyGrapes": [
+            "Pinot Noir",
+            "Chardonnay"
+          ],
+          "examTips": [
+            "Cool dry southern climate is the key context.",
+            "A useful Patagonia name to recognize on the map."
+          ],
+          "tags": [
+            "Argentina",
+            "Patagonia",
+            "Neuquen",
+            "red",
+            "white"
+          ],
+          "grapes": {
+            "Pinot Noir": {
+              "summary": "Cooler-climate red grape producing elegant red-fruited wines with fresher acidity.",
+              "style": "Red cherry, raspberry, light body, fresh acidity.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium",
+                "body": "Light to Medium",
+                "tannin": "Low to Medium"
+              },
+              "aromas": [
+                "red cherry",
+                "raspberry",
+                "red fruit",
+                "floral"
+              ],
+              "viticulture": [
+                "Prefers cooler climates"
+              ],
+              "winemaking": [
+                "Light extraction"
+              ],
+              "pairing": [
+                "duck",
+                "mushroom dishes",
+                "roast chicken"
+              ],
+              "examTips": [
+                "Think lighter body and fresher profile than Malbec."
+              ],
+              "tags": [
+                "red",
+                "cool-climate",
+                "elegant",
+                "Argentina",
+                "Pinot Noir",
+                "Patagonia",
+                "Neuquen"
+              ],
+              "difficulty": 1
+            },
+            "Chardonnay": {
+              "summary": "Cooler-climate Chardonnay producing fresh citrus and green apple styles.",
+              "style": "Citrus, green apple, fresh and balanced.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "green apple",
+                "mineral"
+              ],
+              "viticulture": [
+                "Cool climate suitable"
+              ],
+              "winemaking": [
+                "Fresh styles or light oak"
+              ],
+              "pairing": [
+                "seafood",
+                "light poultry",
+                "cream sauces"
+              ],
+              "examTips": [
+                "Cooler Argentine Chardonnay often shows fresher citrus character."
+              ],
+              "tags": [
+                "white",
+                "high-acid",
+                "fresh",
+                "Argentina",
+                "Chardonnay",
+                "Patagonia",
+                "Neuquen"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Cool dry Patagonian area with modern fresh styles."
+        }
+      },
+      "classification": "Patagonia is the cool-climate southern contrast to warmer northern Argentina.",
+      "lawNotes": [
+        "Cool dry conditions make fresher Pinot Noir and Chardonnay possible.",
+        "Rio Negro is the key named valley to recognize."
+      ]
     }
   }
 }

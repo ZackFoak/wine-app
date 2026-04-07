@@ -2,26 +2,44 @@
   "name": "Germany",
   "summary": "Germany is a cool-climate wine country best known for high-acid Riesling in styles ranging from dry to sweet.",
   "examTips": [
-    "Germany is defined by cool climate and high acidity.",
-    "Riesling is the most important grape.",
-    "Sweetness levels (dry → sweet) are key exam themes."
+    "Germany is defined by cool climate, high acidity and precise fruit expression.",
+    "Riesling is the benchmark grape, but Spatburgunder is important in warmer regions.",
+    "Know the differences between Mosel, Rheingau, Rheinhessen, Nahe, Pfalz, Baden and Franken.",
+    "Sweetness level, ripeness and site warmth are recurring exam themes."
   ],
-  "tags": ["Germany", "Riesling", "cool-climate", "high-acid", "sweetness"],
+  "tags": [
+    "Germany",
+    "Riesling",
+    "cool-climate",
+    "high-acid",
+    "sweetness",
+    "exam-core"
+  ],
   "difficulty": 1,
   "regions": {
-
     "mosel": {
       "name": "Mosel",
       "summary": "Cool river valley producing light-bodied, high-acid Riesling with lower alcohol and pronounced aromatics.",
       "climate": "Cool continental",
       "styleSummary": "Light-bodied, high-acid Riesling with low alcohol.",
-      "mitigating": ["river reflection", "steep slopes", "slate soils"],
-      "keyGrapes": ["Riesling"],
+      "mitigating": [
+        "river reflection",
+        "steep slopes",
+        "slate soils"
+      ],
+      "keyGrapes": [
+        "Riesling"
+      ],
       "examTips": [
         "Think very light body and low alcohol.",
         "High acidity + sweetness balance is key."
       ],
-      "tags": ["Germany", "Mosel", "Riesling", "cool"],
+      "tags": [
+        "Germany",
+        "Mosel",
+        "Riesling",
+        "cool"
+      ],
       "difficulty": 1,
       "grapes": {
         "Riesling": {
@@ -34,31 +52,241 @@
             "body": "Light",
             "tannin": "-"
           },
-          "aromas": ["lime", "green apple", "mineral"],
-          "viticulture": ["Steep slopes maximize sunlight"],
-          "winemaking": ["Often off-dry styles"],
-          "pairing": ["spicy food", "light seafood"],
+          "aromas": [
+            "lime",
+            "green apple",
+            "mineral"
+          ],
+          "viticulture": [
+            "Steep slopes maximize sunlight"
+          ],
+          "winemaking": [
+            "Often off-dry styles"
+          ],
+          "pairing": [
+            "spicy food",
+            "light seafood"
+          ],
           "examTips": [
             "Low alcohol is a key Mosel clue."
           ],
-          "tags": ["white", "high-acid", "low-alcohol"],
+          "tags": [
+            "white",
+            "high-acid",
+            "low-alcohol"
+          ],
           "difficulty": 1
         }
-      }
+      },
+      "subregions": {
+        "saar": {
+          "name": "Saar",
+          "summary": "Cool Mosel tributary valley producing some of Germany's most taut, high-acid Rieslings.",
+          "climate": "Cool continental",
+          "styleSummary": "Very light to medium-bodied Riesling with piercing acidity, citrus fruit and lower alcohol.",
+          "keyGrapes": [
+            "Riesling"
+          ],
+          "examTips": [
+            "Expect very high acidity and low alcohol in classic styles.",
+            "Saar is usually among the coolest Mosel expressions."
+          ],
+          "tags": [
+            "Germany",
+            "Mosel",
+            "Saar",
+            "white"
+          ],
+          "grapes": {
+            "Riesling": {
+              "summary": "High-acid aromatic grape producing light, delicate wines in Mosel.",
+              "style": "Lime, green apple, low alcohol, sometimes off-dry.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Low",
+                "body": "Light",
+                "tannin": "-"
+              },
+              "aromas": [
+                "lime",
+                "green apple",
+                "mineral"
+              ],
+              "viticulture": [
+                "Steep slopes maximize sunlight"
+              ],
+              "winemaking": [
+                "Often off-dry styles"
+              ],
+              "pairing": [
+                "spicy food",
+                "light seafood"
+              ],
+              "examTips": [
+                "Low alcohol is a key Mosel clue."
+              ],
+              "tags": [
+                "white",
+                "high-acid",
+                "low-alcohol",
+                "Germany",
+                "Mosel",
+                "Saar"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Saar is one of the coolest classic Mosel tributaries, often giving the lightest and highest-acid styles."
+        },
+        "ruwer": {
+          "name": "Ruwer",
+          "summary": "Small cool Mosel tributary known for delicate intensely acidic Riesling styles.",
+          "climate": "Cool continental",
+          "styleSummary": "Delicate finely etched Riesling with green fruit, citrus and very high acidity.",
+          "keyGrapes": [
+            "Riesling"
+          ],
+          "examTips": [
+            "Ruwer is small but exam-relevant as a classic Mosel tributary.",
+            "Think delicacy and acidity rather than weight."
+          ],
+          "tags": [
+            "Germany",
+            "Mosel",
+            "Ruwer",
+            "white"
+          ],
+          "grapes": {
+            "Riesling": {
+              "summary": "High-acid aromatic grape producing light, delicate wines in Mosel.",
+              "style": "Lime, green apple, low alcohol, sometimes off-dry.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Low",
+                "body": "Light",
+                "tannin": "-"
+              },
+              "aromas": [
+                "lime",
+                "green apple",
+                "mineral"
+              ],
+              "viticulture": [
+                "Steep slopes maximize sunlight"
+              ],
+              "winemaking": [
+                "Often off-dry styles"
+              ],
+              "pairing": [
+                "spicy food",
+                "light seafood"
+              ],
+              "examTips": [
+                "Low alcohol is a key Mosel clue."
+              ],
+              "tags": [
+                "white",
+                "high-acid",
+                "low-alcohol",
+                "Germany",
+                "Mosel",
+                "Ruwer"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Ruwer is a small classic tributary known for delicacy and intense acidity."
+        },
+        "bernkastel": {
+          "name": "Bernkastel",
+          "summary": "Prestige central Mosel area with steep slate vineyards and benchmark Riesling sites.",
+          "climate": "Cool continental",
+          "styleSummary": "Intense yet delicate Riesling with lime, stone fruit, slatey character and high acidity.",
+          "keyGrapes": [
+            "Riesling"
+          ],
+          "examTips": [
+            "Steep slate slopes are a core Mosel clue.",
+            "Bernkastel is one of the benchmark middle Mosel names."
+          ],
+          "tags": [
+            "Germany",
+            "Mosel",
+            "Bernkastel",
+            "white"
+          ],
+          "grapes": {
+            "Riesling": {
+              "summary": "High-acid aromatic grape producing light, delicate wines in Mosel.",
+              "style": "Lime, green apple, low alcohol, sometimes off-dry.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Low",
+                "body": "Light",
+                "tannin": "-"
+              },
+              "aromas": [
+                "lime",
+                "green apple",
+                "mineral"
+              ],
+              "viticulture": [
+                "Steep slopes maximize sunlight"
+              ],
+              "winemaking": [
+                "Often off-dry styles"
+              ],
+              "pairing": [
+                "spicy food",
+                "light seafood"
+              ],
+              "examTips": [
+                "Low alcohol is a key Mosel clue."
+              ],
+              "tags": [
+                "white",
+                "high-acid",
+                "low-alcohol",
+                "Germany",
+                "Mosel",
+                "Bernkastel"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Bernkastel is a benchmark middle Mosel name tied to famous steep slate sites."
+        }
+      },
+      "classification": "Mosel is strongly associated with Riesling, steep slate vineyards and styles ranging from dry to sweet under the German quality system.",
+      "lawNotes": [
+        "Pradikat terms and sweetness levels are important exam language in Germany.",
+        "Cool climate and steep slopes are central Mosel context."
+      ]
     },
-
     "rheingau": {
       "name": "Rheingau",
       "summary": "Warmer region producing fuller-bodied Riesling and important Pinot Noir.",
       "climate": "Moderate continental",
       "styleSummary": "More structured and fuller wines.",
-      "mitigating": ["river reflection", "south-facing slopes"],
-      "keyGrapes": ["Riesling", "Spätburgunder"],
+      "mitigating": [
+        "river reflection",
+        "south-facing slopes"
+      ],
+      "keyGrapes": [
+        "Riesling",
+        "Spätburgunder"
+      ],
       "examTips": [
         "Richer and more structured than Mosel.",
         "Important Pinot Noir region."
       ],
-      "tags": ["Germany", "Rheingau"],
+      "tags": [
+        "Germany",
+        "Rheingau"
+      ],
       "difficulty": 1,
       "grapes": {
         "Riesling": {
@@ -71,52 +299,204 @@
             "body": "Medium",
             "tannin": "-"
           },
-          "aromas": ["citrus", "peach"],
-          "viticulture": ["Warmer conditions than Mosel"],
-          "winemaking": ["Dry styles common"],
-          "pairing": ["pork", "chicken"],
+          "aromas": [
+            "citrus",
+            "peach"
+          ],
+          "viticulture": [
+            "Warmer conditions than Mosel"
+          ],
+          "winemaking": [
+            "Dry styles common"
+          ],
+          "pairing": [
+            "pork",
+            "chicken"
+          ],
           "examTips": [
             "More body than Mosel."
           ],
-          "tags": ["white"],
+          "tags": [
+            "white"
+          ],
           "difficulty": 1
         },
-
         "Spatburgunder": {
           "summary": "German Pinot Noir producing light to medium-bodied reds.",
           "style": "Red fruit, light body, fresh acidity.",
-          "aliases": ["Pinot Noir"],
+          "aliases": [
+            "Pinot Noir"
+          ],
           "profile": {
             "acidity": "Medium to High",
             "alcohol": "Medium",
             "body": "Light to Medium",
             "tannin": "Low to Medium"
           },
-          "aromas": ["red cherry", "raspberry"],
-          "viticulture": ["Cool climate"],
-          "winemaking": ["Light extraction"],
-          "pairing": ["duck", "mushroom"],
+          "aromas": [
+            "red cherry",
+            "raspberry"
+          ],
+          "viticulture": [
+            "Cool climate"
+          ],
+          "winemaking": [
+            "Light extraction"
+          ],
+          "pairing": [
+            "duck",
+            "mushroom"
+          ],
           "examTips": [
             "German Pinot Noir is lighter than many New World styles."
           ],
-          "tags": ["red"],
+          "tags": [
+            "red"
+          ],
           "difficulty": 1
         }
-      }
+      },
+      "subregions": {
+        "johannisberg": {
+          "name": "Johannisberg",
+          "summary": "Historic Rheingau village strongly associated with quality Riesling and late-harvest styles.",
+          "climate": "Moderate continental",
+          "styleSummary": "Riesling with more body than Mosel, ripe citrus and stone fruit, and firm acidity.",
+          "keyGrapes": [
+            "Riesling"
+          ],
+          "examTips": [
+            "Rheingau generally gives broader Riesling than Mosel.",
+            "Johannisberg is a classic named Rheingau village."
+          ],
+          "tags": [
+            "Germany",
+            "Rheingau",
+            "Johannisberg",
+            "white"
+          ],
+          "grapes": {
+            "Riesling": {
+              "summary": "More structured Riesling with greater body and ripeness.",
+              "style": "Citrus, stone fruit, fuller body.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "peach"
+              ],
+              "viticulture": [
+                "Warmer conditions than Mosel"
+              ],
+              "winemaking": [
+                "Dry styles common"
+              ],
+              "pairing": [
+                "pork",
+                "chicken"
+              ],
+              "examTips": [
+                "More body than Mosel."
+              ],
+              "tags": [
+                "white",
+                "Germany",
+                "Rheingau",
+                "Johannisberg"
+              ],
+              "difficulty": 1
+            }
+          }
+        },
+        "assmannshausen": {
+          "name": "Assmannshausen",
+          "summary": "Rheingau village particularly associated with Spatburgunder on steep slate sites.",
+          "climate": "Moderate continental",
+          "styleSummary": "Lighter-bodied red with red fruit, high acidity and subtle earthy notes.",
+          "keyGrapes": [
+            "Spatburgunder"
+          ],
+          "examTips": [
+            "This is one of the few famous Rheingau red wine places.",
+            "Connect it with Spatburgunder rather than Riesling."
+          ],
+          "tags": [
+            "Germany",
+            "Rheingau",
+            "Assmannshausen",
+            "red"
+          ],
+          "grapes": {
+            "Spatburgunder": {
+              "summary": "German Pinot Noir producing light to medium-bodied reds.",
+              "style": "Red fruit, light body, fresh acidity.",
+              "aliases": [
+                "Pinot Noir"
+              ],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium",
+                "body": "Light to Medium",
+                "tannin": "Low to Medium"
+              },
+              "aromas": [
+                "red cherry",
+                "raspberry"
+              ],
+              "viticulture": [
+                "Cool climate"
+              ],
+              "winemaking": [
+                "Light extraction"
+              ],
+              "pairing": [
+                "duck",
+                "mushroom"
+              ],
+              "examTips": [
+                "German Pinot Noir is lighter than many New World styles."
+              ],
+              "tags": [
+                "red",
+                "Germany",
+                "Rheingau",
+                "Assmannshausen"
+              ],
+              "difficulty": 1
+            }
+          }
+        }
+      },
+      "classification": "Rheingau is a key source of fuller Riesling and some important Spatburgunder.",
+      "lawNotes": [
+        "Compared with Mosel, wines are often broader and drier in feel.",
+        "Johannisberg is historically important for Riesling and late-harvest wine history."
+      ]
     },
-
     "pfalz": {
       "name": "Pfalz",
       "summary": "Warmer region producing riper, fuller wines including dry Riesling.",
       "climate": "Warm continental",
       "styleSummary": "Riper, fuller wines.",
-      "mitigating": ["sheltered by mountains"],
-      "keyGrapes": ["Riesling"],
+      "mitigating": [
+        "sheltered by mountains"
+      ],
+      "keyGrapes": [
+        "Riesling"
+      ],
       "examTips": [
         "Warmer than Mosel.",
         "Often dry styles."
       ],
-      "tags": ["Germany", "warm"],
+      "tags": [
+        "Germany",
+        "warm"
+      ],
       "difficulty": 1,
       "grapes": {
         "Riesling": {
@@ -129,55 +509,545 @@
             "body": "Medium",
             "tannin": "-"
           },
-          "aromas": ["peach", "citrus"],
-          "viticulture": ["Warmer climate"],
-          "winemaking": ["Dry styles common"],
-          "pairing": ["roast meats"],
+          "aromas": [
+            "peach",
+            "citrus"
+          ],
+          "viticulture": [
+            "Warmer climate"
+          ],
+          "winemaking": [
+            "Dry styles common"
+          ],
+          "pairing": [
+            "roast meats"
+          ],
           "examTips": [
             "More alcohol and ripeness than Mosel."
           ],
-          "tags": ["white"],
+          "tags": [
+            "white"
+          ],
           "difficulty": 1
         }
-      }
+      },
+      "subregions": {
+        "mittelhaardt": {
+          "name": "Mittelhaardt",
+          "summary": "Prestige northern Pfalz area known for dry Riesling from warmer sheltered conditions.",
+          "climate": "Moderate continental",
+          "styleSummary": "Riper fuller Riesling than Mosel, with stone fruit, citrus and dry style common.",
+          "keyGrapes": [
+            "Riesling"
+          ],
+          "examTips": [
+            "Pfalz is warmer and drier than Mosel.",
+            "Dry Riesling is especially important here."
+          ],
+          "tags": [
+            "Germany",
+            "Pfalz",
+            "Mittelhaardt",
+            "white"
+          ],
+          "grapes": {
+            "Riesling": {
+              "summary": "Riper Riesling with more body and less delicate style.",
+              "style": "Ripe citrus, stone fruit.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium to High",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "peach",
+                "citrus"
+              ],
+              "viticulture": [
+                "Warmer climate"
+              ],
+              "winemaking": [
+                "Dry styles common"
+              ],
+              "pairing": [
+                "roast meats"
+              ],
+              "examTips": [
+                "More alcohol and ripeness than Mosel."
+              ],
+              "tags": [
+                "white",
+                "Germany",
+                "Pfalz",
+                "Mittelhaardt"
+              ],
+              "difficulty": 1
+            }
+          }
+        },
+        "sudliche-weinstrasse": {
+          "name": "Sudliche Weinstrasse",
+          "summary": "Southern Pfalz section with warm conditions producing generous ripe dry wines.",
+          "climate": "Moderate continental",
+          "styleSummary": "Riper broader dry wines with fuller fruit profile than many cooler German regions.",
+          "keyGrapes": [
+            "Riesling"
+          ],
+          "examTips": [
+            "Warmth is an important differentiator for Pfalz.",
+            "Dry styles dominate."
+          ],
+          "tags": [
+            "Germany",
+            "Pfalz",
+            "Sudliche Weinstrasse",
+            "white"
+          ],
+          "grapes": {
+            "Riesling": {
+              "summary": "Riper Riesling with more body and less delicate style.",
+              "style": "Ripe citrus, stone fruit.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium to High",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "peach",
+                "citrus"
+              ],
+              "viticulture": [
+                "Warmer climate"
+              ],
+              "winemaking": [
+                "Dry styles common"
+              ],
+              "pairing": [
+                "roast meats"
+              ],
+              "examTips": [
+                "More alcohol and ripeness than Mosel."
+              ],
+              "tags": [
+                "white",
+                "Germany",
+                "Pfalz",
+                "Sudliche Weinstrasse"
+              ],
+              "difficulty": 1
+            }
+          }
+        }
+      },
+      "classification": "Pfalz is a warm dry German region particularly important for dry Riesling.",
+      "lawNotes": [
+        "Warmer conditions than Mosel make fuller drier styles more common."
+      ]
     },
-
     "baden": {
       "name": "Baden",
       "summary": "Warmest German region producing fuller-bodied wines.",
       "climate": "Warm continental",
       "styleSummary": "Fuller-bodied wines.",
-      "mitigating": ["southern location"],
-      "keyGrapes": ["Spätburgunder"],
+      "mitigating": [
+        "southern location"
+      ],
+      "keyGrapes": [
+        "Spätburgunder"
+      ],
       "examTips": [
         "Warmest region.",
         "Important for red wines."
       ],
-      "tags": ["Germany", "warm"],
+      "tags": [
+        "Germany",
+        "warm"
+      ],
       "difficulty": 1,
       "grapes": {
         "Spatburgunder": {
           "summary": "Fuller German Pinot Noir.",
           "style": "Richer red fruit.",
-          "aliases": ["Pinot Noir"],
+          "aliases": [
+            "Pinot Noir"
+          ],
           "profile": {
             "acidity": "Medium",
             "alcohol": "Medium to High",
             "body": "Medium",
             "tannin": "Medium"
           },
-          "aromas": ["red fruit"],
-          "viticulture": ["Warm region"],
-          "winemaking": ["More body"],
-          "pairing": ["roast meat"],
+          "aromas": [
+            "red fruit"
+          ],
+          "viticulture": [
+            "Warm region"
+          ],
+          "winemaking": [
+            "More body"
+          ],
+          "pairing": [
+            "roast meat"
+          ],
           "examTips": [
             "Fuller than other German reds."
           ],
-          "tags": ["red"],
+          "tags": [
+            "red"
+          ],
           "difficulty": 1
         }
       }
+    },
+    "nahe": {
+      "name": "Nahe",
+      "summary": "Diverse region producing expressive Riesling with a balance between Mosel delicacy and fuller warmer-climate ripeness.",
+      "climate": "Cool to Moderate Continental",
+      "styleSummary": "Balanced Riesling with ripe citrus and stone fruit, often combining freshness with a little more body than Mosel.",
+      "mitigating": [
+        "river valleys",
+        "varied soils",
+        "shelter from hills"
+      ],
+      "keyGrapes": [
+        "Riesling"
+      ],
+      "examTips": [
+        "Nahe often sits stylistically between Mosel and Rheingau/Pfalz.",
+        "Diverse soils are an important quality factor."
+      ],
+      "tags": [
+        "Germany",
+        "Nahe",
+        "Riesling",
+        "cool-climate"
+      ],
+      "difficulty": 1,
+      "grapes": {
+        "Riesling": {
+          "summary": "High-acid aromatic grape producing balanced wines with citrus, stone fruit and mineral precision.",
+          "style": "Lime, citrus, peach, mineral notes and high acidity.",
+          "aliases": [],
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Low to Medium",
+            "body": "Light to Medium",
+            "tannin": "-"
+          },
+          "aromas": [
+            "lime",
+            "peach",
+            "citrus",
+            "mineral"
+          ],
+          "viticulture": [
+            "Varied soils influence style strongly",
+            "Cool climate preserves acidity"
+          ],
+          "winemaking": [
+            "Dry to off-dry styles common",
+            "Usually made to preserve purity"
+          ],
+          "pairing": [
+            "river fish",
+            "spicy dishes",
+            "pork"
+          ],
+          "examTips": [
+            "Usually more generous than Mosel but still high in acidity.",
+            "Soil diversity is a useful clue for Nahe."
+          ],
+          "tags": [
+            "white",
+            "high-acid",
+            "Germany",
+            "Nahe"
+          ],
+          "difficulty": 1
+        }
+      }
+    },
+    "rheinhessen": {
+      "name": "Rheinhessen",
+      "summary": "Large important German region increasingly known for high-quality dry Riesling from better sites.",
+      "climate": "Moderate Continental",
+      "styleSummary": "Dry to off-dry Riesling with more body and ripeness than the coolest German regions.",
+      "mitigating": [
+        "sheltered sites",
+        "river influence",
+        "sun exposure"
+      ],
+      "keyGrapes": [
+        "Riesling"
+      ],
+      "examTips": [
+        "Modern quality-focused Rheinhessen is important for dry Riesling.",
+        "Warmer and broader in style than Mosel."
+      ],
+      "tags": [
+        "Germany",
+        "Rheinhessen",
+        "Riesling",
+        "dry"
+      ],
+      "difficulty": 1,
+      "grapes": {
+        "Riesling": {
+          "summary": "Riesling producing dry to off-dry wines with ripe citrus and stone fruit and firm acidity.",
+          "style": "Citrus, peach, apple and mineral freshness with more body than Mosel.",
+          "aliases": [],
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "aromas": [
+            "lime",
+            "apple",
+            "peach",
+            "mineral"
+          ],
+          "viticulture": [
+            "Warmer climate helps ripening",
+            "Site selection is key for premium quality"
+          ],
+          "winemaking": [
+            "Dry styles are common in top wines"
+          ],
+          "pairing": [
+            "roast pork",
+            "sausages",
+            "soft cheeses"
+          ],
+          "examTips": [
+            "Think fuller and drier than many classic Mosel wines.",
+            "Quality depends heavily on the best sites."
+          ],
+          "tags": [
+            "white",
+            "dry",
+            "Germany",
+            "Rheinhessen"
+          ],
+          "difficulty": 1
+        }
+      }
+    },
+    "franken": {
+      "name": "Franken",
+      "summary": "Continental inland region known for dry, often fuller-bodied white wines, especially Silvaner.",
+      "climate": "Continental",
+      "styleSummary": "Dry, structured white wines with firm acidity and less overt fruitiness.",
+      "mitigating": [
+        "inland continental climate",
+        "river influence",
+        "slope aspect"
+      ],
+      "keyGrapes": [
+        "Silvaner",
+        "Riesling"
+      ],
+      "examTips": [
+        "Franken is strongly associated with dry styles.",
+        "Silvaner is a key grape to know here."
+      ],
+      "tags": [
+        "Germany",
+        "Franken",
+        "Silvaner",
+        "dry"
+      ],
+      "difficulty": 1,
+      "grapes": {
+        "Silvaner": {
+          "summary": "Neutral to subtle white grape producing dry, structured wines with herbal and earthy notes.",
+          "style": "Dry, medium-bodied, subtle orchard fruit and herbal notes.",
+          "aliases": [],
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "aromas": [
+            "apple",
+            "pear",
+            "herb",
+            "earthy"
+          ],
+          "viticulture": [
+            "Performs well in continental climates",
+            "Site choice matters for quality"
+          ],
+          "winemaking": [
+            "Usually dry and understated in style"
+          ],
+          "pairing": [
+            "asparagus",
+            "pork",
+            "cream sauces"
+          ],
+          "examTips": [
+            "Less aromatic than Riesling.",
+            "Dry structure is more important than intense fruit."
+          ],
+          "tags": [
+            "white",
+            "dry",
+            "Germany",
+            "Franken"
+          ],
+          "difficulty": 2
+        },
+        "Riesling": {
+          "summary": "Dry German Riesling with firm acidity and restrained fruit.",
+          "style": "Dry, citrus and orchard fruit with mineral freshness.",
+          "aliases": [],
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "aromas": [
+            "lime",
+            "apple",
+            "mineral"
+          ],
+          "viticulture": [
+            "Continental climate",
+            "Good sites required for ripeness"
+          ],
+          "winemaking": [
+            "Dry styles common"
+          ],
+          "pairing": [
+            "pork",
+            "fish",
+            "soft cheese"
+          ],
+          "examTips": [
+            "Usually drier and less delicate than Mosel.",
+            "Silvaner is the more distinctive grape clue for Franken."
+          ],
+          "tags": [
+            "white",
+            "Germany",
+            "Franken"
+          ],
+          "difficulty": 1
+        }
+      },
+      "subregions": {
+        "wurzburg": {
+          "name": "Wurzburg",
+          "summary": "Classic Franken center associated with dry Silvaner and distinctive Bocksbeutel bottles.",
+          "climate": "Moderate continental",
+          "styleSummary": "Dry medium-bodied whites with orchard fruit and often an earthy or savory edge.",
+          "keyGrapes": [
+            "Silvaner",
+            "Riesling"
+          ],
+          "examTips": [
+            "Franken is especially associated with Silvaner and Bocksbeutel.",
+            "Expect dry styles."
+          ],
+          "tags": [
+            "Germany",
+            "Franken",
+            "Wurzburg",
+            "white"
+          ],
+          "grapes": {
+            "Silvaner": {
+              "summary": "Neutral to subtle white grape producing dry, structured wines with herbal and earthy notes.",
+              "style": "Dry, medium-bodied, subtle orchard fruit and herbal notes.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "apple",
+                "pear",
+                "herb",
+                "earthy"
+              ],
+              "viticulture": [
+                "Performs well in continental climates",
+                "Site choice matters for quality"
+              ],
+              "winemaking": [
+                "Usually dry and understated in style"
+              ],
+              "pairing": [
+                "asparagus",
+                "pork",
+                "cream sauces"
+              ],
+              "examTips": [
+                "Less aromatic than Riesling.",
+                "Dry structure is more important than intense fruit."
+              ],
+              "tags": [
+                "white",
+                "dry",
+                "Germany",
+                "Franken",
+                "Wurzburg"
+              ],
+              "difficulty": 2
+            },
+            "Riesling": {
+              "summary": "Dry German Riesling with firm acidity and restrained fruit.",
+              "style": "Dry, citrus and orchard fruit with mineral freshness.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "lime",
+                "apple",
+                "mineral"
+              ],
+              "viticulture": [
+                "Continental climate",
+                "Good sites required for ripeness"
+              ],
+              "winemaking": [
+                "Dry styles common"
+              ],
+              "pairing": [
+                "pork",
+                "fish",
+                "soft cheese"
+              ],
+              "examTips": [
+                "Usually drier and less delicate than Mosel.",
+                "Silvaner is the more distinctive grape clue for Franken."
+              ],
+              "tags": [
+                "white",
+                "Germany",
+                "Franken",
+                "Wurzburg"
+              ],
+              "difficulty": 1
+            }
+          }
+        }
+      },
+      "classification": "Franken is particularly associated with dry Silvaner and the traditional Bocksbeutel bottle."
     }
-
   }
 }

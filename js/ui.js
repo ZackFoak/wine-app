@@ -1,5 +1,13 @@
 import { byId } from "./utils.js";
 
+function escapeHtml(text) {
+  return String(text || "")
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
 export function setBreadcrumb(items) {
   const el = byId("breadcrumb");
 
@@ -18,7 +26,18 @@ export function setBreadcrumb(items) {
 }
 
 export function setPanelTitle(text) {
-  byId("title").innerText = text;
+  byId("title").innerHTML = `
+    <span class="title-text">${escapeHtml(text)}</span>
+    <button
+      class="pronounce-btn title-pronounce-btn"
+      type="button"
+      data-pronounce="${escapeHtml(text)}"
+      aria-label="Pronounce ${escapeHtml(text)}"
+      title="Pronounce ${escapeHtml(text)}"
+    >
+      🔊
+    </button>
+  `;
 }
 
 export function showLoading(message = "Loading...") {

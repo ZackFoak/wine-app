@@ -370,7 +370,209 @@
           "aging": "Appassimento followed by fermentation and maturation",
           "keyPoint": "Know the appassimento method and dry finished style."
         }
-      }
+      },
+      "subregions": {
+        "valpolicella": {
+          "name": "Valpolicella",
+          "summary": "Important Veneto red wine zone producing Valpolicella and the dried-grape Amarone and Recioto styles.",
+          "climate": "Moderated continental",
+          "styleSummary": "Cherry-fruited reds from fresh Valpolicella through richer Amarone-based styles.",
+          "keyGrapes": [
+            "Corvina"
+          ],
+          "examTips": [
+            "Know this as the home of Amarone and Ripasso.",
+            "Appassimento is a key technique here."
+          ],
+          "tags": [
+            "Italy",
+            "Veneto",
+            "Valpolicella",
+            "red"
+          ],
+          "grapes": {
+            "Corvina": {
+              "summary": "Key red grape of Veneto, giving red cherry fruit, freshness and medium body, especially in Valpolicella styles.",
+              "style": "Red cherry, medium body and fresh acidity in Valpolicella styles.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "Low to Medium"
+              },
+              "aromas": [
+                "red cherry",
+                "red fruit",
+                "dried herbs"
+              ],
+              "viticulture": [
+                "Performs well in Veneto",
+                "Useful in appassimento styles"
+              ],
+              "winemaking": [
+                "Fresh styles or appassimento-based richer styles"
+              ],
+              "pairing": [
+                "pizza",
+                "roast pork",
+                "pasta"
+              ],
+              "examTips": [
+                "Think red cherry and freshness in basic styles.",
+                "Also important in appassimento-based richer wines."
+              ],
+              "tags": [
+                "red",
+                "fresh",
+                "appassimento",
+                "Italy",
+                "Veneto",
+                "Valpolicella"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Valpolicella covers fresh red styles plus the dried-grape Amarone and sweet Recioto traditions.",
+          "lawNotes": [
+            "Ripasso and Amarone are key exam concepts here."
+          ]
+        },
+        "soave": {
+          "name": "Soave",
+          "summary": "Classic Veneto white wine area east of Verona known for Garganega-based dry wines.",
+          "climate": "Moderated continental",
+          "styleSummary": "Dry medium-bodied whites with pear, citrus and almond notes, often with better concentration from hillside sites.",
+          "keyGrapes": [
+            "Garganega"
+          ],
+          "examTips": [
+            "Better sites on hills can give more concentration and ageing ability.",
+            "Garganega is the key grape to remember."
+          ],
+          "tags": [
+            "Italy",
+            "Veneto",
+            "Soave",
+            "white"
+          ],
+          "grapes": {
+            "Garganega": {
+              "summary": "Main white grape of Soave, producing medium-bodied citrus and almond-accented wines.",
+              "style": "Medium-bodied white with citrus, pear and almond notes.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "pear",
+                "almond",
+                "orchard fruit"
+              ],
+              "viticulture": [
+                "Main grape of Soave"
+              ],
+              "winemaking": [
+                "Usually dry still white",
+                "Can be simple or more textured"
+              ],
+              "pairing": [
+                "seafood pasta",
+                "grilled fish",
+                "light poultry"
+              ],
+              "examTips": [
+                "Remember Soave = Garganega."
+              ],
+              "tags": [
+                "white",
+                "Soave",
+                "Italy",
+                "Veneto",
+                "medium-body"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Soave is the classic Garganega-based white appellation, with better hillside sites important for quality."
+        },
+        "conegliano-valdobbiadene": {
+          "name": "Conegliano-Valdobbiadene",
+          "summary": "Premium hillside Prosecco area producing more complex and concentrated sparkling wines than the broader DOC.",
+          "climate": "Moderated continental",
+          "styleSummary": "Aromatic sparkling wines with pear, peach and floral notes, often with finer quality and more intensity.",
+          "keyGrapes": [
+            "Glera"
+          ],
+          "examTips": [
+            "This is the premium Prosecco Superiore zone.",
+            "Steep hillside vineyards are an important quality clue."
+          ],
+          "tags": [
+            "Italy",
+            "Veneto",
+            "Conegliano-Valdobbiadene",
+            "sparkling"
+          ],
+          "grapes": {
+            "Glera": {
+              "summary": "The key grape of Prosecco, producing light-bodied aromatic sparkling wines with pear and apple fruit.",
+              "style": "Pear, apple, floral notes and light body in fresh tank method sparkling wines.",
+              "aliases": [
+                "Prosecco"
+              ],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Low to Medium",
+                "body": "Light",
+                "tannin": "-"
+              },
+              "aromas": [
+                "pear",
+                "apple",
+                "floral",
+                "peach"
+              ],
+              "viticulture": [
+                "Best on cooler hills for freshness",
+                "High yields can reduce concentration"
+              ],
+              "winemaking": [
+                "Tank method",
+                "Usually made in youthful fruit-driven styles"
+              ],
+              "pairing": [
+                "aperitif snacks",
+                "prosciutto",
+                "light seafood"
+              ],
+              "examTips": [
+                "Tank method preserves primary fruit.",
+                "Usually lighter and simpler than traditional method sparkling wine."
+              ],
+              "tags": [
+                "white",
+                "sparkling",
+                "Italy",
+                "Veneto",
+                "Prosecco",
+                "Conegliano-Valdobbiadene"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Conegliano-Valdobbiadene Prosecco Superiore DOCG is above the broader Prosecco DOC in the quality hierarchy."
+        }
+      },
+      "classification": "Veneto spans key DOC and DOCG names including Soave, Valpolicella and premium Prosecco zones.",
+      "lawNotes": [
+        "Amarone and Recioto rely on appassimento.",
+        "Conegliano-Valdobbiadene Prosecco Superiore is the prestige Prosecco area."
+      ]
     },
     "tuscany": {
       "name": "Tuscany",
@@ -522,7 +724,314 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "subregions": {
+        "chianti-classico": {
+          "name": "Chianti Classico",
+          "summary": "Historic central Tuscan zone between Florence and Siena focused on quality Sangiovese-based reds.",
+          "climate": "Warm Mediterranean with altitude influence",
+          "styleSummary": "Sour cherry, red plum and savory Sangiovese reds with firm tannin and high acidity.",
+          "keyGrapes": [
+            "Sangiovese"
+          ],
+          "examTips": [
+            "Higher acidity and tannin are classic Sangiovese clues.",
+            "Altitude helps preserve freshness here."
+          ],
+          "tags": [
+            "Italy",
+            "Tuscany",
+            "Chianti Classico",
+            "red"
+          ],
+          "grapes": {
+            "Sangiovese": {
+              "summary": "Italy's key central red grape, known for sour cherry fruit, savoury notes and fresh acidity.",
+              "style": "Sour cherry, herbs, savoury notes with fresh acidity.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium to High",
+                "body": "Medium",
+                "tannin": "Medium"
+              },
+              "aromas": [
+                "sour cherry",
+                "dried herbs",
+                "earthy",
+                "red fruit"
+              ],
+              "viticulture": [
+                "Site-sensitive",
+                "Needs sufficient warmth but not excessive heat"
+              ],
+              "winemaking": [
+                "Oak optional",
+                "Can be varietal or blended"
+              ],
+              "pairing": [
+                "tomato dishes",
+                "roast lamb",
+                "hard cheese"
+              ],
+              "examTips": [
+                "High acidity plus sour cherry is a key clue.",
+                "Usually more savoury than plush."
+              ],
+              "tags": [
+                "red",
+                "high-acid",
+                "savoury",
+                "Italy",
+                "Tuscany",
+                "Sangiovese",
+                "Chianti Classico"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Chianti Classico DOCG is distinct from the broader Chianti DOCG and uses the black rooster as an important symbol."
+        },
+        "montalcino": {
+          "name": "Montalcino",
+          "summary": "Warm Tuscan hill town producing Brunello di Montalcino from Sangiovese with greater power and structure.",
+          "climate": "Warm Mediterranean",
+          "styleSummary": "Concentrated, structured and ageworthy Sangiovese with ripe cherry fruit and savory complexity.",
+          "keyGrapes": [
+            "Sangiovese"
+          ],
+          "examTips": [
+            "Brunello is 100% Sangiovese and more powerful than many Chianti wines.",
+            "Warm conditions help fuller ripeness."
+          ],
+          "tags": [
+            "Italy",
+            "Tuscany",
+            "Montalcino",
+            "red"
+          ],
+          "grapes": {
+            "Sangiovese": {
+              "summary": "Italy's key central red grape, known for sour cherry fruit, savoury notes and fresh acidity.",
+              "style": "Sour cherry, herbs, savoury notes with fresh acidity.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium to High",
+                "body": "Medium",
+                "tannin": "Medium"
+              },
+              "aromas": [
+                "sour cherry",
+                "dried herbs",
+                "earthy",
+                "red fruit"
+              ],
+              "viticulture": [
+                "Site-sensitive",
+                "Needs sufficient warmth but not excessive heat"
+              ],
+              "winemaking": [
+                "Oak optional",
+                "Can be varietal or blended"
+              ],
+              "pairing": [
+                "tomato dishes",
+                "roast lamb",
+                "hard cheese"
+              ],
+              "examTips": [
+                "High acidity plus sour cherry is a key clue.",
+                "Usually more savoury than plush."
+              ],
+              "tags": [
+                "red",
+                "high-acid",
+                "savoury",
+                "Italy",
+                "Tuscany",
+                "Sangiovese",
+                "Montalcino"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Brunello di Montalcino DOCG is made from 100% Sangiovese and requires long ageing."
+        },
+        "montepulciano": {
+          "name": "Montepulciano",
+          "summary": "Tuscan hill town known for Vino Nobile di Montepulciano, a Sangiovese-based red with ripe fruit and structure.",
+          "climate": "Warm Mediterranean",
+          "styleSummary": "Medium to full-bodied Sangiovese-based reds with red cherry, plum and spice.",
+          "keyGrapes": [
+            "Sangiovese"
+          ],
+          "examTips": [
+            "Do not confuse the town Montepulciano with the grape Montepulciano.",
+            "Vino Nobile is based on Sangiovese here."
+          ],
+          "tags": [
+            "Italy",
+            "Tuscany",
+            "Montepulciano",
+            "red"
+          ],
+          "grapes": {
+            "Sangiovese": {
+              "summary": "Italy's key central red grape, known for sour cherry fruit, savoury notes and fresh acidity.",
+              "style": "Sour cherry, herbs, savoury notes with fresh acidity.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium to High",
+                "body": "Medium",
+                "tannin": "Medium"
+              },
+              "aromas": [
+                "sour cherry",
+                "dried herbs",
+                "earthy",
+                "red fruit"
+              ],
+              "viticulture": [
+                "Site-sensitive",
+                "Needs sufficient warmth but not excessive heat"
+              ],
+              "winemaking": [
+                "Oak optional",
+                "Can be varietal or blended"
+              ],
+              "pairing": [
+                "tomato dishes",
+                "roast lamb",
+                "hard cheese"
+              ],
+              "examTips": [
+                "High acidity plus sour cherry is a key clue.",
+                "Usually more savoury than plush."
+              ],
+              "tags": [
+                "red",
+                "high-acid",
+                "savoury",
+                "Italy",
+                "Tuscany",
+                "Sangiovese",
+                "Montepulciano"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Vino Nobile di Montepulciano DOCG is based mainly on Sangiovese grown around the town of Montepulciano."
+        },
+        "bolgheri": {
+          "name": "Bolgheri",
+          "summary": "Coastal Tuscan appellation known for Bordeaux-variety blends in a warmer maritime setting.",
+          "climate": "Warm maritime",
+          "styleSummary": "Riper fuller-bodied reds based on Cabernet Sauvignon and Merlot with oak and international styling.",
+          "keyGrapes": [
+            "Cabernet Sauvignon",
+            "Merlot"
+          ],
+          "examTips": [
+            "Think coastal Tuscany and Bordeaux varieties.",
+            "This is a key Super Tuscan area."
+          ],
+          "tags": [
+            "Italy",
+            "Tuscany",
+            "Bolgheri",
+            "red"
+          ],
+          "grapes": {
+            "Cabernet Sauvignon": {
+              "summary": "International variety used in richer structured Tuscan styles and blends.",
+              "style": "Black fruit, cassis and firmer structure in international styles.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "High",
+                "body": "Full",
+                "tannin": "High"
+              },
+              "aromas": [
+                "blackcurrant",
+                "cassis",
+                "oak",
+                "cedar"
+              ],
+              "viticulture": [
+                "Needs warmth"
+              ],
+              "winemaking": [
+                "Oak common"
+              ],
+              "pairing": [
+                "steak",
+                "lamb",
+                "aged cheese"
+              ],
+              "examTips": [
+                "Used in more international-style Tuscan wines."
+              ],
+              "tags": [
+                "red",
+                "international-variety",
+                "structured",
+                "Italy",
+                "Tuscany",
+                "Bolgheri"
+              ],
+              "difficulty": 1
+            },
+            "Merlot": {
+              "summary": "Plum-fruited softer-textured international grape used in Tuscan blends and varietal wines.",
+              "style": "Plum, black fruit and rounder texture.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium to High",
+                "body": "Medium to Full",
+                "tannin": "Medium"
+              },
+              "aromas": [
+                "plum",
+                "black fruit",
+                "soft spice"
+              ],
+              "viticulture": [
+                "Earlier ripening than Cabernet Sauvignon"
+              ],
+              "winemaking": [
+                "Oak common"
+              ],
+              "pairing": [
+                "duck",
+                "roast meats",
+                "pasta with ragù"
+              ],
+              "examTips": [
+                "Usually softer and rounder than Cabernet Sauvignon."
+              ],
+              "tags": [
+                "red",
+                "plum",
+                "softer-style",
+                "Italy",
+                "Tuscany",
+                "Bolgheri"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Bolgheri became one of the best-known homes of Super Tuscan Bordeaux-variety wines."
+        }
+      },
+      "classification": "Key Tuscan quality names include Chianti Classico DOCG, Brunello di Montalcino DOCG, Vino Nobile di Montepulciano DOCG and the IGT Toscana category for many Super Tuscan wines.",
+      "lawNotes": [
+        "Sangiovese is the central grape for the classic Tuscan DOCG wines.",
+        "IGT Toscana became important for non-traditional blends and varietal choices."
+      ]
     },
     "marche": {
       "name": "Marche",
@@ -1497,6 +2006,47 @@
             "Piemonte"
           ],
           "difficulty": 1
+        },
+        "Cortese": {
+          "summary": "Fresh high-acid white grape best known for Gavi, producing light to medium-bodied wines with citrus and green apple character.",
+          "style": "Dry, fresh, citrus-led white with green apple and subtle almond notes.",
+          "aliases": [],
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Light to Medium",
+            "tannin": "-"
+          },
+          "aromas": [
+            "citrus",
+            "green apple",
+            "pear",
+            "almond"
+          ],
+          "viticulture": [
+            "Retains acidity well",
+            "Best examples come from carefully sited hillside vineyards"
+          ],
+          "winemaking": [
+            "Usually made in stainless steel for freshness",
+            "Generally unoaked"
+          ],
+          "pairing": [
+            "shellfish",
+            "light fish dishes",
+            "salads"
+          ],
+          "examTips": [
+            "Think Gavi for Cortese.",
+            "Usually lighter and fresher than many rich Italian whites."
+          ],
+          "tags": [
+            "white",
+            "high-acid",
+            "Italy",
+            "Piemonte"
+          ],
+          "difficulty": 2
         }
       },
       "styles": {
@@ -1512,7 +2062,276 @@
           "aging": "Stopped fermentation keeps sweetness and low alcohol",
           "keyPoint": "Usually frizzante rather than fully sparkling."
         }
-      }
+      },
+      "subregions": {
+        "barolo": {
+          "name": "Barolo",
+          "summary": "Prestige Langhe appellation producing powerful long-lived Nebbiolo wines.",
+          "climate": "Moderate continental",
+          "styleSummary": "Full-bodied high-tannin high-acid Nebbiolo with rose, tar and red cherry notes.",
+          "keyGrapes": [
+            "Nebbiolo"
+          ],
+          "examTips": [
+            "Nebbiolo means pale color but high tannin and acidity.",
+            "Barolo is generally the most powerful classic Piemonte expression."
+          ],
+          "tags": [
+            "Italy",
+            "Piemonte",
+            "Barolo",
+            "red"
+          ],
+          "grapes": {
+            "Nebbiolo": {
+              "summary": "Classic Piedmont grape producing pale-coloured but high-acid, high-tannin wines with floral and tar notes.",
+              "style": "Rose, red cherry, tar, high acidity and high tannin with long ageing potential.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Medium to High",
+                "body": "Medium to Full",
+                "tannin": "High"
+              },
+              "aromas": [
+                "rose",
+                "red cherry",
+                "tar",
+                "dried herbs"
+              ],
+              "viticulture": [
+                "Late budding and late ripening",
+                "Needs the best sites to ripen fully"
+              ],
+              "winemaking": [
+                "Extended maceration common",
+                "Oak ageing common in premium styles"
+              ],
+              "pairing": [
+                "truffle dishes",
+                "braised beef",
+                "hard cheese"
+              ],
+              "examTips": [
+                "Pale colour does not mean low tannin.",
+                "Barolo and Barbaresco are the key benchmark wines."
+              ],
+              "tags": [
+                "red",
+                "high-tannin",
+                "high-acid",
+                "Italy",
+                "Piemonte",
+                "Barolo"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Barolo DOCG is the prestige full-bodied Nebbiolo appellation with long ageing expectations."
+        },
+        "barbaresco": {
+          "name": "Barbaresco",
+          "summary": "Prestige Nebbiolo appellation producing fragrant but still structured wines from a slightly milder area than Barolo.",
+          "climate": "Moderate continental",
+          "styleSummary": "Perfumed Nebbiolo with red fruit, floral notes, high acidity and firm tannin.",
+          "keyGrapes": [
+            "Nebbiolo"
+          ],
+          "examTips": [
+            "Often a little lighter and earlier maturing than Barolo.",
+            "Still expect high tannin and acidity."
+          ],
+          "tags": [
+            "Italy",
+            "Piemonte",
+            "Barbaresco",
+            "red"
+          ],
+          "grapes": {
+            "Nebbiolo": {
+              "summary": "Classic Piedmont grape producing pale-coloured but high-acid, high-tannin wines with floral and tar notes.",
+              "style": "Rose, red cherry, tar, high acidity and high tannin with long ageing potential.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Medium to High",
+                "body": "Medium to Full",
+                "tannin": "High"
+              },
+              "aromas": [
+                "rose",
+                "red cherry",
+                "tar",
+                "dried herbs"
+              ],
+              "viticulture": [
+                "Late budding and late ripening",
+                "Needs the best sites to ripen fully"
+              ],
+              "winemaking": [
+                "Extended maceration common",
+                "Oak ageing common in premium styles"
+              ],
+              "pairing": [
+                "truffle dishes",
+                "braised beef",
+                "hard cheese"
+              ],
+              "examTips": [
+                "Pale colour does not mean low tannin.",
+                "Barolo and Barbaresco are the key benchmark wines."
+              ],
+              "tags": [
+                "red",
+                "high-tannin",
+                "high-acid",
+                "Italy",
+                "Piemonte",
+                "Barbaresco"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Barbaresco DOCG is also 100% Nebbiolo, usually seen as a little lighter or earlier maturing than Barolo."
+        },
+        "asti": {
+          "name": "Asti",
+          "summary": "Piemonte sparkling area known for sweet low-alcohol Moscato d’Asti and Asti styles.",
+          "climate": "Moderate continental",
+          "styleSummary": "Light aromatic sparkling wines with grapey peach and floral notes and often some sweetness.",
+          "keyGrapes": [
+            "Moscato Bianco"
+          ],
+          "examTips": [
+            "Moscato Bianco gives very pronounced grapey aromatics.",
+            "Asti and Moscato d’Asti are key Level 3 sparkling styles."
+          ],
+          "tags": [
+            "Italy",
+            "Piemonte",
+            "Asti",
+            "sparkling"
+          ],
+          "grapes": {
+            "Moscato Bianco": {
+              "summary": "Highly aromatic grape used for Asti and Moscato d’Asti, giving floral grapey wines with low alcohol.",
+              "style": "Grapey, floral, peachy and sweet with low alcohol and gentle mousse or frizzante.",
+              "aliases": [
+                "Muscat Blanc a Petits Grains"
+              ],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Low",
+                "body": "Light",
+                "tannin": "-"
+              },
+              "aromas": [
+                "grape",
+                "floral",
+                "peach",
+                "orange blossom"
+              ],
+              "viticulture": [
+                "Very aromatic variety",
+                "Needs careful handling to preserve aromatics"
+              ],
+              "winemaking": [
+                "Tank method for Asti",
+                "Interrupted fermentation keeps sweetness and low alcohol"
+              ],
+              "pairing": [
+                "fruit desserts",
+                "light pastries",
+                "brunch dishes"
+              ],
+              "examTips": [
+                "Asti is fully sparkling; Moscato d’Asti is usually lightly sparkling and lower alcohol.",
+                "Primary fruit and aromatics matter more than autolytic notes."
+              ],
+              "tags": [
+                "white",
+                "sparkling",
+                "sweet",
+                "aromatic",
+                "Italy",
+                "Piemonte",
+                "Asti"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Asti DOCG and Moscato d’Asti DOCG are key aromatic sparkling appellations based on Moscato Bianco."
+        },
+        "gavi": {
+          "name": "Gavi",
+          "summary": "Important southeastern Piemonte white wine area producing dry Cortese-based wines.",
+          "climate": "Moderate continental",
+          "styleSummary": "Dry fresh whites with citrus, apple and almond notes and high acidity.",
+          "keyGrapes": [
+            "Cortese"
+          ],
+          "examTips": [
+            "Know Gavi as the key Cortese appellation.",
+            "Usually a fresh stainless-steel style."
+          ],
+          "tags": [
+            "Italy",
+            "Piemonte",
+            "Gavi",
+            "white"
+          ],
+          "grapes": {
+            "Cortese": {
+              "summary": "Fresh high-acid white grape best known for Gavi, producing light to medium-bodied wines with citrus and green apple character.",
+              "style": "Dry, fresh, citrus-led white with green apple and subtle almond notes.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Medium",
+                "body": "Light to Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "green apple",
+                "pear",
+                "almond"
+              ],
+              "viticulture": [
+                "Retains acidity well",
+                "Best examples come from carefully sited hillside vineyards"
+              ],
+              "winemaking": [
+                "Usually made in stainless steel for freshness",
+                "Generally unoaked"
+              ],
+              "pairing": [
+                "shellfish",
+                "light fish dishes",
+                "salads"
+              ],
+              "examTips": [
+                "Think Gavi for Cortese.",
+                "Usually lighter and fresher than many rich Italian whites."
+              ],
+              "tags": [
+                "white",
+                "high-acid",
+                "Italy",
+                "Piemonte",
+                "Gavi"
+              ],
+              "difficulty": 2
+            }
+          },
+          "classification": "Gavi DOCG is the classic Cortese appellation of southeastern Piemonte."
+        }
+      },
+      "classification": "Piemonte combines major DOCG red appellations such as Barolo and Barbaresco with important sparkling and white appellations such as Asti and Gavi.",
+      "lawNotes": [
+        "Nebbiolo gives pale color but high tannin and acidity.",
+        "Asti and Moscato d’Asti are important sweet sparkling exam styles."
+      ]
     }
   },
   "examTips": [

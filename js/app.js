@@ -5,8 +5,155 @@ import { startQuiz, buildGeneratedQuestions, startCustomQuiz } from "./quiz.js";
 
 let recent = JSON.parse(localStorage.getItem("wineRecent") || "[]");
 
+const speechState = {
+  preferredVoice: null,
+  voicesPromise: null
+};
+let mapCenterTimer = null;
+let markerLayoutTimer = null;
+
+const REGION_CATEGORY_RULES = {
+  sparkling: new Set([
+    "france::champagne",
+    "france::alsace",
+    "france::burgundy",
+    "france::anjou-saumur",
+    "france::touraine",
+    "italy::veneto",
+    "italy::piemonte",
+    "spain::penedes",
+    "australia::adelaide-hills",
+    "australia::yarra-valley",
+    "australia::tasmania",
+    "new-zealand::marlborough",
+    "south-africa::stellenbosch",
+    "usa::california"
+  ]),
+  fortified: new Set([
+    "france::southern-rhone",
+    "spain::jerez",
+    "portugal::douro",
+    "australia::rutherglen"
+  ]),
+  stillOnlyExclusions: new Set([
+    "france::champagne",
+    "spain::penedes",
+    "spain::jerez",
+    "australia::rutherglen"
+  ])
+};
+
 function saveRecent() {
   localStorage.setItem("wineRecent", JSON.stringify(recent));
+}
+
+function renderPronounceButton(text, label = text) {
+  const safeText = String(text || "")
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+
+  const safeLabel = String(label || text || "")
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+
+  return `
+    <button
+      class="pronounce-btn"
+      type="button"
+      data-pronounce="${safeText}"
+      aria-label="Pronounce ${safeLabel}"
+      title="Pronounce ${safeLabel}"
+    >
+      🔊
+    </button>
+  `;
+}
+
+function pickPreferredVoice() {
+  const voices = window.speechSynthesis.getVoices();
+  return voices.find(voice =>
+    /^en(-|_)?/i.test(voice.lang) && /google|samantha|daniel|serena|alex|ava|victoria|karen/i.test(voice.name)
+  ) || voices.find(voice => /^en(-|_)?/i.test(voice.lang)) || null;
+}
+
+function ensureSpeechVoiceReady() {
+  if (!("speechSynthesis" in window)) {
+    return Promise.resolve(null);
+  }
+
+  if (speechState.preferredVoice) {
+    return Promise.resolve(speechState.preferredVoice);
+  }
+
+  const existingVoice = pickPreferredVoice();
+  if (existingVoice) {
+    speechState.preferredVoice = existingVoice;
+    return Promise.resolve(existingVoice);
+  }
+
+  if (speechState.voicesPromise) {
+    return speechState.voicesPromise;
+  }
+
+  speechState.voicesPromise = new Promise(resolve => {
+    const synth = window.speechSynthesis;
+
+    const finish = () => {
+      speechState.preferredVoice = pickPreferredVoice();
+      resolve(speechState.preferredVoice);
+    };
+
+    const handleVoicesChanged = () => {
+      synth.removeEventListener("voiceschanged", handleVoicesChanged);
+      finish();
+    };
+
+    synth.addEventListener("voiceschanged", handleVoicesChanged);
+
+    window.setTimeout(() => {
+      synth.removeEventListener("voiceschanged", handleVoicesChanged);
+      finish();
+    }, 1200);
+  }).finally(() => {
+    speechState.voicesPromise = null;
+  });
+
+  return speechState.voicesPromise;
+}
+
+async function speakPronunciation(text) {
+  const phrase = String(text || "").trim();
+  if (!phrase || !("speechSynthesis" in window)) return;
+
+  const preferredVoice = await ensureSpeechVoiceReady();
+  window.speechSynthesis.cancel();
+
+  const utterance = new SpeechSynthesisUtterance(phrase);
+
+  if (preferredVoice) {
+    utterance.voice = preferredVoice;
+    utterance.lang = preferredVoice.lang;
+  } else {
+    utterance.lang = "en-US";
+  }
+
+  utterance.rate = 0.92;
+  utterance.pitch = 1;
+  window.speechSynthesis.speak(utterance);
+}
+
+function bindPronounceButtons() {
+  document.querySelectorAll("[data-pronounce]").forEach(btn => {
+    btn.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      void speakPronunciation(btn.dataset.pronounce);
+    });
+  });
 }
 
 // ================= MAP =================
@@ -39,6 +186,47 @@ function clearRegionMarkers() {
   state.activeCountryKey = null;
 }
 
+function clearSubregionMarkers() {
+  state.subregionMarkers.forEach(marker => {
+    if (map.hasLayer(marker)) {
+      map.removeLayer(marker);
+    }
+  });
+
+  state.subregionMarkers = [];
+}
+
+function getRegionCategories(countryKey, regionKey) {
+  const id = `${countryKey}::${regionKey}`;
+  const categories = new Set(["still"]);
+
+  if (REGION_CATEGORY_RULES.sparkling.has(id)) {
+    categories.add("sparkling");
+  }
+
+  if (REGION_CATEGORY_RULES.fortified.has(id)) {
+    categories.add("fortified");
+  }
+
+  if (REGION_CATEGORY_RULES.stillOnlyExclusions.has(id)) {
+    categories.delete("still");
+  }
+
+  return categories;
+}
+
+function getVisibleRegionEntries(countryKey, country) {
+  const entries = Object.entries(country?.regions || {});
+
+  if (state.currentFilter === "all") {
+    return entries;
+  }
+
+  return entries.filter(([regionKey]) =>
+    getRegionCategories(countryKey, regionKey).has(state.currentFilter)
+  );
+}
+
 function hideAllCountryMarkers() {
   Object.values(state.markers).forEach(marker => {
     if (map.hasLayer(marker)) {
@@ -47,7 +235,100 @@ function hideAllCountryMarkers() {
   });
 }
 
+function getVisibleMarkers() {
+  if (state.subregionMarkers.length) {
+    return state.subregionMarkers.filter(marker => map.hasLayer(marker));
+  }
+
+  if (state.regionMarkers.length) {
+    return state.regionMarkers.filter(marker => map.hasLayer(marker));
+  }
+
+  return Object.values(state.markers).filter(marker => map.hasLayer(marker));
+}
+
+function clearMarkerOffsets(markers = []) {
+  markers.forEach(marker => {
+    const element = marker.getElement();
+    if (!element) return;
+    element.style.setProperty("--marker-shift-x", "0px");
+    element.style.setProperty("--marker-shift-y", "0px");
+    element.style.zIndex = "";
+  });
+}
+
+function applyMarkerOverlapLayout() {
+  const markers = getVisibleMarkers();
+  if (!markers.length) return;
+
+  clearMarkerOffsets(markers);
+
+  const thresholdX = state.subregionMarkers.length ? 96 : 120;
+  const thresholdY = state.subregionMarkers.length ? 42 : 54;
+  const positioned = markers
+    .map(marker => ({
+      marker,
+      point: map.latLngToLayerPoint(marker.getLatLng())
+    }))
+    .sort((a, b) => a.point.y - b.point.y);
+
+  const visited = new Set();
+  let clusterIndex = 0;
+
+  positioned.forEach((entry, index) => {
+    if (visited.has(index)) return;
+
+    const cluster = [entry];
+    visited.add(index);
+
+    for (let i = index + 1; i < positioned.length; i += 1) {
+      if (visited.has(i)) continue;
+
+      const candidate = positioned[i];
+      const closeToCluster = cluster.some(item =>
+        Math.abs(item.point.x - candidate.point.x) < thresholdX &&
+        Math.abs(item.point.y - candidate.point.y) < thresholdY
+      );
+
+      if (closeToCluster) {
+        cluster.push(candidate);
+        visited.add(i);
+      }
+    }
+
+    if (cluster.length === 1) return;
+
+    const angleStep = (Math.PI * 2) / cluster.length;
+    const radius = Math.min(42, 16 + cluster.length * 5);
+
+    cluster.forEach((item, itemIndex) => {
+      const angle = (clusterIndex * 0.55) + (itemIndex * angleStep) - (Math.PI / 2);
+      const offsetX = Math.round(Math.cos(angle) * radius);
+      const offsetY = Math.round(Math.sin(angle) * radius * 0.72);
+      const element = item.marker.getElement();
+      if (!element) return;
+      element.style.setProperty("--marker-shift-x", `${offsetX}px`);
+      element.style.setProperty("--marker-shift-y", `${offsetY}px`);
+      element.style.zIndex = String(500 + itemIndex);
+    });
+
+    clusterIndex += 1;
+  });
+}
+
+function scheduleMarkerOverlapLayout(delay = 80) {
+  if (markerLayoutTimer) {
+    window.clearTimeout(markerLayoutTimer);
+  }
+
+  markerLayoutTimer = window.setTimeout(() => {
+    applyMarkerOverlapLayout();
+    markerLayoutTimer = null;
+  }, delay);
+}
+
 function restoreCountryMarkers() {
+  clearSubregionMarkers();
   clearRegionMarkers();
 
   Object.keys(state.markers).forEach(key => {
@@ -62,6 +343,99 @@ function restoreCountryMarkers() {
       map.removeLayer(marker);
     }
   });
+
+  scheduleMarkerOverlapLayout();
+}
+
+function getSubregionCoords(countryKey, regionKey, subregionKey) {
+  return state.subregionCoords?.[countryKey]?.[regionKey]?.[subregionKey] || null;
+}
+
+function getSubregionEntries(countryKey, regionKey, region) {
+  const entries = Object.entries(region?.subregions || {});
+
+  if (state.currentFilter === "all") {
+    return entries;
+  }
+
+  return entries.filter(([subregionKey]) =>
+    getRegionCategories(countryKey, subregionKey).has(state.currentFilter) ||
+    getRegionCategories(countryKey, regionKey).has(state.currentFilter)
+  );
+}
+
+function getVisibleMapFitPadding() {
+  const toolbar = byId("topToolbar");
+  const mapElement = byId("map");
+
+  if (!toolbar || !sheet || !mapElement) {
+    return {
+      paddingTopLeft: [50, 50],
+      paddingBottomRight: [50, 50]
+    };
+  }
+
+  const toolbarRect = toolbar.getBoundingClientRect();
+  const sheetRect = sheet.getBoundingClientRect();
+  const mapRect = mapElement.getBoundingClientRect();
+
+  const topInset = Math.max(32, Math.round(toolbarRect.bottom - mapRect.top + 20));
+  const bottomInset = Math.max(32, Math.round(mapRect.bottom - sheetRect.top + 20));
+
+  return {
+    paddingTopLeft: [60, topInset],
+    paddingBottomRight: [60, bottomInset]
+  };
+}
+
+function focusMapOnSubregionMarkers(countryKey, regionKey) {
+  const coords = Object.entries(state.subregionCoords?.[countryKey]?.[regionKey] || {})
+    .map(([, value]) => value)
+    .filter(value => Array.isArray(value) && value.length === 2);
+
+  if (!coords.length) return;
+
+  if (coords.length === 1) {
+    centerMapOnSelection(coords[0], 7);
+    return;
+  }
+
+  const { paddingTopLeft, paddingBottomRight } = getVisibleMapFitPadding();
+  map.flyToBounds(coords, {
+    paddingTopLeft,
+    paddingBottomRight,
+    maxZoom: 7
+  });
+}
+
+function showSubregionMarkers(countryKey, regionKey, region) {
+  clearSubregionMarkers();
+  clearRegionMarkers();
+
+  const subregionCoords = state.subregionCoords?.[countryKey]?.[regionKey] || {};
+  const subregionEntries = getSubregionEntries(countryKey, regionKey, region);
+
+  subregionEntries.forEach(([subregionKey, subregion]) => {
+    const coords = subregionCoords[subregionKey];
+    if (!Array.isArray(coords) || coords.length !== 2) return;
+
+    const marker = L.marker(coords, {
+      icon: L.divIcon({
+        className: "region-map-marker-wrap",
+        html: `<button class="region-map-marker" type="button">${subregion.name || subregionKey}</button>`,
+        iconSize: null
+      }),
+      keyboard: true,
+      title: subregion.name || subregionKey
+    });
+
+    marker.on("click", () => showSubregion(countryKey, regionKey, subregionKey));
+    marker.addTo(map);
+    state.subregionMarkers.push(marker);
+  });
+
+  scheduleMarkerOverlapLayout();
+  focusMapOnSubregionMarkers(countryKey, regionKey);
 }
 
 function getRegionCoords(countryKey, regionKey) {
@@ -76,22 +450,74 @@ function focusMapOnRegionMarkers(countryKey) {
   if (!coords.length) return;
 
   if (coords.length === 1) {
-    map.flyTo(coords[0], 7);
+    centerMapOnSelection(coords[0], 7);
     return;
   }
 
+  const { paddingTopLeft, paddingBottomRight } = getVisibleMapFitPadding();
   map.flyToBounds(coords, {
-    padding: [50, 50],
+    paddingTopLeft,
+    paddingBottomRight,
     maxZoom: 7
   });
 }
 
+function centerMapOnSelection(coords, fallbackZoom = 7) {
+  if (!Array.isArray(coords) || coords.length !== 2) return;
+
+  if (mapCenterTimer) {
+    window.clearTimeout(mapCenterTimer);
+  }
+
+  mapCenterTimer = window.setTimeout(() => {
+    const markerCount = Math.max(state.regionMarkers.length, state.subregionMarkers.length);
+    const toolbar = byId("topToolbar");
+    const mapElement = byId("map");
+    const targetZoom = markerCount > 1
+      ? Math.max(2, map.getZoom() - 1)
+      : fallbackZoom;
+
+    const moveSelectionIntoVisibleBand = () => {
+      if (!toolbar || !sheet || !mapElement) return;
+
+      const toolbarRect = toolbar.getBoundingClientRect();
+      const sheetRect = sheet.getBoundingClientRect();
+      const mapRect = mapElement.getBoundingClientRect();
+
+      const visibleTop = Math.max(mapRect.top + 16, toolbarRect.bottom + 16);
+      const visibleBottom = Math.min(mapRect.bottom - 16, sheetRect.top - 16);
+      const visibleCenterY = visibleBottom > visibleTop
+        ? (visibleTop + visibleBottom) / 2
+        : mapRect.top + mapRect.height / 2;
+
+      const desiredPoint = L.point(
+        mapRect.width / 2,
+        Math.max(24, Math.min(mapRect.height - 24, visibleCenterY - mapRect.top))
+      );
+
+      const projectedTarget = map.project(coords, map.getZoom());
+      const centeredTarget = projectedTarget.subtract(
+        desiredPoint.subtract(map.getSize().divideBy(2))
+      );
+      const adjustedCenter = map.unproject(centeredTarget, map.getZoom());
+
+      map.panTo(adjustedCenter, { animate: true, duration: 0.35 });
+    };
+
+    map.flyTo(coords, targetZoom, { duration: 0.45 });
+    window.setTimeout(moveSelectionIntoVisibleBand, 320);
+
+    mapCenterTimer = null;
+  }, 280);
+}
+
 function showRegionMarkers(countryKey, country) {
+  clearSubregionMarkers();
   clearRegionMarkers();
   hideAllCountryMarkers();
 
   const regionCoords = state.regionCoords?.[countryKey] || {};
-  const regionEntries = Object.entries(country.regions || {});
+  const regionEntries = getVisibleRegionEntries(countryKey, country);
 
   regionEntries.forEach(([regionKey, region]) => {
     const coords = regionCoords[regionKey];
@@ -113,6 +539,7 @@ function showRegionMarkers(countryKey, country) {
   });
 
   state.activeCountryKey = countryKey;
+  scheduleMarkerOverlapLayout();
   focusMapOnRegionMarkers(countryKey);
 }
 
@@ -121,6 +548,7 @@ async function init() {
   showLoading("Loading Wine Atlas...");
   state.countriesData = await loadJson("./data/countries.json");
   state.regionCoords = await loadJson("./data/region-coords.json");
+  state.subregionCoords = await loadJson("./data/subregion-coords.json");
   state.quizQuestions = [];
 
   Object.keys(state.countriesData).forEach(key => {
@@ -139,6 +567,8 @@ async function init() {
     marker.on("click", () => showCountry(key));
     state.markers[key] = marker;
   });
+
+  scheduleMarkerOverlapLayout(140);
 
   byId("searchInput").addEventListener("input", debounce(function (e) {
     searchAll(e.target.value);
@@ -194,6 +624,10 @@ async function init() {
 
 init();
 
+map.on("zoomend moveend", () => {
+  scheduleMarkerOverlapLayout(40);
+});
+
 // ================= COUNTRY =================
 async function showCountry(countryKey) {
   showLoading("Loading country...");
@@ -214,14 +648,13 @@ async function showCountry(countryKey) {
       <div class="section-card">
         <button class="btn secondary" id="backToCountriesBtn">← All Countries</button>
         <p><b>Country:</b> ${country.name}</p>
-        <p>Select a region to view its details.</p>
+        <p>Select a ${state.currentFilter === "all" ? "" : `${state.currentFilter} `}region to view its details.</p>
         <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
     `;
 
-    const regionKeys = Object.keys(country.regions || {});
-    if (regionKeys.length) {
-      html += regionKeys.map(regionKey => {
-        const region = country.regions?.[regionKey];
+    const visibleRegionEntries = getVisibleRegionEntries(countryKey, country);
+    if (visibleRegionEntries.length) {
+      html += visibleRegionEntries.map(([regionKey, region]) => {
         const label = region?.name || regionKey;
         return `
           <button class="pill" data-region="${regionKey}">
@@ -230,7 +663,7 @@ async function showCountry(countryKey) {
         `;
       }).join("");
     } else {
-      html += `<p>No regions available.</p>`;
+      html += `<p>No ${state.currentFilter === "all" ? "" : state.currentFilter} regions available.</p>`;
     }
 
     html += `
@@ -252,6 +685,7 @@ async function showCountry(countryKey) {
     document.querySelectorAll("[data-region]").forEach(btn => {
       btn.addEventListener("click", () => showRegion(countryKey, btn.dataset.region));
     });
+    bindPronounceButtons();
   } catch (err) {
     console.error("showCountry failed:", err);
     byId("content").innerHTML = `
@@ -265,20 +699,26 @@ async function showCountry(countryKey) {
 // ================= REGION =================
 async function showRegion(countryKey, regionKey) {
   showLoading("Loading region...");
-  openSheetFull();
+  openSheetMid();
   try {
     const countryMeta = state.countriesData[countryKey];
     const country = await loadJson(`./data/${countryMeta.file}`);
     const region = country.regions?.[regionKey];
     if (!region) return;
 
-    showRegionMarkers(countryKey, country);
+    const subregionEntries = getSubregionEntries(countryKey, regionKey, region);
 
-    const regionCoords = getRegionCoords(countryKey, regionKey);
-    if (regionCoords) {
-      map.flyTo(regionCoords, 7);
-    } else if (countryMeta.coords && countryMeta.zoom) {
-      map.flyTo(countryMeta.coords, countryMeta.zoom);
+    if (subregionEntries.length) {
+      showSubregionMarkers(countryKey, regionKey, region);
+    } else {
+      showRegionMarkers(countryKey, country);
+
+      const regionCoords = getRegionCoords(countryKey, regionKey);
+      if (regionCoords) {
+        centerMapOnSelection(regionCoords, 7);
+      } else if (countryMeta.coords && countryMeta.zoom) {
+        map.flyTo(countryMeta.coords, countryMeta.zoom);
+      }
     }
 
     setPanelTitle(region.name || regionKey);
@@ -299,8 +739,16 @@ async function showRegion(countryKey, regionKey) {
         ${region.summary ? `<p><b>Summary:</b> ${region.summary}</p>` : ""}
         <p><b>Climate:</b> ${region.climate || "-"}</p>
         <p><b>Style:</b> ${region.styleSummary || "-"}</p>
+        ${region.classification ? `<p><b>Classification:</b> ${region.classification}</p>` : ""}
+        ${region.lawNotes?.length ? `<p><b>Law / Exam Notes:</b> ${region.lawNotes.join(" ")}</p>` : ""}
         ${region.keyGrapes?.length ? `<p><b>Key Grapes:</b> ${region.keyGrapes.join(", ")}</p>` : ""}
-        <p><b>Grapes:</b></p>
+        ${subregionEntries.length ? `<p><b>Sub-regions:</b></p>` : ""}
+        ${subregionEntries.length ? subregionEntries.map(([subregionKey, subregion]) => `
+          <button class="pill" data-subregion="${subregionKey}">
+            ${subregion.name || subregionKey}
+          </button>
+        `).join("") : ""}
+        ${subregionEntries.length ? `<p style="margin-top:14px;"><b>Grapes:</b></p>` : `<p><b>Grapes:</b></p>`}
 `;
 
     const grapeKeys = Object.keys(region.grapes || {});
@@ -356,6 +804,10 @@ async function showRegion(countryKey, regionKey) {
 
     byId("backToCountry").onclick = () => showCountry(countryKey);
 
+    document.querySelectorAll("[data-subregion]").forEach(btn => {
+      btn.addEventListener("click", () => showSubregion(countryKey, regionKey, btn.dataset.subregion));
+    });
+
     document.querySelectorAll("[data-grape]").forEach(btn => {
       btn.addEventListener("click", () => showGrape(countryKey, regionKey, btn.dataset.grape));
     });
@@ -363,6 +815,7 @@ async function showRegion(countryKey, regionKey) {
     document.querySelectorAll("[data-style]").forEach(btn => {
       btn.addEventListener("click", () => showStyle(countryKey, btn.dataset.style, regionKey));
     });
+    bindPronounceButtons();
 
     byId("quizThisRegionBtn").onclick = async () => {
       const questions = await buildQuizForRegion(
@@ -383,29 +836,132 @@ async function showRegion(countryKey, regionKey) {
   }
 }
 
+async function showSubregion(countryKey, regionKey, subregionKey) {
+  showLoading("Loading sub-region...");
+  openSheetMid();
+  try {
+    const countryMeta = state.countriesData[countryKey];
+    const country = await loadJson(`./data/${countryMeta.file}`);
+    const region = country.regions?.[regionKey];
+    const subregion = region?.subregions?.[subregionKey];
+    if (!region || !subregion) return;
+
+    showSubregionMarkers(countryKey, regionKey, region);
+
+    const subregionCoords = getSubregionCoords(countryKey, regionKey, subregionKey);
+    if (subregionCoords) {
+      centerMapOnSelection(subregionCoords, 8);
+    }
+
+    setPanelTitle(subregion.name || subregionKey);
+    setBreadcrumb([
+      { label: country.name || countryKey, click: () => showCountry(countryKey) },
+      { label: region.name || regionKey, click: () => showRegion(countryKey, regionKey) },
+      { label: subregion.name || subregionKey }
+    ]);
+
+    const subregionGrapeEntries = Object.entries(subregion.grapes || {});
+    const derivedGrapeKeys = subregionGrapeEntries.length
+      ? subregionGrapeEntries.map(([grapeKey]) => grapeKey)
+      : (subregion.keyGrapes || []).filter(grapeKey => region.grapes?.[grapeKey]);
+
+    let html = `
+      <div class="section-card">
+        <button class="btn secondary" id="backToRegion">← Back</button>
+        <p><b>Sub-region:</b> ${subregion.name || subregionKey}</p>
+        ${subregion.summary ? `<p><b>Summary:</b> ${subregion.summary}</p>` : ""}
+        <p><b>Climate:</b> ${subregion.climate || region.climate || "-"}</p>
+        <p><b>Style:</b> ${subregion.styleSummary || "-"}</p>
+        ${subregion.classification ? `<p><b>Classification:</b> ${subregion.classification}</p>` : ""}
+        ${subregion.lawNotes?.length ? `<p><b>Law / Exam Notes:</b> ${subregion.lawNotes.join(" ")}</p>` : ""}
+        ${subregion.keyGrapes?.length ? `<p><b>Key Grapes:</b> ${subregion.keyGrapes.join(", ")}</p>` : ""}
+        ${derivedGrapeKeys.length ? `<p><b>Grapes:</b></p>
+        ${derivedGrapeKeys.map(grapeKey => `
+          <button class="pill" data-subregion-grape="${grapeKey}">
+            ${grapeKey}
+          </button>
+        `).join("")}` : ""}
+      </div>
+    `;
+
+    if (subregion.examTips?.length) {
+      html += `
+        <div class="section-card">
+          <p class="section-title">Exam Tips</p>
+          <ul>${subregion.examTips.map(x => `<li>${x}</li>`).join("")}</ul>
+        </div>
+      `;
+    }
+
+    if (subregion.tags?.length) {
+      html += `
+        <div class="section-card">
+          <p class="section-title">Tags</p>
+          <div>${subregion.tags.map(x => `<span class="pill">${x}</span>`).join("")}</div>
+        </div>
+      `;
+    }
+
+    byId("content").innerHTML = html;
+
+    byId("backToRegion").onclick = () => showRegion(countryKey, regionKey);
+
+    document.querySelectorAll("[data-subregion-grape]").forEach(btn => {
+      btn.addEventListener("click", () => showGrape(countryKey, regionKey, btn.dataset.subregionGrape, subregionKey));
+    });
+
+    bindPronounceButtons();
+  } catch (err) {
+    console.error("showSubregion failed:", err);
+    byId("content").innerHTML = `
+      <div class="section-card">
+        <p>Failed to load sub-region details.</p>
+      </div>
+    `;
+  }
+}
+
 // ================= GRAPE =================
-async function showGrape(countryKey, regionKey, grapeKey) {
+async function showGrape(countryKey, regionKey, grapeKey, subregionKey = null) {
   showLoading("Loading grape profile...");
   openSheetFull();
 
   const countryMeta = state.countriesData[countryKey];
   const country = await loadJson(`./data/${countryMeta.file}`);
-  const grape = country.regions[regionKey]?.grapes?.[grapeKey];
+  const region = country.regions[regionKey];
+  const subregion = subregionKey ? region?.subregions?.[subregionKey] : null;
+  const grape = subregion?.grapes?.[grapeKey] || region?.grapes?.[grapeKey];
   if (!grape) return;
 
-  showRegionMarkers(countryKey, country);
-
-  const regionCoords = getRegionCoords(countryKey, regionKey);
-  if (regionCoords) {
-    map.flyTo(regionCoords, 8);
+  if (subregionKey && subregion) {
+    showSubregionMarkers(countryKey, regionKey, region);
+    const subregionCoords = getSubregionCoords(countryKey, regionKey, subregionKey);
+    if (subregionCoords) {
+      map.flyTo(subregionCoords, 9);
+    }
+  } else {
+    showRegionMarkers(countryKey, country);
+    const regionCoords = getRegionCoords(countryKey, regionKey);
+    if (regionCoords) {
+      map.flyTo(regionCoords, 8);
+    }
   }
 
   setPanelTitle(grapeKey);
-  setBreadcrumb([
+  const breadcrumb = [
     { label: country.name, click: () => showCountry(countryKey) },
-    { label: country.regions[regionKey].name, click: () => showRegion(countryKey, regionKey) },
-    { label: grapeKey }
-  ]);
+    { label: region.name, click: () => showRegion(countryKey, regionKey) }
+  ];
+
+  if (subregionKey && subregion) {
+    breadcrumb.push({
+      label: subregion.name || subregionKey,
+      click: () => showSubregion(countryKey, regionKey, subregionKey)
+    });
+  }
+
+  breadcrumb.push({ label: grapeKey });
+  setBreadcrumb(breadcrumb);
 
   let profileHtml = "";
   if (grape.profile) {
@@ -433,7 +989,9 @@ async function showGrape(countryKey, regionKey, grapeKey) {
     `;
   }
 
-  const pageKey = `grape::${country.name}::${country.regions[regionKey].name}::${grapeKey}`;
+  const pageKey = subregionKey && subregion
+    ? `grape::${country.name}::${region.name}::${subregion.name || subregionKey}::${grapeKey}`
+    : `grape::${country.name}::${region.name}::${grapeKey}`;
 
   byId("content").innerHTML = `
     <div class="section-card">
@@ -504,10 +1062,18 @@ async function showGrape(countryKey, regionKey, grapeKey) {
     ` : ""}
   `;
 
-  byId("backToRegion").onclick = () => showRegion(countryKey, regionKey);
+  bindPronounceButtons();
+
+  byId("backToRegion").onclick = () => {
+    if (subregionKey && subregion) {
+      showSubregion(countryKey, regionKey, subregionKey);
+    } else {
+      showRegion(countryKey, regionKey);
+    }
+  };
 
   byId("favBtn").onclick = () => {
-    const item = `${country.name} > ${country.regions[regionKey].name} > ${grapeKey}`;
+    const item = `${country.name} > ${region.name} > ${grapeKey}`;
 
     if (!state.favorites.includes(item)) {
       state.favorites.push(item);
@@ -522,16 +1088,16 @@ async function showGrape(countryKey, regionKey, grapeKey) {
     const questions = await buildQuizForGrape(
       grapeKey,
       grape,
-      country.regions[regionKey].name,
+      region.name,
       country.name
     );
 
     startCustomQuiz(questions, `Quiz: ${grapeKey}`);
   };
 
-  bindStudyButtons(pageKey, () => showGrape(countryKey, regionKey, grapeKey));
+  bindStudyButtons(pageKey, () => showGrape(countryKey, regionKey, grapeKey, subregionKey));
 
-  const item = `${country.name} > ${country.regions[regionKey].name} > ${grapeKey}`;
+  const item = `${country.name} > ${region.name} > ${grapeKey}`;
   recent = recent.filter(x => x !== item);
   recent.unshift(item);
   recent = recent.slice(0, 10);
@@ -754,6 +1320,57 @@ async function searchAll(query) {
         });
 }
 
+      for (const subregionKey in (region.subregions || {})) {
+        const subregion = region.subregions[subregionKey];
+        const subregionMatchReasons = [];
+
+        if (match(subregion.name)) {
+          subregionMatchReasons.push(`name: ${subregion.name}`);
+        }
+
+        if (match(subregion.summary)) {
+          subregionMatchReasons.push(`summary: ${subregion.summary}`);
+        }
+
+        if (match(subregion.climate)) {
+          subregionMatchReasons.push(`climate: ${subregion.climate}`);
+        }
+
+        if (match(subregion.styleSummary)) {
+          subregionMatchReasons.push(`style: ${subregion.styleSummary}`);
+        }
+
+        const matchedSubregionKeyGrapes = (subregion.keyGrapes || []).filter(grape =>
+          String(grape).toLowerCase().includes(q)
+        );
+        if (matchedSubregionKeyGrapes.length) {
+          subregionMatchReasons.push(`key grape: ${matchedSubregionKeyGrapes[0]}`);
+        }
+
+        const matchedSubregionTags = (subregion.tags || []).filter(tag =>
+          String(tag).toLowerCase().includes(q)
+        );
+        if (matchedSubregionTags.length) {
+          subregionMatchReasons.push(`tag: ${matchedSubregionTags[0]}`);
+        }
+
+        const matchedSubregionTips = (subregion.examTips || []).filter(tip =>
+          String(tip).toLowerCase().includes(q)
+        );
+        if (matchedSubregionTips.length) {
+          subregionMatchReasons.push(`exam tip: ${matchedSubregionTips[0]}`);
+        }
+
+        if (subregionMatchReasons.length) {
+          results.push({
+            type: "subregion",
+            label: `${subregion.name} (${region.name}, ${country.name})`,
+            matchReasons: subregionMatchReasons,
+            action: () => showSubregion(countryKey, regionKey, subregionKey)
+          });
+        }
+      }
+
       for (const styleKey in (region.styles || {})) {
         const style = region.styles[styleKey];
         const styleMatchReasons = [];
@@ -897,12 +1514,14 @@ async function searchAll(query) {
   const countryResults = limitedResults.filter(r => r.type === "country");
   const styleResults = limitedResults.filter(r => r.type === "style");
   const regionResults = limitedResults.filter(r => r.type === "region");
+  const subregionResults = limitedResults.filter(r => r.type === "subregion");
   const grapeResults = limitedResults.filter(r => r.type === "grape");
 
   const orderedResults = [
     ...countryResults,
     ...styleResults,
     ...regionResults,
+    ...subregionResults,
     ...grapeResults
   ];
 
@@ -916,12 +1535,16 @@ async function searchAll(query) {
   const regionHtml = renderSearchGroup("Regions", regionResults, start);
   start += regionResults.length;
 
+  const subregionHtml = renderSearchGroup("Sub-regions", subregionResults, start);
+  start += subregionResults.length;
+
   const grapeHtml = renderSearchGroup("Grapes", grapeResults, start);
 
   byId("content").innerHTML = `
     ${countryHtml}
     ${styleHtml}
     ${regionHtml}
+    ${subregionHtml}
     ${grapeHtml}
   `;
 
@@ -1173,6 +1796,24 @@ function updateSheetMetrics() {
   }
 
   sheet.style.setProperty("--sheet-translate", `${SHEET_STATES[currentSheetState] ?? 32}%`);
+  updateMapControlInsets();
+}
+
+function updateMapControlInsets() {
+  const toolbar = byId("topToolbar");
+  const root = document.documentElement;
+
+  if (!toolbar || !sheet || !root) return;
+
+  const viewportHeight = window.innerHeight || 1;
+  const toolbarRect = toolbar.getBoundingClientRect();
+  const sheetRect = sheet.getBoundingClientRect();
+
+  const topInset = Math.max(16, Math.round(toolbarRect.bottom + 12));
+  const bottomInset = Math.max(16, Math.round(viewportHeight - sheetRect.top + 12));
+
+  root.style.setProperty("--map-control-top", `${topInset}px`);
+  root.style.setProperty("--map-control-bottom", `${bottomInset}px`);
 }
 
 // ================= BUILD QUIZ FOR GRAPE & REGION =================
@@ -1301,6 +1942,9 @@ async function buildQuizForRegion(regionKey, region, countryName) {
   const allRegionNames = await getAllRegionNames();
   const allCountryNames = getAllCountryNames();
   const allGrapeNames = await getAllGrapeNames();
+  const allStudyFacts = await getAllStudyFacts();
+  const allAgingFacts = await getAllAgingFacts();
+  const allProductionFacts = await getAllProductionFacts();
 
   if (region.climate) {
     questions.push({
@@ -1331,6 +1975,50 @@ async function buildQuizForRegion(regionKey, region, countryName) {
       ]),
       answer: correctStyle,
       explanation: `${region.name} is known for ${correctStyle}.`
+    });
+  }
+
+  if (region.classification) {
+    questions.push({
+      category: "classification",
+      question: `Which classification statement best matches ${region.name}?`,
+      choices: buildChoices(region.classification, allStudyFacts),
+      answer: region.classification,
+      explanation: region.classification
+    });
+  }
+
+  if (region.lawNotes?.length) {
+    const correctLawNote = region.lawNotes[0];
+    questions.push({
+      category: "law",
+      question: `Which statement is true of ${region.name}?`,
+      choices: buildChoices(correctLawNote, allStudyFacts),
+      answer: correctLawNote,
+      explanation: correctLawNote
+    });
+  }
+
+  const regionStyles = Object.values(region.styles || {});
+  const styleWithAging = regionStyles.find(style => style?.aging);
+  if (styleWithAging?.aging) {
+    questions.push({
+      category: "ageing",
+      question: `Which ageing or maturation statement is linked to ${region.name}?`,
+      choices: buildChoices(styleWithAging.aging, allAgingFacts),
+      answer: styleWithAging.aging,
+      explanation: `${styleWithAging.name || region.name}: ${styleWithAging.aging}.`
+    });
+  }
+
+  const styleWithKeyPoint = regionStyles.find(style => style?.keyPoint);
+  if (styleWithKeyPoint?.keyPoint) {
+    questions.push({
+      category: "production",
+      question: `Which production or exam point is linked to ${region.name}?`,
+      choices: buildChoices(styleWithKeyPoint.keyPoint, allProductionFacts),
+      answer: styleWithKeyPoint.keyPoint,
+      explanation: `${styleWithKeyPoint.name || region.name}: ${styleWithKeyPoint.keyPoint}.`
     });
   }
 
@@ -1410,6 +2098,61 @@ async function getAllRegionNames() {
   }
 
   return uniqueValues(names);
+}
+
+async function getAllStudyFacts() {
+  const facts = [];
+
+  for (const countryKey in state.countriesData) {
+    const countryMeta = state.countriesData[countryKey];
+    const country = await loadJson(`./data/${countryMeta.file}`);
+
+    for (const region of Object.values(country.regions || {})) {
+      if (region.classification) facts.push(region.classification);
+      if (region.lawNotes?.length) facts.push(...region.lawNotes);
+
+      for (const subregion of Object.values(region.subregions || {})) {
+        if (subregion.classification) facts.push(subregion.classification);
+        if (subregion.lawNotes?.length) facts.push(...subregion.lawNotes);
+      }
+    }
+  }
+
+  return uniqueValues(facts);
+}
+
+async function getAllAgingFacts() {
+  const facts = [];
+
+  for (const countryKey in state.countriesData) {
+    const countryMeta = state.countriesData[countryKey];
+    const country = await loadJson(`./data/${countryMeta.file}`);
+
+    for (const region of Object.values(country.regions || {})) {
+      for (const style of Object.values(region.styles || {})) {
+        if (style?.aging) facts.push(style.aging);
+      }
+    }
+  }
+
+  return uniqueValues(facts);
+}
+
+async function getAllProductionFacts() {
+  const facts = [];
+
+  for (const countryKey in state.countriesData) {
+    const countryMeta = state.countriesData[countryKey];
+    const country = await loadJson(`./data/${countryMeta.file}`);
+
+    for (const region of Object.values(country.regions || {})) {
+      for (const style of Object.values(region.styles || {})) {
+        if (style?.keyPoint) facts.push(style.keyPoint);
+      }
+    }
+  }
+
+  return uniqueValues(facts);
 }
 
 async function getAllGrapeNames() {
@@ -1718,10 +2461,7 @@ function applySheetState(stateName) {
   sheet.style.setProperty("--sheet-translate", `${translate}%`);
   sheet.style.transform = "";
 
-  if (stateName !== "open" && sheetBody) {
-    sheetBody.scrollTop = 0;
-  }
-
+  updateMapControlInsets();
   refreshMapLayout();
 }
 
@@ -1889,6 +2629,20 @@ if (sheet && handle && handleWrap && sheetBody) {
     }
   }, { passive: false });
 
+  sheetBody.addEventListener("wheel", (e) => {
+    const canScrollContent = sheetBody.scrollHeight > sheetBody.clientHeight + 8;
+    if (!canScrollContent) return;
+
+    if (currentSheetState !== "open" && e.deltaY > 0) {
+      e.preventDefault();
+      const nextScrollTop = Math.max(0, sheetBody.scrollTop + e.deltaY);
+      openSheetFull({ resetScroll: false });
+      window.requestAnimationFrame(() => {
+        sheetBody.scrollTop = nextScrollTop;
+      });
+    }
+  }, { passive: false });
+
   window.addEventListener("touchmove", (e) => {
     if (!draggingSheet || dragSource !== "handle") return;
     e.preventDefault();
@@ -1915,6 +2669,7 @@ if (sheet && handle && handleWrap && sheetBody) {
 
 function refreshMapLayout() {
   setTimeout(() => {
+    updateMapControlInsets();
     map.invalidateSize();
   }, 280);
 }
@@ -1930,9 +2685,11 @@ function openSheetMid() {
   refreshMapLayout();
 }
 
-function openSheetFull() {
+function openSheetFull({ resetScroll = true } = {}) {
   applySheetState("open");
-  resetSheetScroll();
+  if (resetScroll) {
+    resetSheetScroll();
+  }
   refreshMapLayout();
 }
 
