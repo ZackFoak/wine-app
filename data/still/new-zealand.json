@@ -18,7 +18,7 @@
     "marlborough": {
       "name": "Marlborough",
       "summary": "New Zealand’s most important region, famous for intensely aromatic Sauvignon Blanc.",
-      "climate": "Cool maritime",
+      "climate": "Cool Maritime",
       "styleSummary": "Very aromatic wines with high acidity.",
       "mitigating": [
         "cool ocean influence",
@@ -93,7 +93,7 @@
         "wairau-valley": {
           "name": "Wairau Valley",
           "summary": "Broad warmer Marlborough valley producing the classic pungent passion-fruit style of Sauvignon Blanc.",
-          "climate": "Cool maritime",
+          "climate": "Cool Maritime",
           "styleSummary": "Pronounced Sauvignon Blanc with passion fruit, gooseberry and high acidity.",
           "keyGrapes": [
             "Sauvignon Blanc"
@@ -151,12 +151,24 @@
               "difficulty": 1
             }
           },
-          "classification": "Benchmark Marlborough valley for the classic passion-fruit style."
+          "classification": "Benchmark Marlborough valley for the classic passion-fruit style.",
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "awatere-valley": {
           "name": "Awatere Valley",
           "summary": "Cooler windier Marlborough valley producing more restrained and herbaceous Sauvignon Blanc.",
-          "climate": "Cool maritime",
+          "climate": "Cool Maritime",
           "styleSummary": "More pungent herbal citrus style with very high acidity.",
           "keyGrapes": [
             "Sauvignon Blanc"
@@ -214,19 +226,43 @@
               "difficulty": 1
             }
           },
-          "classification": "Cooler windier valley often giving more pungent herbal Sauvignon Blanc."
+          "classification": "Cooler windier valley often giving more pungent herbal Sauvignon Blanc.",
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         }
       },
       "classification": "Marlborough is the flagship New Zealand GI for Sauvignon Blanc, with valley differences important for style.",
       "lawNotes": [
         "Wairau is often broader and more tropical, while Awatere is usually cooler and more herbal.",
         "High acidity and pungent aromatics are central exam clues."
+      ],
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Disease control and canopy management are often important human factors in maritime climates.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Choice of production method and maturation is a major human factor in shaping regional wine style."
       ]
     },
     "hawkes-bay": {
       "name": "Hawke’s Bay",
       "summary": "Warmer North Island region producing fuller-bodied reds and richer whites.",
-      "climate": "Warm maritime",
+      "climate": "Warm Maritime",
       "styleSummary": "Riper wines with more body and structure.",
       "mitigating": [
         "ocean influence"
@@ -347,7 +383,7 @@
         "gimblett-gravels": {
           "name": "Gimblett Gravels",
           "summary": "Warm stony Hawke's Bay sub-region especially associated with Bordeaux blends and Syrah.",
-          "climate": "Warm maritime",
+          "climate": "Warm Maritime",
           "styleSummary": "Riper fuller-bodied reds with structured tannin and concentrated fruit.",
           "keyGrapes": [
             "Cabernet Sauvignon",
@@ -470,19 +506,40 @@
               "difficulty": 1
             }
           },
-          "classification": "Prestige stony warm sub-region associated with premium red wines."
+          "classification": "Prestige stony warm sub-region associated with premium red wines.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         }
       },
       "classification": "Hawke’s Bay is a warm New Zealand region especially important for Bordeaux blends, Syrah and some Chardonnay.",
       "lawNotes": [
         "Gimblett Gravels is a key premium sub-region name.",
         "Warmer conditions contrast clearly with Marlborough and Central Otago."
+      ],
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Disease control and canopy management are often important human factors in maritime climates.",
+        "Regional style depends not only on climate and site, but also on deliberate human choices in the vineyard and cellar.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
       ]
     },
     "central-otago": {
       "name": "Central Otago",
       "summary": "Cool southern region known for high-quality Pinot Noir.",
-      "climate": "Cool continental",
+      "climate": "Cool Continental",
       "styleSummary": "Elegant, fruit-driven Pinot Noir.",
       "mitigating": [
         "southern latitude",
@@ -540,7 +597,7 @@
         "bannockburn": {
           "name": "Bannockburn",
           "summary": "Prestige Central Otago sub-region known for concentrated Pinot Noir from a dry continental climate.",
-          "climate": "Cool continental",
+          "climate": "Cool Continental",
           "styleSummary": "Ripe yet fresh Pinot Noir with red and black cherry fruit and bright acidity.",
           "keyGrapes": [
             "Pinot Noir"
@@ -593,12 +650,24 @@
               "difficulty": 1
             }
           },
-          "classification": "Warm prestige Central Otago sub-region known for concentrated Pinot Noir."
+          "classification": "Warm prestige Central Otago sub-region known for concentrated Pinot Noir.",
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+            "Subregional site differences are important to how grapes ripen and to the final balance of the wines."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "gibbston": {
           "name": "Gibbston",
           "summary": "Cooler elevated Central Otago sub-region producing lighter fresher Pinot Noir.",
-          "climate": "Cool continental",
+          "climate": "Cool Continental",
           "styleSummary": "More delicate Pinot Noir with bright acidity and floral lift.",
           "keyGrapes": [
             "Pinot Noir"
@@ -651,19 +720,42 @@
               "difficulty": 1
             }
           },
-          "classification": "Cooler higher sub-region generally associated with a lighter fresher style."
+          "classification": "Cooler higher sub-region generally associated with a lighter fresher style.",
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+            "Subregional site differences are important to how grapes ripen and to the final balance of the wines."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         }
       },
       "classification": "Central Otago is New Zealand’s most continental major region and the key premium Pinot Noir area.",
       "lawNotes": [
         "A continental climate and high UV at altitude are important context clues.",
         "Pinot Noir is the defining grape."
+      ],
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
       ]
     },
     "wairarapa": {
       "name": "Wairarapa (Martinborough)",
       "summary": "Small region producing premium Pinot Noir with structure and complexity.",
-      "climate": "Cool maritime",
+      "climate": "Cool Maritime",
       "styleSummary": "Structured Pinot Noir with more concentration.",
       "mitigating": [
         "wind",
@@ -719,7 +811,7 @@
         "martinborough": {
           "name": "Martinborough",
           "summary": "Prestige Wairarapa area especially associated with premium Pinot Noir.",
-          "climate": "Cool maritime",
+          "climate": "Cool Maritime",
           "styleSummary": "Elegant Pinot Noir with red fruit, spice and fresh acidity.",
           "keyGrapes": [
             "Pinot Noir"
@@ -771,10 +863,32 @@
               "difficulty": 1
             }
           },
-          "classification": "The key named Wairarapa premium Pinot Noir area."
+          "classification": "The key named Wairarapa premium Pinot Noir area.",
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Wind can cool vineyards and reduce fungal disease pressure, but can also affect vigor and fruit set."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Training systems, row orientation, and site protection matter where wind is a major factor.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         }
       },
-      "classification": "Wairarapa is especially important because of Martinborough’s premium Pinot Noir reputation."
+      "classification": "Wairarapa is especially important because of Martinborough’s premium Pinot Noir reputation.",
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+        "Wind can cool vineyards and reduce fungal disease pressure, but can also affect vigor and fruit set."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Disease control and canopy management are often important human factors in maritime climates.",
+        "Training systems, row orientation, and site protection matter where wind is a major factor.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     }
   }
 }

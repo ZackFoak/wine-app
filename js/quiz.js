@@ -174,6 +174,7 @@ export async function buildGeneratedQuestions() {
 
   const allGrapes = [];
   const allRegions = [];
+  const allSubregions = [];
   const allCountryStyles = [];
 
   // ---------- pass 1: collect global pools ----------
@@ -191,7 +192,12 @@ export async function buildGeneratedQuestions() {
         regionName: region.name || regionKey,
         climate: region.climate || "",
         styleSummary: region.styleSummary || "",
-        keyGrapes: region.keyGrapes || []
+        keyGrapes: region.keyGrapes || [],
+        mitigating: region.mitigating || [],
+        vineyardFactors: region.vineyardFactors || [],
+        humanFactors: region.humanFactors || [],
+        classification: region.classification || "",
+        lawNotes: region.lawNotes || []
       });
 
       for (const grapeKey in (region.grapes || {})) {
@@ -213,6 +219,27 @@ export async function buildGeneratedQuestions() {
           examTips: grape.examTips || [],
           tags: grape.tags || [],
           profile: grape.profile || {}
+        });
+      }
+
+      for (const subregionKey in (region.subregions || {})) {
+        const subregion = region.subregions[subregionKey];
+
+        allSubregions.push({
+          countryKey,
+          countryName: country.name,
+          regionKey,
+          regionName: region.name || regionKey,
+          subregionKey,
+          subregionName: subregion.name || subregionKey,
+          climate: subregion.climate || region.climate || "",
+          styleSummary: subregion.styleSummary || "",
+          keyGrapes: subregion.keyGrapes || [],
+          mitigating: subregion.mitigating || region.mitigating || [],
+          vineyardFactors: subregion.vineyardFactors || [],
+          humanFactors: subregion.humanFactors || [],
+          classification: subregion.classification || "",
+          lawNotes: subregion.lawNotes || []
         });
       }
     }
@@ -285,6 +312,268 @@ export async function buildGeneratedQuestions() {
         ),
         answer: correct,
         explanation: `${correct} is one of the key grapes of ${region.regionName}.`
+      });
+    }
+
+    if (region.countryName) {
+      questions.push({
+        category: "region origin",
+        question: `${region.regionName} belongs to which country?`,
+        choices: buildOptions(
+          region.countryName,
+          pickDistinctValues(
+            Object.values(state.countriesData).map(c => c.name).filter(Boolean),
+            region.countryName,
+            3
+          )
+        ),
+        answer: region.countryName,
+        explanation: `${region.regionName} is part of ${region.countryName}.`
+      });
+    }
+
+    if (region.classification) {
+      questions.push({
+        category: "classification",
+        question: `Which classification statement best matches ${region.regionName}?`,
+        choices: buildOptions(
+          region.classification,
+          pickDistinctValues(
+            allRegions.map(r => r.classification).filter(Boolean),
+            region.classification,
+            3
+          )
+        ),
+        answer: region.classification,
+        explanation: region.classification
+      });
+    }
+
+    if (region.lawNotes.length) {
+      const correctLaw = region.lawNotes[0];
+      questions.push({
+        category: "law",
+        question: `Which law or exam statement is linked to ${region.regionName}?`,
+        choices: buildOptions(
+          correctLaw,
+          pickDistinctValues(
+            allRegions.flatMap(r => r.lawNotes || []).filter(Boolean),
+            correctLaw,
+            3
+          )
+        ),
+        answer: correctLaw,
+        explanation: correctLaw
+      });
+    }
+
+    if (region.mitigating.length) {
+      const correctFactor = region.mitigating[0];
+      questions.push({
+        category: "moderating factors",
+        question: `Which moderating factor is important in ${region.regionName}?`,
+        choices: buildOptions(
+          correctFactor,
+          pickDistinctValues(
+            allRegions.flatMap(r => r.mitigating || []).filter(Boolean),
+            correctFactor,
+            3
+          )
+        ),
+        answer: correctFactor,
+        explanation: `${correctFactor} is listed as an important moderating factor in ${region.regionName}.`
+      });
+    }
+
+    if (region.vineyardFactors.length) {
+      const correctVineyardFactor = region.vineyardFactors[0];
+      questions.push({
+        category: "vineyard factors",
+        question: `Which vineyard factor best fits ${region.regionName}?`,
+        choices: buildOptions(
+          correctVineyardFactor,
+          pickDistinctValues(
+            allRegions.flatMap(r => r.vineyardFactors || []).filter(Boolean),
+            correctVineyardFactor,
+            3
+          )
+        ),
+        answer: correctVineyardFactor,
+        explanation: correctVineyardFactor
+      });
+    }
+
+    if (region.humanFactors.length) {
+      const correctHumanFactor = region.humanFactors[0];
+      questions.push({
+        category: "human factors",
+        question: `Which human factor best fits ${region.regionName}?`,
+        choices: buildOptions(
+          correctHumanFactor,
+          pickDistinctValues(
+            allRegions.flatMap(r => r.humanFactors || []).filter(Boolean),
+            correctHumanFactor,
+            3
+          )
+        ),
+        answer: correctHumanFactor,
+        explanation: correctHumanFactor
+      });
+    }
+  }
+
+  for (const subregion of allSubregions) {
+    questions.push({
+      category: "subregion origin",
+      question: `${subregion.subregionName} belongs to which parent region?`,
+      choices: buildOptions(
+        subregion.regionName,
+        pickDistinctValues(
+          allRegions.map(r => r.regionName).filter(Boolean),
+          subregion.regionName,
+          3
+        )
+      ),
+      answer: subregion.regionName,
+      explanation: `${subregion.subregionName} sits within ${subregion.regionName}.`
+    });
+
+    questions.push({
+      category: "subregion country",
+      question: `${subregion.subregionName} belongs to which country?`,
+      choices: buildOptions(
+        subregion.countryName,
+        pickDistinctValues(
+          Object.values(state.countriesData).map(c => c.name).filter(Boolean),
+          subregion.countryName,
+          3
+        )
+      ),
+      answer: subregion.countryName,
+      explanation: `${subregion.subregionName} is part of ${subregion.countryName}.`
+    });
+
+    if (subregion.climate) {
+      questions.push({
+        category: "subregion climate",
+        question: `What climate best describes ${subregion.subregionName}?`,
+        choices: buildOptions(
+          subregion.climate,
+          pickDistinctValues(
+            [...allRegions.map(r => r.climate), ...allSubregions.map(s => s.climate)].filter(Boolean),
+            subregion.climate,
+            3
+          )
+        ),
+        answer: subregion.climate,
+        explanation: `${subregion.subregionName} is typically described as ${subregion.climate}.`
+      });
+    }
+
+    if (subregion.keyGrapes.length) {
+      const correctSubregionGrape = subregion.keyGrapes[0];
+      questions.push({
+        category: "subregion grape",
+        question: `Which grape is strongly associated with ${subregion.subregionName}?`,
+        choices: buildOptions(
+          correctSubregionGrape,
+          pickDistinctValues(
+            allGrapes.map(g => g.grapeKey).filter(Boolean),
+            correctSubregionGrape,
+            3
+          )
+        ),
+        answer: correctSubregionGrape,
+        explanation: `${correctSubregionGrape} is listed as a key grape in ${subregion.subregionName}.`
+      });
+    }
+
+    if (subregion.mitigating.length) {
+      const correctSubregionFactor = subregion.mitigating[0];
+      questions.push({
+        category: "moderating factors",
+        question: `Which moderating factor is important in ${subregion.subregionName}?`,
+        choices: buildOptions(
+          correctSubregionFactor,
+          pickDistinctValues(
+            [...allRegions.flatMap(r => r.mitigating || []), ...allSubregions.flatMap(s => s.mitigating || [])].filter(Boolean),
+            correctSubregionFactor,
+            3
+          )
+        ),
+        answer: correctSubregionFactor,
+        explanation: `${correctSubregionFactor} is listed as an important moderating factor in ${subregion.subregionName}.`
+      });
+    }
+
+    if (subregion.vineyardFactors.length) {
+      const correctSubregionVineyard = subregion.vineyardFactors[0];
+      questions.push({
+        category: "vineyard factors",
+        question: `Which vineyard factor best fits ${subregion.subregionName}?`,
+        choices: buildOptions(
+          correctSubregionVineyard,
+          pickDistinctValues(
+            [...allRegions.flatMap(r => r.vineyardFactors || []), ...allSubregions.flatMap(s => s.vineyardFactors || [])].filter(Boolean),
+            correctSubregionVineyard,
+            3
+          )
+        ),
+        answer: correctSubregionVineyard,
+        explanation: correctSubregionVineyard
+      });
+    }
+
+    if (subregion.humanFactors.length) {
+      const correctSubregionHuman = subregion.humanFactors[0];
+      questions.push({
+        category: "human factors",
+        question: `Which human factor best fits ${subregion.subregionName}?`,
+        choices: buildOptions(
+          correctSubregionHuman,
+          pickDistinctValues(
+            [...allRegions.flatMap(r => r.humanFactors || []), ...allSubregions.flatMap(s => s.humanFactors || [])].filter(Boolean),
+            correctSubregionHuman,
+            3
+          )
+        ),
+        answer: correctSubregionHuman,
+        explanation: correctSubregionHuman
+      });
+    }
+
+    if (subregion.classification) {
+      questions.push({
+        category: "classification",
+        question: `Which classification statement best matches ${subregion.subregionName}?`,
+        choices: buildOptions(
+          subregion.classification,
+          pickDistinctValues(
+            allSubregions.map(s => s.classification).filter(Boolean),
+            subregion.classification,
+            3
+          )
+        ),
+        answer: subregion.classification,
+        explanation: subregion.classification
+      });
+    }
+
+    if (subregion.lawNotes.length) {
+      const correctSubregionLaw = subregion.lawNotes[0];
+      questions.push({
+        category: "law",
+        question: `Which law or exam statement is linked to ${subregion.subregionName}?`,
+        choices: buildOptions(
+          correctSubregionLaw,
+          pickDistinctValues(
+            allSubregions.flatMap(s => s.lawNotes || []).filter(Boolean),
+            correctSubregionLaw,
+            3
+          )
+        ),
+        answer: correctSubregionLaw,
+        explanation: correctSubregionLaw
       });
     }
   }
@@ -452,6 +741,60 @@ export async function buildGeneratedQuestions() {
         explanation: `${grape.grapeKey} pairs well with foods such as ${grape.pairing.join(", ")}.`
       });
     }
+
+    if (grape.viticulture.length) {
+      const correctViticulture = grape.viticulture[0];
+      questions.push({
+        category: "viticulture",
+        question: `Which viticulture point is linked to ${grape.grapeKey}?`,
+        choices: buildOptions(
+          correctViticulture,
+          pickDistinctValues(
+            allGrapes.flatMap(g => g.viticulture || []).filter(Boolean),
+            correctViticulture,
+            3
+          )
+        ),
+        answer: correctViticulture,
+        explanation: correctViticulture
+      });
+    }
+
+    if (grape.winemaking.length) {
+      const correctWinemaking = grape.winemaking[0];
+      questions.push({
+        category: "winemaking",
+        question: `Which winemaking point is linked to ${grape.grapeKey}?`,
+        choices: buildOptions(
+          correctWinemaking,
+          pickDistinctValues(
+            allGrapes.flatMap(g => g.winemaking || []).filter(Boolean),
+            correctWinemaking,
+            3
+          )
+        ),
+        answer: correctWinemaking,
+        explanation: correctWinemaking
+      });
+    }
+
+    if (grape.examTips.length) {
+      const correctExamTip = grape.examTips[0];
+      questions.push({
+        category: "exam clues",
+        question: `Which exam clue is linked to ${grape.grapeKey}?`,
+        choices: buildOptions(
+          correctExamTip,
+          pickDistinctValues(
+            allGrapes.flatMap(g => g.examTips || []).filter(Boolean),
+            correctExamTip,
+            3
+          )
+        ),
+        answer: correctExamTip,
+        explanation: correctExamTip
+      });
+    }
   }
 
   for (const styleItem of allCountryStyles) {
@@ -532,10 +875,11 @@ function filterQuizPool(pool, mode) {
   if (mode === "all") return pool;
 
   const categoryMap = {
-    grapes: ["grape", "alias", "aroma", "pairing"],
-    regions: ["climate", "region style", "key grape"],
+    grapes: ["grape", "alias", "aroma", "pairing", "viticulture", "winemaking", "exam clues"],
+    regions: ["climate", "region style", "key grape", "region origin", "classification", "law", "subregion origin", "subregion country", "subregion climate", "subregion grape"],
     profiles: ["body", "acidity", "tannin", "alcohol"],
-    styles: ["style", "fortified/sparkling style", "style origin"],
+    styles: ["style", "fortified/sparkling style", "style origin", "production", "ageing"],
+    study: ["classification", "law", "moderating factors", "vineyard factors", "human factors", "region origin", "subregion origin", "subregion country"],
     weak: null
   };
 

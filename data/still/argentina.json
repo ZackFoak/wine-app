@@ -18,7 +18,7 @@
     "mendoza": {
       "name": "Mendoza (General)",
       "summary": "Argentina’s most important wine region, known for ripe wines balanced by altitude and diurnal range.",
-      "climate": "Continental",
+      "climate": "Warm Continental",
       "styleSummary": "Ripe fruit wines with freshness from altitude and diurnal range.",
       "mitigating": [
         "high altitude",
@@ -130,7 +130,7 @@
         "maipu": {
           "name": "Maipu",
           "summary": "Historic warmer Mendoza sub-region known for ripe generous red wines.",
-          "climate": "Warm continental high-altitude",
+          "climate": "Warm Continental [high altitude]",
           "styleSummary": "Ripe fruit-driven Malbec and Cabernet styles with fuller body.",
           "keyGrapes": [
             "Malbec",
@@ -235,12 +235,24 @@
               "difficulty": 1
             }
           },
-          "classification": "Warmer historic sub-region producing riper fuller styles."
+          "classification": "Warmer historic sub-region producing riper fuller styles.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Altitude lowers temperature and can extend the growing season, helping preserve acidity and aroma.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Growers often use elevation and harvest timing strategically to balance ripeness and freshness.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards."
+          ]
         },
         "east-mendoza": {
           "name": "East Mendoza",
           "summary": "Lower flatter Mendoza area associated more with larger-volume production and warmer conditions.",
-          "climate": "Warm continental high-altitude",
+          "climate": "Warm Continental [high altitude]",
           "styleSummary": "Riper softer styles with less concentration than the best high-altitude zones.",
           "keyGrapes": [
             "Malbec"
@@ -303,19 +315,43 @@
               "difficulty": 1
             }
           },
-          "classification": "Lower warmer more productive section with less premium prestige than the top upland zones."
+          "classification": "Lower warmer more productive section with less premium prestige than the top upland zones.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Altitude lowers temperature and can extend the growing season, helping preserve acidity and aroma.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Growers often use elevation and harvest timing strategically to balance ripeness and freshness.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards."
+          ]
         }
       },
       "classification": "Mendoza is Argentina’s flagship region, with altitude and irrigation as the essential study concepts.",
       "lawNotes": [
         "Altitude strongly affects freshness and concentration.",
         "Irrigation from Andean meltwater is essential in this desert climate."
+      ],
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+        "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk."
       ]
     },
     "lujan-de-cuyo": {
       "name": "Luján de Cuyo",
       "summary": "Classic Mendoza subregion known for rich, ripe and structured Malbec.",
-      "climate": "Continental",
+      "climate": "Warm Continental",
       "styleSummary": "Classic Malbec region with rich, ripe and structured wines.",
       "mitigating": [
         "moderate altitude",
@@ -378,12 +414,24 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+        "Subregional site differences are important to how grapes ripen and to the final balance of the wines."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "uco-valley": {
       "name": "Uco Valley",
       "summary": "High-altitude Mendoza subregion producing fresher, more elegant and structured wines.",
-      "climate": "Cool continental (high altitude)",
+      "climate": "Cool Continental [high altitude]",
       "styleSummary": "More elegant, fresher wines with higher acidity and structure.",
       "mitigating": [
         "very high altitude",
@@ -488,12 +536,24 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Altitude lowers temperature and can extend the growing season, helping preserve acidity and aroma.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Growers often use elevation and harvest timing strategically to balance ripeness and freshness.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards."
+      ]
     },
     "salta": {
       "name": "Salta",
       "summary": "Extreme high-altitude region known for highly aromatic whites and concentrated reds.",
-      "climate": "High altitude continental",
+      "climate": "Warm Continental [high altitude]",
       "styleSummary": "Very aromatic whites and concentrated reds due to extreme altitude.",
       "mitigating": [
         "extreme altitude",
@@ -603,7 +663,7 @@
         "cafayate": {
           "name": "Cafayate",
           "summary": "High-altitude Salta sub-region famous for aromatic Torrontes and also Malbec.",
-          "climate": "Warm continental high-altitude",
+          "climate": "Warm Continental [high altitude]",
           "styleSummary": "Very aromatic whites and deeply colored fresh reds thanks to altitude.",
           "keyGrapes": [
             "Torrontes",
@@ -707,19 +767,43 @@
               "difficulty": 1
             }
           },
-          "classification": "Benchmark very high-altitude Salta sub-region for Torrontes and Malbec."
+          "classification": "Benchmark very high-altitude Salta sub-region for Torrontes and Malbec.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Altitude lowers temperature and can extend the growing season, helping preserve acidity and aroma.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Growers often use elevation and harvest timing strategically to balance ripeness and freshness.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards."
+          ]
         }
       },
       "classification": "Salta is especially important for very high-altitude viticulture and Torrontes.",
       "lawNotes": [
         "Cafayate is the key named place to remember.",
         "Altitude gives aromatic intensity and freshness despite strong sunshine."
+      ],
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Altitude lowers temperature and can extend the growing season, helping preserve acidity and aroma.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Growers often use elevation and harvest timing strategically to balance ripeness and freshness.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards."
       ]
     },
     "patagonia": {
       "name": "Patagonia",
       "summary": "Cooler southern region producing elegant, fresh wines with good acidity.",
-      "climate": "Cool continental",
+      "climate": "Cool Continental",
       "styleSummary": "Cooler region producing more elegant and fresh wines.",
       "mitigating": [
         "southern latitude",
@@ -825,7 +909,7 @@
         "rio-negro": {
           "name": "Rio Negro",
           "summary": "Cool southern Argentine area known for fresh Pinot Noir and Chardonnay.",
-          "climate": "Cool continental",
+          "climate": "Cool Continental",
           "styleSummary": "Fresh lighter-bodied wines with bright acidity and restrained fruit.",
           "keyGrapes": [
             "Pinot Noir",
@@ -925,12 +1009,24 @@
               "difficulty": 1
             }
           },
-          "classification": "Classic cool Patagonian valley for fresh Pinot Noir and Chardonnay."
+          "classification": "Classic cool Patagonian valley for fresh Pinot Noir and Chardonnay.",
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+            "Wind can cool vineyards and reduce fungal disease pressure, but can also affect vigor and fruit set."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Training systems, row orientation, and site protection matter where wind is a major factor."
+          ]
         },
         "neuquen": {
           "name": "Neuquen",
           "summary": "Patagonian area with cool dry conditions supporting fresh modern styles.",
-          "climate": "Cool continental",
+          "climate": "Cool Continental",
           "styleSummary": "Bright fresh wines with moderate body and clean fruit.",
           "keyGrapes": [
             "Pinot Noir",
@@ -1030,13 +1126,37 @@
               "difficulty": 1
             }
           },
-          "classification": "Cool dry Patagonian area with modern fresh styles."
+          "classification": "Cool dry Patagonian area with modern fresh styles.",
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+            "Wind can cool vineyards and reduce fungal disease pressure, but can also affect vigor and fruit set."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Training systems, row orientation, and site protection matter where wind is a major factor."
+          ]
         }
       },
       "classification": "Patagonia is the cool-climate southern contrast to warmer northern Argentina.",
       "lawNotes": [
         "Cool dry conditions make fresher Pinot Noir and Chardonnay possible.",
         "Rio Negro is the key named valley to recognize."
+      ],
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+        "Wind can cool vineyards and reduce fungal disease pressure, but can also affect vigor and fruit set."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Training systems, row orientation, and site protection matter where wind is a major factor."
       ]
     }
   }

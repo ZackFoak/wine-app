@@ -20,7 +20,7 @@
     "california": {
       "name": "California",
       "summary": "The key US wine state, producing a wide range of wines from ripe inland styles to fresher coastal expressions.",
-      "climate": "Mediterranean",
+      "climate": "Warm Mediterranean",
       "styleSummary": "Ripe fruit-driven wines with freshness maintained by Pacific influence.",
       "mitigating": [
         "Pacific Ocean",
@@ -224,6 +224,18 @@
       "lawNotes": [
         "Napa, Sonoma and the Central Coast are key named quality areas.",
         "Marine influence is crucial for cool-climate Chardonnay and Pinot Noir styles."
+      ],
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Choice of production method and maturation is a major human factor in shaping regional wine style."
       ]
     },
     "napa-valley": {
@@ -399,7 +411,18 @@
               "difficulty": 1
             }
           },
-          "classification": "Prestige Napa sub-AVA strongly linked to benchmark Cabernet Sauvignon."
+          "classification": "Prestige Napa sub-AVA strongly linked to benchmark Cabernet Sauvignon.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Regional style depends not only on climate and site, but also on deliberate human choices in the vineyard and cellar."
+          ]
         },
         "rutherford": {
           "name": "Rutherford",
@@ -464,7 +487,18 @@
               "difficulty": 1
             }
           },
-          "classification": "Classic Napa Cabernet area often associated with concentrated structure and a savory dusty note."
+          "classification": "Classic Napa Cabernet area often associated with concentrated structure and a savory dusty note.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Regional style depends not only on climate and site, but also on deliberate human choices in the vineyard and cellar."
+          ]
         },
         "stags-leap-district": {
           "name": "Stags Leap District",
@@ -529,12 +563,23 @@
               "difficulty": 1
             }
           },
-          "classification": "Prestige Napa sub-AVA known for polished Cabernet Sauvignon."
+          "classification": "Prestige Napa sub-AVA known for polished Cabernet Sauvignon.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "los-carneros": {
           "name": "Los Carneros",
           "summary": "Cool southern district spanning Napa and Sonoma, important for Chardonnay and Pinot Noir.",
-          "climate": "Cool maritime",
+          "climate": "Cool Maritime",
           "styleSummary": "Cool-climate Chardonnay and Pinot Noir with freshness and restrained fruit.",
           "keyGrapes": [
             "Chardonnay"
@@ -593,19 +638,41 @@
               "difficulty": 1
             }
           },
-          "classification": "Cool southern AVA influenced by San Pablo Bay, important for Chardonnay and Pinot Noir."
+          "classification": "Cool southern AVA influenced by San Pablo Bay, important for Chardonnay and Pinot Noir.",
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         }
       },
       "classification": "Napa Valley AVA is the flagship California fine-wine region, especially for Cabernet Sauvignon.",
       "lawNotes": [
         "Warm days and cooler nights help ripeness with retained structure.",
         "Sub-AVAs are important exam context for premium Napa Cabernet and cooler southern Chardonnay/Pinot zones."
+      ],
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Regional style depends not only on climate and site, but also on deliberate human choices in the vineyard and cellar."
       ]
     },
     "sonoma": {
       "name": "Sonoma",
       "summary": "A diverse Californian region often cooler and more balanced than Napa due to stronger Pacific influence.",
-      "climate": "Mediterranean (cooler than Napa)",
+      "climate": "Moderate Mediterranean [cooler than Napa]",
       "styleSummary": "More balanced wines due to stronger cooling influence.",
       "mitigating": [
         "Pacific fog",
@@ -711,7 +778,7 @@
         "russian-river-valley": {
           "name": "Russian River Valley",
           "summary": "Cool Sonoma area strongly associated with premium Pinot Noir and Chardonnay.",
-          "climate": "Cool maritime",
+          "climate": "Cool Maritime",
           "styleSummary": "Fresh elegant Pinot Noir and Chardonnay with moderate alcohol and bright acidity.",
           "keyGrapes": [
             "Pinot Noir",
@@ -810,12 +877,23 @@
               "difficulty": 1
             }
           },
-          "classification": "Major cool-climate Sonoma AVA for Pinot Noir and Chardonnay."
+          "classification": "Major cool-climate Sonoma AVA for Pinot Noir and Chardonnay.",
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Subregional site differences are important to how grapes ripen and to the final balance of the wines."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "sonoma-coast": {
           "name": "Sonoma Coast",
           "summary": "Cool exposed coastal area producing taut high-acid Pinot Noir and Chardonnay.",
-          "climate": "Cool maritime",
+          "climate": "Cool Maritime",
           "styleSummary": "Tense cool-climate wines with freshness, citrus and red fruit rather than overt ripeness.",
           "keyGrapes": [
             "Pinot Noir",
@@ -914,7 +992,17 @@
               "difficulty": 1
             }
           },
-          "classification": "Cool exposed coastal AVA with strong Pacific influence."
+          "classification": "Cool exposed coastal AVA with strong Pacific influence.",
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "alexander-valley": {
           "name": "Alexander Valley",
@@ -976,19 +1064,40 @@
               "difficulty": 1
             }
           },
-          "classification": "Warmer inland AVA known more for ripe structured reds."
+          "classification": "Warmer inland AVA known more for ripe structured reds.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Subregional site differences are important to how grapes ripen and to the final balance of the wines."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         }
       },
       "classification": "Sonoma County contains both cooler coastal Pinot/Chardonnay districts and warmer inland Cabernet zones.",
       "lawNotes": [
         "Russian River Valley and Sonoma Coast are key cool-climate names.",
         "Alexander Valley gives a warmer inland contrast."
+      ],
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
       ]
     },
     "central-coast": {
       "name": "Central Coast",
       "summary": "A broad Californian region where ocean influence creates a wide range of styles from fresh to ripe.",
-      "climate": "Mediterranean",
+      "climate": "Moderate Mediterranean",
       "styleSummary": "Wide range of styles depending on proximity to ocean.",
       "mitigating": [
         "ocean influence",
@@ -1089,7 +1198,7 @@
         "monterey": {
           "name": "Monterey",
           "summary": "Cool elongated coastal valley known for fresh Chardonnay and Pinot Noir.",
-          "climate": "Cool maritime",
+          "climate": "Cool Maritime",
           "styleSummary": "Fresh bright cool-climate wines with citrus, apple and red berry character.",
           "keyGrapes": [
             "Chardonnay",
@@ -1183,12 +1292,24 @@
               "difficulty": 1
             }
           },
-          "classification": "Cool maritime-influenced Central Coast area for fresh Chardonnay and Pinot Noir."
+          "classification": "Cool maritime-influenced Central Coast area for fresh Chardonnay and Pinot Noir.",
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "santa-barbara": {
           "name": "Santa Barbara",
           "summary": "Southern Central Coast area with transverse valleys funneling in cool Pacific air, favoring Pinot Noir and Chardonnay.",
-          "climate": "Cool maritime",
+          "climate": "Cool Maritime",
           "styleSummary": "Elegant aromatic Pinot Noir and Chardonnay with good acidity.",
           "keyGrapes": [
             "Chardonnay",
@@ -1282,7 +1403,19 @@
               "difficulty": 1
             }
           },
-          "classification": "Cool-climate area shaped by transverse valleys and Pacific influence."
+          "classification": "Cool-climate area shaped by transverse valleys and Pacific influence.",
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "paso-robles": {
           "name": "Paso Robles",
@@ -1343,19 +1476,43 @@
               "difficulty": 1
             }
           },
-          "classification": "Warmer inland Central Coast appellation known for riper fuller styles."
+          "classification": "Warmer inland Central Coast appellation known for riper fuller styles.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         }
       },
       "classification": "The Central Coast spans both cool maritime zones and warmer inland regions, so sub-regional climate differences are central.",
       "lawNotes": [
         "East-west valleys in Santa Barbara pull in cool Pacific air.",
         "Paso Robles is much warmer than Monterey and Santa Barbara."
+      ],
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
       ]
     },
     "oregon": {
       "name": "Oregon",
       "summary": "Cool-climate US region best known for elegant Pinot Noir and high-acid wines.",
-      "climate": "Cool maritime",
+      "climate": "Cool Maritime",
       "styleSummary": "Elegant, high-acid wines, especially Pinot Noir.",
       "mitigating": [
         "cool climate",
@@ -1421,7 +1578,7 @@
         "willamette-valley": {
           "name": "Willamette Valley",
           "summary": "Oregon's key cool-climate region and the benchmark source of premium Pinot Noir.",
-          "climate": "Cool maritime",
+          "climate": "Cool Maritime",
           "styleSummary": "Perfumed high-acid Pinot Noir with red fruit, floral notes and moderate body.",
           "keyGrapes": [
             "Pinot Noir"
@@ -1478,12 +1635,22 @@
               "difficulty": 1
             }
           },
-          "classification": "The benchmark Oregon AVA for premium Pinot Noir."
+          "classification": "The benchmark Oregon AVA for premium Pinot Noir.",
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "dundee-hills": {
           "name": "Dundee Hills",
           "summary": "Prestige Willamette sub-area known for elegant aromatic Pinot Noir.",
-          "climate": "Cool maritime",
+          "climate": "Cool Maritime",
           "styleSummary": "Red-fruited Pinot Noir with bright acidity and floral lift.",
           "keyGrapes": [
             "Pinot Noir"
@@ -1540,19 +1707,39 @@
               "difficulty": 1
             }
           },
-          "classification": "Prestige Willamette sub-AVA with a strong premium Pinot identity."
+          "classification": "Prestige Willamette sub-AVA with a strong premium Pinot identity.",
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         }
       },
       "classification": "Oregon study value is centered on cool-climate Pinot Noir, especially in the Willamette Valley and its sub-areas.",
       "lawNotes": [
         "Willamette Valley is the key Level 3 Oregon name.",
         "Freshness, perfume and moderate body contrast with warmer New World Pinot styles."
+      ],
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Disease control and canopy management are often important human factors in maritime climates.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
       ]
     },
     "washington-state": {
       "name": "Washington State",
       "summary": "A more continental US region producing ripe wines with good acidity due to warm days and cool nights.",
-      "climate": "Continental",
+      "climate": "Warm Continental",
       "styleSummary": "Ripe fruit with good acidity due to diurnal range.",
       "mitigating": [
         "rain shadow",
@@ -1657,7 +1844,7 @@
         "columbia-valley": {
           "name": "Columbia Valley",
           "summary": "Large warm dry Washington region known for ripe Bordeaux varieties supported by irrigation.",
-          "climate": "Warm continental",
+          "climate": "Warm Continental",
           "styleSummary": "Ripe fruit with freshness retained by cool nights, often in Cabernet and Merlot.",
           "keyGrapes": [
             "Cabernet Sauvignon",
@@ -1755,12 +1942,24 @@
               "difficulty": 1
             }
           },
-          "classification": "Large warm dry AVA producing ripe Bordeaux-variety wines with retained freshness from cool nights."
+          "classification": "Large warm dry AVA producing ripe Bordeaux-variety wines with retained freshness from cool nights.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk.",
+            "Irrigation management can be critical where natural rainfall is low or meltwater is available."
+          ]
         },
         "walla-walla-valley": {
           "name": "Walla Walla Valley",
           "summary": "Prestige Washington AVA producing concentrated red wines from Bordeaux varieties and Syrah.",
-          "climate": "Warm continental",
+          "climate": "Warm Continental",
           "styleSummary": "Structured ripe reds with black fruit and oak influence.",
           "keyGrapes": [
             "Cabernet Sauvignon",
@@ -1858,13 +2057,37 @@
               "difficulty": 1
             }
           },
-          "classification": "Prestige Washington AVA known for concentrated structured reds."
+          "classification": "Prestige Washington AVA known for concentrated structured reds.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk.",
+            "Irrigation management can be critical where natural rainfall is low or meltwater is available."
+          ]
         }
       },
       "classification": "Washington quality context centers on warm continental AVAs, irrigation and large day-night temperature swings.",
       "lawNotes": [
         "Irrigation is essential in much of eastern Washington.",
         "Columbia Valley is the key broad quality AVA to recognize."
+      ],
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk.",
+        "Irrigation management can be critical where natural rainfall is low or meltwater is available."
       ]
     }
   }

@@ -5,7 +5,7 @@
     "bordeaux": {
       "name": "Bordeaux",
       "summary": "Classic maritime French region known for structured red blends and important dry and sweet whites.",
-      "climate": "Maritime",
+      "climate": "Moderate Maritime",
       "styleSummary": "Structured reds, fresh acidity, and important dry and sweet whites.",
       "mitigating": [
         "Atlantic influence",
@@ -234,7 +234,7 @@
         "medoc": {
           "name": "Medoc",
           "summary": "Left Bank Bordeaux area known for Cabernet Sauvignon-led red blends from gravel soils in a maritime climate.",
-          "climate": "Maritime",
+          "climate": "Moderate Maritime",
           "styleSummary": "Structured Cabernet-led red blends with black fruit, tannin and ageing potential.",
           "keyGrapes": [
             "Cabernet Sauvignon",
@@ -370,12 +370,23 @@
               ],
               "difficulty": 2
             }
-          }
+          },
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "haut-medoc": {
           "name": "Haut-Medoc",
           "summary": "Higher-quality southern Medoc area containing several famous communes.",
-          "climate": "Maritime",
+          "climate": "Moderate Maritime",
           "styleSummary": "Cabernet-led blends with greater concentration and structure from the best gravel sites.",
           "keyGrapes": [
             "Cabernet Sauvignon",
@@ -515,12 +526,23 @@
           "classification": "The commune appellations of the Haut-Medoc sit above the broader Haut-Medoc and Medoc appellations in prestige.",
           "lawNotes": [
             "Know the key communes: Saint-Estephe, Pauillac, Saint-Julien and Margaux."
+          ],
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
           ]
         },
         "margaux": {
           "name": "Margaux",
           "summary": "Prestige Left Bank commune often associated with perfumed, elegant Cabernet-based wines.",
-          "climate": "Maritime",
+          "climate": "Moderate Maritime",
           "styleSummary": "Refined, perfumed and elegant Cabernet-led blends.",
           "keyGrapes": [
             "Cabernet Sauvignon",
@@ -618,12 +640,23 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "pauillac": {
           "name": "Pauillac",
           "summary": "Prestige Left Bank commune famous for powerful, structured Cabernet Sauvignon-based wines.",
-          "climate": "Maritime",
+          "climate": "Moderate Maritime",
           "styleSummary": "Powerful, concentrated Cabernet-led blends with high tannin and ageing potential.",
           "keyGrapes": [
             "Cabernet Sauvignon",
@@ -721,12 +754,23 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "saint-julien": {
           "name": "Saint-Julien",
           "summary": "Important Left Bank commune known for balanced, classic Cabernet-led wines.",
-          "climate": "Maritime",
+          "climate": "Moderate Maritime",
           "styleSummary": "Balanced, structured and polished Cabernet-based blends.",
           "keyGrapes": [
             "Cabernet Sauvignon",
@@ -824,12 +868,23 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "saint-estephe": {
           "name": "Saint-Estephe",
           "summary": "Northern Medoc commune often producing firmer, more austere structured wines.",
-          "climate": "Maritime",
+          "climate": "Moderate Maritime",
           "styleSummary": "Firm, tannic Cabernet-led blends that often need time.",
           "keyGrapes": [
             "Cabernet Sauvignon",
@@ -927,12 +982,23 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "pomerol": {
           "name": "Pomerol",
           "summary": "Right Bank appellation famous for plush Merlot-led wines from clay-rich soils.",
-          "climate": "Maritime",
+          "climate": "Moderate Maritime",
           "styleSummary": "Rich, plush Merlot-led reds with softer texture than classic Left Bank wines.",
           "keyGrapes": [
             "Merlot",
@@ -1025,12 +1091,23 @@
               ],
               "difficulty": 2
             }
-          }
+          },
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "saint-emilion": {
           "name": "Saint-Emilion",
           "summary": "Prestige Right Bank appellation known for Merlot-led blends with limestone and clay influence.",
-          "climate": "Maritime",
+          "climate": "Moderate Maritime",
           "styleSummary": "Merlot-led reds combining ripe fruit, freshness and structure.",
           "keyGrapes": [
             "Merlot",
@@ -1123,12 +1200,23 @@
               ],
               "difficulty": 2
             }
-          }
+          },
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "graves": {
           "name": "Graves",
           "summary": "Southern Bordeaux area producing both red and dry white wines from gravel soils.",
-          "climate": "Maritime",
+          "climate": "Moderate Maritime",
           "styleSummary": "Structured reds plus citrus-led dry whites, both shaped by gravel soils.",
           "keyGrapes": [
             "Cabernet Sauvignon",
@@ -1308,12 +1396,23 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "pessac-leognan": {
           "name": "Pessac-Leognan",
           "summary": "Top Graves appellation known for premium red and dry white Bordeaux.",
-          "climate": "Maritime",
+          "climate": "Moderate Maritime",
           "styleSummary": "Premium structured reds and high-quality dry whites with freshness and complexity.",
           "keyGrapes": [
             "Cabernet Sauvignon",
@@ -1494,12 +1593,23 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "sauternes": {
           "name": "Sauternes",
           "summary": "Benchmark sweet Bordeaux appellation producing rich botrytised wines.",
-          "climate": "Maritime",
+          "climate": "Moderate Maritime",
           "styleSummary": "Lusciously sweet botrytised wines with honey, apricot and saffron complexity.",
           "keyGrapes": [
             "Semillon",
@@ -1602,12 +1712,23 @@
           "lawNotes": [
             "Botrytis concentration is the key production concept.",
             "Semillon usually forms the core of these wines."
+          ],
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
           ]
         },
         "barsac": {
           "name": "Barsac",
           "summary": "Sweet Bordeaux appellation within the Sauternes area, known for botrytised wines that can show freshness and finesse.",
-          "climate": "Maritime",
+          "climate": "Moderate Maritime",
           "styleSummary": "Sweet botrytised wines with richness balanced by freshness.",
           "keyGrapes": [
             "Semillon",
@@ -1709,6 +1830,18 @@
           "classification": "Barsac may label wines as Barsac or Sauternes.",
           "lawNotes": [
             "Like Sauternes, Barsac depends on noble rot and careful selective harvesting."
+          ],
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Rules on vineyard practice and quality control can directly shape yields, ripeness, and final style.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
           ]
         }
       },
@@ -1716,12 +1849,24 @@
       "lawNotes": [
         "Left Bank generally means Cabernet Sauvignon-led blends, while Right Bank generally means more Merlot and Cabernet Franc.",
         "Sweet Bordeaux relies on botrytis, especially in Sauternes and Barsac."
+      ],
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+        "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Disease control and canopy management are often important human factors in maritime climates.",
+        "Regional style depends not only on climate and site, but also on deliberate human choices in the vineyard and cellar.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
       ]
     },
     "south-west-france": {
       "name": "South West France",
       "summary": "Diverse inland and Atlantic-influenced region producing structured reds, aromatic whites and sweet wines.",
-      "climate": "Mixed / Transitional",
+      "climate": "Moderate Maritime [transitional]",
       "styleSummary": "Diverse region with structured reds, aromatic whites and sweet wines.",
       "mitigating": [
         "Atlantic influence in west",
@@ -1866,12 +2011,22 @@
           ],
           "difficulty": 2
         }
-      }
+      },
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Disease control and canopy management are often important human factors in maritime climates.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "burgundy": {
       "name": "Burgundy",
       "summary": "Classic continental region focused on Pinot Noir and Chardonnay with strong site expression.",
-      "climate": "Continental",
+      "climate": "Cool Continental",
       "styleSummary": "Perfumed Pinot Noir and precise Chardonnay with strong site expression.",
       "mitigating": [
         "Slope",
@@ -1995,12 +2150,24 @@
       "lawNotes": [
         "Pinot Noir and Chardonnay dominate the key quality zones.",
         "Site hierarchy and village names are central exam themes."
+      ],
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality.",
+        "Subregional site differences are important to how grapes ripen and to the final balance of the wines."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+        "Choice of production method and maturation is a major human factor in shaping regional wine style."
       ]
     },
     "chablis": {
       "name": "Chablis",
       "summary": "Cool continental Chardonnay region known for lean, high-acid wines with citrus and mineral character.",
-      "climate": "Continental",
+      "climate": "Cool Continental",
       "styleSummary": "Lean, high-acid Chardonnay with citrus and mineral profile.",
       "mitigating": [
         "Frost protection",
@@ -2064,12 +2231,24 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Frost risk can shorten the effective growing season and threaten yields in vulnerable sites.",
+        "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Frost protection and careful site selection are key human responses in frost-prone vineyards.",
+        "Terracing, manual work, and careful site matching become more important on steep or exposed slopes."
+      ]
     },
     "cote-dor": {
       "name": "Cote d'Or",
       "summary": "The heartland of premium Burgundy, known for precise site expression from Pinot Noir and Chardonnay.",
-      "climate": "Continental",
+      "climate": "Cool Continental",
       "styleSummary": "The classic heartland of premium Burgundy with strong site hierarchy.",
       "mitigating": [
         "East-facing slopes",
@@ -2178,12 +2357,24 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality.",
+        "Drainage influences vine vigor and can be an important reason why some vineyard sites ripen more consistently than others."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "maconnais": {
       "name": "Maconnais",
       "summary": "Warmer southern Burgundy area producing fruitier, riper Chardonnay than northern Burgundy.",
-      "climate": "Continental with warmer southern influence",
+      "climate": "Moderate Continental [warmer southern influence]",
       "styleSummary": "Riper, fruitier Chardonnay than northern Burgundy.",
       "mitigating": [
         "Warmer southerly position",
@@ -2244,12 +2435,23 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "beaujolais": {
       "name": "Beaujolais",
       "summary": "Region south of Burgundy known for fresh, fruit-driven Gamay with low tannin and bright acidity.",
-      "climate": "Continental",
+      "climate": "Cool Continental",
       "styleSummary": "Fresh, fruit-driven reds, often lighter-bodied, from Gamay.",
       "mitigating": [
         "Granite soils",
@@ -2313,12 +2515,22 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Soil type influences drainage, heat retention, and vine vigor, shaping the style and consistency of the wines."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "alsace": {
       "name": "Alsace",
       "summary": "Dry continental region in eastern France known for aromatic whites and a relatively dry climate due to the Vosges rain shadow.",
-      "climate": "Continental",
+      "climate": "Cool Continental",
       "styleSummary": "Aromatic whites in a relatively dry climate due to rain shadow.",
       "mitigating": [
         "Vosges rain shadow",
@@ -2510,12 +2722,24 @@
           "aging": "Bottle fermentation with lees ageing",
           "keyPoint": "Important French sparkling wine made outside Champagne."
         }
-      }
+      },
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates.",
+        "Dry conditions reduce disease pressure but can limit vine vigor and water availability."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk.",
+        "Irrigation, drought-adapted training, or careful water management become important where dry conditions are severe."
+      ]
     },
     "muscadet": {
       "name": "Muscadet",
       "summary": "Cool maritime Loire region producing light, crisp whites with saline freshness, often enhanced by lees ageing.",
-      "climate": "Maritime",
+      "climate": "Cool Maritime",
       "styleSummary": "Light, crisp whites often with saline freshness.",
       "mitigating": [
         "Atlantic influence",
@@ -2578,12 +2802,22 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Disease control and canopy management are often important human factors in maritime climates.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "anjou-saumur": {
       "name": "Anjou-Saumur",
       "summary": "Important Loire subregion known for Chenin Blanc in dry, sweet and sparkling styles, plus Cabernet Franc reds.",
-      "climate": "Maritime to Transitional",
+      "climate": "Moderate Maritime [transitional]",
       "styleSummary": "Versatile Loire area producing dry and sweet Chenin Blanc, sparkling wines and fresh Cabernet Franc reds.",
       "mitigating": [
         "Atlantic influence",
@@ -2700,12 +2934,24 @@
           "aging": "Bottle fermentation with lees ageing",
           "keyPoint": "Saumur is one of the principal sparkling names from the Loire."
         }
-      }
+      },
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+        "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Disease control and canopy management are often important human factors in maritime climates.",
+        "Choice of production method and maturation is a major human factor in shaping regional wine style.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "touraine": {
       "name": "Touraine",
       "summary": "Loire region producing fresh Sauvignon Blanc, lighter Cabernet Franc reds and sparkling Chenin Blanc styles including Vouvray.",
-      "climate": "Transitional",
+      "climate": "Moderate Maritime [transitional]",
       "styleSummary": "Fresh whites and reds plus high-acid Loire sparkling wines from Chenin Blanc in key areas.",
       "mitigating": [
         "River influence",
@@ -2811,12 +3057,23 @@
           "aging": "Traditional method, often with lees ageing",
           "keyPoint": "Chenin Blanc and high acidity are the core clues for Vouvray sparkling."
         }
-      }
+      },
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+        "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Disease control and canopy management are often important human factors in maritime climates.",
+        "Choice of production method and maturation is a major human factor in shaping regional wine style.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "central-vineyards": {
       "name": "Central Vineyards",
       "summary": "Cool inland Loire area focused on precise, high-acid Sauvignon Blanc wines.",
-      "climate": "Continental",
+      "climate": "Cool Continental",
       "styleSummary": "Focused on high-acid Sauvignon Blanc styles.",
       "mitigating": [
         "Inland cool climate",
@@ -2882,7 +3139,7 @@
         "sancerre": {
           "name": "Sancerre",
           "summary": "Benchmark Loire appellation for precise high-acid Sauvignon Blanc, with some Pinot Noir also produced.",
-          "climate": "Cool continental",
+          "climate": "Cool Continental",
           "styleSummary": "Fresh, high-acid Sauvignon Blanc with citrus, green fruit and mineral precision.",
           "keyGrapes": [
             "Sauvignon Blanc",
@@ -2983,12 +3240,23 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "pouilly-fume": {
           "name": "Pouilly-Fume",
           "summary": "Prestige Loire Sauvignon Blanc appellation known for dry, high-acid wines with mineral and smoky notes.",
-          "climate": "Cool continental",
+          "climate": "Cool Continental",
           "styleSummary": "Dry Sauvignon Blanc with high acidity, citrus fruit and mineral/smoky nuance.",
           "keyGrapes": [
             "Sauvignon Blanc"
@@ -3044,14 +3312,36 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         }
-      }
+      },
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "northern-rhone": {
       "name": "Northern Rhone",
       "summary": "Steep continental valley region known for structured Syrah and aromatic Viognier.",
-      "climate": "Continental",
+      "climate": "Cool Continental",
       "styleSummary": "Structured Syrah reds and aromatic Viognier whites.",
       "mitigating": [
         "Mistral",
@@ -3241,7 +3531,7 @@
         "cote-rotie": {
           "name": "Cote-Rotie",
           "summary": "Prestige steep-site Syrah appellation, sometimes with a small amount of Viognier co-fermented.",
-          "climate": "Continental",
+          "climate": "Cool Continental",
           "styleSummary": "Perfumed, structured Syrah with black fruit, pepper and floral lift.",
           "keyGrapes": [
             "Syrah",
@@ -3342,12 +3632,24 @@
               "difficulty": 1
             }
           },
-          "classification": "Cote-Rotie is a prestige Syrah appellation that may include a small amount of Viognier."
+          "classification": "Cote-Rotie is a prestige Syrah appellation that may include a small amount of Viognier.",
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Wind can cool vineyards and reduce fungal disease pressure, but can also affect vigor and fruit set.",
+            "Morning mist and autumn humidity can encourage noble rot where sweet wine production is important."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Training systems, row orientation, and site protection matter where wind is a major factor.",
+            "Selective hand harvesting and careful sorting are crucial where botrytis is desired."
+          ]
         },
         "condrieu": {
           "name": "Condrieu",
           "summary": "Prestige white appellation producing rich aromatic Viognier.",
-          "climate": "Continental",
+          "climate": "Cool Continental",
           "styleSummary": "Full-bodied aromatic Viognier with apricot, peach and floral notes.",
           "keyGrapes": [
             "Viognier"
@@ -3403,12 +3705,24 @@
               "difficulty": 1
             }
           },
-          "classification": "Condrieu is the famous Viognier appellation of the Northern Rhone."
+          "classification": "Condrieu is the famous Viognier appellation of the Northern Rhone.",
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Wind can cool vineyards and reduce fungal disease pressure, but can also affect vigor and fruit set.",
+            "Morning mist and autumn humidity can encourage noble rot where sweet wine production is important."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Training systems, row orientation, and site protection matter where wind is a major factor.",
+            "Selective hand harvesting and careful sorting are crucial where botrytis is desired."
+          ]
         },
         "saint-joseph": {
           "name": "Saint-Joseph",
           "summary": "Large Northern Rhone appellation for Syrah and some white wines from Marsanne and Roussanne.",
-          "climate": "Continental",
+          "climate": "Cool Continental",
           "styleSummary": "Structured Syrah with pepper and dark fruit; some fuller-bodied whites.",
           "keyGrapes": [
             "Syrah",
@@ -3552,12 +3866,24 @@
               ],
               "difficulty": 2
             }
-          }
+          },
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Wind can cool vineyards and reduce fungal disease pressure, but can also affect vigor and fruit set.",
+            "Morning mist and autumn humidity can encourage noble rot where sweet wine production is important."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Training systems, row orientation, and site protection matter where wind is a major factor.",
+            "Selective hand harvesting and careful sorting are crucial where botrytis is desired."
+          ]
         },
         "crozes-hermitage": {
           "name": "Crozes-Hermitage",
           "summary": "Broad appellation surrounding Hermitage, producing Syrah and some white wines.",
-          "climate": "Continental",
+          "climate": "Cool Continental",
           "styleSummary": "Structured but generally less concentrated Syrah than Hermitage.",
           "keyGrapes": [
             "Syrah",
@@ -3701,12 +4027,24 @@
               ],
               "difficulty": 2
             }
-          }
+          },
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Wind can cool vineyards and reduce fungal disease pressure, but can also affect vigor and fruit set.",
+            "Morning mist and autumn humidity can encourage noble rot where sweet wine production is important."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Training systems, row orientation, and site protection matter where wind is a major factor.",
+            "Selective hand harvesting and careful sorting are crucial where botrytis is desired."
+          ]
         },
         "hermitage": {
           "name": "Hermitage",
           "summary": "Prestige hill of the Northern Rhone producing powerful Syrah and ageworthy Marsanne/Roussanne-based whites.",
-          "climate": "Continental",
+          "climate": "Cool Continental",
           "styleSummary": "Powerful, concentrated Syrah and rich ageworthy whites.",
           "keyGrapes": [
             "Syrah",
@@ -3850,12 +4188,24 @@
               ],
               "difficulty": 2
             }
-          }
+          },
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Wind can cool vineyards and reduce fungal disease pressure, but can also affect vigor and fruit set.",
+            "Morning mist and autumn humidity can encourage noble rot where sweet wine production is important."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Training systems, row orientation, and site protection matter where wind is a major factor.",
+            "Selective hand harvesting and careful sorting are crucial where botrytis is desired."
+          ]
         },
         "cornas": {
           "name": "Cornas",
           "summary": "Warm, steep Northern Rhone appellation producing full-bodied Syrah only.",
-          "climate": "Continental",
+          "climate": "Cool Continental",
           "styleSummary": "Full-bodied, dark-fruited, firmly structured Syrah.",
           "keyGrapes": [
             "Syrah"
@@ -3913,19 +4263,43 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Wind can cool vineyards and reduce fungal disease pressure, but can also affect vigor and fruit set.",
+            "Morning mist and autumn humidity can encourage noble rot where sweet wine production is important."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Training systems, row orientation, and site protection matter where wind is a major factor.",
+            "Selective hand harvesting and careful sorting are crucial where botrytis is desired."
+          ]
         }
       },
       "classification": "Single-varietal Syrah dominates red appellations, while white appellations focus on Viognier or Marsanne and Roussanne.",
       "lawNotes": [
         "Cote-Rotie permits a little Viognier with Syrah.",
         "Condrieu is Viognier-only."
+      ],
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Wind can cool vineyards and reduce fungal disease pressure, but can also affect vigor and fruit set.",
+        "Morning mist and autumn humidity can encourage noble rot where sweet wine production is important."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Training systems, row orientation, and site protection matter where wind is a major factor.",
+        "Selective hand harvesting and careful sorting are crucial where botrytis is desired."
       ]
     },
     "southern-rhone": {
       "name": "Southern Rhone",
       "summary": "Warm Mediterranean region known for Grenache-led blends, ripe fruit, body, higher alcohol and important sweet fortified Muscat styles nearby.",
-      "climate": "Mediterranean",
+      "climate": "Warm Mediterranean",
       "styleSummary": "Ripe fruit, fuller body and higher alcohol in Grenache-led blends.",
       "mitigating": [
         "Mistral",
@@ -4129,7 +4503,7 @@
         "chateauneuf-du-pape": {
           "name": "Chateauneuf-du-Pape",
           "summary": "Prestige Southern Rhone appellation known for full-bodied Grenache-led blends and some white wines.",
-          "climate": "Mediterranean",
+          "climate": "Warm Mediterranean",
           "styleSummary": "Ripe, powerful Grenache-led blends with spice, body and warmth.",
           "keyGrapes": [
             "Grenache",
@@ -4274,12 +4648,24 @@
               "difficulty": 2
             }
           },
-          "classification": "Flagship Southern Rhone appellation known for full-bodied Grenache-led blends."
+          "classification": "Flagship Southern Rhone appellation known for full-bodied Grenache-led blends.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Wind can cool vineyards and reduce fungal disease pressure, but can also affect vigor and fruit set.",
+            "Morning mist and autumn humidity can encourage noble rot where sweet wine production is important."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Training systems, row orientation, and site protection matter where wind is a major factor.",
+            "Selective hand harvesting and careful sorting are crucial where botrytis is desired."
+          ]
         },
         "gigondas": {
           "name": "Gigondas",
           "summary": "Southern Rhone appellation producing full-bodied Grenache-based reds, often with freshness from elevation.",
-          "climate": "Mediterranean",
+          "climate": "Warm Mediterranean",
           "styleSummary": "Ripe, structured Grenache-based reds with body and spice.",
           "keyGrapes": [
             "Grenache",
@@ -4423,12 +4809,24 @@
               ],
               "difficulty": 2
             }
-          }
+          },
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Wind can cool vineyards and reduce fungal disease pressure, but can also affect vigor and fruit set.",
+            "Morning mist and autumn humidity can encourage noble rot where sweet wine production is important."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Training systems, row orientation, and site protection matter where wind is a major factor.",
+            "Selective hand harvesting and careful sorting are crucial where botrytis is desired."
+          ]
         },
         "vacqueyras": {
           "name": "Vacqueyras",
           "summary": "Southern Rhone appellation producing Grenache-led reds with ripe fruit and spice.",
-          "climate": "Mediterranean",
+          "climate": "Warm Mediterranean",
           "styleSummary": "Ripe, spicy Grenache-based red blends.",
           "keyGrapes": [
             "Grenache",
@@ -4572,12 +4970,24 @@
               ],
               "difficulty": 2
             }
-          }
+          },
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Wind can cool vineyards and reduce fungal disease pressure, but can also affect vigor and fruit set.",
+            "Morning mist and autumn humidity can encourage noble rot where sweet wine production is important."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Training systems, row orientation, and site protection matter where wind is a major factor.",
+            "Selective hand harvesting and careful sorting are crucial where botrytis is desired."
+          ]
         },
         "tavel": {
           "name": "Tavel",
           "summary": "Southern Rhone appellation devoted to dry rosé.",
-          "climate": "Mediterranean",
+          "climate": "Warm Mediterranean",
           "styleSummary": "Dry, deeper-coloured rosé with more body and flavour than the palest rosé styles.",
           "keyGrapes": [
             "Grenache",
@@ -4719,12 +5129,24 @@
               "difficulty": 1
             }
           },
-          "classification": "Tavel is famous for dry rose rather than red wine."
+          "classification": "Tavel is famous for dry rose rather than red wine.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Wind can cool vineyards and reduce fungal disease pressure, but can also affect vigor and fruit set.",
+            "Morning mist and autumn humidity can encourage noble rot where sweet wine production is important."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Training systems, row orientation, and site protection matter where wind is a major factor.",
+            "Selective hand harvesting and careful sorting are crucial where botrytis is desired."
+          ]
         },
         "beaumes-de-venise": {
           "name": "Beaumes-de-Venise",
           "summary": "Southern Rhone appellation best known for sweet fortified Muscat.",
-          "climate": "Mediterranean",
+          "climate": "Warm Mediterranean",
           "styleSummary": "Sweet fortified Muscat with grapey, floral aromatics and balancing freshness.",
           "keyGrapes": [
             "Muscat Blanc a Petits Grains"
@@ -4786,19 +5208,43 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Wind can cool vineyards and reduce fungal disease pressure, but can also affect vigor and fruit set.",
+            "Morning mist and autumn humidity can encourage noble rot where sweet wine production is important."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Training systems, row orientation, and site protection matter where wind is a major factor.",
+            "Selective hand harvesting and careful sorting are crucial where botrytis is desired."
+          ]
         }
       },
       "classification": "Grenache-led blends dominate many appellations, with Chateauneuf-du-Pape as the most famous prestige name.",
       "lawNotes": [
         "Blends are central to understanding Southern Rhone styles.",
         "Tavel is the classic dry rose appellation."
+      ],
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Wind can cool vineyards and reduce fungal disease pressure, but can also affect vigor and fruit set.",
+        "Morning mist and autumn humidity can encourage noble rot where sweet wine production is important."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Training systems, row orientation, and site protection matter where wind is a major factor.",
+        "Selective hand harvesting and careful sorting are crucial where botrytis is desired."
       ]
     },
     "languedoc-roussillon": {
       "name": "Languedoc-Roussillon",
       "summary": "Large warm Mediterranean region producing ripe reds, fresh whites and a wide range of styles from varied sites.",
-      "climate": "Mediterranean",
+      "climate": "Warm Mediterranean",
       "styleSummary": "Ripe fruit, generous body and wide stylistic diversity.",
       "mitigating": [
         "Mediterranean sunshine",
@@ -4940,12 +5386,24 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Wind can cool vineyards and reduce fungal disease pressure, but can also affect vigor and fruit set.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Training systems, row orientation, and site protection matter where wind is a major factor.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards."
+      ]
     },
     "provence": {
       "name": "Provence",
       "summary": "Warm Mediterranean region strongly associated with pale dry rosé, plus some reds.",
-      "climate": "Mediterranean",
+      "climate": "Warm Mediterranean",
       "styleSummary": "Warm-climate rosé and red wines with ripe fruit profile.",
       "mitigating": [
         "Sea influence",
@@ -5050,12 +5508,24 @@
           ],
           "difficulty": 2
         }
-      }
+      },
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+        "Wind can cool vineyards and reduce fungal disease pressure, but can also affect vigor and fruit set."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Training systems, row orientation, and site protection matter where wind is a major factor.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "champagne": {
       "name": "Champagne",
       "summary": "Cool-climate traditional method sparkling region known for high acidity, autolytic complexity and blending skill.",
-      "climate": "Cool continental",
+      "climate": "Cool Continental",
       "styleSummary": "High-acid traditional method sparkling wines ranging from fresh non-vintage blends to complex prestige cuvees.",
       "mitigating": [
         "chalk soils",
@@ -5254,7 +5724,7 @@
         "montagne-de-reims": {
           "name": "Montagne de Reims",
           "summary": "Important Champagne subregion strongly associated with Pinot Noir and structured base wines.",
-          "climate": "Cool continental",
+          "climate": "Cool Continental",
           "styleSummary": "Pinot Noir-led base wines adding body and structure to Champagne blends.",
           "keyGrapes": [
             "Pinot Noir"
@@ -5316,12 +5786,23 @@
           "classification": "Major Pinot Noir zone, with important grand cru villages in the wider district.",
           "lawNotes": [
             "Pinot Noir dominance is the headline exam idea."
+          ],
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Soil type influences drainage, heat retention, and vine vigor, shaping the style and consistency of the wines."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Blending decisions are important human factors for maintaining house style and balancing vintage variation.",
+            "Winemaking choices such as ageing regime, fortification, or blending system are major human factors in the final style."
           ]
         },
         "vallee-de-la-marne": {
           "name": "Vallee de la Marne",
           "summary": "Champagne subregion particularly associated with Pinot Meunier and fruitier base wines.",
-          "climate": "Cool continental",
+          "climate": "Cool Continental",
           "styleSummary": "Fruitier base wines often linked to Pinot Meunier.",
           "keyGrapes": [
             "Pinot Meunier"
@@ -5378,12 +5859,23 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Soil type influences drainage, heat retention, and vine vigor, shaping the style and consistency of the wines."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Blending decisions are important human factors for maintaining house style and balancing vintage variation.",
+            "Winemaking choices such as ageing regime, fortification, or blending system are major human factors in the final style."
+          ]
         },
         "cote-des-blancs": {
           "name": "Cote des Blancs",
           "summary": "Prestige Champagne subregion especially known for Chardonnay.",
-          "climate": "Cool continental",
+          "climate": "Cool Continental",
           "styleSummary": "Fine, elegant Chardonnay-based wines with high acidity and finesse.",
           "keyGrapes": [
             "Chardonnay"
@@ -5447,12 +5939,23 @@
           "classification": "Benchmark Chardonnay area strongly associated with Blanc de Blancs.",
           "lawNotes": [
             "Chalk soils and Chardonnay are the key clues here."
+          ],
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Soil type influences drainage, heat retention, and vine vigor, shaping the style and consistency of the wines."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Blending decisions are important human factors for maintaining house style and balancing vintage variation.",
+            "Winemaking choices such as ageing regime, fortification, or blending system are major human factors in the final style."
           ]
         },
         "cote-des-bar": {
           "name": "Cote des Bar",
           "summary": "Southern Champagne area known largely for Pinot Noir and slightly riper fruit expression.",
-          "climate": "Cool continental",
+          "climate": "Cool Continental",
           "styleSummary": "Pinot Noir-rich base wines with a slightly riper profile.",
           "keyGrapes": [
             "Pinot Noir"
@@ -5510,13 +6013,36 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Soil type influences drainage, heat retention, and vine vigor, shaping the style and consistency of the wines."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Blending decisions are important human factors for maintaining house style and balancing vintage variation.",
+            "Winemaking choices such as ageing regime, fortification, or blending system are major human factors in the final style."
+          ]
         }
       },
       "classification": "Traditional method sparkling region using permitted grapes Chardonnay, Pinot Noir and Pinot Meunier, with sweetness levels and ageing categories highly exam-relevant.",
       "lawNotes": [
         "Non-vintage Champagne requires lees ageing; vintage and prestige cuvee require longer ageing.",
         "Brut Nature, Extra Brut and Brut sweetness terms are important exam language."
+      ],
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Soil type influences drainage, heat retention, and vine vigor, shaping the style and consistency of the wines.",
+        "Conditions favoring botrytis or late harvesting can be essential vineyard factors where sweet wines are important."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Blending decisions are important human factors for maintaining house style and balancing vintage variation.",
+        "Winemaking choices such as ageing regime, fortification, or blending system are major human factors in the final style."
       ]
     }
   },

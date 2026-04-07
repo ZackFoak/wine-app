@@ -28,6 +28,7 @@
       margin: 0;
       height: 100%;
       font-family: Inter, Arial, sans-serif;
+      line-height: 1.5;
       color: var(--text);
       background:
         radial-gradient(circle at top left, #fff7ef 0%, #f3e7da 35%, #eadccf 100%),
@@ -92,6 +93,10 @@
       margin-bottom: 16px;
       font-size: 13px;
       color: var(--muted);
+      line-height: 1.5;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
     }
 
     .breadcrumb-link {
@@ -116,9 +121,9 @@
       width: min(760px, calc(100vw - 80px));
       padding: 14px;
       border-radius: 20px;
-      background: rgba(255,255,255,0.75);
-      backdrop-filter: blur(10px);
-      box-shadow: var(--shadow);
+      background: rgba(255,255,255,0.78);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 18px 40px rgba(54, 30, 18, 0.12);
       border: 1px solid rgba(255,255,255,0.5);
     }
 
@@ -145,11 +150,11 @@
     #searchInput {
       flex: 1;
       min-width: 240px;
-      padding: 12px 14px;
+      padding: 14px 16px;
       border-radius: 14px;
       border: 1px solid #e1d3c8;
       background: rgba(255,255,255,0.92);
-      font-size: 14px;
+      font-size: 16px;
       outline: none;
     }
 
@@ -159,6 +164,10 @@
     }
 
     .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
       padding: 10px 14px;
       border: none;
       border-radius: 12px;
@@ -168,6 +177,15 @@
       transition: transform .16s ease, box-shadow .16s ease, background .16s ease, color .16s ease;
       box-shadow: 0 4px 12px rgba(50, 28, 16, 0.06);
       font-weight: 600;
+    }
+
+    .btn:focus-visible,
+    .pill:focus-visible,
+    .pronounce-btn:focus-visible,
+    #searchInput:focus-visible,
+    .toolbar-toggle:focus-visible {
+      outline: 3px solid rgba(184, 137, 60, 0.28);
+      outline-offset: 2px;
     }
 
     .btn:hover {
@@ -189,11 +207,19 @@
       background: rgba(255,255,255,0.76);
       border: 1px solid rgba(120,72,48,0.10);
       border-radius: 18px;
-      padding: 18px;
-      margin-bottom: 14px;
+      padding: 20px;
+      margin-bottom: 16px;
       box-shadow:
         0 10px 24px rgba(54, 30, 18, 0.05),
         inset 0 1px 0 rgba(255,255,255,0.65);
+    }
+
+    .section-card > :first-child {
+      margin-top: 0;
+    }
+
+    .section-card > :last-child {
+      margin-bottom: 0;
     }
 
     .meta-grid {
@@ -222,14 +248,19 @@
     }
 
     .pill {
-      display: inline-block;
-      padding: 7px 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 7px 12px;
       margin: 4px 6px 4px 0;
       border-radius: 999px;
       background: #fff;
       border: 1px solid #ecdccf;
       cursor: pointer;
       transition: all .15s ease;
+      font: inherit;
+      color: var(--text);
     }
 
     .pill:hover {
@@ -445,6 +476,10 @@
       margin-bottom: 6px;
     }
 
+    p {
+      margin: 0 0 12px;
+    }
+
     @media (max-width: 1024px) {
       body {
         overflow: hidden;
@@ -624,11 +659,21 @@
 
     .sheet-body {
       flex: 1 1 auto;
+      height: 0;
+      max-height: 100%;
       overflow-y: auto;
+      overflow-x: hidden;
       -webkit-overflow-scrolling: touch;
       overscroll-behavior-y: contain;
-      padding: 8px 16px calc(120px + env(safe-area-inset-bottom));
+      touch-action: pan-y;
+      padding: 8px 16px calc(180px + env(safe-area-inset-bottom));
       min-height: 0;
+    }
+
+    #content {
+      width: min(100%, 1120px);
+      margin: 0 auto;
+      padding-bottom: 24px;
     }
 
     .sheet-handle {
@@ -699,6 +744,21 @@
       border-radius: 14px;
     }
 
+    .factor-tooltip {
+      border: 1px solid rgba(47, 134, 197, 0.22);
+      border-radius: 12px;
+      background: rgba(248, 252, 255, 0.96);
+      color: #174d74;
+      box-shadow: 0 10px 24px rgba(20, 67, 103, 0.14);
+      font-size: 12px;
+      line-height: 1.4;
+      padding: 2px 4px;
+    }
+
+    .factor-tooltip b {
+      color: #0f5f95;
+    }
+
     .leaflet-container {
       background: #dcecf2;
     }
@@ -737,6 +797,7 @@
       line-height: 1.1;
       white-space: nowrap;
       box-shadow: 0 10px 22px rgba(54, 30, 18, 0.14);
+      backdrop-filter: blur(8px);
       cursor: pointer;
       transition: transform .16s ease, box-shadow .16s ease, background .16s ease;
     }
@@ -776,8 +837,24 @@
       line-height: 1.1;
       white-space: nowrap;
       box-shadow: 0 10px 22px rgba(54, 30, 18, 0.18);
+      backdrop-filter: blur(8px);
       cursor: pointer;
       transition: transform .16s ease, box-shadow .16s ease, background .16s ease;
+    }
+
+    .subregion-map-marker {
+      border-color: rgba(184, 137, 60, 0.34);
+      background: rgba(255, 251, 245, 0.97);
+      color: #6a243b;
+      box-shadow: 0 9px 20px rgba(72, 42, 20, 0.14);
+    }
+
+    .region-map-marker.is-selected {
+      background: linear-gradient(135deg, #7b1e3a, #9a274b);
+      color: #fff;
+      border-color: rgba(123, 30, 58, 0.55);
+      box-shadow: 0 16px 30px rgba(123, 30, 58, 0.28);
+      transform: translateY(-1px) scale(1.04);
     }
 
     .region-map-marker::after {
@@ -795,10 +872,25 @@
       pointer-events: none;
     }
 
+    .region-map-marker.is-selected::after {
+      border-right-color: rgba(123, 30, 58, 0.55);
+      border-bottom-color: rgba(123, 30, 58, 0.55);
+    }
+
     .region-map-marker:hover {
       transform: translateY(-1px);
       box-shadow: 0 12px 24px rgba(54, 30, 18, 0.22);
       background: #fff;
+    }
+
+    .subregion-map-marker:hover {
+      background: #fffdf9;
+      box-shadow: 0 12px 24px rgba(88, 50, 23, 0.18);
+    }
+
+    .region-map-marker.is-selected:hover {
+      background: linear-gradient(135deg, #7b1e3a, #a93253);
+      box-shadow: 0 18px 34px rgba(123, 30, 58, 0.3);
     }
 
     .country-map-marker:hover,
@@ -883,15 +975,17 @@
       flex-wrap: wrap;
       gap: 8px;
       margin-top: 6px;
+      align-items: center;
     }
 
     .chip {
-      padding: 6px 10px;
+      padding: 7px 10px;
       border-radius: 999px;
       background: rgba(255,255,255,0.8);
       border: 1px solid #eadccf;
       font-size: 12px;
       font-weight: 600;
+      line-height: 1.2;
     }
     .pairing-chip {
       display: inline-flex;
@@ -903,6 +997,7 @@
       border: 1px solid #eadccf;
       font-size: 12px;
       font-weight: 600;
+      line-height: 1.2;
     }
 
     .pairing-icon {
@@ -914,6 +1009,20 @@
       font-size: 12px;
       color: var(--muted);
       margin-top: 4px;
+    }
+
+    @media (min-width: 1025px) {
+      #title {
+        font-size: 32px;
+      }
+
+      #content {
+        width: min(100%, 1180px);
+      }
+
+      .section-card {
+        padding: 22px 24px;
+      }
     }
     </style>
 

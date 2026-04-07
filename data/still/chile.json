@@ -18,7 +18,7 @@
     "aconcagua": {
       "name": "Aconcagua",
       "summary": "Warm to moderate region producing structured reds inland and fresher wines closer to the coast.",
-      "climate": "Mediterranean",
+      "climate": "Moderate Mediterranean",
       "styleSummary": "Structured reds inland, fresher styles near coast.",
       "mitigating": [
         "Pacific influence",
@@ -133,12 +133,22 @@
               "difficulty": 1
             }
           },
-          "classification": "Warmer inland section more associated with ripe structured reds."
+          "classification": "Warmer inland section more associated with ripe structured reds.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "aconcagua-costa": {
           "name": "Aconcagua Costa",
           "summary": "Cooler coastal Aconcagua section producing fresher styles under stronger Pacific influence.",
-          "climate": "Cool maritime",
+          "climate": "Cool Maritime",
           "styleSummary": "Fresher wines with brighter acidity and more restrained fruit expression.",
           "keyGrapes": [
             "Cabernet Sauvignon"
@@ -193,19 +203,39 @@
               "difficulty": 1
             }
           },
-          "classification": "Cooler coastal section with stronger Pacific influence."
+          "classification": "Cooler coastal section with stronger Pacific influence.",
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         }
       },
       "classification": "Aconcagua is especially useful for contrasting warmer inland red-wine conditions with cooler coastal influence.",
       "lawNotes": [
         "Costa versus inland valley is the key comparative concept.",
         "Pacific cooling is crucial in coastal Chile."
+      ],
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
       ]
     },
     "central-valley": {
       "name": "Central Valley",
       "summary": "Chile’s main production area, producing a wide range of styles from everyday to premium wines.",
-      "climate": "Mediterranean",
+      "climate": "Warm Mediterranean",
       "styleSummary": "Wide range of styles, generally ripe fruit with good balance.",
       "mitigating": [
         "Andes cooling",
@@ -427,7 +457,19 @@
               "difficulty": 1
             }
           },
-          "classification": "Classic Chilean Cabernet Sauvignon valley near Santiago."
+          "classification": "Classic Chilean Cabernet Sauvignon valley near Santiago.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "rapel-valley": {
           "name": "Rapel Valley",
@@ -522,7 +564,19 @@
               "difficulty": 1
             }
           },
-          "classification": "Warm large red-wine valley that includes major premium areas in broader Chilean geography."
+          "classification": "Warm large red-wine valley that includes major premium areas in broader Chilean geography.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "curico-valley": {
           "name": "Curico Valley",
@@ -617,7 +671,19 @@
               "difficulty": 1
             }
           },
-          "classification": "Warm valley known for broad fruit-forward production."
+          "classification": "Warm valley known for broad fruit-forward production.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "maule-valley": {
           "name": "Maule Valley",
@@ -712,19 +778,43 @@
               "difficulty": 1
             }
           },
-          "classification": "Important southern valley known for volume and old-vine context."
+          "classification": "Important southern valley known for volume and old-vine context.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         }
       },
       "classification": "Central Valley is a broad Chilean GI containing several important named valleys such as Maipo, Rapel, Curico and Maule.",
       "lawNotes": [
         "Maipo is the classic Cabernet Sauvignon name.",
         "Chile’s mountain and ocean influences are central to freshness across warm inland regions."
+      ],
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
       ]
     },
     "casablanca": {
       "name": "Casablanca Valley",
       "summary": "Cool coastal region known for fresh aromatic whites and cool-climate reds.",
-      "climate": "Cool maritime",
+      "climate": "Cool Maritime",
       "styleSummary": "Fresh, aromatic wines with high acidity.",
       "mitigating": [
         "Pacific fog",
@@ -811,7 +901,18 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+        "Subregional site differences are important to how grapes ripen and to the final balance of the wines."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Disease control and canopy management are often important human factors in maritime climates.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "colchagua": {
       "name": "Colchagua Valley",
@@ -867,7 +968,18 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     }
   }
 }

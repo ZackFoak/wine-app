@@ -18,7 +18,7 @@
     "stellenbosch": {
       "name": "Stellenbosch",
       "summary": "South Africa’s most important quality region, producing premium red and white wines.",
-      "climate": "Mediterranean",
+      "climate": "Moderate Mediterranean",
       "styleSummary": "Structured reds and balanced whites.",
       "mitigating": [
         "ocean breezes",
@@ -120,7 +120,7 @@
         "simonsberg": {
           "name": "Simonsberg",
           "summary": "Prestige Stellenbosch hillside area producing structured Cabernet Sauvignon-led reds.",
-          "climate": "Warm Mediterranean with maritime influence",
+          "climate": "Warm Mediterranean [maritime influence]",
           "styleSummary": "Full-bodied reds with ripe black fruit, oak and firm tannin.",
           "keyGrapes": [
             "Cabernet Sauvignon",
@@ -212,12 +212,24 @@
               "difficulty": 1
             }
           },
-          "classification": "Prestige Stellenbosch ward for structured Cabernet-led reds."
+          "classification": "Prestige Stellenbosch ward for structured Cabernet-led reds.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards."
+          ]
         },
         "helderberg": {
           "name": "Helderberg",
           "summary": "Coastal Stellenbosch area with maritime moderation supporting freshness in premium wines.",
-          "climate": "Warm maritime",
+          "climate": "Warm Maritime",
           "styleSummary": "Structured but fresher styles than the hottest inland areas.",
           "keyGrapes": [
             "Cabernet Sauvignon",
@@ -310,13 +322,37 @@
               "difficulty": 1
             }
           },
-          "classification": "Maritime-influenced coastal ward giving freshness alongside ripeness."
+          "classification": "Maritime-influenced coastal ward giving freshness alongside ripeness.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         }
       },
       "classification": "Stellenbosch is one of South Africa’s flagship fine-wine wards, especially for Cabernet Sauvignon-led reds and quality whites.",
       "lawNotes": [
         "Maritime influence can moderate the warm Mediterranean climate.",
         "Cape blends and premium Cabernet Sauvignon are key study themes."
+      ],
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Choice of production method and maturation is a major human factor in shaping regional wine style."
       ]
     },
     "paarl": {
@@ -447,12 +483,22 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "walker-bay": {
       "name": "Walker Bay",
       "summary": "Cool coastal region producing elegant Pinot Noir and Chardonnay.",
-      "climate": "Cool maritime",
+      "climate": "Cool Maritime",
       "styleSummary": "Elegant, fresh wines.",
       "mitigating": [
         "strong ocean influence"
@@ -538,7 +584,7 @@
         "hemel-en-aarde-valley": {
           "name": "Hemel-en-Aarde Valley",
           "summary": "Cool coastal Walker Bay sub-region known for premium Pinot Noir and Chardonnay.",
-          "climate": "Cool maritime",
+          "climate": "Cool Maritime",
           "styleSummary": "Fresh cool-climate wines with citrus, orchard fruit and red berry character.",
           "keyGrapes": [
             "Pinot Noir",
@@ -625,18 +671,38 @@
               "difficulty": 1
             }
           },
-          "classification": "Prestige cool-climate sub-region for Pinot Noir and Chardonnay."
+          "classification": "Prestige cool-climate sub-region for Pinot Noir and Chardonnay.",
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         }
       },
       "classification": "Walker Bay is one of South Africa’s most important cool-climate regions for Pinot Noir and Chardonnay.",
       "lawNotes": [
         "Hemel-en-Aarde Valley is the key premium name to connect with cool-climate South Africa."
+      ],
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Disease control and canopy management are often important human factors in maritime climates.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
       ]
     },
     "swartland": {
       "name": "Swartland",
       "summary": "Hot dry region known for old vines and innovative winemaking.",
-      "climate": "Hot Mediterranean",
+      "climate": "Warm Mediterranean [hot]",
       "styleSummary": "Ripe, concentrated wines with minimal intervention styles.",
       "mitigating": [
         "dry farming"
@@ -688,7 +754,16 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     }
   }
 }

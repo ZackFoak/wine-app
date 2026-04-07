@@ -43,6 +43,18 @@ const REGION_CATEGORY_RULES = {
   ])
 };
 
+const WSET_CLIMATE_OPTIONS = [
+  "Cool Maritime",
+  "Moderate Maritime",
+  "Warm Maritime",
+  "Cool Continental",
+  "Moderate Continental",
+  "Warm Continental",
+  "Cool Mediterranean",
+  "Moderate Mediterranean",
+  "Warm Mediterranean"
+];
+
 function saveRecent() {
   localStorage.setItem("wineRecent", JSON.stringify(recent));
 }
@@ -70,6 +82,15 @@ function renderPronounceButton(text, label = text) {
     >
       🔊
     </button>
+  `;
+}
+
+function renderStudyList(title, items = []) {
+  if (!Array.isArray(items) || !items.length) return "";
+
+  return `
+    <p><b>${title}:</b></p>
+    <ul>${items.map(item => `<li>${item}</li>`).join("")}</ul>
   `;
 }
 
@@ -156,6 +177,30 @@ function bindPronounceButtons() {
   });
 }
 
+function buildMapMarkerButton(label, {
+  markerType = "region",
+  selected = false
+} = {}) {
+  const safeLabel = String(label || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+
+  const classes = [
+    markerType === "country" ? "country-map-marker" : "region-map-marker"
+  ];
+
+  if (markerType === "subregion") {
+    classes.push("subregion-map-marker");
+  }
+
+  if (selected) {
+    classes.push("is-selected");
+  }
+
+  return `<button class="${classes.join(" ")}" type="button">${safeLabel}</button>`;
+}
+
 // ================= MAP =================
 const map = L.map("map").setView([25, 10], 2);
 
@@ -194,6 +239,30 @@ function clearSubregionMarkers() {
   });
 
   state.subregionMarkers = [];
+}
+
+function clearRegionBoundaryLayer() {
+  if (state.regionBoundaryLayer && map.hasLayer(state.regionBoundaryLayer)) {
+    map.removeLayer(state.regionBoundaryLayer);
+  }
+
+  state.regionBoundaryLayer = null;
+}
+
+function clearSubregionBoundaryLayer() {
+  if (state.subregionBoundaryLayer && map.hasLayer(state.subregionBoundaryLayer)) {
+    map.removeLayer(state.subregionBoundaryLayer);
+  }
+
+  state.subregionBoundaryLayer = null;
+}
+
+function clearModeratingFactorLayer() {
+  if (state.moderatingFactorLayer && map.hasLayer(state.moderatingFactorLayer)) {
+    map.removeLayer(state.moderatingFactorLayer);
+  }
+
+  state.moderatingFactorLayer = null;
 }
 
 function getRegionCategories(countryKey, regionKey) {
@@ -328,6 +397,9 @@ function scheduleMarkerOverlapLayout(delay = 80) {
 }
 
 function restoreCountryMarkers() {
+  clearRegionBoundaryLayer();
+  clearSubregionBoundaryLayer();
+  clearModeratingFactorLayer();
   clearSubregionMarkers();
   clearRegionMarkers();
 
@@ -349,6 +421,349 @@ function restoreCountryMarkers() {
 
 function getSubregionCoords(countryKey, regionKey, subregionKey) {
   return state.subregionCoords?.[countryKey]?.[regionKey]?.[subregionKey] || null;
+}
+
+function getRegionBoundaryPolygons(countryKey, regionKey) {
+  return state.regionBoundaries?.[countryKey]?.[regionKey] || null;
+}
+
+function getSubregionBoundaryPolygons(countryKey, regionKey, subregionKey) {
+  return state.subregionBoundaries?.[countryKey]?.[regionKey]?.[subregionKey] || null;
+}
+
+function getPolygonBoundsCenter(polygons) {
+  if (!Array.isArray(polygons) || !polygons.length) return null;
+
+  const bounds = L.latLngBounds([]);
+  polygons.forEach(ring => {
+    if (!Array.isArray(ring)) return;
+    ring.forEach(point => {
+      if (Array.isArray(point) && point.length === 2) {
+        bounds.extend(point);
+      }
+    });
+  });
+
+  return bounds.isValid() ? bounds.getCenter() : null;
+}
+
+function getPolygonsBounds(polygons) {
+  if (!Array.isArray(polygons) || !polygons.length) return null;
+
+  const bounds = L.latLngBounds([]);
+  polygons.forEach(ring => {
+    if (!Array.isArray(ring)) return;
+    ring.forEach(point => {
+      if (Array.isArray(point) && point.length === 2) {
+        bounds.extend(point);
+      }
+    });
+  });
+
+  return bounds.isValid() ? bounds : null;
+}
+
+function getCountryScopeBounds(countryKey) {
+  const regionCoords = Object.values(state.regionCoords?.[countryKey] || {})
+    .filter(value => Array.isArray(value) && value.length === 2);
+
+  if (!regionCoords.length) {
+    const countryCoords = state.countriesData?.[countryKey]?.coords;
+    if (Array.isArray(countryCoords) && countryCoords.length === 2) {
+      const [lat, lng] = countryCoords;
+      return L.latLngBounds([[lat - 1.6, lng - 2.2], [lat + 1.6, lng + 2.2]]);
+    }
+
+    return null;
+  }
+
+  return L.latLngBounds(regionCoords);
+}
+
+function getSelectionBounds(countryKey, regionKey = null, subregionKey = null) {
+  if (subregionKey && regionKey) {
+    const subregionPolygons = getSubregionBoundaryPolygons(countryKey, regionKey, subregionKey);
+    const subregionBounds = getPolygonsBounds(subregionPolygons);
+    if (subregionBounds) return subregionBounds;
+
+    const subregionCoords = getSubregionCoords(countryKey, regionKey, subregionKey);
+    if (Array.isArray(subregionCoords) && subregionCoords.length === 2) {
+      const [lat, lng] = subregionCoords;
+      return L.latLngBounds([[lat - 0.28, lng - 0.32], [lat + 0.28, lng + 0.32]]);
+    }
+  }
+
+  if (regionKey) {
+    const regionPolygons = getRegionBoundaryPolygons(countryKey, regionKey);
+    const regionBounds = getPolygonsBounds(regionPolygons);
+    if (regionBounds) return regionBounds;
+
+    const regionCoords = getRegionCoords(countryKey, regionKey);
+    if (Array.isArray(regionCoords) && regionCoords.length === 2) {
+      const [lat, lng] = regionCoords;
+      return L.latLngBounds([[lat - 0.7, lng - 0.9], [lat + 0.7, lng + 0.9]]);
+    }
+  }
+
+  return getCountryScopeBounds(countryKey);
+}
+
+function getFactorEntriesForScope(countryKey, regionKey = null, subregionKey = null) {
+  const factorData = state.moderatingFactors || {};
+  const countryEntries = factorData.countries?.[countryKey] || [];
+  const regionEntries = regionKey ? (factorData.regions?.[countryKey]?.[regionKey] || []) : [];
+  const subregionEntries = (regionKey && subregionKey)
+    ? (factorData.subregions?.[countryKey]?.[regionKey]?.[subregionKey] || [])
+    : [];
+
+  if (subregionEntries.length) {
+    return [...countryEntries, ...regionEntries, ...subregionEntries];
+  }
+
+  if (regionEntries.length) {
+    return [...countryEntries, ...regionEntries];
+  }
+
+  if (regionKey || subregionKey) {
+    return [];
+  }
+
+  return countryEntries;
+}
+
+function toTitleCase(text) {
+  return String(text || "")
+    .replace(/\b\w/g, char => char.toUpperCase());
+}
+
+function inferCoastRoute(countryKey, regionKey, term) {
+  const text = `${countryKey} ${regionKey} ${term}`.toLowerCase();
+
+  if (/mediterranean|southern ocean|bass strait|false bay|walker bay|tasmania/.test(text)) {
+    return "coast-south";
+  }
+
+  if (/adriatic|aegean|ionian|pacific influence|hawkes|hunter|valencia|penedes|marche|puglia|greece/.test(text)) {
+    return "coast-east";
+  }
+
+  return "coast-west";
+}
+
+function inferMountainRoute(countryKey, regionKey, term) {
+  const text = `${countryKey} ${regionKey} ${term}`.toLowerCase();
+
+  if (/andes|alpine|alps|vosges|rain shadow|cascades|haardt/.test(text)) {
+    return /argentina/.test(text) ? "mountain-west" : "mountain-east";
+  }
+
+  if (/adelaide|barossa|wachau|franken|piemonte/.test(text)) {
+    return "mountain-north";
+  }
+
+  return "mountain-west";
+}
+
+function buildFallbackFactorEntries(countryKey, regionKey, fallbackFactors = []) {
+  const normalized = Array.isArray(fallbackFactors)
+    ? fallbackFactors.map(item => String(item).trim()).filter(Boolean)
+    : [];
+
+  const entries = [];
+
+  normalized.forEach(term => {
+    if (entries.length >= 2) return;
+    const lower = term.toLowerCase();
+    let route = null;
+
+    if (/atlantic|pacific|ocean|sea|coastal|maritime|benguela|humboldt|fog/.test(lower)) {
+      route = inferCoastRoute(countryKey, regionKey, term);
+    } else if (/river|gironde|estuary|douro|loire|danube|rhine|mosel|marne|bodrog|tisza|duero/.test(lower)) {
+      route = /diagonal|mosel|bodrog|tisza/.test(lower) ? "river-diagonal-up" : "river-horizontal";
+    } else if (/lake/.test(lower)) {
+      route = /neusiedl/.test(lower) ? "lake-east" : "lake-west";
+    } else if (/mountain|altitude|alpine|andes|vosges|rain shadow|slope|terraces/.test(lower)) {
+      route = inferMountainRoute(countryKey, regionKey, term);
+    } else if (/wind|mistral|breezes|cloud cover/.test(lower)) {
+      route = "wind-west-east";
+    }
+
+    if (!route) return;
+
+    entries.push({
+      name: toTitleCase(term),
+      route,
+      description: `${toTitleCase(term)} is an important moderating factor affecting ripening conditions, freshness, and viticulture in this area.`
+    });
+  });
+
+  return entries;
+}
+
+function buildFactorLinePoints(bounds, route = "river-horizontal") {
+  if (!bounds?.isValid?.()) return [];
+
+  const south = bounds.getSouth();
+  const north = bounds.getNorth();
+  const west = bounds.getWest();
+  const east = bounds.getEast();
+  const center = bounds.getCenter();
+  const latSpan = Math.max(0.18, north - south);
+  const lngSpan = Math.max(0.18, east - west);
+  const edgeLat = latSpan * 0.16;
+  const edgeLng = lngSpan * 0.16;
+
+  switch (route) {
+    case "current-west":
+    case "coast-west":
+      return [
+        [south - edgeLat * 0.1, west - edgeLng * 0.45],
+        [center.lat, west - edgeLng * 0.2],
+        [north + edgeLat * 0.1, west - edgeLng * 0.45]
+      ];
+    case "current-east":
+    case "coast-east":
+      return [
+        [south - edgeLat * 0.1, east + edgeLng * 0.45],
+        [center.lat, east + edgeLng * 0.2],
+        [north + edgeLat * 0.1, east + edgeLng * 0.45]
+      ];
+    case "current-south":
+    case "coast-south":
+      return [
+        [south - edgeLat * 0.38, west + lngSpan * 0.12],
+        [south - edgeLat * 0.12, center.lng],
+        [south - edgeLat * 0.38, east - lngSpan * 0.12]
+      ];
+    case "river-vertical":
+      return [
+        [south, center.lng - edgeLng * 0.08],
+        [center.lat, center.lng],
+        [north, center.lng + edgeLng * 0.08]
+      ];
+    case "river-diagonal-up":
+      return [
+        [south + edgeLat * 0.3, west + lngSpan * 0.12],
+        [center.lat, center.lng],
+        [north - edgeLat * 0.3, east - lngSpan * 0.12]
+      ];
+    case "river-diagonal-down":
+      return [
+        [north - edgeLat * 0.3, west + lngSpan * 0.12],
+        [center.lat, center.lng],
+        [south + edgeLat * 0.3, east - lngSpan * 0.12]
+      ];
+    case "mountain-west":
+      return [
+        [south - edgeLat * 0.05, west + edgeLng * 0.08],
+        [center.lat, west + edgeLng * 0.15],
+        [north + edgeLat * 0.05, west + edgeLng * 0.08]
+      ];
+    case "mountain-east":
+      return [
+        [south - edgeLat * 0.05, east - edgeLng * 0.08],
+        [center.lat, east - edgeLng * 0.15],
+        [north + edgeLat * 0.05, east - edgeLng * 0.08]
+      ];
+    case "mountain-north":
+      return [
+        [north - edgeLat * 0.12, west + lngSpan * 0.1],
+        [north - edgeLat * 0.04, center.lng],
+        [north - edgeLat * 0.12, east - lngSpan * 0.1]
+      ];
+    case "mountain-south":
+      return [
+        [south + edgeLat * 0.12, west + lngSpan * 0.1],
+        [south + edgeLat * 0.04, center.lng],
+        [south + edgeLat * 0.12, east - lngSpan * 0.1]
+      ];
+    case "lake-east":
+      return [
+        [center.lat + latSpan * 0.18, east - edgeLng * 0.3],
+        [center.lat, east - edgeLng * 0.06],
+        [center.lat - latSpan * 0.18, east - edgeLng * 0.3]
+      ];
+    case "lake-west":
+      return [
+        [center.lat + latSpan * 0.18, west + edgeLng * 0.3],
+        [center.lat, west + edgeLng * 0.06],
+        [center.lat - latSpan * 0.18, west + edgeLng * 0.3]
+      ];
+    case "wind-west-east":
+      return [
+        [center.lat + edgeLat * 0.24, west + lngSpan * 0.08],
+        [center.lat, center.lng],
+        [center.lat - edgeLat * 0.24, east - lngSpan * 0.08]
+      ];
+    case "wind-north-south":
+      return [
+        [north - edgeLat * 0.08, center.lng - edgeLng * 0.2],
+        [center.lat, center.lng],
+        [south + edgeLat * 0.08, center.lng + edgeLng * 0.2]
+      ];
+    default:
+      return [
+        [center.lat, west],
+        [center.lat, center.lng],
+        [center.lat, east]
+      ];
+  }
+}
+
+function showModeratingFactors(countryKey, regionKey = null, subregionKey = null, fallbackFactors = []) {
+  clearModeratingFactorLayer();
+
+  const bounds = getSelectionBounds(countryKey, regionKey, subregionKey);
+  const curatedEntries = getFactorEntriesForScope(countryKey, regionKey, subregionKey);
+  const entries = curatedEntries.length
+    ? curatedEntries
+    : buildFallbackFactorEntries(countryKey, regionKey, fallbackFactors);
+
+  if (!bounds?.isValid?.() || !entries.length) {
+    return false;
+  }
+
+  const layerGroup = L.layerGroup();
+
+  entries.forEach(entry => {
+    const points = buildFactorLinePoints(bounds, entry.route);
+    if (!points.length) return;
+
+    const line = L.polyline(points, {
+      color: "#2f86c5",
+      weight: 4,
+      opacity: 0.8,
+      dashArray: entry.route?.startsWith("wind-") ? "8 8" : "10 6"
+    });
+
+    const tooltipText = `<b>${entry.name}</b><br>${entry.description}`;
+    line.bindTooltip(tooltipText, {
+      sticky: true,
+      opacity: 0.95,
+      className: "factor-tooltip"
+    });
+
+    line.addTo(layerGroup);
+  });
+
+  if (!layerGroup.getLayers().length) {
+    return false;
+  }
+
+  layerGroup.addTo(map);
+  state.moderatingFactorLayer = layerGroup;
+  return true;
+}
+
+function getModeratingFactorNotes(countryKey, regionKey = null, subregionKey = null, fallbackFactors = []) {
+  const curatedNotes = getFactorEntriesForScope(countryKey, regionKey, subregionKey)
+    .map(entry => `${entry.name}: ${entry.description}`);
+
+  const normalizedFallback = Array.isArray(fallbackFactors)
+    ? fallbackFactors.map(item => String(item).trim()).filter(Boolean)
+    : [];
+
+  return curatedNotes.length ? curatedNotes : normalizedFallback;
 }
 
 function getSubregionEntries(countryKey, regionKey, region) {
@@ -408,7 +823,107 @@ function focusMapOnSubregionMarkers(countryKey, regionKey) {
   });
 }
 
+function focusMapOnLayerBounds(layer, maxZoom = 8) {
+  if (!layer) return false;
+
+  const bounds = layer.getBounds?.();
+  if (!bounds || !bounds.isValid()) return false;
+
+  const { paddingTopLeft, paddingBottomRight } = getVisibleMapFitPadding();
+  map.flyToBounds(bounds, {
+    paddingTopLeft,
+    paddingBottomRight,
+    maxZoom
+  });
+  return true;
+}
+
+function showSubregionBoundaryOverlay(countryKey, regionKey, subregionKey) {
+  clearSubregionBoundaryLayer();
+
+  const polygons = getSubregionBoundaryPolygons(countryKey, regionKey, subregionKey);
+  if (!Array.isArray(polygons) || !polygons.length) {
+    return false;
+  }
+
+  const boundaryLayer = L.polygon(polygons, {
+    color: "#8f2648",
+    weight: 2,
+    opacity: 0.92,
+    fillColor: "#b63a64",
+    fillOpacity: 0.18,
+    interactive: false
+  }).addTo(map);
+
+  state.subregionBoundaryLayer = boundaryLayer;
+  return true;
+}
+
+function showRegionBoundaryOverlay(countryKey, regionKey) {
+  clearRegionBoundaryLayer();
+
+  const polygons = getRegionBoundaryPolygons(countryKey, regionKey);
+  if (!Array.isArray(polygons) || !polygons.length) {
+    return false;
+  }
+
+  const boundaryLayer = L.polygon(polygons, {
+    color: "#7b1e3a",
+    weight: 2,
+    opacity: 0.8,
+    fillColor: "#b8893c",
+    fillOpacity: 0.12,
+    interactive: false
+  }).addTo(map);
+
+  state.regionBoundaryLayer = boundaryLayer;
+  return true;
+}
+
+function showSelectedSubregionMarker(countryKey, regionKey, subregionKey, subregion) {
+  clearRegionBoundaryLayer();
+  clearSubregionBoundaryLayer();
+  clearModeratingFactorLayer();
+  clearSubregionMarkers();
+  clearRegionMarkers();
+  hideAllCountryMarkers();
+
+  const polygons = getSubregionBoundaryPolygons(countryKey, regionKey, subregionKey);
+  const boundaryCenter = getPolygonBoundsCenter(polygons);
+  const coords = boundaryCenter
+    ? [boundaryCenter.lat, boundaryCenter.lng]
+    : getSubregionCoords(countryKey, regionKey, subregionKey);
+
+  if (!Array.isArray(coords) || coords.length !== 2) return;
+
+  const marker = L.marker(coords, {
+    icon: L.divIcon({
+      className: "region-map-marker-wrap",
+      html: buildMapMarkerButton(subregion.name || subregionKey, {
+        markerType: "subregion",
+        selected: true
+      }),
+      iconSize: null
+    }),
+    keyboard: true,
+    title: subregion.name || subregionKey
+  });
+
+  marker.on("click", () => showSubregion(countryKey, regionKey, subregionKey));
+  marker.addTo(map);
+  state.subregionMarkers.push(marker);
+
+  scheduleMarkerOverlapLayout();
+  if (showSubregionBoundaryOverlay(countryKey, regionKey, subregionKey)) {
+    focusMapOnLayerBounds(state.subregionBoundaryLayer, 8);
+  } else {
+    centerMapOnSelection(coords, 8);
+  }
+}
+
 function showSubregionMarkers(countryKey, regionKey, region) {
+  clearSubregionBoundaryLayer();
+  clearModeratingFactorLayer();
   clearSubregionMarkers();
   clearRegionMarkers();
 
@@ -422,7 +937,9 @@ function showSubregionMarkers(countryKey, regionKey, region) {
     const marker = L.marker(coords, {
       icon: L.divIcon({
         className: "region-map-marker-wrap",
-        html: `<button class="region-map-marker" type="button">${subregion.name || subregionKey}</button>`,
+        html: buildMapMarkerButton(subregion.name || subregionKey, {
+          markerType: "subregion"
+        }),
         iconSize: null
       }),
       keyboard: true,
@@ -512,6 +1029,9 @@ function centerMapOnSelection(coords, fallbackZoom = 7) {
 }
 
 function showRegionMarkers(countryKey, country) {
+  clearRegionBoundaryLayer();
+  clearSubregionBoundaryLayer();
+  clearModeratingFactorLayer();
   clearSubregionMarkers();
   clearRegionMarkers();
   hideAllCountryMarkers();
@@ -526,7 +1046,9 @@ function showRegionMarkers(countryKey, country) {
     const marker = L.marker(coords, {
       icon: L.divIcon({
         className: "region-map-marker-wrap",
-        html: `<button class="region-map-marker" type="button">${region.name || regionKey}</button>`,
+        html: buildMapMarkerButton(region.name || regionKey, {
+          markerType: "region"
+        }),
         iconSize: null
       }),
       keyboard: true,
@@ -547,8 +1069,11 @@ function showRegionMarkers(countryKey, country) {
 async function init() {
   showLoading("Loading Wine Atlas...");
   state.countriesData = await loadJson("./data/countries.json");
+  state.moderatingFactors = await loadJson("./data/moderating-factors.json");
   state.regionCoords = await loadJson("./data/region-coords.json");
+  state.regionBoundaries = await loadJson("./data/region-boundaries.json");
   state.subregionCoords = await loadJson("./data/subregion-coords.json");
+  state.subregionBoundaries = await loadJson("./data/subregion-boundaries.json");
   state.quizQuestions = [];
 
   Object.keys(state.countriesData).forEach(key => {
@@ -558,7 +1083,9 @@ async function init() {
     const marker = L.marker(c.coords, {
       icon: L.divIcon({
         className: "country-map-marker-wrap",
-        html: `<button class="country-map-marker" type="button">${c.name || key}</button>`,
+        html: buildMapMarkerButton(c.name || key, {
+          markerType: "country"
+        }),
         iconSize: null
       }),
       keyboard: true,
@@ -643,6 +1170,7 @@ async function showCountry(countryKey) {
     setBreadcrumb([{ label: country.name || countryKey }]);
 
     showRegionMarkers(countryKey, country);
+    showModeratingFactors(countryKey);
 
     let html = `
       <div class="section-card">
@@ -710,16 +1238,21 @@ async function showRegion(countryKey, regionKey) {
 
     if (subregionEntries.length) {
       showSubregionMarkers(countryKey, regionKey, region);
+      showRegionBoundaryOverlay(countryKey, regionKey);
     } else {
       showRegionMarkers(countryKey, country);
 
       const regionCoords = getRegionCoords(countryKey, regionKey);
-      if (regionCoords) {
+      if (showRegionBoundaryOverlay(countryKey, regionKey)) {
+        focusMapOnLayerBounds(state.regionBoundaryLayer, 7);
+      } else if (regionCoords) {
         centerMapOnSelection(regionCoords, 7);
       } else if (countryMeta.coords && countryMeta.zoom) {
         map.flyTo(countryMeta.coords, countryMeta.zoom);
       }
     }
+
+    showModeratingFactors(countryKey, regionKey, null, region.mitigating);
 
     setPanelTitle(region.name || regionKey);
     setBreadcrumb([
@@ -728,6 +1261,12 @@ async function showRegion(countryKey, regionKey) {
     ]);
 
     const pageKey = `region::${country.name}::${region.name || regionKey}`;
+    const moderatingNotes = getModeratingFactorNotes(
+      countryKey,
+      regionKey,
+      null,
+      region.mitigating
+    );
 
     let html = `
       <div class="section-card">
@@ -738,7 +1277,10 @@ async function showRegion(countryKey, regionKey) {
         <p><b>Region:</b> ${region.name || regionKey}</p>
         ${region.summary ? `<p><b>Summary:</b> ${region.summary}</p>` : ""}
         <p><b>Climate:</b> ${region.climate || "-"}</p>
+        ${moderatingNotes.length ? `<p><b>Moderating Factors:</b> ${moderatingNotes.join(" • ")}</p>` : ""}
         <p><b>Style:</b> ${region.styleSummary || "-"}</p>
+        ${renderStudyList("Vineyard Factors", region.vineyardFactors)}
+        ${renderStudyList("Human Factors", region.humanFactors)}
         ${region.classification ? `<p><b>Classification:</b> ${region.classification}</p>` : ""}
         ${region.lawNotes?.length ? `<p><b>Law / Exam Notes:</b> ${region.lawNotes.join(" ")}</p>` : ""}
         ${region.keyGrapes?.length ? `<p><b>Key Grapes:</b> ${region.keyGrapes.join(", ")}</p>` : ""}
@@ -846,12 +1388,8 @@ async function showSubregion(countryKey, regionKey, subregionKey) {
     const subregion = region?.subregions?.[subregionKey];
     if (!region || !subregion) return;
 
-    showSubregionMarkers(countryKey, regionKey, region);
-
-    const subregionCoords = getSubregionCoords(countryKey, regionKey, subregionKey);
-    if (subregionCoords) {
-      centerMapOnSelection(subregionCoords, 8);
-    }
+    showSelectedSubregionMarker(countryKey, regionKey, subregionKey, subregion);
+    showModeratingFactors(countryKey, regionKey, subregionKey, subregion.mitigating || region.mitigating);
 
     setPanelTitle(subregion.name || subregionKey);
     setBreadcrumb([
@@ -864,6 +1402,12 @@ async function showSubregion(countryKey, regionKey, subregionKey) {
     const derivedGrapeKeys = subregionGrapeEntries.length
       ? subregionGrapeEntries.map(([grapeKey]) => grapeKey)
       : (subregion.keyGrapes || []).filter(grapeKey => region.grapes?.[grapeKey]);
+    const moderatingNotes = getModeratingFactorNotes(
+      countryKey,
+      regionKey,
+      subregionKey,
+      subregion.mitigating || region.mitigating
+    );
 
     let html = `
       <div class="section-card">
@@ -871,7 +1415,10 @@ async function showSubregion(countryKey, regionKey, subregionKey) {
         <p><b>Sub-region:</b> ${subregion.name || subregionKey}</p>
         ${subregion.summary ? `<p><b>Summary:</b> ${subregion.summary}</p>` : ""}
         <p><b>Climate:</b> ${subregion.climate || region.climate || "-"}</p>
+        ${moderatingNotes.length ? `<p><b>Moderating Factors:</b> ${moderatingNotes.join(" • ")}</p>` : ""}
         <p><b>Style:</b> ${subregion.styleSummary || "-"}</p>
+        ${renderStudyList("Vineyard Factors", subregion.vineyardFactors)}
+        ${renderStudyList("Human Factors", subregion.humanFactors)}
         ${subregion.classification ? `<p><b>Classification:</b> ${subregion.classification}</p>` : ""}
         ${subregion.lawNotes?.length ? `<p><b>Law / Exam Notes:</b> ${subregion.lawNotes.join(" ")}</p>` : ""}
         ${subregion.keyGrapes?.length ? `<p><b>Key Grapes:</b> ${subregion.keyGrapes.join(", ")}</p>` : ""}
@@ -934,17 +1481,17 @@ async function showGrape(countryKey, regionKey, grapeKey, subregionKey = null) {
   if (!grape) return;
 
   if (subregionKey && subregion) {
-    showSubregionMarkers(countryKey, regionKey, region);
-    const subregionCoords = getSubregionCoords(countryKey, regionKey, subregionKey);
-    if (subregionCoords) {
-      map.flyTo(subregionCoords, 9);
-    }
+    showSelectedSubregionMarker(countryKey, regionKey, subregionKey, subregion);
+    showModeratingFactors(countryKey, regionKey, subregionKey, subregion.mitigating || region.mitigating);
   } else {
     showRegionMarkers(countryKey, country);
     const regionCoords = getRegionCoords(countryKey, regionKey);
-    if (regionCoords) {
+    if (showRegionBoundaryOverlay(countryKey, regionKey)) {
+      focusMapOnLayerBounds(state.regionBoundaryLayer, 8);
+    } else if (regionCoords) {
       map.flyTo(regionCoords, 8);
     }
+    showModeratingFactors(countryKey, regionKey, null, region.mitigating);
   }
 
   setPanelTitle(grapeKey);
@@ -1177,6 +1724,7 @@ function showQuizModes() {
       <button class="btn quiz-mode" data-mode="regions">🗺 Regions</button>
       <button class="btn quiz-mode" data-mode="profiles">📊 Profiles</button>
       <button class="btn quiz-mode" data-mode="styles">🍷 Styles</button>
+      <button class="btn quiz-mode" data-mode="study">📚 Study Facts</button>
       <button class="btn quiz-mode" data-mode="weak">🔥 Weak Areas</button>
     </div>
   `;
@@ -1311,6 +1859,20 @@ async function searchAll(query) {
         regionMatchReasons.push(`mitigating: ${matchedMitigating[0]}`);
       }
 
+      const matchedVineyardFactors = (region.vineyardFactors || []).filter(item =>
+        String(item).toLowerCase().includes(q)
+      );
+      if (matchedVineyardFactors.length) {
+        regionMatchReasons.push(`vineyard factor: ${matchedVineyardFactors[0]}`);
+      }
+
+      const matchedHumanFactors = (region.humanFactors || []).filter(item =>
+        String(item).toLowerCase().includes(q)
+      );
+      if (matchedHumanFactors.length) {
+        regionMatchReasons.push(`human factor: ${matchedHumanFactors[0]}`);
+      }
+
       if (regionMatchReasons.length) {
         results.push({
           type: "region",
@@ -1359,6 +1921,20 @@ async function searchAll(query) {
         );
         if (matchedSubregionTips.length) {
           subregionMatchReasons.push(`exam tip: ${matchedSubregionTips[0]}`);
+        }
+
+        const matchedSubregionVineyard = (subregion.vineyardFactors || []).filter(item =>
+          String(item).toLowerCase().includes(q)
+        );
+        if (matchedSubregionVineyard.length) {
+          subregionMatchReasons.push(`vineyard factor: ${matchedSubregionVineyard[0]}`);
+        }
+
+        const matchedSubregionHuman = (subregion.humanFactors || []).filter(item =>
+          String(item).toLowerCase().includes(q)
+        );
+        if (matchedSubregionHuman.length) {
+          subregionMatchReasons.push(`human factor: ${matchedSubregionHuman[0]}`);
         }
 
         if (subregionMatchReasons.length) {
@@ -1583,10 +2159,18 @@ async function showStyle(countryKey, styleKey, regionKey = null) {
   if (!style) return;
 
   showRegionMarkers(countryKey, country);
+  showModeratingFactors(
+    countryKey,
+    sourceRegionKey,
+    null,
+    sourceRegionKey && country.regions?.[sourceRegionKey]?.mitigating
+  );
 
   if (sourceRegionKey) {
     const regionCoords = getRegionCoords(countryKey, sourceRegionKey);
-    if (regionCoords) {
+    if (showRegionBoundaryOverlay(countryKey, sourceRegionKey)) {
+      focusMapOnLayerBounds(state.regionBoundaryLayer, 7);
+    } else if (regionCoords) {
       map.flyTo(regionCoords, 7);
     }
   }
@@ -1950,13 +2534,7 @@ async function buildQuizForRegion(regionKey, region, countryName) {
     questions.push({
       category: "climate",
       question: `What climate best describes ${region.name}?`,
-      choices: buildChoices(region.climate, [
-        "Continental",
-        "Mediterranean",
-        "Maritime",
-        "Cool continental",
-        "Warm Mediterranean"
-      ]),
+      choices: buildChoices(region.climate, WSET_CLIMATE_OPTIONS),
       answer: region.climate,
       explanation: `${region.name} is typically described as ${region.climate}.`
     });
@@ -1996,6 +2574,28 @@ async function buildQuizForRegion(regionKey, region, countryName) {
       choices: buildChoices(correctLawNote, allStudyFacts),
       answer: correctLawNote,
       explanation: correctLawNote
+    });
+  }
+
+  if (region.vineyardFactors?.length) {
+    const correctVineyardFactor = region.vineyardFactors[0];
+    questions.push({
+      category: "vineyard factors",
+      question: `Which vineyard factor is especially important in ${region.name}?`,
+      choices: buildChoices(correctVineyardFactor, allStudyFacts),
+      answer: correctVineyardFactor,
+      explanation: correctVineyardFactor
+    });
+  }
+
+  if (region.humanFactors?.length) {
+    const correctHumanFactor = region.humanFactors[0];
+    questions.push({
+      category: "human factors",
+      question: `Which human factor is especially important in ${region.name}?`,
+      choices: buildChoices(correctHumanFactor, allStudyFacts),
+      answer: correctHumanFactor,
+      explanation: correctHumanFactor
     });
   }
 
@@ -2110,10 +2710,14 @@ async function getAllStudyFacts() {
     for (const region of Object.values(country.regions || {})) {
       if (region.classification) facts.push(region.classification);
       if (region.lawNotes?.length) facts.push(...region.lawNotes);
+      if (region.vineyardFactors?.length) facts.push(...region.vineyardFactors);
+      if (region.humanFactors?.length) facts.push(...region.humanFactors);
 
       for (const subregion of Object.values(region.subregions || {})) {
         if (subregion.classification) facts.push(subregion.classification);
         if (subregion.lawNotes?.length) facts.push(...subregion.lawNotes);
+        if (subregion.vineyardFactors?.length) facts.push(...subregion.vineyardFactors);
+        if (subregion.humanFactors?.length) facts.push(...subregion.humanFactors);
       }
     }
   }
@@ -2607,41 +3211,6 @@ if (sheet && handle && handleWrap && sheetBody) {
   handleWrap.addEventListener("mousedown", (e) => {
     startSheetDrag(e.clientY, "handle");
   });
-
-  // 2) Content 區：只有 scrollTop === 0 並且向下拉，先接管成 sheet drag
-  sheetBody.addEventListener("touchstart", (e) => {
-    dragStartY = e.touches[0].clientY;
-    dragCurrentY = dragStartY;
-  }, { passive: true });
-
-  sheetBody.addEventListener("touchmove", (e) => {
-    const currentY = e.touches[0].clientY;
-    const deltaY = currentY - dragStartY;
-    const atTop = sheetBody.scrollTop <= 0;
-
-    if (!draggingSheet && atTop && deltaY > 8 && currentSheetState !== "collapsed") {
-      startSheetDrag(dragStartY, "content");
-    }
-
-    if (draggingSheet) {
-      e.preventDefault();
-      onPointerMove(currentY);
-    }
-  }, { passive: false });
-
-  sheetBody.addEventListener("wheel", (e) => {
-    const canScrollContent = sheetBody.scrollHeight > sheetBody.clientHeight + 8;
-    if (!canScrollContent) return;
-
-    if (currentSheetState !== "open" && e.deltaY > 0) {
-      e.preventDefault();
-      const nextScrollTop = Math.max(0, sheetBody.scrollTop + e.deltaY);
-      openSheetFull({ resetScroll: false });
-      window.requestAnimationFrame(() => {
-        sheetBody.scrollTop = nextScrollTop;
-      });
-    }
-  }, { passive: false });
 
   window.addEventListener("touchmove", (e) => {
     if (!draggingSheet || dragSource !== "handle") return;

@@ -20,7 +20,7 @@
     "mosel": {
       "name": "Mosel",
       "summary": "Cool river valley producing light-bodied, high-acid Riesling with lower alcohol and pronounced aromatics.",
-      "climate": "Cool continental",
+      "climate": "Cool Continental",
       "styleSummary": "Light-bodied, high-acid Riesling with low alcohol.",
       "mitigating": [
         "river reflection",
@@ -82,7 +82,7 @@
         "saar": {
           "name": "Saar",
           "summary": "Cool Mosel tributary valley producing some of Germany's most taut, high-acid Rieslings.",
-          "climate": "Cool continental",
+          "climate": "Cool Continental",
           "styleSummary": "Very light to medium-bodied Riesling with piercing acidity, citrus fruit and lower alcohol.",
           "keyGrapes": [
             "Riesling"
@@ -137,12 +137,24 @@
               "difficulty": 1
             }
           },
-          "classification": "Saar is one of the coolest classic Mosel tributaries, often giving the lightest and highest-acid styles."
+          "classification": "Saar is one of the coolest classic Mosel tributaries, often giving the lightest and highest-acid styles.",
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures.",
+            "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "ruwer": {
           "name": "Ruwer",
           "summary": "Small cool Mosel tributary known for delicate intensely acidic Riesling styles.",
-          "climate": "Cool continental",
+          "climate": "Cool Continental",
           "styleSummary": "Delicate finely etched Riesling with green fruit, citrus and very high acidity.",
           "keyGrapes": [
             "Riesling"
@@ -197,12 +209,24 @@
               "difficulty": 1
             }
           },
-          "classification": "Ruwer is a small classic tributary known for delicacy and intense acidity."
+          "classification": "Ruwer is a small classic tributary known for delicacy and intense acidity.",
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures.",
+            "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "bernkastel": {
           "name": "Bernkastel",
           "summary": "Prestige central Mosel area with steep slate vineyards and benchmark Riesling sites.",
-          "climate": "Cool continental",
+          "climate": "Cool Continental",
           "styleSummary": "Intense yet delicate Riesling with lime, stone fruit, slatey character and high acidity.",
           "keyGrapes": [
             "Riesling"
@@ -257,19 +281,43 @@
               "difficulty": 1
             }
           },
-          "classification": "Bernkastel is a benchmark middle Mosel name tied to famous steep slate sites."
+          "classification": "Bernkastel is a benchmark middle Mosel name tied to famous steep slate sites.",
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures.",
+            "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         }
       },
       "classification": "Mosel is strongly associated with Riesling, steep slate vineyards and styles ranging from dry to sweet under the German quality system.",
       "lawNotes": [
         "Pradikat terms and sweetness levels are important exam language in Germany.",
         "Cool climate and steep slopes are central Mosel context."
+      ],
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures.",
+        "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
       ]
     },
     "rheingau": {
       "name": "Rheingau",
       "summary": "Warmer region producing fuller-bodied Riesling and important Pinot Noir.",
-      "climate": "Moderate continental",
+      "climate": "Moderate Continental",
       "styleSummary": "More structured and fuller wines.",
       "mitigating": [
         "river reflection",
@@ -360,7 +408,7 @@
         "johannisberg": {
           "name": "Johannisberg",
           "summary": "Historic Rheingau village strongly associated with quality Riesling and late-harvest styles.",
-          "climate": "Moderate continental",
+          "climate": "Moderate Continental",
           "styleSummary": "Riesling with more body than Mosel, ripe citrus and stone fruit, and firm acidity.",
           "keyGrapes": [
             "Riesling"
@@ -411,12 +459,24 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures.",
+            "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "assmannshausen": {
           "name": "Assmannshausen",
           "summary": "Rheingau village particularly associated with Spatburgunder on steep slate sites.",
-          "climate": "Moderate continental",
+          "climate": "Moderate Continental",
           "styleSummary": "Lighter-bodied red with red fruit, high acidity and subtle earthy notes.",
           "keyGrapes": [
             "Spatburgunder"
@@ -469,19 +529,43 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures.",
+            "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         }
       },
       "classification": "Rheingau is a key source of fuller Riesling and some important Spatburgunder.",
       "lawNotes": [
         "Compared with Mosel, wines are often broader and drier in feel.",
         "Johannisberg is historically important for Riesling and late-harvest wine history."
+      ],
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures.",
+        "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+        "Rules on vineyard practice and quality control can directly shape yields, ripeness, and final style."
       ]
     },
     "pfalz": {
       "name": "Pfalz",
       "summary": "Warmer region producing riper, fuller wines including dry Riesling.",
-      "climate": "Warm continental",
+      "climate": "Warm Continental",
       "styleSummary": "Riper, fuller wines.",
       "mitigating": [
         "sheltered by mountains"
@@ -535,7 +619,7 @@
         "mittelhaardt": {
           "name": "Mittelhaardt",
           "summary": "Prestige northern Pfalz area known for dry Riesling from warmer sheltered conditions.",
-          "climate": "Moderate continental",
+          "climate": "Moderate Continental",
           "styleSummary": "Riper fuller Riesling than Mosel, with stone fruit, citrus and dry style common.",
           "keyGrapes": [
             "Riesling"
@@ -585,12 +669,23 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "sudliche-weinstrasse": {
           "name": "Sudliche Weinstrasse",
           "summary": "Southern Pfalz section with warm conditions producing generous ripe dry wines.",
-          "climate": "Moderate continental",
+          "climate": "Moderate Continental",
           "styleSummary": "Riper broader dry wines with fuller fruit profile than many cooler German regions.",
           "keyGrapes": [
             "Riesling"
@@ -640,18 +735,40 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         }
       },
       "classification": "Pfalz is a warm dry German region particularly important for dry Riesling.",
       "lawNotes": [
         "Warmer conditions than Mosel make fuller drier styles more common."
+      ],
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
       ]
     },
     "baden": {
       "name": "Baden",
       "summary": "Warmest German region producing fuller-bodied wines.",
-      "climate": "Warm continental",
+      "climate": "Warm Continental",
       "styleSummary": "Fuller-bodied wines.",
       "mitigating": [
         "southern location"
@@ -701,12 +818,21 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "nahe": {
       "name": "Nahe",
       "summary": "Diverse region producing expressive Riesling with a balance between Mosel delicacy and fuller warmer-climate ripeness.",
-      "climate": "Cool to Moderate Continental",
+      "climate": "Moderate Continental [cooler sites]",
       "styleSummary": "Balanced Riesling with ripe citrus and stone fruit, often combining freshness with a little more body than Mosel.",
       "mitigating": [
         "river valleys",
@@ -769,7 +895,19 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures.",
+        "Soil type influences drainage, heat retention, and vine vigor, shaping the style and consistency of the wines."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "rheinhessen": {
       "name": "Rheinhessen",
@@ -836,12 +974,24 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates.",
+        "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "franken": {
       "name": "Franken",
       "summary": "Continental inland region known for dry, often fuller-bodied white wines, especially Silvaner.",
-      "climate": "Continental",
+      "climate": "Moderate Continental",
       "styleSummary": "Dry, structured white wines with firm acidity and less overt fruitiness.",
       "mitigating": [
         "inland continental climate",
@@ -947,7 +1097,7 @@
         "wurzburg": {
           "name": "Wurzburg",
           "summary": "Classic Franken center associated with dry Silvaner and distinctive Bocksbeutel bottles.",
-          "climate": "Moderate continental",
+          "climate": "Moderate Continental",
           "styleSummary": "Dry medium-bodied whites with orchard fruit and often an earthy or savory edge.",
           "keyGrapes": [
             "Silvaner",
@@ -1044,10 +1194,34 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures.",
+            "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         }
       },
-      "classification": "Franken is particularly associated with dry Silvaner and the traditional Bocksbeutel bottle."
+      "classification": "Franken is particularly associated with dry Silvaner and the traditional Bocksbeutel bottle.",
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures.",
+        "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     }
   }
 }

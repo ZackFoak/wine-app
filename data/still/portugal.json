@@ -19,7 +19,7 @@
     "vinho-verde": {
       "name": "Vinho Verde",
       "summary": "Cool, Atlantic-influenced region producing light, fresh, high-acid white wines with low alcohol.",
-      "climate": "Cool maritime",
+      "climate": "Cool Maritime",
       "styleSummary": "Light, fresh, high-acid wines with low alcohol.",
       "mitigating": [
         "Atlantic influence",
@@ -115,7 +115,7 @@
         "moncao-e-melgaco": {
           "name": "Moncao e Melgaco",
           "summary": "Prestige inland Vinho Verde sub-region best known for higher-quality Alvarinho.",
-          "climate": "Cool maritime with inland shelter",
+          "climate": "Cool Maritime [inland shelter]",
           "styleSummary": "More concentrated aromatic dry whites with citrus, peach and high acidity.",
           "keyGrapes": [
             "Alvarinho"
@@ -170,12 +170,24 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Rainfall and humidity raise disease pressure and can make ripening more variable."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Canopy management and disease control are especially important where humidity is high.",
+            "Regional style depends not only on climate and site, but also on deliberate human choices in the vineyard and cellar."
+          ]
         },
         "lima": {
           "name": "Lima",
           "summary": "Vinho Verde sub-region associated strongly with Loureiro-based aromatic whites.",
-          "climate": "Cool maritime",
+          "climate": "Cool Maritime",
           "styleSummary": "Light aromatic whites with floral citrus character and brisk acidity.",
           "keyGrapes": [
             "Loureiro"
@@ -227,18 +239,42 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Rainfall and humidity raise disease pressure and can make ripening more variable."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Canopy management and disease control are especially important where humidity is high.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         }
       },
       "classification": "Vinho Verde is a broad DOC associated with fresh high-acid wines, with Moncao e Melgaco especially important for Alvarinho.",
       "lawNotes": [
         "Broader regional wines are often blends, while top Alvarinho examples may come from Moncao e Melgaco."
+      ],
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+        "Rainfall and humidity raise disease pressure and can make ripening more variable."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Disease control and canopy management are often important human factors in maritime climates.",
+        "Canopy management and disease control are especially important where humidity is high.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
       ]
     },
     "douro": {
       "name": "Douro",
       "summary": "Hot inland region producing powerful dry reds and the fortified wines of Port from steep terraced vineyards.",
-      "climate": "Hot continental",
+      "climate": "Warm Continental [hot]",
       "styleSummary": "Structured dry reds plus sweet fortified Port in a range of oxidative and bottle-aged styles.",
       "mitigating": [
         "altitude",
@@ -431,7 +467,7 @@
         "baixo-corgo": {
           "name": "Baixo Corgo",
           "summary": "Cooler wetter western Douro sub-region producing lighter styles and some Port components.",
-          "climate": "Warm continental with Atlantic influence",
+          "climate": "Warm Continental [Atlantic influence]",
           "styleSummary": "Generally lighter less concentrated wines than the central and eastern Douro.",
           "keyGrapes": [
             "Touriga Nacional",
@@ -569,12 +605,24 @@
               "difficulty": 1
             }
           },
-          "classification": "The coolest and wettest of the main Douro sub-regions."
+          "classification": "The coolest and wettest of the main Douro sub-regions.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes."
+          ]
         },
         "cima-corgo": {
           "name": "Cima Corgo",
           "summary": "Central Douro sub-region widely regarded as the heartland of premium Port production.",
-          "climate": "Warm continental",
+          "climate": "Warm Continental",
           "styleSummary": "Concentrated powerful red and fortified wines from steep terraced vineyards.",
           "keyGrapes": [
             "Touriga Nacional",
@@ -712,12 +760,24 @@
               "difficulty": 1
             }
           },
-          "classification": "The prestige central Douro sub-region and classic premium Port core."
+          "classification": "The prestige central Douro sub-region and classic premium Port core.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes."
+          ]
         },
         "douro-superior": {
           "name": "Douro Superior",
           "summary": "Hot dry eastern Douro sub-region with increasing importance for both still wine and Port.",
-          "climate": "Hot continental",
+          "climate": "Warm Continental [hot]",
           "styleSummary": "Deeply ripe concentrated wines with fuller body and higher alcohol potential.",
           "keyGrapes": [
             "Touriga Nacional",
@@ -855,19 +915,43 @@
               "difficulty": 1
             }
           },
-          "classification": "The hottest driest Douro sub-region, increasingly important for still wine as well as Port."
+          "classification": "The hottest driest Douro sub-region, increasingly important for still wine as well as Port.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes."
+          ]
         }
       },
       "classification": "Douro covers both Port production and an important still table-wine region, with Baixo Corgo, Cima Corgo and Douro Superior as the major sub-zones.",
       "lawNotes": [
         "Port styles such as Ruby, LBV, Vintage and Tawny are essential exam categories.",
         "Cima Corgo is the classic premium Port heartland."
+      ],
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+        "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Terracing, manual work, and careful site matching become more important on steep or exposed slopes."
       ]
     },
     "dao": {
       "name": "Dão",
       "summary": "Cooler inland region producing elegant, balanced red wines.",
-      "climate": "Continental",
+      "climate": "Moderate Continental",
       "styleSummary": "More elegant and structured wines.",
       "mitigating": [
         "altitude",
@@ -922,7 +1006,7 @@
         "serra-da-estrela": {
           "name": "Serra da Estrela",
           "summary": "Mountain influence is central to Dao, and the Serra da Estrela helps protect vineyards while altitude preserves freshness.",
-          "climate": "Moderate continental with altitude influence",
+          "climate": "Moderate Continental [altitude influence]",
           "styleSummary": "Structured but fresh reds and elegant aromatic whites shaped by elevation.",
           "keyGrapes": [
             "Touriga Nacional"
@@ -972,15 +1056,39 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Altitude lowers temperature and can extend the growing season, helping preserve acidity and aroma.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Growers often use elevation and harvest timing strategically to balance ripeness and freshness.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards."
+          ]
         }
       },
-      "classification": "Dao is a DOC shaped by altitude and mountain shelter, giving fresher structure than hotter inland Portuguese regions."
+      "classification": "Dao is a DOC shaped by altitude and mountain shelter, giving fresher structure than hotter inland Portuguese regions.",
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+        "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk."
+      ]
     },
     "alentejo": {
       "name": "Alentejo",
       "summary": "Hot southern region producing ripe, fruit-forward wines.",
-      "climate": "Hot Mediterranean",
+      "climate": "Warm Mediterranean [hot]",
       "styleSummary": "Ripe, full-bodied wines.",
       "mitigating": [
         "modern techniques"
@@ -1064,7 +1172,16 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     }
   }
 }

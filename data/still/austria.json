@@ -19,7 +19,7 @@
     "niederosterreich": {
       "name": "Niederösterreich (Lower Austria)",
       "summary": "Austria’s largest and most important quality region, known for structured dry whites from river valleys.",
-      "climate": "Continental",
+      "climate": "Moderate Continental",
       "styleSummary": "Dry whites with high acidity and strong structure.",
       "mitigating": [
         "Danube river",
@@ -125,7 +125,7 @@
         "kamptal": {
           "name": "Kamptal",
           "summary": "Leading Lower Austria region for dry Gruner Veltliner and Riesling from varied soils and significant day-night shifts.",
-          "climate": "Cool continental",
+          "climate": "Cool Continental",
           "styleSummary": "Dry precise whites with ripe fruit balanced by high acidity and mineral freshness.",
           "keyGrapes": [
             "Gruner Veltliner",
@@ -223,12 +223,24 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures.",
+            "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards."
+          ]
         },
         "kremstal": {
           "name": "Kremstal",
           "summary": "Important Lower Austria area producing dry Gruner Veltliner and Riesling around Krems.",
-          "climate": "Cool continental",
+          "climate": "Cool Continental",
           "styleSummary": "Dry medium-bodied whites with citrus, stone fruit and firm acidity.",
           "keyGrapes": [
             "Gruner Veltliner",
@@ -326,12 +338,24 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures.",
+            "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards."
+          ]
         },
         "wagram": {
           "name": "Wagram",
           "summary": "Loess-influenced Lower Austria region known particularly for generous textured Gruner Veltliner.",
-          "climate": "Cool continental",
+          "climate": "Cool Continental",
           "styleSummary": "Dry whites with more body and spice, especially from Gruner Veltliner on loess.",
           "keyGrapes": [
             "Gruner Veltliner"
@@ -389,14 +413,38 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures.",
+            "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards."
+          ]
         }
-      }
+      },
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures.",
+        "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards."
+      ]
     },
     "burgenland": {
       "name": "Burgenland",
       "summary": "Warmer eastern region known for red wines and important sweet wines around Lake Neusiedl.",
-      "climate": "Continental to Pannonian",
+      "climate": "Moderate Continental [Pannonian influence]",
       "styleSummary": "Reds and sweet wines with higher ripeness.",
       "mitigating": [
         "Lake Neusiedl",
@@ -493,7 +541,7 @@
         "neusiedlersee": {
           "name": "Neusiedlersee",
           "summary": "Warm eastern Burgenland area important for ripe red wines and botrytised sweet wines around the lake.",
-          "climate": "Warm continental",
+          "climate": "Warm Continental",
           "styleSummary": "Riper red wines and sweet wines supported by warm conditions and lake influence.",
           "keyGrapes": [
             "Zweigelt",
@@ -584,12 +632,22 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "leithaberg": {
           "name": "Leithaberg",
           "summary": "Burgenland hillside region known for more structured Blaufrankisch and some mineral white wines.",
-          "climate": "Warm continental",
+          "climate": "Warm Continental",
           "styleSummary": "Fresh structured red wines with spice and acidity, especially from Blaufrankisch.",
           "keyGrapes": [
             "Blaufrankisch"
@@ -643,14 +701,35 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures.",
+            "Subregional site differences are important to how grapes ripen and to the final balance of the wines."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         }
-      }
+      },
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "steiermark": {
       "name": "Steiermark (Styria)",
       "summary": "Cooler southern region producing fresh, aromatic white wines.",
-      "climate": "Cool continental",
+      "climate": "Cool Continental",
       "styleSummary": "Fresh aromatic whites with high acidity.",
       "mitigating": [
         "altitude",
@@ -711,7 +790,7 @@
         "sudsteiermark": {
           "name": "Sudsteiermark",
           "summary": "Classic southern Styria area known for fragrant high-acid Sauvignon Blanc and other aromatic whites.",
-          "climate": "Moderate continental",
+          "climate": "Moderate Continental",
           "styleSummary": "Dry aromatic whites with high acidity, citrus, herbal and stone-fruit character.",
           "keyGrapes": [
             "Sauvignon Blanc"
@@ -764,14 +843,36 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         }
-      }
+      },
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "wachau": {
       "name": "Wachau",
       "summary": "Prestige Danube valley region producing concentrated dry Gruner Veltliner and Riesling from steep terraces.",
-      "climate": "Continental",
+      "climate": "Cool Continental",
       "styleSummary": "Precise, structured dry whites with concentration, freshness and mineral character.",
       "mitigating": [
         "Danube river",
@@ -878,12 +979,24 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures.",
+        "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards."
+      ]
     },
     "weinviertel": {
       "name": "Weinviertel",
       "summary": "Large Lower Austrian region especially associated with fresh, peppery Gruner Veltliner.",
-      "climate": "Continental",
+      "climate": "Moderate Continental",
       "styleSummary": "Fresh, dry, medium-bodied whites with pronounced acidity and peppery character.",
       "mitigating": [
         "cool nights",
@@ -944,7 +1057,18 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     }
   }
 }

@@ -18,7 +18,7 @@
     "santorini": {
       "name": "Santorini",
       "summary": "Volcanic island producing high-acid Assyrtiko wines despite hot conditions.",
-      "climate": "Hot Mediterranean",
+      "climate": "Warm Mediterranean [hot]",
       "styleSummary": "Dry, high-acid white wines with mineral character.",
       "mitigating": [
         "strong winds",
@@ -84,12 +84,24 @@
       "lawNotes": [
         "Basket-trained vines protect grapes from strong winds.",
         "High acidity despite hot conditions is the key tasting and theory clue."
+      ],
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Wind can cool vineyards and reduce fungal disease pressure, but can also affect vigor and fruit set.",
+        "Soil type influences drainage, heat retention, and vine vigor, shaping the style and consistency of the wines."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Training systems, row orientation, and site protection matter where wind is a major factor.",
+        "Training system and vine age are important human choices that shape yield, resilience, and fruit concentration."
       ]
     },
     "naoussa": {
       "name": "Naoussa",
       "summary": "Northern Greek region producing structured, high-acid red wines from Xinomavro.",
-      "climate": "Continental",
+      "climate": "Moderate Continental",
       "styleSummary": "High-acid, structured reds with ageing potential.",
       "mitigating": [
         "altitude",
@@ -152,12 +164,23 @@
       "lawNotes": [
         "Xinomavro is often compared with Nebbiolo because of high acidity and tannin.",
         "Structured ageworthy reds are the classic style here."
+      ],
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
       ]
     },
     "nemea": {
       "name": "Nemea",
       "summary": "Warm Peloponnese region producing soft, fruity red wines.",
-      "climate": "Mediterranean",
+      "climate": "Moderate Mediterranean",
       "styleSummary": "Ripe, fruity reds with softer tannin.",
       "mitigating": [
         "altitude variation"
@@ -215,12 +238,23 @@
       "lawNotes": [
         "Agiorgitiko generally gives softer fruitier wines than Xinomavro.",
         "Altitude differences within the region can affect style and freshness."
+      ],
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
       ]
     },
     "amyndeon": {
       "name": "Amyndeon",
       "summary": "Cooler high-altitude region producing fresher styles of Xinomavro.",
-      "climate": "Cool continental",
+      "climate": "Cool Continental",
       "styleSummary": "Lighter, fresher red styles.",
       "mitigating": [
         "altitude",
@@ -277,6 +311,17 @@
       "lawNotes": [
         "Altitude and cooler conditions are the key style drivers.",
         "Compared with Naoussa, Xinomavro is usually lighter and fresher here."
+      ],
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
       ]
     }
   }

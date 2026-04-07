@@ -18,7 +18,7 @@
     "tokaj": {
       "name": "Tokaj",
       "summary": "Historic region producing world-class sweet wines from botrytised grapes, as well as dry whites.",
-      "climate": "Continental",
+      "climate": "Moderate Continental",
       "styleSummary": "Sweet wines balanced by high acidity, plus dry whites.",
       "mitigating": [
         "rivers creating mist",
@@ -121,12 +121,24 @@
       "lawNotes": [
         "Botrytis and very high acidity are the key Tokaj exam concepts.",
         "Furmint is the most important grape, often supported by Harslevelu."
+      ],
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures.",
+        "Morning mist and autumn humidity can encourage noble rot where sweet wine production is important."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Selective hand harvesting and careful sorting are crucial where botrytis is desired.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
       ]
     },
     "eger": {
       "name": "Eger",
       "summary": "Cooler northern region producing both red blends and white wines.",
-      "climate": "Continental",
+      "climate": "Moderate Continental",
       "styleSummary": "Fresh reds and whites with moderate structure.",
       "mitigating": [
         "altitude",
@@ -186,12 +198,23 @@
       "lawNotes": [
         "Kekfrankos is a key grape in the region’s red wine identity.",
         "Cooler continental conditions help preserve freshness."
+      ],
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Regional style depends not only on climate and site, but also on deliberate human choices in the vineyard and cellar."
       ]
     },
     "villany": {
       "name": "Villány",
       "summary": "Warm southern region producing full-bodied red wines.",
-      "climate": "Warm continental",
+      "climate": "Warm Continental",
       "styleSummary": "Full-bodied, ripe red wines.",
       "mitigating": [
         "southern exposure"
@@ -276,6 +299,15 @@
       "lawNotes": [
         "Warm southern exposure helps produce ripe full-bodied reds.",
         "Cabernet Sauvignon and Merlot are key grapes to remember here."
+      ],
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
       ]
     }
   }

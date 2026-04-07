@@ -20,7 +20,7 @@
     "rias-baixas": {
       "name": "Rias Baixas",
       "summary": "Cool Atlantic region known for fresh, high-acid aromatic whites with saline freshness.",
-      "climate": "Maritime",
+      "climate": "Cool Maritime",
       "styleSummary": "Fresh high-acid whites with citrus, stone fruit and saline notes.",
       "mitigating": [
         "Atlantic influence",
@@ -96,7 +96,7 @@
         "val-do-salnes": {
           "name": "Val do Salnes",
           "summary": "Cool Atlantic heartland of Rias Baixas, widely regarded as the leading sub-zone for Albarino.",
-          "climate": "Cool maritime",
+          "climate": "Cool Maritime",
           "styleSummary": "High-acid Albarino with citrus, peach and saline freshness.",
           "keyGrapes": [
             "Albarino"
@@ -160,12 +160,24 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Rainfall and humidity raise disease pressure and can make ripening more variable."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Canopy management and disease control are especially important where humidity is high.",
+            "Canopy management is a major human factor for controlling disease pressure, airflow, and ripeness."
+          ]
         },
         "o-rosal": {
           "name": "O Rosal",
           "summary": "Southern Rias Baixas sub-zone near Portugal producing aromatic Atlantic whites.",
-          "climate": "Cool maritime",
+          "climate": "Cool Maritime",
           "styleSummary": "Fresh aromatic whites with citrus, stone fruit and pronounced acidity.",
           "keyGrapes": [
             "Albarino"
@@ -229,14 +241,38 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Rainfall and humidity raise disease pressure and can make ripening more variable."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Canopy management and disease control are especially important where humidity is high.",
+            "Canopy management is a major human factor for controlling disease pressure, airflow, and ripeness."
+          ]
         }
-      }
+      },
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+        "Rainfall and humidity raise disease pressure and can make ripening more variable."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Disease control and canopy management are often important human factors in maritime climates.",
+        "Canopy management and disease control are especially important where humidity is high.",
+        "Canopy management is a major human factor for controlling disease pressure, airflow, and ripeness."
+      ]
     },
     "rueda": {
       "name": "Rueda",
       "summary": "Inland elevated region known for fresh aromatic whites, especially Verdejo.",
-      "climate": "Continental",
+      "climate": "Moderate Continental",
       "styleSummary": "Fresh aromatic whites, especially from Verdejo.",
       "mitigating": [
         "altitude",
@@ -342,12 +378,24 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+        "Subregional site differences are important to how grapes ripen and to the final balance of the wines."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "rioja": {
       "name": "Rioja",
       "summary": "Classic Spanish region known for oak-aged reds, subregional variation and ageing classifications.",
-      "climate": "Mixed / Transitional",
+      "climate": "Moderate Continental [Atlantic and Mediterranean influences]",
       "styleSummary": "Can range from fresher elegant styles to riper fuller expressions depending on subregion and oak ageing.",
       "mitigating": [
         "altitude",
@@ -581,7 +629,7 @@
         "rioja-alta": {
           "name": "Rioja Alta",
           "summary": "Cooler western Rioja sub-zone known for elegant ageworthy Tempranillo-based wines.",
-          "climate": "Moderate continental with Atlantic influence",
+          "climate": "Moderate Continental [Atlantic influence]",
           "styleSummary": "Red-fruited Tempranillo-led wines with freshness, structure and classic American oak-compatible style.",
           "keyGrapes": [
             "Tempranillo",
@@ -688,12 +736,24 @@
               "difficulty": 1
             }
           },
-          "classification": "Rioja Alta is classically associated with elegant ageworthy Tempranillo-based wines."
+          "classification": "Rioja Alta is classically associated with elegant ageworthy Tempranillo-based wines.",
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+            "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk."
+          ]
         },
         "rioja-alavesa": {
           "name": "Rioja Alavesa",
           "summary": "Northern Rioja sub-zone under the Sierra Cantabria known for perfumed structured Tempranillo.",
-          "climate": "Moderate continental with Atlantic influence",
+          "climate": "Moderate Continental [Atlantic influence]",
           "styleSummary": "Fresh aromatic Tempranillo-based wines with red fruit, acidity and fine tannin.",
           "keyGrapes": [
             "Tempranillo"
@@ -755,12 +815,24 @@
               "difficulty": 1
             }
           },
-          "classification": "Rioja Alavesa often gives fresher more aromatic Tempranillo styles."
+          "classification": "Rioja Alavesa often gives fresher more aromatic Tempranillo styles.",
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+            "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk."
+          ]
         },
         "rioja-oriental": {
           "name": "Rioja Oriental",
           "summary": "Warmer eastern Rioja sub-zone where Garnacha is especially successful and wines are riper in style.",
-          "climate": "Warmer continental",
+          "climate": "Warm Continental [warmer influence]",
           "styleSummary": "Riper fuller-bodied reds with darker fruit and softer texture.",
           "keyGrapes": [
             "Garnacha",
@@ -867,19 +939,43 @@
               "difficulty": 1
             }
           },
-          "classification": "Rioja Oriental is warmer and often shows more Garnacha influence."
+          "classification": "Rioja Oriental is warmer and often shows more Garnacha influence.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+            "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk."
+          ]
         }
       },
       "classification": "Rioja is structured around both sub-regions and ageing categories such as Crianza, Reserva and Gran Reserva.",
       "lawNotes": [
         "Tempranillo is the core grape in classic red Rioja.",
         "American oak and maturation categories are especially exam-relevant."
+      ],
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards."
       ]
     },
     "ribera-del-duero": {
       "name": "Ribera del Duero",
       "summary": "High-altitude inland red wine region known for concentrated yet fresh Tempranillo.",
-      "climate": "Continental",
+      "climate": "Warm Continental",
       "styleSummary": "Structured reds with ripe fruit, firm tannin and freshness from altitude.",
       "mitigating": [
         "high altitude",
@@ -947,12 +1043,24 @@
           "difficulty": 1
         }
       },
-      "classification": "Ribera del Duero is a major Tempranillo-led DO known for structured oak-aged reds."
+      "classification": "Ribera del Duero is a major Tempranillo-led DO known for structured oak-aged reds.",
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+        "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "priorat": {
       "name": "Priorat",
       "summary": "Warm dry Mediterranean region making concentrated reds from old vines on poor slate soils.",
-      "climate": "Mediterranean",
+      "climate": "Warm Mediterranean",
       "styleSummary": "Powerful concentrated reds from warm dry conditions and poor slate soils.",
       "mitigating": [
         "altitude",
@@ -1061,12 +1169,24 @@
           ],
           "difficulty": 2
         }
-      }
+      },
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+        "Soil type influences drainage, heat retention, and vine vigor, shaping the style and consistency of the wines."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "navarra": {
       "name": "Navarra",
       "summary": "Diverse region producing rosé, reds and some whites across mixed climate zones.",
-      "climate": "Mixed / Transitional",
+      "climate": "Moderate Continental [Atlantic and Mediterranean influences]",
       "styleSummary": "A diverse region producing fresh rosé, reds and some whites.",
       "mitigating": [
         "Atlantic influence in north",
@@ -1168,12 +1288,24 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards."
+      ]
     },
     "catalunya": {
       "name": "Catalunya",
       "summary": "Large varied Mediterranean region producing a wide range of still wines.",
-      "climate": "Mediterranean",
+      "climate": "Warm Mediterranean",
       "styleSummary": "Wide range of still wines from an extensive and varied region.",
       "mitigating": [
         "coastal influence",
@@ -1274,12 +1406,24 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "la-mancha": {
       "name": "La Mancha",
       "summary": "Large hot dry inland region known for volume production and improving quality.",
-      "climate": "Continental",
+      "climate": "Warm Continental",
       "styleSummary": "Large hot dry inland region producing volume and increasingly better quality wines.",
       "mitigating": [
         "altitude",
@@ -1374,12 +1518,24 @@
           ],
           "difficulty": 2
         }
-      }
+      },
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+        "Dry conditions reduce disease pressure but can limit vine vigor and water availability."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Irrigation, drought-adapted training, or careful water management become important where dry conditions are severe."
+      ]
     },
     "jumilla": {
       "name": "Jumilla",
       "summary": "Hot dry region famous for powerful Monastrell-based reds.",
-      "climate": "Mediterranean to Continental-influenced",
+      "climate": "Warm Mediterranean [continental influence]",
       "styleSummary": "Hot dry region known for ripe, powerful Monastrell.",
       "mitigating": [
         "altitude",
@@ -1444,12 +1600,24 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards."
+      ]
     },
     "valencia": {
       "name": "Valencia",
       "summary": "Warm Mediterranean region producing ripe reds and a range of wine styles.",
-      "climate": "Mediterranean",
+      "climate": "Warm Mediterranean",
       "styleSummary": "Warm-climate region producing both reds and whites in a range of styles.",
       "mitigating": [
         "coastal influence",
@@ -1509,12 +1677,24 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "penedes": {
       "name": "Penedes",
       "summary": "Catalan region strongly associated with Cava, where altitude helps preserve freshness despite Mediterranean warmth.",
-      "climate": "Mediterranean",
+      "climate": "Moderate Mediterranean",
       "styleSummary": "Traditional method sparkling wines with fresh citrus fruit, moderate body and some autolytic complexity.",
       "mitigating": [
         "altitude",
@@ -1680,7 +1860,7 @@
         "alt-penedes": {
           "name": "Alt Penedes",
           "summary": "Higher inland part of Penedes important for fresher base wines and sparkling production.",
-          "climate": "Warm Mediterranean with altitude influence",
+          "climate": "Warm Mediterranean [altitude influence]",
           "styleSummary": "Fresh dry whites and sparkling base wines with good acidity from higher sites.",
           "keyGrapes": [
             "Macabeo",
@@ -1826,7 +2006,19 @@
               "difficulty": 1
             }
           },
-          "classification": "Higher inland sites are especially important for fresher sparkling base wines."
+          "classification": "Higher inland sites are especially important for fresher sparkling base wines.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Altitude lowers temperature and can extend the growing season, helping preserve acidity and aroma.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Growers often use elevation and harvest timing strategically to balance ripeness and freshness.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards."
+          ]
         },
         "sant-sadurni-danoia": {
           "name": "Sant Sadurni d’Anoia",
@@ -1977,7 +2169,18 @@
               "difficulty": 1
             }
           },
-          "classification": "Sant Sadurni d’Anoia is the practical heartland of many major Cava houses."
+          "classification": "Sant Sadurni d’Anoia is the practical heartland of many major Cava houses.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Regional style depends not only on climate and site, but also on deliberate human choices in the vineyard and cellar."
+          ]
         },
         "baix-penedes": {
           "name": "Baix Penedes",
@@ -2085,19 +2288,43 @@
               ],
               "difficulty": 1
             }
-          }
+          },
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+            "Subregional site differences are important to how grapes ripen and to the final balance of the wines."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         }
       },
       "classification": "Penedes is central to traditional-method Cava production using Macabeo, Xarel-lo and Parellada, while premium categories depend on longer lees ageing.",
       "lawNotes": [
         "Traditional method is essential for Cava.",
         "Reserva and Gran Reserva indicate longer ageing."
+      ],
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+        "Subregional site differences are important to how grapes ripen and to the final balance of the wines."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Regional style depends not only on climate and site, but also on deliberate human choices in the vineyard and cellar."
       ]
     },
     "jerez": {
       "name": "Jerez",
       "summary": "Warm southern Spanish region producing Sherry, with styles shaped by fortification, flor and oxidative ageing.",
-      "climate": "Hot Mediterranean",
+      "climate": "Warm Mediterranean [hot]",
       "styleSummary": "Fortified wines ranging from very dry flor-aged styles to rich oxidatively aged and sweet wines.",
       "mitigating": [
         "Atlantic influence",
@@ -2408,12 +2635,24 @@
               "difficulty": 1
             }
           },
-          "classification": "One of the core production towns of the Sherry triangle."
+          "classification": "One of the core production towns of the Sherry triangle.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Soil type influences drainage, heat retention, and vine vigor, shaping the style and consistency of the wines."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Winemaking choices such as ageing regime, fortification, or blending system are major human factors in the final style.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "sanlucar-de-barrameda": {
           "name": "Sanlucar de Barrameda",
           "summary": "Coastal Sherry town whose humid Atlantic conditions are associated especially with Manzanilla.",
-          "climate": "Warm maritime",
+          "climate": "Warm Maritime",
           "styleSummary": "Very pale delicate biologically aged fortified wines with pronounced flor influence.",
           "keyGrapes": [
             "Palomino"
@@ -2475,12 +2714,24 @@
               "difficulty": 1
             }
           },
-          "classification": "Sanlucar de Barrameda is uniquely associated with Manzanilla."
+          "classification": "Sanlucar de Barrameda is uniquely associated with Manzanilla.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Soil type influences drainage, heat retention, and vine vigor, shaping the style and consistency of the wines."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Winemaking choices such as ageing regime, fortification, or blending system are major human factors in the final style.",
+            "Regional style depends not only on climate and site, but also on deliberate human choices in the vineyard and cellar."
+          ]
         },
         "el-puerto-de-santa-maria": {
           "name": "El Puerto de Santa Maria",
           "summary": "Coastal Sherry town in the production triangle with strong maritime influence on ageing conditions.",
-          "climate": "Warm maritime",
+          "climate": "Warm Maritime",
           "styleSummary": "Delicate dry biologically aged wines and other Sherry styles matured under Atlantic influence.",
           "keyGrapes": [
             "Palomino"
@@ -2542,13 +2793,37 @@
               "difficulty": 1
             }
           },
-          "classification": "El Puerto de Santa Maria is another key maritime town within the production triangle."
+          "classification": "El Puerto de Santa Maria is another key maritime town within the production triangle.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Soil type influences drainage, heat retention, and vine vigor, shaping the style and consistency of the wines."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Winemaking choices such as ageing regime, fortification, or blending system are major human factors in the final style.",
+            "Regional style depends not only on climate and site, but also on deliberate human choices in the vineyard and cellar."
+          ]
         }
       },
       "classification": "Jerez is defined by biological versus oxidative ageing, flor, fortification and the solera system.",
       "lawNotes": [
         "Fino and Manzanilla are biologically aged.",
         "Amontillado, Palo Cortado and Oloroso involve increasing oxidative character."
+      ],
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+        "Soil type influences drainage, heat retention, and vine vigor, shaping the style and consistency of the wines."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Winemaking choices such as ageing regime, fortification, or blending system are major human factors in the final style.",
+        "Regional style depends not only on climate and site, but also on deliberate human choices in the vineyard and cellar."
       ]
     }
   }

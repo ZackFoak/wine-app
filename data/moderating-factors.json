@@ -1,0 +1,715 @@
+{
+  "countries": {
+    "france": [
+      {
+        "name": "Atlantic influence",
+        "route": "current-west",
+        "description": "Atlantic weather moderates western France, bringing cooling influence, humidity, and vintage variation."
+      },
+      {
+        "name": "Mediterranean influence",
+        "route": "current-south",
+        "description": "The Mediterranean helps drive warmer, sunnier southern French growing conditions."
+      }
+    ],
+    "germany": [
+      {
+        "name": "Rhine corridor",
+        "route": "river-vertical",
+        "description": "Major river corridors help reflect light and soften cool continental conditions in German vineyards."
+      }
+    ],
+    "austria": [
+      {
+        "name": "Danube River",
+        "route": "river-horizontal",
+        "description": "The Danube moderates temperature, reflects light, and shapes many of Austria's best vineyard sites."
+      }
+    ],
+    "greece": [
+      {
+        "name": "Aegean maritime influence",
+        "route": "current-east",
+        "description": "The Aegean brings cooling winds and maritime moderation to many Greek vineyards."
+      }
+    ],
+    "italy": [
+      {
+        "name": "Alpine barrier",
+        "route": "mountain-north",
+        "description": "The Alps provide shelter while altitude and valley exposures strongly shape northern Italian climates."
+      }
+    ],
+    "spain": [
+      {
+        "name": "Atlantic influence",
+        "route": "current-west",
+        "description": "Atlantic conditions cool and moisten Spain's northwest and parts of the north."
+      },
+      {
+        "name": "Mediterranean influence",
+        "route": "current-east",
+        "description": "Mediterranean warmth raises temperatures and sunshine on Spain's eastern and southeastern side."
+      }
+    ],
+    "portugal": [
+      {
+        "name": "Atlantic influence",
+        "route": "current-west",
+        "description": "The Atlantic cools Portugal's western vineyards and increases humidity and rainfall near the coast."
+      }
+    ],
+    "usa": [
+      {
+        "name": "Pacific influence",
+        "route": "current-west",
+        "description": "Cold Pacific influence, currents, and fog are central moderating factors for many West Coast vineyards."
+      }
+    ],
+    "chile": [
+      {
+        "name": "Humboldt Current",
+        "route": "current-west",
+        "description": "The cold Humboldt Current cools Chile's coast, preserving freshness and slowing ripening in coastal zones."
+      },
+      {
+        "name": "Andes influence",
+        "route": "mountain-east",
+        "description": "The Andes create altitude, cool nights, and a rain-shadow effect that shape Chilean viticulture."
+      }
+    ],
+    "argentina": [
+      {
+        "name": "Andes influence",
+        "route": "mountain-west",
+        "description": "The Andes provide altitude, meltwater for irrigation, and strong day-night variation in Argentina's vineyards."
+      }
+    ],
+    "south-africa": [
+      {
+        "name": "Benguela Current",
+        "route": "current-west",
+        "description": "The cold Benguela Current flows north up the west coast, cooling Cape vineyards and helping preserve acidity."
+      }
+    ],
+    "australia": [
+      {
+        "name": "Southern Ocean influence",
+        "route": "current-south",
+        "description": "Southern Ocean air helps moderate many Australian regions, especially cooler coastal and island sites."
+      }
+    ],
+    "new-zealand": [
+      {
+        "name": "Tasman Sea influence",
+        "route": "current-west",
+        "description": "The Tasman Sea moderates western New Zealand and contributes to a cool maritime growing environment."
+      },
+      {
+        "name": "Pacific influence",
+        "route": "current-east",
+        "description": "The Pacific Ocean brings maritime moderation, wind, and freshness to many eastern New Zealand sites."
+      }
+    ]
+  },
+  "regions": {
+    "france": {
+      "bordeaux": [
+        {
+          "name": "Atlantic influence",
+          "route": "coast-west",
+          "description": "Atlantic weather cools Bordeaux, increases rainfall, and makes vintage variation important."
+        },
+        {
+          "name": "Gironde estuary",
+          "route": "river-vertical",
+          "description": "The Gironde, Garonne, and Dordogne moderate local temperatures and shape humidity patterns."
+        }
+      ],
+      "muscadet": [
+        {
+          "name": "Atlantic influence",
+          "route": "coast-west",
+          "description": "Strong Atlantic influence keeps Muscadet cool and supports high-acid, light-bodied wines."
+        }
+      ],
+      "anjou-saumur": [
+        {
+          "name": "Loire River",
+          "route": "river-horizontal",
+          "description": "The Loire helps moderate temperature and supports the region's varied sparkling, white, and rosé styles."
+        }
+      ],
+      "touraine": [
+        {
+          "name": "Loire River",
+          "route": "river-horizontal",
+          "description": "The Loire corridor adds moderation while inland influence increases toward the east."
+        }
+      ],
+      "central-vineyards": [
+        {
+          "name": "Loire River",
+          "route": "river-horizontal",
+          "description": "The Loire and its tributaries help moderate this otherwise cool inland part of the valley."
+        }
+      ],
+      "northern-rhone": [
+        {
+          "name": "Rhone River",
+          "route": "river-vertical",
+          "description": "The Rhone corridor shapes vineyard exposure and local mesoclimate in the steep northern valley."
+        },
+        {
+          "name": "Mistral",
+          "route": "wind-north-south",
+          "description": "The Mistral dries vineyards, reduces disease pressure, and can lower temperatures."
+        }
+      ],
+      "southern-rhone": [
+        {
+          "name": "Rhone River",
+          "route": "river-vertical",
+          "description": "The Rhone valley forms a major corridor through the warm southern part of the region."
+        },
+        {
+          "name": "Mistral",
+          "route": "wind-north-south",
+          "description": "The Mistral helps dry vineyards and can moderate the heat in Southern Rhone vineyards."
+        }
+      ],
+      "alsace": [
+        {
+          "name": "Vosges rain shadow",
+          "route": "mountain-west",
+          "description": "The Vosges reduce rainfall and help make Alsace notably drier and sunnier than many nearby regions."
+        }
+      ],
+      "champagne": [
+        {
+          "name": "Marne valley corridor",
+          "route": "river-horizontal",
+          "description": "The Marne valley shapes exposure and contributes to local mesoclimate differences in Champagne."
+        }
+      ],
+      "provence": [
+        {
+          "name": "Mediterranean Sea",
+          "route": "coast-south",
+          "description": "Mediterranean influence brings warmth, sunlight, and sea moderation to Provence."
+        }
+      ],
+      "languedoc-roussillon": [
+        {
+          "name": "Mediterranean Sea",
+          "route": "coast-south",
+          "description": "Mediterranean warmth is moderated in places by coastal exposure, wind, and altitude."
+        }
+      ]
+    },
+    "germany": {
+      "mosel": [
+        {
+          "name": "Mosel River",
+          "route": "river-diagonal-up",
+          "description": "The Mosel reflects light and moderates temperature in this very cool, steep river valley."
+        }
+      ],
+      "rheingau": [
+        {
+          "name": "Rhine River",
+          "route": "river-horizontal",
+          "description": "The Rhine reflects light and helps moderate temperatures for Rheingau vineyards."
+        }
+      ],
+      "nahe": [
+        {
+          "name": "Nahe River",
+          "route": "river-horizontal",
+          "description": "River valleys and mixed exposures soften the climate across Nahe."
+        }
+      ],
+      "rheinhessen": [
+        {
+          "name": "Rhine influence",
+          "route": "river-vertical",
+          "description": "The Rhine helps moderate temperature while sheltered sites add ripening potential."
+        }
+      ],
+      "pfalz": [
+        {
+          "name": "Haardt Mountains",
+          "route": "mountain-west",
+          "description": "Mountain shelter reduces rainfall and helps make Pfalz warmer and drier than many German regions."
+        }
+      ],
+      "franken": [
+        {
+          "name": "Main River",
+          "route": "river-horizontal",
+          "description": "The Main river corridor and slope exposure help this inland region ripen fruit."
+        }
+      ]
+    },
+    "austria": {
+      "niederosterreich": [
+        {
+          "name": "Danube River",
+          "route": "river-horizontal",
+          "description": "The Danube moderates temperature and reflects light across Lower Austria."
+        }
+      ],
+      "burgenland": [
+        {
+          "name": "Lake Neusiedl",
+          "route": "lake-east",
+          "description": "Lake Neusiedl moderates temperature and promotes humidity and botrytis potential."
+        }
+      ],
+      "steiermark": [
+        {
+          "name": "Alpine cooling",
+          "route": "mountain-west",
+          "description": "Altitude and Alpine influence help preserve freshness in Steiermark."
+        }
+      ],
+      "wachau": [
+        {
+          "name": "Danube River",
+          "route": "river-horizontal",
+          "description": "The Danube is a central moderating factor in the Wachau, alongside stone terraces and diurnal range."
+        }
+      ]
+    },
+    "hungary": {
+      "tokaj": [
+        {
+          "name": "Tisza and Bodrog rivers",
+          "route": "river-diagonal-up",
+          "description": "River mists encourage botrytis and are central to Tokaj's sweet wine production."
+        }
+      ],
+      "eger": [
+        {
+          "name": "Higher inland sites",
+          "route": "mountain-north",
+          "description": "Altitude and inland continental conditions help keep Eger cooler than warmer southern Hungarian areas."
+        }
+      ]
+    },
+    "greece": {
+      "santorini": [
+        {
+          "name": "Aegean winds",
+          "route": "wind-west-east",
+          "description": "Strong Aegean winds cool the island and explain the traditional basket-trained vines."
+        }
+      ],
+      "naoussa": [
+        {
+          "name": "Mountain influence",
+          "route": "mountain-west",
+          "description": "Altitude and mountain influence help keep Naoussa cooler than many Mediterranean regions."
+        }
+      ],
+      "amyndeon": [
+        {
+          "name": "Altitude and lake influence",
+          "route": "lake-west",
+          "description": "Altitude and nearby lakes help make Amyndeon one of Greece's cooler wine regions."
+        }
+      ]
+    },
+    "italy": {
+      "alto-adige-trentino-friuli": [
+        {
+          "name": "Alpine influence",
+          "route": "mountain-north",
+          "description": "Altitude, Alpine shelter, and valley exposures strongly shape this cool northern area."
+        }
+      ],
+      "veneto": [
+        {
+          "name": "Lake Garda",
+          "route": "lake-west",
+          "description": "Lake Garda helps moderate nearby vineyards and supports fresher styles in parts of Veneto."
+        },
+        {
+          "name": "Alpine protection",
+          "route": "mountain-north",
+          "description": "The Alps shelter parts of Veneto and create useful site variation."
+        }
+      ],
+      "tuscany": [
+        {
+          "name": "Tyrrhenian influence",
+          "route": "coast-west",
+          "description": "Sea influence and inland hills help moderate temperature across Tuscany."
+        }
+      ],
+      "marche": [
+        {
+          "name": "Adriatic influence",
+          "route": "coast-east",
+          "description": "The Adriatic helps moderate Marche, especially for white-wine areas near the coast."
+        }
+      ],
+      "lazio": [
+        {
+          "name": "Tyrrhenian influence",
+          "route": "coast-west",
+          "description": "Coastal influence and elevated volcanic sites help moderate Lazio."
+        }
+      ],
+      "campania": [
+        {
+          "name": "Tyrrhenian influence",
+          "route": "coast-west",
+          "description": "Sea influence and altitude are important moderating factors in Campania."
+        }
+      ],
+      "puglia": [
+        {
+          "name": "Adriatic influence",
+          "route": "coast-east",
+          "description": "Sea influence helps moderate heat in parts of Puglia despite the region's warm, sunny climate."
+        }
+      ],
+      "sicily": [
+        {
+          "name": "Sea breezes",
+          "route": "coast-south",
+          "description": "Sea breezes help moderate Sicily, while altitude is critical around Etna."
+        }
+      ],
+      "piemonte": [
+        {
+          "name": "Alpine shelter",
+          "route": "mountain-north",
+          "description": "Alpine shelter, hills, and aspect are important ripening factors in Piemonte."
+        }
+      ]
+    },
+    "spain": {
+      "rias-baixas": [
+        {
+          "name": "Atlantic influence",
+          "route": "coast-west",
+          "description": "Strong Atlantic influence keeps Rias Baixas cool, wet, and well ventilated."
+        }
+      ],
+      "rioja": [
+        {
+          "name": "Ebro corridor",
+          "route": "river-horizontal",
+          "description": "The Ebro corridor and altitude differences help create Rioja's subregional variation."
+        },
+        {
+          "name": "Mountain shelter",
+          "route": "mountain-north",
+          "description": "Mountain shelter helps protect Rioja from harsher weather while Atlantic influence remains important in cooler zones."
+        }
+      ],
+      "ribera-del-duero": [
+        {
+          "name": "Duero River",
+          "route": "river-horizontal",
+          "description": "The Duero corridor and high elevation produce a marked diurnal range in Ribera del Duero."
+        }
+      ],
+      "jerez": [
+        {
+          "name": "Atlantic influence",
+          "route": "coast-west",
+          "description": "Atlantic breezes moderate Jerez and are important for flor and Sherry ageing conditions."
+        }
+      ],
+      "penedes": [
+        {
+          "name": "Mediterranean influence",
+          "route": "coast-east",
+          "description": "Mediterranean warmth is moderated by altitude in higher Penedes sites."
+        }
+      ],
+      "navarra": [
+        {
+          "name": "North-south transition",
+          "route": "wind-north-south",
+          "description": "Navarra bridges cooler Atlantic influence in the north and warmer Mediterranean conditions in the south."
+        }
+      ],
+      "jumilla": [
+        {
+          "name": "Altitude moderation",
+          "route": "mountain-north",
+          "description": "Altitude helps moderate this otherwise hot, dry inland region."
+        }
+      ],
+      "valencia": [
+        {
+          "name": "Mediterranean influence",
+          "route": "coast-east",
+          "description": "Coastal influence moderates parts of Valencia, while inland areas are warmer."
+        }
+      ]
+    },
+    "portugal": {
+      "vinho-verde": [
+        {
+          "name": "Atlantic influence",
+          "route": "coast-west",
+          "description": "Atlantic influence keeps Vinho Verde cool, wet, and relatively low in alcohol."
+        }
+      ],
+      "douro": [
+        {
+          "name": "Douro River",
+          "route": "river-horizontal",
+          "description": "The Douro river corridor and terraced slopes create major mesoclimate differences across the valley."
+        }
+      ],
+      "dao": [
+        {
+          "name": "Mountain protection",
+          "route": "mountain-west",
+          "description": "Surrounding mountains shelter Dao and help shape a more moderate inland climate."
+        }
+      ]
+    },
+    "usa": {
+      "california": [
+        {
+          "name": "Pacific cooling",
+          "route": "coast-west",
+          "description": "Cold Pacific influence and fog are core moderating factors in California viticulture."
+        }
+      ],
+      "napa-valley": [
+        {
+          "name": "San Pablo Bay",
+          "route": "coast-south",
+          "description": "Cool air and fog from San Pablo Bay moderate the south of Napa and influence valley mesoclimates."
+        }
+      ],
+      "sonoma": [
+        {
+          "name": "Pacific fog",
+          "route": "coast-west",
+          "description": "Pacific fog and cool-air corridors are key moderating factors across Sonoma."
+        }
+      ],
+      "central-coast": [
+        {
+          "name": "Pacific influence",
+          "route": "coast-west",
+          "description": "Ocean air, fog, and gaps in the coastal ranges strongly moderate the Central Coast."
+        }
+      ],
+      "oregon": [
+        {
+          "name": "Pacific influence",
+          "route": "coast-west",
+          "description": "Pacific influence helps keep Oregon relatively cool with a long growing season."
+        }
+      ],
+      "washington-state": [
+        {
+          "name": "Cascade rain shadow",
+          "route": "mountain-west",
+          "description": "The Cascades create a rain shadow, giving eastern Washington warm, dry conditions with cool nights."
+        }
+      ]
+    },
+    "chile": {
+      "aconcagua": [
+        {
+          "name": "Pacific cooling",
+          "route": "coast-west",
+          "description": "Pacific breezes and the cold Humboldt Current moderate the western side of Aconcagua."
+        }
+      ],
+      "central-valley": [
+        {
+          "name": "Andes cooling",
+          "route": "mountain-east",
+          "description": "Andes influence helps cool nights and maintain freshness in inland Central Valley vineyards."
+        },
+        {
+          "name": "Pacific influence",
+          "route": "coast-west",
+          "description": "Pacific air tempers Chile's warm inland valleys, especially in more western zones."
+        }
+      ],
+      "casablanca": [
+        {
+          "name": "Pacific fog",
+          "route": "coast-west",
+          "description": "Cold Pacific fog and breezes make Casablanca a distinctly cooler coastal region."
+        }
+      ],
+      "colchagua": [
+        {
+          "name": "Andes cooling",
+          "route": "mountain-east",
+          "description": "Andean air and altitude influence help preserve balance in warmer parts of Colchagua."
+        }
+      ]
+    },
+    "argentina": {
+      "mendoza": [
+        {
+          "name": "Andes altitude",
+          "route": "mountain-west",
+          "description": "Altitude and meltwater from the Andes are crucial to Mendoza's viticulture and day-night temperature range."
+        }
+      ],
+      "lujan-de-cuyo": [
+        {
+          "name": "Andes altitude",
+          "route": "mountain-west",
+          "description": "Moderate elevation near the Andes helps balance warm sunny days with cool nights."
+        }
+      ],
+      "uco-valley": [
+        {
+          "name": "High-altitude Andes sites",
+          "route": "mountain-west",
+          "description": "Very high altitude is a defining moderating factor in the Uco Valley."
+        }
+      ],
+      "salta": [
+        {
+          "name": "Extreme altitude",
+          "route": "mountain-west",
+          "description": "Extreme altitude cools nights and slows ripening in one of the world's highest vineyard areas."
+        }
+      ],
+      "patagonia": [
+        {
+          "name": "Cool southern winds",
+          "route": "wind-west-east",
+          "description": "Southern latitude and persistent winds help keep Patagonia markedly cooler."
+        }
+      ]
+    },
+    "south-africa": {
+      "stellenbosch": [
+        {
+          "name": "Cape sea breezes",
+          "route": "coast-south",
+          "description": "Ocean breezes from False Bay and nearby cold-water influence help moderate Stellenbosch."
+        }
+      ],
+      "paarl": [
+        {
+          "name": "Cape cooling influence",
+          "route": "coast-west",
+          "description": "Paarl is warmer inland, but still receives some moderating ocean influence from the Cape."
+        }
+      ],
+      "walker-bay": [
+        {
+          "name": "Cold ocean influence",
+          "route": "coast-south",
+          "description": "Walker Bay is strongly cooled by nearby ocean influence, helping Pinot Noir and Chardonnay ripen slowly."
+        }
+      ],
+      "swartland": [
+        {
+          "name": "Benguela cooling",
+          "route": "coast-west",
+          "description": "The Benguela current helps moderate heat in parts of Swartland, though the region remains dry and warm."
+        }
+      ]
+    },
+    "australia": {
+      "barossa": [
+        {
+          "name": "Elevated Eden influence",
+          "route": "mountain-east",
+          "description": "Higher, cooler nearby sites and local elevation differences help balance warmer Barossa conditions."
+        }
+      ],
+      "mclaren-vale": [
+        {
+          "name": "Gulf sea breezes",
+          "route": "coast-west",
+          "description": "Sea breezes from Gulf St Vincent help moderate McLaren Vale's warm climate."
+        }
+      ],
+      "adelaide-hills": [
+        {
+          "name": "Altitude",
+          "route": "mountain-east",
+          "description": "Altitude is the key moderating factor that keeps Adelaide Hills cooler and fresher."
+        }
+      ],
+      "yarra-valley": [
+        {
+          "name": "Ocean influence",
+          "route": "coast-south",
+          "description": "Ocean influence helps keep Yarra Valley cooler than many inland Australian regions."
+        }
+      ],
+      "hunter-valley": [
+        {
+          "name": "Pacific influence",
+          "route": "coast-east",
+          "description": "Pacific influence and cloud cover help temper the Hunter Valley's warm, humid climate."
+        }
+      ],
+      "margaret-river": [
+        {
+          "name": "Ocean influence",
+          "route": "coast-west",
+          "description": "Margaret River is strongly moderated by surrounding ocean influence, helping a long even ripening season."
+        }
+      ],
+      "tasmania": [
+        {
+          "name": "Bass Strait and Southern Ocean",
+          "route": "coast-south",
+          "description": "Cool maritime influence from Bass Strait and the Southern Ocean keeps Tasmania one of Australia's coolest regions."
+        }
+      ],
+      "rutherglen": [
+        {
+          "name": "Long warm ripening season",
+          "route": "wind-west-east",
+          "description": "Rutherglen stays warm and sunny, allowing very ripe fruit for fortified Muscat production."
+        }
+      ]
+    },
+    "new-zealand": {
+      "marlborough": [
+        {
+          "name": "Cook Strait airflow",
+          "route": "wind-west-east",
+          "description": "Cool maritime airflow and a large diurnal range help drive Marlborough's pungent aromatic style."
+        }
+      ],
+      "hawkes-bay": [
+        {
+          "name": "Pacific influence",
+          "route": "coast-east",
+          "description": "Pacific influence moderates Hawke's Bay, though it remains one of New Zealand's warmer regions."
+        }
+      ],
+      "central-otago": [
+        {
+          "name": "Mountain shelter",
+          "route": "mountain-west",
+          "description": "Mountain shelter makes Central Otago drier and more continental than most of New Zealand."
+        }
+      ],
+      "wairarapa": [
+        {
+          "name": "Cook Strait winds",
+          "route": "wind-west-east",
+          "description": "Wind and maritime influence help moderate Wairarapa and Martinborough."
+        }
+      ]
+    }
+  },
+  "subregions": {}
+}

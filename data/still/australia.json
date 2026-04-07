@@ -86,12 +86,23 @@
       "classification": "Barossa is one of Australia’s benchmark warm-climate Shiraz regions.",
       "lawNotes": [
         "Old vines and generous ripe Shiraz are central exam themes."
+      ],
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Dry conditions reduce disease pressure but can limit vine vigor and water availability."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Training system and vine age are important human choices that shape yield, resilience, and fruit concentration.",
+        "Irrigation, drought-adapted training, or careful water management become important where dry conditions are severe."
       ]
     },
     "mclaren-vale": {
       "name": "McLaren Vale",
       "summary": "Warm coastal region producing rich but slightly fresher Shiraz due to maritime influence.",
-      "climate": "Mediterranean",
+      "climate": "Warm Mediterranean",
       "styleSummary": "Ripe reds with some freshness from ocean influence.",
       "mitigating": [
         "sea breezes"
@@ -149,12 +160,23 @@
           "difficulty": 1
         }
       },
-      "classification": "McLaren Vale is a warm South Australian region associated with ripe generous Shiraz and Grenache styles."
+      "classification": "McLaren Vale is a warm South Australian region associated with ripe generous Shiraz and Grenache styles.",
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+        "Subregional site differences are important to how grapes ripen and to the final balance of the wines."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "adelaide-hills": {
       "name": "Adelaide Hills",
       "summary": "Cooler elevated region producing fresher aromatic whites.",
-      "climate": "Cool continental",
+      "climate": "Cool Continental",
       "styleSummary": "Fresh aromatic whites with high acidity.",
       "mitigating": [
         "altitude"
@@ -220,12 +242,24 @@
       "classification": "Adelaide Hills is a cooler elevated South Australian region for Sauvignon Blanc, Chardonnay and premium sparkling wine.",
       "lawNotes": [
         "Altitude gives a cooler-climate contrast to Barossa and McLaren Vale."
+      ],
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+        "Subregional site differences are important to how grapes ripen and to the final balance of the wines."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Choice of production method and maturation is a major human factor in shaping regional wine style."
       ]
     },
     "yarra-valley": {
       "name": "Yarra Valley",
       "summary": "Cool-climate region known for elegant Pinot Noir and Chardonnay.",
-      "climate": "Cool maritime",
+      "climate": "Cool Maritime",
       "styleSummary": "Elegant, fresh wines.",
       "mitigating": [
         "ocean influence"
@@ -286,12 +320,23 @@
           "keyPoint": "Yarra Valley is important for premium cool-climate sparkling wine."
         }
       },
-      "classification": "Yarra Valley is a cool-climate Victorian region important for Pinot Noir, Chardonnay and premium sparkling wine."
+      "classification": "Yarra Valley is a cool-climate Victorian region important for Pinot Noir, Chardonnay and premium sparkling wine.",
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Disease control and canopy management are often important human factors in maritime climates.",
+        "Choice of production method and maturation is a major human factor in shaping regional wine style.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "hunter-valley": {
       "name": "Hunter Valley",
       "summary": "Warm region known for distinctive Semillon with ageing potential.",
-      "climate": "Warm maritime",
+      "climate": "Warm Maritime",
       "styleSummary": "Unique low-alcohol high-acid Semillon.",
       "mitigating": [
         "cloud cover"
@@ -345,12 +390,21 @@
       "classification": "Hunter Valley is a classic Australian region especially associated with distinctive Semillon styles.",
       "lawNotes": [
         "Semillon is often light-bodied and high-acid in youth, developing toasty notes with bottle age."
+      ],
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Disease control and canopy management are often important human factors in maritime climates.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
       ]
     },
     "margaret-river": {
       "name": "Margaret River",
       "summary": "Premium maritime region producing Bordeaux-style blends and elegant Chardonnay.",
-      "climate": "Maritime",
+      "climate": "Moderate Maritime",
       "styleSummary": "Balanced premium wines.",
       "mitigating": [
         "ocean influence"
@@ -400,12 +454,23 @@
           "difficulty": 1
         }
       },
-      "classification": "Margaret River is a major fine-wine region known for Cabernet Sauvignon and Chardonnay under strong maritime influence."
+      "classification": "Margaret River is a major fine-wine region known for Cabernet Sauvignon and Chardonnay under strong maritime influence.",
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Disease control and canopy management are often important human factors in maritime climates.",
+        "Regional style depends not only on climate and site, but also on deliberate human choices in the vineyard and cellar.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "tasmania": {
       "name": "Tasmania",
       "summary": "Coolest Australian region producing high-acid wines and sparkling.",
-      "climate": "Cool maritime",
+      "climate": "Cool Maritime",
       "styleSummary": "Fresh, high-acid wines.",
       "mitigating": [
         "cool ocean"
@@ -464,7 +529,18 @@
           "keyPoint": "Cool climate Tasmania is one of Australia’s key premium sparkling regions."
         }
       },
-      "classification": "Tasmania is Australia’s coolest major region and especially important for premium sparkling wine and Pinot Noir / Chardonnay."
+      "classification": "Tasmania is Australia’s coolest major region and especially important for premium sparkling wine and Pinot Noir / Chardonnay.",
+      "vineyardFactors": [
+        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+        "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+      ],
+      "humanFactors": [
+        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+        "Disease control and canopy management are often important human factors in maritime climates.",
+        "Choice of production method and maturation is a major human factor in shaping regional wine style.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "rutherglen": {
       "name": "Rutherglen",
@@ -551,6 +627,17 @@
       "classification": "Rutherglen is the classic fortified Muscat area of Australia with a recognized age-based quality ladder.",
       "lawNotes": [
         "Rutherglen Muscat categories such as Rutherglen, Classic, Grand and Rare are especially exam-useful."
+      ],
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Winemaking choices such as ageing regime, fortification, or blending system are major human factors in the final style.",
+        "Fortification and ageing decisions are central human factors behind the final wine style."
       ]
     }
   }

@@ -5,7 +5,7 @@
     "alto-adige-trentino-friuli": {
       "name": "Alto Adige / Trentino / Friuli-Venezia Giulia",
       "summary": "Cooler north-eastern Italian zone influenced by altitude and mountains, producing fresh aromatic whites and elegant reds.",
-      "climate": "Continental to Alpine-influenced",
+      "climate": "Moderate Continental [Alpine influence]",
       "styleSummary": "Fresh aromatic whites and some light to medium-bodied reds, often with good acidity.",
       "mitigating": [
         "altitude",
@@ -152,12 +152,24 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+        "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk."
+      ]
     },
     "veneto": {
       "name": "Veneto",
       "summary": "Large north-eastern Italian region producing a wide range of styles including Valpolicella reds, Soave whites and Prosecco sparkling wines.",
-      "climate": "Continental to Mediterranean-influenced",
+      "climate": "Moderate Continental [Mediterranean influence]",
       "styleSummary": "Wide range including reds, Soave whites and fresh tank method sparkling Prosecco.",
       "mitigating": [
         "Lake Garda influence",
@@ -375,7 +387,7 @@
         "valpolicella": {
           "name": "Valpolicella",
           "summary": "Important Veneto red wine zone producing Valpolicella and the dried-grape Amarone and Recioto styles.",
-          "climate": "Moderated continental",
+          "climate": "Moderate Continental [moderating influence]",
           "styleSummary": "Cherry-fruited reds from fresh Valpolicella through richer Amarone-based styles.",
           "keyGrapes": [
             "Corvina"
@@ -436,12 +448,24 @@
           "classification": "Valpolicella covers fresh red styles plus the dried-grape Amarone and sweet Recioto traditions.",
           "lawNotes": [
             "Ripasso and Amarone are key exam concepts here."
+          ],
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures.",
+            "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
           ]
         },
         "soave": {
           "name": "Soave",
           "summary": "Classic Veneto white wine area east of Verona known for Garganega-based dry wines.",
-          "climate": "Moderated continental",
+          "climate": "Moderate Continental [moderating influence]",
           "styleSummary": "Dry medium-bodied whites with pear, citrus and almond notes, often with better concentration from hillside sites.",
           "keyGrapes": [
             "Garganega"
@@ -498,12 +522,24 @@
               "difficulty": 1
             }
           },
-          "classification": "Soave is the classic Garganega-based white appellation, with better hillside sites important for quality."
+          "classification": "Soave is the classic Garganega-based white appellation, with better hillside sites important for quality.",
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures.",
+            "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "conegliano-valdobbiadene": {
           "name": "Conegliano-Valdobbiadene",
           "summary": "Premium hillside Prosecco area producing more complex and concentrated sparkling wines than the broader DOC.",
-          "climate": "Moderated continental",
+          "climate": "Moderate Continental [moderating influence]",
           "styleSummary": "Aromatic sparkling wines with pear, peach and floral notes, often with finer quality and more intensity.",
           "keyGrapes": [
             "Glera"
@@ -565,19 +601,43 @@
               "difficulty": 1
             }
           },
-          "classification": "Conegliano-Valdobbiadene Prosecco Superiore DOCG is above the broader Prosecco DOC in the quality hierarchy."
+          "classification": "Conegliano-Valdobbiadene Prosecco Superiore DOCG is above the broader Prosecco DOC in the quality hierarchy.",
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures.",
+            "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         }
       },
       "classification": "Veneto spans key DOC and DOCG names including Soave, Valpolicella and premium Prosecco zones.",
       "lawNotes": [
         "Amarone and Recioto rely on appassimento.",
         "Conegliano-Valdobbiadene Prosecco Superiore is the prestige Prosecco area."
+      ],
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk."
       ]
     },
     "tuscany": {
       "name": "Tuscany",
       "summary": "Classic central Italian region centred on Sangiovese, producing savoury reds with freshness and regional variation.",
-      "climate": "Mediterranean",
+      "climate": "Moderate Mediterranean",
       "styleSummary": "Sangiovese-led reds with freshness and savoury character.",
       "mitigating": [
         "altitude",
@@ -729,7 +789,7 @@
         "chianti-classico": {
           "name": "Chianti Classico",
           "summary": "Historic central Tuscan zone between Florence and Siena focused on quality Sangiovese-based reds.",
-          "climate": "Warm Mediterranean with altitude influence",
+          "climate": "Warm Mediterranean [altitude influence]",
           "styleSummary": "Sour cherry, red plum and savory Sangiovese reds with firm tannin and high acidity.",
           "keyGrapes": [
             "Sangiovese"
@@ -790,7 +850,19 @@
               "difficulty": 1
             }
           },
-          "classification": "Chianti Classico DOCG is distinct from the broader Chianti DOCG and uses the black rooster as an important symbol."
+          "classification": "Chianti Classico DOCG is distinct from the broader Chianti DOCG and uses the black rooster as an important symbol.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Altitude lowers temperature and can extend the growing season, helping preserve acidity and aroma.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Growers often use elevation and harvest timing strategically to balance ripeness and freshness.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards."
+          ]
         },
         "montalcino": {
           "name": "Montalcino",
@@ -856,7 +928,19 @@
               "difficulty": 1
             }
           },
-          "classification": "Brunello di Montalcino DOCG is made from 100% Sangiovese and requires long ageing."
+          "classification": "Brunello di Montalcino DOCG is made from 100% Sangiovese and requires long ageing.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+            "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes."
+          ]
         },
         "montepulciano": {
           "name": "Montepulciano",
@@ -922,12 +1006,24 @@
               "difficulty": 1
             }
           },
-          "classification": "Vino Nobile di Montepulciano DOCG is based mainly on Sangiovese grown around the town of Montepulciano."
+          "classification": "Vino Nobile di Montepulciano DOCG is based mainly on Sangiovese grown around the town of Montepulciano.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+            "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes."
+          ]
         },
         "bolgheri": {
           "name": "Bolgheri",
           "summary": "Coastal Tuscan appellation known for Bordeaux-variety blends in a warmer maritime setting.",
-          "climate": "Warm maritime",
+          "climate": "Warm Maritime",
           "styleSummary": "Riper fuller-bodied reds based on Cabernet Sauvignon and Merlot with oak and international styling.",
           "keyGrapes": [
             "Cabernet Sauvignon",
@@ -1024,19 +1120,43 @@
               "difficulty": 1
             }
           },
-          "classification": "Bolgheri became one of the best-known homes of Super Tuscan Bordeaux-variety wines."
+          "classification": "Bolgheri became one of the best-known homes of Super Tuscan Bordeaux-variety wines.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+            "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes."
+          ]
         }
       },
       "classification": "Key Tuscan quality names include Chianti Classico DOCG, Brunello di Montalcino DOCG, Vino Nobile di Montepulciano DOCG and the IGT Toscana category for many Super Tuscan wines.",
       "lawNotes": [
         "Sangiovese is the central grape for the classic Tuscan DOCG wines.",
         "IGT Toscana became important for non-traditional blends and varietal choices."
+      ],
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+        "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Terracing, manual work, and careful site matching become more important on steep or exposed slopes."
       ]
     },
     "marche": {
       "name": "Marche",
       "summary": "Adriatic-facing central Italian region best known for fresh, characterful Verdicchio.",
-      "climate": "Mediterranean",
+      "climate": "Moderate Mediterranean",
       "styleSummary": "Fresh whites, especially Verdicchio, with some elegant reds.",
       "mitigating": [
         "Adriatic influence",
@@ -1100,12 +1220,23 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "umbria": {
       "name": "Umbria",
       "summary": "Inland central Italian region producing traditional whites and some structured reds from hilly sites.",
-      "climate": "Continental to Mediterranean-influenced",
+      "climate": "Moderate Continental [Mediterranean influence]",
       "styleSummary": "Whites based around local and traditional grapes, plus some quality reds.",
       "mitigating": [
         "inland hills",
@@ -1202,12 +1333,24 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards."
+      ]
     },
     "lazio": {
       "name": "Lazio",
       "summary": "Central Italian region near Rome known mainly for traditional white blends.",
-      "climate": "Mediterranean",
+      "climate": "Warm Mediterranean",
       "styleSummary": "Mainly white wines from traditional local blends.",
       "mitigating": [
         "coastal influence",
@@ -1305,12 +1448,24 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+        "Soil type influences drainage, heat retention, and vine vigor, shaping the style and consistency of the wines."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Regional style depends not only on climate and site, but also on deliberate human choices in the vineyard and cellar.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "abruzzo": {
       "name": "Abruzzo",
       "summary": "Central Adriatic region known for Montepulciano-based reds with ripe fruit and generous body.",
-      "climate": "Mediterranean",
+      "climate": "Warm Mediterranean",
       "styleSummary": "Important for Montepulciano-based reds with ripe fruit and good body.",
       "mitigating": [
         "Adriatic influence",
@@ -1372,12 +1527,23 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "campania": {
       "name": "Campania",
       "summary": "Southern Italian region influenced by volcanic soils, producing structured whites and powerful reds.",
-      "climate": "Mediterranean",
+      "climate": "Warm Mediterranean",
       "styleSummary": "Structured whites and full-bodied reds influenced by volcanic soils.",
       "mitigating": [
         "altitude",
@@ -1524,12 +1690,24 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+        "Soil type influences drainage, heat retention, and vine vigor, shaping the style and consistency of the wines."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "puglia": {
       "name": "Puglia",
       "summary": "Hot southern Italian region producing ripe, full-bodied reds, often from high-yielding vineyards.",
-      "climate": "Mediterranean",
+      "climate": "Warm Mediterranean",
       "styleSummary": "Ripe, full-bodied reds with soft acidity.",
       "mitigating": [
         "sea influence",
@@ -1632,12 +1810,22 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "basilicata": {
       "name": "Basilicata",
       "summary": "Small southern region known for structured Aglianico from elevated volcanic sites.",
-      "climate": "Mediterranean with altitude influence",
+      "climate": "Moderate Mediterranean [altitude influence]",
       "styleSummary": "Structured reds from Aglianico with freshness from elevation.",
       "mitigating": [
         "altitude",
@@ -1701,12 +1889,24 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Altitude lowers temperature and can extend the growing season, helping preserve acidity and aroma.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Growers often use elevation and harvest timing strategically to balance ripeness and freshness.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards."
+      ]
     },
     "sicily": {
       "name": "Sicily",
       "summary": "Large Mediterranean island producing ripe wines, with cooler volcanic sites on Mount Etna.",
-      "climate": "Mediterranean",
+      "climate": "Warm Mediterranean",
       "styleSummary": "Ripe wines with regional variation, especially cooler styles on Etna.",
       "mitigating": [
         "altitude on Etna",
@@ -1847,12 +2047,24 @@
           ],
           "difficulty": 1
         }
-      }
+      },
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
     },
     "piemonte": {
       "name": "Piemonte",
       "summary": "North-west Italian region known for Nebbiolo-based fine wines, Barbera and aromatic Moscato for Asti.",
-      "climate": "Continental",
+      "climate": "Moderate Continental",
       "styleSummary": "Structured ageworthy reds from Nebbiolo plus fragrant sparkling and sweet Moscato-based wines.",
       "mitigating": [
         "fog",
@@ -2067,7 +2279,7 @@
         "barolo": {
           "name": "Barolo",
           "summary": "Prestige Langhe appellation producing powerful long-lived Nebbiolo wines.",
-          "climate": "Moderate continental",
+          "climate": "Moderate Continental",
           "styleSummary": "Full-bodied high-tannin high-acid Nebbiolo with rose, tar and red cherry notes.",
           "keyGrapes": [
             "Nebbiolo"
@@ -2127,12 +2339,23 @@
               "difficulty": 1
             }
           },
-          "classification": "Barolo DOCG is the prestige full-bodied Nebbiolo appellation with long ageing expectations."
+          "classification": "Barolo DOCG is the prestige full-bodied Nebbiolo appellation with long ageing expectations.",
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "barbaresco": {
           "name": "Barbaresco",
           "summary": "Prestige Nebbiolo appellation producing fragrant but still structured wines from a slightly milder area than Barolo.",
-          "climate": "Moderate continental",
+          "climate": "Moderate Continental",
           "styleSummary": "Perfumed Nebbiolo with red fruit, floral notes, high acidity and firm tannin.",
           "keyGrapes": [
             "Nebbiolo"
@@ -2192,12 +2415,23 @@
               "difficulty": 1
             }
           },
-          "classification": "Barbaresco DOCG is also 100% Nebbiolo, usually seen as a little lighter or earlier maturing than Barolo."
+          "classification": "Barbaresco DOCG is also 100% Nebbiolo, usually seen as a little lighter or earlier maturing than Barolo.",
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "asti": {
           "name": "Asti",
           "summary": "Piemonte sparkling area known for sweet low-alcohol Moscato d’Asti and Asti styles.",
-          "climate": "Moderate continental",
+          "climate": "Moderate Continental",
           "styleSummary": "Light aromatic sparkling wines with grapey peach and floral notes and often some sweetness.",
           "keyGrapes": [
             "Moscato Bianco"
@@ -2260,12 +2494,23 @@
               "difficulty": 1
             }
           },
-          "classification": "Asti DOCG and Moscato d’Asti DOCG are key aromatic sparkling appellations based on Moscato Bianco."
+          "classification": "Asti DOCG and Moscato d’Asti DOCG are key aromatic sparkling appellations based on Moscato Bianco.",
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         },
         "gavi": {
           "name": "Gavi",
           "summary": "Important southeastern Piemonte white wine area producing dry Cortese-based wines.",
-          "climate": "Moderate continental",
+          "climate": "Moderate Continental",
           "styleSummary": "Dry fresh whites with citrus, apple and almond notes and high acidity.",
           "keyGrapes": [
             "Cortese"
@@ -2324,13 +2569,36 @@
               "difficulty": 2
             }
           },
-          "classification": "Gavi DOCG is the classic Cortese appellation of southeastern Piemonte."
+          "classification": "Gavi DOCG is the classic Cortese appellation of southeastern Piemonte.",
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
         }
       },
       "classification": "Piemonte combines major DOCG red appellations such as Barolo and Barbaresco with important sparkling and white appellations such as Asti and Gavi.",
       "lawNotes": [
         "Nebbiolo gives pale color but high tannin and acidity.",
         "Asti and Moscato d’Asti are important sweet sparkling exam styles."
+      ],
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality.",
+        "Conditions favoring botrytis or late harvesting can be essential vineyard factors where sweet wines are important."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+        "Choice of production method and maturation is a major human factor in shaping regional wine style."
       ]
     }
   },
