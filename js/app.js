@@ -973,19 +973,25 @@ function bindStudyButtons(pageKey, onRefresh) {
 
 function updateSheetMetrics() {
   const toolbar = byId("topToolbar");
+  const toolbarToggle = byId("toolbarToggle");
+  const searchInput = byId("searchInput");
   const root = document.documentElement;
 
-  if (!toolbar || !sheet) return;
+  if (!toolbar || !sheet || !toolbarToggle || !searchInput) return;
 
-  const toolbarRect = toolbar.getBoundingClientRect();
   const viewportHeight = window.innerHeight || 1;
 
-  // 用 filter bar 離頂距離，作為 search bar 同 sheet 之間嘅 gap
-  const topGap = Math.round(toolbarRect.top);
+  const filterRect = toolbarToggle.getBoundingClientRect();
+  const searchRect = searchInput.getBoundingClientRect();
 
-  // sheet 頂部位置 = search bar 底部 + 同樣 gap
-  const desiredTop = Math.round(toolbarRect.bottom + topGap);
+  // 你想要：
+  // search bar 底 ↔ sheet 頂 = filter bar ↔ viewport 頂
+  const filterTopGap = Math.round(filterRect.top + 4);
 
+  // sheet 頂部目標位置
+  const desiredTop = Math.round(searchRect.bottom + filterTopGap);
+
+  // sheet 高度 = 視窗高度 - desiredTop
   const sheetHeight = Math.max(320, viewportHeight - desiredTop);
 
   root.style.setProperty("--sheet-height", `${sheetHeight}px`);
