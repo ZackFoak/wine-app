@@ -6,46 +6,77 @@
     "Atlantic vs inland climate is the key concept.",
     "Douro is important for both dry wines and Port."
   ],
-  "tags": ["Portugal", "indigenous-grapes", "Atlantic", "Douro", "diversity"],
+  "tags": [
+    "Portugal",
+    "indigenous-grapes",
+    "Atlantic",
+    "Douro",
+    "diversity",
+    "fortified"
+  ],
   "difficulty": 1,
   "regions": {
-
     "vinho-verde": {
       "name": "Vinho Verde",
       "summary": "Cool, Atlantic-influenced region producing light, fresh, high-acid white wines with low alcohol.",
       "climate": "Cool maritime",
       "styleSummary": "Light, fresh, high-acid wines with low alcohol.",
-      "mitigating": ["Atlantic influence", "high rainfall"],
-      "keyGrapes": ["Alvarinho", "Loureiro"],
+      "mitigating": [
+        "Atlantic influence",
+        "high rainfall"
+      ],
+      "keyGrapes": [
+        "Alvarinho",
+        "Loureiro"
+      ],
       "examTips": [
         "Very high acidity and low alcohol.",
         "Sometimes slight spritz."
       ],
-      "tags": ["Portugal", "Vinho Verde", "cool-climate", "white"],
+      "tags": [
+        "Portugal",
+        "Vinho Verde",
+        "cool-climate",
+        "white"
+      ],
       "difficulty": 1,
       "grapes": {
-
         "Alvarinho": {
           "summary": "High-quality aromatic white grape producing citrus and stone fruit wines with good structure.",
           "style": "Citrus, peach, high acidity.",
-          "aliases": ["Albariño"],
+          "aliases": [
+            "Albariño"
+          ],
           "profile": {
             "acidity": "High",
             "alcohol": "Medium",
             "body": "Medium",
             "tannin": "-"
           },
-          "aromas": ["citrus", "peach", "floral"],
-          "viticulture": ["Better sites give more body"],
-          "winemaking": ["Fresh styles"],
-          "pairing": ["seafood", "shellfish"],
+          "aromas": [
+            "citrus",
+            "peach",
+            "floral"
+          ],
+          "viticulture": [
+            "Better sites give more body"
+          ],
+          "winemaking": [
+            "Fresh styles"
+          ],
+          "pairing": [
+            "seafood",
+            "shellfish"
+          ],
           "examTips": [
             "More structured than other Vinho Verde wines."
           ],
-          "tags": ["white", "high-acid"],
+          "tags": [
+            "white",
+            "high-acid"
+          ],
           "difficulty": 1
         },
-
         "Loureiro": {
           "summary": "Aromatic grape producing light, floral wines.",
           "style": "Floral, citrus, light body.",
@@ -56,37 +87,65 @@
             "body": "Light",
             "tannin": "-"
           },
-          "aromas": ["floral", "citrus"],
-          "viticulture": ["Cool climate"],
-          "winemaking": ["Fresh"],
-          "pairing": ["salads", "light fish"],
+          "aromas": [
+            "floral",
+            "citrus"
+          ],
+          "viticulture": [
+            "Cool climate"
+          ],
+          "winemaking": [
+            "Fresh"
+          ],
+          "pairing": [
+            "salads",
+            "light fish"
+          ],
           "examTips": [
             "Very light and aromatic."
           ],
-          "tags": ["white", "light"],
+          "tags": [
+            "white",
+            "light"
+          ],
           "difficulty": 1
         }
       }
     },
-
     "douro": {
       "name": "Douro",
-      "summary": "Hot inland region producing powerful dry reds and fortified Port wines.",
+      "summary": "Hot inland region producing powerful dry reds and the fortified wines of Port from steep terraced vineyards.",
       "climate": "Hot continental",
-      "styleSummary": "Full-bodied reds and fortified wines.",
-      "mitigating": ["altitude", "river valley"],
-      "keyGrapes": ["Touriga Nacional", "Touriga Franca"],
-      "examTips": [
-        "Very hot region.",
-        "Important for Port production.",
-        "Steep terraces are key."
+      "styleSummary": "Structured dry reds plus sweet fortified Port in a range of oxidative and bottle-aged styles.",
+      "mitigating": [
+        "altitude",
+        "river valley",
+        "terraces",
+        "aspect",
+        "vineyard altitude"
       ],
-      "tags": ["Portugal", "Douro", "Port", "hot"],
+      "keyGrapes": [
+        "Touriga Nacional",
+        "Touriga Franca",
+        "Tinta Roriz"
+      ],
+      "examTips": [
+        "Douro is important for both dry wines and Port.",
+        "Steep terraced vineyards and hot inland conditions are key themes.",
+        "Fortification stops fermentation and preserves sweetness in Port."
+      ],
+      "tags": [
+        "Portugal",
+        "Douro",
+        "Port",
+        "hot",
+        "fortified",
+        "terraces"
+      ],
       "difficulty": 1,
       "grapes": {
-
         "Touriga Nacional": {
-          "summary": "Portugal’s most important red grape, producing concentrated, structured wines.",
+          "summary": "Portugal’s flagship red grape, producing concentrated colour, tannin and floral perfume in dry Douro wines and Port blends.",
           "style": "Black fruit, floral, high tannin.",
           "aliases": [],
           "profile": {
@@ -95,19 +154,36 @@
             "body": "Full",
             "tannin": "High"
           },
-          "aromas": ["black fruit", "violet"],
-          "viticulture": ["Low yields"],
-          "winemaking": ["Used in blends"],
-          "pairing": ["lamb", "game"],
-          "examTips": [
-            "Highly structured and concentrated."
+          "aromas": [
+            "black fruit",
+            "violet"
           ],
-          "tags": ["red", "structured"],
+          "viticulture": [
+            "Low yields"
+          ],
+          "winemaking": [
+            "Key blending component in Port",
+            "Also used for premium dry reds"
+          ],
+          "pairing": [
+            "lamb",
+            "game"
+          ],
+          "examTips": [
+            "Highly structured and concentrated.",
+            "Central grape in many top Port blends."
+          ],
+          "tags": [
+            "red",
+            "structured",
+            "fortified",
+            "Portugal",
+            "Douro"
+          ],
           "difficulty": 1
         },
-
         "Touriga Franca": {
-          "summary": "Blending grape adding fruit and balance.",
+          "summary": "Perfumed blending grape adding fruit and balance in Port and dry Douro wines.",
           "style": "Black fruit, softer tannin.",
           "aliases": [],
           "profile": {
@@ -116,31 +192,139 @@
             "body": "Medium",
             "tannin": "Medium"
           },
-          "aromas": ["black fruit"],
-          "viticulture": ["Reliable"],
-          "winemaking": ["Blends"],
-          "pairing": ["meat dishes"],
-          "examTips": [
-            "Adds balance to blends."
+          "aromas": [
+            "black fruit"
           ],
-          "tags": ["red"],
+          "viticulture": [
+            "Reliable"
+          ],
+          "winemaking": [
+            "Useful in blends for Port and dry reds"
+          ],
+          "pairing": [
+            "meat dishes"
+          ],
+          "examTips": [
+            "Reliable and widely planted.",
+            "Often adds perfume and approachability around Touriga Nacional."
+          ],
+          "tags": [
+            "red",
+            "blend",
+            "fortified",
+            "Portugal",
+            "Douro"
+          ],
           "difficulty": 1
+        },
+        "Tinta Roriz": {
+          "summary": "Portuguese name for Tempranillo, used in Port blends and structured dry reds.",
+          "style": "Red and black fruit with spice and structure.",
+          "aliases": [
+            "Tempranillo",
+            "Aragonez"
+          ],
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium to High",
+            "body": "Medium to Full",
+            "tannin": "Medium"
+          },
+          "aromas": [
+            "red fruit",
+            "black fruit",
+            "spice"
+          ],
+          "viticulture": [
+            "Adapts well to warm dry inland climates"
+          ],
+          "winemaking": [
+            "Important blending grape in Port",
+            "Also used in dry reds"
+          ],
+          "pairing": [
+            "lamb",
+            "grilled meats",
+            "hard cheese"
+          ],
+          "examTips": [
+            "Know that Tinta Roriz is Tempranillo.",
+            "Useful in both fortified and still wines."
+          ],
+          "tags": [
+            "red",
+            "fortified",
+            "Portugal",
+            "Douro"
+          ],
+          "difficulty": 1
+        }
+      },
+      "styles": {
+        "ruby": {
+          "name": "Ruby Port",
+          "style": "Deeply coloured youthful Port with black fruit and simple sweetness.",
+          "aging": "Short ageing in large vessels",
+          "keyPoint": "Fruit-driven style with minimal oxidation."
+        },
+        "reserve-ruby": {
+          "name": "Reserve Ruby Port",
+          "style": "Richer more intense Ruby style with greater concentration.",
+          "aging": "Large-vessel ageing with more selection and quality",
+          "keyPoint": "Premium fruit-driven ruby style."
+        },
+        "lbv": {
+          "name": "LBV Port",
+          "style": "Ripe, rich Port from a single year, usually more approachable than Vintage Port.",
+          "aging": "Longer cask ageing than Vintage before release",
+          "keyPoint": "Single-vintage style designed to be ready earlier."
+        },
+        "vintage": {
+          "name": "Vintage Port",
+          "style": "Powerful, concentrated and ageworthy Port from the best years.",
+          "aging": "Short cask ageing then long bottle ageing",
+          "keyPoint": "Declared only in the strongest vintages."
+        },
+        "tawny": {
+          "name": "Tawny Port",
+          "style": "Nutty, caramel and dried-fruit style with oxidative complexity.",
+          "aging": "Extended ageing in small oak vessels",
+          "keyPoint": "Oxidation and evaporation shape the style."
+        },
+        "aged-tawny": {
+          "name": "10/20/30/40 Year Tawny Port",
+          "style": "Increasingly complex oxidative Port with nut, toffee and dried-fruit character.",
+          "aging": "Long oxidative cask ageing",
+          "keyPoint": "Age indication reflects average style rather than a single vintage."
+        },
+        "white-port": {
+          "name": "White Port",
+          "style": "Fortified white style ranging from dry to sweet, often served chilled.",
+          "aging": "Can be youthful or oxidatively aged depending on style",
+          "keyPoint": "Made from white grapes, not just a pale version of ruby."
         }
       }
     },
-
     "dao": {
       "name": "Dão",
       "summary": "Cooler inland region producing elegant, balanced red wines.",
       "climate": "Continental",
       "styleSummary": "More elegant and structured wines.",
-      "mitigating": ["altitude", "mountain protection"],
-      "keyGrapes": ["Touriga Nacional"],
+      "mitigating": [
+        "altitude",
+        "mountain protection"
+      ],
+      "keyGrapes": [
+        "Touriga Nacional"
+      ],
       "examTips": [
         "Cooler than Douro.",
         "More elegant wines."
       ],
-      "tags": ["Portugal", "Dão"],
+      "tags": [
+        "Portugal",
+        "Dão"
+      ],
       "difficulty": 1,
       "grapes": {
         "Touriga Nacional": {
@@ -153,55 +337,85 @@
             "body": "Medium",
             "tannin": "Medium to High"
           },
-          "aromas": ["black fruit", "violet"],
-          "viticulture": ["Cooler climate"],
-          "winemaking": ["Balanced styles"],
-          "pairing": ["lamb"],
+          "aromas": [
+            "black fruit",
+            "violet"
+          ],
+          "viticulture": [
+            "Cooler climate"
+          ],
+          "winemaking": [
+            "Balanced styles"
+          ],
+          "pairing": [
+            "lamb"
+          ],
           "examTips": [
             "More elegant than Douro."
           ],
-          "tags": ["red"],
+          "tags": [
+            "red"
+          ],
           "difficulty": 1
         }
       }
     },
-
     "alentejo": {
       "name": "Alentejo",
       "summary": "Hot southern region producing ripe, fruit-forward wines.",
       "climate": "Hot Mediterranean",
       "styleSummary": "Ripe, full-bodied wines.",
-      "mitigating": ["modern techniques"],
-      "keyGrapes": ["Aragonez", "Trincadeira"],
+      "mitigating": [
+        "modern techniques"
+      ],
+      "keyGrapes": [
+        "Aragonez",
+        "Trincadeira"
+      ],
       "examTips": [
         "Hot climate → ripe fruit.",
         "Often softer acidity."
       ],
-      "tags": ["Portugal", "Alentejo", "hot"],
+      "tags": [
+        "Portugal",
+        "Alentejo",
+        "hot"
+      ],
       "difficulty": 1,
       "grapes": {
-
         "Aragonez": {
           "summary": "Ripe red grape producing fruit-forward wines.",
           "style": "Red fruit, spice.",
-          "aliases": ["Tempranillo"],
+          "aliases": [
+            "Tempranillo"
+          ],
           "profile": {
             "acidity": "Medium",
             "alcohol": "High",
             "body": "Medium to Full",
             "tannin": "Medium"
           },
-          "aromas": ["red fruit", "spice"],
-          "viticulture": ["Heat tolerant"],
-          "winemaking": ["Fruit-driven"],
-          "pairing": ["BBQ"],
+          "aromas": [
+            "red fruit",
+            "spice"
+          ],
+          "viticulture": [
+            "Heat tolerant"
+          ],
+          "winemaking": [
+            "Fruit-driven"
+          ],
+          "pairing": [
+            "BBQ"
+          ],
           "examTips": [
             "Warm climate style."
           ],
-          "tags": ["red"],
+          "tags": [
+            "red"
+          ],
           "difficulty": 1
         },
-
         "Trincadeira": {
           "summary": "Spicy grape used in blends.",
           "style": "Herbal, spice.",
@@ -212,18 +426,28 @@
             "body": "Medium",
             "tannin": "Medium"
           },
-          "aromas": ["herb", "spice"],
-          "viticulture": ["Heat sensitive"],
-          "winemaking": ["Blends"],
-          "pairing": ["meat"],
+          "aromas": [
+            "herb",
+            "spice"
+          ],
+          "viticulture": [
+            "Heat sensitive"
+          ],
+          "winemaking": [
+            "Blends"
+          ],
+          "pairing": [
+            "meat"
+          ],
           "examTips": [
             "Adds spice."
           ],
-          "tags": ["red"],
+          "tags": [
+            "red"
+          ],
           "difficulty": 1
         }
       }
     }
-
   }
 }

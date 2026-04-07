@@ -16,17 +16,126 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: "&copy; OpenStreetMap contributors"
 }).addTo(map);
 
+function renderHomePanel() {
+  setPanelTitle("Click a country");
+  setBreadcrumb([]);
+  byId("content").innerHTML = `
+    <div class="section-card">
+      <p class="section-title">Welcome</p>
+      <p>Explore wine countries, then choose a region to open its details.</p>
+      <p>Use Search, Quiz, Favorites, and Progress to build your knowledge.</p>
+    </div>
+  `;
+}
+
+function clearRegionMarkers() {
+  state.regionMarkers.forEach(marker => {
+    if (map.hasLayer(marker)) {
+      map.removeLayer(marker);
+    }
+  });
+
+  state.regionMarkers = [];
+  state.activeCountryKey = null;
+}
+
+function hideAllCountryMarkers() {
+  Object.values(state.markers).forEach(marker => {
+    if (map.hasLayer(marker)) {
+      map.removeLayer(marker);
+    }
+  });
+}
+
+function restoreCountryMarkers() {
+  clearRegionMarkers();
+
+  Object.keys(state.markers).forEach(key => {
+    const marker = state.markers[key];
+    const countryMeta = state.countriesData?.[key];
+    const categories = countryMeta?.categories || [countryMeta?.category].filter(Boolean);
+    const shouldShow = state.currentFilter === "all" || categories.includes(state.currentFilter);
+
+    if (shouldShow) {
+      map.addLayer(marker);
+    } else if (map.hasLayer(marker)) {
+      map.removeLayer(marker);
+    }
+  });
+}
+
+function getRegionCoords(countryKey, regionKey) {
+  return state.regionCoords?.[countryKey]?.[regionKey] || null;
+}
+
+function focusMapOnRegionMarkers(countryKey) {
+  const coords = Object.entries(state.regionCoords?.[countryKey] || {})
+    .map(([, value]) => value)
+    .filter(value => Array.isArray(value) && value.length === 2);
+
+  if (!coords.length) return;
+
+  if (coords.length === 1) {
+    map.flyTo(coords[0], 7);
+    return;
+  }
+
+  map.flyToBounds(coords, {
+    padding: [50, 50],
+    maxZoom: 7
+  });
+}
+
+function showRegionMarkers(countryKey, country) {
+  clearRegionMarkers();
+  hideAllCountryMarkers();
+
+  const regionCoords = state.regionCoords?.[countryKey] || {};
+  const regionEntries = Object.entries(country.regions || {});
+
+  regionEntries.forEach(([regionKey, region]) => {
+    const coords = regionCoords[regionKey];
+    if (!Array.isArray(coords) || coords.length !== 2) return;
+
+    const marker = L.marker(coords, {
+      icon: L.divIcon({
+        className: "region-map-marker-wrap",
+        html: `<button class="region-map-marker" type="button">${region.name || regionKey}</button>`,
+        iconSize: null
+      }),
+      keyboard: true,
+      title: region.name || regionKey
+    });
+
+    marker.on("click", () => showRegion(countryKey, regionKey));
+    marker.addTo(map);
+    state.regionMarkers.push(marker);
+  });
+
+  state.activeCountryKey = countryKey;
+  focusMapOnRegionMarkers(countryKey);
+}
+
 // ================= INIT =================
 async function init() {
   showLoading("Loading Wine Atlas...");
   state.countriesData = await loadJson("./data/countries.json");
+  state.regionCoords = await loadJson("./data/region-coords.json");
   state.quizQuestions = [];
 
   Object.keys(state.countriesData).forEach(key => {
     const c = state.countriesData[key];
     if (!c.coords) return;
 
-    const marker = L.marker(c.coords).addTo(map);
+    const marker = L.marker(c.coords, {
+      icon: L.divIcon({
+        className: "country-map-marker-wrap",
+        html: `<button class="country-map-marker" type="button">${c.name || key}</button>`,
+        iconSize: null
+      }),
+      keyboard: true,
+      title: c.name || key
+    }).addTo(map);
     marker.on("click", () => showCountry(key));
     state.markers[key] = marker;
   });
@@ -54,13 +163,7 @@ async function init() {
     console.error("Question generation failed:", err);
   });
 
-  byId("content").innerHTML = `
-  <div class="section-card">
-    <p class="section-title">Welcome</p>
-    <p>Explore wine countries, regions, grapes, and styles from the map.</p>
-    <p>Use Search, Quiz, Favorites, and Progress to build your knowledge.</p>
-  </div>
-`;
+  renderHomePanel();
   const toolbar = byId("topToolbar");
   const toolbarToggle = byId("toolbarToggle");
 
@@ -94,11 +197,7 @@ init();
 // ================= COUNTRY =================
 async function showCountry(countryKey) {
   showLoading("Loading country...");
-  if (window.innerWidth <= 1400) {
-    openSheetFull();
-  } else {
-    openSheetMid();
-  }
+  openSheetMid();
   try {
     const countryMeta = state.countriesData[countryKey];
     if (!countryMeta) return;
@@ -109,22 +208,14 @@ async function showCountry(countryKey) {
     setPanelTitle(country.name || countryKey);
     setBreadcrumb([{ label: country.name || countryKey }]);
 
-    if (countryMeta.coords && countryMeta.zoom) {
-      map.flyTo(countryMeta.coords, countryMeta.zoom);
-    }
-
-    const pageKey = `country::${country.name}`;
+    showRegionMarkers(countryKey, country);
 
     let html = `
       <div class="section-card">
-        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:12px;">
-          ${renderStudyButtons(pageKey)}
-        </div>
-
+        <button class="btn secondary" id="backToCountriesBtn">← All Countries</button>
         <p><b>Country:</b> ${country.name}</p>
-        ${country.summary ? `<p><b>Summary:</b> ${country.summary}</p>` : ""}
-        ${country.examTips?.length ? `<p><b>Exam Tips:</b> ${country.examTips.join(" / ")}</p>` : ""}
-        <p><b>Regions:</b></p>
+        <p>Select a region to view its details.</p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
     `;
 
     const regionKeys = Object.keys(country.regions || {});
@@ -142,35 +233,24 @@ async function showCountry(countryKey) {
       html += `<p>No regions available.</p>`;
     }
 
-    html += `</div>`;
-
-    if (country.styles && Object.keys(country.styles).length) {
-      html += `
-        <div class="section-card">
-          <p class="section-title">Styles</p>
-          ${Object.keys(country.styles).map(styleKey => {
-            const style = country.styles?.[styleKey];
-            const label = style?.name || styleKey;
-            return `
-              <button class="btn" data-style="${styleKey}">
-                ${label}
-              </button>
-            `;
-          }).join("")}
+    html += `
         </div>
-      `;
-    }
+      </div>
+    `;
 
     byId("content").innerHTML = html;
 
-    bindStudyButtons(pageKey, () => showCountry(countryKey));
+    const backBtn = byId("backToCountriesBtn");
+    if (backBtn) {
+      backBtn.onclick = () => {
+        restoreCountryMarkers();
+        map.setView([25, 10], 2);
+        renderHomePanel();
+      };
+    }
 
     document.querySelectorAll("[data-region]").forEach(btn => {
       btn.addEventListener("click", () => showRegion(countryKey, btn.dataset.region));
-    });
-
-    document.querySelectorAll("[data-style]").forEach(btn => {
-      btn.addEventListener("click", () => showStyle(countryKey, btn.dataset.style));
     });
   } catch (err) {
     console.error("showCountry failed:", err);
@@ -191,6 +271,15 @@ async function showRegion(countryKey, regionKey) {
     const country = await loadJson(`./data/${countryMeta.file}`);
     const region = country.regions?.[regionKey];
     if (!region) return;
+
+    showRegionMarkers(countryKey, country);
+
+    const regionCoords = getRegionCoords(countryKey, regionKey);
+    if (regionCoords) {
+      map.flyTo(regionCoords, 7);
+    } else if (countryMeta.coords && countryMeta.zoom) {
+      map.flyTo(countryMeta.coords, countryMeta.zoom);
+    }
 
     setPanelTitle(region.name || regionKey);
     setBreadcrumb([
@@ -227,12 +316,12 @@ async function showRegion(countryKey, regionKey) {
 
     html += `</div>`;
 
-    if (country.styles && Object.keys(country.styles).length) {
+    if (region.styles && Object.keys(region.styles).length) {
       html += `
         <div class="section-card">
           <p><b>Styles:</b></p>
-          ${Object.keys(country.styles).map(styleKey => {
-            const style = country.styles?.[styleKey];
+          ${Object.keys(region.styles).map(styleKey => {
+            const style = region.styles?.[styleKey];
             const label = style?.name || styleKey;
             return `
               <button class="btn" data-style="${styleKey}">
@@ -272,7 +361,7 @@ async function showRegion(countryKey, regionKey) {
     });
 
     document.querySelectorAll("[data-style]").forEach(btn => {
-      btn.addEventListener("click", () => showStyle(countryKey, btn.dataset.style));
+      btn.addEventListener("click", () => showStyle(countryKey, btn.dataset.style, regionKey));
     });
 
     byId("quizThisRegionBtn").onclick = async () => {
@@ -303,6 +392,13 @@ async function showGrape(countryKey, regionKey, grapeKey) {
   const country = await loadJson(`./data/${countryMeta.file}`);
   const grape = country.regions[regionKey]?.grapes?.[grapeKey];
   if (!grape) return;
+
+  showRegionMarkers(countryKey, country);
+
+  const regionCoords = getRegionCoords(countryKey, regionKey);
+  if (regionCoords) {
+    map.flyTo(regionCoords, 8);
+  }
 
   setPanelTitle(grapeKey);
   setBreadcrumb([
@@ -445,6 +541,7 @@ async function showGrape(countryKey, regionKey, grapeKey) {
 // ================= FAVORITES =================
 function showFavorites() {
   showLoading("Loading favorites...");
+  restoreCountryMarkers();
   openSheetFull();
   setPanelTitle("Favorites");
   setBreadcrumb([{ label: "Favorites" }]);
@@ -499,6 +596,7 @@ function showFavorites() {
   });
 }
 function showQuizModes() {
+  restoreCountryMarkers();
   openSheetFull();
 
   setPanelTitle("Select Quiz Mode");
@@ -527,16 +625,11 @@ function showQuizModes() {
 
 // ================= SEARCH =================
 async function searchAll(query) {
+  restoreCountryMarkers();
   const q = String(query || "").trim().toLowerCase();
 
   if (!q) {
-    setPanelTitle("Click a country");
-    setBreadcrumb([]);
-    byId("content").innerHTML = `
-      <div class="section-card">
-        <p>Select a country on the map, or search for a region or grape.</p>
-      </div>
-    `;
+    renderHomePanel();
     return;
   }
 
@@ -557,6 +650,7 @@ async function searchAll(query) {
     if (
       match(countryMeta.name) ||
       match(countryMeta.category) ||
+      matchArray(countryMeta.categories) ||
       matchArray(countryMeta.tags)
     ) {
       results.push({
@@ -601,6 +695,7 @@ async function searchAll(query) {
         action: () => showCountry(countryKey)
       });
 }
+
     for (const regionKey in (country.regions || {})) {
       const region = country.regions[regionKey];
 
@@ -658,6 +753,36 @@ async function searchAll(query) {
           action: () => showRegion(countryKey, regionKey)
         });
 }
+
+      for (const styleKey in (region.styles || {})) {
+        const style = region.styles[styleKey];
+        const styleMatchReasons = [];
+
+        if (match(style.name)) {
+          styleMatchReasons.push(`name: ${style.name}`);
+        }
+
+        if (match(style.style)) {
+          styleMatchReasons.push(`style: ${style.style}`);
+        }
+
+        if (match(style.aging)) {
+          styleMatchReasons.push(`aging: ${style.aging}`);
+        }
+
+        if (match(style.keyPoint)) {
+          styleMatchReasons.push(`key point: ${style.keyPoint}`);
+        }
+
+        if (styleMatchReasons.length) {
+          results.push({
+            type: "style",
+            label: `${style.name} (${region.name}, ${country.name})`,
+            matchReasons: styleMatchReasons,
+            action: () => showStyle(countryKey, styleKey, regionKey)
+          });
+        }
+      }
 
       for (const grapeKey in (region.grapes || {})) {
         const grape = region.grapes[grapeKey];
@@ -770,11 +895,13 @@ async function searchAll(query) {
   const limitedResults = results.slice(0, 30);
 
   const countryResults = limitedResults.filter(r => r.type === "country");
+  const styleResults = limitedResults.filter(r => r.type === "style");
   const regionResults = limitedResults.filter(r => r.type === "region");
   const grapeResults = limitedResults.filter(r => r.type === "grape");
 
   const orderedResults = [
     ...countryResults,
+    ...styleResults,
     ...regionResults,
     ...grapeResults
   ];
@@ -783,6 +910,9 @@ async function searchAll(query) {
   const countryHtml = renderSearchGroup("Countries", countryResults, start);
   start += countryResults.length;
 
+  const styleHtml = renderSearchGroup("Styles", styleResults, start);
+  start += styleResults.length;
+
   const regionHtml = renderSearchGroup("Regions", regionResults, start);
   start += regionResults.length;
 
@@ -790,6 +920,7 @@ async function searchAll(query) {
 
   byId("content").innerHTML = `
     ${countryHtml}
+    ${styleHtml}
     ${regionHtml}
     ${grapeHtml}
   `;
@@ -803,48 +934,78 @@ async function searchAll(query) {
 }
 
 // ================= STYLE =================
-async function showStyle(countryKey, styleKey) {
-  showLoading("Loading grape profile...");
+async function showStyle(countryKey, styleKey, regionKey = null) {
+  showLoading("Loading style...");
   openSheetFull();
   const countryMeta = state.countriesData[countryKey];
   const country = await loadJson(`./data/${countryMeta.file}`);
-  const style = country.styles?.[styleKey];
+  let style = null;
+  let sourceRegionKey = regionKey;
+
+  if (regionKey) {
+    style = country.regions?.[regionKey]?.styles?.[styleKey];
+  }
+
+  if (!style) {
+    for (const key in (country.regions || {})) {
+      const region = country.regions[key];
+      if (region.styles?.[styleKey]) {
+        style = region.styles[styleKey];
+        sourceRegionKey = key;
+        break;
+      }
+    }
+  }
+
   if (!style) return;
 
+  showRegionMarkers(countryKey, country);
+
+  if (sourceRegionKey) {
+    const regionCoords = getRegionCoords(countryKey, sourceRegionKey);
+    if (regionCoords) {
+      map.flyTo(regionCoords, 7);
+    }
+  }
+
   setPanelTitle(style.name);
-  setBreadcrumb([
-    { label: country.name, click: () => showCountry(countryKey) },
-    { label: style.name }
-  ]);
+  const breadcrumb = [
+    { label: country.name, click: () => showCountry(countryKey) }
+  ];
+
+  if (sourceRegionKey && country.regions?.[sourceRegionKey]) {
+    const region = country.regions[sourceRegionKey];
+    breadcrumb.push({
+      label: region.name || sourceRegionKey,
+      click: () => showRegion(countryKey, sourceRegionKey)
+    });
+  }
+
+  breadcrumb.push({ label: style.name });
+  setBreadcrumb(breadcrumb);
 
   byId("content").innerHTML = `
     <div class="section-card">
-      <button class="btn secondary" id="backToCountry">← Back</button>
+      <button class="btn secondary" id="backToStyleSource">← Back</button>
       <p><b>Style:</b> ${style.style}</p>
       <p><b>Aging:</b> ${style.aging}</p>
       <p><b>Key Point:</b> ${style.keyPoint}</p>
     </div>
   `;
 
-  byId("backToCountry").onclick = () => showCountry(countryKey);
+  byId("backToStyleSource").onclick = () => {
+    if (sourceRegionKey && country.regions?.[sourceRegionKey]) {
+      showRegion(countryKey, sourceRegionKey);
+    } else {
+      showCountry(countryKey);
+    }
+  };
 }
 
 // ================= FILTER =================
 function applyFilter(filter) {
   state.currentFilter = filter;
-
-  Object.keys(state.markers).forEach(key => {
-    const c = state.countriesData[key];
-    const marker = state.markers[key];
-
-    if (!c.category || filter === "all") {
-      map.addLayer(marker);
-    } else if (c.category === filter) {
-      map.addLayer(marker);
-    } else {
-      map.removeLayer(marker);
-    }
-  });
+  restoreCountryMarkers();
 }
 // ================= HELPER =================
 function getAccuracy() {
@@ -1419,6 +1580,7 @@ function renderMeter(label, value) {
 
 // ================= PROGRESS =================
 function showProgress() {
+  restoreCountryMarkers();
   setPanelTitle("Progress Dashboard");
   setBreadcrumb([{ label: "Progress" }]);
 
@@ -1543,6 +1705,7 @@ let currentSheetState = "mid";
 let dragStartY = 0;
 let dragCurrentY = 0;
 let dragStartTranslate = SHEET_STATES.mid;
+let dragStartTime = 0;
 let draggingSheet = false;
 let dragSource = null; // "handle" | "content"
 
@@ -1566,6 +1729,61 @@ function getCurrentTranslatePercent() {
   return SHEET_STATES[currentSheetState];
 }
 
+function getSheetHeightPx() {
+  const styleValue = getComputedStyle(document.documentElement)
+    .getPropertyValue("--sheet-height")
+    .trim();
+  const parsed = parseFloat(styleValue);
+  if (!Number.isNaN(parsed) && parsed > 0) return parsed;
+  return sheet?.offsetHeight || window.innerHeight || 1;
+}
+
+function getRenderedTranslatePercent() {
+  const transform = sheet.style.transform || "";
+  const match = transform.match(/translateY\((-?\d+(?:\.\d+)?)%\)/);
+  if (match) return Number(match[1]);
+
+  const cssVar = parseFloat(sheet.style.getPropertyValue("--sheet-translate"));
+  if (!Number.isNaN(cssVar)) return cssVar;
+
+  return SHEET_STATES[currentSheetState];
+}
+
+function getOrderedSheetStates() {
+  return Object.entries(SHEET_STATES)
+    .map(([name, value]) => ({ name, value }))
+    .sort((a, b) => a.value - b.value);
+}
+
+function getNearestSheetStateName(translatePercent) {
+  const states = getOrderedSheetStates();
+  return states.reduce((closest, entry) => {
+    const currentDiff = Math.abs(entry.value - translatePercent);
+    const closestDiff = Math.abs(closest.value - translatePercent);
+    return currentDiff < closestDiff ? entry : closest;
+  }, states[0]).name;
+}
+
+function getAdjacentSheetStateName(baseStateName, direction) {
+  const states = getOrderedSheetStates();
+  const index = states.findIndex(entry => entry.name === baseStateName);
+  if (index === -1) return baseStateName;
+  const nextIndex = Math.max(0, Math.min(states.length - 1, index + direction));
+  return states[nextIndex].name;
+}
+
+function getSheetSnapDirection(velocityPxMs, dragDistanceY) {
+  if (Math.abs(velocityPxMs) > 0.05) {
+    return velocityPxMs < 0 ? -1 : 1;
+  }
+
+  if (Math.abs(dragDistanceY) > 6) {
+    return dragDistanceY < 0 ? -1 : 1;
+  }
+
+  return 0;
+}
+
 function setSheetTranslate(percent) {
   const clamped = Math.max(SHEET_STATES.open, Math.min(SHEET_STATES.collapsed, percent));
   sheet.style.transform = `translateY(${clamped}%)`;
@@ -1575,7 +1793,8 @@ function setSheetTranslate(percent) {
 function startSheetDrag(clientY, source = "handle") {
   dragStartY = clientY;
   dragCurrentY = clientY;
-  dragStartTranslate = getCurrentTranslatePercent();
+  dragStartTranslate = getRenderedTranslatePercent();
+  dragStartTime = performance.now();
   draggingSheet = true;
   dragSource = source;
   sheet.style.transition = "none";
@@ -1587,8 +1806,8 @@ function moveSheetDrag(clientY) {
   dragCurrentY = clientY;
   const deltaY = dragCurrentY - dragStartY;
 
-  const vh = window.innerHeight || 1;
-  const deltaPercent = (deltaY / vh) * 100;
+  const sheetHeight = getSheetHeightPx();
+  const deltaPercent = (deltaY / sheetHeight) * 100;
   const next = dragStartTranslate + deltaPercent;
 
   setSheetTranslate(next);
@@ -1600,24 +1819,31 @@ function endSheetDrag() {
   draggingSheet = false;
   sheet.style.transition = "transform 0.26s ease";
 
-  const deltaY = dragCurrentY - dragStartY;
-  const threshold = 60;
+  const now = performance.now();
+  const dragDistanceY = dragCurrentY - dragStartY;
+  const dragDurationMs = Math.max(1, now - dragStartTime);
+  const velocityPxMs = dragDistanceY / dragDurationMs;
 
-  if (deltaY <= -threshold) {
-    if (currentSheetState === "collapsed") {
-      applySheetState("mid");
-    } else {
-      applySheetState("open");
+  const currentTranslate = getRenderedTranslatePercent();
+  const sheetHeight = getSheetHeightPx();
+  const projectedTranslate = currentTranslate + ((velocityPxMs * 120) / sheetHeight) * 100;
+  const clampedProjected = Math.max(
+    SHEET_STATES.open,
+    Math.min(SHEET_STATES.collapsed, projectedTranslate)
+  );
+
+  const isFling = Math.abs(velocityPxMs) > 0.45 || Math.abs(dragDistanceY) > 120;
+  let targetState = getNearestSheetStateName(clampedProjected);
+
+  if (isFling) {
+    const direction = getSheetSnapDirection(velocityPxMs, dragDistanceY);
+    const base = getNearestSheetStateName(dragStartTranslate);
+    if (direction !== 0) {
+      targetState = getAdjacentSheetStateName(base, direction);
     }
-  } else if (deltaY >= threshold) {
-    if (currentSheetState === "open") {
-      applySheetState("mid");
-    } else {
-      applySheetState("collapsed");
-    }
-  } else {
-    applySheetState(currentSheetState);
   }
+
+  applySheetState(targetState);
 
   dragSource = null;
 }
@@ -1670,6 +1896,10 @@ if (sheet && handle && handleWrap && sheetBody) {
   }, { passive: false });
 
   window.addEventListener("touchend", () => {
+    onPointerUp();
+  });
+
+  window.addEventListener("touchcancel", () => {
     onPointerUp();
   });
 

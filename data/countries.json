@@ -2,141 +2,188 @@
   "france": {
     "name": "France",
     "category": "still",
-    "coords": [46.2, 2.2],
+    "coords": [
+      46.2,
+      2.2
+    ],
     "zoom": 5,
-    "file": "still/france.json"
+    "file": "still/france.json",
+    "categories": [
+      "still",
+      "sparkling"
+    ]
   },
   "germany": {
     "name": "Germany",
     "category": "still",
-    "coords": [51.2, 10.4],
+    "coords": [
+      51.2,
+      10.4
+    ],
     "zoom": 5,
-    "file": "still/germany.json"
+    "file": "still/germany.json",
+    "categories": [
+      "still"
+    ]
   },
   "austria": {
     "name": "Austria",
     "category": "still",
-    "coords": [47.6, 14.1],
+    "coords": [
+      47.6,
+      14.1
+    ],
     "zoom": 6,
-    "file": "still/austria.json"
+    "file": "still/austria.json",
+    "categories": [
+      "still"
+    ]
   },
   "hungary": {
     "name": "Hungary",
     "category": "still",
-    "coords": [47.2, 19.5],
+    "coords": [
+      47.2,
+      19.5
+    ],
     "zoom": 6,
-    "file": "still/hungary.json"
+    "file": "still/hungary.json",
+    "categories": [
+      "still"
+    ]
   },
   "greece": {
     "name": "Greece",
     "category": "still",
-    "coords": [39.1, 22.9],
+    "coords": [
+      39.1,
+      22.9
+    ],
     "zoom": 6,
-    "file": "still/greece.json"
+    "file": "still/greece.json",
+    "categories": [
+      "still"
+    ]
   },
   "italy": {
     "name": "Italy",
     "category": "still",
-    "coords": [42.8, 12.5],
+    "coords": [
+      42.8,
+      12.5
+    ],
     "zoom": 5,
-    "file": "still/italy.json"
+    "file": "still/italy.json",
+    "categories": [
+      "still",
+      "sparkling"
+    ]
   },
   "spain": {
     "name": "Spain",
     "category": "still",
-    "coords": [40.4, -3.7],
+    "coords": [
+      40.4,
+      -3.7
+    ],
     "zoom": 5,
-    "file": "still/spain.json"
+    "file": "still/spain.json",
+    "categories": [
+      "still",
+      "sparkling",
+      "fortified"
+    ]
   },
   "portugal": {
     "name": "Portugal",
     "category": "still",
-    "coords": [39.6, -8.0],
+    "coords": [
+      39.6,
+      -8
+    ],
     "zoom": 6,
-    "file": "still/portugal.json"
+    "file": "still/portugal.json",
+    "categories": [
+      "still",
+      "fortified"
+    ]
   },
   "usa": {
     "name": "USA",
     "category": "still",
-    "coords": [38.5, -122.5],
+    "coords": [
+      38.5,
+      -122.5
+    ],
     "zoom": 4,
-    "file": "still/usa.json"
+    "file": "still/usa.json",
+    "categories": [
+      "still"
+    ]
   },
   "chile": {
     "name": "Chile",
     "category": "still",
-    "coords": [-34.5, -70.7],
+    "coords": [
+      -34.5,
+      -70.7
+    ],
     "zoom": 4,
-    "file": "still/chile.json"
+    "file": "still/chile.json",
+    "categories": [
+      "still"
+    ]
   },
   "argentina": {
     "name": "Argentina",
     "category": "still",
-    "coords": [-32.9, -68.8],
+    "coords": [
+      -32.9,
+      -68.8
+    ],
     "zoom": 4,
-    "file": "still/argentina.json"
+    "file": "still/argentina.json",
+    "categories": [
+      "still"
+    ]
   },
   "south-africa": {
     "name": "South Africa",
     "category": "still",
-    "coords": [-33.9, 18.7],
+    "coords": [
+      -33.9,
+      18.7
+    ],
     "zoom": 5,
-    "file": "still/south-africa.json"
+    "file": "still/south-africa.json",
+    "categories": [
+      "still"
+    ]
   },
   "australia": {
     "name": "Australia",
     "category": "still",
-    "coords": [-34.5, 138.6],
+    "coords": [
+      -34.5,
+      138.6
+    ],
     "zoom": 4,
-    "file": "still/australia.json"
+    "file": "still/australia.json",
+    "categories": [
+      "still"
+    ]
   },
   "new-zealand": {
     "name": "New Zealand",
     "category": "still",
-    "coords": [-41.3, 173.3],
+    "coords": [
+      -41.3,
+      173.3
+    ],
     "zoom": 5,
-    "file": "still/new-zealand.json"
-  },
-  "sparkling-champagne": {
-    "name": "Champagne",
-    "category": "sparkling",
-    "coords": [49.0, 4.0],
-    "zoom": 6,
-    "file": "sparkling/champagne.json"
-  },
-    "sparkling-cava": {
-      "name": "Cava",
-      "category": "sparkling",
-      "coords": [41.4, 1.8],
-      "zoom": 6,
-      "file": "sparkling/cava.json"
-  },
-  "sparkling-prosecco": {
-    "name": "Prosecco",
-    "category": "sparkling",
-    "coords": [45.8, 12.2],
-    "zoom": 6,
-    "file": "sparkling/prosecco.json"
-  },
-  "sparkling-asti": {
-    "name": "Asti",
-    "category": "sparkling",
-    "coords": [44.7, 8.1],
-    "zoom": 7,
-    "file": "sparkling/asti.json"
-  },
-  "fortified-port": {
-    "name": "Port",
-    "category": "fortified",
-    "coords": [41.1, -7.8],
-    "zoom": 7,
-    "file": "fortified/port.json"
-  },
-  "fortified-sherry": {
-    "name": "Sherry",
-    "category": "fortified",
-    "coords": [36.7, -6.1],
-    "zoom": 7,
-    "file": "fortified/sherry.json"
+    "file": "still/new-zealand.json",
+    "categories": [
+      "still"
+    ]
   }
 }

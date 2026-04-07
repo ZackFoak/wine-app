@@ -7,14 +7,32 @@
       "summary": "Classic maritime French region known for structured red blends and important dry and sweet whites.",
       "climate": "Maritime",
       "styleSummary": "Structured reds, fresh acidity, and important dry and sweet whites.",
-      "mitigating": ["Atlantic influence", "Gironde estuary", "vintage variation", "drainage"],
-      "keyGrapes": ["Cabernet Sauvignon", "Merlot", "Cabernet Franc", "Sauvignon Blanc", "Semillon"],
+      "mitigating": [
+        "Atlantic influence",
+        "Gironde estuary",
+        "vintage variation",
+        "drainage"
+      ],
+      "keyGrapes": [
+        "Cabernet Sauvignon",
+        "Merlot",
+        "Cabernet Franc",
+        "Sauvignon Blanc",
+        "Semillon"
+      ],
       "examTips": [
         "Think blends rather than single-variety wines.",
         "Maritime climate means vintage variation matters.",
         "Left Bank and Right Bank styles are a key exam theme."
       ],
-      "tags": ["France", "Bordeaux", "maritime", "red-blend", "classic", "sweet-white"],
+      "tags": [
+        "France",
+        "Bordeaux",
+        "maritime",
+        "red-blend",
+        "classic",
+        "sweet-white"
+      ],
       "difficulty": 1,
       "grapes": {
         "Cabernet Sauvignon": {
@@ -27,15 +45,35 @@
             "body": "Full",
             "tannin": "High"
           },
-          "aromas": ["blackcurrant", "cedar", "cassis"],
-          "viticulture": ["Late ripening", "Needs warmth to ripen fully"],
-          "winemaking": ["Often blended", "Often matured in oak"],
-          "pairing": ["steak", "lamb", "hard cheese"],
+          "aromas": [
+            "blackcurrant",
+            "cedar",
+            "cassis"
+          ],
+          "viticulture": [
+            "Late ripening",
+            "Needs warmth to ripen fully"
+          ],
+          "winemaking": [
+            "Often blended",
+            "Often matured in oak"
+          ],
+          "pairing": [
+            "steak",
+            "lamb",
+            "hard cheese"
+          ],
           "examTips": [
             "High tannin and blackcurrant are key clues.",
             "Especially important in Left Bank blends."
           ],
-          "tags": ["red", "high-tannin", "black-fruit", "France", "Bordeaux"],
+          "tags": [
+            "red",
+            "high-tannin",
+            "black-fruit",
+            "France",
+            "Bordeaux"
+          ],
           "difficulty": 1
         },
         "Merlot": {
@@ -48,15 +86,32 @@
             "body": "Medium to Full",
             "tannin": "Medium"
           },
-          "aromas": ["plum", "black fruit"],
-          "viticulture": ["Earlier ripening than Cabernet Sauvignon"],
-          "winemaking": ["Often blended", "Oak common"],
-          "pairing": ["duck", "roast meats"],
+          "aromas": [
+            "plum",
+            "black fruit"
+          ],
+          "viticulture": [
+            "Earlier ripening than Cabernet Sauvignon"
+          ],
+          "winemaking": [
+            "Often blended",
+            "Oak common"
+          ],
+          "pairing": [
+            "duck",
+            "roast meats"
+          ],
           "examTips": [
             "Softer and rounder than Cabernet Sauvignon.",
             "Especially important in Right Bank blends."
           ],
-          "tags": ["red", "plum", "medium-tannin", "France", "Bordeaux"],
+          "tags": [
+            "red",
+            "plum",
+            "medium-tannin",
+            "France",
+            "Bordeaux"
+          ],
           "difficulty": 1
         },
         "Cabernet Franc": {
@@ -69,14 +124,30 @@
             "body": "Medium",
             "tannin": "Medium"
           },
-          "aromas": ["red fruit", "herbal"],
-          "viticulture": ["Earlier ripening than Cabernet Sauvignon"],
-          "winemaking": ["Usually blended"],
-          "pairing": ["charcuterie", "roast poultry"],
+          "aromas": [
+            "red fruit",
+            "herbal"
+          ],
+          "viticulture": [
+            "Earlier ripening than Cabernet Sauvignon"
+          ],
+          "winemaking": [
+            "Usually blended"
+          ],
+          "pairing": [
+            "charcuterie",
+            "roast poultry"
+          ],
           "examTips": [
             "Often contributes freshness and aromatics in blends."
           ],
-          "tags": ["red", "fresh", "herbal", "France", "Bordeaux"],
+          "tags": [
+            "red",
+            "fresh",
+            "herbal",
+            "France",
+            "Bordeaux"
+          ],
           "difficulty": 2
         },
         "Sauvignon Blanc": {
@@ -89,14 +160,33 @@
             "body": "Light to Medium",
             "tannin": "-"
           },
-          "aromas": ["citrus", "herb", "gooseberry"],
-          "viticulture": ["Aromatic grape", "Can lose intensity in hot sites"],
-          "winemaking": ["Often blended with Semillon", "Usually fresh styles"],
-          "pairing": ["goat cheese", "seafood"],
+          "aromas": [
+            "citrus",
+            "herb",
+            "gooseberry"
+          ],
+          "viticulture": [
+            "Aromatic grape",
+            "Can lose intensity in hot sites"
+          ],
+          "winemaking": [
+            "Often blended with Semillon",
+            "Usually fresh styles"
+          ],
+          "pairing": [
+            "goat cheese",
+            "seafood"
+          ],
           "examTips": [
             "Think freshness and aromatic lift in dry white blends."
           ],
-          "tags": ["white", "high-acid", "aromatic", "France", "Bordeaux"],
+          "tags": [
+            "white",
+            "high-acid",
+            "aromatic",
+            "France",
+            "Bordeaux"
+          ],
           "difficulty": 1
         },
         "Semillon": {
@@ -109,14 +199,34 @@
             "body": "Medium",
             "tannin": "-"
           },
-          "aromas": ["lemon", "stone fruit", "honey", "wax"],
-          "viticulture": ["Susceptible to botrytis"],
-          "winemaking": ["Dry white blends", "Sweet botrytised styles"],
-          "pairing": ["cream sauces", "foie gras", "blue cheese"],
+          "aromas": [
+            "lemon",
+            "stone fruit",
+            "honey",
+            "wax"
+          ],
+          "viticulture": [
+            "Susceptible to botrytis"
+          ],
+          "winemaking": [
+            "Dry white blends",
+            "Sweet botrytised styles"
+          ],
+          "pairing": [
+            "cream sauces",
+            "foie gras",
+            "blue cheese"
+          ],
           "examTips": [
             "Key grape for sweet Bordeaux."
           ],
-          "tags": ["white", "waxy", "sweet-wine", "France", "Bordeaux"],
+          "tags": [
+            "white",
+            "waxy",
+            "sweet-wine",
+            "France",
+            "Bordeaux"
+          ],
           "difficulty": 1
         }
       }
@@ -126,34 +236,69 @@
       "summary": "Diverse inland and Atlantic-influenced region producing structured reds, aromatic whites and sweet wines.",
       "climate": "Mixed / Transitional",
       "styleSummary": "Diverse region with structured reds, aromatic whites and sweet wines.",
-      "mitigating": ["Atlantic influence in west", "inland warmth", "site variation"],
-      "keyGrapes": ["Malbec", "Tannat", "Petit Manseng"],
+      "mitigating": [
+        "Atlantic influence in west",
+        "inland warmth",
+        "site variation"
+      ],
+      "keyGrapes": [
+        "Malbec",
+        "Tannat",
+        "Petit Manseng"
+      ],
       "examTips": [
         "Think diversity rather than one signature style.",
         "Malbec and Tannat are important for structured reds."
       ],
-      "tags": ["France", "South West", "mixed-climate", "structured-red", "diverse"],
+      "tags": [
+        "France",
+        "South West",
+        "mixed-climate",
+        "structured-red",
+        "diverse"
+      ],
       "difficulty": 1,
       "grapes": {
         "Malbec": {
           "summary": "Deep-coloured grape producing dark-fruited, structured wines with firm tannin.",
           "style": "Deep colour, dark fruit and firm tannin.",
-          "aliases": ["Cot"],
+          "aliases": [
+            "Cot"
+          ],
           "profile": {
             "acidity": "Medium",
             "alcohol": "Medium to High",
             "body": "Full",
             "tannin": "High"
           },
-          "aromas": ["dark fruit", "plum", "blackberry"],
-          "viticulture": ["Needs warmth", "Can struggle in wetter sites"],
-          "winemaking": ["Often structured reds"],
-          "pairing": ["steak", "lamb", "grilled meats"],
+          "aromas": [
+            "dark fruit",
+            "plum",
+            "blackberry"
+          ],
+          "viticulture": [
+            "Needs warmth",
+            "Can struggle in wetter sites"
+          ],
+          "winemaking": [
+            "Often structured reds"
+          ],
+          "pairing": [
+            "steak",
+            "lamb",
+            "grilled meats"
+          ],
           "examTips": [
             "Think deep colour and firm tannin.",
             "Usually fuller and more structured than lighter red styles."
           ],
-          "tags": ["red", "dark-fruit", "high-tannin", "France", "South West"],
+          "tags": [
+            "red",
+            "dark-fruit",
+            "high-tannin",
+            "France",
+            "South West"
+          ],
           "difficulty": 1
         },
         "Tannat": {
@@ -166,15 +311,33 @@
             "body": "Full",
             "tannin": "High"
           },
-          "aromas": ["dark fruit", "blackberry", "spice"],
-          "viticulture": ["Can produce very tannic wines"],
-          "winemaking": ["Can need oak or time to soften"],
-          "pairing": ["braised beef", "game", "stews"],
+          "aromas": [
+            "dark fruit",
+            "blackberry",
+            "spice"
+          ],
+          "viticulture": [
+            "Can produce very tannic wines"
+          ],
+          "winemaking": [
+            "Can need oak or time to soften"
+          ],
+          "pairing": [
+            "braised beef",
+            "game",
+            "stews"
+          ],
           "examTips": [
             "High tannin is the biggest clue.",
             "Often needs ageing or careful winemaking to soften."
           ],
-          "tags": ["red", "very-tannic", "structured", "France", "South West"],
+          "tags": [
+            "red",
+            "very-tannic",
+            "structured",
+            "France",
+            "South West"
+          ],
           "difficulty": 2
         },
         "Petit Manseng": {
@@ -187,14 +350,33 @@
             "body": "Medium to Full",
             "tannin": "-"
           },
-          "aromas": ["citrus", "tropical fruit", "honey", "spice"],
-          "viticulture": ["Can retain acidity well"],
-          "winemaking": ["Dry and sweet styles"],
-          "pairing": ["foie gras", "blue cheese", "spiced dishes"],
+          "aromas": [
+            "citrus",
+            "tropical fruit",
+            "honey",
+            "spice"
+          ],
+          "viticulture": [
+            "Can retain acidity well"
+          ],
+          "winemaking": [
+            "Dry and sweet styles"
+          ],
+          "pairing": [
+            "foie gras",
+            "blue cheese",
+            "spiced dishes"
+          ],
           "examTips": [
             "High acidity plus richness is a useful clue."
           ],
-          "tags": ["white", "high-acid", "aromatic", "sweet-possible", "France"],
+          "tags": [
+            "white",
+            "high-acid",
+            "aromatic",
+            "sweet-possible",
+            "France"
+          ],
           "difficulty": 2
         }
       }
@@ -204,13 +386,27 @@
       "summary": "Classic continental region focused on Pinot Noir and Chardonnay with strong site expression.",
       "climate": "Continental",
       "styleSummary": "Perfumed Pinot Noir and precise Chardonnay with strong site expression.",
-      "mitigating": ["Slope", "aspect", "mid-slope vineyard positions", "mesoclimate differences"],
-      "keyGrapes": ["Pinot Noir", "Chardonnay"],
+      "mitigating": [
+        "Slope",
+        "aspect",
+        "mid-slope vineyard positions",
+        "mesoclimate differences"
+      ],
+      "keyGrapes": [
+        "Pinot Noir",
+        "Chardonnay"
+      ],
       "examTips": [
         "Site and vineyard position are central to Burgundy.",
         "Burgundy is mainly Pinot Noir for reds and Chardonnay for whites."
       ],
-      "tags": ["France", "Burgundy", "continental", "site-expression", "classic"],
+      "tags": [
+        "France",
+        "Burgundy",
+        "continental",
+        "site-expression",
+        "classic"
+      ],
       "difficulty": 1,
       "grapes": {
         "Pinot Noir": {
@@ -223,15 +419,36 @@
             "body": "Light to Medium",
             "tannin": "Low to Medium"
           },
-          "aromas": ["red cherry", "raspberry", "floral", "earthy"],
-          "viticulture": ["Thin skin", "Sensitive to site and rot pressure"],
-          "winemaking": ["Gentle extraction", "Oak often used but balanced"],
-          "pairing": ["duck", "mushroom dishes", "roast chicken"],
+          "aromas": [
+            "red cherry",
+            "raspberry",
+            "floral",
+            "earthy"
+          ],
+          "viticulture": [
+            "Thin skin",
+            "Sensitive to site and rot pressure"
+          ],
+          "winemaking": [
+            "Gentle extraction",
+            "Oak often used but balanced"
+          ],
+          "pairing": [
+            "duck",
+            "mushroom dishes",
+            "roast chicken"
+          ],
           "examTips": [
             "High acidity with red fruit and lighter body is a key clue.",
             "Very site-sensitive."
           ],
-          "tags": ["red", "high-acid", "light-medium-body", "France", "Burgundy"],
+          "tags": [
+            "red",
+            "high-acid",
+            "light-medium-body",
+            "France",
+            "Burgundy"
+          ],
           "difficulty": 1
         },
         "Chardonnay": {
@@ -244,15 +461,38 @@
             "body": "Medium",
             "tannin": "-"
           },
-          "aromas": ["citrus", "green apple", "stone fruit", "butter", "hazelnut"],
-          "viticulture": ["Adaptable but site-sensitive", "Early budding"],
-          "winemaking": ["MLF common", "Lees ageing common", "Oak possible"],
-          "pairing": ["butter sauces", "roast chicken", "lobster"],
+          "aromas": [
+            "citrus",
+            "green apple",
+            "stone fruit",
+            "butter",
+            "hazelnut"
+          ],
+          "viticulture": [
+            "Adaptable but site-sensitive",
+            "Early budding"
+          ],
+          "winemaking": [
+            "MLF common",
+            "Lees ageing common",
+            "Oak possible"
+          ],
+          "pairing": [
+            "butter sauces",
+            "roast chicken",
+            "lobster"
+          ],
           "examTips": [
             "Think acidity plus site variation.",
             "MLF and oak can strongly affect style."
           ],
-          "tags": ["white", "high-acid", "oak-possible", "France", "Burgundy"],
+          "tags": [
+            "white",
+            "high-acid",
+            "oak-possible",
+            "France",
+            "Burgundy"
+          ],
           "difficulty": 1
         }
       }
@@ -262,13 +502,25 @@
       "summary": "Cool continental Chardonnay region known for lean, high-acid wines with citrus and mineral character.",
       "climate": "Continental",
       "styleSummary": "Lean, high-acid Chardonnay with citrus and mineral profile.",
-      "mitigating": ["Frost protection", "Site selection", "slope exposure"],
-      "keyGrapes": ["Chardonnay"],
+      "mitigating": [
+        "Frost protection",
+        "Site selection",
+        "slope exposure"
+      ],
+      "keyGrapes": [
+        "Chardonnay"
+      ],
       "examTips": [
         "Chablis is all about cool-climate Chardonnay.",
         "High acidity and restrained oak are key clues."
       ],
-      "tags": ["France", "Chablis", "continental", "Chardonnay", "high-acid"],
+      "tags": [
+        "France",
+        "Chablis",
+        "continental",
+        "Chardonnay",
+        "high-acid"
+      ],
       "difficulty": 1,
       "grapes": {
         "Chardonnay": {
@@ -281,15 +533,35 @@
             "body": "Light",
             "tannin": "-"
           },
-          "aromas": ["green apple", "lemon", "mineral", "citrus"],
-          "viticulture": ["Frost risk"],
-          "winemaking": ["Minimal oak common", "Fresh style emphasis"],
-          "pairing": ["oysters", "shellfish", "light fish dishes"],
+          "aromas": [
+            "green apple",
+            "lemon",
+            "mineral",
+            "citrus"
+          ],
+          "viticulture": [
+            "Frost risk"
+          ],
+          "winemaking": [
+            "Minimal oak common",
+            "Fresh style emphasis"
+          ],
+          "pairing": [
+            "oysters",
+            "shellfish",
+            "light fish dishes"
+          ],
           "examTips": [
             "Think leaner and more mineral than richer Burgundy Chardonnay.",
             "High acidity is essential."
           ],
-          "tags": ["white", "high-acid", "mineral", "France", "Chablis"],
+          "tags": [
+            "white",
+            "high-acid",
+            "mineral",
+            "France",
+            "Chablis"
+          ],
           "difficulty": 1
         }
       }
@@ -299,13 +571,27 @@
       "summary": "The heartland of premium Burgundy, known for precise site expression from Pinot Noir and Chardonnay.",
       "climate": "Continental",
       "styleSummary": "The classic heartland of premium Burgundy with strong site hierarchy.",
-      "mitigating": ["East-facing slopes", "mid-slope sites", "drainage", "mesoclimate precision"],
-      "keyGrapes": ["Pinot Noir", "Chardonnay"],
+      "mitigating": [
+        "East-facing slopes",
+        "mid-slope sites",
+        "drainage",
+        "mesoclimate precision"
+      ],
+      "keyGrapes": [
+        "Pinot Noir",
+        "Chardonnay"
+      ],
       "examTips": [
         "Site hierarchy and mid-slope vineyard position are key concepts.",
         "Premium Burgundy is strongly linked to Cote d'Or."
       ],
-      "tags": ["France", "Burgundy", "Cote d'Or", "premium", "site-expression"],
+      "tags": [
+        "France",
+        "Burgundy",
+        "Cote d'Or",
+        "premium",
+        "site-expression"
+      ],
       "difficulty": 1,
       "grapes": {
         "Pinot Noir": {
@@ -318,15 +604,35 @@
             "body": "Light to Medium",
             "tannin": "Low to Medium"
           },
-          "aromas": ["red cherry", "raspberry", "floral", "earthy"],
-          "viticulture": ["Very site-sensitive"],
-          "winemaking": ["Oak common", "Gentle extraction"],
-          "pairing": ["duck", "mushrooms", "roast poultry"],
+          "aromas": [
+            "red cherry",
+            "raspberry",
+            "floral",
+            "earthy"
+          ],
+          "viticulture": [
+            "Very site-sensitive"
+          ],
+          "winemaking": [
+            "Oak common",
+            "Gentle extraction"
+          ],
+          "pairing": [
+            "duck",
+            "mushrooms",
+            "roast poultry"
+          ],
           "examTips": [
             "Think perfume, freshness and fine structure.",
             "Site expression matters more than heavy winemaking."
           ],
-          "tags": ["red", "elegant", "site-sensitive", "France", "Burgundy"],
+          "tags": [
+            "red",
+            "elegant",
+            "site-sensitive",
+            "France",
+            "Burgundy"
+          ],
           "difficulty": 1
         },
         "Chardonnay": {
@@ -339,15 +645,37 @@
             "body": "Medium to Full",
             "tannin": "-"
           },
-          "aromas": ["citrus", "stone fruit", "hazelnut", "butter", "oak"],
-          "viticulture": ["Best on suitable limestone-rich sites"],
-          "winemaking": ["Lees ageing", "MLF", "Oak often used"],
-          "pairing": ["lobster", "roast chicken", "cream sauces"],
+          "aromas": [
+            "citrus",
+            "stone fruit",
+            "hazelnut",
+            "butter",
+            "oak"
+          ],
+          "viticulture": [
+            "Best on suitable limestone-rich sites"
+          ],
+          "winemaking": [
+            "Lees ageing",
+            "MLF",
+            "Oak often used"
+          ],
+          "pairing": [
+            "lobster",
+            "roast chicken",
+            "cream sauces"
+          ],
           "examTips": [
             "Concentration plus freshness is key.",
             "Often richer and more layered than Chablis."
           ],
-          "tags": ["white", "complex", "oak-possible", "France", "Burgundy"],
+          "tags": [
+            "white",
+            "complex",
+            "oak-possible",
+            "France",
+            "Burgundy"
+          ],
           "difficulty": 1
         }
       }
@@ -357,13 +685,24 @@
       "summary": "Warmer southern Burgundy area producing fruitier, riper Chardonnay than northern Burgundy.",
       "climate": "Continental with warmer southern influence",
       "styleSummary": "Riper, fruitier Chardonnay than northern Burgundy.",
-      "mitigating": ["Warmer southerly position", "slope and aspect"],
-      "keyGrapes": ["Chardonnay"],
+      "mitigating": [
+        "Warmer southerly position",
+        "slope and aspect"
+      ],
+      "keyGrapes": [
+        "Chardonnay"
+      ],
       "examTips": [
         "Think warmer, fruitier and less austere than Chablis.",
         "Still Burgundy Chardonnay, but usually at a more approachable style."
       ],
-      "tags": ["France", "Burgundy", "Maconnais", "Chardonnay", "warmer-style"],
+      "tags": [
+        "France",
+        "Burgundy",
+        "Maconnais",
+        "Chardonnay",
+        "warmer-style"
+      ],
       "difficulty": 1,
       "grapes": {
         "Chardonnay": {
@@ -376,15 +715,33 @@
             "body": "Medium",
             "tannin": "-"
           },
-          "aromas": ["stone fruit", "citrus", "apple"],
-          "viticulture": ["Warmer than northern Burgundy"],
-          "winemaking": ["Fresh to lightly oaked styles"],
-          "pairing": ["roast chicken", "pasta", "soft cheeses"],
+          "aromas": [
+            "stone fruit",
+            "citrus",
+            "apple"
+          ],
+          "viticulture": [
+            "Warmer than northern Burgundy"
+          ],
+          "winemaking": [
+            "Fresh to lightly oaked styles"
+          ],
+          "pairing": [
+            "roast chicken",
+            "pasta",
+            "soft cheeses"
+          ],
           "examTips": [
             "Usually fruitier and broader than Chablis.",
             "Warm southerly position is a key clue."
           ],
-          "tags": ["white", "fruitier", "Burgundy", "France", "Chardonnay"],
+          "tags": [
+            "white",
+            "fruitier",
+            "Burgundy",
+            "France",
+            "Chardonnay"
+          ],
           "difficulty": 1
         }
       }
@@ -394,13 +751,24 @@
       "summary": "Region south of Burgundy known for fresh, fruit-driven Gamay with low tannin and bright acidity.",
       "climate": "Continental",
       "styleSummary": "Fresh, fruit-driven reds, often lighter-bodied, from Gamay.",
-      "mitigating": ["Granite soils", "southern exposure in better sites"],
-      "keyGrapes": ["Gamay"],
+      "mitigating": [
+        "Granite soils",
+        "southern exposure in better sites"
+      ],
+      "keyGrapes": [
+        "Gamay"
+      ],
       "examTips": [
         "Think juicy red fruit, low tannin and freshness.",
         "Semi-carbonic maceration is a key production clue."
       ],
-      "tags": ["France", "Beaujolais", "Gamay", "fruit-driven", "light-red"],
+      "tags": [
+        "France",
+        "Beaujolais",
+        "Gamay",
+        "fruit-driven",
+        "light-red"
+      ],
       "difficulty": 1,
       "grapes": {
         "Gamay": {
@@ -413,15 +781,36 @@
             "body": "Light to Medium",
             "tannin": "Low"
           },
-          "aromas": ["red cherry", "raspberry", "banana", "red fruit"],
-          "viticulture": ["Early budding", "Can ripen well in cooler areas"],
-          "winemaking": ["Semi-carbonic maceration common", "Fruit-forward style emphasis"],
-          "pairing": ["charcuterie", "roast chicken", "picnic foods"],
+          "aromas": [
+            "red cherry",
+            "raspberry",
+            "banana",
+            "red fruit"
+          ],
+          "viticulture": [
+            "Early budding",
+            "Can ripen well in cooler areas"
+          ],
+          "winemaking": [
+            "Semi-carbonic maceration common",
+            "Fruit-forward style emphasis"
+          ],
+          "pairing": [
+            "charcuterie",
+            "roast chicken",
+            "picnic foods"
+          ],
           "examTips": [
             "Low tannin and juicy fruit are key clues.",
             "Banana/pear-drop notes may suggest carbonic influence."
           ],
-          "tags": ["red", "low-tannin", "fruit-forward", "France", "Beaujolais"],
+          "tags": [
+            "red",
+            "low-tannin",
+            "fruit-forward",
+            "France",
+            "Beaujolais"
+          ],
           "difficulty": 1
         }
       }
@@ -431,13 +820,27 @@
       "summary": "Dry continental region in eastern France known for aromatic whites and a relatively dry climate due to the Vosges rain shadow.",
       "climate": "Continental",
       "styleSummary": "Aromatic whites in a relatively dry climate due to rain shadow.",
-      "mitigating": ["Vosges rain shadow", "sunny dry conditions"],
-      "keyGrapes": ["Riesling", "Pinot Gris", "Gewurztraminer", "Muscat"],
+      "mitigating": [
+        "Vosges rain shadow",
+        "sunny dry conditions"
+      ],
+      "keyGrapes": [
+        "Riesling",
+        "Pinot Gris",
+        "Gewurztraminer",
+        "Muscat"
+      ],
       "examTips": [
         "Alsace is strongly associated with aromatic varietal whites.",
         "Dry climate from rain shadow is a key regional clue."
       ],
-      "tags": ["France", "Alsace", "continental", "aromatic-white", "rain-shadow"],
+      "tags": [
+        "France",
+        "Alsace",
+        "continental",
+        "aromatic-white",
+        "rain-shadow"
+      ],
       "difficulty": 1,
       "grapes": {
         "Riesling": {
@@ -450,15 +853,36 @@
             "body": "Light to Medium",
             "tannin": "-"
           },
-          "aromas": ["lime", "lemon", "stone fruit", "mineral"],
-          "viticulture": ["Retains acidity well", "Benefits from long ripening season"],
-          "winemaking": ["Often dry", "Usually unoaked"],
-          "pairing": ["shellfish", "spicy food", "white fish"],
+          "aromas": [
+            "lime",
+            "lemon",
+            "stone fruit",
+            "mineral"
+          ],
+          "viticulture": [
+            "Retains acidity well",
+            "Benefits from long ripening season"
+          ],
+          "winemaking": [
+            "Often dry",
+            "Usually unoaked"
+          ],
+          "pairing": [
+            "shellfish",
+            "spicy food",
+            "white fish"
+          ],
           "examTips": [
             "Think dry style plus high acidity.",
             "Often more textural and fuller than German Kabinett styles."
           ],
-          "tags": ["white", "high-acid", "aromatic", "France", "Alsace"],
+          "tags": [
+            "white",
+            "high-acid",
+            "aromatic",
+            "France",
+            "Alsace"
+          ],
           "difficulty": 1
         },
         "Pinot Gris": {
@@ -471,15 +895,35 @@
             "body": "Medium to Full",
             "tannin": "-"
           },
-          "aromas": ["pear", "stone fruit", "spice", "smoke"],
-          "viticulture": ["Can achieve high sugar levels"],
-          "winemaking": ["Can be dry or off-dry", "Often fuller style"],
-          "pairing": ["pork", "roast poultry", "cream sauces"],
+          "aromas": [
+            "pear",
+            "stone fruit",
+            "spice",
+            "smoke"
+          ],
+          "viticulture": [
+            "Can achieve high sugar levels"
+          ],
+          "winemaking": [
+            "Can be dry or off-dry",
+            "Often fuller style"
+          ],
+          "pairing": [
+            "pork",
+            "roast poultry",
+            "cream sauces"
+          ],
           "examTips": [
             "Usually broader and richer than Riesling.",
             "Watch for off-dry examples."
           ],
-          "tags": ["white", "rich", "aromatic", "France", "Alsace"],
+          "tags": [
+            "white",
+            "rich",
+            "aromatic",
+            "France",
+            "Alsace"
+          ],
           "difficulty": 1
         },
         "Gewurztraminer": {
@@ -492,14 +936,33 @@
             "body": "Full",
             "tannin": "-"
           },
-          "aromas": ["lychee", "rose", "spice", "tropical fruit"],
-          "viticulture": ["Aromatic grape suited to warm sunny sites"],
-          "winemaking": ["Can be dry or off-dry"],
-          "pairing": ["spicy Asian food", "aromatic dishes", "Munster cheese"],
+          "aromas": [
+            "lychee",
+            "rose",
+            "spice",
+            "tropical fruit"
+          ],
+          "viticulture": [
+            "Aromatic grape suited to warm sunny sites"
+          ],
+          "winemaking": [
+            "Can be dry or off-dry"
+          ],
+          "pairing": [
+            "spicy Asian food",
+            "aromatic dishes",
+            "Munster cheese"
+          ],
           "examTips": [
             "Very aromatic, lower-acid feel and fuller body are key clues."
           ],
-          "tags": ["white", "very-aromatic", "full-body", "France", "Alsace"],
+          "tags": [
+            "white",
+            "very-aromatic",
+            "full-body",
+            "France",
+            "Alsace"
+          ],
           "difficulty": 1
         },
         "Muscat": {
@@ -512,14 +975,31 @@
             "body": "Light",
             "tannin": "-"
           },
-          "aromas": ["grape", "floral", "citrus"],
-          "viticulture": ["Aromatic variety"],
-          "winemaking": ["Usually aromatic dry whites"],
-          "pairing": ["salads", "light appetizers"],
+          "aromas": [
+            "grape",
+            "floral",
+            "citrus"
+          ],
+          "viticulture": [
+            "Aromatic variety"
+          ],
+          "winemaking": [
+            "Usually aromatic dry whites"
+          ],
+          "pairing": [
+            "salads",
+            "light appetizers"
+          ],
           "examTips": [
             "Grapey aroma is the classic clue."
           ],
-          "tags": ["white", "aromatic", "grapey", "France", "Alsace"],
+          "tags": [
+            "white",
+            "aromatic",
+            "grapey",
+            "France",
+            "Alsace"
+          ],
           "difficulty": 1
         }
       }
@@ -529,34 +1009,65 @@
       "summary": "Cool maritime Loire region producing light, crisp whites with saline freshness, often enhanced by lees ageing.",
       "climate": "Maritime",
       "styleSummary": "Light, crisp whites often with saline freshness.",
-      "mitigating": ["Atlantic influence", "cool conditions"],
-      "keyGrapes": ["Melon Blanc"],
+      "mitigating": [
+        "Atlantic influence",
+        "cool conditions"
+      ],
+      "keyGrapes": [
+        "Melon Blanc"
+      ],
       "examTips": [
         "Think light body, high acidity and possible lees texture.",
         "Classic pairing with shellfish."
       ],
-      "tags": ["France", "Loire", "maritime", "white", "lees-aged"],
+      "tags": [
+        "France",
+        "Loire",
+        "maritime",
+        "white",
+        "lees-aged"
+      ],
       "difficulty": 1,
       "grapes": {
         "Melon Blanc": {
           "summary": "Light-bodied high-acid white grape producing crisp citrus-led wines, often with lees-derived texture.",
           "style": "Light-bodied, citrus-led, high-acid white.",
-          "aliases": ["Melon de Bourgogne"],
+          "aliases": [
+            "Melon de Bourgogne"
+          ],
           "profile": {
             "acidity": "High",
             "alcohol": "Low to Medium",
             "body": "Light",
             "tannin": "-"
           },
-          "aromas": ["citrus", "green apple", "saline"],
-          "viticulture": ["Suitable for cool maritime climate"],
-          "winemaking": ["Often lees ageing for texture"],
-          "pairing": ["oysters", "mussels", "shellfish"],
+          "aromas": [
+            "citrus",
+            "green apple",
+            "saline"
+          ],
+          "viticulture": [
+            "Suitable for cool maritime climate"
+          ],
+          "winemaking": [
+            "Often lees ageing for texture"
+          ],
+          "pairing": [
+            "oysters",
+            "mussels",
+            "shellfish"
+          ],
           "examTips": [
             "High acidity plus light body is key.",
             "Lees ageing can add subtle texture without obvious oak."
           ],
-          "tags": ["white", "high-acid", "maritime", "France", "Loire"],
+          "tags": [
+            "white",
+            "high-acid",
+            "maritime",
+            "France",
+            "Loire"
+          ],
           "difficulty": 1
         }
       }
@@ -566,13 +1077,25 @@
       "summary": "Important Loire subregion known for Chenin Blanc in dry, sweet and sparkling styles, plus Cabernet Franc reds.",
       "climate": "Maritime to Transitional",
       "styleSummary": "Dry and sweet Chenin Blanc plus reds and sparkling wines.",
-      "mitigating": ["Atlantic influence", "river effect"],
-      "keyGrapes": ["Chenin Blanc", "Cabernet Franc"],
+      "mitigating": [
+        "Atlantic influence",
+        "river effect"
+      ],
+      "keyGrapes": [
+        "Chenin Blanc",
+        "Cabernet Franc"
+      ],
       "examTips": [
         "Chenin Blanc is the key grape here.",
         "Think versatility: dry, sweet and sparkling."
       ],
-      "tags": ["France", "Loire", "Chenin Blanc", "Cabernet Franc", "versatile"],
+      "tags": [
+        "France",
+        "Loire",
+        "Chenin Blanc",
+        "Cabernet Franc",
+        "versatile"
+      ],
       "difficulty": 1,
       "grapes": {
         "Chenin Blanc": {
@@ -585,15 +1108,35 @@
             "body": "Light to Medium",
             "tannin": "-"
           },
-          "aromas": ["apple", "quince", "honey", "citrus"],
-          "viticulture": ["Retains acidity well", "Can be affected by botrytis"],
-          "winemaking": ["Dry, off-dry, sweet and sparkling styles possible"],
-          "pairing": ["goat cheese", "roast chicken", "spicy food"],
+          "aromas": [
+            "apple",
+            "quince",
+            "honey",
+            "citrus"
+          ],
+          "viticulture": [
+            "Retains acidity well",
+            "Can be affected by botrytis"
+          ],
+          "winemaking": [
+            "Dry, off-dry, sweet and sparkling styles possible"
+          ],
+          "pairing": [
+            "goat cheese",
+            "roast chicken",
+            "spicy food"
+          ],
           "examTips": [
             "High acidity is the key clue.",
             "Style can vary hugely depending on sweetness and winemaking."
           ],
-          "tags": ["white", "high-acid", "versatile", "France", "Loire"],
+          "tags": [
+            "white",
+            "high-acid",
+            "versatile",
+            "France",
+            "Loire"
+          ],
           "difficulty": 1
         },
         "Cabernet Franc": {
@@ -606,14 +1149,32 @@
             "body": "Medium",
             "tannin": "Medium"
           },
-          "aromas": ["red fruit", "herbal", "violet"],
-          "viticulture": ["Earlier ripening than Cabernet Sauvignon"],
-          "winemaking": ["Usually gentle to moderate extraction"],
-          "pairing": ["charcuterie", "roast poultry", "mushrooms"],
+          "aromas": [
+            "red fruit",
+            "herbal",
+            "violet"
+          ],
+          "viticulture": [
+            "Earlier ripening than Cabernet Sauvignon"
+          ],
+          "winemaking": [
+            "Usually gentle to moderate extraction"
+          ],
+          "pairing": [
+            "charcuterie",
+            "roast poultry",
+            "mushrooms"
+          ],
           "examTips": [
             "Think fresher and lighter than many Bordeaux reds."
           ],
-          "tags": ["red", "fresh", "herbal", "France", "Loire"],
+          "tags": [
+            "red",
+            "fresh",
+            "herbal",
+            "France",
+            "Loire"
+          ],
           "difficulty": 1
         }
       }
@@ -623,13 +1184,25 @@
       "summary": "Loire region producing fresh Sauvignon Blanc and lighter Cabernet Franc-based reds with stronger inland influence.",
       "climate": "Transitional",
       "styleSummary": "Fresh whites and lighter reds with more inland influence than western Loire.",
-      "mitigating": ["River influence", "increasing inland effect eastwards"],
-      "keyGrapes": ["Sauvignon Blanc", "Cabernet Franc"],
+      "mitigating": [
+        "River influence",
+        "increasing inland effect eastwards"
+      ],
+      "keyGrapes": [
+        "Sauvignon Blanc",
+        "Cabernet Franc"
+      ],
       "examTips": [
         "Think fresh Loire Sauvignon Blanc and lighter reds.",
         "More inland influence than maritime western Loire."
       ],
-      "tags": ["France", "Loire", "transitional", "Sauvignon Blanc", "fresh"],
+      "tags": [
+        "France",
+        "Loire",
+        "transitional",
+        "Sauvignon Blanc",
+        "fresh"
+      ],
       "difficulty": 1,
       "grapes": {
         "Sauvignon Blanc": {
@@ -642,14 +1215,32 @@
             "body": "Light",
             "tannin": "-"
           },
-          "aromas": ["citrus", "green fruit", "herbal"],
-          "viticulture": ["Aromatic grape"],
-          "winemaking": ["Cool fermentation common"],
-          "pairing": ["goat cheese", "salads", "seafood"],
+          "aromas": [
+            "citrus",
+            "green fruit",
+            "herbal"
+          ],
+          "viticulture": [
+            "Aromatic grape"
+          ],
+          "winemaking": [
+            "Cool fermentation common"
+          ],
+          "pairing": [
+            "goat cheese",
+            "salads",
+            "seafood"
+          ],
           "examTips": [
             "High acidity and fresh herbal/citrus profile are strong clues."
           ],
-          "tags": ["white", "high-acid", "aromatic", "France", "Loire"],
+          "tags": [
+            "white",
+            "high-acid",
+            "aromatic",
+            "France",
+            "Loire"
+          ],
           "difficulty": 1
         },
         "Cabernet Franc": {
@@ -662,14 +1253,31 @@
             "body": "Medium",
             "tannin": "Medium"
           },
-          "aromas": ["red fruit", "herbal", "leafy"],
-          "viticulture": ["Ripens earlier than Cabernet Sauvignon"],
-          "winemaking": ["Usually fruit-led styles"],
-          "pairing": ["charcuterie", "roast chicken"],
+          "aromas": [
+            "red fruit",
+            "herbal",
+            "leafy"
+          ],
+          "viticulture": [
+            "Ripens earlier than Cabernet Sauvignon"
+          ],
+          "winemaking": [
+            "Usually fruit-led styles"
+          ],
+          "pairing": [
+            "charcuterie",
+            "roast chicken"
+          ],
           "examTips": [
             "Usually fresher and lighter than Bordeaux styles."
           ],
-          "tags": ["red", "fresh", "herbal", "France", "Loire"],
+          "tags": [
+            "red",
+            "fresh",
+            "herbal",
+            "France",
+            "Loire"
+          ],
           "difficulty": 1
         }
       }
@@ -679,13 +1287,24 @@
       "summary": "Cool inland Loire area focused on precise, high-acid Sauvignon Blanc wines.",
       "climate": "Continental",
       "styleSummary": "Focused on high-acid Sauvignon Blanc styles.",
-      "mitigating": ["Inland cool climate", "slope and exposure"],
-      "keyGrapes": ["Sauvignon Blanc"],
+      "mitigating": [
+        "Inland cool climate",
+        "slope and exposure"
+      ],
+      "keyGrapes": [
+        "Sauvignon Blanc"
+      ],
       "examTips": [
         "This is a key Loire Sauvignon Blanc zone.",
         "Think high acidity, citrus and herbal freshness."
       ],
-      "tags": ["France", "Loire", "continental", "Sauvignon Blanc", "high-acid"],
+      "tags": [
+        "France",
+        "Loire",
+        "continental",
+        "Sauvignon Blanc",
+        "high-acid"
+      ],
       "difficulty": 1,
       "grapes": {
         "Sauvignon Blanc": {
@@ -698,14 +1317,33 @@
             "body": "Light",
             "tannin": "-"
           },
-          "aromas": ["citrus", "gooseberry", "herbal", "green fruit"],
-          "viticulture": ["Aromatic grape suited to cool conditions"],
-          "winemaking": ["Usually stainless steel and fresh style"],
-          "pairing": ["goat cheese", "oysters", "salads"],
+          "aromas": [
+            "citrus",
+            "gooseberry",
+            "herbal",
+            "green fruit"
+          ],
+          "viticulture": [
+            "Aromatic grape suited to cool conditions"
+          ],
+          "winemaking": [
+            "Usually stainless steel and fresh style"
+          ],
+          "pairing": [
+            "goat cheese",
+            "oysters",
+            "salads"
+          ],
           "examTips": [
             "Very high freshness and clean aromatic profile are key clues."
           ],
-          "tags": ["white", "high-acid", "aromatic", "France", "Loire"],
+          "tags": [
+            "white",
+            "high-acid",
+            "aromatic",
+            "France",
+            "Loire"
+          ],
           "difficulty": 1
         }
       }
@@ -715,13 +1353,26 @@
       "summary": "Steep continental valley region known for structured Syrah and aromatic Viognier.",
       "climate": "Continental",
       "styleSummary": "Structured Syrah reds and aromatic Viognier whites.",
-      "mitigating": ["Mistral", "steep slopes", "river valley influence"],
-      "keyGrapes": ["Syrah", "Viognier"],
+      "mitigating": [
+        "Mistral",
+        "steep slopes",
+        "river valley influence"
+      ],
+      "keyGrapes": [
+        "Syrah",
+        "Viognier"
+      ],
       "examTips": [
         "Syrah is the key red grape here.",
         "Think pepper, violet and savoury spice for classic Northern Rhone Syrah."
       ],
-      "tags": ["France", "Northern Rhone", "continental", "Syrah", "structured-red"],
+      "tags": [
+        "France",
+        "Northern Rhone",
+        "continental",
+        "Syrah",
+        "structured-red"
+      ],
       "difficulty": 1,
       "grapes": {
         "Syrah": {
@@ -734,15 +1385,35 @@
             "body": "Medium to Full",
             "tannin": "Medium to High"
           },
-          "aromas": ["black fruit", "pepper", "violet", "savoury spice"],
-          "viticulture": ["Needs warmth but not excessive heat"],
-          "winemaking": ["Can be oaked", "Ageworthy styles common"],
-          "pairing": ["lamb", "game", "pepper-crusted meats"],
+          "aromas": [
+            "black fruit",
+            "pepper",
+            "violet",
+            "savoury spice"
+          ],
+          "viticulture": [
+            "Needs warmth but not excessive heat"
+          ],
+          "winemaking": [
+            "Can be oaked",
+            "Ageworthy styles common"
+          ],
+          "pairing": [
+            "lamb",
+            "game",
+            "pepper-crusted meats"
+          ],
           "examTips": [
             "Pepper and violet are key exam clues.",
             "Usually more savoury and structured than many warm-climate Shiraz styles."
           ],
-          "tags": ["red", "peppery", "structured", "France", "Syrah"],
+          "tags": [
+            "red",
+            "peppery",
+            "structured",
+            "France",
+            "Syrah"
+          ],
           "difficulty": 1
         },
         "Viognier": {
@@ -755,14 +1426,32 @@
             "body": "Full",
             "tannin": "-"
           },
-          "aromas": ["apricot", "peach", "floral"],
-          "viticulture": ["Needs careful handling to preserve aromatics"],
-          "winemaking": ["Can be varietal or blended"],
-          "pairing": ["spiced dishes", "roast chicken", "apricot glaze dishes"],
+          "aromas": [
+            "apricot",
+            "peach",
+            "floral"
+          ],
+          "viticulture": [
+            "Needs careful handling to preserve aromatics"
+          ],
+          "winemaking": [
+            "Can be varietal or blended"
+          ],
+          "pairing": [
+            "spiced dishes",
+            "roast chicken",
+            "apricot glaze dishes"
+          ],
           "examTips": [
             "Low to medium acidity but pronounced aroma is a useful clue."
           ],
-          "tags": ["white", "aromatic", "full-body", "France", "Viognier"],
+          "tags": [
+            "white",
+            "aromatic",
+            "full-body",
+            "France",
+            "Viognier"
+          ],
           "difficulty": 1
         }
       }
@@ -772,34 +1461,70 @@
       "summary": "Warm Mediterranean region known for Grenache-led blends with ripe fruit, body and higher alcohol.",
       "climate": "Mediterranean",
       "styleSummary": "Ripe fruit, fuller body and higher alcohol in Grenache-led blends.",
-      "mitigating": ["Mistral", "stone-covered soils", "old bush vines"],
-      "keyGrapes": ["Grenache", "Syrah", "Mourvedre"],
+      "mitigating": [
+        "Mistral",
+        "stone-covered soils",
+        "old bush vines"
+      ],
+      "keyGrapes": [
+        "Grenache",
+        "Syrah",
+        "Mourvedre"
+      ],
       "examTips": [
         "Think GSM-style blends and warm ripe fruit.",
         "Grenache is usually the dominant grape."
       ],
-      "tags": ["France", "Southern Rhone", "Mediterranean", "Grenache", "blend"],
+      "tags": [
+        "France",
+        "Southern Rhone",
+        "Mediterranean",
+        "Grenache",
+        "blend"
+      ],
       "difficulty": 1,
       "grapes": {
         "Grenache": {
           "summary": "Warm-climate grape giving ripe red fruit, spice, body and high alcohol.",
           "style": "Ripe red fruit, spice, high alcohol and softer tannin.",
-          "aliases": ["Garnacha"],
+          "aliases": [
+            "Garnacha"
+          ],
           "profile": {
             "acidity": "Medium",
             "alcohol": "High",
             "body": "Full",
             "tannin": "Medium"
           },
-          "aromas": ["ripe red fruit", "strawberry", "spice"],
-          "viticulture": ["Drought resistant", "Performs well in warm conditions"],
-          "winemaking": ["Often blended", "Oxidation can be a risk"],
-          "pairing": ["BBQ", "roast lamb", "Mediterranean dishes"],
+          "aromas": [
+            "ripe red fruit",
+            "strawberry",
+            "spice"
+          ],
+          "viticulture": [
+            "Drought resistant",
+            "Performs well in warm conditions"
+          ],
+          "winemaking": [
+            "Often blended",
+            "Oxidation can be a risk"
+          ],
+          "pairing": [
+            "BBQ",
+            "roast lamb",
+            "Mediterranean dishes"
+          ],
           "examTips": [
             "High alcohol and ripe red fruit are key clues.",
             "Usually softer in tannin than Syrah."
           ],
-          "tags": ["red", "warm-climate", "high-alcohol", "France", "Grenache"],
+          "tags": [
+            "red",
+            "warm-climate",
+            "high-alcohol",
+            "France",
+            "Grenache"
+          ],
           "difficulty": 1
         },
         "Syrah": {
@@ -812,34 +1537,72 @@
             "body": "Medium to Full",
             "tannin": "Medium to High"
           },
-          "aromas": ["black fruit", "pepper", "spice"],
-          "viticulture": ["Needs warmth"],
-          "winemaking": ["Blend partner"],
-          "pairing": ["grilled meats", "game"],
+          "aromas": [
+            "black fruit",
+            "pepper",
+            "spice"
+          ],
+          "viticulture": [
+            "Needs warmth"
+          ],
+          "winemaking": [
+            "Blend partner"
+          ],
+          "pairing": [
+            "grilled meats",
+            "game"
+          ],
           "examTips": [
             "Usually provides structure and darker fruit in blends."
           ],
-          "tags": ["red", "peppery", "blend", "France", "Syrah"],
+          "tags": [
+            "red",
+            "peppery",
+            "blend",
+            "France",
+            "Syrah"
+          ],
           "difficulty": 1
         },
         "Mourvedre": {
           "summary": "Late-ripening grape adding dark fruit, meaty character and firm tannin to blends.",
           "style": "Dark fruit, meaty and spicy notes with firm tannin.",
-          "aliases": ["Monastrell", "Mataro"],
+          "aliases": [
+            "Monastrell",
+            "Mataro"
+          ],
           "profile": {
             "acidity": "Medium",
             "alcohol": "Medium to High",
             "body": "Full",
             "tannin": "High"
           },
-          "aromas": ["dark fruit", "meaty", "spice"],
-          "viticulture": ["Needs lots of heat to ripen fully"],
-          "winemaking": ["Often blended"],
-          "pairing": ["game", "rich stews", "lamb"],
+          "aromas": [
+            "dark fruit",
+            "meaty",
+            "spice"
+          ],
+          "viticulture": [
+            "Needs lots of heat to ripen fully"
+          ],
+          "winemaking": [
+            "Often blended"
+          ],
+          "pairing": [
+            "game",
+            "rich stews",
+            "lamb"
+          ],
           "examTips": [
             "Needs heat and usually contributes structure."
           ],
-          "tags": ["red", "high-tannin", "blend", "France", "Mourvedre"],
+          "tags": [
+            "red",
+            "high-tannin",
+            "blend",
+            "France",
+            "Mourvedre"
+          ],
           "difficulty": 2
         }
       }
@@ -849,13 +1612,27 @@
       "summary": "Large warm Mediterranean region producing ripe reds, fresh whites and a wide range of styles from varied sites.",
       "climate": "Mediterranean",
       "styleSummary": "Ripe fruit, generous body and wide stylistic diversity.",
-      "mitigating": ["Mediterranean sunshine", "wind", "site altitude in places"],
-      "keyGrapes": ["Carignan", "Cinsault", "Picpoul"],
+      "mitigating": [
+        "Mediterranean sunshine",
+        "wind",
+        "site altitude in places"
+      ],
+      "keyGrapes": [
+        "Carignan",
+        "Cinsault",
+        "Picpoul"
+      ],
       "examTips": [
         "Think warm Mediterranean ripeness and regional diversity.",
         "Old vines and blending are important themes."
       ],
-      "tags": ["France", "Mediterranean", "warm-climate", "diverse", "blend"],
+      "tags": [
+        "France",
+        "Mediterranean",
+        "warm-climate",
+        "diverse",
+        "blend"
+      ],
       "difficulty": 1,
       "grapes": {
         "Carignan": {
@@ -868,15 +1645,34 @@
             "body": "Medium to Full",
             "tannin": "Medium to High"
           },
-          "aromas": ["dark fruit", "spice", "black fruit"],
-          "viticulture": ["Old vines often prized", "Can crop heavily if not controlled"],
-          "winemaking": ["Often blended"],
-          "pairing": ["BBQ", "lamb", "rich stews"],
+          "aromas": [
+            "dark fruit",
+            "spice",
+            "black fruit"
+          ],
+          "viticulture": [
+            "Old vines often prized",
+            "Can crop heavily if not controlled"
+          ],
+          "winemaking": [
+            "Often blended"
+          ],
+          "pairing": [
+            "BBQ",
+            "lamb",
+            "rich stews"
+          ],
           "examTips": [
             "Old vines are often associated with better quality.",
             "Think structure more than perfume."
           ],
-          "tags": ["red", "blend", "old-vine", "France", "Mediterranean"],
+          "tags": [
+            "red",
+            "blend",
+            "old-vine",
+            "France",
+            "Mediterranean"
+          ],
           "difficulty": 2
         },
         "Cinsault": {
@@ -889,34 +1685,71 @@
             "body": "Medium",
             "tannin": "Low to Medium"
           },
-          "aromas": ["red fruit", "soft spice"],
-          "viticulture": ["Heat tolerant"],
-          "winemaking": ["Often blended"],
-          "pairing": ["grilled vegetables", "charcuterie", "light meat dishes"],
+          "aromas": [
+            "red fruit",
+            "soft spice"
+          ],
+          "viticulture": [
+            "Heat tolerant"
+          ],
+          "winemaking": [
+            "Often blended"
+          ],
+          "pairing": [
+            "grilled vegetables",
+            "charcuterie",
+            "light meat dishes"
+          ],
           "examTips": [
             "Usually softer and lighter in structure than Carignan."
           ],
-          "tags": ["red", "soft", "blend", "France", "Mediterranean"],
+          "tags": [
+            "red",
+            "soft",
+            "blend",
+            "France",
+            "Mediterranean"
+          ],
           "difficulty": 1
         },
         "Picpoul": {
           "summary": "High-acid white grape producing fresh citrus-led wines in Mediterranean coastal areas.",
           "style": "Fresh, high-acid citrus-driven white.",
-          "aliases": ["Piquepoul"],
+          "aliases": [
+            "Piquepoul"
+          ],
           "profile": {
             "acidity": "High",
             "alcohol": "Low to Medium",
             "body": "Light",
             "tannin": "-"
           },
-          "aromas": ["citrus", "green apple", "saline"],
-          "viticulture": ["Well suited to Mediterranean coast"],
-          "winemaking": ["Usually fresh unoaked style"],
-          "pairing": ["oysters", "seafood", "light fish dishes"],
+          "aromas": [
+            "citrus",
+            "green apple",
+            "saline"
+          ],
+          "viticulture": [
+            "Well suited to Mediterranean coast"
+          ],
+          "winemaking": [
+            "Usually fresh unoaked style"
+          ],
+          "pairing": [
+            "oysters",
+            "seafood",
+            "light fish dishes"
+          ],
           "examTips": [
             "Think high acidity in a warm region because of coastal influence."
           ],
-          "tags": ["white", "high-acid", "coastal", "France", "Mediterranean"],
+          "tags": [
+            "white",
+            "high-acid",
+            "coastal",
+            "France",
+            "Mediterranean"
+          ],
           "difficulty": 1
         }
       }
@@ -926,56 +1759,322 @@
       "summary": "Warm Mediterranean region strongly associated with pale dry rosé, plus some reds.",
       "climate": "Mediterranean",
       "styleSummary": "Warm-climate rosé and red wines with ripe fruit profile.",
-      "mitigating": ["Sea influence", "sunshine", "wind"],
-      "keyGrapes": ["Grenache", "Mourvedre"],
+      "mitigating": [
+        "Sea influence",
+        "sunshine",
+        "wind"
+      ],
+      "keyGrapes": [
+        "Grenache",
+        "Mourvedre"
+      ],
       "examTips": [
         "Provence is primarily a rosé region in exam context.",
         "Think pale colour, dry style and ripe but fresh fruit."
       ],
-      "tags": ["France", "Provence", "Mediterranean", "rosé", "warm-climate"],
+      "tags": [
+        "France",
+        "Provence",
+        "Mediterranean",
+        "rosé",
+        "warm-climate"
+      ],
       "difficulty": 1,
       "grapes": {
         "Grenache": {
           "summary": "Warm-climate grape contributing ripe red fruit, body and alcohol, especially useful in rosé blends.",
           "style": "Ripe red fruit and body, often important in rosé blends.",
-          "aliases": ["Garnacha"],
+          "aliases": [
+            "Garnacha"
+          ],
           "profile": {
             "acidity": "Medium",
             "alcohol": "High",
             "body": "Medium to Full",
             "tannin": "Medium"
           },
-          "aromas": ["ripe red fruit", "strawberry", "spice"],
-          "viticulture": ["Drought resistant"],
-          "winemaking": ["Often used in rosé and red blends"],
-          "pairing": ["Mediterranean dishes", "salads", "grilled seafood"],
+          "aromas": [
+            "ripe red fruit",
+            "strawberry",
+            "spice"
+          ],
+          "viticulture": [
+            "Drought resistant"
+          ],
+          "winemaking": [
+            "Often used in rosé and red blends"
+          ],
+          "pairing": [
+            "Mediterranean dishes",
+            "salads",
+            "grilled seafood"
+          ],
           "examTips": [
             "Important in Provence rosé blends."
           ],
-          "tags": ["red", "rosé", "warm-climate", "France", "Grenache"],
+          "tags": [
+            "red",
+            "rosé",
+            "warm-climate",
+            "France",
+            "Grenache"
+          ],
           "difficulty": 1
         },
         "Mourvedre": {
           "summary": "Late-ripening grape adding dark fruit, spice and structure in warm coastal blends.",
           "style": "Dark fruit, spice and structure.",
-          "aliases": ["Monastrell", "Mataro"],
+          "aliases": [
+            "Monastrell",
+            "Mataro"
+          ],
           "profile": {
             "acidity": "Medium",
             "alcohol": "Medium to High",
             "body": "Full",
             "tannin": "High"
           },
-          "aromas": ["dark fruit", "spice", "meaty"],
-          "viticulture": ["Needs warm sites"],
-          "winemaking": ["Often blended"],
-          "pairing": ["lamb", "grilled meats", "stews"],
+          "aromas": [
+            "dark fruit",
+            "spice",
+            "meaty"
+          ],
+          "viticulture": [
+            "Needs warm sites"
+          ],
+          "winemaking": [
+            "Often blended"
+          ],
+          "pairing": [
+            "lamb",
+            "grilled meats",
+            "stews"
+          ],
           "examTips": [
             "Usually gives more structure than Grenache."
           ],
-          "tags": ["red", "structured", "blend", "France", "Mediterranean"],
+          "tags": [
+            "red",
+            "structured",
+            "blend",
+            "France",
+            "Mediterranean"
+          ],
           "difficulty": 2
         }
       }
+    },
+    "champagne": {
+      "name": "Champagne",
+      "summary": "Cool-climate traditional method sparkling region known for high acidity, autolytic complexity and blending skill.",
+      "climate": "Cool continental",
+      "styleSummary": "High-acid traditional method sparkling wines ranging from fresh non-vintage blends to complex prestige cuvees.",
+      "mitigating": [
+        "chalk soils",
+        "cool climate",
+        "reserve wines",
+        "blending",
+        "lees ageing"
+      ],
+      "keyGrapes": [
+        "Chardonnay",
+        "Pinot Noir",
+        "Pinot Meunier"
+      ],
+      "examTips": [
+        "Acidity is naturally high because Champagne is a cool climate region.",
+        "Blending, second fermentation in bottle and lees ageing are core exam points.",
+        "Know the difference between non-vintage, vintage, blanc de blancs and rosé styles."
+      ],
+      "tags": [
+        "France",
+        "Champagne",
+        "sparkling",
+        "traditional-method",
+        "cool-climate",
+        "exam-core"
+      ],
+      "difficulty": 1,
+      "grapes": {
+        "Chardonnay": {
+          "summary": "Important Champagne grape bringing finesse, citrus fruit and high acidity, especially in blanc de blancs styles.",
+          "style": "Lemon, green apple, finesse, high acidity and elegant autolytic development.",
+          "aliases": [],
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Low to Medium",
+            "body": "Light to Medium",
+            "tannin": "-"
+          },
+          "aromas": [
+            "lemon",
+            "green apple",
+            "toast",
+            "biscuit",
+            "chalk"
+          ],
+          "viticulture": [
+            "Early budding can increase frost risk",
+            "Retains acidity well in cool climate"
+          ],
+          "winemaking": [
+            "Key component in blends",
+            "Blanc de Blancs",
+            "Traditional method with lees ageing"
+          ],
+          "pairing": [
+            "oysters",
+            "smoked salmon",
+            "soft cheese"
+          ],
+          "examTips": [
+            "Often gives the finest and most elegant styles.",
+            "Blanc de Blancs = Chardonnay only."
+          ],
+          "tags": [
+            "white",
+            "sparkling",
+            "high-acid",
+            "France",
+            "Champagne"
+          ],
+          "difficulty": 1
+        },
+        "Pinot Noir": {
+          "summary": "Black grape adding body, structure and red-fruit depth to Champagne blends.",
+          "style": "Body, structure, red fruit and power in sparkling blends.",
+          "aliases": [],
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "Low"
+          },
+          "aromas": [
+            "red apple",
+            "strawberry",
+            "toast",
+            "brioche"
+          ],
+          "viticulture": [
+            "Early ripening helps in cool climate",
+            "Sensitive to frost and rot pressure"
+          ],
+          "winemaking": [
+            "Important in blends",
+            "Blanc de Noirs",
+            "Traditional method"
+          ],
+          "pairing": [
+            "duck",
+            "charcuterie",
+            "mushroom dishes"
+          ],
+          "examTips": [
+            "Adds body and structure more than Chardonnay.",
+            "Blanc de Noirs can be made from Pinot Noir and/or Pinot Meunier."
+          ],
+          "tags": [
+            "red",
+            "sparkling",
+            "France",
+            "Champagne"
+          ],
+          "difficulty": 1
+        },
+        "Pinot Meunier": {
+          "summary": "Black grape valued for fruitiness and reliable performance in cooler, frost-prone sites.",
+          "style": "Fruitier, softer and earlier drinking than the most structured Champagne components.",
+          "aliases": [],
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "Low"
+          },
+          "aromas": [
+            "apple",
+            "pear",
+            "red fruit",
+            "bread"
+          ],
+          "viticulture": [
+            "Buds later than Pinot Noir",
+            "Useful in cooler or frost-prone sites"
+          ],
+          "winemaking": [
+            "Blending grape",
+            "Adds fruit and approachability"
+          ],
+          "pairing": [
+            "fried foods",
+            "pork",
+            "light poultry"
+          ],
+          "examTips": [
+            "Often contributes early-drinking fruitiness.",
+            "Important supporting grape in many non-vintage blends."
+          ],
+          "tags": [
+            "red",
+            "sparkling",
+            "France",
+            "Champagne"
+          ],
+          "difficulty": 1
+        }
+      },
+      "styles": {
+        "champagne-nv": {
+          "name": "Champagne NV",
+          "style": "Fresh, consistent house style built from reserve wines and multi-vintage blending.",
+          "aging": "Minimum lees ageing for non-vintage traditional method sparkling wine",
+          "keyPoint": "Consistency and blending are central."
+        },
+        "champagne-vintage": {
+          "name": "Champagne Vintage",
+          "style": "Riper fruit, more concentration and longer ageing potential from one harvest.",
+          "aging": "Longer lees ageing than non-vintage",
+          "keyPoint": "Made only in stronger years from a single vintage."
+        },
+        "blanc-de-blancs": {
+          "name": "Blanc de Blancs",
+          "style": "Citrus-led, elegant, fine and high-acid sparkling wine.",
+          "aging": "Traditional method, often with extended lees ageing",
+          "keyPoint": "Made from white grapes only, usually Chardonnay."
+        },
+        "blanc-de-noirs": {
+          "name": "Blanc de Noirs",
+          "style": "Broader, more structured sparkling wine with more body.",
+          "aging": "Traditional method",
+          "keyPoint": "Made from black grapes only."
+        },
+        "rose-champagne": {
+          "name": "Rose Champagne",
+          "style": "Red-fruit sparkling style made by blending still red wine or short skin contact.",
+          "aging": "Traditional method",
+          "keyPoint": "Know both allowed methods for making rosé Champagne."
+        },
+        "prestige-cuvee": {
+          "name": "Prestige Cuvee",
+          "style": "Top-tier complex Champagne with concentration, finesse and long ageing potential.",
+          "aging": "Extended lees ageing and bottle maturation",
+          "keyPoint": "Flagship wine of a house or grower."
+        }
+      }
     }
-  }
+  },
+  "examTips": [
+    "Study France by climate, grape specialisation and classic regional styles.",
+    "Champagne is a core sparkling topic alongside the key still-wine regions.",
+    "Bordeaux, Burgundy, Loire, Rhone and Champagne should all be easy to compare."
+  ],
+  "tags": [
+    "France",
+    "classic",
+    "exam-core",
+    "still",
+    "sparkling"
+  ],
+  "difficulty": 1
 }

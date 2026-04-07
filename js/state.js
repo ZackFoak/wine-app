@@ -1,6 +1,9 @@
 export const state = {
   currentFilter: "all",
   markers: {},
+  regionCoords: {},
+  regionMarkers: [],
+  activeCountryKey: null,
   countriesData: null,
   quizQuestions: [],
   generatedQuestions: [],
