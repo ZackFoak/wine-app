@@ -70,8 +70,23 @@ async function init() {
       toolbarToggle.textContent = toolbar.classList.contains("expanded")
         ? "Filters ▴"
         : "Filters ▾";
+
+      setTimeout(() => {
+        updateSheetMetrics();
+        applySheetState(currentSheetState);
+      }, 30);
     });
   }
+  updateSheetMetrics();
+  window.addEventListener("resize", () => {
+    updateSheetMetrics();
+    applySheetState(currentSheetState);
+  });
+
+  window.addEventListener("orientationchange", () => {
+    updateSheetMetrics();
+    applySheetState(currentSheetState);
+  });
 }
 
 init();
@@ -955,6 +970,44 @@ function bindStudyButtons(pageKey, onRefresh) {
     };
   }
 }
+
+function updateSheetMetrics() {
+  const toolbar = byId("topToolbar");
+  const root = document.documentElement;
+
+  if (!toolbar || !sheet) return;
+
+  const toolbarRect = toolbar.getBoundingClientRect();
+  const viewportHeight = window.innerHeight || 1;
+
+  // 你想 bottom sheet fully open 去到 search bar 底
+  const desiredTop = Math.round(toolbarRect.bottom + 4);
+
+  // sheet 本身高度 = 視窗高度 - desiredTop
+  const sheetHeight = Math.max(320, viewportHeight - desiredTop);
+
+  root.style.setProperty("--sheet-height", `${sheetHeight}px`);
+
+  // collapsed / mid 保持大致原本 feel
+  // open 改成真正貼近 toolbar 底
+  const openPercent = 0;
+  const midPercent = 38;
+  const collapsedPercent = 84;
+
+  if (window.innerWidth <= 640) {
+    SHEET_STATES = {
+      collapsed: collapsedPercent,
+      mid: midPercent,
+      open: openPercent
+    };
+  } else {
+    SHEET_STATES = {
+      collapsed: 82,
+      mid: 32,
+      open: 8
+    };
+  }
+}
 // ================= BUILD QUIZ FOR GRAPE & REGION =================
 async function buildQuizForGrape(grapeKey, grape, regionName, countryName) {
   const questions = [];
@@ -1474,7 +1527,7 @@ const handle = document.querySelector(".sheet-handle");
 const handleWrap = document.querySelector(".sheet-handle-wrap");
 const sheetBody = document.getElementById("sheetBody");
 
-const SHEET_STATES = {
+let SHEET_STATES = {
   collapsed: 82,
   mid: 32,
   open: 8
