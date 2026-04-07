@@ -562,16 +562,11 @@
       overflow: hidden;
       will-change: transform;
     }
-        #bottomSheet.state-collapsed {
-      transform: translateY(82%);
-    }
-
-    #bottomSheet.state-mid {
-      transform: translateY(32%);
-    }
-
+    
+    #bottomSheet.state-collapsed,
+    #bottomSheet.state-mid,
     #bottomSheet.state-open {
-      transform: translateY(8%);
+      transform: translateY(var(--sheet-translate, 32%));
     }
     
     #bottomSheet.open {
@@ -767,8 +762,7 @@
 </div>
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<script type="module" src="js/app.js"></script>
-<script type="module" src="js/app.js?v=3"></script>
+<script type="module" src="js/app.js?v=4"></script>
 
 </body>
 </html>

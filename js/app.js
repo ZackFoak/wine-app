@@ -94,7 +94,7 @@ init();
 // ================= COUNTRY =================
 async function showCountry(countryKey) {
   showLoading("Loading country...");
-  if (window.innerWidth <= 1024) {
+  if (window.innerWidth <= 1400) {
     openSheetFull();
   } else {
     openSheetMid();
@@ -977,39 +977,43 @@ function updateSheetMetrics() {
   const searchInput = byId("searchInput");
   const root = document.documentElement;
 
-  if (!toolbar || !sheet || !toolbarToggle || !searchInput) return;
+  if (!sheet || !toolbar || !searchInput) return;
 
   const viewportHeight = window.innerHeight || 1;
 
-  const filterRect = toolbarToggle.getBoundingClientRect();
+  const toolbarRect = toolbar.getBoundingClientRect();
   const searchRect = searchInput.getBoundingClientRect();
 
-  // 你想要：
-  // search bar 底 ↔ sheet 頂 = filter bar ↔ viewport 頂
-  const filterTopGap = Math.round(filterRect.top + 4);
+  // mobile 用 filter button，desktop 用整個 toolbar
+  const topGap = window.innerWidth <= 640
+    ? Math.round((toolbarToggle?.getBoundingClientRect().top ?? toolbarRect.top))
+    : Math.round(toolbarRect.top);
 
-  // sheet 頂部目標位置
-  const desiredTop = Math.round(searchRect.bottom + filterTopGap);
+  // 呢個數愈大，sheet 愈高
+  const desiredTop = Math.round(searchRect.bottom + topGap - 50);
 
-  // sheet 高度 = 視窗高度 - desiredTop
-  const sheetHeight = Math.max(320, viewportHeight - desiredTop);
-
+  const sheetHeight = Math.max(400, Math.round(viewportHeight * 0.84));
   root.style.setProperty("--sheet-height", `${sheetHeight}px`);
 
-  if (window.innerWidth <= 640) {
+  const openTranslate = ((viewportHeight - desiredTop - sheetHeight) / sheetHeight) * 100;
+
+  if (window.innerWidth <= 1024) {
     SHEET_STATES = {
       collapsed: 84,
       mid: 38,
-      open: 0
+      open: Math.max(-45, Math.min(0, openTranslate))
     };
   } else {
     SHEET_STATES = {
       collapsed: 82,
       mid: 32,
-      open: 8
+      open: Math.max(-45, Math.min(0, openTranslate))
     };
   }
+
+  sheet.style.setProperty("--sheet-translate", `${SHEET_STATES[currentSheetState] ?? 32}%`);
 }
+
 // ================= BUILD QUIZ FOR GRAPE & REGION =================
 async function buildQuizForGrape(grapeKey, grape, regionName, countryName) {
   const questions = [];
@@ -1546,6 +1550,9 @@ function applySheetState(stateName) {
   currentSheetState = stateName;
   sheet.classList.remove("state-collapsed", "state-mid", "state-open");
   sheet.classList.add(`state-${stateName}`);
+
+  const translate = SHEET_STATES[stateName] ?? 32;
+  sheet.style.setProperty("--sheet-translate", `${translate}%`);
   sheet.style.transform = "";
 
   if (stateName !== "open" && sheetBody) {
@@ -1562,6 +1569,7 @@ function getCurrentTranslatePercent() {
 function setSheetTranslate(percent) {
   const clamped = Math.max(SHEET_STATES.open, Math.min(SHEET_STATES.collapsed, percent));
   sheet.style.transform = `translateY(${clamped}%)`;
+  sheet.style.setProperty("--sheet-translate", `${clamped}%`);
 }
 
 function startSheetDrag(clientY, source = "handle") {
