@@ -11,6 +11,518 @@ const speechState = {
 };
 let mapCenterTimer = null;
 let markerLayoutTimer = null;
+let floatingBackAction = null;
+let pageActionHandlers = new Map();
+
+const CYCLE_LOGIC_STAGES = [
+  {
+    id: "site",
+    icon: "🧭",
+    title: "Choose Site And Plant Material",
+    summary: "Pick the region, slope, aspect, soil, rootstock, and grape variety before planting the vineyard.",
+    climate: "Climate decides whether the site needs more warmth, more cooling, more drainage, or more water security.",
+    influence: "This determines vigor, ripening speed, disease risk, drought tolerance, and final wine style.",
+    method: "Match grape variety and rootstock to the site, for example choosing a drought-tolerant rootstock on dry stony soils or a later-ripening variety in a warm zone.",
+    example: "Cool sparkling areas often favor chalky, well-drained sites for high-acid fruit, while warmer Mediterranean zones may favor higher or breezier parcels to slow ripening.",
+    keywords: ["site choice", "site exposure", "site selection", "higher sites", "drainage", "rootstocks", "grape varieties", "rain shadow", "altitude"]
+  },
+  {
+    id: "planting",
+    icon: "🌿",
+    title: "Plant Vineyard And Train Vines",
+    summary: "Establish rows, spacing, trellising, pruning system, and early trunk/cane structure.",
+    climate: "Wind, frost, vigor, and sunlight exposure affect spacing and training choices.",
+    influence: "Training system and row orientation shape future canopy density, airflow, and fruit exposure.",
+    method: "Set row direction, vine spacing, and training system such as VSP for orderly canopies or bush vines where heat, drought, and wind make low free-standing vines useful.",
+    example: "A windy site may use sturdy trellising and protected row orientation, while a hot dry site may use goblet-trained vines to keep bunches shaded.",
+    keywords: ["training systems", "row orientation", "site protection", "pruning", "wind", "frost"]
+  },
+  {
+    id: "budburst",
+    icon: "🌱",
+    title: "Budburst, Shoot Growth, Flowering, Fruit Set",
+    summary: "The growing season begins: buds burst, shoots elongate, flowering happens, and berries set.",
+    climate: "Spring frost, wind, and rain can reduce crop size or delay the season.",
+    influence: "Crop potential is set here, and uneven flowering can affect ripeness later.",
+    method: "Protect early growth with frost control, careful pruning timing, and monitoring during flowering so poor set or coulure can be caught early.",
+    example: "If spring rain disrupts flowering, bunches may set unevenly and the grower may later need stricter sorting at harvest.",
+    keywords: ["budburst", "frost", "flowering", "fruit set", "wind", "rainfall"]
+  },
+  {
+    id: "canopy",
+    icon: "🍃",
+    title: "Canopy, Water, Disease, And Yield Management",
+    summary: "Growers manage leaf cover, water, disease pressure, crop load, and sunlight on the fruit zone.",
+    climate: "Wet climates need more airflow and disease control; hot dry climates need shade and water discipline.",
+    influence: "These decisions shape berry size, acid retention, disease pressure, and flavor concentration.",
+    method: "Use leaf removal or shoot thinning for airflow in damp regions, keep extra shade in hot zones, manage irrigation or mulching in dry areas, and control mildew with open canopies plus well-timed sprays.",
+    example: "In a humid maritime zone, leaf pulling around the fruit zone can reduce downy mildew pressure; in a hot inland zone, growers may leave more canopy to prevent sunburn.",
+    keywords: ["canopy management", "water management", "disease control", "leaf removal", "shoot thinning", "yield control", "irrigation"]
+  },
+  {
+    id: "veraison",
+    icon: "🫐",
+    title: "Veraison And Ripening",
+    summary: "Berries soften, sugar rises, acids fall, color develops, and flavor/tannin ripeness progresses.",
+    climate: "Heat spikes push sugar fast; cool or foggy conditions slow ripening and preserve freshness.",
+    influence: "This stage decides whether the fruit will suit fresh wines, structured wines, sparkling base wine, or sweet styles.",
+    method: "Track sugar, acid, flavor, and tannin together rather than chasing sugar alone, especially when hot weather can raise alcohol before flavor maturity is reached.",
+    example: "Fruit for sparkling wine may be picked while acid is still very high, but fruit for fuller red wine may stay longer to soften tannins and deepen flavor.",
+    keywords: ["veraison", "ripening", "freshness", "over-ripeness", "heat spikes", "fog", "acid retention"]
+  },
+  {
+    id: "harvest",
+    icon: "🧺",
+    title: "Harvest Decision",
+    summary: "Pick by hand or machine, earlier or later, in one pass or several passes, depending on style target.",
+    climate: "Rain, rot, heat, and desired alcohol/acidity balance drive the timing.",
+    influence: "Harvest timing is one of the biggest style decisions in the whole cycle.",
+    method: "Decide between hand harvest, machine harvest, single pick, or multiple passes based on fruit condition and the intended wine style.",
+    example: "Sweet wines may require several selective passes for botrytized grapes, while sparkling fruit is often harvested earlier in one clean pick for tension and low alcohol.",
+    keywords: ["harvest timing", "vintage variation", "botrytis", "rainfall", "ripeness without losing freshness", "multiple passes"]
+  },
+  {
+    id: "intake",
+    icon: "📥",
+    title: "Reception, Sorting, Destemming, Crushing, Pressing",
+    summary: "Fruit arrives at the winery and is sorted, destemmed or left whole-cluster, crushed or pressed.",
+    climate: "Hot fruit may need faster processing or cooling; diseased fruit may need stricter sorting.",
+    influence: "This step decides juice quality, phenolic pickup, and how much skin contact will happen.",
+    method: "Cool fruit if needed, remove damaged bunches on the sorting table, then choose direct pressing, destemming, crushing, or whole-cluster handling depending on style.",
+    example: "Delicate white fruit may go straight to a gentle press, while red fruit may be destemmed and sent to fermenters with skins for extraction.",
+    keywords: ["whole cluster", "sorting", "destemming", "crushing", "pressing", "skin contact"]
+  },
+  {
+    id: "fermentation",
+    icon: "🍇",
+    title: "Primary Fermentation Path",
+    summary: "This is where the process branches by wine type: red, white, rosé, sparkling base wine, sweet, and fortified all handle juice and skins differently.",
+    climate: "Fruit composition from the vineyard determines whether freshness, extraction, sugar retention, or alcohol becomes the main goal.",
+    influence: "Skin contact, fermentation temperature, yeast, and sugar handling define the category of wine being made.",
+    method: "Choose juice-only fermentation, skin fermentation, short maceration, arrested fermentation, or secondary fermentation pathways based on the wine style target.",
+    example: "Red wines ferment on skins, rosé often has only brief color extraction, and fortified wines diverge when spirit is added to stop or reshape fermentation.",
+    keywords: ["fermentation", "skin contact", "sweet", "fortified", "sparkling", "red", "white", "rose"]
+  },
+  {
+    id: "maturation",
+    icon: "🪵",
+    title: "Maturation, Lees, Oak, Blending",
+    summary: "After fermentation, wines may rest on lees, go through oak, age in tank, or be blended for balance.",
+    climate: "Cooler fruit may need texture building; richer fruit may need freshness-preserving or structure-shaping choices.",
+    influence: "Lees, oak, and blending polish the style and prepare the wine for bottling.",
+    method: "Choose stainless steel for purity, lees stirring for texture, oak for spice and structure, or blending to rebalance acid, aroma, tannin, and body.",
+    example: "A lean white may gain roundness from lees contact, while a firm red may soften and integrate in barrel before final blending.",
+    keywords: ["maturation", "oak", "lees", "blending", "production method", "style"]
+  },
+  {
+    id: "finish",
+    icon: "🍾",
+    title: "Stabilize, Bottle, Release",
+    summary: "Wine is clarified, stabilized, bottled, and sometimes aged in bottle before release.",
+    climate: "The season still matters here because acid, tannin, sugar, and fruit intensity affect how much finishing is needed.",
+    influence: "The wine reaches the market, and the result informs the next vineyard cycle.",
+    method: "Clarify, stabilize, filter if needed, choose bottle closure, and decide whether the wine should be released young or after bottle ageing.",
+    example: "Fresh aromatic whites may be bottled and released quickly, while structured reds or traditional-method sparkling wines may spend extra time before release.",
+    keywords: ["bottle", "stabilize", "clarify", "release", "maturation", "style"]
+  },
+  {
+    id: "cycle",
+    icon: "🔁",
+    title: "Feedback Into Next Season",
+    summary: "What happened this season feeds back into the next one: disease pressure, vine balance, water reserves, and site choices all inform future decisions.",
+    climate: "Extreme vintages often change pruning, canopy, irrigation, and variety choices in following years.",
+    influence: "The logic of winegrowing is circular: climate drives vineyard decisions, vineyard decisions shape fruit, and results guide the next season.",
+    method: "Review disease pressure, ripening speed, water stress, wine balance, and market outcome, then adjust pruning, canopy, irrigation, harvest targets, or replanting plans.",
+    example: "If a hot vintage produced jammy wines and low acid, the grower may keep more shade next year or favor earlier picking on the warmest blocks.",
+    keywords: ["disease control", "pruning", "water management", "rootstocks", "grape varieties", "site choice", "training systems"]
+  }
+];
+
+const CYCLE_WINE_BRANCHES = [
+  {
+    id: "white",
+    title: "White Wine",
+    icon: "🥂",
+    conditions: ["High acidity", "Low tannin goal", "Clean fruit", "Cool or early-picked fruit"],
+    split: "Leaves the red path before long skin contact and moves straight toward juice-first handling.",
+    merge: "Can converge with sparkling base-wine logic when the fruit is picked especially early for tension and acid.",
+    path: ["Whole-bunch or gentle press", "Settle juice", "Cool fermentation", "Lees or oak for texture", "Bottle with freshness intact"],
+    result: "Fresh to textured white wine",
+    logic: "Goal: preserve fruit purity, acidity, and texture while keeping phenolic extraction low.",
+    method: "Press early, protect juice from oxidation when needed, ferment cool, and add texture later with lees or selective oak rather than skin tannin.",
+    example: "A crisp Sauvignon Blanc pathway may stay in stainless steel, while a richer Chardonnay pathway may ferment or age partly in oak.",
+    keywords: ["white", "pressing", "lees", "freshness", "tank", "oak"]
+  },
+  {
+    id: "red",
+    title: "Red Wine",
+    icon: "🍷",
+    conditions: ["Riper skins", "Color and tannin target", "Phenolic maturity", "Extraction-friendly fruit"],
+    split: "Moves away from white and sparkling logic because skins stay in contact during fermentation.",
+    merge: "Can later share maturation choices with other styles through oak, blending, and bottle ageing.",
+    path: ["Destem or use whole cluster", "Ferment on skins", "Pump over, punch down, or soak", "Press after extraction", "Mature then bottle"],
+    result: "Structured to supple red wine",
+    logic: "Goal: build color, tannin, body, and savory or ripe flavor through controlled skin extraction.",
+    method: "Control extraction with pump-overs, punch-downs, temperature, and maceration length, then decide how long to age before bottling.",
+    example: "A lighter red may use shorter extraction for softer tannin, while a cellar-built ageworthy red may keep longer skin contact and barrel maturation.",
+    keywords: ["red", "skin contact", "fermentation", "tannin", "extraction", "oak"]
+  },
+  {
+    id: "rose",
+    title: "Rose Wine",
+    icon: "🌸",
+    conditions: ["Bright fruit", "Low tannin target", "Short extraction window", "Moderate sugar"],
+    split: "Starts near red fruit handling but turns away quickly before deep color and tannin build.",
+    merge: "Often rejoins white-wine fermentation logic after a brief maceration or direct pressing step.",
+    path: ["Short skin contact or direct press", "Separate pale juice", "Cool fermentation", "Protect delicate aromatics", "Bottle young"],
+    result: "Pale to vivid rose wine",
+    logic: "Goal: capture fresh red-fruit character with only a light touch of color and tannin.",
+    method: "Limit skin contact carefully, ferment cool like a white wine, and avoid heavy oak or long ageing so brightness stays front and center.",
+    example: "A Provence-style rose often uses direct press or very short maceration to keep the color pale and the palate crisp.",
+    keywords: ["rose", "skin contact", "direct press", "freshness"]
+  },
+  {
+    id: "sparkling",
+    title: "Sparkling Wine",
+    icon: "✨",
+    conditions: ["Very high acidity", "Lower potential alcohol", "Clean base fruit", "Fine mousse target"],
+    split: "Branches away from still wine when the base wine is held back for a second fermentation.",
+    merge: "Shares early-harvest white-wine logic first, then diverges again into bottle or tank secondary fermentation.",
+    path: ["Pick early", "Press and ferment base wine", "Blend for house or style goal", "Second fermentation in bottle or tank", "Lees ageing, disgorgement, release"],
+    result: "Sparkling wine",
+    logic: "Goal: turn sharp, early-picked fruit into a base wine that can carry bubbles, tension, and autolytic complexity.",
+    method: "Pick for acid, make a restrained base wine, then create bubbles through secondary fermentation in bottle or tank, with lees ageing if more complexity is wanted.",
+    example: "Traditional-method sparkling wines spend time on lees before disgorgement, while tank-method sparkling wines usually aim for fresher fruit and faster release.",
+    keywords: ["sparkling", "base wine", "lees", "secondary fermentation", "cool climate", "acid retention"]
+  },
+  {
+    id: "sweet",
+    title: "Sweet Wine",
+    icon: "🍯",
+    conditions: ["Sugar concentration", "Healthy acid retention", "Late-harvest or botrytis potential", "Careful rot sorting"],
+    split: "Turns away from dry-wine logic by protecting or concentrating sugar before fermentation finishes dry.",
+    merge: "May share white-wine pressing and fermentation steps before diverging into sugar-preservation decisions.",
+    path: ["Late harvest, passerillage, or botrytis selection", "Sort concentrated fruit", "Ferment slowly", "Stop or arrest before dry", "Mature then bottle with residual sugar"],
+    result: "Sweet wine",
+    logic: "Goal: retain sweetness without losing balance, using acid, aroma concentration, and controlled fermentation.",
+    method: "Concentrate sugar either on the vine or after harvest, ferment carefully, and stop before dryness or preserve sugar by chilling, fortification, or natural stoppage.",
+    example: "Botrytized sweet wine relies on selective harvesting of affected berries, while late-harvest styles may simply depend on extra hang time and concentration.",
+    keywords: ["sweet", "botrytis", "residual sugar", "harvest timing", "multiple passes"]
+  },
+  {
+    id: "fortified",
+    title: "Fortified Wine",
+    icon: "🔥",
+    conditions: ["High sugar must", "Spirit addition option", "Oxidative or reductive ageing choice", "Alcohol structure target"],
+    split: "Leaves the normal dry-wine route when spirit is added to must or wine to reshape the final balance.",
+    merge: "Can share red or white fermentation starts, then diverges hard at the fortification decision.",
+    path: ["Begin fermentation", "Add grape spirit before dry or after fermentation", "Choose oxidative or reductive ageing", "Blend and stabilize", "Bottle fortified style"],
+    result: "Fortified wine",
+    logic: "Goal: use spirit timing and maturation style to control sweetness, alcohol, texture, and aroma profile.",
+    method: "Add spirit at the chosen moment to preserve sweetness or raise alcohol, then age in a style that suits the wine, from fresh to oxidative.",
+    example: "A sweet fortified wine can be stopped mid-fermentation to retain sugar, while a dry fortified style may ferment further before fortification and ageing.",
+    keywords: ["fortified", "spirit", "sweet", "maturation", "oxidative"]
+  }
+];
+
+const CYCLE_CLIMATE_PATHS = [
+  {
+    id: "cool-continental",
+    title: "Cool Continental",
+    icon: "❄️",
+    summary: "Shorter growing season, spring frost pressure, and a constant need to preserve ripeness while still reaching flavor maturity.",
+    result: "Tense sparkling bases, high-acid whites, and fine-boned reds with freshness.",
+    keywords: ["cool continental", "frost", "acid retention", "sparkling", "late-ripening", "chalk", "limestone"],
+    steps: [
+      {
+        stage: "Step 1",
+        title: "Site And Planting Choice",
+        pressure: "Limited warmth and slow ripening",
+        response: "Choose warmer slopes, sun-catching aspects, and sites with good light reflection.",
+        method: "Plant on south-facing slopes, use free-draining soils that warm quickly, and avoid frost pockets in valley floors.",
+        example: "A cool continental grower may prefer mid-slope chalk or limestone sites so the vineyard warms earlier and drains well."
+      },
+      {
+        stage: "Step 2",
+        title: "Training And Early Growth",
+        pressure: "Cold spring and delayed growth",
+        response: "Set up orderly canopies and delay some pruning decisions to manage budburst timing.",
+        method: "Use VSP-style trellising for sunlight capture and airflow, and consider later pruning to delay budburst slightly.",
+        example: "Later pruning can push budburst back a little, which helps if frost regularly threatens early shoots."
+      },
+      {
+        stage: "Step 3",
+        title: "Budburst To Fruit Set",
+        pressure: "Spring frost",
+        response: "Protect young shoots before frost can destroy the crop.",
+        method: "Use wind machines, heaters, site airflow, or delayed pruning depending on the vineyard setup.",
+        example: "Cool continental regions often use wind machines on frost nights to mix warmer air down into the vineyard."
+      },
+      {
+        stage: "Step 4",
+        title: "Canopy And Crop Control",
+        pressure: "Slow ripening and disease risk after rain",
+        response: "Open the canopy enough for light and airflow, but do not overexpose fruit in a marginal season.",
+        method: "Use shoot thinning, careful leaf removal, and crop reduction if the season is too cool for the full crop to ripen evenly.",
+        example: "If flowering is uneven, the grower may green harvest weaker bunches so the remaining fruit reaches maturity."
+      },
+      {
+        stage: "Step 5",
+        title: "Ripening Window",
+        pressure: "Sugar may stay low while acid stays high",
+        response: "Wait for flavor development without losing the clean fresh style that the climate gives naturally.",
+        method: "Taste berries repeatedly and watch flavor ripeness, not just sugar numbers.",
+        example: "Fruit for still Chardonnay may hang a little longer than fruit intended for sparkling base wine."
+      },
+      {
+        stage: "Step 6",
+        title: "Harvest Decision",
+        pressure: "Rain or cold can end the season quickly",
+        response: "Pick as soon as style targets are reached rather than waiting for excessive ripeness.",
+        method: "Hand harvest in narrow windows and sort carefully if the season finishes with rot or uneven ripeness.",
+        example: "Sparkling fruit is often picked early for very high acid, while still wines may wait slightly longer for flavor depth."
+      },
+      {
+        stage: "Step 7",
+        title: "Winery Path",
+        pressure: "Naturally high acid and delicate fruit profile",
+        response: "Protect purity and build texture gently.",
+        method: "Use gentle pressing, cool fermentation, lees ageing, or traditional-method secondary fermentation depending on the target wine.",
+        example: "Traditional-method sparkling wine fits this climate because the naturally high acid supports bottle ageing and mousse."
+      },
+      {
+        stage: "Step 8",
+        title: "Bottle Result",
+        pressure: "Need balance between sharpness and texture",
+        response: "Release wines that keep freshness while adding polish.",
+        method: "Use lees contact, blending, or selective oak rather than chasing heavy body.",
+        example: "The final wines often show citrus, green apple, floral lift, and fine structure rather than rich tropical fruit."
+      }
+    ]
+  },
+  {
+    id: "moderate-maritime",
+    title: "Moderate Maritime",
+    icon: "🌊",
+    summary: "Ocean influence moderates heat, but humidity, rain, and vintage variation make disease pressure and site choice critical.",
+    result: "Balanced whites and reds with freshness, moderate alcohol, and strong vintage differences.",
+    keywords: ["maritime", "humidity", "rainfall", "botrytis", "canopy management", "cabernet franc", "sauvignon blanc"],
+    steps: [
+      {
+        stage: "Step 1",
+        title: "Site And Planting Choice",
+        pressure: "Humidity and slower drying after rain",
+        response: "Prefer well-exposed sites and soils that do not trap too much water.",
+        method: "Choose breezy slopes, free-draining gravel or limestone soils, and avoid heavy stagnant sites when possible.",
+        example: "A maritime grower may value a windy slope because bunches dry faster after rain."
+      },
+      {
+        stage: "Step 2",
+        title: "Training And Early Growth",
+        pressure: "Vigorous vegetative growth",
+        response: "Set up canopies that can be opened later for airflow.",
+        method: "Use trellising that allows shoot positioning and easy leaf removal in the fruit zone.",
+        example: "VSP is often useful because it gives the grower a clean vertical canopy to manage."
+      },
+      {
+        stage: "Step 3",
+        title: "Budburst To Fruit Set",
+        pressure: "Rain and wind during flowering",
+        response: "Accept vintage variation and manage the canopy around whatever crop sets successfully.",
+        method: "Monitor set closely and adjust later yield decisions if the season produces uneven bunches.",
+        example: "A rainy flowering period can reduce fruit set and create looser bunches, which changes the crop and style."
+      },
+      {
+        stage: "Step 4",
+        title: "Canopy And Disease Control",
+        pressure: "Humidity and fungal disease",
+        response: "Increase airflow and reduce bunch-zone dampness.",
+        method: "Use leaf pulling, shoot thinning, and timed sprays to control downy mildew, powdery mildew, or botrytis pressure.",
+        example: "In a wet maritime year, leaf removal around the bunches helps the fruit dry faster and lowers botrytis risk."
+      },
+      {
+        stage: "Step 5",
+        title: "Ripening Window",
+        pressure: "Moderate temperatures and slow steady ripening",
+        response: "Aim for balance instead of extreme sugar levels.",
+        method: "Track flavor development carefully and avoid waiting so long that autumn rain increases rot pressure.",
+        example: "Cabernet Franc in a maritime climate may keep freshness easily, but the grower still needs enough hang time for ripe herbal and red-fruit expression."
+      },
+      {
+        stage: "Step 6",
+        title: "Harvest Decision",
+        pressure: "Rain and rot close to harvest",
+        response: "Pick block by block or in multiple passes depending on fruit condition.",
+        method: "Harvest earlier parcels first and sort strictly where botrytis or dilution becomes an issue.",
+        example: "Sweet-wine zones may welcome noble rot, but dry-wine parcels must separate clean fruit from diseased bunches."
+      },
+      {
+        stage: "Step 7",
+        title: "Winery Path",
+        pressure: "Fresh acidity and moderate body",
+        response: "Preserve aromatic precision or build structure gently.",
+        method: "Use clean ferments, selective lees ageing, careful oak, or noble-rot sorting depending on the style.",
+        example: "Sauvignon Blanc often goes down a purity-first route, while some maritime reds use measured oak to add frame."
+      },
+      {
+        stage: "Step 8",
+        title: "Bottle Result",
+        pressure: "Vintage variation remains visible",
+        response: "Let the climate signature show through.",
+        method: "Blend thoughtfully, but do not erase the freshness and seasonal character.",
+        example: "The final wines often show moderate alcohol, bright acidity, and a clear difference between cooler and sunnier years."
+      }
+    ]
+  },
+  {
+    id: "warm-mediterranean",
+    title: "Warm Mediterranean",
+    icon: "☀️",
+    summary: "Abundant sun and reliable ripening help consistency, but drought, heat accumulation, and sunburn become major management issues.",
+    result: "Riper reds, generous whites, rose, and sometimes fortified styles with fuller body and lower natural acidity.",
+    keywords: ["warm mediterranean", "drought", "irrigation", "sunburn", "shade", "grenache", "mourvedre"],
+    steps: [
+      {
+        stage: "Step 1",
+        title: "Site And Planting Choice",
+        pressure: "Too much heat and limited water",
+        response: "Look for altitude, wind exposure, cooler soils, or water-holding balance.",
+        method: "Plant on higher sites, north-facing parcels where appropriate, or soils that moderate water stress without becoming waterlogged.",
+        example: "A warm Mediterranean grower may choose a breezy hillside rather than a hot sheltered basin."
+      },
+      {
+        stage: "Step 2",
+        title: "Training And Early Growth",
+        pressure: "Strong sun and drought",
+        response: "Build a vine shape that protects fruit and manages vigor carefully.",
+        method: "Use goblet or other shade-friendly systems where suitable, and avoid creating an overexposed fruit zone too early.",
+        example: "Bush vines can keep bunches closer to the trunk and under leaf shade in hot dry places."
+      },
+      {
+        stage: "Step 3",
+        title: "Early Season Growth",
+        pressure: "Rapid early development",
+        response: "Keep vine balance without encouraging excessive water stress later.",
+        method: "Monitor shoot growth, conserve soil moisture, and avoid unnecessary canopy stripping.",
+        example: "If spring is already dry, growers may use mulching or careful soil management to preserve moisture."
+      },
+      {
+        stage: "Step 4",
+        title: "Canopy And Water Management",
+        pressure: "Drought and heat",
+        response: "Protect fruit from sunburn and prevent vines from shutting down completely.",
+        method: "Use irrigation where permitted, keep extra canopy shade, and manage soils to reduce evaporation.",
+        example: "Hot Mediterranean vineyards may rely on drip irrigation or regulated deficit irrigation to keep vines functioning through dry spells."
+      },
+      {
+        stage: "Step 5",
+        title: "Ripening Window",
+        pressure: "Sugar rises quickly and acid falls fast",
+        response: "Watch for freshness loss and over-ripeness.",
+        method: "Sample fruit early and often, and be ready to pick before alcohol climbs too far.",
+        example: "Grenache can move from ripe red fruit to jammy character quickly if harvest is delayed in hot weather."
+      },
+      {
+        stage: "Step 6",
+        title: "Harvest Decision",
+        pressure: "Heat spikes at the end of the season",
+        response: "Harvest in the coolest hours and protect fruit from oxidation or overheating.",
+        method: "Pick at night or early morning and move fruit quickly to the cellar.",
+        example: "Warm-climate fruit may arrive chilled or be processed immediately so aromas are not lost."
+      },
+      {
+        stage: "Step 7",
+        title: "Winery Path",
+        pressure: "High sugar, soft acid, and generous body",
+        response: "Use cellar choices to preserve freshness and manage extraction.",
+        method: "Keep ferment temperatures under control, avoid harsh extraction from very ripe skins, and use blending or acid balance strategies where needed.",
+        example: "Rose or white wines from hot climates often use cool fermentation to hold onto the freshest possible fruit profile."
+      },
+      {
+        stage: "Step 8",
+        title: "Bottle Result",
+        pressure: "Need energy as well as richness",
+        response: "Shape the final wine around balance, not just ripeness.",
+        method: "Blend sites, preserve aromatic lift, and avoid over-oaking already rich fruit.",
+        example: "The best warm Mediterranean wines show ripe fruit, herbal complexity, and sun, but still keep enough freshness to stay alive."
+      }
+    ]
+  },
+  {
+    id: "hot-inland-continental",
+    title: "Hot Inland Continental",
+    icon: "🔥",
+    summary: "Large day-night shifts, dry conditions, and strong summer heat can bring both intense ripeness and useful freshness if timing is handled well.",
+    result: "Deeply flavored reds and aromatic whites with concentration, but only when heat and water stress are controlled.",
+    keywords: ["warm continental", "diurnal", "irrigation", "water stress", "altitude", "night harvest"],
+    steps: [
+      {
+        stage: "Step 1",
+        title: "Site And Planting Choice",
+        pressure: "Heat by day and drought risk",
+        response: "Use elevation, diurnal shift, and soils that balance drainage with water access.",
+        method: "Plant where nights cool down, and match rootstocks to dry conditions.",
+        example: "Higher inland sites can keep aromatics fresher because nighttime temperatures fall more sharply."
+      },
+      {
+        stage: "Step 2",
+        title: "Training And Early Growth",
+        pressure: "Rapid vigor early, stress later",
+        response: "Build a canopy that can shade fruit and survive late-summer pressure.",
+        method: "Train vines for balanced exposure and avoid excessive early crop if water will be limited later.",
+        example: "Row orientation is often chosen to reduce the harshest afternoon sun on the fruit zone."
+      },
+      {
+        stage: "Step 3",
+        title: "Fruit Set And Crop Balance",
+        pressure: "Dryness can reduce berry size quickly",
+        response: "Manage crop size so the vine can ripen fruit without shutting down.",
+        method: "Thin the crop if needed and keep an eye on vine stress before veraison.",
+        example: "Smaller berries can help concentration, but too much stress can halt ripening altogether."
+      },
+      {
+        stage: "Step 4",
+        title: "Water And Heat Management",
+        pressure: "Water stress",
+        response: "Keep the vine active enough to ripen evenly.",
+        method: "Use irrigation where legal, conserve moisture, and avoid over-thinning leaves in hot spells.",
+        example: "Hot inland vineyards may use regulated deficit irrigation so the vines stay balanced without producing diluted fruit."
+      },
+      {
+        stage: "Step 5",
+        title: "Ripening Window",
+        pressure: "Fast sugar accumulation but useful night-time cooling",
+        response: "Use the diurnal range to chase both ripeness and freshness.",
+        method: "Track acid and flavor development closely and separate warmer and cooler blocks if they ripen differently.",
+        example: "An inland high-altitude site can still make vivid aromatic whites because cool nights slow acid loss."
+      },
+      {
+        stage: "Step 6",
+        title: "Harvest Decision",
+        pressure: "Heat at picking",
+        response: "Harvest cool and fast.",
+        method: "Pick at night or dawn, then move fruit quickly into a temperature-controlled cellar.",
+        example: "Night harvesting is common where daytime heat would otherwise oxidize or prematurely start fermentation."
+      },
+      {
+        stage: "Step 7",
+        title: "Winery Path",
+        pressure: "Concentrated fruit and high potential alcohol",
+        response: "Control extraction and fermentation heat carefully.",
+        method: "Avoid over-extraction in very ripe reds and preserve aromatics in whites with cool ferments.",
+        example: "A powerful inland red may need gentler pump-overs than expected because the fruit already carries a lot of concentration."
+      },
+      {
+        stage: "Step 8",
+        title: "Bottle Result",
+        pressure: "Power can outrun balance",
+        response: "Keep structure, freshness, and alcohol in proportion.",
+        method: "Blend sites or lots with different ripeness profiles and use oak with restraint.",
+        example: "The best wines from these climates combine dark fruit concentration with surprisingly bright lift from cool nights."
+      }
+    ]
+  }
+];
 
 const REGION_CATEGORY_RULES = {
   sparkling: new Set([
@@ -85,12 +597,209 @@ function renderPronounceButton(text, label = text) {
   `;
 }
 
+const STUDY_HIGHLIGHT_RULES = [
+  { pattern: /\b(Atlantic|Pacific|Benguela|Humboldt|ocean currents?|sea breezes?|fog)\b/gi, tone: "water" },
+  { pattern: /\b(Gironde|Dordogne|Garonne|Loire|Danube|Rhine|Mosel|Duero|Douro|estuary|river|lake)\b/gi, tone: "water" },
+  { pattern: /\b(Andes|Vosges|rain shadow|terraces|altitude|mountain slopes?|slope)\b/gi, tone: "terrain" },
+  { pattern: /\b(aspect|exposure|elevation|diurnal range|sunlight interception|drainage|free-draining soils?|gravel|limestone|chalk|clay|sand|schist|slate)\b/gi, tone: "terrain" },
+  { pattern: /\b(Mistral|ventilation|canopy management|water management|harvest timing|site exposure|site choice|drainage|irrigation)\b/gi, tone: "climate" },
+  { pattern: /\b(frost|spring frost|drought|heat spikes?|sunburn|soil moisture|water stress|ripening season|growing season)\b/gi, tone: "climate" },
+  { pattern: /\b(rootstocks?|matching grape varieties?|grape varieties?|disease control|production method|maturation)\b/gi, tone: "human" },
+  { pattern: /\b(pruning|training systems?|row orientation|yield control|green harvest|leaf removal|shoot thinning|fruit zone|site selection)\b/gi, tone: "human" },
+  { pattern: /\b(mildew|powdery mildew|downy mildew|botrytis|oidium|rot)\b/gi, tone: "human" }
+];
+
+function augmentStudyText(text) {
+  let result = String(text || "").trim();
+  if (!result) return result;
+
+  const isWarmContext = /warm|mediterranean|hot|sun|over-ripen|drought|dry/i.test(result);
+  const isWetContext = /maritime|humid|rain|disease|mildew|botrytis|wet/i.test(result);
+  const isCoolContext = /cool|mountain|altitude|fog|cold-water|coastal/i.test(result);
+
+  if (/retaining acidity and avoiding over-ripeness/i.test(result)) {
+    result = result.replace(
+      /retaining acidity and avoiding over-ripeness/gi,
+      "retaining acidity and avoiding over-ripeness, for example by picking earlier, using cooler or higher vineyard sites, and keeping enough canopy shade"
+    );
+  }
+
+  if (/helping consistent ripening/i.test(result)) {
+    result = result.replace(
+      /helping consistent ripening/gi,
+      "helping consistent ripening, for example through reliable sugar accumulation, lower disease pressure, and more predictable harvest dates"
+    );
+  }
+
+  if (/moderate temperature/i.test(result) && !/reduce heat spikes|slow sugar build-up|preserve acidity/i.test(result)) {
+    result = result.replace(
+      /moderate temperature/gi,
+      "moderate temperature, reducing heat spikes, slowing sugar build-up, and preserving acidity"
+    );
+  }
+
+  if (/can slow ripening/i.test(result) && !/longer hang time|slower sugar accumulation/i.test(result)) {
+    result = result.replace(
+      /can slow ripening/gi,
+      "can slow ripening, giving longer hang time for flavor development and slower sugar accumulation"
+    );
+  }
+
+  if (/site choice/i.test(result) && !/higher elevations|cooler slopes|better-exposed parcels/i.test(result)) {
+    const siteChoiceExample = isWarmContext
+      ? "site choice, such as higher elevations, cooler slopes, or parcels with morning sun instead of intense afternoon heat,"
+      : "site choice, such as free-draining soils, sheltered slopes, or better-exposed parcels,"
+    ;
+    result = result.replace(/site choice/gi, siteChoiceExample);
+  }
+
+  if (/site and harvest decisions/i.test(result) && !/earlier picking|warmer parcels|cooler parcels/i.test(result)) {
+    result = result.replace(
+      /site and harvest decisions/gi,
+      "site and harvest decisions, such as choosing cooler parcels and adjusting picking dates to keep acid and flavor balance,"
+    );
+  }
+
+  if (/harvest timing/i.test(result) && !/earlier picking|later picking|multiple passes/i.test(result)) {
+    const harvestExample = isWarmContext
+      ? "harvest timing, such as earlier picking to avoid jammy flavors and excessive alcohol,"
+      : "harvest timing, such as delaying picking or harvesting in multiple passes to reach flavor ripeness,"
+    ;
+    result = result.replace(/harvest timing/gi, harvestExample);
+  }
+
+  if (/freshness/i.test(result) && !/acid retention|lower potential alcohol|cooler night temperatures/i.test(result) && /ripeness|balance|style objectives|cooling/i.test(result)) {
+    result = result.replace(
+      /freshness/gi,
+      "freshness, meaning better acid retention, lower potential alcohol, and more lifted fruit character"
+    );
+  }
+
+  if (/canopy management/i.test(result) && !/leaf removal|shoot positioning|open-canopy|shade cloth|fruit zone/i.test(result)) {
+    const canopyExample = isWetContext
+      ? "canopy management, such as leaf removal around the fruit zone and shoot thinning to improve airflow,"
+      : "canopy management, such as retaining extra leaf shade and careful shoot positioning to protect grapes from sunburn,"
+    ;
+    result = result.replace(/canopy management/gi, canopyExample);
+  }
+
+  if (/water management/i.test(result) && !/drip irrigation|deficit irrigation|mulch|soil-moisture|irrigation scheduling/i.test(result)) {
+    const waterExample = isWarmContext
+      ? "water management, such as drip irrigation, regulated deficit irrigation, and mulching to conserve soil moisture,"
+      : "water management, such as drainage improvement, soil-moisture monitoring, and careful irrigation timing,"
+    ;
+    result = result.replace(/water management/gi, waterExample);
+  }
+
+  if (/shade from canopy/i.test(result) && !/sunburn|fruit temperature/i.test(result)) {
+    result = result.replace(
+      /shade from canopy/gi,
+      "shade from canopy, which helps reduce berry temperature and sunburn risk"
+    );
+  }
+
+  if (/choosing cooler or higher sites/i.test(result) && !/slower ripening|better acid retention/i.test(result)) {
+    result = result.replace(
+      /choosing cooler or higher sites/gi,
+      "choosing cooler or higher sites, where slower ripening helps preserve acidity and aromatic lift"
+    );
+  }
+
+  if (/training systems, row orientation, and site protection/i.test(result) && !/trellising|windbreaks|sun exposure/i.test(result)) {
+    result = result.replace(
+      /training systems, row orientation, and site protection/gi,
+      "training systems, row orientation, and site protection, for example vertical shoot positioning, rows aligned to manage sun exposure, and windbreaks or sheltered aspects"
+    );
+  }
+
+  if (/mountain cooling/i.test(result) && !/cooler nights|diurnal range/i.test(result)) {
+    result = result.replace(
+      /mountain cooling/gi,
+      "mountain cooling, with cooler nights and a bigger diurnal range"
+    );
+  }
+
+  if (/maritime influence can increase humidity, rainfall, and vintage variation/i.test(result) && !/cloud cover|fungal disease|slower ripening/i.test(result)) {
+    result = result.replace(
+      /maritime influence can increase humidity, rainfall, and vintage variation/gi,
+      "maritime influence can increase humidity, rainfall, and vintage variation, bringing more cloud cover, more fungal-disease risk, and less predictable harvest conditions"
+    );
+  }
+
+  if (/wind can cool vineyards and reduce fungal disease pressure/i.test(result) && !/Mistral|airflow|after rain/i.test(result)) {
+    result = result.replace(
+      /wind can cool vineyards and reduce fungal disease pressure/gi,
+      "wind can cool vineyards and reduce fungal disease pressure, for example by drying the canopy quickly after rain and improving airflow"
+    );
+  }
+
+  if (/while helping moderate temperature extremes/i.test(result) && !/heat spikes|night-time cooling/i.test(result)) {
+    result = result.replace(
+      /while helping moderate temperature extremes/gi,
+      "while helping moderate temperature extremes, especially by limiting daytime heat spikes and encouraging gentler night-time cooling"
+    );
+  }
+
+  if (/matching grape varieties and rootstocks/i.test(result) && !/drought-tolerant|vigorous rootstocks|later-ripening|earlier-ripening/i.test(result)) {
+    result = result.replace(
+      /matching grape varieties and rootstocks/gi,
+      "matching grape varieties and rootstocks, for example drought-tolerant rootstocks on dry soils or later-ripening varieties in warmer sites,"
+    );
+  }
+
+  if (/grape varieties and rootstocks/i.test(result) && !/drought-tolerant|vigorous rootstocks|later-ripening|earlier-ripening/i.test(result)) {
+    result = result.replace(
+      /grape varieties and rootstocks/gi,
+      "grape varieties and rootstocks, such as later-ripening grapes in warmer spots and drought-tolerant rootstocks on dry soils,"
+    );
+  }
+
+  if (/site selection by elevation/i.test(result) && !/higher slopes|cooler exposures|air drainage/i.test(result)) {
+    result = result.replace(
+      /site selection by elevation/gi,
+      "site selection by elevation, such as using higher slopes, cooler exposures, or spots with better cold-air drainage"
+    );
+  }
+
+  const mentionsDiseaseControl = /disease control/i.test(result);
+  const hasSpecificDisease = /mildew|powdery mildew|downy mildew|botrytis|oidium|rot/i.test(result);
+
+  if (mentionsDiseaseControl && !hasSpecificDisease) {
+    const diseaseExample = isWetContext
+      ? " For example, downy mildew or botrytis pressure can be reduced by leaf removal, better airflow, and timely fungicide sprays."
+      : " For example, powdery mildew pressure can be reduced by open-canopy management, better airflow, and timely sulfur or fungicide sprays."
+    ;
+    result += diseaseExample;
+  }
+
+  if (/ripeness without losing freshness/i.test(result) && !/phenolic ripeness|sugar levels|acid retention/i.test(result)) {
+    result = result.replace(
+      /ripeness without losing freshness/gi,
+      "ripeness without losing freshness, meaning achieving phenolic ripeness while keeping sugar levels and acid retention in balance"
+    );
+  }
+
+  return result;
+}
+
+function renderStudyHighlightedText(text) {
+  let html = escapeHtml(augmentStudyText(text));
+
+  STUDY_HIGHLIGHT_RULES.forEach(({ pattern, tone }) => {
+    html = html.replace(pattern, match =>
+      `<span class="study-highlight ${tone}">${match}</span>`
+    );
+  });
+
+  return html;
+}
+
 function renderStudyList(title, items = []) {
   if (!Array.isArray(items) || !items.length) return "";
 
   return `
     <p><b>${title}:</b></p>
-    <ul>${items.map(item => `<li>${item}</li>`).join("")}</ul>
+    <ul>${items.map(item => `<li>${renderStudyHighlightedText(item)}</li>`).join("")}</ul>
   `;
 }
 
@@ -177,14 +886,40 @@ function bindPronounceButtons() {
   });
 }
 
-function buildMapMarkerButton(label, {
-  markerType = "region",
-  selected = false
-} = {}) {
-  const safeLabel = String(label || "")
+function escapeHtml(text) {
+  return String(text || "")
     .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;");
+}
+
+function getClimateTone(climate) {
+  const text = String(climate || "").toLowerCase();
+  if (text.includes("cool")) return "cool";
+  if (text.includes("warm")) return "warm";
+  return "moderate";
+}
+
+function renderClimateChip(climate, { compact = false } = {}) {
+  const text = String(climate || "").trim();
+  if (!text) return "";
+
+  const tone = getClimateTone(text);
+  const icon = tone === "cool" ? "❄️" : tone === "warm" ? "☀️" : "🍃";
+  const label = compact
+    ? text.replace(/\b(Maritime|Continental|Mediterranean)\b/gi, match => match.slice(0, 4))
+    : text;
+
+  return `<span class="map-climate-chip ${tone}"><span>${icon}</span><span>${escapeHtml(label)}</span></span>`;
+}
+
+function buildMapMarkerButton(label, {
+  markerType = "region",
+  selected = false,
+  climate = ""
+} = {}) {
+  const safeLabel = escapeHtml(label || "");
 
   const classes = [
     markerType === "country" ? "country-map-marker" : "region-map-marker"
@@ -198,7 +933,14 @@ function buildMapMarkerButton(label, {
     classes.push("is-selected");
   }
 
-  return `<button class="${classes.join(" ")}" type="button">${safeLabel}</button>`;
+  const climateChip = markerType === "country" ? "" : renderClimateChip(climate, { compact: true });
+
+  return `
+    <button class="${classes.join(" ")}" type="button">
+      <span class="map-marker-label">${safeLabel}</span>
+      ${climateChip}
+    </button>
+  `;
 }
 
 // ================= MAP =================
@@ -209,6 +951,8 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(map);
 
 function renderHomePanel() {
+  clearFloatingBackButton();
+  clearPageActionRail();
   setPanelTitle("Click a country");
   setBreadcrumb([]);
   byId("content").innerHTML = `
@@ -218,6 +962,98 @@ function renderHomePanel() {
       <p>Use Search, Quiz, Favorites, and Progress to build your knowledge.</p>
     </div>
   `;
+}
+
+function setFloatingBackButton(label, onClick) {
+  const button = byId("floatingBackBtn");
+  if (!button) return;
+
+  floatingBackAction = typeof onClick === "function" ? onClick : null;
+  button.textContent = label || "← Back";
+  button.hidden = !floatingBackAction;
+}
+
+function clearFloatingBackButton() {
+  const button = byId("floatingBackBtn");
+  if (!button) return;
+
+  floatingBackAction = null;
+  button.hidden = true;
+  button.textContent = "← Back";
+}
+
+function setPageActionRail(actions = [], {
+  collapsed = true,
+  toggleLabel = "Page"
+} = {}) {
+  const rail = byId("pageActionRail");
+  const toggle = byId("pageActionRailToggle");
+  const actionsWrap = byId("pageActionRailActions");
+
+  if (!rail || !toggle || !actionsWrap) return;
+
+  const validActions = Array.isArray(actions)
+    ? actions.filter(action => action && typeof action.onClick === "function")
+    : [];
+
+  pageActionHandlers = new Map();
+
+  if (!validActions.length) {
+    rail.hidden = true;
+    actionsWrap.innerHTML = "";
+    toggle.textContent = `${toggleLabel} ▾`;
+    toggle.setAttribute("aria-expanded", "false");
+    rail.classList.add("collapsed");
+    return;
+  }
+
+  actionsWrap.innerHTML = validActions.map((action, index) => `
+    <button
+      class="btn ${action.secondary === false ? "" : "secondary"} page-action-btn"
+      type="button"
+      data-page-action="${index}"
+    >
+      ${action.label}
+    </button>
+  `).join("");
+
+  validActions.forEach((action, index) => {
+    pageActionHandlers.set(String(index), action.onClick);
+  });
+
+  rail.hidden = false;
+  rail.classList.toggle("collapsed", collapsed);
+  toggle.textContent = rail.classList.contains("collapsed")
+    ? `${toggleLabel} ▾`
+    : `${toggleLabel} ▴`;
+  toggle.setAttribute("aria-expanded", rail.classList.contains("collapsed") ? "false" : "true");
+}
+
+function clearPageActionRail() {
+  setPageActionRail([]);
+}
+
+function closeUtilityRail() {
+  const utilityRail = byId("utilityRail");
+  const utilityRailToggle = byId("utilityRailToggle");
+  if (!utilityRail || !utilityRailToggle) return;
+
+  utilityRail.classList.add("collapsed");
+  utilityRailToggle.textContent = "Tools ▾";
+  utilityRailToggle.setAttribute("aria-expanded", "false");
+}
+
+function updateUtilityRailPosition() {
+  const toolbar = byId("topToolbar");
+  const utilityRail = byId("utilityRail");
+  const utilityRailToggle = byId("utilityRailToggle");
+
+  if (!toolbar || !utilityRail || !utilityRailToggle) return;
+
+  const toolbarRect = toolbar.getBoundingClientRect();
+  const toggleRect = utilityRailToggle.getBoundingClientRect();
+  const left = Math.max(0, Math.round(toggleRect.left - toolbarRect.left));
+  toolbar.style.setProperty("--utility-rail-left", `${left}px`);
 }
 
 function clearRegionMarkers() {
@@ -766,6 +1602,30 @@ function getModeratingFactorNotes(countryKey, regionKey = null, subregionKey = n
   return curatedNotes.length ? curatedNotes : normalizedFallback;
 }
 
+function getFactorType(text) {
+  const value = String(text || "").toLowerCase();
+  if (/atlantic|pacific|ocean|sea|coastal|maritime|benguela|humboldt|fog|current/.test(value)) return "coast";
+  if (/river|gironde|estuary|douro|loire|danube|rhine|mosel|marne|bodrog|tisza|duero/.test(value)) return "river";
+  if (/lake/.test(value)) return "lake";
+  if (/mountain|altitude|alpine|andes|vosges|rain shadow|slope|terraces/.test(value)) return "mountain";
+  if (/wind|mistral|breezes|cloud cover/.test(value)) return "wind";
+  return "generic";
+}
+
+function getFactorIcon(type) {
+  if (type === "coast") return "🌊";
+  if (type === "river" || type === "lake") return "💧";
+  if (type === "mountain") return "⛰️";
+  if (type === "wind") return "🌬️";
+  return "📍";
+}
+
+function renderModeratingFactorText(notes = []) {
+  if (!Array.isArray(notes) || !notes.length) return "";
+
+  return `<p>${notes.map(note => renderStudyHighlightedText(note)).join(" • ")}</p>`;
+}
+
 function getSubregionEntries(countryKey, regionKey, region) {
   const entries = Object.entries(region?.subregions || {});
 
@@ -899,17 +1759,18 @@ function showSelectedSubregionMarker(countryKey, regionKey, subregionKey, subreg
   const marker = L.marker(coords, {
     icon: L.divIcon({
       className: "region-map-marker-wrap",
-      html: buildMapMarkerButton(subregion.name || subregionKey, {
-        markerType: "subregion",
-        selected: true
-      }),
+        html: buildMapMarkerButton(subregion.name || subregionKey, {
+          markerType: "subregion",
+          selected: true,
+          climate: subregion.climate || ""
+        }),
       iconSize: null
     }),
     keyboard: true,
     title: subregion.name || subregionKey
   });
 
-  marker.on("click", () => showSubregion(countryKey, regionKey, subregionKey));
+  marker.on("click", () => showSubregion(countryKey, regionKey, subregionKey, { adjustSheet: true }));
   marker.addTo(map);
   state.subregionMarkers.push(marker);
 
@@ -938,7 +1799,8 @@ function showSubregionMarkers(countryKey, regionKey, region) {
       icon: L.divIcon({
         className: "region-map-marker-wrap",
         html: buildMapMarkerButton(subregion.name || subregionKey, {
-          markerType: "subregion"
+          markerType: "subregion",
+          climate: subregion.climate || region.climate || ""
         }),
         iconSize: null
       }),
@@ -946,7 +1808,7 @@ function showSubregionMarkers(countryKey, regionKey, region) {
       title: subregion.name || subregionKey
     });
 
-    marker.on("click", () => showSubregion(countryKey, regionKey, subregionKey));
+    marker.on("click", () => showSubregion(countryKey, regionKey, subregionKey, { adjustSheet: true }));
     marker.addTo(map);
     state.subregionMarkers.push(marker);
   });
@@ -1047,7 +1909,8 @@ function showRegionMarkers(countryKey, country) {
       icon: L.divIcon({
         className: "region-map-marker-wrap",
         html: buildMapMarkerButton(region.name || regionKey, {
-          markerType: "region"
+          markerType: "region",
+          climate: region.climate || ""
         }),
         iconSize: null
       }),
@@ -1055,7 +1918,7 @@ function showRegionMarkers(countryKey, country) {
       title: region.name || regionKey
     });
 
-    marker.on("click", () => showRegion(countryKey, regionKey));
+    marker.on("click", () => showRegion(countryKey, regionKey, { adjustSheet: true }));
     marker.addTo(map);
     state.regionMarkers.push(marker);
   });
@@ -1068,97 +1931,188 @@ function showRegionMarkers(countryKey, country) {
 // ================= INIT =================
 async function init() {
   showLoading("Loading Wine Atlas...");
-  state.countriesData = await loadJson("./data/countries.json");
-  state.moderatingFactors = await loadJson("./data/moderating-factors.json");
-  state.regionCoords = await loadJson("./data/region-coords.json");
-  state.regionBoundaries = await loadJson("./data/region-boundaries.json");
-  state.subregionCoords = await loadJson("./data/subregion-coords.json");
-  state.subregionBoundaries = await loadJson("./data/subregion-boundaries.json");
-  state.quizQuestions = [];
-
-  Object.keys(state.countriesData).forEach(key => {
-    const c = state.countriesData[key];
-    if (!c.coords) return;
-
-    const marker = L.marker(c.coords, {
-      icon: L.divIcon({
-        className: "country-map-marker-wrap",
-        html: buildMapMarkerButton(c.name || key, {
-          markerType: "country"
-        }),
-        iconSize: null
-      }),
-      keyboard: true,
-      title: c.name || key
-    }).addTo(map);
-    marker.on("click", () => showCountry(key));
-    state.markers[key] = marker;
-  });
-
-  scheduleMarkerOverlapLayout(140);
-
-  byId("searchInput").addEventListener("input", debounce(function (e) {
-    searchAll(e.target.value);
-  }, 250));
-
-  byId("quizBtn").addEventListener("click", () => showQuizModes());
-  byId("favoritesBtn").addEventListener("click", () => showFavorites());
-  byId("progressBtn").addEventListener("click", () => showProgress());
-  byId("recentBtn").addEventListener("click", () => showRecent());
-
-  document.querySelectorAll(".filter-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-      document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
-      applyFilter(btn.dataset.filter);
-    });
-  });
-
-  state.quizQuestions = await loadJson("./data/quiz.json");
-
-  buildGeneratedQuestions().catch(err => {
-    console.error("Question generation failed:", err);
-  });
-
-  renderHomePanel();
-  const toolbar = byId("topToolbar");
-  const toolbarToggle = byId("toolbarToggle");
-
-  if (toolbar && toolbarToggle) {
-    toolbarToggle.addEventListener("click", () => {
-      toolbar.classList.toggle("expanded");
-      toolbarToggle.textContent = toolbar.classList.contains("expanded")
-        ? "Filters ▴"
-        : "Filters ▾";
-
-      setTimeout(() => {
-        updateSheetMetrics();
-        applySheetState(currentSheetState);
-      }, 30);
-    });
-  }
   updateSheetMetrics();
-  window.addEventListener("resize", () => {
-    updateSheetMetrics();
-    applySheetState(currentSheetState);
-  });
+  openSheetMid();
 
-  window.addEventListener("orientationchange", () => {
+  try {
+    state.countriesData = await loadJson("./data/countries.json");
+    state.moderatingFactors = await loadJson("./data/moderating-factors.json");
+    state.regionCoords = await loadJson("./data/region-coords.json");
+    state.regionBoundaries = await loadJson("./data/region-boundaries.json");
+    state.subregionCoords = await loadJson("./data/subregion-coords.json");
+    state.subregionBoundaries = await loadJson("./data/subregion-boundaries.json");
+    state.quizQuestions = [];
+
+    Object.keys(state.countriesData || {}).forEach(key => {
+      const c = state.countriesData[key];
+      if (!c?.coords) return;
+
+      const marker = L.marker(c.coords, {
+        icon: L.divIcon({
+          className: "country-map-marker-wrap",
+          html: buildMapMarkerButton(c.name || key, {
+            markerType: "country"
+          }),
+          iconSize: null
+        }),
+        keyboard: true,
+        title: c.name || key
+      }).addTo(map);
+      marker.on("click", () => showCountry(key));
+      state.markers[key] = marker;
+    });
+
+    scheduleMarkerOverlapLayout(140);
+
+    byId("searchInput").addEventListener("input", debounce(function (e) {
+      searchAll(e.target.value);
+    }, 250));
+
+    byId("quizBtn").addEventListener("click", () => {
+      closeUtilityRail();
+      showQuizModes();
+    });
+    byId("favoritesBtn").addEventListener("click", () => {
+      closeUtilityRail();
+      showFavorites();
+    });
+    byId("progressBtn").addEventListener("click", () => {
+      closeUtilityRail();
+      showProgress();
+    });
+    byId("recentBtn").addEventListener("click", () => {
+      closeUtilityRail();
+      showRecent();
+    });
+    byId("cycleToolBtn").addEventListener("click", () => {
+      closeUtilityRail();
+      void showCycleLogicTool();
+    });
+    byId("homeBtn").addEventListener("click", () => {
+      const searchInput = byId("searchInput");
+      if (searchInput) {
+        searchInput.value = "";
+      }
+
+      restoreCountryMarkers();
+      map.setView([25, 10], 2);
+      openSheetMid();
+      renderHomePanel();
+    });
+
+    const floatingBackBtn = byId("floatingBackBtn");
+    if (floatingBackBtn) {
+      floatingBackBtn.addEventListener("click", () => {
+        if (typeof floatingBackAction === "function") {
+          floatingBackAction();
+        }
+      });
+    }
+
+    document.querySelectorAll(".filter-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        applyFilter(btn.dataset.filter);
+      });
+    });
+
+    state.quizQuestions = await loadJson("./data/quiz.json");
+
+    buildGeneratedQuestions().catch(err => {
+      console.error("Question generation failed:", err);
+    });
+
+    renderHomePanel();
+    const toolbar = byId("topToolbar");
+    const toolbarToggle = byId("toolbarToggle");
+    const utilityRail = byId("utilityRail");
+    const utilityRailToggle = byId("utilityRailToggle");
+    const pageActionRail = byId("pageActionRail");
+    const pageActionRailToggle = byId("pageActionRailToggle");
+    const pageActionRailActions = byId("pageActionRailActions");
+
+    updateUtilityRailPosition();
+
+    if (toolbar && toolbarToggle) {
+      toolbarToggle.addEventListener("click", () => {
+        toolbar.classList.toggle("search-collapsed");
+        const expanded = !toolbar.classList.contains("search-collapsed");
+        toolbarToggle.textContent = expanded ? "Search ▴" : "Search ▾";
+        toolbarToggle.setAttribute("aria-expanded", expanded ? "true" : "false");
+
+        setTimeout(() => {
+          updateSheetMetrics();
+          applySheetState(currentSheetState);
+        }, 30);
+      });
+    }
+
+    if (utilityRail && utilityRailToggle) {
+      utilityRailToggle.addEventListener("click", () => {
+        utilityRail.classList.toggle("collapsed");
+        const expanded = !utilityRail.classList.contains("collapsed");
+        utilityRailToggle.textContent = expanded ? "Tools ▴" : "Tools ▾";
+        utilityRailToggle.setAttribute("aria-expanded", expanded ? "true" : "false");
+        updateUtilityRailPosition();
+      });
+    }
+
+    if (pageActionRail && pageActionRailToggle) {
+      pageActionRailToggle.addEventListener("click", () => {
+        pageActionRail.classList.toggle("collapsed");
+        const expanded = !pageActionRail.classList.contains("collapsed");
+        pageActionRailToggle.textContent = expanded ? "Page ▴" : "Page ▾";
+        pageActionRailToggle.setAttribute("aria-expanded", expanded ? "true" : "false");
+      });
+    }
+
+    if (pageActionRailActions) {
+      pageActionRailActions.addEventListener("click", event => {
+        const button = event.target.closest("[data-page-action]");
+        if (!button) return;
+
+        const handler = pageActionHandlers.get(button.dataset.pageAction);
+        if (typeof handler === "function") {
+          handler();
+        }
+      });
+    }
+
     updateSheetMetrics();
-    applySheetState(currentSheetState);
-  });
+    window.addEventListener("resize", () => {
+      updateUtilityRailPosition();
+      updateSheetMetrics();
+      applySheetState(currentSheetState);
+    });
+
+    window.addEventListener("orientationchange", () => {
+      updateUtilityRailPosition();
+      updateSheetMetrics();
+      applySheetState(currentSheetState);
+    });
+
+    openSheetMid();
+  } catch (error) {
+    console.error("Wine Atlas init failed:", error);
+    setPanelTitle("Wine Atlas PRO");
+    setBreadcrumb([{ label: "Home" }]);
+    byId("content").innerHTML = `
+      <div class="section-card">
+        <p class="section-title">Startup Issue</p>
+        <p>The app hit an error while loading. Refresh once and check the browser console if it still happens.</p>
+      </div>
+    `;
+    openSheetMid();
+  }
 }
 
-init();
-
-map.on("zoomend moveend", () => {
-  scheduleMarkerOverlapLayout(40);
-});
-
 // ================= COUNTRY =================
-async function showCountry(countryKey) {
+async function showCountry(countryKey, { adjustSheet = false } = {}) {
   showLoading("Loading country...");
-  openSheetMid();
+  if (adjustSheet) {
+    openSheetMid();
+  }
   try {
     const countryMeta = state.countriesData[countryKey];
     if (!countryMeta) return;
@@ -1168,13 +2122,13 @@ async function showCountry(countryKey) {
 
     setPanelTitle(country.name || countryKey);
     setBreadcrumb([{ label: country.name || countryKey }]);
+    clearPageActionRail();
 
     showRegionMarkers(countryKey, country);
     showModeratingFactors(countryKey);
 
     let html = `
       <div class="section-card">
-        <button class="btn secondary" id="backToCountriesBtn">← All Countries</button>
         <p><b>Country:</b> ${country.name}</p>
         <p>Select a ${state.currentFilter === "all" ? "" : `${state.currentFilter} `}region to view its details.</p>
         <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;">
@@ -1201,14 +2155,11 @@ async function showCountry(countryKey) {
 
     byId("content").innerHTML = html;
 
-    const backBtn = byId("backToCountriesBtn");
-    if (backBtn) {
-      backBtn.onclick = () => {
-        restoreCountryMarkers();
-        map.setView([25, 10], 2);
-        renderHomePanel();
-      };
-    }
+    setFloatingBackButton("← All Countries", () => {
+      restoreCountryMarkers();
+      map.setView([25, 10], 2);
+      renderHomePanel();
+    });
 
     document.querySelectorAll("[data-region]").forEach(btn => {
       btn.addEventListener("click", () => showRegion(countryKey, btn.dataset.region));
@@ -1225,9 +2176,11 @@ async function showCountry(countryKey) {
 }
 
 // ================= REGION =================
-async function showRegion(countryKey, regionKey) {
+async function showRegion(countryKey, regionKey, { adjustSheet = false } = {}) {
   showLoading("Loading region...");
-  openSheetMid();
+  if (adjustSheet) {
+    openSheetMid();
+  }
   try {
     const countryMeta = state.countriesData[countryKey];
     const country = await loadJson(`./data/${countryMeta.file}`);
@@ -1270,14 +2223,11 @@ async function showRegion(countryKey, regionKey) {
 
     let html = `
       <div class="section-card">
-        <button class="btn secondary" id="backToCountry">← Back</button>
-        <button class="btn secondary" id="quizThisRegionBtn">🧠 Quiz This Region</button>
-        ${renderStudyButtons(pageKey)}
-
         <p><b>Region:</b> ${region.name || regionKey}</p>
         ${region.summary ? `<p><b>Summary:</b> ${region.summary}</p>` : ""}
         <p><b>Climate:</b> ${region.climate || "-"}</p>
-        ${moderatingNotes.length ? `<p><b>Moderating Factors:</b> ${moderatingNotes.join(" • ")}</p>` : ""}
+        ${region.climate ? `<div class="chips">${renderClimateChip(region.climate)}</div>` : ""}
+        ${moderatingNotes.length ? `<p><b>Moderating Factors:</b></p>${renderModeratingFactorText(moderatingNotes)}` : ""}
         <p><b>Style:</b> ${region.styleSummary || "-"}</p>
         ${renderStudyList("Vineyard Factors", region.vineyardFactors)}
         ${renderStudyList("Human Factors", region.humanFactors)}
@@ -1342,9 +2292,22 @@ async function showRegion(countryKey, regionKey) {
 
     byId("content").innerHTML = html;
 
-    bindStudyButtons(pageKey, () => showRegion(countryKey, regionKey));
+    setFloatingBackButton("← Back", () => showCountry(countryKey));
+    setPageActionRail([
+      {
+        label: "🧠 Quiz This Region",
+        onClick: async () => {
+          const questions = await buildQuizForRegion(
+            regionKey,
+            region,
+            country.name
+          );
 
-    byId("backToCountry").onclick = () => showCountry(countryKey);
+          startCustomQuiz(questions, `Quiz: ${region.name}`);
+        }
+      },
+      ...getStudyActions(pageKey, () => showRegion(countryKey, regionKey))
+    ]);
 
     document.querySelectorAll("[data-subregion]").forEach(btn => {
       btn.addEventListener("click", () => showSubregion(countryKey, regionKey, btn.dataset.subregion));
@@ -1358,16 +2321,6 @@ async function showRegion(countryKey, regionKey) {
       btn.addEventListener("click", () => showStyle(countryKey, btn.dataset.style, regionKey));
     });
     bindPronounceButtons();
-
-    byId("quizThisRegionBtn").onclick = async () => {
-      const questions = await buildQuizForRegion(
-        regionKey,
-        region,
-        country.name
-      );
-
-      startCustomQuiz(questions, `Quiz: ${region.name}`);
-    };
   } catch (err) {
     console.error("showRegion failed:", err);
     byId("content").innerHTML = `
@@ -1378,9 +2331,11 @@ async function showRegion(countryKey, regionKey) {
   }
 }
 
-async function showSubregion(countryKey, regionKey, subregionKey) {
+async function showSubregion(countryKey, regionKey, subregionKey, { adjustSheet = false } = {}) {
   showLoading("Loading sub-region...");
-  openSheetMid();
+  if (adjustSheet) {
+    openSheetMid();
+  }
   try {
     const countryMeta = state.countriesData[countryKey];
     const country = await loadJson(`./data/${countryMeta.file}`);
@@ -1397,6 +2352,7 @@ async function showSubregion(countryKey, regionKey, subregionKey) {
       { label: region.name || regionKey, click: () => showRegion(countryKey, regionKey) },
       { label: subregion.name || subregionKey }
     ]);
+    clearPageActionRail();
 
     const subregionGrapeEntries = Object.entries(subregion.grapes || {});
     const derivedGrapeKeys = subregionGrapeEntries.length
@@ -1411,11 +2367,11 @@ async function showSubregion(countryKey, regionKey, subregionKey) {
 
     let html = `
       <div class="section-card">
-        <button class="btn secondary" id="backToRegion">← Back</button>
         <p><b>Sub-region:</b> ${subregion.name || subregionKey}</p>
         ${subregion.summary ? `<p><b>Summary:</b> ${subregion.summary}</p>` : ""}
         <p><b>Climate:</b> ${subregion.climate || region.climate || "-"}</p>
-        ${moderatingNotes.length ? `<p><b>Moderating Factors:</b> ${moderatingNotes.join(" • ")}</p>` : ""}
+        ${(subregion.climate || region.climate) ? `<div class="chips">${renderClimateChip(subregion.climate || region.climate)}</div>` : ""}
+        ${moderatingNotes.length ? `<p><b>Moderating Factors:</b></p>${renderModeratingFactorText(moderatingNotes)}` : ""}
         <p><b>Style:</b> ${subregion.styleSummary || "-"}</p>
         ${renderStudyList("Vineyard Factors", subregion.vineyardFactors)}
         ${renderStudyList("Human Factors", subregion.humanFactors)}
@@ -1451,7 +2407,7 @@ async function showSubregion(countryKey, regionKey, subregionKey) {
 
     byId("content").innerHTML = html;
 
-    byId("backToRegion").onclick = () => showRegion(countryKey, regionKey);
+    setFloatingBackButton("← Back", () => showRegion(countryKey, regionKey));
 
     document.querySelectorAll("[data-subregion-grape]").forEach(btn => {
       btn.addEventListener("click", () => showGrape(countryKey, regionKey, btn.dataset.subregionGrape, subregionKey));
@@ -1469,9 +2425,11 @@ async function showSubregion(countryKey, regionKey, subregionKey) {
 }
 
 // ================= GRAPE =================
-async function showGrape(countryKey, regionKey, grapeKey, subregionKey = null) {
+async function showGrape(countryKey, regionKey, grapeKey, subregionKey = null, { adjustSheet = false } = {}) {
   showLoading("Loading grape profile...");
-  openSheetFull();
+  if (adjustSheet) {
+    openSheetFull();
+  }
 
   const countryMeta = state.countriesData[countryKey];
   const country = await loadJson(`./data/${countryMeta.file}`);
@@ -1542,13 +2500,6 @@ async function showGrape(countryKey, regionKey, grapeKey, subregionKey = null) {
 
   byId("content").innerHTML = `
     <div class="section-card">
-      <button class="btn secondary" id="backToRegion">← Back</button>
-      <button class="btn" id="favBtn">⭐ Favorite</button>
-      <button class="btn secondary" id="quizThisGrapeBtn">🧠 Quiz This Grape</button>
-      ${renderStudyButtons(pageKey)}
-    </div>
-
-    <div class="section-card">
       <p><b>Grape:</b> ${grapeKey}</p>
       <p><b>Style:</b> ${grape.style || "-"}</p>
       ${grape.summary ? `<p><b>Summary:</b> ${grape.summary}</p>` : ""}
@@ -1611,38 +2562,44 @@ async function showGrape(countryKey, regionKey, grapeKey, subregionKey = null) {
 
   bindPronounceButtons();
 
-  byId("backToRegion").onclick = () => {
+  setFloatingBackButton("← Back", () => {
     if (subregionKey && subregion) {
       showSubregion(countryKey, regionKey, subregionKey);
     } else {
       showRegion(countryKey, regionKey);
     }
-  };
+  });
+  setPageActionRail([
+    {
+      label: "⭐ Favorite",
+      secondary: false,
+      onClick: () => {
+        const item = `${country.name} > ${region.name} > ${grapeKey}`;
 
-  byId("favBtn").onclick = () => {
-    const item = `${country.name} > ${region.name} > ${grapeKey}`;
+        if (!state.favorites.includes(item)) {
+          state.favorites.push(item);
+          saveFavorites();
+          alert("Added to favorites");
+        } else {
+          alert("Already in favorites");
+        }
+      }
+    },
+    {
+      label: "🧠 Quiz This Grape",
+      onClick: async () => {
+        const questions = await buildQuizForGrape(
+          grapeKey,
+          grape,
+          region.name,
+          country.name
+        );
 
-    if (!state.favorites.includes(item)) {
-      state.favorites.push(item);
-      saveFavorites();
-      alert("Added to favorites");
-    } else {
-      alert("Already in favorites");
-    }
-  };
-  
-  byId("quizThisGrapeBtn").onclick = async () => {
-    const questions = await buildQuizForGrape(
-      grapeKey,
-      grape,
-      region.name,
-      country.name
-    );
-
-    startCustomQuiz(questions, `Quiz: ${grapeKey}`);
-  };
-
-  bindStudyButtons(pageKey, () => showGrape(countryKey, regionKey, grapeKey, subregionKey));
+        startCustomQuiz(questions, `Quiz: ${grapeKey}`);
+      }
+    },
+    ...getStudyActions(pageKey, () => showGrape(countryKey, regionKey, grapeKey, subregionKey))
+  ]);
 
   const item = `${country.name} > ${region.name} > ${grapeKey}`;
   recent = recent.filter(x => x !== item);
@@ -1652,10 +2609,14 @@ async function showGrape(countryKey, regionKey, grapeKey, subregionKey = null) {
 }
 
 // ================= FAVORITES =================
-function showFavorites() {
+function showFavorites({ adjustSheet = false } = {}) {
   showLoading("Loading favorites...");
   restoreCountryMarkers();
-  openSheetFull();
+  if (adjustSheet) {
+    openSheetFull();
+  }
+  clearFloatingBackButton();
+  clearPageActionRail();
   setPanelTitle("Favorites");
   setBreadcrumb([{ label: "Favorites" }]);
 
@@ -1708,9 +2669,65 @@ function showFavorites() {
     });
   });
 }
-function showQuizModes() {
+
+function showRecent({ adjustSheet = false } = {}) {
+  showLoading("Loading recent...");
   restoreCountryMarkers();
-  openSheetFull();
+  if (adjustSheet) {
+    openSheetFull();
+  }
+  clearFloatingBackButton();
+  clearPageActionRail();
+  setPanelTitle("Recent");
+  setBreadcrumb([{ label: "Recent" }]);
+
+  if (!recent.length) {
+    byId("content").innerHTML = `<div class="section-card"><p>No recent pages yet.</p></div>`;
+    return;
+  }
+
+  let html = `<div class="section-card"><p><b>Recently Viewed:</b></p>`;
+
+  recent.forEach((item, index) => {
+    html += `
+      <div class="list-card">
+        <div style="cursor:pointer;" data-open-recent="${index}">${item}</div>
+      </div>
+    `;
+  });
+
+  html += `</div>`;
+  byId("content").innerHTML = html;
+
+  document.querySelectorAll("[data-open-recent]").forEach(btn => {
+    btn.addEventListener("click", async () => {
+      const entry = parseFavorite(recent[btn.dataset.openRecent]);
+
+      for (const countryKey in state.countriesData) {
+        const countryMeta = state.countriesData[countryKey];
+        if (countryMeta.name !== entry.country) continue;
+
+        const country = await loadJson(`./data/${countryMeta.file}`);
+
+        for (const regionKey in country.regions) {
+          const region = country.regions[regionKey];
+          if (region.name !== entry.region) continue;
+
+          await showGrape(countryKey, regionKey, entry.grape);
+          return;
+        }
+      }
+    });
+  });
+}
+
+function showQuizModes({ adjustSheet = false } = {}) {
+  restoreCountryMarkers();
+  if (adjustSheet) {
+    openSheetFull();
+  }
+  clearFloatingBackButton();
+  clearPageActionRail();
 
   setPanelTitle("Select Quiz Mode");
   setBreadcrumb([{ label: "Quiz" }]);
@@ -1737,9 +2754,173 @@ function showQuizModes() {
   });
 }
 
+async function getCycleLogicLinks(keywords = [], limit = 6) {
+  const matches = [];
+  const loweredKeywords = keywords.map(item => String(item).toLowerCase());
+
+  for (const countryKey in state.countriesData) {
+    const countryMeta = state.countriesData[countryKey];
+    const country = await loadJson(`./data/${countryMeta.file}`);
+
+    for (const regionKey in (country.regions || {})) {
+      const region = country.regions[regionKey];
+      const regionText = [
+        region.name,
+        region.summary,
+        region.climate,
+        region.styleSummary,
+        ...(region.mitigating || []),
+        ...(region.vineyardFactors || []),
+        ...(region.humanFactors || [])
+      ].join(" ").toLowerCase();
+
+      const regionScore = loweredKeywords.reduce((score, keyword) =>
+        score + (regionText.includes(keyword) ? 1 : 0), 0);
+
+      if (regionScore > 0) {
+        matches.push({
+          type: "region",
+          score: regionScore,
+          label: `${region.name || regionKey} (${country.name})`,
+          action: () => showRegion(countryKey, regionKey)
+        });
+      }
+
+      for (const subregionKey in (region.subregions || {})) {
+        const subregion = region.subregions[subregionKey];
+        const subregionText = [
+          subregion.name,
+          subregion.summary,
+          subregion.climate,
+          subregion.styleSummary,
+          ...(subregion.mitigating || []),
+          ...(subregion.vineyardFactors || []),
+          ...(subregion.humanFactors || [])
+        ].join(" ").toLowerCase();
+
+        const subregionScore = loweredKeywords.reduce((score, keyword) =>
+          score + (subregionText.includes(keyword) ? 1 : 0), 0);
+
+        if (subregionScore > 0) {
+          matches.push({
+            type: "subregion",
+            score: subregionScore + 0.25,
+            label: `${subregion.name || subregionKey} (${region.name || regionKey}, ${country.name})`,
+            action: () => showSubregion(countryKey, regionKey, subregionKey)
+          });
+        }
+      }
+    }
+  }
+
+  return matches
+    .sort((a, b) => b.score - a.score || a.label.localeCompare(b.label))
+    .slice(0, limit);
+}
+
+async function showCycleLogicTool({ adjustSheet = false } = {}) {
+  showLoading("Building plant-to-bottle flow...");
+  restoreCountryMarkers();
+  if (adjustSheet) {
+    openSheetFull();
+  } else {
+    openSheetMid();
+  }
+  clearFloatingBackButton();
+  clearPageActionRail();
+  closeUtilityRail();
+  setPanelTitle("Cycle Logic");
+  setBreadcrumb([{ label: "Tools" }, { label: "Cycle Logic" }]);
+
+  try {
+    const climateCards = [];
+    for (const climatePath of CYCLE_CLIMATE_PATHS) {
+      const links = await getCycleLogicLinks(climatePath.keywords, 4);
+      climateCards.push(`
+        <div class="section-card cycle-climate-card">
+          <div class="cycle-climate-head">
+            <div class="cycle-climate-badge">${climatePath.icon} ${climatePath.title}</div>
+            <div>
+              <div class="cycle-stage-title">${climatePath.title} Path</div>
+              <div class="cycle-stage-sub">${climatePath.summary}</div>
+            </div>
+          </div>
+          <div class="cycle-climate-chain">
+            ${climatePath.steps.map((step, index) => `
+              <div class="cycle-climate-step">
+                <div class="cycle-climate-step-head">
+                  <span class="cycle-step-number">${index + 1}</span>
+                  <div>
+                    <div class="cycle-stage-title cycle-climate-step-title">${step.title}</div>
+                    <div class="cycle-stage-sub">${step.stage}: ${step.pressure}</div>
+                  </div>
+                </div>
+                <div class="cycle-detail-list">
+                  <div class="cycle-detail-row"><span class="cycle-detail-label">Pressure</span><span>${step.pressure}</span></div>
+                  <div class="cycle-detail-row"><span class="cycle-detail-label">Response</span><span>${step.response}</span></div>
+                  <div class="cycle-detail-row"><span class="cycle-detail-label">Method</span><span>${step.method}</span></div>
+                  <div class="cycle-detail-row"><span class="cycle-detail-label">Example</span><span>${step.example}</span></div>
+                </div>
+              </div>
+            `).join("")}
+          </div>
+          <div class="cycle-result-node">
+            <div class="cycle-network-label">Result Wine Direction</div>
+            <div class="cycle-result-title">${climatePath.result}</div>
+            <div class="cycle-links cycle-result-links">
+              ${links.length ? links.map((link, linkIndex) => `
+                <button class="btn" type="button" data-cycle-climate-link="${climatePath.id}::${linkIndex}">
+                  ${link.type === "subregion" ? "Sub-region" : "Region"}: ${link.label}
+                </button>
+              `).join("") : `<p class="empty-state">No example regions matched yet.</p>`}
+            </div>
+          </div>
+        </div>
+      `);
+      climatePath._links = links;
+    }
+
+    byId("content").innerHTML = `
+      <div class="section-card">
+        <p class="section-title">Climate-Based Wine Cycle Logic</p>
+        <p>This guide is now organized by climate type. Each climate follows its own step-by-step chain from site choice to bottle, with the key climate pressure and the grower or winemaker response at every step.</p>
+        <p>The idea is exactly the way you described: for example, one climate path may show <code>spring frost -&gt; wind machine</code>, while another shows <code>drought -&gt; irrigation</code>. Example region and sub-region tags appear near the final wine direction for each climate path.</p>
+      </div>
+      <div class="cycle-climate-grid">
+        ${climateCards.join("")}
+      </div>
+    `;
+
+    document.querySelectorAll("[data-cycle-climate-link]").forEach(button => {
+      button.addEventListener("click", () => {
+        const [climateId, indexText] = button.dataset.cycleClimateLink.split("::");
+        const climatePath = CYCLE_CLIMATE_PATHS.find(item => item.id === climateId);
+        const link = climatePath?._links?.[Number(indexText)];
+        if (link?.action) {
+          link.action();
+        }
+      });
+    });
+  } catch (error) {
+    console.error(error);
+    byId("content").innerHTML = `
+      <div class="section-card">
+        <p class="section-title">Cycle Logic</p>
+        <p>Something went wrong while building the plant-to-bottle guide.</p>
+        <button class="btn" type="button" id="retryCycleLogicBtn">Try Again</button>
+      </div>
+    `;
+    byId("retryCycleLogicBtn")?.addEventListener("click", () => {
+      void showCycleLogicTool({ adjustSheet: true });
+    });
+  }
+}
+
 // ================= SEARCH =================
 async function searchAll(query) {
   restoreCountryMarkers();
+  clearFloatingBackButton();
+  clearPageActionRail();
   const q = String(query || "").trim().toLowerCase();
 
   if (!q) {
@@ -2133,9 +3314,11 @@ async function searchAll(query) {
 }
 
 // ================= STYLE =================
-async function showStyle(countryKey, styleKey, regionKey = null) {
+async function showStyle(countryKey, styleKey, regionKey = null, { adjustSheet = false } = {}) {
   showLoading("Loading style...");
-  openSheetFull();
+  if (adjustSheet) {
+    openSheetFull();
+  }
   const countryMeta = state.countriesData[countryKey];
   const country = await loadJson(`./data/${countryMeta.file}`);
   let style = null;
@@ -2190,23 +3373,23 @@ async function showStyle(countryKey, styleKey, regionKey = null) {
 
   breadcrumb.push({ label: style.name });
   setBreadcrumb(breadcrumb);
+  clearPageActionRail();
 
   byId("content").innerHTML = `
     <div class="section-card">
-      <button class="btn secondary" id="backToStyleSource">← Back</button>
       <p><b>Style:</b> ${style.style}</p>
       <p><b>Aging:</b> ${style.aging}</p>
       <p><b>Key Point:</b> ${style.keyPoint}</p>
     </div>
   `;
 
-  byId("backToStyleSource").onclick = () => {
+  setFloatingBackButton("← Back", () => {
     if (sourceRegionKey && country.regions?.[sourceRegionKey]) {
       showRegion(countryKey, sourceRegionKey);
     } else {
       showCountry(countryKey);
     }
-  };
+  });
 }
 
 // ================= FILTER =================
@@ -2303,64 +3486,59 @@ function unmarkPageAsStudied(pageKey) {
   saveStudiedPages();
 }
 
-function renderStudyButtons(pageKey) {
+function getStudyActions(pageKey, onRefresh) {
   const studied = isStudiedPage(pageKey);
 
-  return `
-    <button class="btn secondary" id="studyPageBtn">📘 Study This Page</button>
-    <button class="btn ${studied ? "" : "secondary"}" id="toggleStudiedBtn">
-      ${studied ? "✅ Studied" : "☑️ Mark as Studied"}
-    </button>
-  `;
-}
-
-function bindStudyButtons(pageKey, onRefresh) {
-  const studyBtn = byId("studyPageBtn");
-  const toggleBtn = byId("toggleStudiedBtn");
-
-  if (studyBtn) {
-    studyBtn.onclick = () => {
+  return [
+    {
+      label: "📘 Study This Page",
+      onClick: () => {
       alert("Study Mode: Read this page carefully, then test yourself with Quiz This Page.");
-    };
-  }
-
-  if (toggleBtn) {
-    toggleBtn.onclick = () => {
-      if (isStudiedPage(pageKey)) {
-        unmarkPageAsStudied(pageKey);
-      } else {
-        markPageAsStudied(pageKey);
       }
+    },
+    {
+      label: studied ? "✅ Studied" : "☑️ Mark as Studied",
+      secondary: !studied,
+      onClick: () => {
+        if (isStudiedPage(pageKey)) {
+          unmarkPageAsStudied(pageKey);
+        } else {
+          markPageAsStudied(pageKey);
+        }
 
-      if (typeof onRefresh === "function") {
-        onRefresh();
+        if (typeof onRefresh === "function") {
+          onRefresh();
+        }
       }
-    };
-  }
+    }
+  ];
 }
 
 function updateSheetMetrics() {
   const toolbar = byId("topToolbar");
   const toolbarToggle = byId("toolbarToggle");
   const searchInput = byId("searchInput");
+  const toolbarActions = byId("toolbarActions");
+  const toolbarSearchRow = byId("toolbarSearchRow");
   const root = document.documentElement;
 
-  if (!sheet || !toolbar || !searchInput) return;
+  if (!sheet || !toolbar || !searchInput || !toolbarActions) return;
 
   const viewportHeight = window.innerHeight || 1;
 
   const toolbarRect = toolbar.getBoundingClientRect();
-  const searchRect = searchInput.getBoundingClientRect();
+  const actionsRect = toolbarActions.getBoundingClientRect();
+  const searchVisible = !!toolbarSearchRow && !toolbar.classList.contains("search-collapsed");
+  const anchorRect = searchVisible
+    ? toolbarSearchRow.getBoundingClientRect()
+    : actionsRect;
 
-  // mobile 用 filter button，desktop 用整個 toolbar
   const topGap = window.innerWidth <= 640
     ? Math.round((toolbarToggle?.getBoundingClientRect().top ?? toolbarRect.top))
     : Math.round(toolbarRect.top);
+  const desiredTop = Math.round(anchorRect.bottom + topGap - (searchVisible ? 50 : 74));
 
-  // 呢個數愈大，sheet 愈高
-  const desiredTop = Math.round(searchRect.bottom + topGap - 50);
-
-  const sheetHeight = Math.max(400, Math.round(viewportHeight * 0.84));
+  const sheetHeight = Math.max(420, Math.round(viewportHeight * (window.innerWidth <= 1024 ? 0.9 : 0.88)));
   root.style.setProperty("--sheet-height", `${sheetHeight}px`);
 
   const openTranslate = ((viewportHeight - desiredTop - sheetHeight) / sheetHeight) * 100;
@@ -2368,14 +3546,14 @@ function updateSheetMetrics() {
   if (window.innerWidth <= 1024) {
     SHEET_STATES = {
       collapsed: 84,
-      mid: 38,
-      open: Math.max(-45, Math.min(0, openTranslate))
+      mid: 34,
+      open: Math.max(-56, Math.min(0, openTranslate))
     };
   } else {
     SHEET_STATES = {
       collapsed: 82,
-      mid: 32,
-      open: Math.max(-45, Math.min(0, openTranslate))
+      mid: 28,
+      open: Math.max(-50, Math.min(0, openTranslate))
     };
   }
 
@@ -2928,6 +4106,8 @@ function renderMeter(label, value) {
 // ================= PROGRESS =================
 function showProgress() {
   restoreCountryMarkers();
+  clearFloatingBackButton();
+  clearPageActionRail();
   setPanelTitle("Progress Dashboard");
   setBreadcrumb([{ label: "Progress" }]);
 
@@ -3262,6 +4442,12 @@ function openSheetFull({ resetScroll = true } = {}) {
   refreshMapLayout();
 }
 
+init();
+
+map.on("zoomend moveend", () => {
+  scheduleMarkerOverlapLayout(40);
+});
+
 // ================= AROMA CHIPS =================
 function renderChips(items = []) {
   if (!items.length) return "";
@@ -3343,9 +4529,9 @@ function renderPairingChips(items = []) {
   return `
     <div class="chips">
       ${items.map(item => `
-        <div class="pairing-chip">
+        <div class="pairing-chip food-chip">
           <span class="pairing-icon">${getPairingIcon(item)}</span>
-          <span>${item}</span>
+          <span>${escapeHtml(item)}</span>
         </div>
       `).join("")}
     </div>
@@ -3357,9 +4543,9 @@ function renderAromaChips(items = []) {
   return `
     <div class="chips">
       ${items.map(item => `
-        <div class="pairing-chip">
+        <div class="pairing-chip aroma-chip">
           <span class="pairing-icon">${getAromaIcon(item)}</span>
-          <span>${item}</span>
+          <span>${escapeHtml(item)}</span>
         </div>
       `).join("")}
     </div>
