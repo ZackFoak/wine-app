@@ -3537,11 +3537,11 @@ function updateSheetMetrics() {
     ? Math.round((toolbarToggle?.getBoundingClientRect().top ?? toolbarRect.top))
     : Math.round(toolbarRect.top);
   const desiredTop = window.innerWidth <= 640
-    ? Math.round(anchorRect.bottom + 18)
+    ? Math.round(anchorRect.bottom - 18)
     : Math.round(anchorRect.bottom + topGap - (searchVisible ? 50 : 74));
 
   const sheetHeight = window.innerWidth <= 640
-    ? Math.max(400, Math.round(viewportHeight * 0.82))
+    ? Math.max(420, Math.round(viewportHeight * 0.9))
     : Math.max(420, Math.round(viewportHeight * (window.innerWidth <= 1024 ? 0.9 : 0.88)));
   root.style.setProperty("--sheet-height", `${sheetHeight}px`);
 
@@ -3550,9 +3550,9 @@ function updateSheetMetrics() {
   if (window.innerWidth <= 1024) {
     SHEET_STATES = {
       collapsed: 84,
-      mid: window.innerWidth <= 640 ? 42 : 34,
+      mid: window.innerWidth <= 640 ? 34 : 34,
       open: window.innerWidth <= 640
-        ? Math.max(-32, Math.min(8, openTranslate))
+        ? Math.max(-56, Math.min(0, openTranslate))
         : Math.max(-56, Math.min(0, openTranslate))
     };
   } else {
