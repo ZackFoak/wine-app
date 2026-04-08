@@ -680,14 +680,15 @@
         left: 10px;
         right: 10px;
         width: auto;
-        padding: 10px;
-        gap: 8px;
+        padding: 8px;
+        gap: 6px;
+        border-radius: 18px;
       }
 
       .toolbar-row {
         display: flex;
         flex-wrap: wrap;
-        gap: 8px;
+        gap: 6px;
       }
 
       .toolbar-main-row {
@@ -697,6 +698,17 @@
       .toolbar .btn {
         width: auto;
         flex: 0 0 auto;
+        min-height: 42px;
+        padding: 9px 14px;
+        font-size: 14px;
+        border-radius: 14px;
+      }
+
+      .btn.app-home-btn {
+        min-height: 42px;
+        padding: 10px 18px;
+        font-size: 14px;
+        letter-spacing: 0.02em;
       }
 
       .toolbar-search-row,
@@ -719,6 +731,8 @@
       #searchInput {
         width: 100%;
         min-width: 0;
+        padding: 12px 14px;
+        font-size: 15px;
       }
 
       .pill {
@@ -734,7 +748,7 @@
       }
 
       #bottomSheet {
-        height: var(--sheet-height, 72dvh);
+        height: var(--sheet-height, 68dvh);
       }
 
       .utility-rail {
@@ -759,6 +773,18 @@
 
       .page-action-btn {
         min-width: 166px;
+      }
+
+      #title {
+        font-size: 26px;
+      }
+
+      .sheet-handle-wrap {
+        padding: 10px 14px 8px;
+      }
+
+      .sheet-body {
+        padding: 8px 14px calc(168px + env(safe-area-inset-bottom));
       }
     }
 
