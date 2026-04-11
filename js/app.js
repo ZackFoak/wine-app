@@ -529,8 +529,7 @@ const REGION_CATEGORY_RULES = {
     "france::champagne",
     "france::alsace",
     "france::burgundy",
-    "france::anjou-saumur",
-    "france::touraine",
+    "france::loire-valley",
     "italy::veneto",
     "italy::piemonte",
     "spain::penedes",
@@ -1255,16 +1254,126 @@ function restoreCountryMarkers() {
   scheduleMarkerOverlapLayout();
 }
 
-function getSubregionCoords(countryKey, regionKey, subregionKey) {
-  return state.subregionCoords?.[countryKey]?.[regionKey]?.[subregionKey] || null;
+function normalizeSubregionPath(subregionPath) {
+  if (Array.isArray(subregionPath)) {
+    return subregionPath
+      .map(segment => String(segment || "").trim())
+      .filter(Boolean);
+  }
+
+  if (typeof subregionPath === "string") {
+    return subregionPath
+      .split("/")
+      .map(segment => segment.trim())
+      .filter(Boolean);
+  }
+
+  return [];
+}
+
+function encodeSubregionPath(subregionPath) {
+  return normalizeSubregionPath(subregionPath).join("/");
+}
+
+function getSubregionPathParent(subregionPath) {
+  return normalizeSubregionPath(subregionPath).slice(0, -1);
+}
+
+function getSubregionPathKey(subregionPath) {
+  const normalizedPath = normalizeSubregionPath(subregionPath);
+  return normalizedPath[normalizedPath.length - 1] || null;
+}
+
+function getAreaNode(region, subregionPath = []) {
+  const normalizedPath = normalizeSubregionPath(subregionPath);
+  let currentNode = region;
+
+  for (const segment of normalizedPath) {
+    currentNode = currentNode?.subregions?.[segment];
+    if (!currentNode) return null;
+  }
+
+  return currentNode;
+}
+
+function getAreaTrail(region, subregionPath = []) {
+  const normalizedPath = normalizeSubregionPath(subregionPath);
+  const trail = [{ key: null, path: [], node: region }];
+  let currentNode = region;
+
+  normalizedPath.forEach((segment, index) => {
+    currentNode = currentNode?.subregions?.[segment];
+    if (!currentNode) return;
+
+    trail.push({
+      key: segment,
+      path: normalizedPath.slice(0, index + 1),
+      node: currentNode
+    });
+  });
+
+  return trail;
+}
+
+function getAreaName(node, fallbackKey = "") {
+  return node?.name || fallbackKey || "Area";
+}
+
+function getAreaLabelPath(region, subregionPath = []) {
+  return getAreaTrail(region, subregionPath)
+    .slice(1)
+    .map(({ key, node }) => getAreaName(node, key));
+}
+
+function getInheritedGrape(grapeKey, region, subregionPath = []) {
+  const trail = getAreaTrail(region, subregionPath).reverse();
+
+  for (const { node } of trail) {
+    if (node?.grapes?.[grapeKey]) {
+      return node.grapes[grapeKey];
+    }
+  }
+
+  return null;
+}
+
+function getDerivedAreaGrapeKeys(region, area, subregionPath = []) {
+  const ownGrapeKeys = Object.keys(area?.grapes || {});
+  if (ownGrapeKeys.length) {
+    return ownGrapeKeys;
+  }
+
+  const keyedGrapes = (area?.keyGrapes || []).filter(grapeKey =>
+    !!getInheritedGrape(grapeKey, region, subregionPath)
+  );
+
+  if (keyedGrapes.length) {
+    return keyedGrapes;
+  }
+
+  return [];
+}
+
+function walkSubregions(area, callback, currentPath = []) {
+  Object.entries(area?.subregions || {}).forEach(([subregionKey, subregion]) => {
+    const nextPath = [...currentPath, subregionKey];
+    callback(subregion, nextPath, subregionKey);
+    walkSubregions(subregion, callback, nextPath);
+  });
+}
+
+function getSubregionCoords(countryKey, regionKey, subregionPath) {
+  const pathKey = encodeSubregionPath(subregionPath);
+  return pathKey ? (state.subregionCoords?.[countryKey]?.[regionKey]?.[pathKey] || null) : null;
 }
 
 function getRegionBoundaryPolygons(countryKey, regionKey) {
   return state.regionBoundaries?.[countryKey]?.[regionKey] || null;
 }
 
-function getSubregionBoundaryPolygons(countryKey, regionKey, subregionKey) {
-  return state.subregionBoundaries?.[countryKey]?.[regionKey]?.[subregionKey] || null;
+function getSubregionBoundaryPolygons(countryKey, regionKey, subregionPath) {
+  const pathKey = encodeSubregionPath(subregionPath);
+  return pathKey ? (state.subregionBoundaries?.[countryKey]?.[regionKey]?.[pathKey] || null) : null;
 }
 
 function getPolygonBoundsCenter(polygons) {
@@ -1316,13 +1425,15 @@ function getCountryScopeBounds(countryKey) {
   return L.latLngBounds(regionCoords);
 }
 
-function getSelectionBounds(countryKey, regionKey = null, subregionKey = null) {
-  if (subregionKey && regionKey) {
-    const subregionPolygons = getSubregionBoundaryPolygons(countryKey, regionKey, subregionKey);
+function getSelectionBounds(countryKey, regionKey = null, subregionPath = null) {
+  const normalizedPath = normalizeSubregionPath(subregionPath);
+
+  if (normalizedPath.length && regionKey) {
+    const subregionPolygons = getSubregionBoundaryPolygons(countryKey, regionKey, normalizedPath);
     const subregionBounds = getPolygonsBounds(subregionPolygons);
     if (subregionBounds) return subregionBounds;
 
-    const subregionCoords = getSubregionCoords(countryKey, regionKey, subregionKey);
+    const subregionCoords = getSubregionCoords(countryKey, regionKey, normalizedPath);
     if (Array.isArray(subregionCoords) && subregionCoords.length === 2) {
       const [lat, lng] = subregionCoords;
       return L.latLngBounds([[lat - 0.28, lng - 0.32], [lat + 0.28, lng + 0.32]]);
@@ -1344,12 +1455,13 @@ function getSelectionBounds(countryKey, regionKey = null, subregionKey = null) {
   return getCountryScopeBounds(countryKey);
 }
 
-function getFactorEntriesForScope(countryKey, regionKey = null, subregionKey = null) {
+function getFactorEntriesForScope(countryKey, regionKey = null, subregionPath = null) {
   const factorData = state.moderatingFactors || {};
   const countryEntries = factorData.countries?.[countryKey] || [];
   const regionEntries = regionKey ? (factorData.regions?.[countryKey]?.[regionKey] || []) : [];
-  const subregionEntries = (regionKey && subregionKey)
-    ? (factorData.subregions?.[countryKey]?.[regionKey]?.[subregionKey] || [])
+  const pathKey = encodeSubregionPath(subregionPath);
+  const subregionEntries = (regionKey && pathKey)
+    ? (factorData.subregions?.[countryKey]?.[regionKey]?.[pathKey] || [])
     : [];
 
   if (subregionEntries.length) {
@@ -1360,7 +1472,7 @@ function getFactorEntriesForScope(countryKey, regionKey = null, subregionKey = n
     return [...countryEntries, ...regionEntries];
   }
 
-  if (regionKey || subregionKey) {
+  if (regionKey || pathKey) {
     return [];
   }
 
@@ -1453,97 +1565,221 @@ function buildFactorLinePoints(bounds, route = "river-horizontal") {
     case "current-west":
     case "coast-west":
       return [
-        [south - edgeLat * 0.1, west - edgeLng * 0.45],
-        [center.lat, west - edgeLng * 0.2],
-        [north + edgeLat * 0.1, west - edgeLng * 0.45]
+        [center.lat + latSpan * 0.26, west - edgeLng * 0.56],
+        [center.lat + latSpan * 0.12, west + lngSpan * 0.02],
+        [center.lat + latSpan * 0.02, center.lng - lngSpan * 0.16],
+        [center.lat - latSpan * 0.1, center.lng - lngSpan * 0.02]
       ];
     case "current-east":
     case "coast-east":
       return [
-        [south - edgeLat * 0.1, east + edgeLng * 0.45],
-        [center.lat, east + edgeLng * 0.2],
-        [north + edgeLat * 0.1, east + edgeLng * 0.45]
+        [center.lat + latSpan * 0.26, east + edgeLng * 0.56],
+        [center.lat + latSpan * 0.12, east - lngSpan * 0.02],
+        [center.lat + latSpan * 0.02, center.lng + lngSpan * 0.16],
+        [center.lat - latSpan * 0.1, center.lng + lngSpan * 0.02]
       ];
     case "current-south":
     case "coast-south":
       return [
-        [south - edgeLat * 0.38, west + lngSpan * 0.12],
-        [south - edgeLat * 0.12, center.lng],
-        [south - edgeLat * 0.38, east - lngSpan * 0.12]
+        [south - edgeLat * 0.52, center.lng - lngSpan * 0.24],
+        [south + latSpan * 0.04, center.lng - lngSpan * 0.1],
+        [center.lat - latSpan * 0.12, center.lng],
+        [center.lat + latSpan * 0.02, center.lng + lngSpan * 0.08]
+      ];
+    case "river-horizontal":
+      return [
+        [center.lat + latSpan * 0.1, west + lngSpan * 0.04],
+        [center.lat, center.lng - lngSpan * 0.18],
+        [center.lat - latSpan * 0.06, center.lng + lngSpan * 0.04],
+        [center.lat + latSpan * 0.04, east - lngSpan * 0.04]
       ];
     case "river-vertical":
       return [
-        [south, center.lng - edgeLng * 0.08],
-        [center.lat, center.lng],
-        [north, center.lng + edgeLng * 0.08]
+        [south + latSpan * 0.04, center.lng - edgeLng * 0.18],
+        [center.lat - latSpan * 0.12, center.lng - edgeLng * 0.06],
+        [center.lat + latSpan * 0.1, center.lng + edgeLng * 0.02],
+        [north - latSpan * 0.04, center.lng + edgeLng * 0.18]
       ];
     case "river-diagonal-up":
       return [
-        [south + edgeLat * 0.3, west + lngSpan * 0.12],
-        [center.lat, center.lng],
-        [north - edgeLat * 0.3, east - lngSpan * 0.12]
+        [south + latSpan * 0.1, west + lngSpan * 0.1],
+        [center.lat + latSpan * 0.05, center.lng - lngSpan * 0.08],
+        [center.lat - latSpan * 0.08, center.lng + lngSpan * 0.06],
+        [north - latSpan * 0.08, east - lngSpan * 0.1]
       ];
     case "river-diagonal-down":
       return [
-        [north - edgeLat * 0.3, west + lngSpan * 0.12],
-        [center.lat, center.lng],
-        [south + edgeLat * 0.3, east - lngSpan * 0.12]
+        [north - latSpan * 0.1, west + lngSpan * 0.1],
+        [center.lat - latSpan * 0.05, center.lng - lngSpan * 0.08],
+        [center.lat + latSpan * 0.08, center.lng + lngSpan * 0.06],
+        [south + latSpan * 0.08, east - lngSpan * 0.1]
       ];
     case "mountain-west":
       return [
-        [south - edgeLat * 0.05, west + edgeLng * 0.08],
-        [center.lat, west + edgeLng * 0.15],
-        [north + edgeLat * 0.05, west + edgeLng * 0.08]
+        [center.lat + latSpan * 0.24, west - edgeLng * 0.22],
+        [center.lat + latSpan * 0.12, west + lngSpan * 0.02],
+        [center.lat + latSpan * 0.02, center.lng - lngSpan * 0.14],
+        [center.lat - latSpan * 0.12, center.lng - lngSpan * 0.04]
       ];
     case "mountain-east":
       return [
-        [south - edgeLat * 0.05, east - edgeLng * 0.08],
-        [center.lat, east - edgeLng * 0.15],
-        [north + edgeLat * 0.05, east - edgeLng * 0.08]
+        [center.lat + latSpan * 0.24, east + edgeLng * 0.22],
+        [center.lat + latSpan * 0.12, east - lngSpan * 0.02],
+        [center.lat + latSpan * 0.02, center.lng + lngSpan * 0.14],
+        [center.lat - latSpan * 0.12, center.lng + lngSpan * 0.04]
       ];
     case "mountain-north":
       return [
-        [north - edgeLat * 0.12, west + lngSpan * 0.1],
-        [north - edgeLat * 0.04, center.lng],
-        [north - edgeLat * 0.12, east - lngSpan * 0.1]
+        [north + edgeLat * 0.18, center.lng - lngSpan * 0.2],
+        [north - edgeLat * 0.02, center.lng - lngSpan * 0.08],
+        [center.lat - latSpan * 0.14, center.lng],
+        [center.lat - latSpan * 0.02, center.lng + lngSpan * 0.08]
       ];
     case "mountain-south":
       return [
-        [south + edgeLat * 0.12, west + lngSpan * 0.1],
-        [south + edgeLat * 0.04, center.lng],
-        [south + edgeLat * 0.12, east - lngSpan * 0.1]
+        [south - edgeLat * 0.18, center.lng - lngSpan * 0.2],
+        [south + edgeLat * 0.02, center.lng - lngSpan * 0.08],
+        [center.lat + latSpan * 0.14, center.lng],
+        [center.lat + latSpan * 0.02, center.lng + lngSpan * 0.08]
       ];
     case "lake-east":
       return [
-        [center.lat + latSpan * 0.18, east - edgeLng * 0.3],
-        [center.lat, east - edgeLng * 0.06],
-        [center.lat - latSpan * 0.18, east - edgeLng * 0.3]
+        [center.lat + latSpan * 0.18, east - edgeLng * 0.42],
+        [center.lat + latSpan * 0.08, east - edgeLng * 0.12],
+        [center.lat - latSpan * 0.02, center.lng + lngSpan * 0.08],
+        [center.lat - latSpan * 0.14, center.lng + lngSpan * 0.16]
       ];
     case "lake-west":
       return [
-        [center.lat + latSpan * 0.18, west + edgeLng * 0.3],
-        [center.lat, west + edgeLng * 0.06],
-        [center.lat - latSpan * 0.18, west + edgeLng * 0.3]
+        [center.lat + latSpan * 0.18, west + edgeLng * 0.42],
+        [center.lat + latSpan * 0.08, west + edgeLng * 0.12],
+        [center.lat - latSpan * 0.02, center.lng - lngSpan * 0.08],
+        [center.lat - latSpan * 0.14, center.lng - lngSpan * 0.16]
       ];
     case "wind-west-east":
       return [
-        [center.lat + edgeLat * 0.24, west + lngSpan * 0.08],
-        [center.lat, center.lng],
-        [center.lat - edgeLat * 0.24, east - lngSpan * 0.08]
+        [center.lat + latSpan * 0.16, west - edgeLng * 0.18],
+        [center.lat + latSpan * 0.06, center.lng - lngSpan * 0.18],
+        [center.lat - latSpan * 0.06, center.lng + lngSpan * 0.08],
+        [center.lat - latSpan * 0.16, east - lngSpan * 0.06]
       ];
     case "wind-north-south":
       return [
-        [north - edgeLat * 0.08, center.lng - edgeLng * 0.2],
-        [center.lat, center.lng],
-        [south + edgeLat * 0.08, center.lng + edgeLng * 0.2]
+        [north + edgeLat * 0.12, center.lng - edgeLng * 0.2],
+        [center.lat + latSpan * 0.12, center.lng - edgeLng * 0.08],
+        [center.lat - latSpan * 0.06, center.lng + edgeLng * 0.06],
+        [south + edgeLat * 0.08, center.lng + edgeLng * 0.18]
       ];
     default:
       return [
-        [center.lat, west],
-        [center.lat, center.lng],
-        [center.lat, east]
+        [center.lat, west + lngSpan * 0.06],
+        [center.lat - latSpan * 0.04, center.lng],
+        [center.lat, east - lngSpan * 0.06]
       ];
   }
+}
+
+function getFactorVisualType(entry = {}) {
+  const route = String(entry.route || "");
+
+  if (/^(coast|current)-/.test(route)) return "coast";
+  if (/^river-/.test(route)) return "river";
+  if (/^lake-/.test(route)) return "lake";
+  if (/^mountain-/.test(route)) return "mountain";
+  if (/^wind-/.test(route)) return "wind";
+
+  return getFactorType(`${entry.name || ""} ${entry.description || ""}`);
+}
+
+function getFactorVisualStyle(type = "generic") {
+  const styles = {
+    coast: {
+      color: "#2f86c5",
+      glow: "rgba(47, 134, 197, 0.18)",
+      dashArray: "16 10"
+    },
+    river: {
+      color: "#1f97b3",
+      glow: "rgba(31, 151, 179, 0.18)",
+      dashArray: "18 9"
+    },
+    lake: {
+      color: "#4aa4cf",
+      glow: "rgba(74, 164, 207, 0.18)",
+      dashArray: "6 12"
+    },
+    mountain: {
+      color: "#7a6bc4",
+      glow: "rgba(122, 107, 196, 0.18)",
+      dashArray: "4 14"
+    },
+    wind: {
+      color: "#479b7a",
+      glow: "rgba(71, 155, 122, 0.18)",
+      dashArray: "10 12"
+    },
+    generic: {
+      color: "#2f86c5",
+      glow: "rgba(47, 134, 197, 0.18)",
+      dashArray: "12 10"
+    }
+  };
+
+  return styles[type] || styles.generic;
+}
+
+function samplePolylinePoint(points = [], progress = 0.5) {
+  if (!Array.isArray(points) || points.length < 2) return null;
+
+  const normalizedPoints = points.map(([lat, lng]) => ({ lat, lng }));
+  const segments = [];
+  let totalLength = 0;
+
+  for (let index = 0; index < normalizedPoints.length - 1; index += 1) {
+    const start = normalizedPoints[index];
+    const end = normalizedPoints[index + 1];
+    const dx = end.lng - start.lng;
+    const dy = end.lat - start.lat;
+    const length = Math.hypot(dx, dy);
+
+    if (!length) continue;
+
+    segments.push({ start, end, length });
+    totalLength += length;
+  }
+
+  if (!segments.length || !totalLength) return null;
+
+  const clampedProgress = Math.max(0, Math.min(1, progress));
+  let target = totalLength * clampedProgress;
+
+  for (const segment of segments) {
+    if (target > segment.length) {
+      target -= segment.length;
+      continue;
+    }
+
+    const ratio = target / segment.length;
+    const lat = segment.start.lat + ((segment.end.lat - segment.start.lat) * ratio);
+    const lng = segment.start.lng + ((segment.end.lng - segment.start.lng) * ratio);
+    const dx = segment.end.lng - segment.start.lng;
+    const dy = -(segment.end.lat - segment.start.lat);
+    const angle = Math.atan2(dy, dx) * 180 / Math.PI;
+
+    return {
+      latlng: [lat, lng],
+      angle
+    };
+  }
+
+  const lastSegment = segments[segments.length - 1];
+  const dx = lastSegment.end.lng - lastSegment.start.lng;
+  const dy = -(lastSegment.end.lat - lastSegment.start.lat);
+
+  return {
+    latlng: [lastSegment.end.lat, lastSegment.end.lng],
+    angle: Math.atan2(dy, dx) * 180 / Math.PI
+  };
 }
 
 function showModeratingFactors(countryKey, regionKey = null, subregionKey = null, fallbackFactors = []) {
@@ -1565,14 +1801,29 @@ function showModeratingFactors(countryKey, regionKey = null, subregionKey = null
     const points = buildFactorLinePoints(bounds, entry.route);
     if (!points.length) return;
 
-    const line = L.polyline(points, {
-      color: "#2f86c5",
-      weight: 4,
-      opacity: 0.8,
-      dashArray: entry.route?.startsWith("wind-") ? "8 8" : "10 6"
+    const factorType = getFactorVisualType(entry);
+    const factorStyle = getFactorVisualStyle(factorType);
+    const tooltipText = `<b>${entry.name}</b><br>${entry.description}`;
+
+    const glowLine = L.polyline(points, {
+      color: factorStyle.glow,
+      weight: 12,
+      opacity: 0.9,
+      interactive: false,
+      className: `factor-line-glow factor-line-${factorType}`
     });
 
-    const tooltipText = `<b>${entry.name}</b><br>${entry.description}`;
+    glowLine.addTo(layerGroup);
+
+    const line = L.polyline(points, {
+      color: factorStyle.color,
+      weight: 4,
+      opacity: 0.94,
+      dashArray: factorStyle.dashArray,
+      lineCap: "round",
+      className: `factor-line-core factor-line-${factorType}`
+    });
+
     line.bindTooltip(tooltipText, {
       sticky: true,
       opacity: 0.95,
@@ -1580,6 +1831,35 @@ function showModeratingFactors(countryKey, regionKey = null, subregionKey = null
     });
 
     line.addTo(layerGroup);
+
+    const originSample = samplePolylinePoint(points, 0.04);
+    if (originSample) {
+      const originMarker = L.marker(originSample.latlng, {
+        interactive: false,
+        icon: L.divIcon({
+          className: "factor-origin-wrap",
+          html: `<div class="factor-origin-badge factor-origin-${factorType}">${getFactorIcon(factorType)}</div>`,
+          iconSize: null
+        })
+      });
+      originMarker.addTo(layerGroup);
+    }
+
+    [0.34, 0.64].forEach(progress => {
+      const arrowSample = samplePolylinePoint(points, progress);
+      if (!arrowSample) return;
+
+      const arrowMarker = L.marker(arrowSample.latlng, {
+        interactive: false,
+        icon: L.divIcon({
+          className: "factor-arrow-wrap",
+          html: `<div class="factor-flow-arrow factor-flow-arrow-${factorType}" style="--factor-arrow-rotation:${arrowSample.angle}deg;">➜</div>`,
+          iconSize: null
+        })
+      });
+
+      arrowMarker.addTo(layerGroup);
+    });
   });
 
   if (!layerGroup.getLayers().length) {
@@ -1591,8 +1871,8 @@ function showModeratingFactors(countryKey, regionKey = null, subregionKey = null
   return true;
 }
 
-function getModeratingFactorNotes(countryKey, regionKey = null, subregionKey = null, fallbackFactors = []) {
-  const curatedNotes = getFactorEntriesForScope(countryKey, regionKey, subregionKey)
+function getModeratingFactorNotes(countryKey, regionKey = null, subregionPath = null, fallbackFactors = []) {
+  const curatedNotes = getFactorEntriesForScope(countryKey, regionKey, subregionPath)
     .map(entry => `${entry.name}: ${entry.description}`);
 
   const normalizedFallback = Array.isArray(fallbackFactors)
@@ -1626,8 +1906,8 @@ function renderModeratingFactorText(notes = []) {
   return `<p>${notes.map(note => renderStudyHighlightedText(note)).join(" • ")}</p>`;
 }
 
-function getSubregionEntries(countryKey, regionKey, region) {
-  const entries = Object.entries(region?.subregions || {});
+function getSubregionEntries(countryKey, regionKey, area) {
+  const entries = Object.entries(area?.subregions || {});
 
   if (state.currentFilter === "all") {
     return entries;
@@ -1663,9 +1943,10 @@ function getVisibleMapFitPadding() {
   };
 }
 
-function focusMapOnSubregionMarkers(countryKey, regionKey) {
-  const coords = Object.entries(state.subregionCoords?.[countryKey]?.[regionKey] || {})
-    .map(([, value]) => value)
+function focusMapOnSubregionMarkers(countryKey, regionKey, area, subregionPath = []) {
+  const normalizedPath = normalizeSubregionPath(subregionPath);
+  const coords = getSubregionEntries(countryKey, regionKey, area)
+    .map(([childKey]) => getSubregionCoords(countryKey, regionKey, [...normalizedPath, childKey]))
     .filter(value => Array.isArray(value) && value.length === 2);
 
   if (!coords.length) return;
@@ -1698,10 +1979,10 @@ function focusMapOnLayerBounds(layer, maxZoom = 8) {
   return true;
 }
 
-function showSubregionBoundaryOverlay(countryKey, regionKey, subregionKey) {
+function showSubregionBoundaryOverlay(countryKey, regionKey, subregionPath) {
   clearSubregionBoundaryLayer();
 
-  const polygons = getSubregionBoundaryPolygons(countryKey, regionKey, subregionKey);
+  const polygons = getSubregionBoundaryPolygons(countryKey, regionKey, subregionPath);
   if (!Array.isArray(polygons) || !polygons.length) {
     return false;
   }
@@ -1740,7 +2021,7 @@ function showRegionBoundaryOverlay(countryKey, regionKey) {
   return true;
 }
 
-function showSelectedSubregionMarker(countryKey, regionKey, subregionKey, subregion) {
+function showSelectedSubregionMarker(countryKey, regionKey, subregionPath, subregion) {
   clearRegionBoundaryLayer();
   clearSubregionBoundaryLayer();
   clearModeratingFactorLayer();
@@ -1748,11 +2029,13 @@ function showSelectedSubregionMarker(countryKey, regionKey, subregionKey, subreg
   clearRegionMarkers();
   hideAllCountryMarkers();
 
-  const polygons = getSubregionBoundaryPolygons(countryKey, regionKey, subregionKey);
+  const normalizedPath = normalizeSubregionPath(subregionPath);
+  const subregionKey = getSubregionPathKey(normalizedPath);
+  const polygons = getSubregionBoundaryPolygons(countryKey, regionKey, normalizedPath);
   const boundaryCenter = getPolygonBoundsCenter(polygons);
   const coords = boundaryCenter
     ? [boundaryCenter.lat, boundaryCenter.lng]
-    : getSubregionCoords(countryKey, regionKey, subregionKey);
+    : getSubregionCoords(countryKey, regionKey, normalizedPath);
 
   if (!Array.isArray(coords) || coords.length !== 2) return;
 
@@ -1770,29 +2053,30 @@ function showSelectedSubregionMarker(countryKey, regionKey, subregionKey, subreg
     title: subregion.name || subregionKey
   });
 
-  marker.on("click", () => showSubregion(countryKey, regionKey, subregionKey, { adjustSheet: true }));
+  marker.on("click", () => showSubregion(countryKey, regionKey, normalizedPath, { adjustSheet: true }));
   marker.addTo(map);
   state.subregionMarkers.push(marker);
 
   scheduleMarkerOverlapLayout();
-  if (showSubregionBoundaryOverlay(countryKey, regionKey, subregionKey)) {
+  if (showSubregionBoundaryOverlay(countryKey, regionKey, normalizedPath)) {
     focusMapOnLayerBounds(state.subregionBoundaryLayer, 8);
   } else {
     centerMapOnSelection(coords, 8);
   }
 }
 
-function showSubregionMarkers(countryKey, regionKey, region) {
+function showSubregionMarkers(countryKey, regionKey, area, subregionPath = []) {
   clearSubregionBoundaryLayer();
   clearModeratingFactorLayer();
   clearSubregionMarkers();
   clearRegionMarkers();
 
-  const subregionCoords = state.subregionCoords?.[countryKey]?.[regionKey] || {};
-  const subregionEntries = getSubregionEntries(countryKey, regionKey, region);
+  const normalizedPath = normalizeSubregionPath(subregionPath);
+  const subregionEntries = getSubregionEntries(countryKey, regionKey, area);
 
   subregionEntries.forEach(([subregionKey, subregion]) => {
-    const coords = subregionCoords[subregionKey];
+    const nextPath = [...normalizedPath, subregionKey];
+    const coords = getSubregionCoords(countryKey, regionKey, nextPath);
     if (!Array.isArray(coords) || coords.length !== 2) return;
 
     const marker = L.marker(coords, {
@@ -1800,7 +2084,7 @@ function showSubregionMarkers(countryKey, regionKey, region) {
         className: "region-map-marker-wrap",
         html: buildMapMarkerButton(subregion.name || subregionKey, {
           markerType: "subregion",
-          climate: subregion.climate || region.climate || ""
+          climate: subregion.climate || area.climate || ""
         }),
         iconSize: null
       }),
@@ -1808,13 +2092,13 @@ function showSubregionMarkers(countryKey, regionKey, region) {
       title: subregion.name || subregionKey
     });
 
-    marker.on("click", () => showSubregion(countryKey, regionKey, subregionKey, { adjustSheet: true }));
+    marker.on("click", () => showSubregion(countryKey, regionKey, nextPath, { adjustSheet: true }));
     marker.addTo(map);
     state.subregionMarkers.push(marker);
   });
 
   scheduleMarkerOverlapLayout();
-  focusMapOnSubregionMarkers(countryKey, regionKey);
+  focusMapOnSubregionMarkers(countryKey, regionKey, area, normalizedPath);
 }
 
 function getRegionCoords(countryKey, regionKey) {
@@ -1822,9 +2106,10 @@ function getRegionCoords(countryKey, regionKey) {
 }
 
 function focusMapOnRegionMarkers(countryKey) {
-  const coords = Object.entries(state.regionCoords?.[countryKey] || {})
-    .map(([, value]) => value)
-    .filter(value => Array.isArray(value) && value.length === 2);
+  const coords = state.regionMarkers
+    .map(marker => marker?.getLatLng?.())
+    .filter(latlng => latlng && Number.isFinite(latlng.lat) && Number.isFinite(latlng.lng))
+    .map(latlng => [latlng.lat, latlng.lng]);
 
   if (!coords.length) return;
 
@@ -1930,7 +2215,7 @@ function showRegionMarkers(countryKey, country) {
 
 // ================= INIT =================
 async function init() {
-  showLoading("Loading Wine Atlas...");
+  showLoading("Loading WINE ATLAS...");
   updateSheetMetrics();
   openSheetMid();
 
@@ -2094,8 +2379,8 @@ async function init() {
 
     openSheetMid();
   } catch (error) {
-    console.error("Wine Atlas init failed:", error);
-    setPanelTitle("Wine Atlas PRO");
+    console.error("WINE ATLAS init failed:", error);
+    setPanelTitle("WINE ATLAS");
     setBreadcrumb([{ label: "Home" }]);
     byId("content").innerHTML = `
       <div class="section-card">
@@ -2271,6 +2556,8 @@ async function showRegion(countryKey, regionKey, { adjustSheet = false } = {}) {
           }).join("")}
         </div>
       `;
+    }
+
     if (region.examTips?.length) {
       html += `
         <div class="section-card">
@@ -2287,7 +2574,6 @@ async function showRegion(countryKey, regionKey, { adjustSheet = false } = {}) {
           <div>${region.tags.map(x => `<span class="pill">${x}</span>`).join("")}</div>
         </div>
       `;
-    }
     }
 
     byId("content").innerHTML = html;
@@ -2331,7 +2617,7 @@ async function showRegion(countryKey, regionKey, { adjustSheet = false } = {}) {
   }
 }
 
-async function showSubregion(countryKey, regionKey, subregionKey, { adjustSheet = false } = {}) {
+async function showSubregion(countryKey, regionKey, subregionPath, { adjustSheet = false } = {}) {
   showLoading("Loading sub-region...");
   if (adjustSheet) {
     openSheetMid();
@@ -2340,37 +2626,61 @@ async function showSubregion(countryKey, regionKey, subregionKey, { adjustSheet 
     const countryMeta = state.countriesData[countryKey];
     const country = await loadJson(`./data/${countryMeta.file}`);
     const region = country.regions?.[regionKey];
-    const subregion = region?.subregions?.[subregionKey];
+    const normalizedPath = normalizeSubregionPath(subregionPath);
+    const subregionKey = getSubregionPathKey(normalizedPath);
+    const subregion = getAreaNode(region, normalizedPath);
     if (!region || !subregion) return;
+    const trail = getAreaTrail(region, normalizedPath);
+    const parentPath = getSubregionPathParent(normalizedPath);
+    const parentArea = parentPath.length ? getAreaNode(region, parentPath) : region;
+    const childEntries = getSubregionEntries(countryKey, regionKey, subregion);
 
-    showSelectedSubregionMarker(countryKey, regionKey, subregionKey, subregion);
-    showModeratingFactors(countryKey, regionKey, subregionKey, subregion.mitigating || region.mitigating);
+    if (childEntries.length) {
+      showSubregionMarkers(countryKey, regionKey, subregion, normalizedPath);
+      showSubregionBoundaryOverlay(countryKey, regionKey, normalizedPath);
+    } else {
+      showSelectedSubregionMarker(countryKey, regionKey, normalizedPath, subregion);
+    }
+
+    showModeratingFactors(
+      countryKey,
+      regionKey,
+      normalizedPath,
+      subregion.mitigating || parentArea?.mitigating || region.mitigating
+    );
 
     setPanelTitle(subregion.name || subregionKey);
-    setBreadcrumb([
+    const breadcrumb = [
       { label: country.name || countryKey, click: () => showCountry(countryKey) },
-      { label: region.name || regionKey, click: () => showRegion(countryKey, regionKey) },
-      { label: subregion.name || subregionKey }
-    ]);
+      { label: region.name || regionKey, click: () => showRegion(countryKey, regionKey) }
+    ];
+    trail.slice(1).forEach((entry, index) => {
+      const isLast = index === trail.length - 2;
+      breadcrumb.push(isLast
+        ? { label: entry.node.name || entry.key }
+        : {
+            label: entry.node.name || entry.key,
+            click: () => showSubregion(countryKey, regionKey, entry.path)
+          });
+    });
+    setBreadcrumb(breadcrumb);
     clearPageActionRail();
 
-    const subregionGrapeEntries = Object.entries(subregion.grapes || {});
-    const derivedGrapeKeys = subregionGrapeEntries.length
-      ? subregionGrapeEntries.map(([grapeKey]) => grapeKey)
-      : (subregion.keyGrapes || []).filter(grapeKey => region.grapes?.[grapeKey]);
+    const derivedGrapeKeys = getDerivedAreaGrapeKeys(region, subregion, normalizedPath);
     const moderatingNotes = getModeratingFactorNotes(
       countryKey,
       regionKey,
-      subregionKey,
-      subregion.mitigating || region.mitigating
+      normalizedPath,
+      subregion.mitigating || parentArea?.mitigating || region.mitigating
     );
+    const pageKey = `subregion::${country.name}::${region.name}::${getAreaLabelPath(region, normalizedPath).join("::")}`;
 
     let html = `
       <div class="section-card">
         <p><b>Sub-region:</b> ${subregion.name || subregionKey}</p>
         ${subregion.summary ? `<p><b>Summary:</b> ${subregion.summary}</p>` : ""}
-        <p><b>Climate:</b> ${subregion.climate || region.climate || "-"}</p>
-        ${(subregion.climate || region.climate) ? `<div class="chips">${renderClimateChip(subregion.climate || region.climate)}</div>` : ""}
+        <p><b>Climate:</b> ${subregion.climate || parentArea?.climate || region.climate || "-"}</p>
+        ${(subregion.climate || parentArea?.climate || region.climate) ? `<div class="chips">${renderClimateChip(subregion.climate || parentArea?.climate || region.climate)}</div>` : ""}
         ${moderatingNotes.length ? `<p><b>Moderating Factors:</b></p>${renderModeratingFactorText(moderatingNotes)}` : ""}
         <p><b>Style:</b> ${subregion.styleSummary || "-"}</p>
         ${renderStudyList("Vineyard Factors", subregion.vineyardFactors)}
@@ -2378,9 +2688,15 @@ async function showSubregion(countryKey, regionKey, subregionKey, { adjustSheet 
         ${subregion.classification ? `<p><b>Classification:</b> ${subregion.classification}</p>` : ""}
         ${subregion.lawNotes?.length ? `<p><b>Law / Exam Notes:</b> ${subregion.lawNotes.join(" ")}</p>` : ""}
         ${subregion.keyGrapes?.length ? `<p><b>Key Grapes:</b> ${subregion.keyGrapes.join(", ")}</p>` : ""}
+        ${childEntries.length ? `<p><b>Sub-regions:</b></p>` : ""}
+        ${childEntries.length ? childEntries.map(([childKey, child]) => `
+          <button class="pill" data-child-subregion="${encodeSubregionPath([...normalizedPath, childKey])}">
+            ${child.name || childKey}
+          </button>
+        `).join("") : ""}
         ${derivedGrapeKeys.length ? `<p><b>Grapes:</b></p>
         ${derivedGrapeKeys.map(grapeKey => `
-          <button class="pill" data-subregion-grape="${grapeKey}">
+          <button class="pill" data-subregion-grape="${grapeKey}" data-subregion-path="${encodeSubregionPath(normalizedPath)}">
             ${grapeKey}
           </button>
         `).join("")}` : ""}
@@ -2407,10 +2723,26 @@ async function showSubregion(countryKey, regionKey, subregionKey, { adjustSheet 
 
     byId("content").innerHTML = html;
 
-    setFloatingBackButton("← Back", () => showRegion(countryKey, regionKey));
+    setFloatingBackButton("← Back", () => {
+      if (parentPath.length) {
+        showSubregion(countryKey, regionKey, parentPath);
+      } else {
+        showRegion(countryKey, regionKey);
+      }
+    });
+    setPageActionRail(getStudyActions(pageKey, () => showSubregion(countryKey, regionKey, normalizedPath)));
+
+    document.querySelectorAll("[data-child-subregion]").forEach(btn => {
+      btn.addEventListener("click", () => showSubregion(countryKey, regionKey, btn.dataset.childSubregion));
+    });
 
     document.querySelectorAll("[data-subregion-grape]").forEach(btn => {
-      btn.addEventListener("click", () => showGrape(countryKey, regionKey, btn.dataset.subregionGrape, subregionKey));
+      btn.addEventListener("click", () => showGrape(
+        countryKey,
+        regionKey,
+        btn.dataset.subregionGrape,
+        btn.dataset.subregionPath
+      ));
     });
 
     bindPronounceButtons();
@@ -2425,7 +2757,7 @@ async function showSubregion(countryKey, regionKey, subregionKey, { adjustSheet 
 }
 
 // ================= GRAPE =================
-async function showGrape(countryKey, regionKey, grapeKey, subregionKey = null, { adjustSheet = false } = {}) {
+async function showGrape(countryKey, regionKey, grapeKey, subregionPath = null, { adjustSheet = false } = {}) {
   showLoading("Loading grape profile...");
   if (adjustSheet) {
     openSheetFull();
@@ -2434,13 +2766,21 @@ async function showGrape(countryKey, regionKey, grapeKey, subregionKey = null, {
   const countryMeta = state.countriesData[countryKey];
   const country = await loadJson(`./data/${countryMeta.file}`);
   const region = country.regions[regionKey];
-  const subregion = subregionKey ? region?.subregions?.[subregionKey] : null;
-  const grape = subregion?.grapes?.[grapeKey] || region?.grapes?.[grapeKey];
+  const normalizedPath = normalizeSubregionPath(subregionPath);
+  const subregion = normalizedPath.length ? getAreaNode(region, normalizedPath) : null;
+  const grape = normalizedPath.length
+    ? getInheritedGrape(grapeKey, region, normalizedPath)
+    : region?.grapes?.[grapeKey];
   if (!grape) return;
 
-  if (subregionKey && subregion) {
-    showSelectedSubregionMarker(countryKey, regionKey, subregionKey, subregion);
-    showModeratingFactors(countryKey, regionKey, subregionKey, subregion.mitigating || region.mitigating);
+  if (normalizedPath.length && subregion) {
+    showSelectedSubregionMarker(countryKey, regionKey, normalizedPath, subregion);
+    showModeratingFactors(
+      countryKey,
+      regionKey,
+      normalizedPath,
+      subregion.mitigating || getAreaNode(region, getSubregionPathParent(normalizedPath))?.mitigating || region.mitigating
+    );
   } else {
     showRegionMarkers(countryKey, country);
     const regionCoords = getRegionCoords(countryKey, regionKey);
@@ -2458,10 +2798,12 @@ async function showGrape(countryKey, regionKey, grapeKey, subregionKey = null, {
     { label: region.name, click: () => showRegion(countryKey, regionKey) }
   ];
 
-  if (subregionKey && subregion) {
-    breadcrumb.push({
-      label: subregion.name || subregionKey,
-      click: () => showSubregion(countryKey, regionKey, subregionKey)
+  if (normalizedPath.length && subregion) {
+    getAreaTrail(region, normalizedPath).slice(1).forEach(({ key, path, node }) => {
+      breadcrumb.push({
+        label: node.name || key,
+        click: () => showSubregion(countryKey, regionKey, path)
+      });
     });
   }
 
@@ -2494,8 +2836,38 @@ async function showGrape(countryKey, regionKey, grapeKey, subregionKey = null, {
     `;
   }
 
-  const pageKey = subregionKey && subregion
-    ? `grape::${country.name}::${region.name}::${subregion.name || subregionKey}::${grapeKey}`
+  let exampleWineHtml = "";
+  if (grape.exampleWine?.name || grape.exampleWine?.producer || grape.exampleWine?.technicalSheetUrl) {
+    const exampleName = escapeHtml(grape.exampleWine?.name || "-");
+    const exampleProducer = escapeHtml(grape.exampleWine?.producer || "-");
+    const technicalSheetUrl = String(grape.exampleWine?.technicalSheetUrl || "").trim();
+    const technicalSheetLink = technicalSheetUrl
+      ? `<a class="btn secondary example-wine-link" href="${escapeHtml(technicalSheetUrl)}" target="_blank" rel="noopener noreferrer">Technical Sheet ↗</a>`
+      : "";
+
+    exampleWineHtml = `
+      <div class="section-card">
+        <p class="section-title">Example Wine</p>
+        <div class="example-wine-card">
+          <div class="example-wine-meta">
+            <div class="example-wine-meta-item">
+              <div class="example-wine-label">Wine</div>
+              <div class="example-wine-value">${exampleName}</div>
+            </div>
+            <div class="example-wine-meta-item">
+              <div class="example-wine-label">Producer</div>
+              <div class="example-wine-value">${exampleProducer}</div>
+            </div>
+          </div>
+          ${technicalSheetLink}
+        </div>
+      </div>
+    `;
+  }
+
+  const areaLabelPath = normalizedPath.length ? getAreaLabelPath(region, normalizedPath) : [];
+  const pageKey = normalizedPath.length && subregion
+    ? `grape::${country.name}::${region.name}::${areaLabelPath.join("::")}::${grapeKey}`
     : `grape::${country.name}::${region.name}::${grapeKey}`;
 
   byId("content").innerHTML = `
@@ -2527,6 +2899,7 @@ async function showGrape(countryKey, regionKey, grapeKey, subregionKey = null, {
 
     ${profileHtml}
     ${aromaHtml}
+    ${exampleWineHtml}
 
     <div class="section-card">
       <p class="section-title">Viticulture</p>
@@ -2563,8 +2936,8 @@ async function showGrape(countryKey, regionKey, grapeKey, subregionKey = null, {
   bindPronounceButtons();
 
   setFloatingBackButton("← Back", () => {
-    if (subregionKey && subregion) {
-      showSubregion(countryKey, regionKey, subregionKey);
+    if (normalizedPath.length && subregion) {
+      showSubregion(countryKey, regionKey, normalizedPath);
     } else {
       showRegion(countryKey, regionKey);
     }
@@ -2574,7 +2947,7 @@ async function showGrape(countryKey, regionKey, grapeKey, subregionKey = null, {
       label: "⭐ Favorite",
       secondary: false,
       onClick: () => {
-        const item = `${country.name} > ${region.name} > ${grapeKey}`;
+        const item = [...[country.name, region.name], ...areaLabelPath, grapeKey].join(" > ");
 
         if (!state.favorites.includes(item)) {
           state.favorites.push(item);
@@ -2591,17 +2964,17 @@ async function showGrape(countryKey, regionKey, grapeKey, subregionKey = null, {
         const questions = await buildQuizForGrape(
           grapeKey,
           grape,
-          region.name,
+          areaLabelPath[areaLabelPath.length - 1] || region.name,
           country.name
         );
 
         startCustomQuiz(questions, `Quiz: ${grapeKey}`);
       }
     },
-    ...getStudyActions(pageKey, () => showGrape(countryKey, regionKey, grapeKey, subregionKey))
+    ...getStudyActions(pageKey, () => showGrape(countryKey, regionKey, grapeKey, normalizedPath))
   ]);
 
-  const item = `${country.name} > ${region.name} > ${grapeKey}`;
+  const item = [...[country.name, region.name], ...areaLabelPath, grapeKey].join(" > ");
   recent = recent.filter(x => x !== item);
   recent.unshift(item);
   recent = recent.slice(0, 10);
@@ -2662,7 +3035,7 @@ function showFavorites({ adjustSheet = false } = {}) {
           const region = country.regions[regionKey];
           if (region.name !== fav.region) continue;
 
-          await showGrape(countryKey, regionKey, fav.grape);
+          await showGrape(countryKey, regionKey, fav.grape, fav.subregions || []);
           return;
         }
       }
@@ -2713,7 +3086,7 @@ function showRecent({ adjustSheet = false } = {}) {
           const region = country.regions[regionKey];
           if (region.name !== entry.region) continue;
 
-          await showGrape(countryKey, regionKey, entry.grape);
+          await showGrape(countryKey, regionKey, entry.grape, entry.subregions || []);
           return;
         }
       }
@@ -2786,8 +3159,7 @@ async function getCycleLogicLinks(keywords = [], limit = 6) {
         });
       }
 
-      for (const subregionKey in (region.subregions || {})) {
-        const subregion = region.subregions[subregionKey];
+      walkSubregions(region, (subregion, path, subregionKey) => {
         const subregionText = [
           subregion.name,
           subregion.summary,
@@ -2805,11 +3177,11 @@ async function getCycleLogicLinks(keywords = [], limit = 6) {
           matches.push({
             type: "subregion",
             score: subregionScore + 0.25,
-            label: `${subregion.name || subregionKey} (${region.name || regionKey}, ${country.name})`,
-            action: () => showSubregion(countryKey, regionKey, subregionKey)
+            label: `${getAreaLabelPath(region, path).join(" > ")} (${region.name || regionKey}, ${country.name})`,
+            action: () => showSubregion(countryKey, regionKey, path)
           });
         }
-      }
+      });
     }
   }
 
@@ -2938,6 +3310,89 @@ async function searchAll(query) {
 
   const results = [];
 
+  function getGrapeMatchReasons(grapeKey, grape) {
+    const grapeMatchReasons = [];
+
+    if (match(grapeKey)) {
+      grapeMatchReasons.push(`name: ${grapeKey}`);
+    }
+
+    if (match(grape.summary)) {
+      grapeMatchReasons.push(`summary: ${grape.summary}`);
+    }
+
+    if (match(grape.style)) {
+      grapeMatchReasons.push(`style: ${grape.style}`);
+    }
+
+    if (match(grape.profile?.acidity)) {
+      grapeMatchReasons.push(`acidity: ${grape.profile.acidity}`);
+    }
+
+    if (match(grape.profile?.alcohol)) {
+      grapeMatchReasons.push(`alcohol: ${grape.profile.alcohol}`);
+    }
+
+    if (match(grape.profile?.body)) {
+      grapeMatchReasons.push(`body: ${grape.profile.body}`);
+    }
+
+    if (match(grape.profile?.tannin)) {
+      grapeMatchReasons.push(`tannin: ${grape.profile.tannin}`);
+    }
+
+    const matchedAliases = (grape.aliases || []).filter(alias =>
+      String(alias).toLowerCase().includes(q)
+    );
+    if (matchedAliases.length) {
+      grapeMatchReasons.push(`alias: ${matchedAliases[0]}`);
+    }
+
+    const matchedAromas = (grape.aromas || []).filter(aroma =>
+      String(aroma).toLowerCase().includes(q)
+    );
+    if (matchedAromas.length) {
+      grapeMatchReasons.push(`aroma: ${matchedAromas[0]}`);
+    }
+
+    const matchedViticulture = (grape.viticulture || []).filter(item =>
+      String(item).toLowerCase().includes(q)
+    );
+    if (matchedViticulture.length) {
+      grapeMatchReasons.push(`viticulture: ${matchedViticulture[0]}`);
+    }
+
+    const matchedWinemaking = (grape.winemaking || []).filter(item =>
+      String(item).toLowerCase().includes(q)
+    );
+    if (matchedWinemaking.length) {
+      grapeMatchReasons.push(`winemaking: ${matchedWinemaking[0]}`);
+    }
+
+    const matchedPairing = (grape.pairing || []).filter(item =>
+      String(item).toLowerCase().includes(q)
+    );
+    if (matchedPairing.length) {
+      grapeMatchReasons.push(`pairing: ${matchedPairing[0]}`);
+    }
+
+    const matchedTags = (grape.tags || []).filter(tag =>
+      String(tag).toLowerCase().includes(q)
+    );
+    if (matchedTags.length) {
+      grapeMatchReasons.push(`tag: ${matchedTags[0]}`);
+    }
+
+    const matchedTips = (grape.examTips || []).filter(tip =>
+      String(tip).toLowerCase().includes(q)
+    );
+    if (matchedTips.length) {
+      grapeMatchReasons.push(`exam tip: ${matchedTips[0]}`);
+    }
+
+    return grapeMatchReasons;
+  }
+
   for (const countryKey in state.countriesData) {
     const countryMeta = state.countriesData[countryKey];
 
@@ -3063,9 +3518,9 @@ async function searchAll(query) {
         });
 }
 
-      for (const subregionKey in (region.subregions || {})) {
-        const subregion = region.subregions[subregionKey];
+      walkSubregions(region, (subregion, path, subregionKey) => {
         const subregionMatchReasons = [];
+        const subregionLabelPath = getAreaLabelPath(region, path);
 
         if (match(subregion.name)) {
           subregionMatchReasons.push(`name: ${subregion.name}`);
@@ -3121,12 +3576,28 @@ async function searchAll(query) {
         if (subregionMatchReasons.length) {
           results.push({
             type: "subregion",
-            label: `${subregion.name} (${region.name}, ${country.name})`,
+            label: `${subregionLabelPath.join(" > ")} (${region.name}, ${country.name})`,
             matchReasons: subregionMatchReasons,
-            action: () => showSubregion(countryKey, regionKey, subregionKey)
+            action: () => showSubregion(countryKey, regionKey, path)
           });
         }
-      }
+
+        const derivedGrapeKeys = getDerivedAreaGrapeKeys(region, subregion, path);
+        derivedGrapeKeys.forEach(grapeKey => {
+          const grape = getInheritedGrape(grapeKey, region, path);
+          if (!grape) return;
+
+          const grapeMatchReasons = getGrapeMatchReasons(grapeKey, grape);
+          if (grapeMatchReasons.length) {
+            results.push({
+              type: "grape",
+              label: `${grapeKey} (${subregionLabelPath.join(" > ")}, ${country.name})`,
+              matchReasons: grapeMatchReasons,
+              action: () => showGrape(countryKey, regionKey, grapeKey, path)
+            });
+          }
+        });
+      });
 
       for (const styleKey in (region.styles || {})) {
         const style = region.styles[styleKey];
@@ -3160,85 +3631,7 @@ async function searchAll(query) {
 
       for (const grapeKey in (region.grapes || {})) {
         const grape = region.grapes[grapeKey];
-
-        let grapeMatchReasons = [];
-
-        if (match(grapeKey)) {
-          grapeMatchReasons.push(`name: ${grapeKey}`);
-        }
-
-        if (match(grape.summary)) {
-          grapeMatchReasons.push(`summary: ${grape.summary}`);
-        }
-
-        if (match(grape.style)) {
-          grapeMatchReasons.push(`style: ${grape.style}`);
-        }
-
-        if (match(grape.profile?.acidity)) {
-          grapeMatchReasons.push(`acidity: ${grape.profile.acidity}`);
-        }
-
-        if (match(grape.profile?.alcohol)) {
-          grapeMatchReasons.push(`alcohol: ${grape.profile.alcohol}`);
-        }
-
-        if (match(grape.profile?.body)) {
-          grapeMatchReasons.push(`body: ${grape.profile.body}`);
-        }
-
-        if (match(grape.profile?.tannin)) {
-          grapeMatchReasons.push(`tannin: ${grape.profile.tannin}`);
-        }
-
-        const matchedAliases = (grape.aliases || []).filter(alias =>
-          String(alias).toLowerCase().includes(q)
-        );
-        if (matchedAliases.length) {
-          grapeMatchReasons.push(`alias: ${matchedAliases[0]}`);
-        }
-
-        const matchedAromas = (grape.aromas || []).filter(aroma =>
-          String(aroma).toLowerCase().includes(q)
-        );
-        if (matchedAromas.length) {
-          grapeMatchReasons.push(`aroma: ${matchedAromas[0]}`);
-        }
-
-        const matchedViticulture = (grape.viticulture || []).filter(item =>
-          String(item).toLowerCase().includes(q)
-        );
-        if (matchedViticulture.length) {
-          grapeMatchReasons.push(`viticulture: ${matchedViticulture[0]}`);
-        }
-
-        const matchedWinemaking = (grape.winemaking || []).filter(item =>
-          String(item).toLowerCase().includes(q)
-        );
-        if (matchedWinemaking.length) {
-          grapeMatchReasons.push(`winemaking: ${matchedWinemaking[0]}`);
-        }
-
-        const matchedPairing = (grape.pairing || []).filter(item =>
-          String(item).toLowerCase().includes(q)
-        );
-        if (matchedPairing.length) {
-          grapeMatchReasons.push(`pairing: ${matchedPairing[0]}`);
-        }
-
-        const matchedTags = (grape.tags || []).filter(tag =>
-          String(tag).toLowerCase().includes(q)
-        );
-        if (matchedTags.length) {
-          grapeMatchReasons.push(`tag: ${matchedTags[0]}`);
-        }
-
-        const matchedTips = (grape.examTips || []).filter(tip =>
-          String(tip).toLowerCase().includes(q)
-        );
-        if (matchedTips.length) {
-          grapeMatchReasons.push(`exam tip: ${matchedTips[0]}`);
-        }
+        const grapeMatchReasons = getGrapeMatchReasons(grapeKey, grape);
 
         if (grapeMatchReasons.length) {
           results.push({
@@ -3878,6 +4271,10 @@ async function getAllRegionNames() {
     for (const regionKey in (country.regions || {})) {
       const region = country.regions[regionKey];
       names.push(region.name || regionKey);
+      walkSubregions(region, (subregion, path, subregionKey) => {
+        const labelPath = getAreaLabelPath(region, path);
+        names.push(labelPath[labelPath.length - 1] || subregion.name || subregionKey);
+      });
     }
   }
 
@@ -3897,12 +4294,12 @@ async function getAllStudyFacts() {
       if (region.vineyardFactors?.length) facts.push(...region.vineyardFactors);
       if (region.humanFactors?.length) facts.push(...region.humanFactors);
 
-      for (const subregion of Object.values(region.subregions || {})) {
+      walkSubregions(region, subregion => {
         if (subregion.classification) facts.push(subregion.classification);
         if (subregion.lawNotes?.length) facts.push(...subregion.lawNotes);
         if (subregion.vineyardFactors?.length) facts.push(...subregion.vineyardFactors);
         if (subregion.humanFactors?.length) facts.push(...subregion.humanFactors);
-      }
+      });
     }
   }
 
@@ -3956,6 +4353,12 @@ async function getAllGrapeNames() {
       for (const grapeKey in (region.grapes || {})) {
         names.push(grapeKey);
       }
+
+      walkSubregions(region, (subregion, path) => {
+        getDerivedAreaGrapeKeys(region, subregion, path).forEach(grapeKey => {
+          names.push(grapeKey);
+        });
+      });
     }
   }
 
@@ -3976,6 +4379,15 @@ async function getAllAromas() {
         const grape = region.grapes[grapeKey];
         aromas.push(...(grape.aromas || []));
       }
+
+      walkSubregions(region, (subregion, path) => {
+        getDerivedAreaGrapeKeys(region, subregion, path).forEach(grapeKey => {
+          const grape = getInheritedGrape(grapeKey, region, path);
+          if (grape) {
+            aromas.push(...(grape.aromas || []));
+          }
+        });
+      });
     }
   }
 
@@ -3996,6 +4408,15 @@ async function getAllAliases() {
         const grape = region.grapes[grapeKey];
         aliases.push(...(grape.aliases || []));
       }
+
+      walkSubregions(region, (subregion, path) => {
+        getDerivedAreaGrapeKeys(region, subregion, path).forEach(grapeKey => {
+          const grape = getInheritedGrape(grapeKey, region, path);
+          if (grape) {
+            aliases.push(...(grape.aliases || []));
+          }
+        });
+      });
     }
   }
 
@@ -4016,6 +4437,15 @@ async function getAllPairings() {
         const grape = region.grapes[grapeKey];
         pairings.push(...(grape.pairing || []));
       }
+
+      walkSubregions(region, (subregion, path) => {
+        getDerivedAreaGrapeKeys(region, subregion, path).forEach(grapeKey => {
+          const grape = getInheritedGrape(grapeKey, region, path);
+          if (grape) {
+            pairings.push(...(grape.pairing || []));
+          }
+        });
+      });
     }
   }
 

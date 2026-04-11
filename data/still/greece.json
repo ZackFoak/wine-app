@@ -77,7 +77,12 @@
             "volcanic",
             "Greece"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Santo Wines Santorini Assyrtiko 2024",
+            "producer": "Santo Wines",
+            "technicalSheetUrl": "https://usa.santowines.gr/products/santorini-assyrtiko"
+          }
         }
       },
       "classification": "Santorini is a PDO strongly associated with Assyrtiko and volcanic island viticulture.",
@@ -157,7 +162,12 @@
             "high-tannin",
             "Greece"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Kir-Yianni Ramnista",
+            "producer": "Kir-Yianni",
+            "technicalSheetUrl": "https://kiryianni.gr/wines/ramnista/"
+          }
         }
       },
       "classification": "Naoussa PDO is one of the key quality homes of Xinomavro.",
@@ -231,7 +241,12 @@
             "fruit-forward",
             "Greece"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Domaine Skouras Saint George Nemea",
+            "producer": "Domaine Skouras",
+            "technicalSheetUrl": "https://skouras.gr/wp-content/uploads/2023/07/SAINTGEORGE-RED-EN.pdf"
+          }
         }
       },
       "classification": "Nemea PDO is the classic quality appellation for Agiorgitiko.",
@@ -304,7 +319,12 @@
             "red",
             "fresh"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Alpha Estate Xinomavro Single Vineyard \"Hedgehog\"",
+            "producer": "Alpha Estate",
+            "technicalSheetUrl": "https://alpha-estate.com/product/xinomavro-sv/"
+          }
         }
       },
       "classification": "Amyndeon PDO is a cooler higher-altitude Xinomavro region, known for fresher lighter expressions and also sparkling production context.",

@@ -2025,9 +2025,9 @@
     },
     "burgundy": {
       "name": "Burgundy",
-      "summary": "Classic continental region focused on Pinot Noir and Chardonnay with strong site expression.",
+      "summary": "Classic continental French region organised around Chablis, Cote d'Or, Cote Chalonnaise, Maconnais and Beaujolais, with strong site expression throughout.",
       "climate": "Cool Continental",
-      "styleSummary": "Perfumed Pinot Noir and precise Chardonnay with strong site expression.",
+      "styleSummary": "Site-driven Pinot Noir and Chardonnay across most of the region, plus juicy Gamay in Beaujolais.",
       "mitigating": [
         "Slope",
         "aspect",
@@ -2036,11 +2036,13 @@
       ],
       "keyGrapes": [
         "Pinot Noir",
-        "Chardonnay"
+        "Chardonnay",
+        "Gamay"
       ],
       "examTips": [
-        "Site and vineyard position are central to Burgundy.",
-        "Burgundy is mainly Pinot Noir for reds and Chardonnay for whites."
+        "Know the key sub-regions: Chablis, Cote d'Or, Cote Chalonnaise, Maconnais and Beaujolais.",
+        "Burgundy is mainly Pinot Noir and Chardonnay, while Beaujolais is the key Gamay area.",
+        "Site and vineyard position are central to Burgundy."
       ],
       "tags": [
         "France",
@@ -2146,10 +2148,10 @@
           "keyPoint": "Burgundy also produces important traditional method sparkling wine."
         }
       },
-      "classification": "Burgundy has a strict hierarchical AOC ladder: Regional, Village, Premier Cru and Grand Cru.",
+      "classification": "Burgundy spans Chablis, Cote d'Or, Cote Chalonnaise, Maconnais and Beaujolais, with a strict hierarchy from regional appellations to village, Premier Cru and Grand Cru.",
       "lawNotes": [
-        "Pinot Noir and Chardonnay dominate the key quality zones.",
-        "Site hierarchy and village names are central exam themes."
+        "Pinot Noir and Chardonnay dominate most of Burgundy, while Gamay is central in Beaujolais.",
+        "Site hierarchy, village names and the major sub-regions are central exam themes."
       ],
       "vineyardFactors": [
         "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
@@ -2162,370 +2164,504 @@
         "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
         "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
         "Choice of production method and maturation is a major human factor in shaping regional wine style."
-      ]
-    },
-    "chablis": {
-      "name": "Chablis",
-      "summary": "Cool continental Chardonnay region known for lean, high-acid wines with citrus and mineral character.",
-      "climate": "Cool Continental",
-      "styleSummary": "Lean, high-acid Chardonnay with citrus and mineral profile.",
-      "mitigating": [
-        "Frost protection",
-        "Site selection",
-        "slope exposure"
       ],
-      "keyGrapes": [
-        "Chardonnay"
-      ],
-      "examTips": [
-        "Chablis is all about cool-climate Chardonnay.",
-        "High acidity and restrained oak are key clues."
-      ],
-      "tags": [
-        "France",
-        "Chablis",
-        "continental",
-        "Chardonnay",
-        "high-acid"
-      ],
-      "difficulty": 1,
-      "grapes": {
-        "Chardonnay": {
-          "summary": "Cool-climate Chardonnay showing lemon, green apple and mineral freshness, often with little or no oak.",
-          "style": "Green apple, lemon, very high acidity, often unoaked or subtly oaked.",
-          "aliases": [],
-          "profile": {
-            "acidity": "High",
-            "alcohol": "Low to Medium",
-            "body": "Light",
-            "tannin": "-"
-          },
-          "aromas": [
-            "green apple",
-            "lemon",
-            "mineral",
-            "citrus"
+      "subregions": {
+        "chablis": {
+          "name": "Chablis",
+          "summary": "Cool continental Chardonnay region known for lean, high-acid wines with citrus and mineral character.",
+          "climate": "Cool Continental",
+          "styleSummary": "Lean, high-acid Chardonnay with citrus and mineral profile.",
+          "mitigating": [
+            "Frost protection",
+            "Site selection",
+            "slope exposure"
           ],
-          "viticulture": [
-            "Frost risk"
-          ],
-          "winemaking": [
-            "Minimal oak common",
-            "Fresh style emphasis"
-          ],
-          "pairing": [
-            "oysters",
-            "shellfish",
-            "light fish dishes"
-          ],
-          "examTips": [
-            "Think leaner and more mineral than richer Burgundy Chardonnay.",
-            "High acidity is essential."
-          ],
-          "tags": [
-            "white",
-            "high-acid",
-            "mineral",
-            "France",
-            "Chablis"
-          ],
-          "difficulty": 1
-        }
-      },
-      "vineyardFactors": [
-        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
-        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
-        "Frost risk can shorten the effective growing season and threaten yields in vulnerable sites.",
-        "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
-      ],
-      "humanFactors": [
-        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
-        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
-        "Frost protection and careful site selection are key human responses in frost-prone vineyards.",
-        "Terracing, manual work, and careful site matching become more important on steep or exposed slopes."
-      ]
-    },
-    "cote-dor": {
-      "name": "Cote d'Or",
-      "summary": "The heartland of premium Burgundy, known for precise site expression from Pinot Noir and Chardonnay.",
-      "climate": "Cool Continental",
-      "styleSummary": "The classic heartland of premium Burgundy with strong site hierarchy.",
-      "mitigating": [
-        "East-facing slopes",
-        "mid-slope sites",
-        "drainage",
-        "mesoclimate precision"
-      ],
-      "keyGrapes": [
-        "Pinot Noir",
-        "Chardonnay"
-      ],
-      "examTips": [
-        "Site hierarchy and mid-slope vineyard position are key concepts.",
-        "Premium Burgundy is strongly linked to Cote d'Or."
-      ],
-      "tags": [
-        "France",
-        "Burgundy",
-        "Cote d'Or",
-        "premium",
-        "site-expression"
-      ],
-      "difficulty": 1,
-      "grapes": {
-        "Pinot Noir": {
-          "summary": "Fine, site-sensitive red grape producing elegant red-fruited wines with freshness and savoury complexity.",
-          "style": "Elegant red fruit, floral perfume, savoury complexity and fresh acid.",
-          "aliases": [],
-          "profile": {
-            "acidity": "High",
-            "alcohol": "Medium",
-            "body": "Light to Medium",
-            "tannin": "Low to Medium"
-          },
-          "aromas": [
-            "red cherry",
-            "raspberry",
-            "floral",
-            "earthy"
-          ],
-          "viticulture": [
-            "Very site-sensitive"
-          ],
-          "winemaking": [
-            "Oak common",
-            "Gentle extraction"
-          ],
-          "pairing": [
-            "duck",
-            "mushrooms",
-            "roast poultry"
-          ],
-          "examTips": [
-            "Think perfume, freshness and fine structure.",
-            "Site expression matters more than heavy winemaking."
-          ],
-          "tags": [
-            "red",
-            "elegant",
-            "site-sensitive",
-            "France",
-            "Burgundy"
-          ],
-          "difficulty": 1
-        },
-        "Chardonnay": {
-          "summary": "Premium white grape giving complex, concentrated wines with citrus, stone fruit, nut and oak notes.",
-          "style": "Complex, concentrated white styles with citrus, stone fruit, nut and oak notes.",
-          "aliases": [],
-          "profile": {
-            "acidity": "High",
-            "alcohol": "Medium",
-            "body": "Medium to Full",
-            "tannin": "-"
-          },
-          "aromas": [
-            "citrus",
-            "stone fruit",
-            "hazelnut",
-            "butter",
-            "oak"
-          ],
-          "viticulture": [
-            "Best on suitable limestone-rich sites"
-          ],
-          "winemaking": [
-            "Lees ageing",
-            "MLF",
-            "Oak often used"
-          ],
-          "pairing": [
-            "lobster",
-            "roast chicken",
-            "cream sauces"
-          ],
-          "examTips": [
-            "Concentration plus freshness is key.",
-            "Often richer and more layered than Chablis."
-          ],
-          "tags": [
-            "white",
-            "complex",
-            "oak-possible",
-            "France",
-            "Burgundy"
-          ],
-          "difficulty": 1
-        }
-      },
-      "vineyardFactors": [
-        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
-        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
-        "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality.",
-        "Drainage influences vine vigor and can be an important reason why some vineyard sites ripen more consistently than others."
-      ],
-      "humanFactors": [
-        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
-        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
-        "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
-        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
-      ]
-    },
-    "maconnais": {
-      "name": "Maconnais",
-      "summary": "Warmer southern Burgundy area producing fruitier, riper Chardonnay than northern Burgundy.",
-      "climate": "Moderate Continental [warmer southern influence]",
-      "styleSummary": "Riper, fruitier Chardonnay than northern Burgundy.",
-      "mitigating": [
-        "Warmer southerly position",
-        "slope and aspect"
-      ],
-      "keyGrapes": [
-        "Chardonnay"
-      ],
-      "examTips": [
-        "Think warmer, fruitier and less austere than Chablis.",
-        "Still Burgundy Chardonnay, but usually at a more approachable style."
-      ],
-      "tags": [
-        "France",
-        "Burgundy",
-        "Maconnais",
-        "Chardonnay",
-        "warmer-style"
-      ],
-      "difficulty": 1,
-      "grapes": {
-        "Chardonnay": {
-          "summary": "Riper-fruited Chardonnay with citrus and stone fruit, usually less austere than Chablis.",
-          "style": "Stone fruit, citrus, moderate to high acidity, often less austere than Chablis.",
-          "aliases": [],
-          "profile": {
-            "acidity": "Medium to High",
-            "alcohol": "Medium",
-            "body": "Medium",
-            "tannin": "-"
-          },
-          "aromas": [
-            "stone fruit",
-            "citrus",
-            "apple"
-          ],
-          "viticulture": [
-            "Warmer than northern Burgundy"
-          ],
-          "winemaking": [
-            "Fresh to lightly oaked styles"
-          ],
-          "pairing": [
-            "roast chicken",
-            "pasta",
-            "soft cheeses"
-          ],
-          "examTips": [
-            "Usually fruitier and broader than Chablis.",
-            "Warm southerly position is a key clue."
-          ],
-          "tags": [
-            "white",
-            "fruitier",
-            "Burgundy",
-            "France",
+          "keyGrapes": [
             "Chardonnay"
           ],
-          "difficulty": 1
-        }
-      },
-      "vineyardFactors": [
-        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
-        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
-        "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
-      ],
-      "humanFactors": [
-        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
-        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
-        "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
-        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
-      ]
-    },
-    "beaujolais": {
-      "name": "Beaujolais",
-      "summary": "Region south of Burgundy known for fresh, fruit-driven Gamay with low tannin and bright acidity.",
-      "climate": "Cool Continental",
-      "styleSummary": "Fresh, fruit-driven reds, often lighter-bodied, from Gamay.",
-      "mitigating": [
-        "Granite soils",
-        "southern exposure in better sites"
-      ],
-      "keyGrapes": [
-        "Gamay"
-      ],
-      "examTips": [
-        "Think juicy red fruit, low tannin and freshness.",
-        "Semi-carbonic maceration is a key production clue."
-      ],
-      "tags": [
-        "France",
-        "Beaujolais",
-        "Gamay",
-        "fruit-driven",
-        "light-red"
-      ],
-      "difficulty": 1,
-      "grapes": {
-        "Gamay": {
-          "summary": "Light to medium-bodied red grape producing juicy red fruit, fresh acidity and low tannin.",
-          "style": "Juicy red fruit, fresh acidity and low tannin.",
-          "aliases": [],
-          "profile": {
-            "acidity": "Medium to High",
-            "alcohol": "Low to Medium",
-            "body": "Light to Medium",
-            "tannin": "Low"
-          },
-          "aromas": [
-            "red cherry",
-            "raspberry",
-            "banana",
-            "red fruit"
-          ],
-          "viticulture": [
-            "Early budding",
-            "Can ripen well in cooler areas"
-          ],
-          "winemaking": [
-            "Semi-carbonic maceration common",
-            "Fruit-forward style emphasis"
-          ],
-          "pairing": [
-            "charcuterie",
-            "roast chicken",
-            "picnic foods"
-          ],
           "examTips": [
-            "Low tannin and juicy fruit are key clues.",
-            "Banana/pear-drop notes may suggest carbonic influence."
+            "Chablis is all about cool-climate Chardonnay.",
+            "High acidity and restrained oak are key clues."
           ],
           "tags": [
-            "red",
-            "low-tannin",
-            "fruit-forward",
             "France",
-            "Beaujolais"
+            "Chablis",
+            "continental",
+            "Chardonnay",
+            "high-acid"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "grapes": {
+            "Chardonnay": {
+              "summary": "Cool-climate Chardonnay showing lemon, green apple and mineral freshness, often with little or no oak.",
+              "style": "Green apple, lemon, very high acidity, often unoaked or subtly oaked.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Low to Medium",
+                "body": "Light",
+                "tannin": "-"
+              },
+              "aromas": [
+                "green apple",
+                "lemon",
+                "mineral",
+                "citrus"
+              ],
+              "viticulture": [
+                "Frost risk"
+              ],
+              "winemaking": [
+                "Minimal oak common",
+                "Fresh style emphasis"
+              ],
+              "pairing": [
+                "oysters",
+                "shellfish",
+                "light fish dishes"
+              ],
+              "examTips": [
+                "Think leaner and more mineral than richer Burgundy Chardonnay.",
+                "High acidity is essential."
+              ],
+              "tags": [
+                "white",
+                "high-acid",
+                "mineral",
+                "France",
+                "Chablis"
+              ],
+              "difficulty": 1
+            }
+          },
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Frost risk can shorten the effective growing season and threaten yields in vulnerable sites.",
+            "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Frost protection and careful site selection are key human responses in frost-prone vineyards.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes."
+          ]
+        },
+        "cote-dor": {
+          "name": "Cote d'Or",
+          "summary": "The heartland of premium Burgundy, known for precise site expression from Pinot Noir and Chardonnay.",
+          "climate": "Cool Continental",
+          "styleSummary": "The classic heartland of premium Burgundy with strong site hierarchy.",
+          "mitigating": [
+            "East-facing slopes",
+            "mid-slope sites",
+            "drainage",
+            "mesoclimate precision"
+          ],
+          "keyGrapes": [
+            "Pinot Noir",
+            "Chardonnay"
+          ],
+          "examTips": [
+            "Site hierarchy and mid-slope vineyard position are key concepts.",
+            "Premium Burgundy is strongly linked to Cote d'Or."
+          ],
+          "tags": [
+            "France",
+            "Burgundy",
+            "Cote d'Or",
+            "premium",
+            "site-expression"
+          ],
+          "difficulty": 1,
+          "grapes": {
+            "Pinot Noir": {
+              "summary": "Fine, site-sensitive red grape producing elegant red-fruited wines with freshness and savoury complexity.",
+              "style": "Elegant red fruit, floral perfume, savoury complexity and fresh acid.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Medium",
+                "body": "Light to Medium",
+                "tannin": "Low to Medium"
+              },
+              "aromas": [
+                "red cherry",
+                "raspberry",
+                "floral",
+                "earthy"
+              ],
+              "viticulture": [
+                "Very site-sensitive"
+              ],
+              "winemaking": [
+                "Oak common",
+                "Gentle extraction"
+              ],
+              "pairing": [
+                "duck",
+                "mushrooms",
+                "roast poultry"
+              ],
+              "examTips": [
+                "Think perfume, freshness and fine structure.",
+                "Site expression matters more than heavy winemaking."
+              ],
+              "tags": [
+                "red",
+                "elegant",
+                "site-sensitive",
+                "France",
+                "Burgundy"
+              ],
+              "difficulty": 1
+            },
+            "Chardonnay": {
+              "summary": "Premium white grape giving complex, concentrated wines with citrus, stone fruit, nut and oak notes.",
+              "style": "Complex, concentrated white styles with citrus, stone fruit, nut and oak notes.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Medium",
+                "body": "Medium to Full",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "stone fruit",
+                "hazelnut",
+                "butter",
+                "oak"
+              ],
+              "viticulture": [
+                "Best on suitable limestone-rich sites"
+              ],
+              "winemaking": [
+                "Lees ageing",
+                "MLF",
+                "Oak often used"
+              ],
+              "pairing": [
+                "lobster",
+                "roast chicken",
+                "cream sauces"
+              ],
+              "examTips": [
+                "Concentration plus freshness is key.",
+                "Often richer and more layered than Chablis."
+              ],
+              "tags": [
+                "white",
+                "complex",
+                "oak-possible",
+                "France",
+                "Burgundy"
+              ],
+              "difficulty": 1
+            }
+          },
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality.",
+            "Drainage influences vine vigor and can be an important reason why some vineyard sites ripen more consistently than others."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+            "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+          ]
+        },
+        "cote-chalonnaise": {
+          "name": "Cote Chalonnaise",
+          "summary": "Southern Burgundy sub-region producing fresher value-focused Pinot Noir and Chardonnay from village appellations such as Rully, Mercurey, Givry and Montagny.",
+          "climate": "Cool Continental",
+          "styleSummary": "Fresh reds and whites with clear Burgundy character, usually lighter and less concentrated than the best Cote d'Or wines.",
+          "mitigating": [
+            "slope",
+            "aspect",
+            "south-facing sites",
+            "site variation"
+          ],
+          "keyGrapes": [
+            "Pinot Noir",
+            "Chardonnay"
+          ],
+          "examTips": [
+            "Think village Burgundy from Mercurey, Givry, Rully and Montagny.",
+            "Usually less concentrated and less expensive than top Cote d'Or wines.",
+            "Bouzeron is the notable Aligote appellation here."
+          ],
+          "tags": [
+            "France",
+            "Burgundy",
+            "Cote Chalonnaise",
+            "Pinot Noir",
+            "Chardonnay"
+          ],
+          "difficulty": 1,
+          "grapes": {
+            "Pinot Noir": {
+              "summary": "Fresh red-fruited Pinot Noir with Burgundy perfume, moderate body and bright acidity.",
+              "style": "Red cherry, raspberry, floral notes and fresh acidity with moderate tannin.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Medium",
+                "body": "Light to Medium",
+                "tannin": "Low to Medium"
+              },
+              "aromas": [
+                "red cherry",
+                "raspberry",
+                "floral",
+                "earthy"
+              ],
+              "viticulture": [
+                "Very site-sensitive",
+                "Best examples come from well-exposed slopes"
+              ],
+              "winemaking": [
+                "Gentle extraction",
+                "Oak possible but usually less dominant than in top Cote d'Or wines"
+              ],
+              "pairing": [
+                "roast chicken",
+                "charcuterie",
+                "mushroom dishes"
+              ],
+              "examTips": [
+                "Freshness and red fruit matter more than power.",
+                "Usually lighter and less complex than many Cote d'Or examples."
+              ],
+              "tags": [
+                "red",
+                "fresh",
+                "France",
+                "Burgundy",
+                "Cote Chalonnaise"
+              ],
+              "difficulty": 1
+            },
+            "Chardonnay": {
+              "summary": "Fresh southern Burgundy Chardonnay with citrus, apple and stone-fruit character, sometimes with light oak influence.",
+              "style": "Citrus, apple and stone fruit with good acidity and moderate body.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "green apple",
+                "stone fruit",
+                "hazelnut"
+              ],
+              "viticulture": [
+                "Site and slope exposure are important",
+                "Ripens more easily than in the coolest Burgundy sites"
+              ],
+              "winemaking": [
+                "Fresh to lightly oaked styles",
+                "Lees ageing possible"
+              ],
+              "pairing": [
+                "roast chicken",
+                "cream sauces",
+                "soft cheeses"
+              ],
+              "examTips": [
+                "Think Burgundy shape with a little less concentration than the top Cote d'Or whites.",
+                "Montagny and Rully are key white-wine names."
+              ],
+              "tags": [
+                "white",
+                "fresh",
+                "France",
+                "Burgundy",
+                "Cote Chalonnaise"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Cote Chalonnaise includes Rully, Mercurey, Givry, Montagny and Bouzeron, and is an important source of village-level Burgundy wines.",
+          "lawNotes": [
+            "Bouzeron is the leading Burgundy appellation for Aligote.",
+            "Mercurey, Givry, Rully and Montagny are the village names to remember."
+          ],
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality.",
+            "Slightly warmer southerly position can help achieve a little more ripeness than the coolest Burgundy zones."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+            "Choice of oak level and extraction can strongly affect whether wines stay fresh and transparent or become heavier."
+          ]
+        },
+        "maconnais": {
+          "name": "Maconnais",
+          "summary": "Warmer southern Burgundy area producing fruitier, riper Chardonnay than northern Burgundy.",
+          "climate": "Moderate Continental [warmer southern influence]",
+          "styleSummary": "Riper, fruitier Chardonnay than northern Burgundy.",
+          "mitigating": [
+            "Warmer southerly position",
+            "slope and aspect"
+          ],
+          "keyGrapes": [
+            "Chardonnay"
+          ],
+          "examTips": [
+            "Think warmer, fruitier and less austere than Chablis.",
+            "Still Burgundy Chardonnay, but usually at a more approachable style."
+          ],
+          "tags": [
+            "France",
+            "Burgundy",
+            "Maconnais",
+            "Chardonnay",
+            "warmer-style"
+          ],
+          "difficulty": 1,
+          "grapes": {
+            "Chardonnay": {
+              "summary": "Riper-fruited Chardonnay with citrus and stone fruit, usually less austere than Chablis.",
+              "style": "Stone fruit, citrus, moderate to high acidity, often less austere than Chablis.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "stone fruit",
+                "citrus",
+                "apple"
+              ],
+              "viticulture": [
+                "Warmer than northern Burgundy"
+              ],
+              "winemaking": [
+                "Fresh to lightly oaked styles"
+              ],
+              "pairing": [
+                "roast chicken",
+                "pasta",
+                "soft cheeses"
+              ],
+              "examTips": [
+                "Usually fruitier and broader than Chablis.",
+                "Warm southerly position is a key clue."
+              ],
+              "tags": [
+                "white",
+                "fruitier",
+                "Burgundy",
+                "France",
+                "Chardonnay"
+              ],
+              "difficulty": 1
+            }
+          },
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+            "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+          ]
+        },
+        "beaujolais": {
+          "name": "Beaujolais",
+          "summary": "Region south of Burgundy known for fresh, fruit-driven Gamay with low tannin and bright acidity.",
+          "climate": "Cool Continental",
+          "styleSummary": "Fresh, fruit-driven reds, often lighter-bodied, from Gamay.",
+          "mitigating": [
+            "Granite soils",
+            "southern exposure in better sites"
+          ],
+          "keyGrapes": [
+            "Gamay"
+          ],
+          "examTips": [
+            "Think juicy red fruit, low tannin and freshness.",
+            "Semi-carbonic maceration is a key production clue."
+          ],
+          "tags": [
+            "France",
+            "Beaujolais",
+            "Gamay",
+            "fruit-driven",
+            "light-red"
+          ],
+          "difficulty": 1,
+          "grapes": {
+            "Gamay": {
+              "summary": "Light to medium-bodied red grape producing juicy red fruit, fresh acidity and low tannin.",
+              "style": "Juicy red fruit, fresh acidity and low tannin.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Low to Medium",
+                "body": "Light to Medium",
+                "tannin": "Low"
+              },
+              "aromas": [
+                "red cherry",
+                "raspberry",
+                "banana",
+                "red fruit"
+              ],
+              "viticulture": [
+                "Early budding",
+                "Can ripen well in cooler areas"
+              ],
+              "winemaking": [
+                "Semi-carbonic maceration common",
+                "Fruit-forward style emphasis"
+              ],
+              "pairing": [
+                "charcuterie",
+                "roast chicken",
+                "picnic foods"
+              ],
+              "examTips": [
+                "Low tannin and juicy fruit are key clues.",
+                "Banana/pear-drop notes may suggest carbonic influence."
+              ],
+              "tags": [
+                "red",
+                "low-tannin",
+                "fruit-forward",
+                "France",
+                "Beaujolais"
+              ],
+              "difficulty": 1
+            }
+          },
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Soil type influences drainage, heat retention, and vine vigor, shaping the style and consistency of the wines."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+          ]
         }
-      },
-      "vineyardFactors": [
-        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
-        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
-        "Soil type influences drainage, heat retention, and vine vigor, shaping the style and consistency of the wines."
-      ],
-      "humanFactors": [
-        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
-        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
-        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
-      ]
+      }
     },
     "alsace": {
       "name": "Alsace",
@@ -2736,28 +2872,35 @@
         "Irrigation, drought-adapted training, or careful water management become important where dry conditions are severe."
       ]
     },
-    "muscadet": {
-      "name": "Muscadet",
-      "summary": "Cool maritime Loire region producing light, crisp whites with saline freshness, often enhanced by lees ageing.",
-      "climate": "Cool Maritime",
-      "styleSummary": "Light, crisp whites often with saline freshness.",
+    "loire-valley": {
+      "name": "Loire Valley",
+      "summary": "Long French river valley studied in WSET through Muscadet, Anjou-Saumur, Touraine and the Central Vineyards.",
+      "climate": "Moderate Maritime to Cool Continental",
+      "styleSummary": "Fresh high-acid whites, Cabernet Franc reds, sparkling Chenin Blanc and some sweet wines.",
       "mitigating": [
         "Atlantic influence",
-        "cool conditions"
+        "Loire River",
+        "inland cooling eastwards",
+        "site variation"
       ],
       "keyGrapes": [
-        "Melon Blanc"
+        "Melon Blanc",
+        "Chenin Blanc",
+        "Sauvignon Blanc",
+        "Cabernet Franc"
       ],
       "examTips": [
-        "Think light body, high acidity and possible lees texture.",
-        "Classic pairing with shellfish."
+        "Think Loire from west to east: Muscadet, Anjou-Saumur, Touraine, Central Vineyards.",
+        "Chenin Blanc, Sauvignon Blanc and Cabernet Franc are the headline grapes.",
+        "Freshness and high acidity are recurring tasting clues."
       ],
       "tags": [
         "France",
-        "Loire",
-        "maritime",
+        "Loire Valley",
+        "cool-climate",
+        "high-acid",
         "white",
-        "lees-aged"
+        "red"
       ],
       "difficulty": 1,
       "grapes": {
@@ -2801,46 +2944,7 @@
             "Loire"
           ],
           "difficulty": 1
-        }
-      },
-      "vineyardFactors": [
-        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
-        "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
-        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
-      ],
-      "humanFactors": [
-        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
-        "Disease control and canopy management are often important human factors in maritime climates.",
-        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
-      ]
-    },
-    "anjou-saumur": {
-      "name": "Anjou-Saumur",
-      "summary": "Important Loire subregion known for Chenin Blanc in dry, sweet and sparkling styles, plus Cabernet Franc reds.",
-      "climate": "Moderate Maritime [transitional]",
-      "styleSummary": "Versatile Loire area producing dry and sweet Chenin Blanc, sparkling wines and fresh Cabernet Franc reds.",
-      "mitigating": [
-        "Atlantic influence",
-        "river effect"
-      ],
-      "keyGrapes": [
-        "Chenin Blanc",
-        "Cabernet Franc"
-      ],
-      "examTips": [
-        "Anjou-Saumur is important for Loire sparkling as well as still wines.",
-        "Chenin Blanc combines high acidity with versatility across dry, sweet and sparkling styles.",
-        "Saumur and Cremant de Loire are key sparkling names to remember."
-      ],
-      "tags": [
-        "France",
-        "Loire",
-        "Chenin Blanc",
-        "Cabernet Franc",
-        "versatile"
-      ],
-      "difficulty": 1,
-      "grapes": {
+        },
         "Chenin Blanc": {
           "summary": "Very versatile high-acid grape capable of dry, off-dry, sweet and sparkling styles.",
           "style": "Can range from dry to sweet; high acidity with apple, quince and honey notes.",
@@ -2882,101 +2986,9 @@
           ],
           "difficulty": 1
         },
-        "Cabernet Franc": {
-          "summary": "Fresh red-fruited grape with herbal notes and moderate tannin, important in Loire reds.",
-          "style": "Red fruit, herbal notes and medium tannin.",
-          "aliases": [],
-          "profile": {
-            "acidity": "Medium to High",
-            "alcohol": "Medium",
-            "body": "Medium",
-            "tannin": "Medium"
-          },
-          "aromas": [
-            "red fruit",
-            "herbal",
-            "violet"
-          ],
-          "viticulture": [
-            "Earlier ripening than Cabernet Sauvignon"
-          ],
-          "winemaking": [
-            "Usually gentle to moderate extraction"
-          ],
-          "pairing": [
-            "charcuterie",
-            "roast poultry",
-            "mushrooms"
-          ],
-          "examTips": [
-            "Think fresher and lighter than many Bordeaux reds."
-          ],
-          "tags": [
-            "red",
-            "fresh",
-            "herbal",
-            "France",
-            "Loire"
-          ],
-          "difficulty": 1
-        }
-      },
-      "styles": {
-        "cremant-de-loire": {
-          "name": "Cremant de Loire",
-          "style": "Traditional method sparkling wine with apple, citrus and brioche notes, usually with high acidity and moderate complexity.",
-          "aging": "Bottle fermentation with lees ageing",
-          "keyPoint": "A major Loire sparkling appellation made outside Champagne rules."
-        },
-        "saumur": {
-          "name": "Saumur Sparkling",
-          "style": "Fresh traditional method sparkling wine, often Chenin-based, with high acidity and subtle autolytic character.",
-          "aging": "Bottle fermentation with lees ageing",
-          "keyPoint": "Saumur is one of the principal sparkling names from the Loire."
-        }
-      },
-      "vineyardFactors": [
-        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
-        "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
-        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
-        "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
-      ],
-      "humanFactors": [
-        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
-        "Disease control and canopy management are often important human factors in maritime climates.",
-        "Choice of production method and maturation is a major human factor in shaping regional wine style.",
-        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
-      ]
-    },
-    "touraine": {
-      "name": "Touraine",
-      "summary": "Loire region producing fresh Sauvignon Blanc, lighter Cabernet Franc reds and sparkling Chenin Blanc styles including Vouvray.",
-      "climate": "Moderate Maritime [transitional]",
-      "styleSummary": "Fresh whites and reds plus high-acid Loire sparkling wines from Chenin Blanc in key areas.",
-      "mitigating": [
-        "River influence",
-        "increasing inland effect eastwards"
-      ],
-      "keyGrapes": [
-        "Sauvignon Blanc",
-        "Cabernet Franc"
-      ],
-      "examTips": [
-        "Touraine covers both still Loire wines and sparkling Vouvray styles.",
-        "Chenin Blanc can make dry, sweet and sparkling wines depending on conditions and winemaking."
-      ],
-      "tags": [
-        "France",
-        "Loire",
-        "transitional",
-        "Sauvignon Blanc",
-        "fresh"
-      ],
-      "difficulty": 1,
-      "grapes": {
         "Sauvignon Blanc": {
-          "summary": "Fresh aromatic white grape with high acidity and citrus-led profile.",
-          "style": "Fresh citrus and green fruit with high acidity.",
+          "summary": "High-acid aromatic grape producing citrus, gooseberry and herbal notes in cool climates.",
+          "style": "High acidity, citrus, gooseberry and herbal notes.",
           "aliases": [],
           "profile": {
             "acidity": "High",
@@ -2986,22 +2998,23 @@
           },
           "aromas": [
             "citrus",
-            "green fruit",
-            "herbal"
+            "gooseberry",
+            "herbal",
+            "green fruit"
           ],
           "viticulture": [
-            "Aromatic grape"
+            "Aromatic grape suited to cool conditions"
           ],
           "winemaking": [
-            "Cool fermentation common"
+            "Usually stainless steel and fresh style"
           ],
           "pairing": [
             "goat cheese",
-            "salads",
-            "seafood"
+            "oysters",
+            "salads"
           ],
           "examTips": [
-            "High acidity and fresh herbal/citrus profile are strong clues."
+            "Very high freshness and clean aromatic profile are key clues."
           ],
           "tags": [
             "white",
@@ -3050,114 +3063,263 @@
           "difficulty": 1
         }
       },
-      "styles": {
-        "vouvray": {
-          "name": "Vouvray Sparkling",
-          "style": "High-acid sparkling Chenin Blanc with apple, citrus and honeyed complexity developing with age.",
-          "aging": "Traditional method, often with lees ageing",
-          "keyPoint": "Chenin Blanc and high acidity are the core clues for Vouvray sparkling."
-        }
-      },
+      "classification": "WSET studies Loire Valley through Muscadet, Anjou-Saumur, Touraine and the Central Vineyards.",
+      "lawNotes": [
+        "Muscadet is linked with Melon Blanc and often lees ageing.",
+        "Vouvray focuses on Chenin Blanc, while Sancerre and Pouilly-Fume focus on Sauvignon Blanc."
+      ],
       "vineyardFactors": [
-        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
-        "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
-        "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+        "Atlantic influence is strongest in the west and inland continental influence grows toward the east.",
+        "The Loire River and tributaries help moderate vineyards and create important mesoclimates.",
+        "Cooler conditions preserve acidity, so site exposure and ripeness are important."
       ],
       "humanFactors": [
-        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
-        "Disease control and canopy management are often important human factors in maritime climates.",
-        "Choice of production method and maturation is a major human factor in shaping regional wine style.",
-        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
-      ]
-    },
-    "central-vineyards": {
-      "name": "Central Vineyards",
-      "summary": "Cool inland Loire area focused on precise, high-acid Sauvignon Blanc wines.",
-      "climate": "Cool Continental",
-      "styleSummary": "Focused on high-acid Sauvignon Blanc styles.",
-      "mitigating": [
-        "Inland cool climate",
-        "slope and exposure"
+        "Producers match grape variety and wine style to each stretch of the valley and its local climate.",
+        "Harvest timing is critical to balance ripeness with the Loire’s naturally high acidity.",
+        "Site and appellation choice strongly shape whether wines are still, sparkling, dry or sweet."
       ],
-      "keyGrapes": [
-        "Sauvignon Blanc"
-      ],
-      "examTips": [
-        "This is a key Loire Sauvignon Blanc zone.",
-        "Think high acidity, citrus and herbal freshness."
-      ],
-      "tags": [
-        "France",
-        "Loire",
-        "continental",
-        "Sauvignon Blanc",
-        "high-acid"
-      ],
-      "difficulty": 1,
-      "grapes": {
-        "Sauvignon Blanc": {
-          "summary": "High-acid aromatic grape producing citrus, gooseberry and herbal notes in cool climates.",
-          "style": "High acidity, citrus, gooseberry and herbal notes.",
-          "aliases": [],
-          "profile": {
-            "acidity": "High",
-            "alcohol": "Low to Medium",
-            "body": "Light",
-            "tannin": "-"
-          },
-          "aromas": [
-            "citrus",
-            "gooseberry",
-            "herbal",
-            "green fruit"
-          ],
-          "viticulture": [
-            "Aromatic grape suited to cool conditions"
-          ],
-          "winemaking": [
-            "Usually stainless steel and fresh style"
-          ],
-          "pairing": [
-            "goat cheese",
-            "oysters",
-            "salads"
-          ],
-          "examTips": [
-            "Very high freshness and clean aromatic profile are key clues."
-          ],
-          "tags": [
-            "white",
-            "high-acid",
-            "aromatic",
-            "France",
-            "Loire"
-          ],
-          "difficulty": 1
-        }
-      },
       "subregions": {
-        "sancerre": {
-          "name": "Sancerre",
-          "summary": "Benchmark Loire appellation for precise high-acid Sauvignon Blanc, with some Pinot Noir also produced.",
-          "climate": "Cool Continental",
-          "styleSummary": "Fresh, high-acid Sauvignon Blanc with citrus, green fruit and mineral precision.",
+        "muscadet": {
+          "name": "Muscadet",
+          "summary": "Cool maritime Loire region producing light, crisp whites with saline freshness, often enhanced by lees ageing.",
+          "climate": "Cool Maritime",
+          "styleSummary": "Light, crisp whites often with saline freshness.",
+          "mitigating": [
+            "Atlantic influence",
+            "cool conditions"
+          ],
           "keyGrapes": [
-            "Sauvignon Blanc",
-            "Pinot Noir"
+            "Melon Blanc"
           ],
           "examTips": [
-            "Sancerre is one of the key named Loire Sauvignon Blanc appellations.",
-            "Think precision, freshness and high acidity."
+            "Think light body, high acidity and possible lees texture.",
+            "Classic pairing with shellfish."
           ],
           "tags": [
             "France",
             "Loire",
-            "Sancerre"
+            "maritime",
+            "white",
+            "lees-aged"
           ],
+          "difficulty": 1,
+          "grapes": {
+            "Melon Blanc": {
+              "summary": "Light-bodied high-acid white grape producing crisp citrus-led wines, often with lees-derived texture.",
+              "style": "Light-bodied, citrus-led, high-acid white.",
+              "aliases": [
+                "Melon de Bourgogne"
+              ],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Low to Medium",
+                "body": "Light",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "green apple",
+                "saline"
+              ],
+              "viticulture": [
+                "Suitable for cool maritime climate"
+              ],
+              "winemaking": [
+                "Often lees ageing for texture"
+              ],
+              "pairing": [
+                "oysters",
+                "mussels",
+                "shellfish"
+              ],
+              "examTips": [
+                "High acidity plus light body is key.",
+                "Lees ageing can add subtle texture without obvious oak."
+              ],
+              "tags": [
+                "white",
+                "high-acid",
+                "maritime",
+                "France",
+                "Loire"
+              ],
+              "difficulty": 1
+            }
+          },
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+          ]
+        },
+        "anjou-saumur": {
+          "name": "Anjou-Saumur",
+          "summary": "Important Loire subregion known for Chenin Blanc in dry, sweet and sparkling styles, plus Cabernet Franc reds.",
+          "climate": "Moderate Maritime [transitional]",
+          "styleSummary": "Versatile Loire area producing dry and sweet Chenin Blanc, sparkling wines and fresh Cabernet Franc reds.",
+          "mitigating": [
+            "Atlantic influence",
+            "river effect"
+          ],
+          "keyGrapes": [
+            "Chenin Blanc",
+            "Cabernet Franc"
+          ],
+          "examTips": [
+            "Anjou-Saumur is important for Loire sparkling as well as still wines.",
+            "Chenin Blanc combines high acidity with versatility across dry, sweet and sparkling styles.",
+            "Saumur and Cremant de Loire are key sparkling names to remember."
+          ],
+          "tags": [
+            "France",
+            "Loire",
+            "Chenin Blanc",
+            "Cabernet Franc",
+            "versatile"
+          ],
+          "difficulty": 1,
+          "grapes": {
+            "Chenin Blanc": {
+              "summary": "Very versatile high-acid grape capable of dry, off-dry, sweet and sparkling styles.",
+              "style": "Can range from dry to sweet; high acidity with apple, quince and honey notes.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Low to Medium",
+                "body": "Light to Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "apple",
+                "quince",
+                "honey",
+                "citrus"
+              ],
+              "viticulture": [
+                "Retains acidity well",
+                "Can be affected by botrytis"
+              ],
+              "winemaking": [
+                "Dry, off-dry, sweet and sparkling styles possible"
+              ],
+              "pairing": [
+                "goat cheese",
+                "roast chicken",
+                "spicy food"
+              ],
+              "examTips": [
+                "High acidity is the key clue.",
+                "Style can vary hugely depending on sweetness and winemaking."
+              ],
+              "tags": [
+                "white",
+                "high-acid",
+                "versatile",
+                "France",
+                "Loire"
+              ],
+              "difficulty": 1
+            },
+            "Cabernet Franc": {
+              "summary": "Fresh red-fruited grape with herbal notes and moderate tannin, important in Loire reds.",
+              "style": "Red fruit, herbal notes and medium tannin.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "Medium"
+              },
+              "aromas": [
+                "red fruit",
+                "herbal",
+                "violet"
+              ],
+              "viticulture": [
+                "Earlier ripening than Cabernet Sauvignon"
+              ],
+              "winemaking": [
+                "Usually gentle to moderate extraction"
+              ],
+              "pairing": [
+                "charcuterie",
+                "roast poultry",
+                "mushrooms"
+              ],
+              "examTips": [
+                "Think fresher and lighter than many Bordeaux reds."
+              ],
+              "tags": [
+                "red",
+                "fresh",
+                "herbal",
+                "France",
+                "Loire"
+              ],
+              "difficulty": 1
+            }
+          },
+          "styles": {
+            "cremant-de-loire": {
+              "name": "Cremant de Loire",
+              "style": "Traditional method sparkling wine with apple, citrus and brioche notes, usually with high acidity and moderate complexity.",
+              "aging": "Bottle fermentation with lees ageing",
+              "keyPoint": "A major Loire sparkling appellation made outside Champagne rules."
+            },
+            "saumur": {
+              "name": "Saumur Sparkling",
+              "style": "Fresh traditional method sparkling wine, often Chenin-based, with high acidity and subtle autolytic character.",
+              "aging": "Bottle fermentation with lees ageing",
+              "keyPoint": "Saumur is one of the principal sparkling names from the Loire."
+            }
+          },
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Choice of production method and maturation is a major human factor in shaping regional wine style.",
+            "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+          ]
+        },
+        "touraine": {
+          "name": "Touraine",
+          "summary": "Loire region producing fresh Sauvignon Blanc, lighter Cabernet Franc reds and sparkling Chenin Blanc styles including Vouvray.",
+          "climate": "Moderate Maritime [transitional]",
+          "styleSummary": "Fresh whites and reds plus high-acid Loire sparkling wines from Chenin Blanc in key areas.",
+          "mitigating": [
+            "River influence",
+            "increasing inland effect eastwards"
+          ],
+          "keyGrapes": [
+            "Sauvignon Blanc",
+            "Cabernet Franc"
+          ],
+          "examTips": [
+            "Touraine covers both still Loire wines and sparkling Vouvray styles.",
+            "Chenin Blanc can make dry, sweet and sparkling wines depending on conditions and winemaking."
+          ],
+          "tags": [
+            "France",
+            "Loire",
+            "transitional",
+            "Sauvignon Blanc",
+            "fresh"
+          ],
+          "difficulty": 1,
           "grapes": {
             "Sauvignon Blanc": {
-              "summary": "High-acid aromatic grape producing citrus, gooseberry and herbal notes in cool climates.",
-              "style": "High acidity, citrus, gooseberry and herbal notes.",
+              "summary": "Fresh aromatic white grape with high acidity and citrus-led profile.",
+              "style": "Fresh citrus and green fruit with high acidity.",
               "aliases": [],
               "profile": {
                 "acidity": "High",
@@ -3167,109 +3329,353 @@
               },
               "aromas": [
                 "citrus",
-                "gooseberry",
-                "herbal",
-                "green fruit"
+                "green fruit",
+                "herbal"
               ],
               "viticulture": [
-                "Aromatic grape suited to cool conditions"
+                "Aromatic grape"
               ],
               "winemaking": [
-                "Usually stainless steel and fresh style"
+                "Cool fermentation common"
               ],
               "pairing": [
                 "goat cheese",
-                "oysters",
-                "salads"
+                "salads",
+                "seafood"
               ],
               "examTips": [
-                "Very high freshness and clean aromatic profile are key clues."
+                "High acidity and fresh herbal/citrus profile are strong clues."
               ],
               "tags": [
                 "white",
                 "high-acid",
                 "aromatic",
                 "France",
-                "Loire",
-                "Central Vineyards",
-                "Sancerre"
+                "Loire"
               ],
               "difficulty": 1
             },
-            "Pinot Noir": {
-              "summary": "Thin-skinned red grape producing perfumed, high-acid wines with red fruit and earthy notes.",
-              "style": "Red cherry, raspberry, floral and earthy notes with fresh acidity.",
+            "Cabernet Franc": {
+              "summary": "Medium-bodied red grape producing fresh red fruit and herbal notes.",
+              "style": "Fresh red fruit and herbal notes.",
               "aliases": [],
               "profile": {
-                "acidity": "High",
+                "acidity": "Medium to High",
                 "alcohol": "Medium",
-                "body": "Light to Medium",
-                "tannin": "Low to Medium"
+                "body": "Medium",
+                "tannin": "Medium"
               },
               "aromas": [
-                "red cherry",
-                "raspberry",
-                "floral",
-                "earthy"
+                "red fruit",
+                "herbal",
+                "leafy"
               ],
               "viticulture": [
-                "Thin skin",
-                "Sensitive to site and rot pressure"
+                "Ripens earlier than Cabernet Sauvignon"
               ],
               "winemaking": [
-                "Gentle extraction",
-                "Oak often used but balanced"
+                "Usually fruit-led styles"
               ],
               "pairing": [
-                "duck",
-                "mushroom dishes",
+                "charcuterie",
                 "roast chicken"
               ],
               "examTips": [
-                "High acidity with red fruit and lighter body is a key clue.",
-                "Very site-sensitive."
+                "Usually fresher and lighter than Bordeaux styles."
               ],
               "tags": [
                 "red",
-                "high-acid",
-                "light-medium-body",
+                "fresh",
+                "herbal",
                 "France",
-                "Burgundy",
-                "Central Vineyards",
-                "Sancerre"
+                "Loire"
               ],
               "difficulty": 1
             }
           },
           "vineyardFactors": [
-            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
-            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
-            "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
           ],
           "humanFactors": [
-            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
-            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
-            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
-            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
-          ]
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Choice of production method and maturation is a major human factor in shaping regional wine style.",
+            "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+          ],
+          "subregions": {
+            "vouvray": {
+              "name": "Vouvray",
+              "summary": "Classic Touraine appellation for Chenin Blanc, producing dry, off-dry, sweet and sparkling wines with high acidity.",
+              "climate": "Moderate Maritime [cool inland influence]",
+              "styleSummary": "High-acid Chenin Blanc in dry to sweet still styles and traditional method sparkling wines.",
+              "mitigating": [
+                "Loire River",
+                "cool inland climate",
+                "tuffeau slopes"
+              ],
+              "keyGrapes": [
+                "Chenin Blanc"
+              ],
+              "examTips": [
+                "Vouvray is the key Chenin Blanc name within Touraine.",
+                "Dry, medium, sweet and sparkling styles are all possible."
+              ],
+              "tags": [
+                "France",
+                "Loire Valley",
+                "Touraine",
+                "Vouvray",
+                "white",
+                "sparkling"
+              ],
+              "grapes": {
+                "Chenin Blanc": {
+                  "summary": "Very versatile high-acid grape capable of dry, off-dry, sweet and sparkling styles.",
+                  "style": "Can range from dry to sweet; high acidity with apple, quince and honey notes.",
+                  "aliases": [],
+                  "profile": {
+                    "acidity": "High",
+                    "alcohol": "Low to Medium",
+                    "body": "Light to Medium",
+                    "tannin": "-"
+                  },
+                  "aromas": [
+                    "apple",
+                    "quince",
+                    "honey",
+                    "citrus"
+                  ],
+                  "viticulture": [
+                    "Retains acidity well",
+                    "Can be affected by botrytis"
+                  ],
+                  "winemaking": [
+                    "Dry, off-dry, sweet and sparkling styles possible"
+                  ],
+                  "pairing": [
+                    "goat cheese",
+                    "roast chicken",
+                    "spicy food"
+                  ],
+                  "examTips": [
+                    "High acidity is the key clue.",
+                    "Style can vary hugely depending on sweetness and winemaking."
+                  ],
+                  "tags": [
+                    "white",
+                    "high-acid",
+                    "versatile",
+                    "France",
+                    "Loire"
+                  ],
+                  "difficulty": 1
+                }
+              },
+              "classification": "Vouvray is a Touraine appellation focused on Chenin Blanc in still and sparkling styles.",
+              "lawNotes": [
+                "Sweetness levels vary widely from dry through to sweet.",
+                "Traditional method sparkling Vouvray is an important exam example."
+              ],
+              "vineyardFactors": [
+                "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+                "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+                "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+              ],
+              "humanFactors": [
+                "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+                "Disease control and canopy management are often important human factors in maritime climates.",
+                "Choice of production method and maturation is a major human factor in shaping regional wine style.",
+                "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+              ]
+            },
+            "chinon": {
+              "name": "Chinon",
+              "summary": "Important Touraine Cabernet Franc appellation producing dry reds with red fruit, herbal notes and freshness.",
+              "climate": "Moderate Maritime [cool inland influence]",
+              "styleSummary": "Cabernet Franc reds with red cherry fruit, herbal character and moderate structure.",
+              "mitigating": [
+                "Loire River",
+                "sheltered valley sites",
+                "inland moderation"
+              ],
+              "keyGrapes": [
+                "Cabernet Franc"
+              ],
+              "examTips": [
+                "Chinon is one of the key Loire Cabernet Franc names to remember.",
+                "Expect red fruit, leafy notes and fresher structure than warmer New World Cabernet Franc."
+              ],
+              "tags": [
+                "France",
+                "Loire Valley",
+                "Touraine",
+                "Chinon",
+                "red"
+              ],
+              "grapes": {
+                "Cabernet Franc": {
+                  "summary": "Medium-bodied red grape producing fresh red fruit and herbal notes.",
+                  "style": "Fresh red fruit and herbal notes.",
+                  "aliases": [],
+                  "profile": {
+                    "acidity": "Medium to High",
+                    "alcohol": "Medium",
+                    "body": "Medium",
+                    "tannin": "Medium"
+                  },
+                  "aromas": [
+                    "red fruit",
+                    "herbal",
+                    "leafy"
+                  ],
+                  "viticulture": [
+                    "Ripens earlier than Cabernet Sauvignon"
+                  ],
+                  "winemaking": [
+                    "Usually fruit-led styles"
+                  ],
+                  "pairing": [
+                    "charcuterie",
+                    "roast chicken"
+                  ],
+                  "examTips": [
+                    "Usually fresher and lighter than Bordeaux styles."
+                  ],
+                  "tags": [
+                    "red",
+                    "fresh",
+                    "herbal",
+                    "France",
+                    "Loire"
+                  ],
+                  "difficulty": 1
+                }
+              },
+              "classification": "Chinon is a leading Loire appellation for Cabernet Franc-based reds.",
+              "lawNotes": [
+                "Cabernet Franc dominates the appellation.",
+                "Styles are usually dry and medium-bodied with marked freshness."
+              ],
+              "vineyardFactors": [
+                "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+                "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+                "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+              ],
+              "humanFactors": [
+                "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+                "Disease control and canopy management are often important human factors in maritime climates.",
+                "Choice of production method and maturation is a major human factor in shaping regional wine style.",
+                "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+              ]
+            },
+            "bourgueil": {
+              "name": "Bourgueil",
+              "summary": "Touraine Cabernet Franc appellation known for dry reds ranging from lighter fresh styles to more structured wines from better sites.",
+              "climate": "Moderate Maritime [cool inland influence]",
+              "styleSummary": "Fresh to medium-bodied Cabernet Franc reds with red fruit, herbs and moderate tannin.",
+              "mitigating": [
+                "Loire River",
+                "sheltered valley sites",
+                "inland moderation"
+              ],
+              "keyGrapes": [
+                "Cabernet Franc"
+              ],
+              "examTips": [
+                "Bourgueil is another classic Loire Cabernet Franc appellation alongside Chinon.",
+                "Remember the fresh red-fruit and herbal profile."
+              ],
+              "tags": [
+                "France",
+                "Loire Valley",
+                "Touraine",
+                "Bourgueil",
+                "red"
+              ],
+              "grapes": {
+                "Cabernet Franc": {
+                  "summary": "Medium-bodied red grape producing fresh red fruit and herbal notes.",
+                  "style": "Fresh red fruit and herbal notes.",
+                  "aliases": [],
+                  "profile": {
+                    "acidity": "Medium to High",
+                    "alcohol": "Medium",
+                    "body": "Medium",
+                    "tannin": "Medium"
+                  },
+                  "aromas": [
+                    "red fruit",
+                    "herbal",
+                    "leafy"
+                  ],
+                  "viticulture": [
+                    "Ripens earlier than Cabernet Sauvignon"
+                  ],
+                  "winemaking": [
+                    "Usually fruit-led styles"
+                  ],
+                  "pairing": [
+                    "charcuterie",
+                    "roast chicken"
+                  ],
+                  "examTips": [
+                    "Usually fresher and lighter than Bordeaux styles."
+                  ],
+                  "tags": [
+                    "red",
+                    "fresh",
+                    "herbal",
+                    "France",
+                    "Loire"
+                  ],
+                  "difficulty": 1
+                }
+              },
+              "classification": "Bourgueil is a Cabernet Franc-focused Touraine appellation.",
+              "lawNotes": [
+                "Cabernet Franc is the essential grape here.",
+                "Site and soil differences explain lighter versus more structured examples."
+              ],
+              "vineyardFactors": [
+                "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+                "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+                "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+              ],
+              "humanFactors": [
+                "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+                "Disease control and canopy management are often important human factors in maritime climates.",
+                "Choice of production method and maturation is a major human factor in shaping regional wine style.",
+                "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+              ]
+            }
+          }
         },
-        "pouilly-fume": {
-          "name": "Pouilly-Fume",
-          "summary": "Prestige Loire Sauvignon Blanc appellation known for dry, high-acid wines with mineral and smoky notes.",
+        "central-vineyards": {
+          "name": "Central Vineyards",
+          "summary": "Cool inland Loire area focused on precise, high-acid Sauvignon Blanc wines.",
           "climate": "Cool Continental",
-          "styleSummary": "Dry Sauvignon Blanc with high acidity, citrus fruit and mineral/smoky nuance.",
+          "styleSummary": "Focused on high-acid Sauvignon Blanc styles.",
+          "mitigating": [
+            "Inland cool climate",
+            "slope and exposure"
+          ],
           "keyGrapes": [
             "Sauvignon Blanc"
           ],
           "examTips": [
-            "The grape is Sauvignon Blanc, not Fume Blanc in the New World sense.",
-            "Know it alongside Sancerre."
+            "This is a key Loire Sauvignon Blanc zone.",
+            "Think high acidity, citrus and herbal freshness."
           ],
           "tags": [
             "France",
             "Loire",
-            "Pouilly-Fume"
+            "continental",
+            "Sauvignon Blanc",
+            "high-acid"
           ],
+          "difficulty": 1,
           "grapes": {
             "Sauvignon Blanc": {
               "summary": "High-acid aromatic grape producing citrus, gooseberry and herbal notes in cool climates.",
@@ -3306,11 +3712,200 @@
                 "high-acid",
                 "aromatic",
                 "France",
-                "Loire",
-                "Central Vineyards",
-                "Pouilly-Fume"
+                "Loire"
               ],
               "difficulty": 1
+            }
+          },
+          "subregions": {
+            "sancerre": {
+              "name": "Sancerre",
+              "summary": "Benchmark Loire appellation for precise high-acid Sauvignon Blanc, with some Pinot Noir also produced.",
+              "climate": "Cool Continental",
+              "styleSummary": "Fresh, high-acid Sauvignon Blanc with citrus, green fruit and mineral precision.",
+              "keyGrapes": [
+                "Sauvignon Blanc",
+                "Pinot Noir"
+              ],
+              "examTips": [
+                "Sancerre is one of the key named Loire Sauvignon Blanc appellations.",
+                "Think precision, freshness and high acidity."
+              ],
+              "tags": [
+                "France",
+                "Loire",
+                "Sancerre"
+              ],
+              "grapes": {
+                "Sauvignon Blanc": {
+                  "summary": "High-acid aromatic grape producing citrus, gooseberry and herbal notes in cool climates.",
+                  "style": "High acidity, citrus, gooseberry and herbal notes.",
+                  "aliases": [],
+                  "profile": {
+                    "acidity": "High",
+                    "alcohol": "Low to Medium",
+                    "body": "Light",
+                    "tannin": "-"
+                  },
+                  "aromas": [
+                    "citrus",
+                    "gooseberry",
+                    "herbal",
+                    "green fruit"
+                  ],
+                  "viticulture": [
+                    "Aromatic grape suited to cool conditions"
+                  ],
+                  "winemaking": [
+                    "Usually stainless steel and fresh style"
+                  ],
+                  "pairing": [
+                    "goat cheese",
+                    "oysters",
+                    "salads"
+                  ],
+                  "examTips": [
+                    "Very high freshness and clean aromatic profile are key clues."
+                  ],
+                  "tags": [
+                    "white",
+                    "high-acid",
+                    "aromatic",
+                    "France",
+                    "Loire",
+                    "Central Vineyards",
+                    "Sancerre"
+                  ],
+                  "difficulty": 1
+                },
+                "Pinot Noir": {
+                  "summary": "Thin-skinned red grape producing perfumed, high-acid wines with red fruit and earthy notes.",
+                  "style": "Red cherry, raspberry, floral and earthy notes with fresh acidity.",
+                  "aliases": [],
+                  "profile": {
+                    "acidity": "High",
+                    "alcohol": "Medium",
+                    "body": "Light to Medium",
+                    "tannin": "Low to Medium"
+                  },
+                  "aromas": [
+                    "red cherry",
+                    "raspberry",
+                    "floral",
+                    "earthy"
+                  ],
+                  "viticulture": [
+                    "Thin skin",
+                    "Sensitive to site and rot pressure"
+                  ],
+                  "winemaking": [
+                    "Gentle extraction",
+                    "Oak often used but balanced"
+                  ],
+                  "pairing": [
+                    "duck",
+                    "mushroom dishes",
+                    "roast chicken"
+                  ],
+                  "examTips": [
+                    "High acidity with red fruit and lighter body is a key clue.",
+                    "Very site-sensitive."
+                  ],
+                  "tags": [
+                    "red",
+                    "high-acid",
+                    "light-medium-body",
+                    "France",
+                    "Burgundy",
+                    "Central Vineyards",
+                    "Sancerre"
+                  ],
+                  "difficulty": 1
+                }
+              },
+              "vineyardFactors": [
+                "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+                "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+                "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+              ],
+              "humanFactors": [
+                "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+                "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+                "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+                "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+              ]
+            },
+            "pouilly-fume": {
+              "name": "Pouilly-Fume",
+              "summary": "Prestige Loire Sauvignon Blanc appellation known for dry, high-acid wines with mineral and smoky notes.",
+              "climate": "Cool Continental",
+              "styleSummary": "Dry Sauvignon Blanc with high acidity, citrus fruit and mineral/smoky nuance.",
+              "keyGrapes": [
+                "Sauvignon Blanc"
+              ],
+              "examTips": [
+                "The grape is Sauvignon Blanc, not Fume Blanc in the New World sense.",
+                "Know it alongside Sancerre."
+              ],
+              "tags": [
+                "France",
+                "Loire",
+                "Pouilly-Fume"
+              ],
+              "grapes": {
+                "Sauvignon Blanc": {
+                  "summary": "High-acid aromatic grape producing citrus, gooseberry and herbal notes in cool climates.",
+                  "style": "High acidity, citrus, gooseberry and herbal notes.",
+                  "aliases": [],
+                  "profile": {
+                    "acidity": "High",
+                    "alcohol": "Low to Medium",
+                    "body": "Light",
+                    "tannin": "-"
+                  },
+                  "aromas": [
+                    "citrus",
+                    "gooseberry",
+                    "herbal",
+                    "green fruit"
+                  ],
+                  "viticulture": [
+                    "Aromatic grape suited to cool conditions"
+                  ],
+                  "winemaking": [
+                    "Usually stainless steel and fresh style"
+                  ],
+                  "pairing": [
+                    "goat cheese",
+                    "oysters",
+                    "salads"
+                  ],
+                  "examTips": [
+                    "Very high freshness and clean aromatic profile are key clues."
+                  ],
+                  "tags": [
+                    "white",
+                    "high-acid",
+                    "aromatic",
+                    "France",
+                    "Loire",
+                    "Central Vineyards",
+                    "Pouilly-Fume"
+                  ],
+                  "difficulty": 1
+                }
+              },
+              "vineyardFactors": [
+                "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+                "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+                "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+              ],
+              "humanFactors": [
+                "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+                "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+                "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+                "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+              ]
             }
           },
           "vineyardFactors": [
@@ -3322,21 +3917,10 @@
             "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
             "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
             "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
-            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+            "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
           ]
         }
-      },
-      "vineyardFactors": [
-        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
-        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
-        "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
-      ],
-      "humanFactors": [
-        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
-        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
-        "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
-        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
-      ]
+      }
     },
     "northern-rhone": {
       "name": "Northern Rhone",

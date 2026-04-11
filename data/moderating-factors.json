@@ -126,34 +126,6 @@
           "description": "The Gironde, Garonne, and Dordogne moderate local temperatures and shape humidity patterns."
         }
       ],
-      "muscadet": [
-        {
-          "name": "Atlantic influence",
-          "route": "coast-west",
-          "description": "Strong Atlantic influence keeps Muscadet cool and supports high-acid, light-bodied wines."
-        }
-      ],
-      "anjou-saumur": [
-        {
-          "name": "Loire River",
-          "route": "river-horizontal",
-          "description": "The Loire helps moderate temperature and supports the region's varied sparkling, white, and rosé styles."
-        }
-      ],
-      "touraine": [
-        {
-          "name": "Loire River",
-          "route": "river-horizontal",
-          "description": "The Loire corridor adds moderation while inland influence increases toward the east."
-        }
-      ],
-      "central-vineyards": [
-        {
-          "name": "Loire River",
-          "route": "river-horizontal",
-          "description": "The Loire and its tributaries help moderate this otherwise cool inland part of the valley."
-        }
-      ],
       "northern-rhone": [
         {
           "name": "Rhone River",
@@ -204,6 +176,18 @@
           "name": "Mediterranean Sea",
           "route": "coast-south",
           "description": "Mediterranean warmth is moderated in places by coastal exposure, wind, and altitude."
+        }
+      ],
+      "loire-valley": [
+        {
+          "name": "Loire River",
+          "route": "river-horizontal",
+          "description": "The Loire and its tributaries moderate temperature and help create the valley’s key mesoclimates."
+        },
+        {
+          "name": "Atlantic influence",
+          "route": "coast-west",
+          "description": "Atlantic influence is strongest in the west and gradually weakens as the valley runs inland."
         }
       ]
     },
@@ -272,13 +256,6 @@
           "route": "mountain-west",
           "description": "Altitude and Alpine influence help preserve freshness in Steiermark."
         }
-      ],
-      "wachau": [
-        {
-          "name": "Danube River",
-          "route": "river-horizontal",
-          "description": "The Danube is a central moderating factor in the Wachau, alongside stone terraces and diurnal range."
-        }
       ]
     },
     "hungary": {
@@ -321,13 +298,6 @@
       ]
     },
     "italy": {
-      "alto-adige-trentino-friuli": [
-        {
-          "name": "Alpine influence",
-          "route": "mountain-north",
-          "description": "Altitude, Alpine shelter, and valley exposures strongly shape this cool northern area."
-        }
-      ],
       "veneto": [
         {
           "name": "Lake Garda",
@@ -387,6 +357,25 @@
           "name": "Alpine shelter",
           "route": "mountain-north",
           "description": "Alpine shelter, hills, and aspect are important ripening factors in Piemonte."
+        }
+      ],
+      "trentino-alto-adige": [
+        {
+          "name": "Alpine influence",
+          "route": "mountain-north",
+          "description": "Altitude, Alpine shelter, and valley exposures strongly shape this cool northern area."
+        }
+      ],
+      "friuli-venezia-giulia": [
+        {
+          "name": "Alpine shelter",
+          "route": "mountain-north",
+          "description": "Alpine shelter and elevation help shape the region’s cool nights and fresh white-wine styles."
+        },
+        {
+          "name": "Adriatic influence",
+          "route": "coast-east",
+          "description": "The nearby Adriatic helps moderate temperatures and preserve freshness in Friuli’s vineyards."
         }
       ]
     },
@@ -484,27 +473,6 @@
           "description": "Cold Pacific influence and fog are core moderating factors in California viticulture."
         }
       ],
-      "napa-valley": [
-        {
-          "name": "San Pablo Bay",
-          "route": "coast-south",
-          "description": "Cool air and fog from San Pablo Bay moderate the south of Napa and influence valley mesoclimates."
-        }
-      ],
-      "sonoma": [
-        {
-          "name": "Pacific fog",
-          "route": "coast-west",
-          "description": "Pacific fog and cool-air corridors are key moderating factors across Sonoma."
-        }
-      ],
-      "central-coast": [
-        {
-          "name": "Pacific influence",
-          "route": "coast-west",
-          "description": "Ocean air, fog, and gaps in the coastal ranges strongly moderate the Central Coast."
-        }
-      ],
       "oregon": [
         {
           "name": "Pacific influence",
@@ -539,20 +507,6 @@
           "route": "coast-west",
           "description": "Pacific air tempers Chile's warm inland valleys, especially in more western zones."
         }
-      ],
-      "casablanca": [
-        {
-          "name": "Pacific fog",
-          "route": "coast-west",
-          "description": "Cold Pacific fog and breezes make Casablanca a distinctly cooler coastal region."
-        }
-      ],
-      "colchagua": [
-        {
-          "name": "Andes cooling",
-          "route": "mountain-east",
-          "description": "Andean air and altitude influence help preserve balance in warmer parts of Colchagua."
-        }
       ]
     },
     "argentina": {
@@ -561,20 +515,6 @@
           "name": "Andes altitude",
           "route": "mountain-west",
           "description": "Altitude and meltwater from the Andes are crucial to Mendoza's viticulture and day-night temperature range."
-        }
-      ],
-      "lujan-de-cuyo": [
-        {
-          "name": "Andes altitude",
-          "route": "mountain-west",
-          "description": "Moderate elevation near the Andes helps balance warm sunny days with cool nights."
-        }
-      ],
-      "uco-valley": [
-        {
-          "name": "High-altitude Andes sites",
-          "route": "mountain-west",
-          "description": "Very high altitude is a defining moderating factor in the Uco Valley."
         }
       ],
       "salta": [
@@ -711,5 +651,147 @@
       ]
     }
   },
-  "subregions": {}
+  "subregions": {
+    "france": {
+      "loire-valley": {
+        "muscadet": [
+          {
+            "name": "Atlantic influence",
+            "route": "coast-west",
+            "description": "Strong Atlantic influence keeps Muscadet cool and supports high-acid, light-bodied wines."
+          }
+        ],
+        "anjou-saumur": [
+          {
+            "name": "Loire River",
+            "route": "river-horizontal",
+            "description": "The Loire helps moderate temperature and supports the region's varied sparkling, white, and rosé styles."
+          }
+        ],
+        "touraine": [
+          {
+            "name": "Loire River",
+            "route": "river-horizontal",
+            "description": "The Loire corridor adds moderation while inland influence increases toward the east."
+          }
+        ],
+        "touraine/vouvray": [
+          {
+            "name": "Loire River",
+            "route": "river-horizontal",
+            "description": "The Loire helps moderate Vouvray’s cool Chenin Blanc vineyards and supports balanced ripening."
+          }
+        ],
+        "touraine/chinon": [
+          {
+            "name": "Loire River",
+            "route": "river-horizontal",
+            "description": "The Loire corridor and sheltered valley sites help Cabernet Franc ripen while preserving freshness."
+          }
+        ],
+        "touraine/bourgueil": [
+          {
+            "name": "Loire River",
+            "route": "river-horizontal",
+            "description": "The Loire corridor moderates Bourgueil and helps retain freshness in Cabernet Franc."
+          }
+        ],
+        "central-vineyards": [
+          {
+            "name": "Loire River",
+            "route": "river-horizontal",
+            "description": "The Loire and its tributaries help moderate this otherwise cool inland part of the valley."
+          }
+        ],
+        "central-vineyards/sancerre": [
+          {
+            "name": "Loire River",
+            "route": "river-horizontal",
+            "description": "The Loire corridor gives some moderation to this cool inland Sauvignon Blanc zone."
+          }
+        ],
+        "central-vineyards/pouilly-fume": [
+          {
+            "name": "Loire River",
+            "route": "river-horizontal",
+            "description": "The Loire and local mesoclimates help shape ripe yet fresh Sauvignon Blanc in Pouilly-Fume."
+          }
+        ]
+      }
+    },
+    "austria": {
+      "niederosterreich": {
+        "wachau": [
+          {
+            "name": "Danube River",
+            "route": "river-horizontal",
+            "description": "The Danube is a central moderating factor in the Wachau, alongside stone terraces and diurnal range."
+          }
+        ]
+      }
+    },
+    "argentina": {
+      "mendoza": {
+        "lujan-de-cuyo": [
+          {
+            "name": "Andes altitude",
+            "route": "mountain-west",
+            "description": "Moderate elevation near the Andes helps balance warm sunny days with cool nights."
+          }
+        ],
+        "uco-valley": [
+          {
+            "name": "High-altitude Andes sites",
+            "route": "mountain-west",
+            "description": "Very high altitude is a defining moderating factor in the Uco Valley."
+          }
+        ]
+      }
+    },
+    "chile": {
+      "aconcagua": {
+        "casablanca": [
+          {
+            "name": "Pacific fog",
+            "route": "coast-west",
+            "description": "Cold Pacific fog and breezes make Casablanca a distinctly cooler coastal region."
+          }
+        ]
+      },
+      "central-valley": {
+        "rapel-valley/colchagua": [
+          {
+            "name": "Andes cooling",
+            "route": "mountain-east",
+            "description": "Andean air and altitude influence help preserve balance in warmer parts of Colchagua."
+          }
+        ]
+      }
+    },
+    "usa": {
+      "california": {
+        "napa-valley": [
+          {
+            "name": "San Pablo Bay",
+            "route": "coast-south",
+            "description": "Cool air and fog from San Pablo Bay moderate the south of Napa and influence valley mesoclimates."
+          }
+        ],
+        "sonoma": [
+          {
+            "name": "Pacific fog",
+            "route": "coast-west",
+            "description": "Pacific fog and cool-air corridors are key moderating factors across Sonoma."
+          }
+        ],
+        "central-coast": [
+          {
+            "name": "Pacific influence",
+            "route": "coast-west",
+            "description": "Ocean air, fog, and gaps in the coastal ranges strongly moderate the Central Coast."
+          }
+        ]
+      }
+    }
+  }
 }

@@ -145,6 +145,109 @@
             "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
           ]
         },
+        "casablanca": {
+          "name": "Casablanca Valley",
+          "summary": "Cool coastal region known for fresh aromatic whites and cool-climate reds.",
+          "climate": "Cool Maritime",
+          "styleSummary": "Fresh, aromatic wines with high acidity.",
+          "mitigating": [
+            "Pacific fog",
+            "coastal influence"
+          ],
+          "keyGrapes": [
+            "Sauvignon Blanc",
+            "Chardonnay"
+          ],
+          "examTips": [
+            "Cool climate = high acidity.",
+            "Think coastal freshness."
+          ],
+          "tags": [
+            "Chile",
+            "cool-climate",
+            "coastal"
+          ],
+          "difficulty": 1,
+          "grapes": {
+            "Sauvignon Blanc": {
+              "summary": "Fresh aromatic white with high acidity and citrus-herbal profile.",
+              "style": "Citrus, green fruit, herb.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Low to Medium",
+                "body": "Light",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "herb",
+                "green apple"
+              ],
+              "viticulture": [
+                "Cool coastal sites"
+              ],
+              "winemaking": [
+                "Fresh styles"
+              ],
+              "pairing": [
+                "goat cheese",
+                "seafood"
+              ],
+              "examTips": [
+                "High acidity and freshness."
+              ],
+              "tags": [
+                "white",
+                "fresh"
+              ],
+              "difficulty": 1
+            },
+            "Chardonnay": {
+              "summary": "Cool-climate Chardonnay with citrus and mineral notes.",
+              "style": "Citrus, green apple, sometimes oak.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "apple"
+              ],
+              "viticulture": [
+                "Cool climate"
+              ],
+              "winemaking": [
+                "Fresh or lightly oaked"
+              ],
+              "pairing": [
+                "seafood",
+                "chicken"
+              ],
+              "examTips": [
+                "More freshness than warm regions."
+              ],
+              "tags": [
+                "white"
+              ],
+              "difficulty": 1
+            }
+          },
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Subregional site differences are important to how grapes ripen and to the final balance of the wines."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+          ]
+        },
         "aconcagua-costa": {
           "name": "Aconcagua Costa",
           "summary": "Cooler coastal Aconcagua section producing fresher styles under stronger Pacific influence.",
@@ -576,7 +679,76 @@
             "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
             "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk.",
             "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
-          ]
+          ],
+          "subregions": {
+            "colchagua": {
+              "name": "Colchagua Valley",
+              "summary": "Warm region producing ripe, powerful red wines.",
+              "climate": "Warm Mediterranean",
+              "styleSummary": "Full-bodied, ripe red wines.",
+              "mitigating": [
+                "Andes cooling"
+              ],
+              "keyGrapes": [
+                "Cabernet Sauvignon",
+                "Carmenere"
+              ],
+              "examTips": [
+                "Think warm, ripe and powerful.",
+                "Often richer than Casablanca."
+              ],
+              "tags": [
+                "Chile",
+                "warm",
+                "red"
+              ],
+              "difficulty": 1,
+              "grapes": {
+                "Cabernet Sauvignon": {
+                  "summary": "Full-bodied structured red with ripe black fruit.",
+                  "style": "Black fruit, full body.",
+                  "aliases": [],
+                  "profile": {
+                    "acidity": "Medium",
+                    "alcohol": "High",
+                    "body": "Full",
+                    "tannin": "High"
+                  },
+                  "aromas": [
+                    "black fruit",
+                    "cassis"
+                  ],
+                  "viticulture": [
+                    "Warm conditions"
+                  ],
+                  "winemaking": [
+                    "Oak common"
+                  ],
+                  "pairing": [
+                    "steak"
+                  ],
+                  "examTips": [
+                    "Riper than cooler regions."
+                  ],
+                  "tags": [
+                    "red"
+                  ],
+                  "difficulty": 1
+                }
+              },
+              "vineyardFactors": [
+                "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+                "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+                "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates."
+              ],
+              "humanFactors": [
+                "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+                "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+                "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk.",
+                "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+              ]
+            }
+          }
         },
         "curico-valley": {
           "name": "Curico Valley",
@@ -803,176 +975,6 @@
         "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
         "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates.",
         "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
-      ],
-      "humanFactors": [
-        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
-        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
-        "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk.",
-        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
-      ]
-    },
-    "casablanca": {
-      "name": "Casablanca Valley",
-      "summary": "Cool coastal region known for fresh aromatic whites and cool-climate reds.",
-      "climate": "Cool Maritime",
-      "styleSummary": "Fresh, aromatic wines with high acidity.",
-      "mitigating": [
-        "Pacific fog",
-        "coastal influence"
-      ],
-      "keyGrapes": [
-        "Sauvignon Blanc",
-        "Chardonnay"
-      ],
-      "examTips": [
-        "Cool climate = high acidity.",
-        "Think coastal freshness."
-      ],
-      "tags": [
-        "Chile",
-        "cool-climate",
-        "coastal"
-      ],
-      "difficulty": 1,
-      "grapes": {
-        "Sauvignon Blanc": {
-          "summary": "Fresh aromatic white with high acidity and citrus-herbal profile.",
-          "style": "Citrus, green fruit, herb.",
-          "aliases": [],
-          "profile": {
-            "acidity": "High",
-            "alcohol": "Low to Medium",
-            "body": "Light",
-            "tannin": "-"
-          },
-          "aromas": [
-            "citrus",
-            "herb",
-            "green apple"
-          ],
-          "viticulture": [
-            "Cool coastal sites"
-          ],
-          "winemaking": [
-            "Fresh styles"
-          ],
-          "pairing": [
-            "goat cheese",
-            "seafood"
-          ],
-          "examTips": [
-            "High acidity and freshness."
-          ],
-          "tags": [
-            "white",
-            "fresh"
-          ],
-          "difficulty": 1
-        },
-        "Chardonnay": {
-          "summary": "Cool-climate Chardonnay with citrus and mineral notes.",
-          "style": "Citrus, green apple, sometimes oak.",
-          "aliases": [],
-          "profile": {
-            "acidity": "High",
-            "alcohol": "Medium",
-            "body": "Medium",
-            "tannin": "-"
-          },
-          "aromas": [
-            "citrus",
-            "apple"
-          ],
-          "viticulture": [
-            "Cool climate"
-          ],
-          "winemaking": [
-            "Fresh or lightly oaked"
-          ],
-          "pairing": [
-            "seafood",
-            "chicken"
-          ],
-          "examTips": [
-            "More freshness than warm regions."
-          ],
-          "tags": [
-            "white"
-          ],
-          "difficulty": 1
-        }
-      },
-      "vineyardFactors": [
-        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
-        "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
-        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
-        "Subregional site differences are important to how grapes ripen and to the final balance of the wines."
-      ],
-      "humanFactors": [
-        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
-        "Disease control and canopy management are often important human factors in maritime climates.",
-        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
-      ]
-    },
-    "colchagua": {
-      "name": "Colchagua Valley",
-      "summary": "Warm region producing ripe, powerful red wines.",
-      "climate": "Warm Mediterranean",
-      "styleSummary": "Full-bodied, ripe red wines.",
-      "mitigating": [
-        "Andes cooling"
-      ],
-      "keyGrapes": [
-        "Cabernet Sauvignon",
-        "Carmenere"
-      ],
-      "examTips": [
-        "Think warm, ripe and powerful.",
-        "Often richer than Casablanca."
-      ],
-      "tags": [
-        "Chile",
-        "warm",
-        "red"
-      ],
-      "difficulty": 1,
-      "grapes": {
-        "Cabernet Sauvignon": {
-          "summary": "Full-bodied structured red with ripe black fruit.",
-          "style": "Black fruit, full body.",
-          "aliases": [],
-          "profile": {
-            "acidity": "Medium",
-            "alcohol": "High",
-            "body": "Full",
-            "tannin": "High"
-          },
-          "aromas": [
-            "black fruit",
-            "cassis"
-          ],
-          "viticulture": [
-            "Warm conditions"
-          ],
-          "winemaking": [
-            "Oak common"
-          ],
-          "pairing": [
-            "steak"
-          ],
-          "examTips": [
-            "Riper than cooler regions."
-          ],
-          "tags": [
-            "red"
-          ],
-          "difficulty": 1
-        }
-      },
-      "vineyardFactors": [
-        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
-        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
-        "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates."
       ],
       "humanFactors": [
         "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",

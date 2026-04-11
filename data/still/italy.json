@@ -2,11 +2,11 @@
   "name": "Italy",
   "summary": "Italy ranges from cool northern regions to warm Mediterranean south, with major regional diversity and many important indigenous grapes.",
   "regions": {
-    "alto-adige-trentino-friuli": {
-      "name": "Alto Adige / Trentino / Friuli-Venezia Giulia",
-      "summary": "Cooler north-eastern Italian zone influenced by altitude and mountains, producing fresh aromatic whites and elegant reds.",
+    "trentino-alto-adige": {
+      "name": "Trentino-Alto Adige",
+      "summary": "Cool Alpine north-eastern Italian region producing fresh aromatic whites and some elegant reds, with Alto Adige and Trentino as key study names.",
       "climate": "Moderate Continental [Alpine influence]",
-      "styleSummary": "Fresh aromatic whites and some light to medium-bodied reds, often with good acidity.",
+      "styleSummary": "Fresh aromatic whites, good acidity and some refined sparkling or lighter red styles.",
       "mitigating": [
         "altitude",
         "mountain influence",
@@ -19,16 +19,16 @@
         "Chardonnay"
       ],
       "examTips": [
-        "Think cooler north-eastern Italy with freshness and acidity.",
-        "Altitude and Alpine influence are key themes.",
-        "Pinot Grigio is especially important here."
+        "Think Alpine freshness, altitude and strong diurnal range.",
+        "Alto Adige and Trentino are the key names to place here.",
+        "Pinot Grigio, Chardonnay and aromatic whites are central study themes."
       ],
       "tags": [
         "Italy",
         "north-east",
-        "cooler-climate",
+        "Alpine",
         "white",
-        "Alpine"
+        "fresh"
       ],
       "difficulty": 1,
       "grapes": {
@@ -73,7 +73,12 @@
             "Italy",
             "north-east"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Jermann Pinot Grigio",
+            "producer": "Jermann",
+            "technicalSheetUrl": "https://www.jermann.it/download/prodotti/52_scheda_it.pdf"
+          }
         },
         "Sauvignon Blanc": {
           "summary": "Aromatic white grape producing citrus, herb and green fruit notes with good freshness.",
@@ -111,7 +116,12 @@
             "Italy",
             "north-east"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Jermann Sauvignon",
+            "producer": "Jermann",
+            "technicalSheetUrl": "https://www.jermann.it/download/prodotti/55_scheda_it.pdf"
+          }
         },
         "Chardonnay": {
           "summary": "Versatile white grape showing fresh citrus and stone fruit, sometimes with subtle oak.",
@@ -150,7 +160,12 @@
             "Italy",
             "north-east"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Elena Walch Chardonnay Riserva Vigna \"Castel Ringberg\"",
+            "producer": "Elena Walch",
+            "technicalSheetUrl": "https://www.elenawalch.com/public/eee28d4e8e2e4f7c918dba0311a35a2b.pdf"
+          }
         }
       },
       "vineyardFactors": [
@@ -164,7 +179,1074 @@
         "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
         "Site selection by elevation and harvest timing are major human choices in these vineyards.",
         "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk."
-      ]
+      ],
+      "subregions": {
+        "alto-adige": {
+          "name": "Alto Adige",
+          "summary": "Prestige Alpine zone known for precise aromatic whites and high natural acidity.",
+          "climate": "Cool Continental [Alpine influence]",
+          "styleSummary": "Precise aromatic whites with freshness, purity and mineral detail.",
+          "mitigating": [
+            "altitude",
+            "mountain influence",
+            "diurnal range",
+            "slope aspect"
+          ],
+          "keyGrapes": [
+            "Pinot Grigio",
+            "Sauvignon Blanc",
+            "Chardonnay"
+          ],
+          "examTips": [
+            "Alto Adige is the premium Alpine white benchmark within this region."
+          ],
+          "tags": [
+            "Italy",
+            "Trentino-Alto Adige",
+            "Alto Adige",
+            "Alpine",
+            "white"
+          ],
+          "difficulty": 1,
+          "grapes": {
+            "Pinot Grigio": {
+              "summary": "Fresh light to medium-bodied white grape producing pear and citrus styles in cooler sites.",
+              "style": "Light to medium-bodied white with pear, citrus and subtle stone fruit notes.",
+              "aliases": [
+                "Pinot Gris"
+              ],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Low to Medium",
+                "body": "Light to Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "pear",
+                "citrus",
+                "apple",
+                "stone fruit"
+              ],
+              "viticulture": [
+                "Widely planted in north-east Italy",
+                "Best examples from cooler sites"
+              ],
+              "winemaking": [
+                "Usually fresh styles",
+                "Little or no oak"
+              ],
+              "pairing": [
+                "salads",
+                "light fish dishes",
+                "simple pasta"
+              ],
+              "examTips": [
+                "Usually fresher and more precise here than in hotter regions."
+              ],
+              "tags": [
+                "white",
+                "fresh",
+                "light",
+                "Italy",
+                "north-east"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Jermann Pinot Grigio",
+                "producer": "Jermann",
+                "technicalSheetUrl": "https://www.jermann.it/download/prodotti/52_scheda_it.pdf"
+              }
+            },
+            "Sauvignon Blanc": {
+              "summary": "Aromatic white grape producing citrus, herb and green fruit notes with good freshness.",
+              "style": "Fresh aromatic whites with citrus, herb and green fruit notes.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Low to Medium",
+                "body": "Light",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "herb",
+                "green fruit"
+              ],
+              "viticulture": [
+                "Performs well in cooler sites"
+              ],
+              "winemaking": [
+                "Usually stainless steel to preserve aromatics"
+              ],
+              "pairing": [
+                "goat cheese",
+                "seafood",
+                "salads"
+              ],
+              "examTips": [
+                "Think freshness and aromatic purity."
+              ],
+              "tags": [
+                "white",
+                "aromatic",
+                "high-acid",
+                "Italy",
+                "north-east"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Jermann Sauvignon",
+                "producer": "Jermann",
+                "technicalSheetUrl": "https://www.jermann.it/download/prodotti/55_scheda_it.pdf"
+              }
+            },
+            "Chardonnay": {
+              "summary": "Versatile white grape showing fresh citrus and stone fruit, sometimes with subtle oak.",
+              "style": "Fresh citrus to stone-fruit styles, sometimes with subtle oak.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "stone fruit",
+                "apple"
+              ],
+              "viticulture": [
+                "Adaptable variety"
+              ],
+              "winemaking": [
+                "Fresh styles common",
+                "Oak possible in richer styles"
+              ],
+              "pairing": [
+                "roast chicken",
+                "seafood pasta",
+                "cream sauces"
+              ],
+              "examTips": [
+                "Usually fresher and lighter than richer warm-climate Chardonnay."
+              ],
+              "tags": [
+                "white",
+                "fresh",
+                "versatile",
+                "Italy",
+                "north-east"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Elena Walch Chardonnay Riserva Vigna \"Castel Ringberg\"",
+                "producer": "Elena Walch",
+                "technicalSheetUrl": "https://www.elenawalch.com/public/eee28d4e8e2e4f7c918dba0311a35a2b.pdf"
+              }
+            }
+          },
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+            "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk."
+          ]
+        },
+        "trentino": {
+          "name": "Trentino",
+          "summary": "Broader valley and hillside zone producing fresh whites, sparkling bases and some light to medium-bodied reds.",
+          "climate": "Moderate Continental [Alpine influence]",
+          "styleSummary": "Fresh whites and balanced wines with good acidity from Alpine moderation.",
+          "mitigating": [
+            "altitude",
+            "mountain influence",
+            "diurnal range",
+            "slope aspect"
+          ],
+          "keyGrapes": [
+            "Pinot Grigio",
+            "Sauvignon Blanc",
+            "Chardonnay"
+          ],
+          "examTips": [
+            "Trentino combines valley-floor fruit with cooler hillside and mountain influence."
+          ],
+          "tags": [
+            "Italy",
+            "Trentino-Alto Adige",
+            "Trentino",
+            "Alpine",
+            "white"
+          ],
+          "difficulty": 1,
+          "grapes": {
+            "Pinot Grigio": {
+              "summary": "Fresh light to medium-bodied white grape producing pear and citrus styles in cooler sites.",
+              "style": "Light to medium-bodied white with pear, citrus and subtle stone fruit notes.",
+              "aliases": [
+                "Pinot Gris"
+              ],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Low to Medium",
+                "body": "Light to Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "pear",
+                "citrus",
+                "apple",
+                "stone fruit"
+              ],
+              "viticulture": [
+                "Widely planted in north-east Italy",
+                "Best examples from cooler sites"
+              ],
+              "winemaking": [
+                "Usually fresh styles",
+                "Little or no oak"
+              ],
+              "pairing": [
+                "salads",
+                "light fish dishes",
+                "simple pasta"
+              ],
+              "examTips": [
+                "Usually fresher and more precise here than in hotter regions."
+              ],
+              "tags": [
+                "white",
+                "fresh",
+                "light",
+                "Italy",
+                "north-east"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Jermann Pinot Grigio",
+                "producer": "Jermann",
+                "technicalSheetUrl": "https://www.jermann.it/download/prodotti/52_scheda_it.pdf"
+              }
+            },
+            "Sauvignon Blanc": {
+              "summary": "Aromatic white grape producing citrus, herb and green fruit notes with good freshness.",
+              "style": "Fresh aromatic whites with citrus, herb and green fruit notes.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Low to Medium",
+                "body": "Light",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "herb",
+                "green fruit"
+              ],
+              "viticulture": [
+                "Performs well in cooler sites"
+              ],
+              "winemaking": [
+                "Usually stainless steel to preserve aromatics"
+              ],
+              "pairing": [
+                "goat cheese",
+                "seafood",
+                "salads"
+              ],
+              "examTips": [
+                "Think freshness and aromatic purity."
+              ],
+              "tags": [
+                "white",
+                "aromatic",
+                "high-acid",
+                "Italy",
+                "north-east"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Jermann Sauvignon",
+                "producer": "Jermann",
+                "technicalSheetUrl": "https://www.jermann.it/download/prodotti/55_scheda_it.pdf"
+              }
+            },
+            "Chardonnay": {
+              "summary": "Versatile white grape showing fresh citrus and stone fruit, sometimes with subtle oak.",
+              "style": "Fresh citrus to stone-fruit styles, sometimes with subtle oak.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "stone fruit",
+                "apple"
+              ],
+              "viticulture": [
+                "Adaptable variety"
+              ],
+              "winemaking": [
+                "Fresh styles common",
+                "Oak possible in richer styles"
+              ],
+              "pairing": [
+                "roast chicken",
+                "seafood pasta",
+                "cream sauces"
+              ],
+              "examTips": [
+                "Usually fresher and lighter than richer warm-climate Chardonnay."
+              ],
+              "tags": [
+                "white",
+                "fresh",
+                "versatile",
+                "Italy",
+                "north-east"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Elena Walch Chardonnay Riserva Vigna \"Castel Ringberg\"",
+                "producer": "Elena Walch",
+                "technicalSheetUrl": "https://www.elenawalch.com/public/eee28d4e8e2e4f7c918dba0311a35a2b.pdf"
+              }
+            }
+          },
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+            "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk."
+          ]
+        }
+      },
+      "classification": "WSET studies Trentino-Alto Adige through the distinct names Alto Adige and Trentino."
+    },
+    "friuli-venezia-giulia": {
+      "name": "Friuli-Venezia Giulia",
+      "summary": "North-eastern Italian region near the Adriatic, known for high-quality dry whites and important named zones such as Friuli Grave, Collio and Colli Orientali del Friuli.",
+      "climate": "Moderate Continental [Adriatic and Alpine influence]",
+      "styleSummary": "Fresh to medium-bodied whites with aromatic purity, texture and good acidity.",
+      "mitigating": [
+        "Adriatic influence",
+        "Alpine shelter",
+        "diurnal range",
+        "slope aspect"
+      ],
+      "keyGrapes": [
+        "Pinot Grigio",
+        "Sauvignon Blanc",
+        "Chardonnay"
+      ],
+      "examTips": [
+        "Friuli-Venezia Giulia is one of Italy’s key quality white-wine regions.",
+        "Know Friuli Grave, Collio and Colli Orientali del Friuli as the main study names.",
+        "Adriatic and Alpine influence help preserve freshness."
+      ],
+      "tags": [
+        "Italy",
+        "Friuli-Venezia Giulia",
+        "north-east",
+        "white",
+        "fresh"
+      ],
+      "difficulty": 1,
+      "grapes": {
+        "Pinot Grigio": {
+          "summary": "Fresh light to medium-bodied white grape producing pear and citrus styles in cooler sites.",
+          "style": "Light to medium-bodied white with pear, citrus and subtle stone fruit notes.",
+          "aliases": [
+            "Pinot Gris"
+          ],
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Low to Medium",
+            "body": "Light to Medium",
+            "tannin": "-"
+          },
+          "aromas": [
+            "pear",
+            "citrus",
+            "apple",
+            "stone fruit"
+          ],
+          "viticulture": [
+            "Widely planted in north-east Italy",
+            "Best examples from cooler sites"
+          ],
+          "winemaking": [
+            "Usually fresh styles",
+            "Little or no oak"
+          ],
+          "pairing": [
+            "salads",
+            "light fish dishes",
+            "simple pasta"
+          ],
+          "examTips": [
+            "Usually fresher and more precise here than in hotter regions."
+          ],
+          "tags": [
+            "white",
+            "fresh",
+            "light",
+            "Italy",
+            "north-east"
+          ],
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Jermann Pinot Grigio",
+            "producer": "Jermann",
+            "technicalSheetUrl": "https://www.jermann.it/download/prodotti/52_scheda_it.pdf"
+          }
+        },
+        "Sauvignon Blanc": {
+          "summary": "Aromatic white grape producing citrus, herb and green fruit notes with good freshness.",
+          "style": "Fresh aromatic whites with citrus, herb and green fruit notes.",
+          "aliases": [],
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Low to Medium",
+            "body": "Light",
+            "tannin": "-"
+          },
+          "aromas": [
+            "citrus",
+            "herb",
+            "green fruit"
+          ],
+          "viticulture": [
+            "Performs well in cooler sites"
+          ],
+          "winemaking": [
+            "Usually stainless steel to preserve aromatics"
+          ],
+          "pairing": [
+            "goat cheese",
+            "seafood",
+            "salads"
+          ],
+          "examTips": [
+            "Think freshness and aromatic purity."
+          ],
+          "tags": [
+            "white",
+            "aromatic",
+            "high-acid",
+            "Italy",
+            "north-east"
+          ],
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Jermann Sauvignon",
+            "producer": "Jermann",
+            "technicalSheetUrl": "https://www.jermann.it/download/prodotti/55_scheda_it.pdf"
+          }
+        },
+        "Chardonnay": {
+          "summary": "Versatile white grape showing fresh citrus and stone fruit, sometimes with subtle oak.",
+          "style": "Fresh citrus to stone-fruit styles, sometimes with subtle oak.",
+          "aliases": [],
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "aromas": [
+            "citrus",
+            "stone fruit",
+            "apple"
+          ],
+          "viticulture": [
+            "Adaptable variety"
+          ],
+          "winemaking": [
+            "Fresh styles common",
+            "Oak possible in richer styles"
+          ],
+          "pairing": [
+            "roast chicken",
+            "seafood pasta",
+            "cream sauces"
+          ],
+          "examTips": [
+            "Usually fresher and lighter than richer warm-climate Chardonnay."
+          ],
+          "tags": [
+            "white",
+            "fresh",
+            "versatile",
+            "Italy",
+            "north-east"
+          ],
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Elena Walch Chardonnay Riserva Vigna \"Castel Ringberg\"",
+            "producer": "Elena Walch",
+            "technicalSheetUrl": "https://www.elenawalch.com/public/eee28d4e8e2e4f7c918dba0311a35a2b.pdf"
+          }
+        }
+      },
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+        "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk."
+      ],
+      "subregions": {
+        "friuli-grave": {
+          "name": "Friuli Grave",
+          "summary": "Large stony plain known for fresh approachable whites and reliable ripening.",
+          "climate": "Moderate Continental [Adriatic influence]",
+          "styleSummary": "Fresh fruit-driven whites with crisp acidity and clean varietal character.",
+          "mitigating": [
+            "altitude",
+            "mountain influence",
+            "diurnal range",
+            "slope aspect"
+          ],
+          "keyGrapes": [
+            "Pinot Grigio",
+            "Sauvignon Blanc",
+            "Chardonnay"
+          ],
+          "examTips": [
+            "Friuli Grave is the broader flatter white-wine zone of the region."
+          ],
+          "tags": [
+            "Italy",
+            "Friuli-Venezia Giulia",
+            "Friuli Grave",
+            "white"
+          ],
+          "difficulty": 1,
+          "grapes": {
+            "Pinot Grigio": {
+              "summary": "Fresh light to medium-bodied white grape producing pear and citrus styles in cooler sites.",
+              "style": "Light to medium-bodied white with pear, citrus and subtle stone fruit notes.",
+              "aliases": [
+                "Pinot Gris"
+              ],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Low to Medium",
+                "body": "Light to Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "pear",
+                "citrus",
+                "apple",
+                "stone fruit"
+              ],
+              "viticulture": [
+                "Widely planted in north-east Italy",
+                "Best examples from cooler sites"
+              ],
+              "winemaking": [
+                "Usually fresh styles",
+                "Little or no oak"
+              ],
+              "pairing": [
+                "salads",
+                "light fish dishes",
+                "simple pasta"
+              ],
+              "examTips": [
+                "Usually fresher and more precise here than in hotter regions."
+              ],
+              "tags": [
+                "white",
+                "fresh",
+                "light",
+                "Italy",
+                "north-east"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Jermann Pinot Grigio",
+                "producer": "Jermann",
+                "technicalSheetUrl": "https://www.jermann.it/download/prodotti/52_scheda_it.pdf"
+              }
+            },
+            "Sauvignon Blanc": {
+              "summary": "Aromatic white grape producing citrus, herb and green fruit notes with good freshness.",
+              "style": "Fresh aromatic whites with citrus, herb and green fruit notes.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Low to Medium",
+                "body": "Light",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "herb",
+                "green fruit"
+              ],
+              "viticulture": [
+                "Performs well in cooler sites"
+              ],
+              "winemaking": [
+                "Usually stainless steel to preserve aromatics"
+              ],
+              "pairing": [
+                "goat cheese",
+                "seafood",
+                "salads"
+              ],
+              "examTips": [
+                "Think freshness and aromatic purity."
+              ],
+              "tags": [
+                "white",
+                "aromatic",
+                "high-acid",
+                "Italy",
+                "north-east"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Jermann Sauvignon",
+                "producer": "Jermann",
+                "technicalSheetUrl": "https://www.jermann.it/download/prodotti/55_scheda_it.pdf"
+              }
+            },
+            "Chardonnay": {
+              "summary": "Versatile white grape showing fresh citrus and stone fruit, sometimes with subtle oak.",
+              "style": "Fresh citrus to stone-fruit styles, sometimes with subtle oak.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "stone fruit",
+                "apple"
+              ],
+              "viticulture": [
+                "Adaptable variety"
+              ],
+              "winemaking": [
+                "Fresh styles common",
+                "Oak possible in richer styles"
+              ],
+              "pairing": [
+                "roast chicken",
+                "seafood pasta",
+                "cream sauces"
+              ],
+              "examTips": [
+                "Usually fresher and lighter than richer warm-climate Chardonnay."
+              ],
+              "tags": [
+                "white",
+                "fresh",
+                "versatile",
+                "Italy",
+                "north-east"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Elena Walch Chardonnay Riserva Vigna \"Castel Ringberg\"",
+                "producer": "Elena Walch",
+                "technicalSheetUrl": "https://www.elenawalch.com/public/eee28d4e8e2e4f7c918dba0311a35a2b.pdf"
+              }
+            }
+          },
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+            "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk."
+          ]
+        },
+        "collio": {
+          "name": "Collio",
+          "summary": "Prestige hilly border zone producing concentrated complex dry whites with freshness.",
+          "climate": "Moderate Continental [Adriatic and Alpine influence]",
+          "styleSummary": "More concentrated and layered whites with freshness and texture.",
+          "mitigating": [
+            "altitude",
+            "mountain influence",
+            "diurnal range",
+            "slope aspect"
+          ],
+          "keyGrapes": [
+            "Pinot Grigio",
+            "Sauvignon Blanc",
+            "Chardonnay"
+          ],
+          "examTips": [
+            "Collio is one of the key premium Friulian hill zones."
+          ],
+          "tags": [
+            "Italy",
+            "Friuli-Venezia Giulia",
+            "Collio",
+            "white"
+          ],
+          "difficulty": 1,
+          "grapes": {
+            "Pinot Grigio": {
+              "summary": "Fresh light to medium-bodied white grape producing pear and citrus styles in cooler sites.",
+              "style": "Light to medium-bodied white with pear, citrus and subtle stone fruit notes.",
+              "aliases": [
+                "Pinot Gris"
+              ],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Low to Medium",
+                "body": "Light to Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "pear",
+                "citrus",
+                "apple",
+                "stone fruit"
+              ],
+              "viticulture": [
+                "Widely planted in north-east Italy",
+                "Best examples from cooler sites"
+              ],
+              "winemaking": [
+                "Usually fresh styles",
+                "Little or no oak"
+              ],
+              "pairing": [
+                "salads",
+                "light fish dishes",
+                "simple pasta"
+              ],
+              "examTips": [
+                "Usually fresher and more precise here than in hotter regions."
+              ],
+              "tags": [
+                "white",
+                "fresh",
+                "light",
+                "Italy",
+                "north-east"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Jermann Pinot Grigio",
+                "producer": "Jermann",
+                "technicalSheetUrl": "https://www.jermann.it/download/prodotti/52_scheda_it.pdf"
+              }
+            },
+            "Sauvignon Blanc": {
+              "summary": "Aromatic white grape producing citrus, herb and green fruit notes with good freshness.",
+              "style": "Fresh aromatic whites with citrus, herb and green fruit notes.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Low to Medium",
+                "body": "Light",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "herb",
+                "green fruit"
+              ],
+              "viticulture": [
+                "Performs well in cooler sites"
+              ],
+              "winemaking": [
+                "Usually stainless steel to preserve aromatics"
+              ],
+              "pairing": [
+                "goat cheese",
+                "seafood",
+                "salads"
+              ],
+              "examTips": [
+                "Think freshness and aromatic purity."
+              ],
+              "tags": [
+                "white",
+                "aromatic",
+                "high-acid",
+                "Italy",
+                "north-east"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Jermann Sauvignon",
+                "producer": "Jermann",
+                "technicalSheetUrl": "https://www.jermann.it/download/prodotti/55_scheda_it.pdf"
+              }
+            },
+            "Chardonnay": {
+              "summary": "Versatile white grape showing fresh citrus and stone fruit, sometimes with subtle oak.",
+              "style": "Fresh citrus to stone-fruit styles, sometimes with subtle oak.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "stone fruit",
+                "apple"
+              ],
+              "viticulture": [
+                "Adaptable variety"
+              ],
+              "winemaking": [
+                "Fresh styles common",
+                "Oak possible in richer styles"
+              ],
+              "pairing": [
+                "roast chicken",
+                "seafood pasta",
+                "cream sauces"
+              ],
+              "examTips": [
+                "Usually fresher and lighter than richer warm-climate Chardonnay."
+              ],
+              "tags": [
+                "white",
+                "fresh",
+                "versatile",
+                "Italy",
+                "north-east"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Elena Walch Chardonnay Riserva Vigna \"Castel Ringberg\"",
+                "producer": "Elena Walch",
+                "technicalSheetUrl": "https://www.elenawalch.com/public/eee28d4e8e2e4f7c918dba0311a35a2b.pdf"
+              }
+            }
+          },
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+            "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk."
+          ]
+        },
+        "colli-orientali-del-friuli": {
+          "name": "Colli Orientali del Friuli",
+          "summary": "Important hilly eastern zone producing aromatic structured whites and some reds.",
+          "climate": "Moderate Continental [Adriatic and Alpine influence]",
+          "styleSummary": "Fresh aromatic whites with good structure and balanced ripeness.",
+          "mitigating": [
+            "altitude",
+            "mountain influence",
+            "diurnal range",
+            "slope aspect"
+          ],
+          "keyGrapes": [
+            "Pinot Grigio",
+            "Sauvignon Blanc",
+            "Chardonnay"
+          ],
+          "examTips": [
+            "Colli Orientali del Friuli is another leading hilly white-wine area."
+          ],
+          "tags": [
+            "Italy",
+            "Friuli-Venezia Giulia",
+            "Colli Orientali del Friuli",
+            "white"
+          ],
+          "difficulty": 1,
+          "grapes": {
+            "Pinot Grigio": {
+              "summary": "Fresh light to medium-bodied white grape producing pear and citrus styles in cooler sites.",
+              "style": "Light to medium-bodied white with pear, citrus and subtle stone fruit notes.",
+              "aliases": [
+                "Pinot Gris"
+              ],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Low to Medium",
+                "body": "Light to Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "pear",
+                "citrus",
+                "apple",
+                "stone fruit"
+              ],
+              "viticulture": [
+                "Widely planted in north-east Italy",
+                "Best examples from cooler sites"
+              ],
+              "winemaking": [
+                "Usually fresh styles",
+                "Little or no oak"
+              ],
+              "pairing": [
+                "salads",
+                "light fish dishes",
+                "simple pasta"
+              ],
+              "examTips": [
+                "Usually fresher and more precise here than in hotter regions."
+              ],
+              "tags": [
+                "white",
+                "fresh",
+                "light",
+                "Italy",
+                "north-east"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Jermann Pinot Grigio",
+                "producer": "Jermann",
+                "technicalSheetUrl": "https://www.jermann.it/download/prodotti/52_scheda_it.pdf"
+              }
+            },
+            "Sauvignon Blanc": {
+              "summary": "Aromatic white grape producing citrus, herb and green fruit notes with good freshness.",
+              "style": "Fresh aromatic whites with citrus, herb and green fruit notes.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Low to Medium",
+                "body": "Light",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "herb",
+                "green fruit"
+              ],
+              "viticulture": [
+                "Performs well in cooler sites"
+              ],
+              "winemaking": [
+                "Usually stainless steel to preserve aromatics"
+              ],
+              "pairing": [
+                "goat cheese",
+                "seafood",
+                "salads"
+              ],
+              "examTips": [
+                "Think freshness and aromatic purity."
+              ],
+              "tags": [
+                "white",
+                "aromatic",
+                "high-acid",
+                "Italy",
+                "north-east"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Jermann Sauvignon",
+                "producer": "Jermann",
+                "technicalSheetUrl": "https://www.jermann.it/download/prodotti/55_scheda_it.pdf"
+              }
+            },
+            "Chardonnay": {
+              "summary": "Versatile white grape showing fresh citrus and stone fruit, sometimes with subtle oak.",
+              "style": "Fresh citrus to stone-fruit styles, sometimes with subtle oak.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "stone fruit",
+                "apple"
+              ],
+              "viticulture": [
+                "Adaptable variety"
+              ],
+              "winemaking": [
+                "Fresh styles common",
+                "Oak possible in richer styles"
+              ],
+              "pairing": [
+                "roast chicken",
+                "seafood pasta",
+                "cream sauces"
+              ],
+              "examTips": [
+                "Usually fresher and lighter than richer warm-climate Chardonnay."
+              ],
+              "tags": [
+                "white",
+                "fresh",
+                "versatile",
+                "Italy",
+                "north-east"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Elena Walch Chardonnay Riserva Vigna \"Castel Ringberg\"",
+                "producer": "Elena Walch",
+                "technicalSheetUrl": "https://www.elenawalch.com/public/eee28d4e8e2e4f7c918dba0311a35a2b.pdf"
+              }
+            }
+          },
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+            "Mountain influence or rain-shadow effects can reduce rainfall and create cooler nights or sheltered mesoclimates."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk."
+          ]
+        }
+      },
+      "classification": "WSET studies Friuli-Venezia Giulia through Friuli Grave, Collio and Colli Orientali del Friuli."
     },
     "veneto": {
       "name": "Veneto",
@@ -236,7 +1318,12 @@
             "Italy",
             "Veneto"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Allegrini Valpolicella Classico DOC",
+            "producer": "Allegrini",
+            "technicalSheetUrl": "https://allegrini.it/wp-content/uploads/2025/02/2024_Valpolicella-Classico_ita.pdf"
+          }
         },
         "Garganega": {
           "summary": "Main white grape of Soave, producing medium-bodied citrus and almond-accented wines.",
@@ -276,7 +1363,12 @@
             "Veneto",
             "medium-body"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Pieropan Soave Classico",
+            "producer": "Pieropan",
+            "technicalSheetUrl": "https://www.pieropan.it/scheda-tecnica-vini/Soaveclassico_it.pdf"
+          }
         },
         "Pinot Grigio": {
           "summary": "Widely planted white grape usually made in a light fresh pear-and-citrus style.",
@@ -316,7 +1408,12 @@
             "Italy",
             "Veneto"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Santa Margherita Pinot Grigio Valdadige DOC",
+            "producer": "Santa Margherita",
+            "technicalSheetUrl": "https://www.santamargherita.com/administrator/components/com_winery/media/pdf/79edd58e5d3d84e46c51554caa841671-Santa-Margherita-Pinot-Grigio-Valdadige-DOC.pdf"
+          }
         },
         "Glera": {
           "summary": "The key grape of Prosecco, producing light-bodied aromatic sparkling wines with pear and apple fruit.",
@@ -360,7 +1457,12 @@
             "Veneto",
             "Prosecco"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Nino Franco Rustico Valdobbiadene Prosecco Superiore DOCG",
+            "producer": "Nino Franco",
+            "technicalSheetUrl": "https://www.ninofranco.it/public/prodotti/pdf/prodottopdfEN-24-04-202514-44-32-Nino_Franco_Rustico_ENG.pdf"
+          }
         }
       },
       "styles": {
@@ -442,7 +1544,12 @@
                 "Veneto",
                 "Valpolicella"
               ],
-              "difficulty": 1
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Allegrini Valpolicella Classico DOC",
+                "producer": "Allegrini",
+                "technicalSheetUrl": "https://allegrini.it/wp-content/uploads/2025/02/2024_Valpolicella-Classico_ita.pdf"
+              }
             }
           },
           "classification": "Valpolicella covers fresh red styles plus the dried-grape Amarone and sweet Recioto traditions.",
@@ -519,7 +1626,12 @@
                 "Veneto",
                 "medium-body"
               ],
-              "difficulty": 1
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Pieropan Soave Classico",
+                "producer": "Pieropan",
+                "technicalSheetUrl": "https://www.pieropan.it/scheda-tecnica-vini/Soaveclassico_it.pdf"
+              }
             }
           },
           "classification": "Soave is the classic Garganega-based white appellation, with better hillside sites important for quality.",
@@ -598,7 +1710,12 @@
                 "Prosecco",
                 "Conegliano-Valdobbiadene"
               ],
-              "difficulty": 1
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Nino Franco Rustico Valdobbiadene Prosecco Superiore DOCG",
+                "producer": "Nino Franco",
+                "technicalSheetUrl": "https://www.ninofranco.it/public/prodotti/pdf/prodottopdfEN-24-04-202514-44-32-Nino_Franco_Rustico_ENG.pdf"
+              }
             }
           },
           "classification": "Conegliano-Valdobbiadene Prosecco Superiore DOCG is above the broader Prosecco DOC in the quality hierarchy.",
@@ -705,7 +1822,12 @@
             "Tuscany",
             "Sangiovese"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Fontodi Chianti Classico DOCG",
+            "producer": "Fontodi",
+            "technicalSheetUrl": "https://www.fontodi.com/files/schedaccgenerica.pdf"
+          }
         },
         "Cabernet Sauvignon": {
           "summary": "International variety used in richer structured Tuscan styles and blends.",
@@ -744,7 +1866,12 @@
             "Italy",
             "Tuscany"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Tolaini LEGIT Cabernet Sauvignon Toscana IGT",
+            "producer": "Tolaini",
+            "technicalSheetUrl": "https://www.tolaini.it/en/wines/13/legit-cabernet-sauvignon-toscana-igt/2020"
+          }
         },
         "Merlot": {
           "summary": "Plum-fruited softer-textured international grape used in Tuscan blends and varietal wines.",
@@ -782,7 +1909,12 @@
             "Italy",
             "Tuscany"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Petrolo Galatrona",
+            "producer": "Petrolo",
+            "technicalSheetUrl": "https://www.petrolo.it/cantina/galatrona/"
+          }
         }
       },
       "subregions": {
@@ -847,7 +1979,12 @@
                 "Sangiovese",
                 "Chianti Classico"
               ],
-              "difficulty": 1
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Fontodi Chianti Classico DOCG",
+                "producer": "Fontodi",
+                "technicalSheetUrl": "https://www.fontodi.com/files/schedaccgenerica.pdf"
+              }
             }
           },
           "classification": "Chianti Classico DOCG is distinct from the broader Chianti DOCG and uses the black rooster as an important symbol.",
@@ -925,7 +2062,12 @@
                 "Sangiovese",
                 "Montalcino"
               ],
-              "difficulty": 1
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Biondi-Santi Brunello di Montalcino DOCG",
+                "producer": "Biondi-Santi",
+                "technicalSheetUrl": "https://biondisanti.it/pdfgen/sheet/77/461/en"
+              }
             }
           },
           "classification": "Brunello di Montalcino DOCG is made from 100% Sangiovese and requires long ageing.",
@@ -1003,7 +2145,12 @@
                 "Sangiovese",
                 "Montepulciano"
               ],
-              "difficulty": 1
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Avignonesi Vino Nobile di Montepulciano DOCG",
+                "producer": "Avignonesi",
+                "technicalSheetUrl": "https://www.avignonesi.it/wp-content/uploads/2024/10/Avignonesi-Nobile-2014-Vintage-Release-eng.pdf"
+              }
             }
           },
           "classification": "Vino Nobile di Montepulciano DOCG is based mainly on Sangiovese grown around the town of Montepulciano.",
@@ -1078,7 +2225,12 @@
                 "Tuscany",
                 "Bolgheri"
               ],
-              "difficulty": 1
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Ornellaia 2021",
+                "producer": "Ornellaia",
+                "technicalSheetUrl": "https://www.ornellaia.com/en/wines/ornellaia-2021/"
+              }
             },
             "Merlot": {
               "summary": "Plum-fruited softer-textured international grape used in Tuscan blends and varietal wines.",
@@ -1117,7 +2269,12 @@
                 "Tuscany",
                 "Bolgheri"
               ],
-              "difficulty": 1
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Masseto 2021",
+                "producer": "Masseto",
+                "technicalSheetUrl": "https://www.masseto.com/filemanager/view/24dd9f57-be96-441a-ac40-19623627237e"
+              }
             }
           },
           "classification": "Bolgheri became one of the best-known homes of Super Tuscan Bordeaux-variety wines.",
@@ -1218,7 +2375,12 @@
             "Italy",
             "Marche"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Umani Ronchi Casal di Serra",
+            "producer": "Umani Ronchi",
+            "technicalSheetUrl": "https://www.umanironchi.com/en/wines/white/marche_verdicchio_dei_castelli_di_jesi_casal_di_serra"
+          }
         }
       },
       "vineyardFactors": [
@@ -1295,7 +2457,12 @@
             "Italy",
             "Umbria"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Arnaldo Caprai Grecante",
+            "producer": "Arnaldo Caprai",
+            "technicalSheetUrl": "https://www.arnaldocaprai.it/en/wine/grecant/"
+          }
         },
         "Trebbiano": {
           "summary": "Neutral productive white grape often used in blends for light dry wines.",
@@ -1331,7 +2498,12 @@
             "Italy",
             "Umbria"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Lungarotti Torre di Giano",
+            "producer": "Lungarotti",
+            "technicalSheetUrl": "https://lungarotti.it/ita/tdg/"
+          }
         }
       },
       "vineyardFactors": [
@@ -1410,7 +2582,12 @@
             "Italy",
             "Lazio"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Casale Mattia Frascati DOCG Terre Laviche",
+            "producer": "Casale Mattia",
+            "technicalSheetUrl": "https://www.casalemattia.it/download/18_scheda-tecnica-frascati-superiore-docg-terre-laviche.pdf"
+          }
         },
         "Trebbiano": {
           "summary": "Widely planted neutral white grape used for light dry blends.",
@@ -1446,7 +2623,12 @@
             "Italy",
             "Lazio"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Casale Mattia Frascati DOCG Terre Laviche",
+            "producer": "Casale Mattia",
+            "technicalSheetUrl": "https://www.casalemattia.it/download/18_scheda-tecnica-frascati-superiore-docg-terre-laviche.pdf"
+          }
         }
       },
       "vineyardFactors": [
@@ -1525,7 +2707,12 @@
             "Abruzzo",
             "Montepulciano"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Gianni Masciarelli Montepulciano d’Abruzzo DOC",
+            "producer": "Masciarelli",
+            "technicalSheetUrl": "https://www.masciarelli.it/wp-content/uploads/2019/05/GM-Montepulciano_eng.pdf"
+          }
         }
       },
       "vineyardFactors": [
@@ -1609,7 +2796,12 @@
             "Italy",
             "Campania"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Mastroberardino Radici Taurasi DOCG",
+            "producer": "Mastroberardino",
+            "technicalSheetUrl": "https://mastroberardino.com/radici-taurasi-docg-vino-rosso/"
+          }
         },
         "Fiano": {
           "summary": "Textural white grape producing complex wines with floral, nutty and honeyed notes.",
@@ -1648,7 +2840,12 @@
             "Italy",
             "Campania"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Mastroberardino Radici Fiano di Avellino DOCG",
+            "producer": "Mastroberardino",
+            "technicalSheetUrl": "https://mastroberardino.com/wp-content/uploads/2026/01/RADICI-FIANO-DI-AVELLINO-DOCG-ENG.pdf"
+          }
         },
         "Greco": {
           "summary": "Fresh high-acid white grape producing citrus-driven wines with mineral edge.",
@@ -1688,7 +2885,12 @@
             "Italy",
             "Campania"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Feudi di San Gregorio Cutizzi Greco di Tufo DOCG",
+            "producer": "Feudi di San Gregorio",
+            "technicalSheetUrl": "https://store.feudi.it/prodotto/cutizzi-2023/"
+          }
         }
       },
       "vineyardFactors": [
@@ -1771,7 +2973,12 @@
             "Italy",
             "Puglia"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Tormaresca Torcicoda",
+            "producer": "Tormaresca",
+            "technicalSheetUrl": "https://tormaresca.it/wines/torcicoda/"
+          }
         },
         "Negroamaro": {
           "summary": "Dark-fruited grape producing medium to full-bodied wines with moderate tannin.",
@@ -1808,7 +3015,12 @@
             "Italy",
             "Puglia"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Cantele Negroamaro",
+            "producer": "Cantele",
+            "technicalSheetUrl": "https://www.cantele.it/en/prodotti/negroamaro/"
+          }
         }
       },
       "vineyardFactors": [
@@ -1887,7 +3099,12 @@
             "Italy",
             "Basilicata"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Tenuta del Portale Aglianico del Vulture",
+            "producer": "Tenuta del Portale",
+            "technicalSheetUrl": "https://www.tenutadelportale.com/en/product/aglianico-del-vulture/"
+          }
         }
       },
       "vineyardFactors": [
@@ -1969,7 +3186,12 @@
             "Italy",
             "Sicily"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Planeta Santa Cecilia",
+            "producer": "Planeta",
+            "technicalSheetUrl": "https://www.planeta.it/wp-content/uploads/2024/04/Planeta_Santa-Cecilia-2020-ENG.pdf"
+          }
         },
         "Nerello Mascalese": {
           "summary": "Volcanic-site red grape producing elegant wines with higher acidity and lighter colour.",
@@ -2007,7 +3229,12 @@
             "Italy",
             "Etna"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Benanti Etna Rosso DOC",
+            "producer": "Benanti",
+            "technicalSheetUrl": "https://www.benanti.it/wp-content/uploads/2020/12/BENANTI-Product-Profile-Etna-Rosso-2018.pdf"
+          }
         },
         "Grillo": {
           "summary": "Fresh to aromatic white grape used for both dry wines and historically Marsala.",
@@ -2045,7 +3272,12 @@
             "Italy",
             "Sicily"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Donnafugata SurSur Sicilia DOC Grillo",
+            "producer": "Donnafugata",
+            "technicalSheetUrl": "https://www.donnafugata.it/usa/en/product/sursur/2021"
+          }
         }
       },
       "vineyardFactors": [
@@ -2132,7 +3364,12 @@
             "Italy",
             "Piemonte"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Vietti Langhe Nebbiolo Perbacco",
+            "producer": "Vietti",
+            "technicalSheetUrl": "https://vietti.com/public/file/pdf/-20250922110837-Langhe-Nebbiolo-Perbacco-eng.pdf"
+          }
         },
         "Barbera": {
           "summary": "Important red grape producing deeply coloured wines with high acidity and softer tannin than Nebbiolo.",
@@ -2172,7 +3409,12 @@
             "Italy",
             "Piemonte"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Vietti Barbera d’Alba Trevìe",
+            "producer": "Vietti",
+            "technicalSheetUrl": "https://vietti.com/public/file/pdf/-20250922110812-Barbera-Alba-Trevie-eng.pdf"
+          }
         },
         "Moscato Bianco": {
           "summary": "Highly aromatic grape used for Asti and Moscato d’Asti, giving floral grapey wines with low alcohol.",
@@ -2217,7 +3459,12 @@
             "Italy",
             "Piemonte"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Michele Chiarlo Nivole Moscato d’Asti DOCG",
+            "producer": "Michele Chiarlo",
+            "technicalSheetUrl": "https://www.michelechiarlo.it/en/wines/moscato-dasti-docg-nivole/"
+          }
         },
         "Cortese": {
           "summary": "Fresh high-acid white grape best known for Gavi, producing light to medium-bodied wines with citrus and green apple character.",
@@ -2258,7 +3505,12 @@
             "Italy",
             "Piemonte"
           ],
-          "difficulty": 2
+          "difficulty": 2,
+          "exampleWine": {
+            "name": "La Scolca Gavi dei Gavi Black Label",
+            "producer": "La Scolca",
+            "technicalSheetUrl": "https://www.lascolca.net/wp-content/uploads/2024/01/gigi_eng.pdf"
+          }
         }
       },
       "styles": {
@@ -2336,7 +3588,12 @@
                 "Piemonte",
                 "Barolo"
               ],
-              "difficulty": 1
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Massolino Barolo DOCG",
+                "producer": "Massolino",
+                "technicalSheetUrl": "https://www.massolino.it/en/our-wines/barolo-docg/"
+              }
             }
           },
           "classification": "Barolo DOCG is the prestige full-bodied Nebbiolo appellation with long ageing expectations.",
@@ -2412,7 +3669,12 @@
                 "Piemonte",
                 "Barbaresco"
               ],
-              "difficulty": 1
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Massolino Barbaresco DOCG",
+                "producer": "Massolino",
+                "technicalSheetUrl": "https://www.massolino.it/en/our-wines/barbaresco-docg/"
+              }
             }
           },
           "classification": "Barbaresco DOCG is also 100% Nebbiolo, usually seen as a little lighter or earlier maturing than Barolo.",
@@ -2491,7 +3753,12 @@
                 "Piemonte",
                 "Asti"
               ],
-              "difficulty": 1
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Contratto De Miranda Asti Spumante DOCG",
+                "producer": "Contratto",
+                "technicalSheetUrl": "https://www.contratto.it/prodotto/de-miranda-asti-spumante-docg/"
+              }
             }
           },
           "classification": "Asti DOCG and Moscato d’Asti DOCG are key aromatic sparkling appellations based on Moscato Bianco.",
@@ -2566,7 +3833,12 @@
                 "Piemonte",
                 "Gavi"
               ],
-              "difficulty": 2
+              "difficulty": 2,
+              "exampleWine": {
+                "name": "La Scolca Gavi dei Gavi Black Label",
+                "producer": "La Scolca",
+                "technicalSheetUrl": "https://www.lascolca.net/wp-content/uploads/2024/01/gigi_eng.pdf"
+              }
             }
           },
           "classification": "Gavi DOCG is the classic Cortese appellation of southeastern Piemonte.",

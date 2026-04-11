@@ -249,6 +249,208 @@
             "Site selection by elevation and harvest timing are major human choices in these vineyards."
           ]
         },
+        "lujan-de-cuyo": {
+          "name": "Luján de Cuyo",
+          "summary": "Classic Mendoza subregion known for rich, ripe and structured Malbec.",
+          "climate": "Warm Continental",
+          "styleSummary": "Classic Malbec region with rich, ripe and structured wines.",
+          "mitigating": [
+            "moderate altitude",
+            "warm conditions"
+          ],
+          "keyGrapes": [
+            "Malbec"
+          ],
+          "examTips": [
+            "Think classic richer Mendoza Malbec.",
+            "Usually broader and softer than cooler higher-altitude examples."
+          ],
+          "tags": [
+            "Argentina",
+            "Luján de Cuyo",
+            "Malbec",
+            "ripe",
+            "structured"
+          ],
+          "difficulty": 1,
+          "grapes": {
+            "Malbec": {
+              "summary": "Richer-style Argentine Malbec with ripe black fruit, fuller body and softer acidity.",
+              "style": "Ripe black fruit, chocolate, fuller body, softer acidity.",
+              "aliases": [
+                "Cot"
+              ],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "High",
+                "body": "Full",
+                "tannin": "Medium"
+              },
+              "aromas": [
+                "ripe black fruit",
+                "chocolate",
+                "plum",
+                "violet"
+              ],
+              "viticulture": [
+                "Lower altitude than Uco"
+              ],
+              "winemaking": [
+                "Often oak aged"
+              ],
+              "pairing": [
+                "grilled steaks",
+                "braised beef",
+                "BBQ"
+              ],
+              "examTips": [
+                "Richer and broader than higher-altitude Uco Valley examples."
+              ],
+              "tags": [
+                "red",
+                "ripe",
+                "full-body",
+                "Argentina",
+                "Malbec"
+              ],
+              "difficulty": 1
+            }
+          },
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+            "Subregional site differences are important to how grapes ripen and to the final balance of the wines."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+          ]
+        },
+        "uco-valley": {
+          "name": "Uco Valley",
+          "summary": "High-altitude Mendoza subregion producing fresher, more elegant and structured wines.",
+          "climate": "Cool Continental [high altitude]",
+          "styleSummary": "More elegant, fresher wines with higher acidity and structure.",
+          "mitigating": [
+            "very high altitude",
+            "cool nights",
+            "intense sunlight"
+          ],
+          "keyGrapes": [
+            "Malbec",
+            "Chardonnay"
+          ],
+          "examTips": [
+            "Altitude is the key clue here.",
+            "Expect more freshness and structure than lower Mendoza zones."
+          ],
+          "tags": [
+            "Argentina",
+            "Uco Valley",
+            "high-altitude",
+            "freshness",
+            "structured"
+          ],
+          "difficulty": 1,
+          "grapes": {
+            "Malbec": {
+              "summary": "Higher-altitude Malbec with more freshness, floral lift and structure than warmer lowland styles.",
+              "style": "Black fruit with floral notes, higher acidity, more structure.",
+              "aliases": [
+                "Cot"
+              ],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium to High",
+                "body": "Medium to Full",
+                "tannin": "Medium to High"
+              },
+              "aromas": [
+                "black fruit",
+                "violet",
+                "floral",
+                "plum"
+              ],
+              "viticulture": [
+                "High UV leads to thick skins"
+              ],
+              "winemaking": [
+                "More refined styles",
+                "Oak optional"
+              ],
+              "pairing": [
+                "steak",
+                "roast lamb",
+                "grilled meats"
+              ],
+              "examTips": [
+                "Higher acidity and structure are key differences versus Luján de Cuyo."
+              ],
+              "tags": [
+                "red",
+                "high-altitude",
+                "structured",
+                "Argentina",
+                "Malbec"
+              ],
+              "difficulty": 1
+            },
+            "Chardonnay": {
+              "summary": "Fresh high-altitude Chardonnay with citrus, mineral notes and possible subtle oak.",
+              "style": "Fresh citrus, mineral, sometimes with subtle oak.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "green apple",
+                "mineral",
+                "stone fruit"
+              ],
+              "viticulture": [
+                "Performs well at altitude"
+              ],
+              "winemaking": [
+                "Fresh or lightly oaked"
+              ],
+              "pairing": [
+                "seafood",
+                "grilled fish",
+                "cream sauces"
+              ],
+              "examTips": [
+                "Altitude helps preserve acidity despite strong sunlight."
+              ],
+              "tags": [
+                "white",
+                "high-acid",
+                "mineral",
+                "Argentina",
+                "Chardonnay"
+              ],
+              "difficulty": 1
+            }
+          },
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Altitude lowers temperature and can extend the growing season, helping preserve acidity and aroma.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Growers often use elevation and harvest timing strategically to balance ripeness and freshness.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards."
+          ]
+        },
         "east-mendoza": {
           "name": "East Mendoza",
           "summary": "Lower flatter Mendoza area associated more with larger-volume production and warmer conditions.",
@@ -346,208 +548,6 @@
         "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
         "Site selection by elevation and harvest timing are major human choices in these vineyards.",
         "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk."
-      ]
-    },
-    "lujan-de-cuyo": {
-      "name": "Luján de Cuyo",
-      "summary": "Classic Mendoza subregion known for rich, ripe and structured Malbec.",
-      "climate": "Warm Continental",
-      "styleSummary": "Classic Malbec region with rich, ripe and structured wines.",
-      "mitigating": [
-        "moderate altitude",
-        "warm conditions"
-      ],
-      "keyGrapes": [
-        "Malbec"
-      ],
-      "examTips": [
-        "Think classic richer Mendoza Malbec.",
-        "Usually broader and softer than cooler higher-altitude examples."
-      ],
-      "tags": [
-        "Argentina",
-        "Luján de Cuyo",
-        "Malbec",
-        "ripe",
-        "structured"
-      ],
-      "difficulty": 1,
-      "grapes": {
-        "Malbec": {
-          "summary": "Richer-style Argentine Malbec with ripe black fruit, fuller body and softer acidity.",
-          "style": "Ripe black fruit, chocolate, fuller body, softer acidity.",
-          "aliases": [
-            "Cot"
-          ],
-          "profile": {
-            "acidity": "Medium",
-            "alcohol": "High",
-            "body": "Full",
-            "tannin": "Medium"
-          },
-          "aromas": [
-            "ripe black fruit",
-            "chocolate",
-            "plum",
-            "violet"
-          ],
-          "viticulture": [
-            "Lower altitude than Uco"
-          ],
-          "winemaking": [
-            "Often oak aged"
-          ],
-          "pairing": [
-            "grilled steaks",
-            "braised beef",
-            "BBQ"
-          ],
-          "examTips": [
-            "Richer and broader than higher-altitude Uco Valley examples."
-          ],
-          "tags": [
-            "red",
-            "ripe",
-            "full-body",
-            "Argentina",
-            "Malbec"
-          ],
-          "difficulty": 1
-        }
-      },
-      "vineyardFactors": [
-        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
-        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
-        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
-        "Subregional site differences are important to how grapes ripen and to the final balance of the wines."
-      ],
-      "humanFactors": [
-        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
-        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
-        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
-        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
-      ]
-    },
-    "uco-valley": {
-      "name": "Uco Valley",
-      "summary": "High-altitude Mendoza subregion producing fresher, more elegant and structured wines.",
-      "climate": "Cool Continental [high altitude]",
-      "styleSummary": "More elegant, fresher wines with higher acidity and structure.",
-      "mitigating": [
-        "very high altitude",
-        "cool nights",
-        "intense sunlight"
-      ],
-      "keyGrapes": [
-        "Malbec",
-        "Chardonnay"
-      ],
-      "examTips": [
-        "Altitude is the key clue here.",
-        "Expect more freshness and structure than lower Mendoza zones."
-      ],
-      "tags": [
-        "Argentina",
-        "Uco Valley",
-        "high-altitude",
-        "freshness",
-        "structured"
-      ],
-      "difficulty": 1,
-      "grapes": {
-        "Malbec": {
-          "summary": "Higher-altitude Malbec with more freshness, floral lift and structure than warmer lowland styles.",
-          "style": "Black fruit with floral notes, higher acidity, more structure.",
-          "aliases": [
-            "Cot"
-          ],
-          "profile": {
-            "acidity": "Medium to High",
-            "alcohol": "Medium to High",
-            "body": "Medium to Full",
-            "tannin": "Medium to High"
-          },
-          "aromas": [
-            "black fruit",
-            "violet",
-            "floral",
-            "plum"
-          ],
-          "viticulture": [
-            "High UV leads to thick skins"
-          ],
-          "winemaking": [
-            "More refined styles",
-            "Oak optional"
-          ],
-          "pairing": [
-            "steak",
-            "roast lamb",
-            "grilled meats"
-          ],
-          "examTips": [
-            "Higher acidity and structure are key differences versus Luján de Cuyo."
-          ],
-          "tags": [
-            "red",
-            "high-altitude",
-            "structured",
-            "Argentina",
-            "Malbec"
-          ],
-          "difficulty": 1
-        },
-        "Chardonnay": {
-          "summary": "Fresh high-altitude Chardonnay with citrus, mineral notes and possible subtle oak.",
-          "style": "Fresh citrus, mineral, sometimes with subtle oak.",
-          "aliases": [],
-          "profile": {
-            "acidity": "High",
-            "alcohol": "Medium",
-            "body": "Medium",
-            "tannin": "-"
-          },
-          "aromas": [
-            "citrus",
-            "green apple",
-            "mineral",
-            "stone fruit"
-          ],
-          "viticulture": [
-            "Performs well at altitude"
-          ],
-          "winemaking": [
-            "Fresh or lightly oaked"
-          ],
-          "pairing": [
-            "seafood",
-            "grilled fish",
-            "cream sauces"
-          ],
-          "examTips": [
-            "Altitude helps preserve acidity despite strong sunlight."
-          ],
-          "tags": [
-            "white",
-            "high-acid",
-            "mineral",
-            "Argentina",
-            "Chardonnay"
-          ],
-          "difficulty": 1
-        }
-      },
-      "vineyardFactors": [
-        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
-        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
-        "Altitude lowers temperature and can extend the growing season, helping preserve acidity and aroma.",
-        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
-      ],
-      "humanFactors": [
-        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
-        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
-        "Growers often use elevation and harvest timing strategically to balance ripeness and freshness.",
-        "Site selection by elevation and harvest timing are major human choices in these vineyards."
       ]
     },
     "salta": {

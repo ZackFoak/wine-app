@@ -122,6 +122,207 @@
         }
       },
       "subregions": {
+        "wachau": {
+          "name": "Wachau",
+          "summary": "Prestige Danube valley region producing concentrated dry Gruner Veltliner and Riesling from steep terraces.",
+          "climate": "Cool Continental",
+          "styleSummary": "Precise, structured dry whites with concentration, freshness and mineral character.",
+          "mitigating": [
+            "Danube river",
+            "steep terraces",
+            "diurnal range",
+            "stone terraces"
+          ],
+          "keyGrapes": [
+            "Gruner Veltliner",
+            "Riesling"
+          ],
+          "examTips": [
+            "Wachau is a benchmark Austrian white wine region.",
+            "Steep sites and the Danube help ripening while preserving freshness."
+          ],
+          "tags": [
+            "Austria",
+            "Wachau",
+            "Danube",
+            "white",
+            "high-acid",
+            "premium"
+          ],
+          "difficulty": 1,
+          "grapes": {
+            "Gruner Veltliner": {
+              "summary": "Austria’s flagship white grape, producing concentrated dry wines with citrus, stone fruit and peppery spice in top Wachau sites.",
+              "style": "Citrus, stone fruit, white pepper and structured dry finish.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Medium",
+                "body": "Medium to Full",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "apple",
+                "stone fruit",
+                "white pepper"
+              ],
+              "viticulture": [
+                "Best on steep well-exposed sites",
+                "Continental climate preserves acidity"
+              ],
+              "winemaking": [
+                "Usually dry",
+                "Premium examples emphasise concentration and purity"
+              ],
+              "pairing": [
+                "white fish",
+                "pork",
+                "vegetable dishes"
+              ],
+              "examTips": [
+                "White pepper is the key aroma clue.",
+                "Usually more concentrated than basic examples from broader Lower Austria."
+              ],
+              "tags": [
+                "white",
+                "high-acid",
+                "Austria",
+                "Wachau"
+              ],
+              "difficulty": 1
+            },
+            "Riesling": {
+              "summary": "Dry aromatic white grape producing concentrated citrus and stone-fruit wines with mineral freshness.",
+              "style": "Lime, peach, mineral, dry and high acid.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Medium",
+                "body": "Light to Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "lime",
+                "peach",
+                "apricot",
+                "mineral"
+              ],
+              "viticulture": [
+                "Thrives on steep rocky sites",
+                "Requires enough warmth to ripen fully"
+              ],
+              "winemaking": [
+                "Typically dry in Austria"
+              ],
+              "pairing": [
+                "shellfish",
+                "spicy dishes",
+                "light pork dishes"
+              ],
+              "examTips": [
+                "Dry style is a key Austrian clue.",
+                "Usually broader and drier than many German examples."
+              ],
+              "tags": [
+                "white",
+                "high-acid",
+                "Austria",
+                "Wachau"
+              ],
+              "difficulty": 1
+            }
+          },
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures.",
+            "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards."
+          ]
+        },
+        "weinviertel": {
+          "name": "Weinviertel",
+          "summary": "Large Lower Austrian region especially associated with fresh, peppery Gruner Veltliner.",
+          "climate": "Moderate Continental",
+          "styleSummary": "Fresh, dry, medium-bodied whites with pronounced acidity and peppery character.",
+          "mitigating": [
+            "cool nights",
+            "continental conditions",
+            "open rolling sites"
+          ],
+          "keyGrapes": [
+            "Gruner Veltliner"
+          ],
+          "examTips": [
+            "Weinviertel is closely linked with Gruner Veltliner.",
+            "Think freshness and pepper rather than extreme richness."
+          ],
+          "tags": [
+            "Austria",
+            "Weinviertel",
+            "Gruner Veltliner",
+            "dry"
+          ],
+          "difficulty": 1,
+          "grapes": {
+            "Gruner Veltliner": {
+              "summary": "Fresh dry Austrian white grape known for citrus, green fruit and white pepper.",
+              "style": "Green apple, citrus and white pepper with high acidity.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "green apple",
+                "citrus",
+                "white pepper"
+              ],
+              "viticulture": [
+                "Continental climate suits it well",
+                "Freshness retained by cool nights"
+              ],
+              "winemaking": [
+                "Usually dry and unoaked"
+              ],
+              "pairing": [
+                "salads",
+                "white fish",
+                "vegetables"
+              ],
+              "examTips": [
+                "Pepper note is especially important here.",
+                "Usually fresher and lighter than the richest Wachau examples."
+              ],
+              "tags": [
+                "white",
+                "Austria",
+                "Weinviertel",
+                "pepper"
+              ],
+              "difficulty": 1
+            }
+          },
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+          ]
+        },
         "kamptal": {
           "name": "Kamptal",
           "summary": "Leading Lower Austria region for dry Gruner Veltliner and Riesling from varied soils and significant day-night shifts.",
@@ -864,207 +1065,6 @@
       ],
       "humanFactors": [
         "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
-        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
-        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
-        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
-      ]
-    },
-    "wachau": {
-      "name": "Wachau",
-      "summary": "Prestige Danube valley region producing concentrated dry Gruner Veltliner and Riesling from steep terraces.",
-      "climate": "Cool Continental",
-      "styleSummary": "Precise, structured dry whites with concentration, freshness and mineral character.",
-      "mitigating": [
-        "Danube river",
-        "steep terraces",
-        "diurnal range",
-        "stone terraces"
-      ],
-      "keyGrapes": [
-        "Gruner Veltliner",
-        "Riesling"
-      ],
-      "examTips": [
-        "Wachau is a benchmark Austrian white wine region.",
-        "Steep sites and the Danube help ripening while preserving freshness."
-      ],
-      "tags": [
-        "Austria",
-        "Wachau",
-        "Danube",
-        "white",
-        "high-acid",
-        "premium"
-      ],
-      "difficulty": 1,
-      "grapes": {
-        "Gruner Veltliner": {
-          "summary": "Austria’s flagship white grape, producing concentrated dry wines with citrus, stone fruit and peppery spice in top Wachau sites.",
-          "style": "Citrus, stone fruit, white pepper and structured dry finish.",
-          "aliases": [],
-          "profile": {
-            "acidity": "High",
-            "alcohol": "Medium",
-            "body": "Medium to Full",
-            "tannin": "-"
-          },
-          "aromas": [
-            "citrus",
-            "apple",
-            "stone fruit",
-            "white pepper"
-          ],
-          "viticulture": [
-            "Best on steep well-exposed sites",
-            "Continental climate preserves acidity"
-          ],
-          "winemaking": [
-            "Usually dry",
-            "Premium examples emphasise concentration and purity"
-          ],
-          "pairing": [
-            "white fish",
-            "pork",
-            "vegetable dishes"
-          ],
-          "examTips": [
-            "White pepper is the key aroma clue.",
-            "Usually more concentrated than basic examples from broader Lower Austria."
-          ],
-          "tags": [
-            "white",
-            "high-acid",
-            "Austria",
-            "Wachau"
-          ],
-          "difficulty": 1
-        },
-        "Riesling": {
-          "summary": "Dry aromatic white grape producing concentrated citrus and stone-fruit wines with mineral freshness.",
-          "style": "Lime, peach, mineral, dry and high acid.",
-          "aliases": [],
-          "profile": {
-            "acidity": "High",
-            "alcohol": "Medium",
-            "body": "Light to Medium",
-            "tannin": "-"
-          },
-          "aromas": [
-            "lime",
-            "peach",
-            "apricot",
-            "mineral"
-          ],
-          "viticulture": [
-            "Thrives on steep rocky sites",
-            "Requires enough warmth to ripen fully"
-          ],
-          "winemaking": [
-            "Typically dry in Austria"
-          ],
-          "pairing": [
-            "shellfish",
-            "spicy dishes",
-            "light pork dishes"
-          ],
-          "examTips": [
-            "Dry style is a key Austrian clue.",
-            "Usually broader and drier than many German examples."
-          ],
-          "tags": [
-            "white",
-            "high-acid",
-            "Austria",
-            "Wachau"
-          ],
-          "difficulty": 1
-        }
-      },
-      "vineyardFactors": [
-        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
-        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
-        "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures.",
-        "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
-      ],
-      "humanFactors": [
-        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
-        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
-        "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
-        "Site selection by elevation and harvest timing are major human choices in these vineyards."
-      ]
-    },
-    "weinviertel": {
-      "name": "Weinviertel",
-      "summary": "Large Lower Austrian region especially associated with fresh, peppery Gruner Veltliner.",
-      "climate": "Moderate Continental",
-      "styleSummary": "Fresh, dry, medium-bodied whites with pronounced acidity and peppery character.",
-      "mitigating": [
-        "cool nights",
-        "continental conditions",
-        "open rolling sites"
-      ],
-      "keyGrapes": [
-        "Gruner Veltliner"
-      ],
-      "examTips": [
-        "Weinviertel is closely linked with Gruner Veltliner.",
-        "Think freshness and pepper rather than extreme richness."
-      ],
-      "tags": [
-        "Austria",
-        "Weinviertel",
-        "Gruner Veltliner",
-        "dry"
-      ],
-      "difficulty": 1,
-      "grapes": {
-        "Gruner Veltliner": {
-          "summary": "Fresh dry Austrian white grape known for citrus, green fruit and white pepper.",
-          "style": "Green apple, citrus and white pepper with high acidity.",
-          "aliases": [],
-          "profile": {
-            "acidity": "High",
-            "alcohol": "Medium",
-            "body": "Medium",
-            "tannin": "-"
-          },
-          "aromas": [
-            "green apple",
-            "citrus",
-            "white pepper"
-          ],
-          "viticulture": [
-            "Continental climate suits it well",
-            "Freshness retained by cool nights"
-          ],
-          "winemaking": [
-            "Usually dry and unoaked"
-          ],
-          "pairing": [
-            "salads",
-            "white fish",
-            "vegetables"
-          ],
-          "examTips": [
-            "Pepper note is especially important here.",
-            "Usually fresher and lighter than the richest Wachau examples."
-          ],
-          "tags": [
-            "white",
-            "Austria",
-            "Weinviertel",
-            "pepper"
-          ],
-          "difficulty": 1
-        }
-      },
-      "vineyardFactors": [
-        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
-        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
-        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
-      ],
-      "humanFactors": [
-        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
         "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
         "Site selection by elevation and harvest timing are major human choices in these vineyards.",
         "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."

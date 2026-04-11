@@ -80,7 +80,12 @@
             "Australia",
             "Shiraz"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Torbreck Woodcutter's Shiraz 2023",
+            "producer": "Torbreck Vintners",
+            "technicalSheetUrl": "https://torbreck.com/blogs/woodcutters-shiraz/woodcutters-shiraz-2023"
+          }
         }
       },
       "classification": "Barossa is one of Australia’s benchmark warm-climate Shiraz regions.",
@@ -157,7 +162,12 @@
             "Australia",
             "Shiraz"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Yangarra Ironheart Shiraz 2022",
+            "producer": "Yangarra Estate Vineyard",
+            "technicalSheetUrl": "https://www.yangarra.com/wine/2022-ironheart-shiraz"
+          }
         }
       },
       "classification": "McLaren Vale is a warm South Australian region associated with ripe generous Shiraz and Grenache styles.",
@@ -228,7 +238,12 @@
             "fresh",
             "Australia"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Shaw + Smith Sauvignon Blanc 2025",
+            "producer": "Shaw + Smith",
+            "technicalSheetUrl": "https://www.shawandsmith.com/store/2025-shaw-smith-sauvignon-blanc"
+          }
         }
       },
       "styles": {
@@ -309,7 +324,12 @@
             "red",
             "cool-climate"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Giant Steps Yarra Valley Pinot Noir 2022",
+            "producer": "Giant Steps",
+            "technicalSheetUrl": "https://www.giantstepswine.com.au/wp-content/uploads/2023/08/2022-Yarra-Valley-Pinot-Noir.pdf"
+          }
         }
       },
       "styles": {
@@ -384,7 +404,12 @@
             "white",
             "unique-style"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Tyrrell's Vat 1 Hunter Semillon 2018",
+            "producer": "Tyrrell's",
+            "technicalSheetUrl": "https://tyrrells.com.au/wp-content/uploads/2021/01/2018-Vat-1-Hunter-Semillon-TYRRELLS-Tasting-Notes.pdf"
+          }
         }
       },
       "classification": "Hunter Valley is a classic Australian region especially associated with distinctive Semillon styles.",
@@ -451,7 +476,12 @@
           "tags": [
             "red"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Vasse Felix Cabernet Sauvignon 2022",
+            "producer": "Vasse Felix",
+            "technicalSheetUrl": "https://www.vassefelix.com.au/store/2022-cabernet-sauvignon"
+          }
         }
       },
       "classification": "Margaret River is a major fine-wine region known for Cabernet Sauvignon and Chardonnay under strong maritime influence.",
@@ -518,7 +548,12 @@
           "tags": [
             "white"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Tolpuddle Vineyard Chardonnay 2023",
+            "producer": "Tolpuddle Vineyard",
+            "technicalSheetUrl": "https://www.tolpuddlevineyard.com/store/2023-tolpuddle-vineyard-chardonnay"
+          }
         }
       },
       "styles": {
@@ -613,7 +648,12 @@
             "Australia",
             "Rutherglen"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Chambers Rosewood Rutherglen Muscat",
+            "producer": "Chambers Rosewood Vineyards",
+            "technicalSheetUrl": "https://www.chambersrosewood.com.au/shop/p/rutherglen-muscat"
+          }
         }
       },
       "styles": {

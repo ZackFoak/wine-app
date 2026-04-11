@@ -236,366 +236,77 @@
         "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
         "Site selection by elevation and harvest timing are major human choices in these vineyards.",
         "Choice of production method and maturation is a major human factor in shaping regional wine style."
-      ]
-    },
-    "napa-valley": {
-      "name": "Napa Valley",
-      "summary": "California's flagship premium region, known for full-bodied, ripe and concentrated Cabernet Sauvignon.",
-      "climate": "Warm Mediterranean",
-      "styleSummary": "Full-bodied, ripe wines with high alcohol and concentration.",
-      "mitigating": [
-        "morning fog",
-        "diurnal range",
-        "valley vs hillside differences"
       ],
-      "keyGrapes": [
-        "Cabernet Sauvignon",
-        "Chardonnay"
-      ],
-      "examTips": [
-        "Napa is the key premium Cabernet region in the USA.",
-        "Think ripe fruit, concentration and oak.",
-        "Fog and diurnal range help preserve balance."
-      ],
-      "tags": [
-        "USA",
-        "Napa",
-        "premium",
-        "Cabernet Sauvignon",
-        "warm-climate"
-      ],
-      "difficulty": 1,
-      "grapes": {
-        "Cabernet Sauvignon": {
-          "summary": "Premium Napa red producing concentrated black-fruited wines with high tannin and oak.",
-          "style": "Blackcurrant, cassis, oak, full body, high tannin.",
-          "aliases": [],
-          "profile": {
-            "acidity": "Medium",
-            "alcohol": "High",
-            "body": "Full",
-            "tannin": "High"
-          },
-          "aromas": [
-            "blackcurrant",
-            "cassis",
-            "oak",
-            "cedar",
-            "black fruit"
-          ],
-          "viticulture": [
-            "Warm climate ensures ripening"
-          ],
-          "winemaking": [
-            "Oak ageing common"
-          ],
-          "pairing": [
-            "steak",
-            "lamb",
-            "hard cheese"
-          ],
-          "examTips": [
-            "Think concentrated premium New World Cabernet.",
-            "Usually riper and fuller than Bordeaux."
-          ],
-          "tags": [
-            "red",
-            "premium",
-            "full-body",
-            "USA",
-            "Napa"
-          ],
-          "difficulty": 1
-        },
-        "Chardonnay": {
-          "summary": "Riper Californian Chardonnay often showing tropical fruit, MLF and oak.",
-          "style": "Ripe citrus, tropical fruit, often buttery and oaky.",
-          "aliases": [],
-          "profile": {
-            "acidity": "Medium",
-            "alcohol": "Medium to High",
-            "body": "Medium to Full",
-            "tannin": "-"
-          },
-          "aromas": [
-            "ripe citrus",
-            "tropical fruit",
-            "butter",
-            "oak"
-          ],
-          "viticulture": [
-            "Warm sites"
-          ],
-          "winemaking": [
-            "MLF + oak common"
-          ],
-          "pairing": [
-            "lobster",
-            "cream sauces",
-            "roast chicken"
-          ],
-          "examTips": [
-            "Rich buttery style is a key clue in warmer Californian Chardonnay."
-          ],
-          "tags": [
-            "white",
-            "rich",
-            "oak",
-            "USA",
-            "Napa"
-          ],
-          "difficulty": 1
-        }
-      },
       "subregions": {
-        "oakville": {
-          "name": "Oakville",
-          "summary": "Prestige central Napa AVA especially associated with concentrated structured Cabernet Sauvignon.",
+        "napa-valley": {
+          "name": "Napa Valley",
+          "summary": "California's flagship premium region, known for full-bodied, ripe and concentrated Cabernet Sauvignon.",
           "climate": "Warm Mediterranean",
-          "styleSummary": "Full-bodied ripe Cabernet Sauvignon with cassis fruit, oak and firm structure.",
+          "styleSummary": "Full-bodied, ripe wines with high alcohol and concentration.",
+          "mitigating": [
+            "morning fog",
+            "diurnal range",
+            "valley vs hillside differences"
+          ],
           "keyGrapes": [
-            "Cabernet Sauvignon"
-          ],
-          "examTips": [
-            "Oakville is a benchmark Napa Cabernet name.",
-            "Warm days with moderated nights help ripe but balanced styles."
-          ],
-          "tags": [
-            "USA",
-            "Napa Valley",
-            "Oakville",
-            "red"
-          ],
-          "grapes": {
-            "Cabernet Sauvignon": {
-              "summary": "Premium Napa red producing concentrated black-fruited wines with high tannin and oak.",
-              "style": "Blackcurrant, cassis, oak, full body, high tannin.",
-              "aliases": [],
-              "profile": {
-                "acidity": "Medium",
-                "alcohol": "High",
-                "body": "Full",
-                "tannin": "High"
-              },
-              "aromas": [
-                "blackcurrant",
-                "cassis",
-                "oak",
-                "cedar",
-                "black fruit"
-              ],
-              "viticulture": [
-                "Warm climate ensures ripening"
-              ],
-              "winemaking": [
-                "Oak ageing common"
-              ],
-              "pairing": [
-                "steak",
-                "lamb",
-                "hard cheese"
-              ],
-              "examTips": [
-                "Think concentrated premium New World Cabernet.",
-                "Usually riper and fuller than Bordeaux."
-              ],
-              "tags": [
-                "red",
-                "premium",
-                "full-body",
-                "USA",
-                "Napa",
-                "Napa Valley",
-                "Oakville"
-              ],
-              "difficulty": 1
-            }
-          },
-          "classification": "Prestige Napa sub-AVA strongly linked to benchmark Cabernet Sauvignon.",
-          "vineyardFactors": [
-            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
-            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
-            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
-          ],
-          "humanFactors": [
-            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
-            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
-            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
-            "Regional style depends not only on climate and site, but also on deliberate human choices in the vineyard and cellar."
-          ]
-        },
-        "rutherford": {
-          "name": "Rutherford",
-          "summary": "Classic Napa AVA known for premium Cabernet Sauvignon and the famous dusty savory note often linked to the area.",
-          "climate": "Warm Mediterranean",
-          "styleSummary": "Rich Cabernet Sauvignon with black fruit, oak and firm tannin.",
-          "keyGrapes": [
-            "Cabernet Sauvignon"
-          ],
-          "examTips": [
-            "Rutherford is strongly tied to Napa Cabernet identity.",
-            "Think power, structure and oak."
-          ],
-          "tags": [
-            "USA",
-            "Napa Valley",
-            "Rutherford",
-            "red"
-          ],
-          "grapes": {
-            "Cabernet Sauvignon": {
-              "summary": "Premium Napa red producing concentrated black-fruited wines with high tannin and oak.",
-              "style": "Blackcurrant, cassis, oak, full body, high tannin.",
-              "aliases": [],
-              "profile": {
-                "acidity": "Medium",
-                "alcohol": "High",
-                "body": "Full",
-                "tannin": "High"
-              },
-              "aromas": [
-                "blackcurrant",
-                "cassis",
-                "oak",
-                "cedar",
-                "black fruit"
-              ],
-              "viticulture": [
-                "Warm climate ensures ripening"
-              ],
-              "winemaking": [
-                "Oak ageing common"
-              ],
-              "pairing": [
-                "steak",
-                "lamb",
-                "hard cheese"
-              ],
-              "examTips": [
-                "Think concentrated premium New World Cabernet.",
-                "Usually riper and fuller than Bordeaux."
-              ],
-              "tags": [
-                "red",
-                "premium",
-                "full-body",
-                "USA",
-                "Napa",
-                "Napa Valley",
-                "Rutherford"
-              ],
-              "difficulty": 1
-            }
-          },
-          "classification": "Classic Napa Cabernet area often associated with concentrated structure and a savory dusty note.",
-          "vineyardFactors": [
-            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
-            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
-            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
-          ],
-          "humanFactors": [
-            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
-            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
-            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
-            "Regional style depends not only on climate and site, but also on deliberate human choices in the vineyard and cellar."
-          ]
-        },
-        "stags-leap-district": {
-          "name": "Stags Leap District",
-          "summary": "Warm Napa district producing Cabernet Sauvignon with richness but often polished tannin and perfume.",
-          "climate": "Warm Mediterranean",
-          "styleSummary": "Concentrated Cabernet with ripe black fruit, oak and supple texture.",
-          "keyGrapes": [
-            "Cabernet Sauvignon"
-          ],
-          "examTips": [
-            "This is a classic Napa Cabernet name to recognize.",
-            "Expect concentration with relatively refined tannin."
-          ],
-          "tags": [
-            "USA",
-            "Napa Valley",
-            "Stags Leap District",
-            "red"
-          ],
-          "grapes": {
-            "Cabernet Sauvignon": {
-              "summary": "Premium Napa red producing concentrated black-fruited wines with high tannin and oak.",
-              "style": "Blackcurrant, cassis, oak, full body, high tannin.",
-              "aliases": [],
-              "profile": {
-                "acidity": "Medium",
-                "alcohol": "High",
-                "body": "Full",
-                "tannin": "High"
-              },
-              "aromas": [
-                "blackcurrant",
-                "cassis",
-                "oak",
-                "cedar",
-                "black fruit"
-              ],
-              "viticulture": [
-                "Warm climate ensures ripening"
-              ],
-              "winemaking": [
-                "Oak ageing common"
-              ],
-              "pairing": [
-                "steak",
-                "lamb",
-                "hard cheese"
-              ],
-              "examTips": [
-                "Think concentrated premium New World Cabernet.",
-                "Usually riper and fuller than Bordeaux."
-              ],
-              "tags": [
-                "red",
-                "premium",
-                "full-body",
-                "USA",
-                "Napa",
-                "Napa Valley",
-                "Stags Leap District"
-              ],
-              "difficulty": 1
-            }
-          },
-          "classification": "Prestige Napa sub-AVA known for polished Cabernet Sauvignon.",
-          "vineyardFactors": [
-            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
-            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
-            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
-          ],
-          "humanFactors": [
-            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
-            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
-            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
-            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
-          ]
-        },
-        "los-carneros": {
-          "name": "Los Carneros",
-          "summary": "Cool southern district spanning Napa and Sonoma, important for Chardonnay and Pinot Noir.",
-          "climate": "Cool Maritime",
-          "styleSummary": "Cool-climate Chardonnay and Pinot Noir with freshness and restrained fruit.",
-          "keyGrapes": [
+            "Cabernet Sauvignon",
             "Chardonnay"
           ],
           "examTips": [
-            "Marine influence makes this cooler than much of Napa.",
-            "Think Chardonnay and Pinot Noir rather than Napa Cabernet."
+            "Napa is the key premium Cabernet region in the USA.",
+            "Think ripe fruit, concentration and oak.",
+            "Fog and diurnal range help preserve balance."
           ],
           "tags": [
             "USA",
-            "Napa Valley",
-            "Los Carneros",
-            "white",
-            "red"
+            "Napa",
+            "premium",
+            "Cabernet Sauvignon",
+            "warm-climate"
           ],
+          "difficulty": 1,
           "grapes": {
+            "Cabernet Sauvignon": {
+              "summary": "Premium Napa red producing concentrated black-fruited wines with high tannin and oak.",
+              "style": "Blackcurrant, cassis, oak, full body, high tannin.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "High",
+                "body": "Full",
+                "tannin": "High"
+              },
+              "aromas": [
+                "blackcurrant",
+                "cassis",
+                "oak",
+                "cedar",
+                "black fruit"
+              ],
+              "viticulture": [
+                "Warm climate ensures ripening"
+              ],
+              "winemaking": [
+                "Oak ageing common"
+              ],
+              "pairing": [
+                "steak",
+                "lamb",
+                "hard cheese"
+              ],
+              "examTips": [
+                "Think concentrated premium New World Cabernet.",
+                "Usually riper and fuller than Bordeaux."
+              ],
+              "tags": [
+                "red",
+                "premium",
+                "full-body",
+                "USA",
+                "Napa"
+              ],
+              "difficulty": 1
+            },
             "Chardonnay": {
               "summary": "Riper Californian Chardonnay often showing tropical fruit, MLF and oak.",
               "style": "Ripe citrus, tropical fruit, often buttery and oaky.",
@@ -631,170 +342,358 @@
                 "rich",
                 "oak",
                 "USA",
-                "Napa",
-                "Napa Valley",
-                "Los Carneros"
+                "Napa"
               ],
               "difficulty": 1
             }
           },
-          "classification": "Cool southern AVA influenced by San Pablo Bay, important for Chardonnay and Pinot Noir.",
+          "subregions": {
+            "oakville": {
+              "name": "Oakville",
+              "summary": "Prestige central Napa AVA especially associated with concentrated structured Cabernet Sauvignon.",
+              "climate": "Warm Mediterranean",
+              "styleSummary": "Full-bodied ripe Cabernet Sauvignon with cassis fruit, oak and firm structure.",
+              "keyGrapes": [
+                "Cabernet Sauvignon"
+              ],
+              "examTips": [
+                "Oakville is a benchmark Napa Cabernet name.",
+                "Warm days with moderated nights help ripe but balanced styles."
+              ],
+              "tags": [
+                "USA",
+                "Napa Valley",
+                "Oakville",
+                "red"
+              ],
+              "grapes": {
+                "Cabernet Sauvignon": {
+                  "summary": "Premium Napa red producing concentrated black-fruited wines with high tannin and oak.",
+                  "style": "Blackcurrant, cassis, oak, full body, high tannin.",
+                  "aliases": [],
+                  "profile": {
+                    "acidity": "Medium",
+                    "alcohol": "High",
+                    "body": "Full",
+                    "tannin": "High"
+                  },
+                  "aromas": [
+                    "blackcurrant",
+                    "cassis",
+                    "oak",
+                    "cedar",
+                    "black fruit"
+                  ],
+                  "viticulture": [
+                    "Warm climate ensures ripening"
+                  ],
+                  "winemaking": [
+                    "Oak ageing common"
+                  ],
+                  "pairing": [
+                    "steak",
+                    "lamb",
+                    "hard cheese"
+                  ],
+                  "examTips": [
+                    "Think concentrated premium New World Cabernet.",
+                    "Usually riper and fuller than Bordeaux."
+                  ],
+                  "tags": [
+                    "red",
+                    "premium",
+                    "full-body",
+                    "USA",
+                    "Napa",
+                    "Napa Valley",
+                    "Oakville"
+                  ],
+                  "difficulty": 1
+                }
+              },
+              "classification": "Prestige Napa sub-AVA strongly linked to benchmark Cabernet Sauvignon.",
+              "vineyardFactors": [
+                "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+                "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+                "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+              ],
+              "humanFactors": [
+                "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+                "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+                "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+                "Regional style depends not only on climate and site, but also on deliberate human choices in the vineyard and cellar."
+              ]
+            },
+            "rutherford": {
+              "name": "Rutherford",
+              "summary": "Classic Napa AVA known for premium Cabernet Sauvignon and the famous dusty savory note often linked to the area.",
+              "climate": "Warm Mediterranean",
+              "styleSummary": "Rich Cabernet Sauvignon with black fruit, oak and firm tannin.",
+              "keyGrapes": [
+                "Cabernet Sauvignon"
+              ],
+              "examTips": [
+                "Rutherford is strongly tied to Napa Cabernet identity.",
+                "Think power, structure and oak."
+              ],
+              "tags": [
+                "USA",
+                "Napa Valley",
+                "Rutherford",
+                "red"
+              ],
+              "grapes": {
+                "Cabernet Sauvignon": {
+                  "summary": "Premium Napa red producing concentrated black-fruited wines with high tannin and oak.",
+                  "style": "Blackcurrant, cassis, oak, full body, high tannin.",
+                  "aliases": [],
+                  "profile": {
+                    "acidity": "Medium",
+                    "alcohol": "High",
+                    "body": "Full",
+                    "tannin": "High"
+                  },
+                  "aromas": [
+                    "blackcurrant",
+                    "cassis",
+                    "oak",
+                    "cedar",
+                    "black fruit"
+                  ],
+                  "viticulture": [
+                    "Warm climate ensures ripening"
+                  ],
+                  "winemaking": [
+                    "Oak ageing common"
+                  ],
+                  "pairing": [
+                    "steak",
+                    "lamb",
+                    "hard cheese"
+                  ],
+                  "examTips": [
+                    "Think concentrated premium New World Cabernet.",
+                    "Usually riper and fuller than Bordeaux."
+                  ],
+                  "tags": [
+                    "red",
+                    "premium",
+                    "full-body",
+                    "USA",
+                    "Napa",
+                    "Napa Valley",
+                    "Rutherford"
+                  ],
+                  "difficulty": 1
+                }
+              },
+              "classification": "Classic Napa Cabernet area often associated with concentrated structure and a savory dusty note.",
+              "vineyardFactors": [
+                "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+                "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+                "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+              ],
+              "humanFactors": [
+                "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+                "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+                "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+                "Regional style depends not only on climate and site, but also on deliberate human choices in the vineyard and cellar."
+              ]
+            },
+            "stags-leap-district": {
+              "name": "Stags Leap District",
+              "summary": "Warm Napa district producing Cabernet Sauvignon with richness but often polished tannin and perfume.",
+              "climate": "Warm Mediterranean",
+              "styleSummary": "Concentrated Cabernet with ripe black fruit, oak and supple texture.",
+              "keyGrapes": [
+                "Cabernet Sauvignon"
+              ],
+              "examTips": [
+                "This is a classic Napa Cabernet name to recognize.",
+                "Expect concentration with relatively refined tannin."
+              ],
+              "tags": [
+                "USA",
+                "Napa Valley",
+                "Stags Leap District",
+                "red"
+              ],
+              "grapes": {
+                "Cabernet Sauvignon": {
+                  "summary": "Premium Napa red producing concentrated black-fruited wines with high tannin and oak.",
+                  "style": "Blackcurrant, cassis, oak, full body, high tannin.",
+                  "aliases": [],
+                  "profile": {
+                    "acidity": "Medium",
+                    "alcohol": "High",
+                    "body": "Full",
+                    "tannin": "High"
+                  },
+                  "aromas": [
+                    "blackcurrant",
+                    "cassis",
+                    "oak",
+                    "cedar",
+                    "black fruit"
+                  ],
+                  "viticulture": [
+                    "Warm climate ensures ripening"
+                  ],
+                  "winemaking": [
+                    "Oak ageing common"
+                  ],
+                  "pairing": [
+                    "steak",
+                    "lamb",
+                    "hard cheese"
+                  ],
+                  "examTips": [
+                    "Think concentrated premium New World Cabernet.",
+                    "Usually riper and fuller than Bordeaux."
+                  ],
+                  "tags": [
+                    "red",
+                    "premium",
+                    "full-body",
+                    "USA",
+                    "Napa",
+                    "Napa Valley",
+                    "Stags Leap District"
+                  ],
+                  "difficulty": 1
+                }
+              },
+              "classification": "Prestige Napa sub-AVA known for polished Cabernet Sauvignon.",
+              "vineyardFactors": [
+                "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+                "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+                "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+              ],
+              "humanFactors": [
+                "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+                "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+                "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+                "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+              ]
+            },
+            "los-carneros": {
+              "name": "Los Carneros",
+              "summary": "Cool southern district spanning Napa and Sonoma, important for Chardonnay and Pinot Noir.",
+              "climate": "Cool Maritime",
+              "styleSummary": "Cool-climate Chardonnay and Pinot Noir with freshness and restrained fruit.",
+              "keyGrapes": [
+                "Chardonnay"
+              ],
+              "examTips": [
+                "Marine influence makes this cooler than much of Napa.",
+                "Think Chardonnay and Pinot Noir rather than Napa Cabernet."
+              ],
+              "tags": [
+                "USA",
+                "Napa Valley",
+                "Los Carneros",
+                "white",
+                "red"
+              ],
+              "grapes": {
+                "Chardonnay": {
+                  "summary": "Riper Californian Chardonnay often showing tropical fruit, MLF and oak.",
+                  "style": "Ripe citrus, tropical fruit, often buttery and oaky.",
+                  "aliases": [],
+                  "profile": {
+                    "acidity": "Medium",
+                    "alcohol": "Medium to High",
+                    "body": "Medium to Full",
+                    "tannin": "-"
+                  },
+                  "aromas": [
+                    "ripe citrus",
+                    "tropical fruit",
+                    "butter",
+                    "oak"
+                  ],
+                  "viticulture": [
+                    "Warm sites"
+                  ],
+                  "winemaking": [
+                    "MLF + oak common"
+                  ],
+                  "pairing": [
+                    "lobster",
+                    "cream sauces",
+                    "roast chicken"
+                  ],
+                  "examTips": [
+                    "Rich buttery style is a key clue in warmer Californian Chardonnay."
+                  ],
+                  "tags": [
+                    "white",
+                    "rich",
+                    "oak",
+                    "USA",
+                    "Napa",
+                    "Napa Valley",
+                    "Los Carneros"
+                  ],
+                  "difficulty": 1
+                }
+              },
+              "classification": "Cool southern AVA influenced by San Pablo Bay, important for Chardonnay and Pinot Noir.",
+              "vineyardFactors": [
+                "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+                "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+                "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+              ],
+              "humanFactors": [
+                "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+                "Disease control and canopy management are often important human factors in maritime climates.",
+                "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+                "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+              ]
+            }
+          },
+          "classification": "Napa Valley AVA is the flagship California fine-wine region, especially for Cabernet Sauvignon.",
+          "lawNotes": [
+            "Warm days and cooler nights help ripeness with retained structure.",
+            "Sub-AVAs are important exam context for premium Napa Cabernet and cooler southern Chardonnay/Pinot zones."
+          ],
           "vineyardFactors": [
-            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
-            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
             "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
           ],
           "humanFactors": [
-            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
-            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
             "Site selection by elevation and harvest timing are major human choices in these vineyards.",
-            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+            "Regional style depends not only on climate and site, but also on deliberate human choices in the vineyard and cellar."
           ]
-        }
-      },
-      "classification": "Napa Valley AVA is the flagship California fine-wine region, especially for Cabernet Sauvignon.",
-      "lawNotes": [
-        "Warm days and cooler nights help ripeness with retained structure.",
-        "Sub-AVAs are important exam context for premium Napa Cabernet and cooler southern Chardonnay/Pinot zones."
-      ],
-      "vineyardFactors": [
-        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
-        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
-        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
-      ],
-      "humanFactors": [
-        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
-        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
-        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
-        "Regional style depends not only on climate and site, but also on deliberate human choices in the vineyard and cellar."
-      ]
-    },
-    "sonoma": {
-      "name": "Sonoma",
-      "summary": "A diverse Californian region often cooler and more balanced than Napa due to stronger Pacific influence.",
-      "climate": "Moderate Mediterranean [cooler than Napa]",
-      "styleSummary": "More balanced wines due to stronger cooling influence.",
-      "mitigating": [
-        "Pacific fog",
-        "cool air corridors"
-      ],
-      "keyGrapes": [
-        "Pinot Noir",
-        "Chardonnay"
-      ],
-      "examTips": [
-        "Compare Sonoma with Napa for cooling influence.",
-        "Pinot Noir and Chardonnay are especially important."
-      ],
-      "tags": [
-        "USA",
-        "Sonoma",
-        "cooler",
-        "balanced",
-        "coastal"
-      ],
-      "difficulty": 1,
-      "grapes": {
-        "Pinot Noir": {
-          "summary": "Cooler-site Californian Pinot Noir with red fruit, freshness and elegance.",
-          "style": "Red fruit, fresh acidity, elegant structure.",
-          "aliases": [],
-          "profile": {
-            "acidity": "Medium to High",
-            "alcohol": "Medium",
-            "body": "Light to Medium",
-            "tannin": "Low to Medium"
-          },
-          "aromas": [
-            "red fruit",
-            "cherry",
-            "raspberry",
-            "earthy"
-          ],
-          "viticulture": [
-            "Cooler sites"
-          ],
-          "winemaking": [
-            "Gentle extraction"
-          ],
-          "pairing": [
-            "duck",
-            "mushrooms",
-            "roast chicken"
-          ],
-          "examTips": [
-            "Usually fresher and more elegant than warm inland reds."
-          ],
-          "tags": [
-            "red",
-            "cool-climate",
-            "fresh",
-            "USA",
-            "Sonoma"
-          ],
-          "difficulty": 1
         },
-        "Chardonnay": {
-          "summary": "Versatile white grape in Sonoma ranging from fresh citrus styles to richer oak-aged wines.",
-          "style": "From fresh citrus to richer oaked styles.",
-          "aliases": [],
-          "profile": {
-            "acidity": "Medium to High",
-            "alcohol": "Medium",
-            "body": "Medium",
-            "tannin": "-"
-          },
-          "aromas": [
-            "citrus",
-            "apple",
-            "stone fruit",
-            "oak"
+        "sonoma": {
+          "name": "Sonoma",
+          "summary": "A diverse Californian region often cooler and more balanced than Napa due to stronger Pacific influence.",
+          "climate": "Moderate Mediterranean [cooler than Napa]",
+          "styleSummary": "More balanced wines due to stronger cooling influence.",
+          "mitigating": [
+            "Pacific fog",
+            "cool air corridors"
           ],
-          "viticulture": [
-            "Coastal cooling"
-          ],
-          "winemaking": [
-            "Variable styles"
-          ],
-          "pairing": [
-            "seafood",
-            "roast chicken",
-            "cream sauces"
-          ],
-          "examTips": [
-            "Cooling influence usually gives more freshness than Napa examples."
-          ],
-          "tags": [
-            "white",
-            "versatile",
-            "coastal",
-            "USA",
-            "Sonoma"
-          ],
-          "difficulty": 1
-        }
-      },
-      "subregions": {
-        "russian-river-valley": {
-          "name": "Russian River Valley",
-          "summary": "Cool Sonoma area strongly associated with premium Pinot Noir and Chardonnay.",
-          "climate": "Cool Maritime",
-          "styleSummary": "Fresh elegant Pinot Noir and Chardonnay with moderate alcohol and bright acidity.",
           "keyGrapes": [
             "Pinot Noir",
             "Chardonnay"
           ],
           "examTips": [
-            "Fog and maritime influence are key here.",
-            "This is one of Sonoma's best-known cool-climate names."
+            "Compare Sonoma with Napa for cooling influence.",
+            "Pinot Noir and Chardonnay are especially important."
           ],
           "tags": [
             "USA",
             "Sonoma",
-            "Russian River Valley",
-            "red",
-            "white"
+            "cooler",
+            "balanced",
+            "coastal"
           ],
+          "difficulty": 1,
           "grapes": {
             "Pinot Noir": {
               "summary": "Cooler-site Californian Pinot Noir with red fruit, freshness and elegance.",
@@ -831,8 +730,7 @@
                 "cool-climate",
                 "fresh",
                 "USA",
-                "Sonoma",
-                "Russian River Valley"
+                "Sonoma"
               ],
               "difficulty": 1
             },
@@ -871,350 +769,356 @@
                 "versatile",
                 "coastal",
                 "USA",
-                "Sonoma",
-                "Russian River Valley"
+                "Sonoma"
               ],
               "difficulty": 1
             }
           },
-          "classification": "Major cool-climate Sonoma AVA for Pinot Noir and Chardonnay.",
-          "vineyardFactors": [
-            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
-            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
-            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
-            "Subregional site differences are important to how grapes ripen and to the final balance of the wines."
-          ],
-          "humanFactors": [
-            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
-            "Disease control and canopy management are often important human factors in maritime climates.",
-            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
-          ]
-        },
-        "sonoma-coast": {
-          "name": "Sonoma Coast",
-          "summary": "Cool exposed coastal area producing taut high-acid Pinot Noir and Chardonnay.",
-          "climate": "Cool Maritime",
-          "styleSummary": "Tense cool-climate wines with freshness, citrus and red fruit rather than overt ripeness.",
-          "keyGrapes": [
-            "Pinot Noir",
-            "Chardonnay"
-          ],
-          "examTips": [
-            "Expect stronger ocean influence and cooler conditions.",
-            "Acidity and restraint are key clues."
-          ],
-          "tags": [
-            "USA",
-            "Sonoma",
-            "Sonoma Coast",
-            "red",
-            "white"
-          ],
-          "grapes": {
-            "Pinot Noir": {
-              "summary": "Cooler-site Californian Pinot Noir with red fruit, freshness and elegance.",
-              "style": "Red fruit, fresh acidity, elegant structure.",
-              "aliases": [],
-              "profile": {
-                "acidity": "Medium to High",
-                "alcohol": "Medium",
-                "body": "Light to Medium",
-                "tannin": "Low to Medium"
-              },
-              "aromas": [
-                "red fruit",
-                "cherry",
-                "raspberry",
-                "earthy"
-              ],
-              "viticulture": [
-                "Cooler sites"
-              ],
-              "winemaking": [
-                "Gentle extraction"
-              ],
-              "pairing": [
-                "duck",
-                "mushrooms",
-                "roast chicken"
+          "subregions": {
+            "russian-river-valley": {
+              "name": "Russian River Valley",
+              "summary": "Cool Sonoma area strongly associated with premium Pinot Noir and Chardonnay.",
+              "climate": "Cool Maritime",
+              "styleSummary": "Fresh elegant Pinot Noir and Chardonnay with moderate alcohol and bright acidity.",
+              "keyGrapes": [
+                "Pinot Noir",
+                "Chardonnay"
               ],
               "examTips": [
-                "Usually fresher and more elegant than warm inland reds."
+                "Fog and maritime influence are key here.",
+                "This is one of Sonoma's best-known cool-climate names."
               ],
               "tags": [
+                "USA",
+                "Sonoma",
+                "Russian River Valley",
                 "red",
-                "cool-climate",
-                "fresh",
-                "USA",
-                "Sonoma",
-                "Sonoma Coast"
+                "white"
               ],
-              "difficulty": 1
-            },
-            "Chardonnay": {
-              "summary": "Versatile white grape in Sonoma ranging from fresh citrus styles to richer oak-aged wines.",
-              "style": "From fresh citrus to richer oaked styles.",
-              "aliases": [],
-              "profile": {
-                "acidity": "Medium to High",
-                "alcohol": "Medium",
-                "body": "Medium",
-                "tannin": "-"
+              "grapes": {
+                "Pinot Noir": {
+                  "summary": "Cooler-site Californian Pinot Noir with red fruit, freshness and elegance.",
+                  "style": "Red fruit, fresh acidity, elegant structure.",
+                  "aliases": [],
+                  "profile": {
+                    "acidity": "Medium to High",
+                    "alcohol": "Medium",
+                    "body": "Light to Medium",
+                    "tannin": "Low to Medium"
+                  },
+                  "aromas": [
+                    "red fruit",
+                    "cherry",
+                    "raspberry",
+                    "earthy"
+                  ],
+                  "viticulture": [
+                    "Cooler sites"
+                  ],
+                  "winemaking": [
+                    "Gentle extraction"
+                  ],
+                  "pairing": [
+                    "duck",
+                    "mushrooms",
+                    "roast chicken"
+                  ],
+                  "examTips": [
+                    "Usually fresher and more elegant than warm inland reds."
+                  ],
+                  "tags": [
+                    "red",
+                    "cool-climate",
+                    "fresh",
+                    "USA",
+                    "Sonoma",
+                    "Russian River Valley"
+                  ],
+                  "difficulty": 1
+                },
+                "Chardonnay": {
+                  "summary": "Versatile white grape in Sonoma ranging from fresh citrus styles to richer oak-aged wines.",
+                  "style": "From fresh citrus to richer oaked styles.",
+                  "aliases": [],
+                  "profile": {
+                    "acidity": "Medium to High",
+                    "alcohol": "Medium",
+                    "body": "Medium",
+                    "tannin": "-"
+                  },
+                  "aromas": [
+                    "citrus",
+                    "apple",
+                    "stone fruit",
+                    "oak"
+                  ],
+                  "viticulture": [
+                    "Coastal cooling"
+                  ],
+                  "winemaking": [
+                    "Variable styles"
+                  ],
+                  "pairing": [
+                    "seafood",
+                    "roast chicken",
+                    "cream sauces"
+                  ],
+                  "examTips": [
+                    "Cooling influence usually gives more freshness than Napa examples."
+                  ],
+                  "tags": [
+                    "white",
+                    "versatile",
+                    "coastal",
+                    "USA",
+                    "Sonoma",
+                    "Russian River Valley"
+                  ],
+                  "difficulty": 1
+                }
               },
-              "aromas": [
-                "citrus",
-                "apple",
-                "stone fruit",
-                "oak"
+              "classification": "Major cool-climate Sonoma AVA for Pinot Noir and Chardonnay.",
+              "vineyardFactors": [
+                "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+                "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+                "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+                "Subregional site differences are important to how grapes ripen and to the final balance of the wines."
               ],
-              "viticulture": [
-                "Coastal cooling"
-              ],
-              "winemaking": [
-                "Variable styles"
-              ],
-              "pairing": [
-                "seafood",
-                "roast chicken",
-                "cream sauces"
+              "humanFactors": [
+                "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+                "Disease control and canopy management are often important human factors in maritime climates.",
+                "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+              ]
+            },
+            "sonoma-coast": {
+              "name": "Sonoma Coast",
+              "summary": "Cool exposed coastal area producing taut high-acid Pinot Noir and Chardonnay.",
+              "climate": "Cool Maritime",
+              "styleSummary": "Tense cool-climate wines with freshness, citrus and red fruit rather than overt ripeness.",
+              "keyGrapes": [
+                "Pinot Noir",
+                "Chardonnay"
               ],
               "examTips": [
-                "Cooling influence usually gives more freshness than Napa examples."
+                "Expect stronger ocean influence and cooler conditions.",
+                "Acidity and restraint are key clues."
               ],
               "tags": [
-                "white",
-                "versatile",
-                "coastal",
                 "USA",
                 "Sonoma",
-                "Sonoma Coast"
+                "Sonoma Coast",
+                "red",
+                "white"
               ],
-              "difficulty": 1
+              "grapes": {
+                "Pinot Noir": {
+                  "summary": "Cooler-site Californian Pinot Noir with red fruit, freshness and elegance.",
+                  "style": "Red fruit, fresh acidity, elegant structure.",
+                  "aliases": [],
+                  "profile": {
+                    "acidity": "Medium to High",
+                    "alcohol": "Medium",
+                    "body": "Light to Medium",
+                    "tannin": "Low to Medium"
+                  },
+                  "aromas": [
+                    "red fruit",
+                    "cherry",
+                    "raspberry",
+                    "earthy"
+                  ],
+                  "viticulture": [
+                    "Cooler sites"
+                  ],
+                  "winemaking": [
+                    "Gentle extraction"
+                  ],
+                  "pairing": [
+                    "duck",
+                    "mushrooms",
+                    "roast chicken"
+                  ],
+                  "examTips": [
+                    "Usually fresher and more elegant than warm inland reds."
+                  ],
+                  "tags": [
+                    "red",
+                    "cool-climate",
+                    "fresh",
+                    "USA",
+                    "Sonoma",
+                    "Sonoma Coast"
+                  ],
+                  "difficulty": 1
+                },
+                "Chardonnay": {
+                  "summary": "Versatile white grape in Sonoma ranging from fresh citrus styles to richer oak-aged wines.",
+                  "style": "From fresh citrus to richer oaked styles.",
+                  "aliases": [],
+                  "profile": {
+                    "acidity": "Medium to High",
+                    "alcohol": "Medium",
+                    "body": "Medium",
+                    "tannin": "-"
+                  },
+                  "aromas": [
+                    "citrus",
+                    "apple",
+                    "stone fruit",
+                    "oak"
+                  ],
+                  "viticulture": [
+                    "Coastal cooling"
+                  ],
+                  "winemaking": [
+                    "Variable styles"
+                  ],
+                  "pairing": [
+                    "seafood",
+                    "roast chicken",
+                    "cream sauces"
+                  ],
+                  "examTips": [
+                    "Cooling influence usually gives more freshness than Napa examples."
+                  ],
+                  "tags": [
+                    "white",
+                    "versatile",
+                    "coastal",
+                    "USA",
+                    "Sonoma",
+                    "Sonoma Coast"
+                  ],
+                  "difficulty": 1
+                }
+              },
+              "classification": "Cool exposed coastal AVA with strong Pacific influence.",
+              "vineyardFactors": [
+                "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+                "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+                "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+              ],
+              "humanFactors": [
+                "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+                "Disease control and canopy management are often important human factors in maritime climates.",
+                "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+              ]
+            },
+            "alexander-valley": {
+              "name": "Alexander Valley",
+              "summary": "Warmer inland Sonoma area especially important for Cabernet Sauvignon.",
+              "climate": "Warm Mediterranean",
+              "styleSummary": "Riper fuller red wines with black fruit and oak influence.",
+              "keyGrapes": [
+                "Pinot Noir"
+              ],
+              "examTips": [
+                "This is one of the warmer Sonoma names.",
+                "More ripeness than the coolest coastal Sonoma sub-regions."
+              ],
+              "tags": [
+                "USA",
+                "Sonoma",
+                "Alexander Valley",
+                "red"
+              ],
+              "grapes": {
+                "Pinot Noir": {
+                  "summary": "Cooler-site Californian Pinot Noir with red fruit, freshness and elegance.",
+                  "style": "Red fruit, fresh acidity, elegant structure.",
+                  "aliases": [],
+                  "profile": {
+                    "acidity": "Medium to High",
+                    "alcohol": "Medium",
+                    "body": "Light to Medium",
+                    "tannin": "Low to Medium"
+                  },
+                  "aromas": [
+                    "red fruit",
+                    "cherry",
+                    "raspberry",
+                    "earthy"
+                  ],
+                  "viticulture": [
+                    "Cooler sites"
+                  ],
+                  "winemaking": [
+                    "Gentle extraction"
+                  ],
+                  "pairing": [
+                    "duck",
+                    "mushrooms",
+                    "roast chicken"
+                  ],
+                  "examTips": [
+                    "Usually fresher and more elegant than warm inland reds."
+                  ],
+                  "tags": [
+                    "red",
+                    "cool-climate",
+                    "fresh",
+                    "USA",
+                    "Sonoma",
+                    "Alexander Valley"
+                  ],
+                  "difficulty": 1
+                }
+              },
+              "classification": "Warmer inland AVA known more for ripe structured reds.",
+              "vineyardFactors": [
+                "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+                "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+                "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+                "Subregional site differences are important to how grapes ripen and to the final balance of the wines."
+              ],
+              "humanFactors": [
+                "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+                "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+                "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+              ]
             }
           },
-          "classification": "Cool exposed coastal AVA with strong Pacific influence.",
+          "classification": "Sonoma County contains both cooler coastal Pinot/Chardonnay districts and warmer inland Cabernet zones.",
+          "lawNotes": [
+            "Russian River Valley and Sonoma Coast are key cool-climate names.",
+            "Alexander Valley gives a warmer inland contrast."
+          ],
           "vineyardFactors": [
             "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
-            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
             "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
           ],
           "humanFactors": [
             "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
-            "Disease control and canopy management are often important human factors in maritime climates.",
-            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
-          ]
-        },
-        "alexander-valley": {
-          "name": "Alexander Valley",
-          "summary": "Warmer inland Sonoma area especially important for Cabernet Sauvignon.",
-          "climate": "Warm Mediterranean",
-          "styleSummary": "Riper fuller red wines with black fruit and oak influence.",
-          "keyGrapes": [
-            "Pinot Noir"
-          ],
-          "examTips": [
-            "This is one of the warmer Sonoma names.",
-            "More ripeness than the coolest coastal Sonoma sub-regions."
-          ],
-          "tags": [
-            "USA",
-            "Sonoma",
-            "Alexander Valley",
-            "red"
-          ],
-          "grapes": {
-            "Pinot Noir": {
-              "summary": "Cooler-site Californian Pinot Noir with red fruit, freshness and elegance.",
-              "style": "Red fruit, fresh acidity, elegant structure.",
-              "aliases": [],
-              "profile": {
-                "acidity": "Medium to High",
-                "alcohol": "Medium",
-                "body": "Light to Medium",
-                "tannin": "Low to Medium"
-              },
-              "aromas": [
-                "red fruit",
-                "cherry",
-                "raspberry",
-                "earthy"
-              ],
-              "viticulture": [
-                "Cooler sites"
-              ],
-              "winemaking": [
-                "Gentle extraction"
-              ],
-              "pairing": [
-                "duck",
-                "mushrooms",
-                "roast chicken"
-              ],
-              "examTips": [
-                "Usually fresher and more elegant than warm inland reds."
-              ],
-              "tags": [
-                "red",
-                "cool-climate",
-                "fresh",
-                "USA",
-                "Sonoma",
-                "Alexander Valley"
-              ],
-              "difficulty": 1
-            }
-          },
-          "classification": "Warmer inland AVA known more for ripe structured reds.",
-          "vineyardFactors": [
-            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
-            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
-            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
-            "Subregional site differences are important to how grapes ripen and to the final balance of the wines."
-          ],
-          "humanFactors": [
-            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
             "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
-            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+            "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
           ]
-        }
-      },
-      "classification": "Sonoma County contains both cooler coastal Pinot/Chardonnay districts and warmer inland Cabernet zones.",
-      "lawNotes": [
-        "Russian River Valley and Sonoma Coast are key cool-climate names.",
-        "Alexander Valley gives a warmer inland contrast."
-      ],
-      "vineyardFactors": [
-        "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
-        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
-        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
-      ],
-      "humanFactors": [
-        "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
-        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
-        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
-      ]
-    },
-    "central-coast": {
-      "name": "Central Coast",
-      "summary": "A broad Californian region where ocean influence creates a wide range of styles from fresh to ripe.",
-      "climate": "Moderate Mediterranean",
-      "styleSummary": "Wide range of styles depending on proximity to ocean.",
-      "mitigating": [
-        "ocean influence",
-        "fog",
-        "altitude"
-      ],
-      "keyGrapes": [
-        "Chardonnay",
-        "Pinot Noir"
-      ],
-      "examTips": [
-        "The main theme is site variation.",
-        "Closer to the coast means fresher style."
-      ],
-      "tags": [
-        "USA",
-        "Central Coast",
-        "site-variation",
-        "coastal"
-      ],
-      "difficulty": 1,
-      "grapes": {
-        "Chardonnay": {
-          "summary": "A flexible variety here, ranging from fresh coastal styles to riper inland wines.",
-          "style": "Fresh to ripe styles depending on site.",
-          "aliases": [],
-          "profile": {
-            "acidity": "Medium to High",
-            "alcohol": "Medium",
-            "body": "Medium",
-            "tannin": "-"
-          },
-          "aromas": [
-            "citrus",
-            "apple",
-            "peach"
-          ],
-          "viticulture": [
-            "Coastal variation"
-          ],
-          "winemaking": [
-            "Fresh or oaked"
-          ],
-          "pairing": [
-            "seafood",
-            "pasta",
-            "chicken"
-          ],
-          "examTips": [
-            "Site is more important than one fixed regional style."
-          ],
-          "tags": [
-            "white",
-            "site-driven",
-            "USA",
-            "Central Coast"
-          ],
-          "difficulty": 1
         },
-        "Pinot Noir": {
-          "summary": "Cooler-site red grape producing red-fruited lighter to medium-bodied wines.",
-          "style": "Red fruit, light to medium body.",
-          "aliases": [],
-          "profile": {
-            "acidity": "Medium to High",
-            "alcohol": "Medium",
-            "body": "Light to Medium",
-            "tannin": "Low to Medium"
-          },
-          "aromas": [
-            "red cherry",
-            "raspberry",
-            "red fruit"
+        "central-coast": {
+          "name": "Central Coast",
+          "summary": "A broad Californian region where ocean influence creates a wide range of styles from fresh to ripe.",
+          "climate": "Moderate Mediterranean",
+          "styleSummary": "Wide range of styles depending on proximity to ocean.",
+          "mitigating": [
+            "ocean influence",
+            "fog",
+            "altitude"
           ],
-          "viticulture": [
-            "Cooler sites near coast"
-          ],
-          "winemaking": [
-            "Light extraction"
-          ],
-          "pairing": [
-            "duck",
-            "mushrooms"
-          ],
-          "examTips": [
-            "Think freshness and red fruit in cooler coastal examples."
-          ],
-          "tags": [
-            "red",
-            "cooler-site",
-            "USA",
-            "Central Coast"
-          ],
-          "difficulty": 1
-        }
-      },
-      "subregions": {
-        "monterey": {
-          "name": "Monterey",
-          "summary": "Cool elongated coastal valley known for fresh Chardonnay and Pinot Noir.",
-          "climate": "Cool Maritime",
-          "styleSummary": "Fresh bright cool-climate wines with citrus, apple and red berry character.",
           "keyGrapes": [
             "Chardonnay",
             "Pinot Noir"
           ],
           "examTips": [
-            "Cooling ocean influence is important.",
-            "Monterey is a key cool Central Coast source."
+            "The main theme is site variation.",
+            "Closer to the coast means fresher style."
           ],
           "tags": [
             "USA",
             "Central Coast",
-            "Monterey",
-            "white",
-            "red"
+            "site-variation",
+            "coastal"
           ],
+          "difficulty": 1,
           "grapes": {
             "Chardonnay": {
               "summary": "A flexible variety here, ranging from fresh coastal styles to riper inland wines.",
@@ -1249,8 +1153,7 @@
                 "white",
                 "site-driven",
                 "USA",
-                "Central Coast",
-                "Monterey"
+                "Central Coast"
               ],
               "difficulty": 1
             },
@@ -1286,228 +1189,327 @@
                 "red",
                 "cooler-site",
                 "USA",
-                "Central Coast",
-                "Monterey"
+                "Central Coast"
               ],
               "difficulty": 1
             }
           },
-          "classification": "Cool maritime-influenced Central Coast area for fresh Chardonnay and Pinot Noir.",
-          "vineyardFactors": [
-            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
-            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
-            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
-            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
-          ],
-          "humanFactors": [
-            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
-            "Disease control and canopy management are often important human factors in maritime climates.",
-            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
-            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
-          ]
-        },
-        "santa-barbara": {
-          "name": "Santa Barbara",
-          "summary": "Southern Central Coast area with transverse valleys funneling in cool Pacific air, favoring Pinot Noir and Chardonnay.",
-          "climate": "Cool Maritime",
-          "styleSummary": "Elegant aromatic Pinot Noir and Chardonnay with good acidity.",
-          "keyGrapes": [
-            "Chardonnay",
-            "Pinot Noir"
-          ],
-          "examTips": [
-            "East-west valleys are a classic climate clue.",
-            "Strongly associated with cool-climate varieties."
-          ],
-          "tags": [
-            "USA",
-            "Central Coast",
-            "Santa Barbara",
-            "white",
-            "red"
-          ],
-          "grapes": {
-            "Chardonnay": {
-              "summary": "A flexible variety here, ranging from fresh coastal styles to riper inland wines.",
-              "style": "Fresh to ripe styles depending on site.",
-              "aliases": [],
-              "profile": {
-                "acidity": "Medium to High",
-                "alcohol": "Medium",
-                "body": "Medium",
-                "tannin": "-"
-              },
-              "aromas": [
-                "citrus",
-                "apple",
-                "peach"
-              ],
-              "viticulture": [
-                "Coastal variation"
-              ],
-              "winemaking": [
-                "Fresh or oaked"
-              ],
-              "pairing": [
-                "seafood",
-                "pasta",
-                "chicken"
+          "subregions": {
+            "monterey": {
+              "name": "Monterey",
+              "summary": "Cool elongated coastal valley known for fresh Chardonnay and Pinot Noir.",
+              "climate": "Cool Maritime",
+              "styleSummary": "Fresh bright cool-climate wines with citrus, apple and red berry character.",
+              "keyGrapes": [
+                "Chardonnay",
+                "Pinot Noir"
               ],
               "examTips": [
-                "Site is more important than one fixed regional style."
+                "Cooling ocean influence is important.",
+                "Monterey is a key cool Central Coast source."
               ],
               "tags": [
-                "white",
-                "site-driven",
                 "USA",
                 "Central Coast",
-                "Santa Barbara"
+                "Monterey",
+                "white",
+                "red"
               ],
-              "difficulty": 1
+              "grapes": {
+                "Chardonnay": {
+                  "summary": "A flexible variety here, ranging from fresh coastal styles to riper inland wines.",
+                  "style": "Fresh to ripe styles depending on site.",
+                  "aliases": [],
+                  "profile": {
+                    "acidity": "Medium to High",
+                    "alcohol": "Medium",
+                    "body": "Medium",
+                    "tannin": "-"
+                  },
+                  "aromas": [
+                    "citrus",
+                    "apple",
+                    "peach"
+                  ],
+                  "viticulture": [
+                    "Coastal variation"
+                  ],
+                  "winemaking": [
+                    "Fresh or oaked"
+                  ],
+                  "pairing": [
+                    "seafood",
+                    "pasta",
+                    "chicken"
+                  ],
+                  "examTips": [
+                    "Site is more important than one fixed regional style."
+                  ],
+                  "tags": [
+                    "white",
+                    "site-driven",
+                    "USA",
+                    "Central Coast",
+                    "Monterey"
+                  ],
+                  "difficulty": 1
+                },
+                "Pinot Noir": {
+                  "summary": "Cooler-site red grape producing red-fruited lighter to medium-bodied wines.",
+                  "style": "Red fruit, light to medium body.",
+                  "aliases": [],
+                  "profile": {
+                    "acidity": "Medium to High",
+                    "alcohol": "Medium",
+                    "body": "Light to Medium",
+                    "tannin": "Low to Medium"
+                  },
+                  "aromas": [
+                    "red cherry",
+                    "raspberry",
+                    "red fruit"
+                  ],
+                  "viticulture": [
+                    "Cooler sites near coast"
+                  ],
+                  "winemaking": [
+                    "Light extraction"
+                  ],
+                  "pairing": [
+                    "duck",
+                    "mushrooms"
+                  ],
+                  "examTips": [
+                    "Think freshness and red fruit in cooler coastal examples."
+                  ],
+                  "tags": [
+                    "red",
+                    "cooler-site",
+                    "USA",
+                    "Central Coast",
+                    "Monterey"
+                  ],
+                  "difficulty": 1
+                }
+              },
+              "classification": "Cool maritime-influenced Central Coast area for fresh Chardonnay and Pinot Noir.",
+              "vineyardFactors": [
+                "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+                "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+                "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+                "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+              ],
+              "humanFactors": [
+                "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+                "Disease control and canopy management are often important human factors in maritime climates.",
+                "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+                "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+              ]
             },
-            "Pinot Noir": {
-              "summary": "Cooler-site red grape producing red-fruited lighter to medium-bodied wines.",
-              "style": "Red fruit, light to medium body.",
-              "aliases": [],
-              "profile": {
-                "acidity": "Medium to High",
-                "alcohol": "Medium",
-                "body": "Light to Medium",
-                "tannin": "Low to Medium"
-              },
-              "aromas": [
-                "red cherry",
-                "raspberry",
-                "red fruit"
-              ],
-              "viticulture": [
-                "Cooler sites near coast"
-              ],
-              "winemaking": [
-                "Light extraction"
-              ],
-              "pairing": [
-                "duck",
-                "mushrooms"
+            "santa-barbara": {
+              "name": "Santa Barbara",
+              "summary": "Southern Central Coast area with transverse valleys funneling in cool Pacific air, favoring Pinot Noir and Chardonnay.",
+              "climate": "Cool Maritime",
+              "styleSummary": "Elegant aromatic Pinot Noir and Chardonnay with good acidity.",
+              "keyGrapes": [
+                "Chardonnay",
+                "Pinot Noir"
               ],
               "examTips": [
-                "Think freshness and red fruit in cooler coastal examples."
+                "East-west valleys are a classic climate clue.",
+                "Strongly associated with cool-climate varieties."
               ],
               "tags": [
-                "red",
-                "cooler-site",
                 "USA",
                 "Central Coast",
-                "Santa Barbara"
-              ],
-              "difficulty": 1
-            }
-          },
-          "classification": "Cool-climate area shaped by transverse valleys and Pacific influence.",
-          "vineyardFactors": [
-            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
-            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
-            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
-            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
-          ],
-          "humanFactors": [
-            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
-            "Disease control and canopy management are often important human factors in maritime climates.",
-            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
-            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
-          ]
-        },
-        "paso-robles": {
-          "name": "Paso Robles",
-          "summary": "Warmer inland Central Coast area known for ripe fuller-bodied styles.",
-          "climate": "Warm Mediterranean",
-          "styleSummary": "Riper more generous fruit profile with fuller body and higher alcohol.",
-          "keyGrapes": [
-            "Chardonnay"
-          ],
-          "examTips": [
-            "Paso Robles is warmer than the coolest Central Coast zones.",
-            "Expect richer style."
-          ],
-          "tags": [
-            "USA",
-            "Central Coast",
-            "Paso Robles",
-            "white",
-            "red"
-          ],
-          "grapes": {
-            "Chardonnay": {
-              "summary": "A flexible variety here, ranging from fresh coastal styles to riper inland wines.",
-              "style": "Fresh to ripe styles depending on site.",
-              "aliases": [],
-              "profile": {
-                "acidity": "Medium to High",
-                "alcohol": "Medium",
-                "body": "Medium",
-                "tannin": "-"
-              },
-              "aromas": [
-                "citrus",
-                "apple",
-                "peach"
-              ],
-              "viticulture": [
-                "Coastal variation"
-              ],
-              "winemaking": [
-                "Fresh or oaked"
-              ],
-              "pairing": [
-                "seafood",
-                "pasta",
-                "chicken"
-              ],
-              "examTips": [
-                "Site is more important than one fixed regional style."
-              ],
-              "tags": [
+                "Santa Barbara",
                 "white",
-                "site-driven",
+                "red"
+              ],
+              "grapes": {
+                "Chardonnay": {
+                  "summary": "A flexible variety here, ranging from fresh coastal styles to riper inland wines.",
+                  "style": "Fresh to ripe styles depending on site.",
+                  "aliases": [],
+                  "profile": {
+                    "acidity": "Medium to High",
+                    "alcohol": "Medium",
+                    "body": "Medium",
+                    "tannin": "-"
+                  },
+                  "aromas": [
+                    "citrus",
+                    "apple",
+                    "peach"
+                  ],
+                  "viticulture": [
+                    "Coastal variation"
+                  ],
+                  "winemaking": [
+                    "Fresh or oaked"
+                  ],
+                  "pairing": [
+                    "seafood",
+                    "pasta",
+                    "chicken"
+                  ],
+                  "examTips": [
+                    "Site is more important than one fixed regional style."
+                  ],
+                  "tags": [
+                    "white",
+                    "site-driven",
+                    "USA",
+                    "Central Coast",
+                    "Santa Barbara"
+                  ],
+                  "difficulty": 1
+                },
+                "Pinot Noir": {
+                  "summary": "Cooler-site red grape producing red-fruited lighter to medium-bodied wines.",
+                  "style": "Red fruit, light to medium body.",
+                  "aliases": [],
+                  "profile": {
+                    "acidity": "Medium to High",
+                    "alcohol": "Medium",
+                    "body": "Light to Medium",
+                    "tannin": "Low to Medium"
+                  },
+                  "aromas": [
+                    "red cherry",
+                    "raspberry",
+                    "red fruit"
+                  ],
+                  "viticulture": [
+                    "Cooler sites near coast"
+                  ],
+                  "winemaking": [
+                    "Light extraction"
+                  ],
+                  "pairing": [
+                    "duck",
+                    "mushrooms"
+                  ],
+                  "examTips": [
+                    "Think freshness and red fruit in cooler coastal examples."
+                  ],
+                  "tags": [
+                    "red",
+                    "cooler-site",
+                    "USA",
+                    "Central Coast",
+                    "Santa Barbara"
+                  ],
+                  "difficulty": 1
+                }
+              },
+              "classification": "Cool-climate area shaped by transverse valleys and Pacific influence.",
+              "vineyardFactors": [
+                "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+                "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+                "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+                "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+              ],
+              "humanFactors": [
+                "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+                "Disease control and canopy management are often important human factors in maritime climates.",
+                "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+                "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+              ]
+            },
+            "paso-robles": {
+              "name": "Paso Robles",
+              "summary": "Warmer inland Central Coast area known for ripe fuller-bodied styles.",
+              "climate": "Warm Mediterranean",
+              "styleSummary": "Riper more generous fruit profile with fuller body and higher alcohol.",
+              "keyGrapes": [
+                "Chardonnay"
+              ],
+              "examTips": [
+                "Paso Robles is warmer than the coolest Central Coast zones.",
+                "Expect richer style."
+              ],
+              "tags": [
                 "USA",
                 "Central Coast",
-                "Paso Robles"
+                "Paso Robles",
+                "white",
+                "red"
               ],
-              "difficulty": 1
+              "grapes": {
+                "Chardonnay": {
+                  "summary": "A flexible variety here, ranging from fresh coastal styles to riper inland wines.",
+                  "style": "Fresh to ripe styles depending on site.",
+                  "aliases": [],
+                  "profile": {
+                    "acidity": "Medium to High",
+                    "alcohol": "Medium",
+                    "body": "Medium",
+                    "tannin": "-"
+                  },
+                  "aromas": [
+                    "citrus",
+                    "apple",
+                    "peach"
+                  ],
+                  "viticulture": [
+                    "Coastal variation"
+                  ],
+                  "winemaking": [
+                    "Fresh or oaked"
+                  ],
+                  "pairing": [
+                    "seafood",
+                    "pasta",
+                    "chicken"
+                  ],
+                  "examTips": [
+                    "Site is more important than one fixed regional style."
+                  ],
+                  "tags": [
+                    "white",
+                    "site-driven",
+                    "USA",
+                    "Central Coast",
+                    "Paso Robles"
+                  ],
+                  "difficulty": 1
+                }
+              },
+              "classification": "Warmer inland Central Coast appellation known for riper fuller styles.",
+              "vineyardFactors": [
+                "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+                "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+                "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+                "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+              ],
+              "humanFactors": [
+                "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+                "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+                "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+                "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+              ]
             }
           },
-          "classification": "Warmer inland Central Coast appellation known for riper fuller styles.",
+          "classification": "The Central Coast spans both cool maritime zones and warmer inland regions, so sub-regional climate differences are central.",
+          "lawNotes": [
+            "East-west valleys in Santa Barbara pull in cool Pacific air.",
+            "Paso Robles is much warmer than Monterey and Santa Barbara."
+          ],
           "vineyardFactors": [
-            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
             "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
             "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
             "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
           ],
           "humanFactors": [
-            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
             "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
             "Site selection by elevation and harvest timing are major human choices in these vineyards.",
-            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+            "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
           ]
         }
-      },
-      "classification": "The Central Coast spans both cool maritime zones and warmer inland regions, so sub-regional climate differences are central.",
-      "lawNotes": [
-        "East-west valleys in Santa Barbara pull in cool Pacific air.",
-        "Paso Robles is much warmer than Monterey and Santa Barbara."
-      ],
-      "vineyardFactors": [
-        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
-        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
-        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
-        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
-      ],
-      "humanFactors": [
-        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
-        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
-        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
-        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
-      ]
+      }
     },
     "oregon": {
       "name": "Oregon",

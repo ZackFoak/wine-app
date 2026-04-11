@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wine Atlas PRO</title>
+  <title>WINE ATLAS</title>
   <style>
     :root {
       --bg: #f6f1eb;
@@ -1000,6 +1000,119 @@
       color: #0f5f95;
     }
 
+    .factor-line-core {
+      animation: factor-line-drift 2.4s linear infinite;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .factor-line-glow {
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .factor-line-core.factor-line-wind {
+      animation-duration: 1.25s;
+    }
+
+    .factor-line-core.factor-line-river,
+    .factor-line-core.factor-line-lake {
+      animation-duration: 1.8s;
+    }
+
+    .factor-line-core.factor-line-mountain {
+      animation-duration: 2.8s;
+    }
+
+    .factor-arrow-wrap,
+    .factor-origin-wrap {
+      background: transparent;
+      border: none;
+    }
+
+    .factor-flow-arrow,
+    .factor-origin-badge {
+      width: 24px;
+      height: 24px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      color: white;
+      font-size: 13px;
+      font-weight: 900;
+      line-height: 1;
+      box-shadow: 0 10px 18px rgba(20, 67, 103, 0.2);
+      border: 1px solid rgba(255,255,255,0.78);
+    }
+
+    .factor-flow-arrow {
+      transform: rotate(var(--factor-arrow-rotation, 0deg));
+      animation: factor-arrow-pulse 1.8s ease-in-out infinite;
+    }
+
+    .factor-origin-badge {
+      font-size: 12px;
+      animation: factor-origin-pulse 2.2s ease-in-out infinite;
+    }
+
+    .factor-flow-arrow-coast,
+    .factor-origin-coast {
+      background: linear-gradient(135deg, #2f86c5, #51a4df);
+    }
+
+    .factor-flow-arrow-river,
+    .factor-origin-river {
+      background: linear-gradient(135deg, #1f97b3, #33b0cb);
+    }
+
+    .factor-flow-arrow-lake,
+    .factor-origin-lake {
+      background: linear-gradient(135deg, #4aa4cf, #69bbe0);
+    }
+
+    .factor-flow-arrow-wind,
+    .factor-origin-wind {
+      background: linear-gradient(135deg, #479b7a, #62b894);
+    }
+
+    .factor-flow-arrow-mountain,
+    .factor-origin-mountain {
+      background: linear-gradient(135deg, #7a6bc4, #9a8bdd);
+    }
+
+    .factor-flow-arrow-generic,
+    .factor-origin-generic {
+      background: linear-gradient(135deg, #2f86c5, #51a4df);
+    }
+
+    @keyframes factor-line-drift {
+      from {
+        stroke-dashoffset: 0;
+      }
+      to {
+        stroke-dashoffset: -28;
+      }
+    }
+
+    @keyframes factor-arrow-pulse {
+      0%, 100% {
+        transform: rotate(var(--factor-arrow-rotation, 0deg)) scale(1);
+      }
+      50% {
+        transform: rotate(var(--factor-arrow-rotation, 0deg)) scale(1.08);
+      }
+    }
+
+    @keyframes factor-origin-pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.06);
+      }
+    }
+
     .leaflet-container {
       background: #dcecf2;
     }
@@ -1313,6 +1426,42 @@
     .pairing-chip.food-chip {
       background: linear-gradient(135deg, rgba(248, 252, 239, 0.98), rgba(255, 244, 226, 0.96));
       border-color: #e8dcc1;
+    }
+
+    .example-wine-card {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .example-wine-meta {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .example-wine-meta-item {
+      padding: 12px;
+      border-radius: 14px;
+      background: #fffaf5;
+      border: 1px solid #efe2d5;
+    }
+
+    .example-wine-label {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .example-wine-value {
+      font-size: 15px;
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+
+    .example-wine-link {
+      align-self: flex-start;
+      text-decoration: none;
     }
 
     .factor-chip-group {
@@ -1802,7 +1951,7 @@
 
 <div class="toolbar search-collapsed" id="topToolbar">
   <div class="toolbar-row toolbar-main-row" id="toolbarActions">
-    <button class="btn app-home-btn" id="homeBtn" type="button">Wine Atlas PRO</button>
+    <button class="btn app-home-btn" id="homeBtn" type="button">WINE ATLAS</button>
     <div class="toolbar-scroll-strip" id="toolbarScrollStrip">
       <button class="btn toolbar-compact-btn" id="toolbarToggle" type="button" aria-expanded="false">Search ▾</button>
       <button class="btn filter-btn active" data-filter="all">All</button>
@@ -1855,7 +2004,7 @@
 </div>
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<script type="module" src="js/app.js?v=4"></script>
+<script type="module" src="js/app.js?v=7"></script>
 
 </body>
 </html>

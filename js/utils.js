@@ -21,11 +21,12 @@ export function saveProgress() {
 }
 
 export function parseFavorite(item) {
-  const parts = item.split(" > ");
+  const parts = item.split(" > ").map(part => part.trim()).filter(Boolean);
   return {
-    country: parts[0],
-    region: parts[1],
-    grape: parts[2]
+    country: parts[0] || "",
+    region: parts[1] || "",
+    subregions: parts.slice(2, -1),
+    grape: parts[parts.length - 1] || ""
   };
 }
 

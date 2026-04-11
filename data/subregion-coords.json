@@ -68,16 +68,6 @@
         4.47
       ]
     },
-    "central-vineyards": {
-      "sancerre": [
-        47.332,
-        2.839
-      ],
-      "pouilly-fume": [
-        47.287,
-        2.957
-      ]
-    },
     "northern-rhone": {
       "cote-rotie": [
         45.46,
@@ -124,6 +114,66 @@
       "beaumes-de-venise": [
         44.122,
         5.032
+      ]
+    },
+    "burgundy": {
+      "chablis": [
+        47.815,
+        3.796
+      ],
+      "cote-dor": [
+        47.133,
+        4.954
+      ],
+      "cote-chalonnaise": [
+        46.78,
+        4.66
+      ],
+      "maconnais": [
+        46.306,
+        4.83
+      ],
+      "beaujolais": [
+        46.14,
+        4.68
+      ]
+    },
+    "loire-valley": {
+      "muscadet": [
+        47.166,
+        -1.286
+      ],
+      "anjou-saumur": [
+        47.26,
+        -0.078
+      ],
+      "touraine": [
+        47.394,
+        0.684
+      ],
+      "touraine/vouvray": [
+        47.41,
+        0.81
+      ],
+      "touraine/chinon": [
+        47.167,
+        0.242
+      ],
+      "touraine/bourgueil": [
+        47.284,
+        0.168
+      ],
+      "central-vineyards": [
+        47.283,
+        2.751
+      ],
+      "central-vineyards/sancerre": [
+        47.332,
+        2.839
+      ],
+      "central-vineyards/pouilly-fume": [
+        47.287,
+        2.957
       ]
     }
   },
@@ -176,6 +226,30 @@
       "gavi": [
         44.69,
         8.81
+      ]
+    },
+    "trentino-alto-adige": {
+      "alto-adige": [
+        46.5,
+        11.35
+      ],
+      "trentino": [
+        46.07,
+        11.12
+      ]
+    },
+    "friuli-venezia-giulia": {
+      "friuli-grave": [
+        45.95,
+        12.85
+      ],
+      "collio": [
+        45.98,
+        13.49
+      ],
+      "colli-orientali-del-friuli": [
+        46.08,
+        13.43
       ]
     }
   },
@@ -309,6 +383,14 @@
   },
   "austria": {
     "niederosterreich": {
+      "wachau": [
+        48.366,
+        15.431
+      ],
+      "weinviertel": [
+        48.6,
+        16.53
+      ],
       "kamptal": [
         48.52,
         15.69
@@ -340,52 +422,6 @@
     }
   },
   "usa": {
-    "napa-valley": {
-      "oakville": [
-        38.43,
-        -122.4
-      ],
-      "rutherford": [
-        38.46,
-        -122.42
-      ],
-      "stags-leap-district": [
-        38.4,
-        -122.3
-      ],
-      "los-carneros": [
-        38.25,
-        -122.35
-      ]
-    },
-    "sonoma": {
-      "russian-river-valley": [
-        38.48,
-        -122.87
-      ],
-      "sonoma-coast": [
-        38.43,
-        -123.1
-      ],
-      "alexander-valley": [
-        38.66,
-        -122.78
-      ]
-    },
-    "central-coast": {
-      "monterey": [
-        36.6,
-        -121.7
-      ],
-      "santa-barbara": [
-        34.61,
-        -120.1
-      ],
-      "paso-robles": [
-        35.63,
-        -120.69
-      ]
-    },
     "oregon": {
       "willamette-valley": [
         45.29,
@@ -404,6 +440,60 @@
       "walla-walla-valley": [
         46.07,
         -118.34
+      ]
+    },
+    "california": {
+      "napa-valley": [
+        38.5025,
+        -122.2654
+      ],
+      "napa-valley/oakville": [
+        38.43,
+        -122.4
+      ],
+      "napa-valley/rutherford": [
+        38.46,
+        -122.42
+      ],
+      "napa-valley/stags-leap-district": [
+        38.4,
+        -122.3
+      ],
+      "napa-valley/los-carneros": [
+        38.25,
+        -122.35
+      ],
+      "sonoma": [
+        38.4405,
+        -122.7144
+      ],
+      "sonoma/russian-river-valley": [
+        38.48,
+        -122.87
+      ],
+      "sonoma/sonoma-coast": [
+        38.43,
+        -123.1
+      ],
+      "sonoma/alexander-valley": [
+        38.66,
+        -122.78
+      ],
+      "central-coast": [
+        35.2828,
+        -120.6596
+      ],
+      "central-coast/monterey": [
+        36.6,
+        -121.7
+      ],
+      "central-coast/santa-barbara": [
+        34.61,
+        -120.1
+      ],
+      "central-coast/paso-robles": [
+        35.63,
+        -120.69
       ]
     }
   },
@@ -468,6 +558,10 @@
       "aconcagua-costa": [
         -32.93,
         -71.42
+      ],
+      "casablanca": [
+        -33.3167,
+        -71.4167
       ]
     },
     "central-valley": {
@@ -486,6 +580,10 @@
       "maule-valley": [
         -35.43,
         -71.66
+      ],
+      "rapel-valley/colchagua": [
+        -34.6333,
+        -71.3667
       ]
     }
   },
@@ -498,6 +596,14 @@
       "east-mendoza": [
         -33.08,
         -67.95
+      ],
+      "lujan-de-cuyo": [
+        -33.0376,
+        -68.8761
+      ],
+      "uco-valley": [
+        -33.6037,
+        -69.17
       ]
     },
     "salta": {

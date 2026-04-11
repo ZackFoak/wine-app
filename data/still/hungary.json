@@ -79,7 +79,12 @@
             "sweet-wine",
             "Hungary"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Royal Tokaji Furmint 2021",
+            "producer": "Royal Tokaji",
+            "technicalSheetUrl": "https://royal-tokaji.com/hu/portfolio/royal-tokaji-furmint-2021/"
+          }
         },
         "Harslevelu": {
           "summary": "Aromatic grape often blended with Furmint to add floral character.",
@@ -114,7 +119,12 @@
             "aromatic",
             "Hungary"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Royal Tokaji Hárslevelű Dry 2019",
+            "producer": "Royal Tokaji",
+            "technicalSheetUrl": "https://royal-tokaji.com/hu/portfolio/royal-tokaji-harslevelu-dry-2019/"
+          }
         }
       },
       "classification": "Tokaj is Hungary’s flagship region, especially for botrytised sweet wines traditionally described by Aszu styles and puttonyos terms in older labeling language.",
@@ -191,7 +201,12 @@
             "high-acid",
             "Hungary"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Thummerer Kékfrankos Superior Válogatás 2021",
+            "producer": "Thummerer",
+            "technicalSheetUrl": "https://thummerer.hu/en/wines/kekfrankos-superior-valogatas-2021/"
+          }
         }
       },
       "classification": "Eger is especially known for Egri Bikaver (Bull’s Blood), a traditional blended red wine style.",
@@ -262,7 +277,12 @@
           "tags": [
             "red"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "A.Gere Cabernet Sauvignon 2022",
+            "producer": "Gere Attila Winery",
+            "technicalSheetUrl": "https://shop.gere.hu/termek/a-gere-cabernet-sauvignon/"
+          }
         },
         "Merlot": {
           "summary": "Soft fruity red with plum character.",
@@ -292,7 +312,12 @@
           "tags": [
             "red"
           ],
-          "difficulty": 1
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "A.Gere Merlot 2022",
+            "producer": "Gere Attila Winery",
+            "technicalSheetUrl": "https://shop.gere.hu/en/product/a-gere-merlot/"
+          }
         }
       },
       "classification": "Villany is the warmest major Hungarian red region and is associated with fuller-bodied Bordeaux-variety styles.",
