@@ -126,6 +126,25 @@
           "description": "The Gironde, Garonne, and Dordogne moderate local temperatures and shape humidity patterns."
         }
       ],
+      "south-west-france": [
+        {
+          "name": "Atlantic transition",
+          "route": "coast-west",
+          "description": "Atlantic influence is strongest in the west, while inland sectors become warmer and more varied."
+        }
+      ],
+      "burgundy": [
+        {
+          "name": "Slope exposure",
+          "route": "mountain-west",
+          "description": "The best Burgundian vineyards rely heavily on hillside exposure and drainage rather than a broad maritime influence."
+        },
+        {
+          "name": "River corridors",
+          "route": "river-vertical",
+          "description": "The Yonne and Saone valleys help shape mesoclimate and site variation across Burgundy."
+        }
+      ],
       "northern-rhone": [
         {
           "name": "Rhone River",
@@ -324,11 +343,25 @@
           "description": "The Adriatic helps moderate Marche, especially for white-wine areas near the coast."
         }
       ],
+      "umbria": [
+        {
+          "name": "Apennine shelter",
+          "route": "mountain-east",
+          "description": "Inland hills and Apennine influence help Umbria keep cooler nights and preserve freshness."
+        }
+      ],
       "lazio": [
         {
           "name": "Tyrrhenian influence",
           "route": "coast-west",
           "description": "Coastal influence and elevated volcanic sites help moderate Lazio."
+        }
+      ],
+      "abruzzo": [
+        {
+          "name": "Adriatic influence",
+          "route": "coast-east",
+          "description": "The Adriatic and hillside elevation shifts help moderate Abruzzo and preserve freshness."
         }
       ],
       "campania": [
@@ -343,6 +376,13 @@
           "name": "Adriatic influence",
           "route": "coast-east",
           "description": "Sea influence helps moderate heat in parts of Puglia despite the region's warm, sunny climate."
+        }
+      ],
+      "basilicata": [
+        {
+          "name": "Volcanic elevation",
+          "route": "mountain-east",
+          "description": "Elevation around Mount Vulture is the key moderating factor in Basilicata, helping Aglianico retain acidity."
         }
       ],
       "sicily": [
@@ -406,6 +446,20 @@
           "description": "The Duero corridor and high elevation produce a marked diurnal range in Ribera del Duero."
         }
       ],
+      "rueda": [
+        {
+          "name": "High plateau altitude",
+          "route": "mountain-west",
+          "description": "Elevation on the Castilian plateau helps Rueda retain freshness despite warm sunny days."
+        }
+      ],
+      "priorat": [
+        {
+          "name": "Elevated slate slopes",
+          "route": "mountain-east",
+          "description": "Altitude and steep poor slate slopes help moderate Priorat's warmth and concentrate the wines."
+        }
+      ],
       "jerez": [
         {
           "name": "Atlantic influence",
@@ -425,6 +479,20 @@
           "name": "North-south transition",
           "route": "wind-north-south",
           "description": "Navarra bridges cooler Atlantic influence in the north and warmer Mediterranean conditions in the south."
+        }
+      ],
+      "catalunya": [
+        {
+          "name": "Mediterranean influence",
+          "route": "coast-east",
+          "description": "Mediterranean conditions dominate Catalunya, though inland altitude helps diversify styles."
+        }
+      ],
+      "la-mancha": [
+        {
+          "name": "High Meseta altitude",
+          "route": "mountain-west",
+          "description": "La Mancha's elevated inland plateau helps preserve some freshness in this otherwise hot dry region."
         }
       ],
       "jumilla": [
@@ -653,6 +721,129 @@
   },
   "subregions": {
     "france": {
+      "bordeaux": {
+        "medoc": [
+          {
+            "name": "Gironde estuary",
+            "route": "river-vertical",
+            "description": "The Gironde estuary moderates Medoc and helps support Cabernet Sauvignon ripening in this maritime zone."
+          }
+        ],
+        "haut-medoc": [
+          {
+            "name": "Gironde estuary",
+            "route": "river-vertical",
+            "description": "The Gironde and nearby waterways help moderate Haut-Medoc and reduce temperature extremes."
+          }
+        ],
+        "margaux": [
+          {
+            "name": "Estuary moderation",
+            "route": "river-vertical",
+            "description": "Margaux benefits from estuary influence that helps preserve balance in this maritime appellation."
+          }
+        ],
+        "pauillac": [
+          {
+            "name": "Estuary moderation",
+            "route": "river-vertical",
+            "description": "The nearby Gironde helps Pauillac ripen Cabernet Sauvignon while keeping a measured maritime balance."
+          }
+        ],
+        "saint-julien": [
+          {
+            "name": "Estuary moderation",
+            "route": "river-vertical",
+            "description": "Saint-Julien's proximity to the Gironde helps moderate temperatures and support even ripening."
+          }
+        ],
+        "saint-estephe": [
+          {
+            "name": "Estuary moderation",
+            "route": "river-vertical",
+            "description": "The Gironde helps soften Saint-Estephe's cool maritime conditions, though the commune remains one of the firmer Medoc styles."
+          }
+        ],
+        "graves": [
+          {
+            "name": "Garonne corridor",
+            "route": "river-vertical",
+            "description": "The Garonne and nearby river corridor help moderate Graves and shape the local mesoclimate."
+          }
+        ],
+        "pessac-leognan": [
+          {
+            "name": "Garonne corridor",
+            "route": "river-vertical",
+            "description": "The Garonne corridor helps moderate Pessac-Leognan while supporting both red and white production."
+          }
+        ],
+        "pomerol": [
+          {
+            "name": "Right Bank river influence",
+            "route": "river-vertical",
+            "description": "Nearby Dordogne-side moderation helps soften temperature extremes in Pomerol's inland Right Bank setting."
+          }
+        ],
+        "saint-emilion": [
+          {
+            "name": "Right Bank river influence",
+            "route": "river-vertical",
+            "description": "The Dordogne corridor contributes some moderation around Saint-Emilion despite its more inland setting."
+          }
+        ],
+        "sauternes": [
+          {
+            "name": "Ciron and Garonne",
+            "route": "river-horizontal",
+            "description": "The meeting of the Ciron and Garonne creates the humid autumn conditions that favor botrytis in Sauternes."
+          }
+        ],
+        "barsac": [
+          {
+            "name": "Ciron and Garonne",
+            "route": "river-horizontal",
+            "description": "Mist from the Ciron and Garonne helps Barsac develop the botrytis conditions central to its sweet wines."
+          }
+        ]
+      },
+      "burgundy": {
+        "chablis": [
+          {
+            "name": "Serein valley",
+            "route": "river-horizontal",
+            "description": "The Serein valley gives some local moderation to Chablis, but the area remains distinctly cool and marginal."
+          }
+        ],
+        "cote-dor": [
+          {
+            "name": "East-facing escarpment",
+            "route": "mountain-west",
+            "description": "The east-facing limestone escarpment is the crucial moderating and quality factor in the Cote d'Or."
+          }
+        ],
+        "cote-chalonnaise": [
+          {
+            "name": "Limestone hills",
+            "route": "mountain-west",
+            "description": "Hillside exposures and limestone slopes help the Cote Chalonnaise ripen fruit in a cool continental setting."
+          }
+        ],
+        "maconnais": [
+          {
+            "name": "Southern hillside warmth",
+            "route": "mountain-west",
+            "description": "The Maconnais benefits from warmer southern conditions while hillside sites still help preserve balance."
+          }
+        ],
+        "beaujolais": [
+          {
+            "name": "Granite hills",
+            "route": "mountain-west",
+            "description": "The rolling granitic hills are a key moderating and quality factor in Beaujolais."
+          }
+        ]
+      },
       "loire-valley": {
         "muscadet": [
           {
@@ -715,6 +906,449 @@
             "name": "Loire River",
             "route": "river-horizontal",
             "description": "The Loire and local mesoclimates help shape ripe yet fresh Sauvignon Blanc in Pouilly-Fume."
+          }
+        ]
+      },
+      "northern-rhone": {
+        "cote-rotie": [
+          {
+            "name": "Steep Rhone slopes",
+            "route": "river-vertical",
+            "description": "The steep Rhone-side slopes are essential for ripening Syrah in Cote-Rotie."
+          }
+        ],
+        "condrieu": [
+          {
+            "name": "Steep river slopes",
+            "route": "river-vertical",
+            "description": "Condrieu's steep slopes above the Rhone help warm and ripen Viognier while retaining some freshness."
+          }
+        ],
+        "saint-joseph": [
+          {
+            "name": "Rhone corridor",
+            "route": "river-vertical",
+            "description": "The Rhone corridor moderates Saint-Joseph and shapes its long narrow north-south vineyard strip."
+          }
+        ],
+        "crozes-hermitage": [
+          {
+            "name": "Rhone corridor",
+            "route": "river-vertical",
+            "description": "The Rhone corridor helps moderate Crozes-Hermitage, though the flatter terrain gives a broader range of exposures."
+          }
+        ],
+        "hermitage": [
+          {
+            "name": "South-facing hill",
+            "route": "river-vertical",
+            "description": "Hermitage's famous south-facing hill above the Rhone is the key moderating and quality factor."
+          }
+        ],
+        "cornas": [
+          {
+            "name": "Sheltered granite slopes",
+            "route": "mountain-west",
+            "description": "Cornas is protected by its steep sheltered slopes, making it one of the warmer Northern Rhone Syrah sites."
+          }
+        ]
+      },
+      "southern-rhone": {
+        "chateauneuf-du-pape": [
+          {
+            "name": "Mistral",
+            "route": "wind-north-south",
+            "description": "The Mistral helps dry Chateauneuf-du-Pape and slightly tempers the heat in this very warm appellation."
+          }
+        ],
+        "gigondas": [
+          {
+            "name": "Dentelles foothills",
+            "route": "mountain-west",
+            "description": "Foothill elevation below the Dentelles helps Gigondas retain more freshness than the warm plain."
+          }
+        ],
+        "vacqueyras": [
+          {
+            "name": "Dentelles foothills",
+            "route": "mountain-west",
+            "description": "Slightly elevated foothill sites help Vacqueyras balance Southern Rhone ripeness with freshness."
+          }
+        ],
+        "tavel": [
+          {
+            "name": "Mistral",
+            "route": "wind-north-south",
+            "description": "The Mistral is an important drying and moderating factor in warm Tavel."
+          }
+        ],
+        "beaumes-de-venise": [
+          {
+            "name": "Dentelles foothills",
+            "route": "mountain-west",
+            "description": "Foothill sites near the Dentelles help Beaumes-de-Venise retain some freshness in a warm Mediterranean setting."
+          }
+        ]
+      },
+      "champagne": {
+        "montagne-de-reims": [
+          {
+            "name": "Slope exposure",
+            "route": "mountain-west",
+            "description": "Hillside exposure is central in the Montagne de Reims, helping grapes ripen in this cool region."
+          }
+        ],
+        "vallee-de-la-marne": [
+          {
+            "name": "Marne River",
+            "route": "river-horizontal",
+            "description": "The Marne valley provides local moderation and shapes the mesoclimate of this important Champagne sub-region."
+          }
+        ],
+        "cote-des-blancs": [
+          {
+            "name": "Chalky slope exposure",
+            "route": "mountain-west",
+            "description": "The best south- and southeast-facing chalk slopes help the Cote des Blancs ripen Chardonnay while retaining high acidity."
+          }
+        ],
+        "cote-des-bar": [
+          {
+            "name": "Southern slope influence",
+            "route": "mountain-east",
+            "description": "The warmer more southerly position and hillside exposures help make the Cote des Bar riper than northern Champagne sectors."
+          }
+        ]
+      }
+    },
+    "italy": {
+      "trentino-alto-adige": {
+        "alto-adige": [
+          {
+            "name": "Alpine altitude",
+            "route": "mountain-north",
+            "description": "Altitude and Alpine valley exposures keep Alto Adige cool and help preserve aromatic purity."
+          }
+        ],
+        "trentino": [
+          {
+            "name": "Alpine valley influence",
+            "route": "mountain-north",
+            "description": "Mountain valleys and elevation help Trentino retain freshness despite strong sunshine."
+          }
+        ]
+      },
+      "friuli-venezia-giulia": {
+        "friuli-grave": [
+          {
+            "name": "Adriatic influence",
+            "route": "coast-east",
+            "description": "Adriatic breezes and the broad gravel plain help Friuli Grave produce fresh, clean white wines."
+          }
+        ],
+        "collio": [
+          {
+            "name": "Alpine-Adriatic balance",
+            "route": "mountain-north",
+            "description": "Sheltered hills between the Alps and Adriatic help Collio ripen grapes fully while retaining freshness."
+          }
+        ],
+        "colli-orientali-del-friuli": [
+          {
+            "name": "Sheltered eastern hills",
+            "route": "mountain-north",
+            "description": "Hillside sites and Alpine shelter help Colli Orientali del Friuli give concentrated yet fresh wines."
+          }
+        ]
+      },
+      "veneto": {
+        "valpolicella": [
+          {
+            "name": "Lake Garda influence",
+            "route": "lake-west",
+            "description": "Lake Garda and nearby foothills help moderate Valpolicella and preserve freshness in Corvina."
+          }
+        ],
+        "soave": [
+          {
+            "name": "Eastern hillside sites",
+            "route": "mountain-north",
+            "description": "Hillside vineyards and cooler exposures help Soave retain acidity and definition."
+          }
+        ],
+        "conegliano-valdobbiadene": [
+          {
+            "name": "Cool hillside exposures",
+            "route": "mountain-north",
+            "description": "Steeper cooler hillside sites help Conegliano-Valdobbiadene keep freshness and finesse."
+          }
+        ]
+      },
+      "tuscany": {
+        "chianti-classico": [
+          {
+            "name": "Inland hill altitude",
+            "route": "mountain-east",
+            "description": "Elevated inland hills help Chianti Classico retain acidity and freshness in Sangiovese."
+          }
+        ],
+        "montalcino": [
+          {
+            "name": "Hill elevation",
+            "route": "mountain-east",
+            "description": "Elevated slopes and day-night shifts help Montalcino balance ripe fruit with structure."
+          }
+        ],
+        "montepulciano": [
+          {
+            "name": "Hill altitude",
+            "route": "mountain-east",
+            "description": "Elevated Tuscan hill sites help Montepulciano preserve freshness and structure."
+          }
+        ],
+        "bolgheri": [
+          {
+            "name": "Tyrrhenian influence",
+            "route": "coast-west",
+            "description": "Sea influence helps moderate warm coastal Bolgheri and supports more balanced ripening."
+          }
+        ]
+      },
+      "marche": {
+        "verdicchio-dei-castelli-di-jesi": [
+          {
+            "name": "Adriatic influence",
+            "route": "coast-east",
+            "description": "The Adriatic helps keep Castelli di Jesi fresher and well suited to vibrant Verdicchio."
+          }
+        ],
+        "verdicchio-di-matelica": [
+          {
+            "name": "Inland valley diurnal range",
+            "route": "mountain-west",
+            "description": "Matelica's inland valley setting brings cooler nights and firmer acidity than many coastal Marche sites."
+          }
+        ]
+      },
+      "umbria": {
+        "orvieto": [
+          {
+            "name": "Inland hill influence",
+            "route": "mountain-east",
+            "description": "Elevated inland sites help Orvieto retain more freshness than the warm central Italian location might suggest."
+          }
+        ],
+        "montefalco": [
+          {
+            "name": "Hill elevation",
+            "route": "mountain-east",
+            "description": "Warm hill sites and day-night variation help Montefalco ripen structured reds without losing all freshness."
+          }
+        ]
+      },
+      "lazio": {
+        "frascati": [
+          {
+            "name": "Volcanic hill sites",
+            "route": "coast-west",
+            "description": "Elevated volcanic hills and nearby Tyrrhenian influence help Frascati stay fresher than the surrounding lowlands."
+          }
+        ]
+      },
+      "abruzzo": {
+        "montepulciano-dabruzzo": [
+          {
+            "name": "Adriatic influence",
+            "route": "coast-east",
+            "description": "Adriatic moderation and hillside sites help Montepulciano d'Abruzzo keep balance in a warm region."
+          }
+        ],
+        "trebbiano-dabruzzo": [
+          {
+            "name": "Adriatic cooling",
+            "route": "coast-east",
+            "description": "Sea influence and altitude variation help Trebbiano d'Abruzzo preserve freshness and acidity."
+          }
+        ]
+      },
+      "campania": {
+        "taurasi": [
+          {
+            "name": "Inland altitude",
+            "route": "mountain-east",
+            "description": "Elevated inland sites are crucial in Taurasi, helping Aglianico retain acidity and structure."
+          }
+        ],
+        "fiano-di-avellino": [
+          {
+            "name": "Hill elevation",
+            "route": "mountain-east",
+            "description": "Altitude is a key moderating factor in Fiano di Avellino, preserving freshness in this southern white appellation."
+          }
+        ],
+        "greco-di-tufo": [
+          {
+            "name": "Elevated inland sites",
+            "route": "mountain-east",
+            "description": "Higher inland vineyards help Greco di Tufo keep its notable acidity and mineral precision."
+          }
+        ]
+      },
+      "puglia": {
+        "primitivo-di-manduria": [
+          {
+            "name": "Salento sea breezes",
+            "route": "coast-south",
+            "description": "Sea breezes in the Salento help temper the heat around Manduria, though styles remain ripe and powerful."
+          }
+        ],
+        "salice-salentino": [
+          {
+            "name": "Peninsular sea influence",
+            "route": "coast-south",
+            "description": "Sea influence helps Salice Salentino avoid even greater heat in this warm southern peninsula."
+          }
+        ]
+      },
+      "basilicata": {
+        "aglianico-del-vulture": [
+          {
+            "name": "Volcanic altitude",
+            "route": "mountain-east",
+            "description": "Mount Vulture's elevation is the defining moderating factor for Aglianico del Vulture."
+          }
+        ]
+      },
+      "sicily": {
+        "etna": [
+          {
+            "name": "Etna altitude",
+            "route": "mountain-east",
+            "description": "High elevations on Etna are the key moderating factor behind Sicily's fresher, more elegant volcanic styles."
+          }
+        ],
+        "marsala": [
+          {
+            "name": "Coastal breezes",
+            "route": "coast-west",
+            "description": "Western coastal breezes help moderate Marsala's hot conditions and shape its historic fortified-wine zone."
+          }
+        ]
+      },
+      "piemonte": {
+        "barolo": [
+          {
+            "name": "Langhe hill sites",
+            "route": "mountain-north",
+            "description": "Elevated Langhe slopes and Alpine shelter are essential for Nebbiolo ripening in Barolo."
+          }
+        ],
+        "barbaresco": [
+          {
+            "name": "Langhe hill sites",
+            "route": "mountain-north",
+            "description": "Sheltered hills and continental moderation help Barbaresco ripen Nebbiolo while keeping freshness."
+          }
+        ],
+        "asti": [
+          {
+            "name": "Hillside exposure",
+            "route": "mountain-north",
+            "description": "Hillside vineyards help Asti retain freshness and aromatic precision for Moscato-based styles."
+          }
+        ],
+        "gavi": [
+          {
+            "name": "Sheltered southeastern hills",
+            "route": "mountain-north",
+            "description": "Carefully sited hillside vineyards help Gavi preserve Cortese's freshness and delicacy."
+          }
+        ]
+      }
+    },
+    "spain": {
+      "rias-baixas": {
+        "val-do-salnes": [
+          {
+            "name": "Atlantic exposure",
+            "route": "coast-west",
+            "description": "Strong Atlantic exposure helps Val do Salnes produce especially fresh saline Albarino."
+          }
+        ],
+        "o-rosal": [
+          {
+            "name": "Atlantic breezes",
+            "route": "coast-west",
+            "description": "Atlantic breezes keep O Rosal fresh and well ventilated despite humid conditions."
+          }
+        ]
+      },
+      "rioja": {
+        "rioja-alta": [
+          {
+            "name": "Atlantic-influenced western sites",
+            "route": "river-horizontal",
+            "description": "Cooler western exposures and the Ebro corridor help Rioja Alta keep elegance and freshness."
+          }
+        ],
+        "rioja-alavesa": [
+          {
+            "name": "Sierra Cantabria shelter",
+            "route": "mountain-north",
+            "description": "Shelter from the Sierra Cantabria helps Rioja Alavesa retain freshness while protecting vineyards from harsher weather."
+          }
+        ],
+        "rioja-oriental": [
+          {
+            "name": "Warmer eastern Ebro sites",
+            "route": "river-horizontal",
+            "description": "The lower warmer eastern stretch of Rioja gives Rioja Oriental a riper style despite some river moderation."
+          }
+        ]
+      },
+      "penedes": {
+        "alt-penedes": [
+          {
+            "name": "Higher-altitude inland sites",
+            "route": "mountain-east",
+            "description": "Higher inland vineyards are crucial for fresher fruit and sparkling base wines in Alt Penedes."
+          }
+        ],
+        "sant-sadurni-danoia": [
+          {
+            "name": "Elevated inland setting",
+            "route": "mountain-east",
+            "description": "Slightly higher inland conditions around Sant Sadurni d'Anoia help preserve the freshness needed for Cava."
+          }
+        ],
+        "baix-penedes": [
+          {
+            "name": "Mediterranean coastal influence",
+            "route": "coast-east",
+            "description": "Baix Penedes is warmer and more maritime, with stronger Mediterranean influence than the higher inland sectors."
+          }
+        ]
+      },
+      "jerez": {
+        "jerez-de-la-frontera": [
+          {
+            "name": "Atlantic breezes",
+            "route": "coast-west",
+            "description": "Atlantic influence still reaches inland Jerez de la Frontera and helps shape ageing conditions for Sherry."
+          }
+        ],
+        "sanlucar-de-barrameda": [
+          {
+            "name": "Strong Atlantic humidity",
+            "route": "coast-west",
+            "description": "Direct Atlantic humidity makes Sanlucar especially favorable for persistent flor and Manzanilla style."
+          }
+        ],
+        "el-puerto-de-santa-maria": [
+          {
+            "name": "Maritime Atlantic influence",
+            "route": "coast-west",
+            "description": "Strong maritime influence helps El Puerto de Santa Maria maintain flor-friendly ageing conditions."
           }
         ]
       }

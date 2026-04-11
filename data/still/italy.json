@@ -536,7 +536,11 @@
           ]
         }
       },
-      "classification": "WSET studies Trentino-Alto Adige through the distinct names Alto Adige and Trentino."
+      "classification": "WSET studies Trentino-Alto Adige through the distinct names Alto Adige and Trentino.",
+      "lawNotes": [
+        "Alto Adige and Trentino are the two key regional names to remember.",
+        "Altitude and mountain influence are central to freshness, acidity and aromatic precision."
+      ]
     },
     "friuli-venezia-giulia": {
       "name": "Friuli-Venezia Giulia",
@@ -1246,7 +1250,11 @@
           ]
         }
       },
-      "classification": "WSET studies Friuli-Venezia Giulia through Friuli Grave, Collio and Colli Orientali del Friuli."
+      "classification": "WSET studies Friuli-Venezia Giulia through Friuli Grave, Collio and Colli Orientali del Friuli.",
+      "lawNotes": [
+        "Friuli is one of Italy's benchmark quality white-wine regions.",
+        "Collio and Colli Orientali del Friuli are the more prestige hillside names, while Friuli Grave is broader and more approachable."
+      ]
     },
     "veneto": {
       "name": "Veneto",
@@ -2383,6 +2391,173 @@
           }
         }
       },
+      "subregions": {
+        "verdicchio-dei-castelli-di-jesi": {
+          "name": "Verdicchio dei Castelli di Jesi",
+          "summary": "The best-known Verdicchio appellation, producing fresh citrus-led wines that can range from simple to serious Classico Superiore bottlings.",
+          "climate": "Moderate Mediterranean [Adriatic influence]",
+          "styleSummary": "Fresh medium-bodied whites with citrus, apple and almond notes, often from hillside vineyards.",
+          "keyGrapes": [
+            "Verdicchio"
+          ],
+          "examTips": [
+            "This is the classic Verdicchio name to remember.",
+            "Classico and Classico Superiore are the useful quality clues."
+          ],
+          "tags": [
+            "Italy",
+            "Marche",
+            "Verdicchio dei Castelli di Jesi",
+            "white"
+          ],
+          "grapes": {
+            "Verdicchio": {
+              "summary": "Fresh central Italian white grape producing citrus, green apple and almond-accented wines with good acidity.",
+              "style": "Fresh citrus, green apple and sometimes almond notes, with good acidity.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium",
+                "body": "Light to Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "green apple",
+                "almond",
+                "floral"
+              ],
+              "viticulture": [
+                "Performs well in Marche hillside sites"
+              ],
+              "winemaking": [
+                "Usually dry still wines",
+                "Can age surprisingly well"
+              ],
+              "pairing": [
+                "seafood",
+                "grilled fish",
+                "light pasta"
+              ],
+              "examTips": [
+                "Almond note is a useful clue.",
+                "Usually fresher and more characterful than neutral Italian whites."
+              ],
+              "tags": [
+                "white",
+                "fresh",
+                "almond",
+                "Italy",
+                "Marche",
+                "Verdicchio dei Castelli di Jesi"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Umani Ronchi Casal di Serra",
+                "producer": "Umani Ronchi",
+                "technicalSheetUrl": "https://www.umanironchi.com/en/wines/white/marche_verdicchio_dei_castelli_di_jesi_casal_di_serra"
+              }
+            }
+          },
+          "classification": "Verdicchio dei Castelli di Jesi DOC is the broad classic appellation, with Classico and Classico Superiore bottlings especially important for quality.",
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+          ]
+        },
+        "verdicchio-di-matelica": {
+          "name": "Verdicchio di Matelica",
+          "summary": "Smaller inland Verdicchio zone whose valley setting and cooler nights often give firmer, more structured wines than Castelli di Jesi.",
+          "climate": "Moderate Continental [Mediterranean influence]",
+          "styleSummary": "More tense, mineral and structured Verdicchio with citrus, apple and almond notes.",
+          "keyGrapes": [
+            "Verdicchio"
+          ],
+          "examTips": [
+            "Matelica is inland and often more structured than Castelli di Jesi.",
+            "Think extra tension, acidity and ageing potential."
+          ],
+          "tags": [
+            "Italy",
+            "Marche",
+            "Verdicchio di Matelica",
+            "white"
+          ],
+          "grapes": {
+            "Verdicchio": {
+              "summary": "Fresh central Italian white grape producing citrus, green apple and almond-accented wines with good acidity.",
+              "style": "Fresh citrus, green apple and sometimes almond notes, with good acidity.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium",
+                "body": "Light to Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "green apple",
+                "almond",
+                "floral"
+              ],
+              "viticulture": [
+                "Performs especially well in inland valley vineyards with marked day-night shifts"
+              ],
+              "winemaking": [
+                "Usually dry still wines",
+                "Can age surprisingly well"
+              ],
+              "pairing": [
+                "seafood",
+                "grilled fish",
+                "light pasta"
+              ],
+              "examTips": [
+                "Almond note is a useful clue.",
+                "Usually firmer and more structured than broad simple Verdicchio styles."
+              ],
+              "tags": [
+                "white",
+                "fresh",
+                "almond",
+                "Italy",
+                "Marche",
+                "Verdicchio di Matelica"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Belisario Del Cerro Verdicchio di Matelica DOC",
+                "producer": "Belisario",
+                "technicalSheetUrl": "https://www.belisario.it/en/product/vigneti-del-cerro/"
+              }
+            }
+          },
+          "classification": "Verdicchio di Matelica DOC is the key inland Verdicchio appellation, with Riserva bottlings at DOCG level.",
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+          ]
+        }
+      },
+      "classification": "Marche is anchored by Verdicchio dei Castelli di Jesi DOC and Verdicchio di Matelica DOC, with Verdicchio the central study grape.",
+      "lawNotes": [
+        "Verdicchio is the key regional white variety and often shows citrus, apple and almond notes.",
+        "Verdicchio di Matelica is smaller and often more structured than the broader Castelli di Jesi appellation."
+      ],
       "vineyardFactors": [
         "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
         "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
@@ -2407,11 +2582,13 @@
       ],
       "keyGrapes": [
         "Grechetto",
-        "Trebbiano"
+        "Trebbiano",
+        "Sagrantino"
       ],
       "examTips": [
         "Think inland central Italy with traditional white blends.",
-        "Grechetto is the most useful grape to remember."
+        "Grechetto is the most useful white grape to remember.",
+        "Montefalco Sagrantino is the key structured red style."
       ],
       "tags": [
         "Italy",
@@ -2504,8 +2681,268 @@
             "producer": "Lungarotti",
             "technicalSheetUrl": "https://lungarotti.it/ita/tdg/"
           }
+        },
+        "Sagrantino": {
+          "summary": "Powerful Umbrian red grape producing very deep-coloured, high-tannin wines with black fruit and long ageing potential.",
+          "style": "Full-bodied, high-tannin red with black fruit, spice and earthy depth.",
+          "aliases": [],
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium to High",
+            "body": "Full",
+            "tannin": "High"
+          },
+          "aromas": [
+            "blackberry",
+            "plum",
+            "spice",
+            "earthy"
+          ],
+          "viticulture": [
+            "Thick-skinned variety with naturally high tannin",
+            "Best on warm well-exposed Umbrian hillsides"
+          ],
+          "winemaking": [
+            "Extended maceration and oak ageing common",
+            "Often needs bottle age to soften"
+          ],
+          "pairing": [
+            "braised beef",
+            "lamb",
+            "aged hard cheese"
+          ],
+          "examTips": [
+            "Think massive tannin and structure.",
+            "Montefalco Sagrantino is the appellation to remember."
+          ],
+          "tags": [
+            "red",
+            "high-tannin",
+            "ageworthy",
+            "Italy",
+            "Umbria"
+          ],
+          "difficulty": 2,
+          "exampleWine": {
+            "name": "Arnaldo Caprai Montefalco Sagrantino 25 Anni",
+            "producer": "Arnaldo Caprai",
+            "technicalSheetUrl": "https://www.arnaldocaprai.it/en/wine/25-anni/"
+          }
         }
       },
+      "subregions": {
+        "orvieto": {
+          "name": "Orvieto",
+          "summary": "Historic Umbrian white appellation based on traditional blends, often with Grechetto giving more body and character.",
+          "climate": "Moderate Continental [Mediterranean influence]",
+          "styleSummary": "Dry medium-bodied whites with orchard fruit, citrus and moderate texture.",
+          "keyGrapes": [
+            "Grechetto",
+            "Trebbiano"
+          ],
+          "examTips": [
+            "Orvieto is the classic Umbrian white name.",
+            "Grechetto often gives more weight than Trebbiano."
+          ],
+          "tags": [
+            "Italy",
+            "Umbria",
+            "Orvieto",
+            "white"
+          ],
+          "grapes": {
+            "Grechetto": {
+              "summary": "Medium-bodied Umbrian white grape with citrus, orchard fruit and some texture.",
+              "style": "Medium-bodied white with citrus, orchard fruit and some texture.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "orchard fruit",
+                "apple"
+              ],
+              "viticulture": [
+                "Traditional Umbrian white grape"
+              ],
+              "winemaking": [
+                "Usually blended or varietal dry whites"
+              ],
+              "pairing": [
+                "roast chicken",
+                "pasta",
+                "grilled vegetables"
+              ],
+              "examTips": [
+                "More textural and characterful than very neutral whites."
+              ],
+              "tags": [
+                "white",
+                "textural",
+                "Italy",
+                "Umbria",
+                "Orvieto"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Antinori San Giovanni della Sala Orvieto Classico Superiore",
+                "producer": "Castello della Sala",
+                "technicalSheetUrl": "https://www.antinori.it/it/vino/san-giovanni-della-sala/?gen_pdf=1&wineyear=2021"
+              }
+            },
+            "Trebbiano": {
+              "summary": "Neutral productive white grape often used in blends for light dry wines.",
+              "style": "Neutral to lightly citrus white, often used in blends.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Low to Medium",
+                "body": "Light",
+                "tannin": "-"
+              },
+              "aromas": [
+                "light citrus",
+                "neutral fruit"
+              ],
+              "viticulture": [
+                "Productive and widely planted"
+              ],
+              "winemaking": [
+                "Often used in simple dry styles"
+              ],
+              "pairing": [
+                "light salads",
+                "simple fish dishes"
+              ],
+              "examTips": [
+                "Usually more neutral than Grechetto."
+              ],
+              "tags": [
+                "white",
+                "neutral",
+                "blend",
+                "Italy",
+                "Umbria",
+                "Orvieto"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Antinori San Giovanni della Sala Orvieto Classico Superiore",
+                "producer": "Castello della Sala",
+                "technicalSheetUrl": "https://www.antinori.it/it/vino/san-giovanni-della-sala/?gen_pdf=1&wineyear=2021"
+              }
+            }
+          },
+          "classification": "Orvieto DOC is the historic white appellation of Umbria, with Orvieto Classico and Classico Superiore the best-known quality references.",
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards."
+          ]
+        },
+        "montefalco": {
+          "name": "Montefalco",
+          "summary": "Prestige Umbrian hill zone producing powerful Sagrantino and structured Montefalco Rosso.",
+          "climate": "Warm Mediterranean [altitude influence]",
+          "styleSummary": "Full-bodied, deeply structured reds with black fruit, spice and firm tannin.",
+          "keyGrapes": [
+            "Sagrantino"
+          ],
+          "examTips": [
+            "Montefalco Sagrantino is one of Italy's most tannic reds.",
+            "Montefalco Rosso is the more approachable sibling appellation."
+          ],
+          "tags": [
+            "Italy",
+            "Umbria",
+            "Montefalco",
+            "red"
+          ],
+          "grapes": {
+            "Sagrantino": {
+              "summary": "Powerful Umbrian red grape producing very deep-coloured, high-tannin wines with black fruit and long ageing potential.",
+              "style": "Full-bodied, high-tannin red with black fruit, spice and earthy depth.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium to High",
+                "body": "Full",
+                "tannin": "High"
+              },
+              "aromas": [
+                "blackberry",
+                "plum",
+                "spice",
+                "earthy"
+              ],
+              "viticulture": [
+                "Thick-skinned variety with naturally high tannin",
+                "Best on warm well-exposed Umbrian hillsides"
+              ],
+              "winemaking": [
+                "Extended maceration and oak ageing common",
+                "Often needs bottle age to soften"
+              ],
+              "pairing": [
+                "braised beef",
+                "lamb",
+                "aged hard cheese"
+              ],
+              "examTips": [
+                "Think massive tannin and structure.",
+                "Montefalco Sagrantino is the appellation to remember."
+              ],
+              "tags": [
+                "red",
+                "high-tannin",
+                "ageworthy",
+                "Italy",
+                "Umbria",
+                "Montefalco"
+              ],
+              "difficulty": 2,
+              "exampleWine": {
+                "name": "Arnaldo Caprai Montefalco Sagrantino 25 Anni",
+                "producer": "Arnaldo Caprai",
+                "technicalSheetUrl": "https://www.arnaldocaprai.it/en/wine/25-anni/"
+              }
+            }
+          },
+          "classification": "Montefalco Sagrantino DOCG is the prestige appellation, while Montefalco Rosso DOC offers a more approachable Sangiovese-led blend.",
+          "lawNotes": [
+            "Montefalco Sagrantino exists in both dry and passito styles.",
+            "Montefalco Rosso is a separate DOC and not the same wine as Montefalco Sagrantino."
+          ],
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+            "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes."
+          ]
+        }
+      },
+      "classification": "Umbria combines historic white appellations such as Orvieto DOC with the prestige red appellation Montefalco Sagrantino DOCG.",
+      "lawNotes": [
+        "Grechetto is the key traditional white grape to remember in Umbria.",
+        "Montefalco Sagrantino DOCG is the region's benchmark structured red."
+      ],
       "vineyardFactors": [
         "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
         "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
@@ -2631,6 +3068,134 @@
           }
         }
       },
+      "subregions": {
+        "frascati": {
+          "name": "Frascati",
+          "summary": "The classic white appellation of the Roman hills, based on traditional blends grown on volcanic soils southeast of Rome.",
+          "climate": "Warm Mediterranean [volcanic hills]",
+          "styleSummary": "Dry medium-bodied whites with soft stone fruit, citrus and a subtle volcanic edge.",
+          "keyGrapes": [
+            "Malvasia",
+            "Trebbiano"
+          ],
+          "examTips": [
+            "Frascati is the key Lazio name to remember.",
+            "Volcanic hills help preserve more freshness than the broad warm climate might suggest."
+          ],
+          "tags": [
+            "Italy",
+            "Lazio",
+            "Frascati",
+            "white"
+          ],
+          "grapes": {
+            "Malvasia": {
+              "summary": "Traditional aromatic to semi-aromatic white grape often used in Lazio blends.",
+              "style": "Aromatic to neutral white, often medium-bodied with soft fruit notes.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "floral",
+                "soft stone fruit",
+                "pear"
+              ],
+              "viticulture": [
+                "Traditional Lazio white grape"
+              ],
+              "winemaking": [
+                "Usually blended in dry whites"
+              ],
+              "pairing": [
+                "light pasta",
+                "grilled vegetables",
+                "salads"
+              ],
+              "examTips": [
+                "Usually softer and broader than crisp high-acid whites."
+              ],
+              "tags": [
+                "white",
+                "traditional",
+                "blend",
+                "Italy",
+                "Lazio",
+                "Frascati"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Casale Mattia Frascati DOCG Terre Laviche",
+                "producer": "Casale Mattia",
+                "technicalSheetUrl": "https://www.casalemattia.it/download/18_scheda-tecnica-frascati-superiore-docg-terre-laviche.pdf"
+              }
+            },
+            "Trebbiano": {
+              "summary": "Widely planted neutral white grape used for light dry blends.",
+              "style": "Light, neutral to citrus white used widely in blends.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Low to Medium",
+                "body": "Light",
+                "tannin": "-"
+              },
+              "aromas": [
+                "light citrus",
+                "neutral fruit"
+              ],
+              "viticulture": [
+                "Widely planted"
+              ],
+              "winemaking": [
+                "Usually simple dry styles"
+              ],
+              "pairing": [
+                "salads",
+                "simple seafood dishes"
+              ],
+              "examTips": [
+                "Think neutral supporting grape rather than aromatic star."
+              ],
+              "tags": [
+                "white",
+                "neutral",
+                "blend",
+                "Italy",
+                "Lazio",
+                "Frascati"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Casale Mattia Frascati DOCG Terre Laviche",
+                "producer": "Casale Mattia",
+                "technicalSheetUrl": "https://www.casalemattia.it/download/18_scheda-tecnica-frascati-superiore-docg-terre-laviche.pdf"
+              }
+            }
+          },
+          "classification": "Frascati DOC and Frascati Superiore DOCG are the best-known classic appellations of Lazio.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Soil type influences drainage, heat retention, and vine vigor, shaping the style and consistency of the wines."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Regional style depends not only on climate and site, but also on deliberate human choices in the vineyard and cellar.",
+            "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+          ]
+        }
+      },
+      "classification": "Lazio is still best known for Frascati and other traditional white appellations in the volcanic hills around Rome.",
+      "lawNotes": [
+        "Frascati Superiore is the leading DOCG name to remember in Lazio.",
+        "Volcanic soils and elevated hill sites can help preserve freshness in this warm region."
+      ],
       "vineyardFactors": [
         "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
         "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
@@ -2655,11 +3220,13 @@
         "altitude differences"
       ],
       "keyGrapes": [
-        "Montepulciano"
+        "Montepulciano",
+        "Trebbiano"
       ],
       "examTips": [
         "Montepulciano is the key grape here.",
-        "Do not confuse the grape Montepulciano with Vino Nobile di Montepulciano in Tuscany."
+        "Do not confuse the grape Montepulciano with Vino Nobile di Montepulciano in Tuscany.",
+        "Cerasuolo d’Abruzzo is another useful regional appellation to remember."
       ],
       "tags": [
         "Italy",
@@ -2713,8 +3280,219 @@
             "producer": "Masciarelli",
             "technicalSheetUrl": "https://www.masciarelli.it/wp-content/uploads/2019/05/GM-Montepulciano_eng.pdf"
           }
+        },
+        "Trebbiano": {
+          "summary": "Traditional Abruzzese white grape producing fresh light to medium-bodied wines with citrus, floral and almond notes.",
+          "style": "Fresh light to medium-bodied white with citrus, orchard fruit and gentle almond character.",
+          "aliases": [],
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Low to Medium",
+            "body": "Light to Medium",
+            "tannin": "-"
+          },
+          "aromas": [
+            "citrus",
+            "white peach",
+            "apple",
+            "almond"
+          ],
+          "viticulture": [
+            "Widely planted across Abruzzo",
+            "Retains freshness better from elevated or Adriatic-cooled sites"
+          ],
+          "winemaking": [
+            "Usually made in stainless steel",
+            "Some richer examples see lees work or oak"
+          ],
+          "pairing": [
+            "grilled fish",
+            "seafood pasta",
+            "vegetable dishes"
+          ],
+          "examTips": [
+            "Trebbiano d’Abruzzo can be more characterful than generic Trebbiano wines elsewhere.",
+            "Think Adriatic freshness rather than anonymous simple white."
+          ],
+          "tags": [
+            "white",
+            "fresh",
+            "Italy",
+            "Abruzzo",
+            "Trebbiano"
+          ],
+          "difficulty": 1,
+          "exampleWine": {
+            "name": "Masciarelli Trebbiano d’Abruzzo DOC",
+            "producer": "Masciarelli",
+            "technicalSheetUrl": "https://www.masciarelli.it/wp-content/uploads/2024/03/LC_trebbiano_dabruzzo_eng.pdf"
+          }
         }
       },
+      "subregions": {
+        "montepulciano-dabruzzo": {
+          "name": "Montepulciano d’Abruzzo",
+          "summary": "The main regional red appellation, producing deeply coloured Montepulciano with ripe black fruit and generous body.",
+          "climate": "Warm Mediterranean",
+          "styleSummary": "Ripe medium to full-bodied reds with dark fruit, spice and moderate to firm tannin.",
+          "keyGrapes": [
+            "Montepulciano"
+          ],
+          "examTips": [
+            "This is the appellation name, not the Tuscan town.",
+            "Expect darker fruit and more colour than Sangiovese."
+          ],
+          "tags": [
+            "Italy",
+            "Abruzzo",
+            "Montepulciano d’Abruzzo",
+            "red"
+          ],
+          "grapes": {
+            "Montepulciano": {
+              "summary": "Deep-coloured Italian red grape producing ripe black fruit, body and moderate to firm tannin.",
+              "style": "Deep colour, ripe black fruit and medium to high tannin.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium to High",
+                "body": "Medium to Full",
+                "tannin": "Medium to High"
+              },
+              "aromas": [
+                "black fruit",
+                "plum",
+                "spice"
+              ],
+              "viticulture": [
+                "Performs well in warm central Italy"
+              ],
+              "winemaking": [
+                "Usually fruit-driven but can be more structured"
+              ],
+              "pairing": [
+                "pizza",
+                "pasta with meat sauce",
+                "grilled meats"
+              ],
+              "examTips": [
+                "Dark fruit and deeper colour are useful clues.",
+                "Name confusion is a common exam trap."
+              ],
+              "tags": [
+                "red",
+                "dark-fruit",
+                "Italy",
+                "Abruzzo",
+                "Montepulciano d’Abruzzo"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Gianni Masciarelli Montepulciano d’Abruzzo DOC",
+                "producer": "Masciarelli",
+                "technicalSheetUrl": "https://www.masciarelli.it/wp-content/uploads/2019/05/GM-Montepulciano_eng.pdf"
+              }
+            }
+          },
+          "classification": "Montepulciano d’Abruzzo DOC is the main regional red appellation, with Colline Teramane Montepulciano d’Abruzzo DOCG as the prestige hillside zone.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+          ]
+        },
+        "trebbiano-dabruzzo": {
+          "name": "Trebbiano d’Abruzzo",
+          "summary": "Traditional Abruzzese white appellation producing fresher and more characterful Trebbiano than the grape's neutral reputation might suggest.",
+          "climate": "Warm Mediterranean [Adriatic influence]",
+          "styleSummary": "Fresh medium-bodied whites with citrus, white peach and gentle almond or mineral notes.",
+          "keyGrapes": [
+            "Trebbiano"
+          ],
+          "examTips": [
+            "Trebbiano d’Abruzzo is often better than generic Trebbiano expectations.",
+            "Adriatic influence and hillside sites help preserve freshness."
+          ],
+          "tags": [
+            "Italy",
+            "Abruzzo",
+            "Trebbiano d’Abruzzo",
+            "white"
+          ],
+          "grapes": {
+            "Trebbiano": {
+              "summary": "Traditional Abruzzese white grape producing fresh light to medium-bodied wines with citrus, floral and almond notes.",
+              "style": "Fresh light to medium-bodied white with citrus, orchard fruit and gentle almond character.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Low to Medium",
+                "body": "Light to Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "white peach",
+                "apple",
+                "almond"
+              ],
+              "viticulture": [
+                "Widely planted across Abruzzo",
+                "Retains freshness better from elevated or Adriatic-cooled sites"
+              ],
+              "winemaking": [
+                "Usually made in stainless steel",
+                "Some richer examples see lees work or oak"
+              ],
+              "pairing": [
+                "grilled fish",
+                "seafood pasta",
+                "vegetable dishes"
+              ],
+              "examTips": [
+                "Trebbiano d’Abruzzo can be more characterful than generic Trebbiano wines elsewhere.",
+                "Think Adriatic freshness rather than anonymous simple white."
+              ],
+              "tags": [
+                "white",
+                "fresh",
+                "Italy",
+                "Abruzzo",
+                "Trebbiano d’Abruzzo"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Masciarelli Trebbiano d’Abruzzo DOC",
+                "producer": "Masciarelli",
+                "technicalSheetUrl": "https://www.masciarelli.it/wp-content/uploads/2024/03/LC_trebbiano_dabruzzo_eng.pdf"
+              }
+            }
+          },
+          "classification": "Trebbiano d’Abruzzo DOC is the classic regional white appellation and an important contrast to the area's Montepulciano reds.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+          ]
+        }
+      },
+      "classification": "Abruzzo is centered on Montepulciano d’Abruzzo DOC for reds and Trebbiano d’Abruzzo DOC for whites, with Cerasuolo d’Abruzzo also important.",
+      "lawNotes": [
+        "Montepulciano is the grape name here, not the Tuscan town.",
+        "Cerasuolo d’Abruzzo is a distinctive rose appellation made from Montepulciano."
+      ],
       "vineyardFactors": [
         "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
         "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
@@ -2893,6 +3671,254 @@
           }
         }
       },
+      "subregions": {
+        "taurasi": {
+          "name": "Taurasi",
+          "summary": "Prestige inland Campanian appellation for powerful ageworthy Aglianico from elevated volcanic and hillside vineyards.",
+          "climate": "Warm Mediterranean [altitude influence]",
+          "styleSummary": "Full-bodied structured reds with dark fruit, smoke, spice, high tannin and high acidity.",
+          "keyGrapes": [
+            "Aglianico"
+          ],
+          "examTips": [
+            "Taurasi is the benchmark Aglianico red of Campania.",
+            "Think firm structure and real ageing potential."
+          ],
+          "tags": [
+            "Italy",
+            "Campania",
+            "Taurasi",
+            "red"
+          ],
+          "grapes": {
+            "Aglianico": {
+              "summary": "Powerful late-ripening red grape producing high tannin, high acidity wines with ageing potential.",
+              "style": "Dark fruit, high tannin, high acidity, structured and ageworthy.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Medium to High",
+                "body": "Full",
+                "tannin": "High"
+              },
+              "aromas": [
+                "black cherry",
+                "plum",
+                "smoke",
+                "spice"
+              ],
+              "viticulture": [
+                "Late ripening",
+                "Needs warm conditions"
+              ],
+              "winemaking": [
+                "Often oak-aged",
+                "Long ageing potential"
+              ],
+              "pairing": [
+                "braised beef",
+                "lamb",
+                "game"
+              ],
+              "examTips": [
+                "High tannin + high acidity is key.",
+                "Often compared to Nebbiolo in structure."
+              ],
+              "tags": [
+                "red",
+                "high-tannin",
+                "high-acid",
+                "Italy",
+                "Campania",
+                "Taurasi"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Mastroberardino Radici Taurasi DOCG",
+                "producer": "Mastroberardino",
+                "technicalSheetUrl": "https://mastroberardino.com/radici-taurasi-docg-vino-rosso/"
+              }
+            }
+          },
+          "classification": "Taurasi DOCG is the prestige Aglianico appellation of Campania and one of southern Italy's benchmark ageworthy reds.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+            "Soil type influences drainage, heat retention, and vine vigor, shaping the style and consistency of the wines."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+          ]
+        },
+        "fiano-di-avellino": {
+          "name": "Fiano di Avellino",
+          "summary": "Leading inland Campanian white appellation for textural, ageworthy Fiano from elevated sites.",
+          "climate": "Warm Mediterranean [altitude influence]",
+          "styleSummary": "Medium to full-bodied whites with floral, honeyed, nutty and citrus notes supported by fresh acidity.",
+          "keyGrapes": [
+            "Fiano"
+          ],
+          "examTips": [
+            "This is the key Fiano appellation to remember.",
+            "Altitude helps retain freshness despite the southern latitude."
+          ],
+          "tags": [
+            "Italy",
+            "Campania",
+            "Fiano di Avellino",
+            "white"
+          ],
+          "grapes": {
+            "Fiano": {
+              "summary": "Textural white grape producing complex wines with floral, nutty and honeyed notes.",
+              "style": "Medium to full-bodied white with floral, honey and nutty notes.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium",
+                "body": "Medium to Full",
+                "tannin": "-"
+              },
+              "aromas": [
+                "floral",
+                "honey",
+                "almond",
+                "citrus"
+              ],
+              "viticulture": [
+                "Performs well in warm climates"
+              ],
+              "winemaking": [
+                "Can age well"
+              ],
+              "pairing": [
+                "seafood pasta",
+                "roast chicken",
+                "cream dishes"
+              ],
+              "examTips": [
+                "More texture and weight than many Italian whites."
+              ],
+              "tags": [
+                "white",
+                "textural",
+                "complex",
+                "Italy",
+                "Campania",
+                "Fiano di Avellino"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Mastroberardino Radici Fiano di Avellino DOCG",
+                "producer": "Mastroberardino",
+                "technicalSheetUrl": "https://mastroberardino.com/wp-content/uploads/2026/01/RADICI-FIANO-DI-AVELLINO-DOCG-ENG.pdf"
+              }
+            }
+          },
+          "classification": "Fiano di Avellino DOCG is the benchmark Campanian appellation for complex ageworthy Fiano.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+            "Soil type influences drainage, heat retention, and vine vigor, shaping the style and consistency of the wines."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+          ]
+        },
+        "greco-di-tufo": {
+          "name": "Greco di Tufo",
+          "summary": "Classic elevated Campanian white appellation producing high-acid citrus and mineral wines from Greco.",
+          "climate": "Warm Mediterranean [altitude influence]",
+          "styleSummary": "Fresh medium-bodied whites with citrus, apple and mineral notes and notably high acidity.",
+          "keyGrapes": [
+            "Greco"
+          ],
+          "examTips": [
+            "Greco di Tufo is the key high-acid southern white to remember.",
+            "Think mineral tension rather than soft broad Mediterranean white."
+          ],
+          "tags": [
+            "Italy",
+            "Campania",
+            "Greco di Tufo",
+            "white"
+          ],
+          "grapes": {
+            "Greco": {
+              "summary": "Fresh high-acid white grape producing citrus-driven wines with mineral edge.",
+              "style": "Fresh citrus white with high acidity and mineral character.",
+              "aliases": [
+                "Greco di Tufo"
+              ],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "apple",
+                "mineral"
+              ],
+              "viticulture": [
+                "Maintains acidity in warm climates"
+              ],
+              "winemaking": [
+                "Usually fresh style"
+              ],
+              "pairing": [
+                "seafood",
+                "grilled fish",
+                "salads"
+              ],
+              "examTips": [
+                "Higher acidity than many southern Italian whites."
+              ],
+              "tags": [
+                "white",
+                "high-acid",
+                "mineral",
+                "Italy",
+                "Campania",
+                "Greco di Tufo"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Feudi di San Gregorio Cutizzi Greco di Tufo DOCG",
+                "producer": "Feudi di San Gregorio",
+                "technicalSheetUrl": "https://store.feudi.it/prodotto/cutizzi-2023/"
+              }
+            }
+          },
+          "classification": "Greco di Tufo DOCG is the benchmark high-acid mineral white appellation of Campania.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+            "Soil type influences drainage, heat retention, and vine vigor, shaping the style and consistency of the wines."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+            "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+          ]
+        }
+      },
+      "classification": "Campania's core quality appellations are Taurasi DOCG, Fiano di Avellino DOCG and Greco di Tufo DOCG.",
+      "lawNotes": [
+        "Aglianico gives Campania one of southern Italy's most structured red styles.",
+        "Altitude and volcanic soils help Campania's whites retain freshness and minerality."
+      ],
       "vineyardFactors": [
         "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
         "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
@@ -3023,6 +4049,167 @@
           }
         }
       },
+      "subregions": {
+        "primitivo-di-manduria": {
+          "name": "Primitivo di Manduria",
+          "summary": "The best-known prestige Primitivo appellation of Puglia, producing rich full-bodied reds with high alcohol and ripe black fruit.",
+          "climate": "Warm Mediterranean",
+          "styleSummary": "Full-bodied powerful reds with blackberry, jam, spice and elevated alcohol.",
+          "keyGrapes": [
+            "Primitivo"
+          ],
+          "examTips": [
+            "Primitivo di Manduria is the key prestige Puglian red name.",
+            "Think hot climate, ripe fruit and high alcohol."
+          ],
+          "tags": [
+            "Italy",
+            "Puglia",
+            "Primitivo di Manduria",
+            "red"
+          ],
+          "grapes": {
+            "Primitivo": {
+              "summary": "Early-ripening grape producing high-alcohol, ripe fruit-driven wines.",
+              "style": "Ripe black fruit, jammy character and high alcohol.",
+              "aliases": [
+                "Zinfandel"
+              ],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "High",
+                "body": "Full",
+                "tannin": "Medium"
+              },
+              "aromas": [
+                "blackberry",
+                "jam",
+                "spice"
+              ],
+              "viticulture": [
+                "Early ripening"
+              ],
+              "winemaking": [
+                "Often fruit-forward"
+              ],
+              "pairing": [
+                "BBQ",
+                "pizza",
+                "grilled meats"
+              ],
+              "examTips": [
+                "Think jammy fruit and high alcohol.",
+                "Compare with Zinfandel."
+              ],
+              "tags": [
+                "red",
+                "high-alcohol",
+                "ripe",
+                "Italy",
+                "Puglia",
+                "Primitivo di Manduria"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "San Marzano Sessantanni Primitivo di Manduria DOP",
+                "producer": "San Marzano",
+                "technicalSheetUrl": "https://sanmarzano.wine/technical-sheet/sessantanni-limited-edition_eng.pdf"
+              }
+            }
+          },
+          "classification": "Primitivo di Manduria DOC is the benchmark appellation for Puglia's richest Primitivo wines.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+          ]
+        },
+        "salice-salentino": {
+          "name": "Salice Salentino",
+          "summary": "Historic Salento appellation best known for Negroamaro-based reds and roses, often with a slightly herbal or bitter edge.",
+          "climate": "Warm Mediterranean",
+          "styleSummary": "Medium to full-bodied reds with dark fruit, herbs, spice and moderate tannin.",
+          "keyGrapes": [
+            "Negroamaro"
+          ],
+          "examTips": [
+            "Salice Salentino is the classic Negroamaro appellation to remember.",
+            "Negroamaro often shows a slightly bitter finish."
+          ],
+          "tags": [
+            "Italy",
+            "Puglia",
+            "Salice Salentino",
+            "red"
+          ],
+          "grapes": {
+            "Negroamaro": {
+              "summary": "Dark-fruited grape producing medium to full-bodied wines with moderate tannin.",
+              "style": "Dark fruit, moderate tannin and slightly bitter finish.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium to High",
+                "body": "Medium to Full",
+                "tannin": "Medium"
+              },
+              "aromas": [
+                "black fruit",
+                "herbal",
+                "spice"
+              ],
+              "viticulture": [
+                "Heat tolerant"
+              ],
+              "winemaking": [
+                "Often blended"
+              ],
+              "pairing": [
+                "roast meats",
+                "pasta",
+                "BBQ"
+              ],
+              "examTips": [
+                "Often slightly bitter finish is a clue."
+              ],
+              "tags": [
+                "red",
+                "dark-fruit",
+                "Italy",
+                "Puglia",
+                "Salice Salentino"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Leone de Castris Maiana Rosso Salice Salentino DOC",
+                "producer": "Leone de Castris",
+                "technicalSheetUrl": "https://www.leonedecastris.com/en/wp-content/uploads/2023/01/scheda-MAIANA-ROSSO_2020.pdf"
+              }
+            }
+          },
+          "classification": "Salice Salentino DOC is the classic Negroamaro-led appellation of southern Puglia.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+          ]
+        }
+      },
+      "classification": "Puglia's key appellations include Primitivo di Manduria DOC and Salice Salentino DOC, both rooted in the warm Salento peninsula.",
+      "lawNotes": [
+        "Primitivo is genetically the same variety as Zinfandel.",
+        "Puglia has a long history of bulk production, but quality appellations now matter for study."
+      ],
       "vineyardFactors": [
         "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
         "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
@@ -3107,6 +4294,94 @@
           }
         }
       },
+      "subregions": {
+        "aglianico-del-vulture": {
+          "name": "Aglianico del Vulture",
+          "summary": "The defining appellation of Basilicata, producing structured ageworthy Aglianico from volcanic slopes around Mount Vulture.",
+          "climate": "Moderate Mediterranean [altitude influence]",
+          "styleSummary": "Firm, ageworthy reds with dark fruit, smoke, spice, high tannin and high acidity.",
+          "keyGrapes": [
+            "Aglianico"
+          ],
+          "examTips": [
+            "Think southern Italy with altitude and volcanic freshness.",
+            "Aglianico del Vulture is the key Basilicata appellation."
+          ],
+          "tags": [
+            "Italy",
+            "Basilicata",
+            "Aglianico del Vulture",
+            "red"
+          ],
+          "grapes": {
+            "Aglianico": {
+              "summary": "Powerful structured red grape producing dark-fruited, high-acid, high-tannin wines with ageing potential.",
+              "style": "Dark fruit, high tannin and high acidity with ageworthy potential.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Medium to High",
+                "body": "Full",
+                "tannin": "High"
+              },
+              "aromas": [
+                "black fruit",
+                "plum",
+                "smoke",
+                "spice"
+              ],
+              "viticulture": [
+                "Late ripening",
+                "Best on elevated sites"
+              ],
+              "winemaking": [
+                "Often structured and ageworthy"
+              ],
+              "pairing": [
+                "braised meats",
+                "lamb",
+                "game"
+              ],
+              "examTips": [
+                "Think southern Italy but with freshness from altitude.",
+                "Very ageworthy style."
+              ],
+              "tags": [
+                "red",
+                "high-tannin",
+                "high-acid",
+                "Italy",
+                "Basilicata",
+                "Aglianico del Vulture"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Tenuta del Portale Aglianico del Vulture",
+                "producer": "Tenuta del Portale",
+                "technicalSheetUrl": "https://www.tenutadelportale.com/en/product/aglianico-del-vulture/"
+              }
+            }
+          },
+          "classification": "Aglianico del Vulture DOC is the defining appellation of Basilicata, with Superiore bottlings at DOCG level.",
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Altitude lowers temperature and can extend the growing season, helping preserve acidity and aroma.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Growers often use elevation and harvest timing strategically to balance ripeness and freshness.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards."
+          ]
+        }
+      },
+      "classification": "Basilicata is essentially defined by Aglianico del Vulture DOC, the classic volcanic red appellation of Mount Vulture.",
+      "lawNotes": [
+        "Aglianico del Vulture combines southern ripeness with altitude-driven acidity and structure.",
+        "Volcanic soils and elevated sites are the key Basilicata study points."
+      ],
       "vineyardFactors": [
         "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
         "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
@@ -3280,6 +4555,172 @@
           }
         }
       },
+      "subregions": {
+        "etna": {
+          "name": "Etna",
+          "summary": "Volcanic mountain appellation on the slopes of Mount Etna producing fresher, more elegant Sicilian wines from high elevations.",
+          "climate": "Moderate Mediterranean [altitude influence]",
+          "styleSummary": "Elegant reds with red fruit, floral lift, mineral notes and higher acidity than most of Sicily.",
+          "keyGrapes": [
+            "Nerello Mascalese"
+          ],
+          "examTips": [
+            "Etna is the cooler volcanic contrast within Sicily.",
+            "Nerello Mascalese is often lighter in color and more perfumed than Nero d’Avola."
+          ],
+          "tags": [
+            "Italy",
+            "Sicily",
+            "Etna",
+            "red"
+          ],
+          "grapes": {
+            "Nerello Mascalese": {
+              "summary": "Volcanic-site red grape producing elegant wines with higher acidity and lighter colour.",
+              "style": "Lighter colour, higher acidity, red fruit and mineral notes.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "Medium"
+              },
+              "aromas": [
+                "red cherry",
+                "floral",
+                "mineral"
+              ],
+              "viticulture": [
+                "Grown on volcanic slopes"
+              ],
+              "winemaking": [
+                "Often compared to Pinot Noir or Nebbiolo styles"
+              ],
+              "pairing": [
+                "roast lamb",
+                "grilled vegetables"
+              ],
+              "examTips": [
+                "Think Etna and higher elevation.",
+                "More elegant than Nero d’Avola."
+              ],
+              "tags": [
+                "red",
+                "volcanic",
+                "elegant",
+                "Italy",
+                "Sicily",
+                "Etna"
+              ],
+              "difficulty": 1,
+              "exampleWine": {
+                "name": "Benanti Etna Rosso DOC",
+                "producer": "Benanti",
+                "technicalSheetUrl": "https://www.benanti.it/wp-content/uploads/2020/12/BENANTI-Product-Profile-Etna-Rosso-2018.pdf"
+              }
+            }
+          },
+          "classification": "Etna DOC is Sicily's benchmark cooler-climate volcanic appellation, important for both red and white wines.",
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Altitude lowers temperature and can extend the growing season, helping preserve acidity and aroma.",
+            "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Growers often use elevation and harvest timing strategically to balance ripeness and freshness.",
+            "Site selection by elevation and harvest timing are major human choices in these vineyards."
+          ]
+        },
+        "marsala": {
+          "name": "Marsala",
+          "summary": "Western Sicilian fortified-wine appellation historically tied to Grillo and oxidative ageing styles.",
+          "climate": "Warm Mediterranean",
+          "styleSummary": "Fortified wines ranging from dry to sweet, often with nutty, caramel and citrus-peel complexity.",
+          "keyGrapes": [
+            "Grillo"
+          ],
+          "examTips": [
+            "Marsala is Sicily's classic fortified wine name.",
+            "Grillo is the white grape most strongly linked to quality Marsala."
+          ],
+          "tags": [
+            "Italy",
+            "Sicily",
+            "Marsala",
+            "fortified"
+          ],
+          "grapes": {
+            "Grillo": {
+              "summary": "Important Sicilian white grape used for both dry wines and classic Marsala production.",
+              "style": "Citrus, dried fruit and nutty complexity in fortified Marsala styles.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus peel",
+                "dried fruit",
+                "nuts",
+                "herbal"
+              ],
+              "viticulture": [
+                "Heat tolerant"
+              ],
+              "winemaking": [
+                "Can be made as dry table wine or used in fortified oxidative styles",
+                "Maturation strongly shapes final character"
+              ],
+              "pairing": [
+                "salted nuts",
+                "aged cheese",
+                "desserts"
+              ],
+              "examTips": [
+                "Historically important for Marsala as well as modern dry whites."
+              ],
+              "tags": [
+                "white",
+                "fortified",
+                "Mediterranean",
+                "Italy",
+                "Sicily",
+                "Marsala"
+              ],
+              "difficulty": 2,
+              "exampleWine": {
+                "name": "Florio Marsala",
+                "producer": "Cantine Florio",
+                "technicalSheetUrl": "https://cantineflorio.it/wp-content/uploads/2023/10/Florio_Marsala_ITA.pdf"
+              }
+            }
+          },
+          "classification": "Marsala DOC is the classic fortified appellation of western Sicily.",
+          "lawNotes": [
+            "Marsala may be dry or sweet and is defined more by maturation and sweetness than by a single simple style."
+          ],
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Choice of production method and maturation is a major human factor in shaping regional wine style."
+          ]
+        }
+      },
+      "classification": "Sicily spans the broad Sicilia DOC, the cooler volcanic Etna DOC and the historic fortified Marsala DOC.",
+      "lawNotes": [
+        "Etna is the key cooler volcanic appellation of Sicily.",
+        "Marsala remains the island's historic fortified wine name, while Grillo is also important for modern dry whites."
+      ],
       "vineyardFactors": [
         "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
         "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",

@@ -256,6 +256,11 @@
           ]
         }
       },
+      "classification": "Rias Baixas DO is the classic Atlantic Albarino appellation of north-west Spain, with Val do Salnes the benchmark sub-zone.",
+      "lawNotes": [
+        "Albarino is the key grape and is strongly linked to high-acid Atlantic white wines.",
+        "Atlantic humidity makes canopy management and disease control especially important."
+      ],
       "vineyardFactors": [
         "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
         "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
@@ -379,6 +384,11 @@
           "difficulty": 1
         }
       },
+      "classification": "Rueda DO is Spain's classic Verdejo appellation and also permits Sauvignon Blanc.",
+      "lawNotes": [
+        "Verdejo is the key grape to remember in Rueda.",
+        "Altitude and cool nights are essential for keeping freshness in this inland region."
+      ],
       "vineyardFactors": [
         "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
         "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
@@ -1044,6 +1054,10 @@
         }
       },
       "classification": "Ribera del Duero is a major Tempranillo-led DO known for structured oak-aged reds.",
+      "lawNotes": [
+        "Tempranillo is usually labeled locally as Tinto Fino or Tinta del País.",
+        "Ribera del Duero generally gives fuller, firmer wines than classic Rioja."
+      ],
       "vineyardFactors": [
         "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
         "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
@@ -1170,6 +1184,11 @@
           "difficulty": 2
         }
       },
+      "classification": "Priorat is one of Spain's two highest-ranked appellations and is known in Catalonia as DOQ Priorat.",
+      "lawNotes": [
+        "Llicorella slate soils and old vines are key quality and style clues.",
+        "Garnacha and Carinena are the classic grapes to connect with Priorat."
+      ],
       "vineyardFactors": [
         "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
         "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
@@ -1289,6 +1308,11 @@
           "difficulty": 1
         }
       },
+      "classification": "Navarra DO is a broad region whose reputation historically included rosado as well as red and some white wines.",
+      "lawNotes": [
+        "Navarra spans cooler northern influence and warmer southern conditions.",
+        "Garnacha is especially important for traditional Navarra rosado."
+      ],
       "vineyardFactors": [
         "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
         "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
@@ -1407,6 +1431,11 @@
           "difficulty": 1
         }
       },
+      "classification": "Catalunya is a broad DO that overlaps with more specific Catalan appellations such as Penedes and Priorat.",
+      "lawNotes": [
+        "Catalunya is useful mainly as a broad still-wine context rather than a single tightly defined classic style.",
+        "Macabeo is a useful anchor grape because it matters in both still wines and sparkling production."
+      ],
       "vineyardFactors": [
         "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
         "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
@@ -1519,6 +1548,11 @@
           "difficulty": 2
         }
       },
+      "classification": "La Mancha DO is Spain's largest vineyard area and a key source of volume wine as well as improving quality examples.",
+      "lawNotes": [
+        "Airen is historically important for understanding Spain's large-scale white-wine production.",
+        "Altitude helps moderate La Mancha's otherwise hot dry inland climate."
+      ],
       "vineyardFactors": [
         "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
         "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
@@ -1601,6 +1635,11 @@
           "difficulty": 1
         }
       },
+      "classification": "Jumilla DO is best known for Monastrell grown in hot dry inland conditions with some altitude moderation.",
+      "lawNotes": [
+        "Monastrell is the key grape to connect with Jumilla.",
+        "Very low rainfall and drought pressure are central study themes here."
+      ],
       "vineyardFactors": [
         "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
         "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
@@ -1678,6 +1717,11 @@
           "difficulty": 1
         }
       },
+      "classification": "Valencia DO is a broad Mediterranean appellation that includes both coastal and warmer inland vineyard zones.",
+      "lawNotes": [
+        "Valencia is more of a diverse regional context than a single tightly defined classic style.",
+        "Coastal moderation and warmer inland conditions are both relevant to understanding the region."
+      ],
       "vineyardFactors": [
         "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
         "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",

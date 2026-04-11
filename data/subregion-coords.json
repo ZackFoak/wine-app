@@ -210,6 +210,82 @@
         10.54
       ]
     },
+    "marche": {
+      "verdicchio-dei-castelli-di-jesi": [
+        43.523,
+        13.244
+      ],
+      "verdicchio-di-matelica": [
+        43.282,
+        13
+      ]
+    },
+    "umbria": {
+      "orvieto": [
+        42.719,
+        12.109
+      ],
+      "montefalco": [
+        42.892,
+        12.65
+      ]
+    },
+    "lazio": {
+      "frascati": [
+        41.808,
+        12.68
+      ]
+    },
+    "abruzzo": {
+      "montepulciano-dabruzzo": [
+        42.345,
+        14.166
+      ],
+      "trebbiano-dabruzzo": [
+        42.47,
+        14.206
+      ]
+    },
+    "campania": {
+      "taurasi": [
+        41.008,
+        14.957
+      ],
+      "fiano-di-avellino": [
+        40.981,
+        14.946
+      ],
+      "greco-di-tufo": [
+        41.01,
+        14.823
+      ]
+    },
+    "puglia": {
+      "primitivo-di-manduria": [
+        40.402,
+        17.634
+      ],
+      "salice-salentino": [
+        40.386,
+        17.964
+      ]
+    },
+    "basilicata": {
+      "aglianico-del-vulture": [
+        40.926,
+        15.669
+      ]
+    },
+    "sicily": {
+      "etna": [
+        37.749,
+        14.967
+      ],
+      "marsala": [
+        37.798,
+        12.434
+      ]
+    },
     "piemonte": {
       "barolo": [
         44.61,
