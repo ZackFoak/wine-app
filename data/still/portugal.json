@@ -4,7 +4,8 @@
   "examTips": [
     "Portugal relies heavily on indigenous grape varieties.",
     "Atlantic vs inland climate is the key concept.",
-    "Douro is important for both dry wines and Port."
+    "Douro is important for both dry wines and Port.",
+    "Madeira is the other key fortified wine name to remember, while Bairrada is a useful Atlantic Baga and sparkling anchor."
   ],
   "tags": [
     "Portugal",
@@ -12,7 +13,8 @@
     "Atlantic",
     "Douro",
     "diversity",
-    "fortified"
+    "fortified",
+    "Madeira"
   ],
   "difficulty": 1,
   "regions": {
@@ -1085,6 +1087,715 @@
         "Growers rely on site selection and exposure to exploit shelter and reduce climatic risk."
       ]
     },
+    "bairrada": {
+      "name": "Bairrada",
+      "summary": "Atlantic-influenced central Portuguese region known for high-acid Baga reds and important sparkling wine production.",
+      "climate": "Moderate Maritime",
+      "styleSummary": "Firm high-acid reds from Baga plus fresh traditional-method sparkling wines and some textural whites.",
+      "mitigating": [
+        "Atlantic influence",
+        "humidity",
+        "limestone-clay soils",
+        "site selection"
+      ],
+      "keyGrapes": [
+        "Baga",
+        "Bical"
+      ],
+      "examTips": [
+        "Bairrada is the classic Baga region to remember.",
+        "Baga gives high acidity and tannin.",
+        "Sparkling wine is an important second identity here."
+      ],
+      "tags": [
+        "Portugal",
+        "Bairrada",
+        "Atlantic",
+        "sparkling",
+        "Baga"
+      ],
+      "difficulty": 1,
+      "grapes": {
+        "Baga": {
+          "summary": "Late-ripening Portuguese red grape producing deeply colored, high-acid, high-tannin wines that can age well.",
+          "style": "Sour cherry, black plum, earth and firm tannin with high acidity.",
+          "aliases": [],
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Medium to Full",
+            "tannin": "High"
+          },
+          "aromas": [
+            "red cherry",
+            "black plum",
+            "violet",
+            "earth"
+          ],
+          "viticulture": [
+            "Late ripening and best on well-exposed sites",
+            "Humidity can increase disease pressure"
+          ],
+          "winemaking": [
+            "Can be austere when young if extraction is high",
+            "Also used for sparkling rose base wines"
+          ],
+          "pairing": [
+            "roast pork",
+            "duck",
+            "aged cheese"
+          ],
+          "examTips": [
+            "Think high acidity and tannin rather than soft fruity easy-drinking red.",
+            "Atlantic climate helps preserve freshness."
+          ],
+          "tags": [
+            "red",
+            "high-acid",
+            "high-tannin",
+            "Portugal",
+            "Bairrada"
+          ],
+          "difficulty": 1
+        },
+        "Bical": {
+          "summary": "Traditional white grape of Bairrada giving citrus, stone fruit and mineral notes with good acidity.",
+          "style": "Fresh medium-bodied white with citrus, stone fruit and mineral detail.",
+          "aliases": [],
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "aromas": [
+            "citrus",
+            "peach",
+            "apple",
+            "mineral"
+          ],
+          "viticulture": [
+            "Performs well in Atlantic-influenced sites",
+            "Can retain freshness even in warmer vintages"
+          ],
+          "winemaking": [
+            "Used in both still and sparkling wines",
+            "Lees ageing can add texture"
+          ],
+          "pairing": [
+            "shellfish",
+            "grilled fish",
+            "light poultry"
+          ],
+          "examTips": [
+            "Bical is useful to know as a Bairrada white and sparkling component."
+          ],
+          "tags": [
+            "white",
+            "fresh",
+            "Portugal",
+            "Bairrada"
+          ],
+          "difficulty": 2
+        }
+      },
+      "styles": {
+        "bairrada-espumante": {
+          "name": "Bairrada Espumante",
+          "style": "Traditional-method sparkling wine with citrus, apple and brisk acidity.",
+          "aging": "Bottle-fermented with lees ageing, usually focused on freshness and definition",
+          "keyPoint": "Bairrada is one of Portugal's key sparkling wine zones."
+        }
+      },
+      "classification": "Bairrada DOC is the classic Atlantic Baga and sparkling wine appellation of central Portugal.",
+      "lawNotes": [
+        "Bairrada is important for both Baga reds and traditional-method sparkling wine."
+      ],
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+        "Rainfall and humidity raise disease pressure and can make ripening more variable.",
+        "Soil type influences drainage, heat retention, and vine vigor, shaping the style and consistency of the wines."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Disease control and canopy management are often important human factors in maritime climates.",
+        "Choice of production method and extraction level is a major human factor in regional wine style.",
+        "Matching grape variety and site is important in this mixed still-and-sparkling region."
+      ]
+    },
+    "lisboa": {
+      "name": "Lisboa",
+      "summary": "Broad Atlantic coastal region west and north of Lisbon producing fresh whites and balanced reds from many DOC areas.",
+      "climate": "Moderate Maritime",
+      "styleSummary": "Fresh high-acid whites and moderate-bodied reds shaped by Atlantic breezes and strong regional variation.",
+      "mitigating": [
+        "Atlantic influence",
+        "sea breezes",
+        "elevation",
+        "site variation"
+      ],
+      "keyGrapes": [
+        "Arinto",
+        "Castelao",
+        "Ramisco"
+      ],
+      "examTips": [
+        "Think Atlantic freshness rather than hot inland power.",
+        "Bucelas is the classic Arinto appellation.",
+        "Colares is the famous sandy-coastal home of Ramisco."
+      ],
+      "tags": [
+        "Portugal",
+        "Lisboa",
+        "Atlantic",
+        "white",
+        "red"
+      ],
+      "difficulty": 1,
+      "grapes": {
+        "Arinto": {
+          "summary": "High-acid Portuguese white grape producing citrus-driven wines with strong freshness and aging potential.",
+          "style": "Lemon, apple and mineral notes with high acidity and a dry finish.",
+          "aliases": [
+            "Pederna"
+          ],
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "aromas": [
+            "lemon",
+            "apple",
+            "mineral",
+            "citrus peel"
+          ],
+          "viticulture": [
+            "Retains acidity well in warm climates",
+            "Useful in coastal regions where freshness is prized"
+          ],
+          "winemaking": [
+            "Usually made in dry fresh styles",
+            "Lees ageing or oak can add texture in richer examples"
+          ],
+          "pairing": [
+            "shellfish",
+            "grilled fish",
+            "goat cheese"
+          ],
+          "examTips": [
+            "Arinto is one of Portugal's most reliable high-acid white grapes."
+          ],
+          "tags": [
+            "white",
+            "high-acid",
+            "Portugal",
+            "Lisboa"
+          ],
+          "difficulty": 1
+        },
+        "Castelao": {
+          "summary": "Traditional Portuguese red grape producing medium-bodied wines with red fruit, herbs and moderate tannin.",
+          "style": "Red cherry, plum, dried herbs and medium body with moderate tannin.",
+          "aliases": [
+            "Periquita"
+          ],
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "Medium"
+          },
+          "aromas": [
+            "red cherry",
+            "plum",
+            "dried herbs",
+            "spice"
+          ],
+          "viticulture": [
+            "Performs well in sandy or warmer coastal sites",
+            "Can ripen unevenly if sites are too cool"
+          ],
+          "winemaking": [
+            "Often blended but can make varietal wines",
+            "Oak can add structure and spice"
+          ],
+          "pairing": [
+            "grilled pork",
+            "sausages",
+            "tomato-based dishes"
+          ],
+          "examTips": [
+            "Castelao is a useful grape to connect with coastal southern Portuguese reds."
+          ],
+          "tags": [
+            "red",
+            "Portugal",
+            "Lisboa"
+          ],
+          "difficulty": 1
+        }
+      },
+      "subregions": {
+        "bucelas": {
+          "name": "Bucelas",
+          "summary": "Classic white appellation north of Lisbon best known for high-acid Arinto.",
+          "climate": "Moderate Maritime [inland shelter]",
+          "styleSummary": "Fresh dry whites with lemon, apple, mineral notes and high acidity.",
+          "keyGrapes": [
+            "Arinto"
+          ],
+          "examTips": [
+            "Bucelas is the Arinto appellation to remember in Lisboa.",
+            "High acidity is the key style clue."
+          ],
+          "tags": [
+            "Portugal",
+            "Lisboa",
+            "Bucelas",
+            "white"
+          ],
+          "grapes": {
+            "Arinto": {
+              "summary": "High-acid Portuguese white grape producing citrus-driven wines with strong freshness and aging potential.",
+              "style": "Lemon, apple and mineral notes with high acidity and a dry finish.",
+              "aliases": [
+                "Pederna"
+              ],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "lemon",
+                "apple",
+                "mineral",
+                "citrus peel"
+              ],
+              "viticulture": [
+                "Retains acidity well in warm climates",
+                "Useful in coastal regions where freshness is prized"
+              ],
+              "winemaking": [
+                "Usually made in dry fresh styles",
+                "Lees ageing or oak can add texture in richer examples"
+              ],
+              "pairing": [
+                "shellfish",
+                "grilled fish",
+                "goat cheese"
+              ],
+              "examTips": [
+                "Arinto is one of Portugal's most reliable high-acid white grapes."
+              ],
+              "tags": [
+                "white",
+                "high-acid",
+                "Portugal",
+                "Lisboa",
+                "Bucelas"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Bucelas DOC is Lisboa's best-known white appellation and is strongly associated with Arinto.",
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Harvest timing and yield control are important in shaping precision and intensity."
+          ]
+        },
+        "colares": {
+          "name": "Colares",
+          "summary": "Historic Atlantic coastal appellation on sandy soils, best known for long-lived Ramisco reds from ungrafted vines.",
+          "climate": "Moderate Maritime [strong Atlantic influence]",
+          "styleSummary": "Pale to medium-coloured reds with high acidity, firm tannin and savory longevity.",
+          "keyGrapes": [
+            "Ramisco"
+          ],
+          "examTips": [
+            "Think sand, Atlantic winds and ungrafted vines.",
+            "Ramisco gives surprisingly high acidity and tannin."
+          ],
+          "tags": [
+            "Portugal",
+            "Lisboa",
+            "Colares",
+            "red"
+          ],
+          "grapes": {
+            "Ramisco": {
+              "summary": "Rare Portuguese red grape of Colares producing pale, very high-acid, tannic wines with notable aging potential.",
+              "style": "Sour red fruit, herbal, saline and savory with high acidity and firm tannin.",
+              "aliases": [],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "High"
+              },
+              "aromas": [
+                "red currant",
+                "sour cherry",
+                "dried herbs",
+                "saline"
+              ],
+              "viticulture": [
+                "Traditionally grown in deep coastal sand",
+                "Atlantic exposure slows ripening and preserves acidity"
+              ],
+              "winemaking": [
+                "Often needs time to soften",
+                "Long maturation can reveal notable complexity"
+              ],
+              "pairing": [
+                "roast lamb",
+                "game birds",
+                "aged cheese"
+              ],
+              "examTips": [
+                "Colares is one of Portugal's most distinctive niche appellations.",
+                "Do not expect ripe plush fruit."
+              ],
+              "tags": [
+                "red",
+                "high-acid",
+                "high-tannin",
+                "Portugal",
+                "Lisboa",
+                "Colares"
+              ],
+              "difficulty": 2
+            }
+          },
+          "classification": "Colares DOC is a famous Atlantic coastal appellation associated with sandy soils and Ramisco.",
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+            "Wind can cool vineyards and reduce fungal disease pressure, but can also affect vigor and fruit set.",
+            "Soil type influences drainage, heat retention, and vine vigor, shaping the style and consistency of the wines."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Training systems, row orientation, and site protection matter where wind is a major factor.",
+            "Preserving old ungrafted vineyards is a major human factor behind the region's identity."
+          ]
+        }
+      },
+      "classification": "Lisboa includes many DOCs, with Bucelas and Colares the two classic study anchors.",
+      "lawNotes": [
+        "Bucelas is associated with Arinto.",
+        "Colares is the famous sandy coastal home of Ramisco."
+      ],
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+        "Site variation creates a wide range of mesoclimates and styles."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Disease control and canopy management are often important human factors in maritime climates.",
+        "Matching grape variety to the right coastal or inland site is critical in such a varied region.",
+        "Training systems and site protection matter where Atlantic wind is a major factor."
+      ]
+    },
+    "setubal": {
+      "name": "Setubal",
+      "summary": "Warm maritime region south of Lisbon known for aromatic Moscatel fortified wines and Castelao-based reds from Palmela.",
+      "climate": "Warm Mediterranean [maritime influence]",
+      "styleSummary": "Sweet aromatic fortified wines plus ripe but balanced reds from sandy peninsula vineyards.",
+      "mitigating": [
+        "sea breezes",
+        "sandier soils",
+        "Arrabida shelter",
+        "maritime influence"
+      ],
+      "keyGrapes": [
+        "Moscatel de Alexandria",
+        "Castelao"
+      ],
+      "examTips": [
+        "Moscatel de Setubal is the key fortified wine to remember here.",
+        "Palmela is the red appellation linked to Castelao."
+      ],
+      "tags": [
+        "Portugal",
+        "Setubal",
+        "fortified",
+        "Moscatel",
+        "Castelao"
+      ],
+      "difficulty": 1,
+      "grapes": {
+        "Moscatel de Alexandria": {
+          "summary": "Highly aromatic Muscat grape producing sweet fortified wines with floral, grapey and citrus-peel character.",
+          "style": "Orange blossom, grape, citrus peel and raisin notes in sweet fortified wines.",
+          "aliases": [
+            "Muscat of Alexandria"
+          ],
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "High",
+            "body": "Full",
+            "tannin": "-"
+          },
+          "aromas": [
+            "orange blossom",
+            "grape",
+            "citrus peel",
+            "raisin"
+          ],
+          "viticulture": [
+            "Well suited to warm sunny climates",
+            "Can reach high sugar levels while retaining aromatic intensity"
+          ],
+          "winemaking": [
+            "Used for sweet fortified wines",
+            "Maturation adds honeyed and nutty complexity"
+          ],
+          "pairing": [
+            "almond desserts",
+            "blue cheese",
+            "fruit tart"
+          ],
+          "examTips": [
+            "Think grapey aromatics and sweetness balanced by spirit and flavor intensity."
+          ],
+          "tags": [
+            "white",
+            "fortified",
+            "Portugal",
+            "Setubal"
+          ],
+          "difficulty": 1
+        },
+        "Castelao": {
+          "summary": "Traditional Portuguese red grape producing medium-bodied wines with red fruit, herbs and moderate tannin.",
+          "style": "Red cherry, plum, dried herbs and medium body with moderate tannin.",
+          "aliases": [
+            "Periquita"
+          ],
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "Medium"
+          },
+          "aromas": [
+            "red cherry",
+            "plum",
+            "dried herbs",
+            "spice"
+          ],
+          "viticulture": [
+            "Performs well in sandy or warmer coastal sites",
+            "Can handle dry warm conditions"
+          ],
+          "winemaking": [
+            "Often blended but can make varietal wines",
+            "Oak can add structure and spice"
+          ],
+          "pairing": [
+            "grilled pork",
+            "sausages",
+            "charcoal-grilled meats"
+          ],
+          "examTips": [
+            "Palmela is the key appellation to connect with Castelao."
+          ],
+          "tags": [
+            "red",
+            "Portugal",
+            "Setubal"
+          ],
+          "difficulty": 1
+        }
+      },
+      "styles": {
+        "moscatel-de-setubal": {
+          "name": "Moscatel de Setubal",
+          "style": "Sweet aromatic fortified wine with orange blossom, grape, citrus peel and honeyed spice.",
+          "aging": "Fortified sweet wine often matured to gain nutty and dried-fruit complexity",
+          "keyPoint": "Aromatic Muscat character is the signature clue."
+        }
+      },
+      "subregions": {
+        "moscatel-de-setubal": {
+          "name": "Moscatel de Setubal",
+          "summary": "Classic fortified-wine appellation for intensely aromatic sweet wines from Moscatel de Alexandria.",
+          "climate": "Warm Mediterranean [maritime influence]",
+          "styleSummary": "Sweet aromatic fortified wines with floral, raisined and citrus-peel complexity.",
+          "keyGrapes": [
+            "Moscatel de Alexandria"
+          ],
+          "examTips": [
+            "This is the fortified Muscat appellation to remember in Portugal beyond Port and Madeira."
+          ],
+          "tags": [
+            "Portugal",
+            "Setubal",
+            "Moscatel de Setubal",
+            "fortified"
+          ],
+          "grapes": {
+            "Moscatel de Alexandria": {
+              "summary": "Highly aromatic Muscat grape producing sweet fortified wines with floral, grapey and citrus-peel character.",
+              "style": "Orange blossom, grape, citrus peel and raisin notes in sweet fortified wines.",
+              "aliases": [
+                "Muscat of Alexandria"
+              ],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "High",
+                "body": "Full",
+                "tannin": "-"
+              },
+              "aromas": [
+                "orange blossom",
+                "grape",
+                "citrus peel",
+                "raisin"
+              ],
+              "viticulture": [
+                "Well suited to warm sunny climates",
+                "Can reach high sugar levels while retaining aromatic intensity"
+              ],
+              "winemaking": [
+                "Used for sweet fortified wines",
+                "Maturation adds honeyed and nutty complexity"
+              ],
+              "pairing": [
+                "almond desserts",
+                "blue cheese",
+                "fruit tart"
+              ],
+              "examTips": [
+                "Think grapey aromatics and sweetness balanced by spirit and flavor intensity."
+              ],
+              "tags": [
+                "white",
+                "fortified",
+                "Portugal",
+                "Setubal",
+                "Moscatel de Setubal"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Moscatel de Setubal DOC is the peninsula's hallmark fortified appellation.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Choice of fortification and maturation is a major human factor in final style."
+          ]
+        },
+        "palmela": {
+          "name": "Palmela",
+          "summary": "Red appellation of the Setubal peninsula best known for Castelao grown on sandy soils.",
+          "climate": "Warm Mediterranean [maritime influence]",
+          "styleSummary": "Medium-bodied reds with red fruit, herbs and moderate tannin.",
+          "keyGrapes": [
+            "Castelao"
+          ],
+          "examTips": [
+            "Palmela is the Castelao red anchor within Setubal."
+          ],
+          "tags": [
+            "Portugal",
+            "Setubal",
+            "Palmela",
+            "red"
+          ],
+          "grapes": {
+            "Castelao": {
+              "summary": "Traditional Portuguese red grape producing medium-bodied wines with red fruit, herbs and moderate tannin.",
+              "style": "Red cherry, plum, dried herbs and medium body with moderate tannin.",
+              "aliases": [
+                "Periquita"
+              ],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "Medium"
+              },
+              "aromas": [
+                "red cherry",
+                "plum",
+                "dried herbs",
+                "spice"
+              ],
+              "viticulture": [
+                "Performs well in sandy or warmer coastal sites",
+                "Can handle dry warm conditions"
+              ],
+              "winemaking": [
+                "Often blended but can make varietal wines",
+                "Oak can add structure and spice"
+              ],
+              "pairing": [
+                "grilled pork",
+                "sausages",
+                "charcoal-grilled meats"
+              ],
+              "examTips": [
+                "Palmela is the key appellation to connect with Castelao."
+              ],
+              "tags": [
+                "red",
+                "Portugal",
+                "Setubal",
+                "Palmela"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Palmela DOC is the main Castelao-based red appellation of the Setubal peninsula.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Soil type influences drainage, heat retention, and vine vigor, shaping the style and consistency of the wines."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Matching grape variety to the peninsula's sandy sites is a major quality factor."
+          ]
+        }
+      },
+      "classification": "Setubal combines the fortified Moscatel de Setubal DOC with Palmela DOC for Castelão-based reds.",
+      "lawNotes": [
+        "Moscatel de Setubal is one of Portugal's classic aromatic fortified wines.",
+        "Palmela is the red appellation most closely tied to Castelao."
+      ],
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+        "Soil type influences drainage, heat retention, and vine vigor, shaping the style and consistency of the wines."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Choice of fortification, sweetness and maturation is a major human factor in regional wine style.",
+        "Matching grape variety to site is important across the peninsula's contrasting fortified and still styles."
+      ]
+    },
     "alentejo": {
       "name": "Alentejo",
       "summary": "Hot southern region producing ripe, fruit-forward wines.",
@@ -1181,6 +1892,250 @@
         "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
         "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
         "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+      ]
+    },
+    "madeira": {
+      "name": "Madeira",
+      "summary": "Atlantic volcanic island producing long-lived fortified wines with striking acidity and styles ranging from dry to very sweet.",
+      "climate": "Warm Maritime [subtropical and altitude influence]",
+      "styleSummary": "Fortified wines with high acidity, oxidative complexity and sweetness levels from dry Sercial to rich Malmsey.",
+      "mitigating": [
+        "altitude",
+        "ocean influence",
+        "steep slopes",
+        "diurnal range"
+      ],
+      "keyGrapes": [
+        "Sercial",
+        "Verdelho",
+        "Bual",
+        "Malvasia"
+      ],
+      "examTips": [
+        "Madeira combines high acidity with fortification and oxidative ageing.",
+        "Know the sweetness ladder: Sercial, Verdelho, Bual, Malmsey.",
+        "Estufagem and canteiro are the key maturation methods."
+      ],
+      "tags": [
+        "Portugal",
+        "Madeira",
+        "fortified",
+        "oxidative",
+        "island"
+      ],
+      "difficulty": 1,
+      "grapes": {
+        "Sercial": {
+          "summary": "Classic Madeira grape for the driest style, combining citrus, nuts and very high acidity.",
+          "style": "Dry fortified wine with citrus peel, walnut and smoky oxidative complexity.",
+          "aliases": [],
+          "profile": {
+            "acidity": "High",
+            "alcohol": "High",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "aromas": [
+            "citrus peel",
+            "walnut",
+            "smoke",
+            "salted almond"
+          ],
+          "viticulture": [
+            "Often planted at higher elevations",
+            "Ripens later and retains acidity strongly"
+          ],
+          "winemaking": [
+            "Fortified and deliberately heated or oxidatively matured",
+            "Usually made in the driest classical style"
+          ],
+          "pairing": [
+            "salted nuts",
+            "soup",
+            "hard cheese"
+          ],
+          "examTips": [
+            "Sercial is the driest classical Madeira style."
+          ],
+          "tags": [
+            "white",
+            "fortified",
+            "dry",
+            "Portugal",
+            "Madeira"
+          ],
+          "difficulty": 1
+        },
+        "Verdelho": {
+          "summary": "Madeira grape associated with medium-dry styles showing citrus, dried fruit and smoky complexity.",
+          "style": "Medium-dry fortified wine with citrus peel, dried fruit and nutty oxidative notes.",
+          "aliases": [],
+          "profile": {
+            "acidity": "High",
+            "alcohol": "High",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "aromas": [
+            "orange peel",
+            "dried apricot",
+            "nuts",
+            "smoke"
+          ],
+          "viticulture": [
+            "Suited to warm island conditions while retaining acidity",
+            "Often planted in intermediate elevations"
+          ],
+          "winemaking": [
+            "Fortified and matured oxidatively",
+            "Usually associated with medium-dry Madeira"
+          ],
+          "pairing": [
+            "charcuterie",
+            "mushroom dishes",
+            "hard cheese"
+          ],
+          "examTips": [
+            "Verdelho sits between dry Sercial and sweeter Bual."
+          ],
+          "tags": [
+            "white",
+            "fortified",
+            "medium-dry",
+            "Portugal",
+            "Madeira"
+          ],
+          "difficulty": 1
+        },
+        "Bual": {
+          "summary": "Madeira grape for medium-sweet styles, combining caramelized richness with balancing acidity.",
+          "style": "Medium-sweet fortified wine with toffee, dried fig, coffee and citrus-peel lift.",
+          "aliases": [
+            "Boal"
+          ],
+          "profile": {
+            "acidity": "High",
+            "alcohol": "High",
+            "body": "Full",
+            "tannin": "-"
+          },
+          "aromas": [
+            "toffee",
+            "dried fig",
+            "coffee",
+            "orange peel"
+          ],
+          "viticulture": [
+            "Can achieve fuller ripeness while retaining fresh structure",
+            "Often planted in warmer sites than Sercial"
+          ],
+          "winemaking": [
+            "Fortified and oxidatively matured",
+            "Usually associated with medium-sweet Madeira"
+          ],
+          "pairing": [
+            "blue cheese",
+            "pecan tart",
+            "roast nuts"
+          ],
+          "examTips": [
+            "Bual is richer and sweeter than Verdelho, but not as sweet as Malmsey."
+          ],
+          "tags": [
+            "white",
+            "fortified",
+            "medium-sweet",
+            "Portugal",
+            "Madeira"
+          ],
+          "difficulty": 1
+        },
+        "Malvasia": {
+          "summary": "Classic Madeira grape for the richest sweetest Malmsey styles, with raisined fruit and caramel complexity.",
+          "style": "Sweet fortified wine with raisin, toffee, molasses and citrus-peel lift.",
+          "aliases": [
+            "Malmsey"
+          ],
+          "profile": {
+            "acidity": "High",
+            "alcohol": "High",
+            "body": "Full",
+            "tannin": "-"
+          },
+          "aromas": [
+            "raisin",
+            "toffee",
+            "molasses",
+            "orange peel"
+          ],
+          "viticulture": [
+            "Usually grown in warmer lower sites",
+            "Achieves high sugar ripeness"
+          ],
+          "winemaking": [
+            "Fortified and matured oxidatively",
+            "Associated with the sweetest classical Madeira style"
+          ],
+          "pairing": [
+            "sticky toffee pudding",
+            "blue cheese",
+            "dark chocolate desserts"
+          ],
+          "examTips": [
+            "Malmsey is the sweetest classical Madeira category."
+          ],
+          "tags": [
+            "white",
+            "fortified",
+            "sweet",
+            "Portugal",
+            "Madeira"
+          ],
+          "difficulty": 1
+        }
+      },
+      "styles": {
+        "sercial-madeira": {
+          "name": "Sercial Madeira",
+          "style": "Dry fortified Madeira with citrus peel, nuts and smoky oxidative complexity.",
+          "aging": "Usually matured oxidatively, often by canteiro in better wines",
+          "keyPoint": "Driest classical Madeira style."
+        },
+        "verdelho-madeira": {
+          "name": "Verdelho Madeira",
+          "style": "Medium-dry Madeira with dried fruit, citrus peel and nutty complexity.",
+          "aging": "Oxidative maturation with heat exposure shaping the final style",
+          "keyPoint": "Medium-dry point on the classical sweetness scale."
+        },
+        "bual-madeira": {
+          "name": "Bual Madeira",
+          "style": "Medium-sweet Madeira with toffee, dried fig and citrus-peel lift.",
+          "aging": "Oxidative ageing and heat build caramelized complexity",
+          "keyPoint": "Richer than Verdelho but not the sweetest style."
+        },
+        "malmsey-madeira": {
+          "name": "Malmsey Madeira",
+          "style": "Sweet rich Madeira with raisin, molasses, coffee and vibrant acidity.",
+          "aging": "Long oxidative maturation creates concentration and exceptional stability",
+          "keyPoint": "Sweetest classical Madeira category."
+        }
+      },
+      "classification": "Madeira DOC is Portugal's classic Atlantic island fortified wine appellation.",
+      "lawNotes": [
+        "Estufagem uses heat treatment, while canteiro is the slower traditional ageing method for better wines.",
+        "Madeira's high acidity is the key to balance across dry and sweet styles."
+      ],
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Maritime influence can increase humidity, rainfall, and vintage variation while helping moderate temperature extremes.",
+        "Altitude lowers temperature and can extend the growing season, helping preserve acidity and aroma.",
+        "Terraces and steep slopes make exposure and mesoclimate especially important."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Disease control and canopy management are often important human factors in maritime climates.",
+        "Choice of fortification and maturation method is the defining human factor in Madeira style.",
+        "Terracing, manual work, and careful site matching become more important on steep or exposed slopes."
       ]
     }
   }

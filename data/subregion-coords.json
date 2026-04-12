@@ -304,6 +304,44 @@
         8.81
       ]
     },
+    "lombardy": {
+      "franciacorta": [
+        45.655,
+        10.043
+      ],
+      "valtellina": [
+        46.169,
+        9.87
+      ],
+      "lugana": [
+        45.452,
+        10.662
+      ]
+    },
+    "emilia-romagna": {
+      "lambrusco-di-sorbara": [
+        44.736,
+        10.93
+      ],
+      "romagna-sangiovese": [
+        44.223,
+        12.041
+      ],
+      "albana-di-romagna": [
+        44.121,
+        11.953
+      ]
+    },
+    "sardinia": {
+      "vermentino-di-gallura": [
+        41.101,
+        9.229
+      ],
+      "cannonau-di-sardegna": [
+        40.322,
+        9.331
+      ]
+    },
     "trentino-alto-adige": {
       "alto-adige": [
         46.5,
@@ -454,6 +492,26 @@
       "serra-da-estrela": [
         40.37,
         -7.61
+      ]
+    },
+    "lisboa": {
+      "bucelas": [
+        38.9,
+        -9.12
+      ],
+      "colares": [
+        38.8,
+        -9.45
+      ]
+    },
+    "setubal": {
+      "moscatel-de-setubal": [
+        38.53,
+        -8.89
+      ],
+      "palmela": [
+        38.57,
+        -8.9
       ]
     }
   },

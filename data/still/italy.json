@@ -5313,12 +5313,1238 @@
         "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
         "Choice of production method and maturation is a major human factor in shaping regional wine style."
       ]
+    },
+    "lombardy": {
+      "name": "Lombardy",
+      "summary": "Northern Italian region important for traditional-method Franciacorta, alpine Nebbiolo from Valtellina and fresh lake-influenced whites such as Lugana.",
+      "climate": "Moderate Continental [Alpine and lake influence]",
+      "styleSummary": "Traditional-method sparkling wine, elegant alpine reds and fresh lake-moderated whites.",
+      "mitigating": [
+        "Alpine influence",
+        "lake moderation",
+        "altitude",
+        "slope aspect"
+      ],
+      "keyGrapes": [
+        "Chardonnay",
+        "Pinot Nero",
+        "Nebbiolo",
+        "Turbiana"
+      ],
+      "examTips": [
+        "Franciacorta is Italy's key traditional-method sparkling benchmark.",
+        "Valtellina is alpine Nebbiolo, where Nebbiolo is known locally as Chiavennasca.",
+        "Lugana is the lake-influenced white appellation to connect with Turbiana."
+      ],
+      "tags": [
+        "Italy",
+        "Lombardy",
+        "sparkling",
+        "Alpine",
+        "lake-influence"
+      ],
+      "difficulty": 1,
+      "grapes": {
+        "Chardonnay": {
+          "summary": "Important Franciacorta grape providing citrus, apple and structure to Lombardy's sparkling wines.",
+          "style": "Fresh citrus and orchard-fruit base wines, gaining brioche complexity after lees ageing.",
+          "aliases": [],
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "aromas": [
+            "citrus",
+            "apple",
+            "stone fruit",
+            "brioche"
+          ],
+          "viticulture": [
+            "Ripens reliably in lake-moderated sites",
+            "Important base-wine grape for Franciacorta"
+          ],
+          "winemaking": [
+            "Often blended for traditional-method sparkling wine",
+            "Lees ageing adds autolytic complexity in finished wines"
+          ],
+          "pairing": [
+            "fried seafood",
+            "hard cheese",
+            "roast chicken"
+          ],
+          "examTips": [
+            "In Lombardy, think Franciacorta rather than rich still Chardonnay."
+          ],
+          "tags": [
+            "white",
+            "sparkling",
+            "traditional-method",
+            "Italy",
+            "Lombardy"
+          ],
+          "difficulty": 1
+        },
+        "Pinot Nero": {
+          "summary": "Key black grape in Franciacorta blends, adding structure, body and red-fruit nuance.",
+          "style": "Fine-boned sparkling base wines with citrus, red berry and autolytic complexity in bottle-aged styles.",
+          "aliases": [
+            "Pinot Noir"
+          ],
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "Low"
+          },
+          "aromas": [
+            "red apple",
+            "strawberry",
+            "citrus",
+            "brioche"
+          ],
+          "viticulture": [
+            "Performs well in cooler or moderated sites",
+            "Important for both structure and rosé styles"
+          ],
+          "winemaking": [
+            "Used in traditional-method sparkling blends",
+            "Can add color and body in rosé Franciacorta"
+          ],
+          "pairing": [
+            "charcuterie",
+            "smoked salmon",
+            "mushroom dishes"
+          ],
+          "examTips": [
+            "In Lombardy, Pinot Nero is most useful to remember through Franciacorta."
+          ],
+          "tags": [
+            "red",
+            "sparkling",
+            "Italy",
+            "Lombardy"
+          ],
+          "difficulty": 1
+        },
+        "Nebbiolo": {
+          "summary": "Classic northern Italian grape giving pale color, high acidity and firm tannin, here in a cooler alpine expression.",
+          "style": "Pale to medium ruby reds with red cherry, rose, dried herbs and marked acidity and tannin.",
+          "aliases": [
+            "Chiavennasca"
+          ],
+          "profile": {
+            "acidity": "High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "High"
+          },
+          "aromas": [
+            "red cherry",
+            "rose",
+            "dried herbs",
+            "tar"
+          ],
+          "viticulture": [
+            "Late ripening and best on well-exposed slopes",
+            "Altitude can make ripening more marginal"
+          ],
+          "winemaking": [
+            "Often matured to tame tannin and add savory complexity",
+            "Drying can be used for Sforzato styles"
+          ],
+          "pairing": [
+            "braised beef",
+            "game",
+            "aged hard cheese"
+          ],
+          "examTips": [
+            "Valtellina is the alpine Nebbiolo reference point.",
+            "Remember the local synonym Chiavennasca."
+          ],
+          "tags": [
+            "red",
+            "high-acid",
+            "high-tannin",
+            "Alpine",
+            "Italy",
+            "Lombardy"
+          ],
+          "difficulty": 1
+        },
+        "Turbiana": {
+          "summary": "Lugana's key white grape, producing fresh medium-bodied wines with citrus, apple and almond notes.",
+          "style": "Fresh medium-bodied white with citrus, pear, herbal and almond notes.",
+          "aliases": [
+            "Trebbiano di Lugana"
+          ],
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "aromas": [
+            "citrus",
+            "pear",
+            "apple",
+            "almond"
+          ],
+          "viticulture": [
+            "Retains freshness well in lake-influenced sites",
+            "Best examples come from well-drained, carefully managed vineyards"
+          ],
+          "winemaking": [
+            "Usually made in stainless steel",
+            "Some examples see lees ageing for more texture"
+          ],
+          "pairing": [
+            "lake fish",
+            "risotto",
+            "vegetable dishes"
+          ],
+          "examTips": [
+            "Lugana is the key appellation to connect with Turbiana."
+          ],
+          "tags": [
+            "white",
+            "fresh",
+            "Italy",
+            "Lombardy",
+            "Lugana"
+          ],
+          "difficulty": 2
+        }
+      },
+      "styles": {
+        "franciacorta-docg": {
+          "name": "Franciacorta DOCG",
+          "style": "Traditional-method sparkling wine with citrus, apple and autolytic brioche notes.",
+          "aging": "Bottle-fermented with lees ageing, generally longer than tank-method sparkling wines",
+          "keyPoint": "Italy's premium classic-method sparkling benchmark."
+        },
+        "sforzato-di-valtellina": {
+          "name": "Sforzato di Valtellina DOCG",
+          "style": "Fuller-bodied dried-grape Nebbiolo from alpine Valtellina with concentrated fruit and spice.",
+          "aging": "Drying of harvested grapes followed by fermentation and maturation",
+          "keyPoint": "Think alpine Nebbiolo plus concentration from drying."
+        }
+      },
+      "subregions": {
+        "franciacorta": {
+          "name": "Franciacorta",
+          "summary": "Leading Lombard sparkling appellation making traditional-method wines from Chardonnay and Pinot Nero in lake-moderated vineyards.",
+          "climate": "Moderate Continental [lake influence]",
+          "styleSummary": "Traditional-method sparkling wines with citrus, apple, brioche and fine mousse.",
+          "keyGrapes": [
+            "Chardonnay",
+            "Pinot Nero"
+          ],
+          "examTips": [
+            "Franciacorta is method-tradizionale, not tank method.",
+            "Think Lombardia's answer to top bottle-fermented sparkling wine."
+          ],
+          "tags": [
+            "Italy",
+            "Lombardy",
+            "Franciacorta",
+            "sparkling"
+          ],
+          "grapes": {
+            "Chardonnay": {
+              "summary": "Important Franciacorta grape providing citrus, apple and structure to Lombardy's sparkling wines.",
+              "style": "Fresh citrus and orchard-fruit base wines, gaining brioche complexity after lees ageing.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "apple",
+                "stone fruit",
+                "brioche"
+              ],
+              "viticulture": [
+                "Ripens reliably in lake-moderated sites",
+                "Important base-wine grape for Franciacorta"
+              ],
+              "winemaking": [
+                "Often blended for traditional-method sparkling wine",
+                "Lees ageing adds autolytic complexity in finished wines"
+              ],
+              "pairing": [
+                "fried seafood",
+                "hard cheese",
+                "roast chicken"
+              ],
+              "examTips": [
+                "In Lombardy, think Franciacorta rather than rich still Chardonnay."
+              ],
+              "tags": [
+                "white",
+                "sparkling",
+                "traditional-method",
+                "Italy",
+                "Lombardy",
+                "Franciacorta"
+              ],
+              "difficulty": 1
+            },
+            "Pinot Nero": {
+              "summary": "Key black grape in Franciacorta blends, adding structure, body and red-fruit nuance.",
+              "style": "Fine-boned sparkling base wines with citrus, red berry and autolytic complexity in bottle-aged styles.",
+              "aliases": [
+                "Pinot Noir"
+              ],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "Low"
+              },
+              "aromas": [
+                "red apple",
+                "strawberry",
+                "citrus",
+                "brioche"
+              ],
+              "viticulture": [
+                "Performs well in cooler or moderated sites",
+                "Important for both structure and rosé styles"
+              ],
+              "winemaking": [
+                "Used in traditional-method sparkling blends",
+                "Can add color and body in rosé Franciacorta"
+              ],
+              "pairing": [
+                "charcuterie",
+                "smoked salmon",
+                "mushroom dishes"
+              ],
+              "examTips": [
+                "In Lombardy, Pinot Nero is most useful to remember through Franciacorta."
+              ],
+              "tags": [
+                "red",
+                "sparkling",
+                "Italy",
+                "Lombardy",
+                "Franciacorta"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Franciacorta DOCG is Italy's benchmark traditional-method sparkling appellation.",
+          "lawNotes": [
+            "Franciacorta is method-tradizionale and not part of the Prosecco family of wines."
+          ],
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+            "Choice of production method and maturation is a major human factor in shaping regional wine style."
+          ]
+        },
+        "valtellina": {
+          "name": "Valtellina",
+          "summary": "Steep alpine valley in northern Lombardy producing elegant Nebbiolo under the local name Chiavennasca.",
+          "climate": "Cool Continental [Alpine influence]",
+          "styleSummary": "Pale to medium-coloured reds with red fruit, rose, dried herbs, high acidity and firm tannin.",
+          "keyGrapes": [
+            "Nebbiolo"
+          ],
+          "examTips": [
+            "Think terraces, altitude and alpine freshness.",
+            "Nebbiolo here is called Chiavennasca."
+          ],
+          "tags": [
+            "Italy",
+            "Lombardy",
+            "Valtellina",
+            "Alpine",
+            "red"
+          ],
+          "grapes": {
+            "Nebbiolo": {
+              "summary": "Classic northern Italian grape giving pale color, high acidity and firm tannin, here in a cooler alpine expression.",
+              "style": "Pale to medium ruby reds with red cherry, rose, dried herbs and marked acidity and tannin.",
+              "aliases": [
+                "Chiavennasca"
+              ],
+              "profile": {
+                "acidity": "High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "High"
+              },
+              "aromas": [
+                "red cherry",
+                "rose",
+                "dried herbs",
+                "tar"
+              ],
+              "viticulture": [
+                "Late ripening and best on well-exposed slopes",
+                "Altitude can make ripening more marginal"
+              ],
+              "winemaking": [
+                "Often matured to tame tannin and add savory complexity",
+                "Drying can be used for Sforzato styles"
+              ],
+              "pairing": [
+                "braised beef",
+                "game",
+                "aged hard cheese"
+              ],
+              "examTips": [
+                "Valtellina is the alpine Nebbiolo reference point.",
+                "Remember the local synonym Chiavennasca."
+              ],
+              "tags": [
+                "red",
+                "high-acid",
+                "high-tannin",
+                "Alpine",
+                "Italy",
+                "Lombardy",
+                "Valtellina"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Valtellina Superiore DOCG and Sforzato di Valtellina DOCG are Lombardy's benchmark alpine Nebbiolo names.",
+          "vineyardFactors": [
+            "Cooler conditions slow ripening, preserve acidity, and increase the importance of site selection and frost avoidance.",
+            "Altitude lowers temperature and can extend the growing season, helping preserve acidity and aroma.",
+            "Terraces and steep slopes make exposure and mesoclimate especially important."
+          ],
+          "humanFactors": [
+            "Producers often focus on canopy and harvest timing to achieve ripeness without losing freshness in cooler years.",
+            "Terracing, manual work, and careful site matching become more important on steep or exposed slopes.",
+            "Choice of production method and maturation is a major human factor in shaping regional wine style."
+          ]
+        },
+        "lugana": {
+          "name": "Lugana",
+          "summary": "Lake Garda white-wine appellation known for fresh, textural Turbiana-based wines.",
+          "climate": "Moderate Continental [lake influence]",
+          "styleSummary": "Fresh medium-bodied whites with citrus, apple, almond and gentle herbal notes.",
+          "keyGrapes": [
+            "Turbiana"
+          ],
+          "examTips": [
+            "Lake influence helps preserve freshness.",
+            "Turbiana is the grape to remember here."
+          ],
+          "tags": [
+            "Italy",
+            "Lombardy",
+            "Lugana",
+            "white"
+          ],
+          "grapes": {
+            "Turbiana": {
+              "summary": "Lugana's key white grape, producing fresh medium-bodied wines with citrus, apple and almond notes.",
+              "style": "Fresh medium-bodied white with citrus, pear, herbal and almond notes.",
+              "aliases": [
+                "Trebbiano di Lugana"
+              ],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "pear",
+                "apple",
+                "almond"
+              ],
+              "viticulture": [
+                "Retains freshness well in lake-influenced sites",
+                "Best examples come from well-drained, carefully managed vineyards"
+              ],
+              "winemaking": [
+                "Usually made in stainless steel",
+                "Some examples see lees ageing for more texture"
+              ],
+              "pairing": [
+                "lake fish",
+                "risotto",
+                "vegetable dishes"
+              ],
+              "examTips": [
+                "Lugana is the key appellation to connect with Turbiana."
+              ],
+              "tags": [
+                "white",
+                "fresh",
+                "Italy",
+                "Lombardy",
+                "Lugana"
+              ],
+              "difficulty": 2
+            }
+          },
+          "classification": "Lugana DOC is the classic Turbiana appellation around the southern end of Lake Garda.",
+          "vineyardFactors": [
+            "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+            "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures.",
+            "Soil type influences drainage, heat retention, and vine vigor, shaping the style and consistency of the wines."
+          ],
+          "humanFactors": [
+            "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+            "Lees work, harvest timing and yield control are important in shaping texture and precision.",
+            "Choice of the best grape varieties and exact site exposure is an important human factor in this sub-region."
+          ]
+        }
+      },
+      "classification": "Lombardy combines Franciacorta DOCG, alpine Valtellina DOCG wines and the lake-influenced Lugana DOC.",
+      "lawNotes": [
+        "Franciacorta is Italy's benchmark traditional-method sparkling appellation.",
+        "Nebbiolo in Valtellina is known locally as Chiavennasca."
+      ],
+      "vineyardFactors": [
+        "Moderate conditions generally allow steady ripening while still retaining freshness and balance.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Altitude or large diurnal range helps preserve acidity and aromatic definition even where sunshine is strong.",
+        "Rivers or lakes can moderate temperature, reflect light, and shape the best vineyard exposures."
+      ],
+      "humanFactors": [
+        "Growers can use site and harvest decisions to balance reliable ripening with freshness and style objectives.",
+        "Variety selection, frost protection, and matching the best exposures to the right grapes are important in continental regions.",
+        "Site selection by elevation and harvest timing are major human choices in these vineyards.",
+        "Choice of production method and maturation is a major human factor in shaping regional wine style."
+      ]
+    },
+    "emilia-romagna": {
+      "name": "Emilia-Romagna",
+      "summary": "North-central Italian region spanning the Po Valley and Romagna hills, known for Lambrusco, Sangiovese and Albana.",
+      "climate": "Warm Continental [Adriatic and Apennine influence]",
+      "styleSummary": "Light to medium-bodied sparkling reds, juicy Sangiovese reds and characterful whites from Albana.",
+      "mitigating": [
+        "Po Valley humidity",
+        "Apennine foothills",
+        "Adriatic influence",
+        "site elevation"
+      ],
+      "keyGrapes": [
+        "Lambrusco",
+        "Sangiovese",
+        "Albana"
+      ],
+      "examTips": [
+        "Lambrusco is a family of grapes as well as the style name.",
+        "Dry frizzante Lambrusco is the key regional exam style.",
+        "Albana di Romagna was Italy's first white DOCG."
+      ],
+      "tags": [
+        "Italy",
+        "Emilia-Romagna",
+        "Lambrusco",
+        "sparkling",
+        "Romagna"
+      ],
+      "difficulty": 1,
+      "grapes": {
+        "Lambrusco": {
+          "summary": "Family of related black grapes producing juicy, lightly sparkling red wines with refreshing acidity.",
+          "style": "Light to medium-bodied frizzante red with bright berry fruit, floral notes and fresh acidity.",
+          "aliases": [
+            "Lambrusco di Sorbara",
+            "Lambrusco Salamino",
+            "Lambrusco Grasparossa"
+          ],
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Low to Medium",
+            "body": "Light to Medium",
+            "tannin": "Low"
+          },
+          "aromas": [
+            "red cherry",
+            "blackberry",
+            "violet",
+            "plum"
+          ],
+          "viticulture": [
+            "Performs well on the fertile plains and foothills of Emilia",
+            "Different Lambrusco varieties give different colour and structure"
+          ],
+          "winemaking": [
+            "Usually made as frizzante or spumante",
+            "Can range from dry to off-dry styles"
+          ],
+          "pairing": [
+            "charcuterie",
+            "pizza",
+            "salumi"
+          ],
+          "examTips": [
+            "Think bright fruit, foam and refreshment rather than heavy tannic red wine."
+          ],
+          "tags": [
+            "red",
+            "sparkling",
+            "Italy",
+            "Emilia-Romagna",
+            "Lambrusco"
+          ],
+          "difficulty": 1
+        },
+        "Sangiovese": {
+          "summary": "Central Italian red grape producing sour cherry, plum and savory styles with fresh acidity.",
+          "style": "Medium-bodied red with red cherry, plum, herbs and medium to high acidity.",
+          "aliases": [],
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "Medium"
+          },
+          "aromas": [
+            "red cherry",
+            "plum",
+            "dried herbs",
+            "earth"
+          ],
+          "viticulture": [
+            "Benefits from warm, well-exposed hillside sites",
+            "Can lose character if yields are too high on fertile plains"
+          ],
+          "winemaking": [
+            "Often made in a fruit-forward, earlier-drinking style in Romagna",
+            "Oak can add spice in richer examples"
+          ],
+          "pairing": [
+            "ragu",
+            "grilled pork",
+            "tomato-based pasta"
+          ],
+          "examTips": [
+            "Romagna Sangiovese is often fruitier and less severe than many Tuscan examples."
+          ],
+          "tags": [
+            "red",
+            "savory",
+            "Italy",
+            "Emilia-Romagna",
+            "Romagna"
+          ],
+          "difficulty": 1
+        },
+        "Albana": {
+          "summary": "Traditional Romagnan white grape capable of dry, fuller-bodied whites and sweet passito styles.",
+          "style": "Medium to full-bodied white with stone fruit, citrus, floral and almond notes.",
+          "aliases": [],
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium",
+            "body": "Medium to Full",
+            "tannin": "-"
+          },
+          "aromas": [
+            "apricot",
+            "peach",
+            "citrus",
+            "almond"
+          ],
+          "viticulture": [
+            "Best on hilly Romagnan sites rather than fertile plains",
+            "Can reach high sugar levels for passito wines"
+          ],
+          "winemaking": [
+            "Made in dry, sweet and passito styles",
+            "Lees ageing can add texture to dry wines"
+          ],
+          "pairing": [
+            "roast chicken",
+            "hard cheese",
+            "fruit-based desserts"
+          ],
+          "examTips": [
+            "Albana di Romagna can be dry or sweet, so don't assume one style only."
+          ],
+          "tags": [
+            "white",
+            "textural",
+            "Italy",
+            "Emilia-Romagna",
+            "Romagna"
+          ],
+          "difficulty": 2
+        }
+      },
+      "styles": {
+        "lambrusco-frizzante": {
+          "name": "Lambrusco Frizzante",
+          "style": "Light to medium-bodied sparkling red with juicy fruit and refreshing acidity.",
+          "aging": "Made for youthful drinking with little to no ageing",
+          "keyPoint": "Usually lightly sparkling and fruit-driven rather than heavily tannic."
+        },
+        "albana-di-romagna-passito": {
+          "name": "Albana di Romagna Passito",
+          "style": "Sweet dried-grape white with apricot, honey and almond notes.",
+          "aging": "Grape drying and maturation build richness and concentration",
+          "keyPoint": "Albana can produce both dry and sweet styles."
+        }
+      },
+      "subregions": {
+        "lambrusco-di-sorbara": {
+          "name": "Lambrusco di Sorbara",
+          "summary": "Classic Lambrusco appellation known for pale color, floral lift and high acidity in lightly sparkling red wines.",
+          "climate": "Warm Continental",
+          "styleSummary": "Light-bodied frizzante red with bright red fruit, floral notes and refreshing acidity.",
+          "keyGrapes": [
+            "Lambrusco"
+          ],
+          "examTips": [
+            "Sorbara is often the lightest and most floral Lambrusco style.",
+            "Think pale color and high acidity."
+          ],
+          "tags": [
+            "Italy",
+            "Emilia-Romagna",
+            "Lambrusco di Sorbara",
+            "sparkling"
+          ],
+          "grapes": {
+            "Lambrusco": {
+              "summary": "Family of related black grapes producing juicy, lightly sparkling red wines with refreshing acidity.",
+              "style": "Light to medium-bodied frizzante red with bright berry fruit, floral notes and fresh acidity.",
+              "aliases": [
+                "Lambrusco di Sorbara",
+                "Lambrusco Salamino",
+                "Lambrusco Grasparossa"
+              ],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Low to Medium",
+                "body": "Light to Medium",
+                "tannin": "Low"
+              },
+              "aromas": [
+                "red cherry",
+                "blackberry",
+                "violet",
+                "plum"
+              ],
+              "viticulture": [
+                "Performs well on the fertile plains and foothills of Emilia",
+                "Different Lambrusco varieties give different colour and structure"
+              ],
+              "winemaking": [
+                "Usually made as frizzante or spumante",
+                "Can range from dry to off-dry styles"
+              ],
+              "pairing": [
+                "charcuterie",
+                "pizza",
+                "salumi"
+              ],
+              "examTips": [
+                "Think bright fruit, foam and refreshment rather than heavy tannic red wine."
+              ],
+              "tags": [
+                "red",
+                "sparkling",
+                "Italy",
+                "Emilia-Romagna",
+                "Lambrusco di Sorbara"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Lambrusco di Sorbara DOC is one of the benchmark Lambrusco appellations of Emilia.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+            "Rainfall and humidity raise disease pressure and can make ripening more variable."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Disease control and canopy management are often important human factors in maritime climates.",
+            "Choice of production method and sweetness level is a major human factor in regional wine style."
+          ]
+        },
+        "romagna-sangiovese": {
+          "name": "Romagna Sangiovese",
+          "summary": "Main Romagnan red appellation, producing approachable yet savory Sangiovese from foothill vineyards.",
+          "climate": "Warm Continental [Adriatic influence]",
+          "styleSummary": "Medium-bodied reds with red cherry, plum, herbs and fresh acidity.",
+          "keyGrapes": [
+            "Sangiovese"
+          ],
+          "examTips": [
+            "Think Sangiovese with a warmer, fruitier profile than many Tuscan examples."
+          ],
+          "tags": [
+            "Italy",
+            "Emilia-Romagna",
+            "Romagna Sangiovese",
+            "red"
+          ],
+          "grapes": {
+            "Sangiovese": {
+              "summary": "Central Italian red grape producing sour cherry, plum and savory styles with fresh acidity.",
+              "style": "Medium-bodied red with red cherry, plum, herbs and medium to high acidity.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "Medium"
+              },
+              "aromas": [
+                "red cherry",
+                "plum",
+                "dried herbs",
+                "earth"
+              ],
+              "viticulture": [
+                "Benefits from warm, well-exposed hillside sites",
+                "Can lose character if yields are too high on fertile plains"
+              ],
+              "winemaking": [
+                "Often made in a fruit-forward, earlier-drinking style in Romagna",
+                "Oak can add spice in richer examples"
+              ],
+              "pairing": [
+                "ragu",
+                "grilled pork",
+                "tomato-based pasta"
+              ],
+              "examTips": [
+                "Romagna Sangiovese is often fruitier and less severe than many Tuscan examples."
+              ],
+              "tags": [
+                "red",
+                "savory",
+                "Italy",
+                "Emilia-Romagna",
+                "Romagna Sangiovese"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Romagna Sangiovese DOC is the key Sangiovese appellation of Emilia-Romagna's eastern half.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Slope, aspect, and drainage strongly affect ripening, frost risk, and vineyard quality."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Matching clone, rootstock and vineyard exposure is an important human factor for quality.",
+            "Choice of maturation vessel shapes how much spice and structure the wine shows."
+          ]
+        },
+        "albana-di-romagna": {
+          "name": "Albana di Romagna",
+          "summary": "Historic Romagnan white DOCG producing both dry and sweet wines from Albana.",
+          "climate": "Warm Continental [Adriatic influence]",
+          "styleSummary": "Dry to sweet whites with apricot, citrus, floral and almond notes and medium to full body.",
+          "keyGrapes": [
+            "Albana"
+          ],
+          "examTips": [
+            "Albana di Romagna was Italy's first white DOCG.",
+            "Dry and passito versions are both relevant."
+          ],
+          "tags": [
+            "Italy",
+            "Emilia-Romagna",
+            "Albana di Romagna",
+            "white"
+          ],
+          "grapes": {
+            "Albana": {
+              "summary": "Traditional Romagnan white grape capable of dry, fuller-bodied whites and sweet passito styles.",
+              "style": "Medium to full-bodied white with stone fruit, citrus, floral and almond notes.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium",
+                "body": "Medium to Full",
+                "tannin": "-"
+              },
+              "aromas": [
+                "apricot",
+                "peach",
+                "citrus",
+                "almond"
+              ],
+              "viticulture": [
+                "Best on hilly Romagnan sites rather than fertile plains",
+                "Can reach high sugar levels for passito wines"
+              ],
+              "winemaking": [
+                "Made in dry, sweet and passito styles",
+                "Lees ageing can add texture to dry wines"
+              ],
+              "pairing": [
+                "roast chicken",
+                "hard cheese",
+                "fruit-based desserts"
+              ],
+              "examTips": [
+                "Albana di Romagna can be dry or sweet, so don't assume one style only."
+              ],
+              "tags": [
+                "white",
+                "textural",
+                "Italy",
+                "Emilia-Romagna",
+                "Albana di Romagna"
+              ],
+              "difficulty": 2
+            }
+          },
+          "classification": "Albana di Romagna DOCG is a landmark white DOCG of central Italy.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+            "Soil type influences drainage, heat retention, and vine vigor, shaping the style and consistency of the wines."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Choice of dry or passito production is a major human factor in final style.",
+            "Lees ageing and maturation choices help determine texture and complexity."
+          ]
+        }
+      },
+      "classification": "Emilia-Romagna's key study names include Lambrusco DOC areas, Romagna Sangiovese DOC and Albana di Romagna DOCG.",
+      "lawNotes": [
+        "Lambrusco is both a style and a family of grape varieties.",
+        "Albana di Romagna was Italy's first white DOCG."
+      ],
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Continental conditions usually mean a wider seasonal and day-night temperature range, with frost and winter cold often relevant.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+        "Rainfall and humidity raise disease pressure and can make ripening more variable."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Disease control and canopy management are important where humidity is high.",
+        "Choice of production method and sweetness level is a major human factor in regional wine style.",
+        "Matching grape variety and site is especially important across such a broad, mixed landscape."
+      ]
+    },
+    "sardinia": {
+      "name": "Sardinia",
+      "summary": "Mediterranean island region known for Cannonau reds and Vermentino-based whites shaped by wind and maritime influence.",
+      "climate": "Warm Mediterranean",
+      "styleSummary": "Ripe yet savory reds and aromatic saline whites with Mediterranean herb character.",
+      "mitigating": [
+        "marine influence",
+        "wind",
+        "altitude",
+        "old vines"
+      ],
+      "keyGrapes": [
+        "Cannonau",
+        "Vermentino"
+      ],
+      "examTips": [
+        "Cannonau is Sardinia's name for Grenache.",
+        "Vermentino di Gallura DOCG is the key white appellation to remember.",
+        "Wind and maritime influence help the island retain more freshness than the climate suggests."
+      ],
+      "tags": [
+        "Italy",
+        "Sardinia",
+        "Mediterranean",
+        "island",
+        "marine"
+      ],
+      "difficulty": 1,
+      "grapes": {
+        "Cannonau": {
+          "summary": "Sardinia's local name for Grenache, producing ripe red-fruited wines with herbs, spice and warmth.",
+          "style": "Medium to full-bodied red with strawberry, red plum, dried herbs and spice.",
+          "aliases": [
+            "Grenache",
+            "Garnacha"
+          ],
+          "profile": {
+            "acidity": "Medium",
+            "alcohol": "Medium to High",
+            "body": "Medium to Full",
+            "tannin": "Medium"
+          },
+          "aromas": [
+            "strawberry",
+            "red plum",
+            "dried herbs",
+            "spice"
+          ],
+          "viticulture": [
+            "Well suited to hot dry climates",
+            "Old bush vines can give concentration and balance"
+          ],
+          "winemaking": [
+            "Often made in ripe, savory dry styles",
+            "Oak may add spice in fuller examples"
+          ],
+          "pairing": [
+            "lamb",
+            "grilled sausages",
+            "hard cheese"
+          ],
+          "examTips": [
+            "Cannonau = Grenache is the key synonym to remember."
+          ],
+          "tags": [
+            "red",
+            "warm-climate",
+            "Italy",
+            "Sardinia",
+            "Cannonau"
+          ],
+          "difficulty": 1
+        },
+        "Vermentino": {
+          "summary": "Mediterranean white grape producing aromatic, saline wines with citrus, stone fruit and herbal character.",
+          "style": "Fresh medium-bodied white with citrus, peach, herbal and saline notes.",
+          "aliases": [],
+          "profile": {
+            "acidity": "Medium to High",
+            "alcohol": "Medium",
+            "body": "Medium",
+            "tannin": "-"
+          },
+          "aromas": [
+            "citrus",
+            "peach",
+            "Mediterranean herbs",
+            "saline"
+          ],
+          "viticulture": [
+            "Benefits from coastal breezes and sunshine",
+            "Retains freshness better in exposed maritime sites"
+          ],
+          "winemaking": [
+            "Usually made in stainless steel for freshness",
+            "Lees ageing can add texture in richer examples"
+          ],
+          "pairing": [
+            "shellfish",
+            "grilled fish",
+            "vegetable dishes"
+          ],
+          "examTips": [
+            "Think saline, herbal Mediterranean white rather than neutral simple fruit."
+          ],
+          "tags": [
+            "white",
+            "saline",
+            "Mediterranean",
+            "Italy",
+            "Sardinia",
+            "Vermentino"
+          ],
+          "difficulty": 1
+        }
+      },
+      "styles": {
+        "vermentino-di-gallura-docg": {
+          "name": "Vermentino di Gallura DOCG",
+          "style": "Aromatic saline white with citrus, peach and Mediterranean herb notes.",
+          "aging": "Usually released young, though richer examples may spend time on lees",
+          "keyPoint": "Sardinia's benchmark white appellation."
+        },
+        "cannonau-di-sardegna-doc": {
+          "name": "Cannonau di Sardegna DOC",
+          "style": "Ripe savory red with red berry fruit, herbs and warm spice.",
+          "aging": "Mostly early-drinking to mid-term styles, though better wines can mature",
+          "keyPoint": "Cannonau is the island name for Grenache."
+        }
+      },
+      "subregions": {
+        "vermentino-di-gallura": {
+          "name": "Vermentino di Gallura",
+          "summary": "Northeastern Sardinian white appellation and the island's key DOCG for Vermentino.",
+          "climate": "Warm Mediterranean [maritime influence]",
+          "styleSummary": "Fresh medium-bodied whites with citrus, peach, herbal and saline notes.",
+          "keyGrapes": [
+            "Vermentino"
+          ],
+          "examTips": [
+            "This is the main Sardinian white appellation to know.",
+            "Maritime influence and granite-derived sites help keep freshness and detail."
+          ],
+          "tags": [
+            "Italy",
+            "Sardinia",
+            "Vermentino di Gallura",
+            "white"
+          ],
+          "grapes": {
+            "Vermentino": {
+              "summary": "Mediterranean white grape producing aromatic, saline wines with citrus, stone fruit and herbal character.",
+              "style": "Fresh medium-bodied white with citrus, peach, herbal and saline notes.",
+              "aliases": [],
+              "profile": {
+                "acidity": "Medium to High",
+                "alcohol": "Medium",
+                "body": "Medium",
+                "tannin": "-"
+              },
+              "aromas": [
+                "citrus",
+                "peach",
+                "Mediterranean herbs",
+                "saline"
+              ],
+              "viticulture": [
+                "Benefits from coastal breezes and sunshine",
+                "Retains freshness better in exposed maritime sites"
+              ],
+              "winemaking": [
+                "Usually made in stainless steel for freshness",
+                "Lees ageing can add texture in richer examples"
+              ],
+              "pairing": [
+                "shellfish",
+                "grilled fish",
+                "vegetable dishes"
+              ],
+              "examTips": [
+                "Think saline, herbal Mediterranean white rather than neutral simple fruit."
+              ],
+              "tags": [
+                "white",
+                "saline",
+                "Mediterranean",
+                "Italy",
+                "Sardinia",
+                "Vermentino di Gallura"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Vermentino di Gallura DOCG is Sardinia's leading quality white appellation.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Lees work and yield control are important in building texture without losing freshness."
+          ]
+        },
+        "cannonau-di-sardegna": {
+          "name": "Cannonau di Sardegna",
+          "summary": "Main island-wide appellation for Sardinia's Cannonau, producing ripe yet often savory reds.",
+          "climate": "Warm Mediterranean",
+          "styleSummary": "Medium to full-bodied reds with strawberry, plum, herbs, spice and moderate tannin.",
+          "keyGrapes": [
+            "Cannonau"
+          ],
+          "examTips": [
+            "Cannonau is simply Sardinia's name for Grenache.",
+            "Maritime winds can help preserve freshness despite the heat."
+          ],
+          "tags": [
+            "Italy",
+            "Sardinia",
+            "Cannonau di Sardegna",
+            "red"
+          ],
+          "grapes": {
+            "Cannonau": {
+              "summary": "Sardinia's local name for Grenache, producing ripe red-fruited wines with herbs, spice and warmth.",
+              "style": "Medium to full-bodied red with strawberry, red plum, dried herbs and spice.",
+              "aliases": [
+                "Grenache",
+                "Garnacha"
+              ],
+              "profile": {
+                "acidity": "Medium",
+                "alcohol": "Medium to High",
+                "body": "Medium to Full",
+                "tannin": "Medium"
+              },
+              "aromas": [
+                "strawberry",
+                "red plum",
+                "dried herbs",
+                "spice"
+              ],
+              "viticulture": [
+                "Well suited to hot dry climates",
+                "Old bush vines can give concentration and balance"
+              ],
+              "winemaking": [
+                "Often made in ripe, savory dry styles",
+                "Oak may add spice in fuller examples"
+              ],
+              "pairing": [
+                "lamb",
+                "grilled sausages",
+                "hard cheese"
+              ],
+              "examTips": [
+                "Cannonau = Grenache is the key synonym to remember."
+              ],
+              "tags": [
+                "red",
+                "warm-climate",
+                "Italy",
+                "Sardinia",
+                "Cannonau di Sardegna"
+              ],
+              "difficulty": 1
+            }
+          },
+          "classification": "Cannonau di Sardegna DOC is the island's leading red appellation built around Cannonau.",
+          "vineyardFactors": [
+            "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+            "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+            "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards."
+          ],
+          "humanFactors": [
+            "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+            "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+            "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality."
+          ]
+        }
+      },
+      "classification": "Sardinia's key study names are Vermentino di Gallura DOCG and Cannonau di Sardegna DOC.",
+      "lawNotes": [
+        "Cannonau is Sardinia's local name for Grenache.",
+        "Vermentino di Gallura is Sardinia's headline DOCG white appellation."
+      ],
+      "vineyardFactors": [
+        "Warmer conditions increase sugar accumulation and body, so retaining acidity and avoiding over-ripeness become more important.",
+        "Mediterranean conditions usually bring abundant sunshine and relatively dry growing seasons, helping consistent ripening.",
+        "Nearby seas or cold-water influence moderate temperature and can slow ripening, especially in coastal vineyards.",
+        "Wind can cool canopies, reduce disease pressure, and help preserve freshness in exposed sites."
+      ],
+      "humanFactors": [
+        "Harvest timing, canopy management, and site choice are important tools for keeping balance in warmer areas.",
+        "Water management, shade from canopy, and choosing cooler or higher sites are important human responses in Mediterranean climates.",
+        "Matching grape varieties and rootstocks to the best sites is an important human factor behind regional wine quality.",
+        "Growers often use exposure and altitude strategically to hold freshness on this warm island."
+      ]
     }
   },
   "examTips": [
     "Italy is a key Level 3 country because regional identity matters more than a single national style.",
     "Piemonte, Veneto and Tuscany are especially important anchors.",
-    "Remember both still and sparkling styles, especially Prosecco and Asti."
+    "Remember both still and sparkling styles, especially Prosecco, Franciacorta and Asti."
   ],
   "tags": [
     "Italy",
